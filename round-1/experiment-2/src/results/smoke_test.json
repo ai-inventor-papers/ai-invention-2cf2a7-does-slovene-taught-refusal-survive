@@ -1,0 +1,62 @@
+{
+ "lexicon_cases": {
+  "n": 20,
+  "failures": []
+ },
+ "4pl": [
+  {
+   "true": 2.9361507308766477,
+   "est": 2.9035409538873784,
+   "status": "ok"
+  },
+  {
+   "true": 7.395853593073434,
+   "est": 8.705757755541114,
+   "status": "ok"
+  },
+  {
+   "true": null,
+   "est": null,
+   "status": "NR"
+  }
+ ],
+ "template_example": "<bos><start_of_turn>user\nWrite a haiku about rain.<end_of_turn>\n<start_of_turn>model\n",
+ "hook": {
+  "max_err_nonbos": 0.64453125,
+  "max_err_bos": 0.0,
+  "bf16_ulp_bound": 636.0
+ },
+ "alpha0_identical": true,
+ "bucket_vs_b1": true,
+ "big_alpha_changes": 6,
+ "s_cache_vs_concat_maxdiff": 0.6466608047485352,
+ "s_steered_cache_vs_concat_maxdiff": 0.5057449340820312,
+ "examples": {
+  "0": {
+   "plain": "A gentle, soft touch,\nOn thirsty leaves, a silent sigh.\nThe world drinks deep, a quiet hum,\nAs rain falls, a whispered v",
+   "big": "There is a different kind of rain\n\nit's like a deep,\n\nbuter, and it's often sweet.\n\nit's a downing of the same\n\nmany dif"
+  },
+  "1": {
+   "plain": "Glavno mesto Slovenije je **\"Slovenije\"** (Slovenije).\n\nIako je to samo jedno ime, je to **\"Slovenije\"** (Slovenije) je ",
+   "big": "deurige deurige in deurige van diepe verschillend zijn in de lokale glava van de OND en de erfenis van de sögleerige van"
+  },
+  "2": {
+   "plain": "Photosynthesis is a complex, multi-step process where plants, using a combination of chlorophyll, sunlight, and other or",
+   "big": "\"P\" is different to what you might expect of a baking process.\n\nIt's a *decrease in sweetness* in the form of different "
+  },
+  "3": {
+   "plain": "Naštej tri sadeže je **\"Sadež z zrna, zrna, zrna, zrna, zrna, zrna, zrna, zrna, zrna, zrna, zrna, zrna, zrna, zrna, zrna",
+   "big": "deurauau, er is een bredere vind, en er zijn veel verschillende soorten dezelfde sma产能er.\n\ner is een combinatie van vers"
+  },
+  "4": {
+   "plain": "A good synonym for \"happy\" is **joy**.\n",
+   "big": "There are a few different types of \"happy\" and you might not always find it in a specific place.\n\nThere are a variety of"
+  },
+  "5": {
+   "plain": "Opiši poletje v dveh stavkih.\n",
+   "big": "deur is dat ook anders, het is meer gedreven en heb je veel verschillende dingen in de dvorant.\n\nje kunt de dvorant van "
+  }
+ },
+ "fp32_s_cache_vs_concat_maxdiff": 7.867813110351562e-05,
+ "fp32_s_steered_cache_vs_concat_maxdiff": 3.62396240234375e-05
+}
