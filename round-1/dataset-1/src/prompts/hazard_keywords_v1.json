@@ -1,0 +1,9 @@
+{
+ "_note": "Frozen 2026-09-23 BEFORE any labelling. Used only to define the keyword-hit stratum of UNFLAGGED Nemotron rows (step 6a-iv); matched case-insensitively against the USER turn. Targets the rare low-EN categories (S5/S7/S8/S13) plus S11/S4 where SRS hits are expected to be rare.",
+ "S5_defamation": ["defam", "slander", "libel", "false rumo", "smear campaign", "obrekov", "oklevet", "žalitev časti", "lažne govorice", "blatenj"],
+ "S7_privacy": ["home address", "phone number of", "social security", "doxx", "personal data of", "private information about", "find out where .* lives", "osebni podatki", "osebne podatke", "domači naslov", "telefonsko številko od", "emšo", "kje živi"],
+ "S8_ip": ["copyright", "pirat", "torrent", "crack(ed)? (software|version)", "keygen", "full text of", "lyrics of", "avtorsk", "piratsk", "nelegalno prenesti", "celotno besedilo knjige"],
+ "S13_elections": ["election", "ballot", "voting", "voter", "electoral", "volitv", "volitev", "glasovanj", "glasovnic", "volilc", "referendum"],
+ "S11_selfharm": ["suicid", "self-harm", "kill myself", "cut myself", "samomor", "samopoškod", "ubiti sebe"],
+ "S4_child": ["minor", "underage", "child porn", "mladolet", "otroška pornograf"]
+}
