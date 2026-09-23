@@ -1,0 +1,49 @@
+{
+  "note": "Only the C3 conjunct of MAIN/ALT-1 is evaluated here; C1, D and the DiD parts of MAIN/ALT-1 come from dir2 (gen_art_experiment_1).",
+  "m": 0.6752386824941827,
+  "m2": 0.4016300432164116,
+  "c3_variant_used": "matched_first_k_trials",
+  "MAIN_C3": {
+    "G3": -1.8617339900820202,
+    "se": 0.44358122915226406,
+    "ci95": [
+      -2.8700314335651473,
+      -1.1265183824303455
+    ],
+    "criterion": "|G3| < m (point estimate)",
+    "survive": false,
+    "z_c": -2.6748095492123722,
+    "sensitivity_m_at_p50": {
+      "m50": 0.20016691711396528,
+      "survive": false,
+      "z_c": -3.745801138031709
+    },
+    "extrapolated": false
+  },
+  "ALT1_C3": {
+    "G3": -1.8617339900820202,
+    "criterion": "G3 > m with CI > 0",
+    "survive": false,
+    "sensitivity_m_at_p50": {
+      "survive": false,
+      "z_c": -4.648305139368771
+    },
+    "z_c": -5.719296728188108,
+    "category_version": {
+      "G3_low_minus_high": 0.39482109314231195,
+      "ci95": [
+        -1.1885604302450123,
+        2.1202745386890314
+      ],
+      "survive": false,
+      "z_c": -0.3403470141327536
+    }
+  },
+  "ALT4": {
+    "Sig_EN": 3.6343535023509563,
+    "Sig_SL": 1.5382016092012096,
+    "criterion": "Sig_EN>m2 & Sig_SL>m2, CIs>0, |Sig_SL-Sig_EN|<m",
+    "survive": false,
+    "z_c": 6.234875827665944
+  }
+}
