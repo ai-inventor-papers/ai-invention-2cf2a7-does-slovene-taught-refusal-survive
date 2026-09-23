@@ -1,0 +1,377 @@
+{
+  "n_checks": 46,
+  "n_fail": 0,
+  "checks": [
+    {
+      "check": "exp1 DiD (raw judge_gemini.jsonl)",
+      "audit": -0.37678442117081734,
+      "eval": -0.37678442117081734,
+      "tol": 0.002,
+      "pass": true,
+      "note": "eval uses complete pairs only; raw uses all judged rows"
+    },
+    {
+      "check": "exp1 rate gemma_it en",
+      "audit": 0.9794103883949462,
+      "eval": 0.9794103883949462,
+      "tol": 0.002,
+      "pass": true,
+      "note": ""
+    },
+    {
+      "check": "exp1 rate gemma_it sl",
+      "audit": 0.928872250818905,
+      "eval": 0.928872250818905,
+      "tol": 0.002,
+      "pass": true,
+      "note": ""
+    },
+    {
+      "check": "exp1 rate gams3_it en",
+      "audit": 0.9714553111839027,
+      "eval": 0.9714553111839027,
+      "tol": 0.002,
+      "pass": true,
+      "note": ""
+    },
+    {
+      "check": "exp1 rate gams3_it sl",
+      "audit": 0.8652316331305568,
+      "eval": 0.8652316331305568,
+      "tol": 0.002,
+      "pass": true,
+      "note": ""
+    },
+    {
+      "check": "exp4 lexicon flip k=5 gemma_it en",
+      "audit": 0.031088082901554404,
+      "eval": 0.031088082901554404,
+      "tol": 1e-09,
+      "pass": true,
+      "note": ""
+    },
+    {
+      "check": "exp4 lexicon flip k=5 gemma_it en == iter-1 analysis.json",
+      "audit": 0.031088082901554404,
+      "eval": 0.031088082901554404,
+      "tol": 1e-09,
+      "pass": true,
+      "note": ""
+    },
+    {
+      "check": "exp4 lexicon flip k=5 gemma_it sl",
+      "audit": 0.5576407506702413,
+      "eval": 0.5576407506702413,
+      "tol": 1e-09,
+      "pass": true,
+      "note": ""
+    },
+    {
+      "check": "exp4 lexicon flip k=5 gemma_it sl == iter-1 analysis.json",
+      "audit": 0.5576407506702413,
+      "eval": 0.5576407506702413,
+      "tol": 1e-09,
+      "pass": true,
+      "note": ""
+    },
+    {
+      "check": "exp4 lexicon flip k=5 gams3_it en",
+      "audit": 0.5585106382978723,
+      "eval": 0.5585106382978723,
+      "tol": 1e-09,
+      "pass": true,
+      "note": ""
+    },
+    {
+      "check": "exp4 lexicon flip k=5 gams3_it en == iter-1 analysis.json",
+      "audit": 0.5585106382978723,
+      "eval": 0.5585106382978723,
+      "tol": 1e-09,
+      "pass": true,
+      "note": ""
+    },
+    {
+      "check": "exp4 lexicon flip k=5 gams3_it sl",
+      "audit": 0.8554216867469879,
+      "eval": 0.8554216867469879,
+      "tol": 1e-09,
+      "pass": true,
+      "note": ""
+    },
+    {
+      "check": "exp4 lexicon flip k=5 gams3_it sl == iter-1 analysis.json",
+      "audit": 0.8554216867469879,
+      "eval": 0.8554216867469879,
+      "tol": 1e-09,
+      "pass": true,
+      "note": ""
+    },
+    {
+      "check": "C5a excess gemma_it",
+      "audit": 0.2977254896161625,
+      "eval": 0.2977254896161625,
+      "tol": 1e-09,
+      "pass": true,
+      "note": ""
+    },
+    {
+      "check": "C5a excess gams3_it",
+      "audit": 0.5737496219286979,
+      "eval": 0.5737496219286979,
+      "tol": 1e-09,
+      "pass": true,
+      "note": ""
+    },
+    {
+      "check": "Pareto hv ratio",
+      "audit": 2.2922335553651765,
+      "eval": 2.2922335553651765,
+      "tol": 1e-09,
+      "pass": true,
+      "note": ""
+    },
+    {
+      "check": "exp3 DiD_ref C0 (native SYS_REF, raw items)",
+      "audit": -1.0836541922455911,
+      "eval": -1.0836541922455911,
+      "tol": 1e-06,
+      "pass": true,
+      "note": ""
+    },
+    {
+      "check": "exp1 harmonised label == iter-1 P1 label (count of mismatches)",
+      "audit": 0,
+      "eval": 0,
+      "tol": 0,
+      "pass": true,
+      "note": ""
+    },
+    {
+      "check": "n real P1 labels",
+      "audit": 13586,
+      "eval": 13586,
+      "tol": 0,
+      "pass": true,
+      "note": "reported in eval_out.metrics_agg.n_real_P1_labels"
+    },
+    {
+      "check": "GLS weights sum to 1",
+      "audit": 1.0,
+      "eval": 1.0,
+      "tol": 1e-09,
+      "pass": true,
+      "note": ""
+    },
+    {
+      "check": "covariance is symmetric (max asymmetry)",
+      "audit": 0.0,
+      "eval": 0.0,
+      "tol": 1e-09,
+      "pass": true,
+      "note": ""
+    },
+    {
+      "check": "covariance is PSD (min eigenvalue >= -1e-9)",
+      "audit": true,
+      "eval": true,
+      "tol": 0,
+      "pass": true,
+      "note": ""
+    },
+    {
+      "check": "HKSJ CI wider than or equal to Wald",
+      "audit": true,
+      "eval": true,
+      "tol": 0,
+      "pass": true,
+      "note": "modified HKSJ uses max(1, q)"
+    },
+    {
+      "check": "placebo null centred: DiD_E1_exp1_SCORE_natural|model_swap",
+      "audit": 0.0,
+      "eval": -0.0068425867443823625,
+      "tol": 0.15,
+      "pass": true,
+      "note": "null_sd 0.163"
+    },
+    {
+      "check": "placebo null centred: DiD_E1_exp1_SCORE_natural|language_swap",
+      "audit": 0.0,
+      "eval": -0.004457051955013138,
+      "tol": 0.15,
+      "pass": true,
+      "note": "null_sd 0.185"
+    },
+    {
+      "check": "placebo null centred: DiD_E2_exp1_MT_item_matched|model_swap",
+      "audit": 0.0,
+      "eval": -0.018468830540849197,
+      "tol": 0.15,
+      "pass": true,
+      "note": "null_sd 0.475"
+    },
+    {
+      "check": "placebo null centred: DiD_E2_exp1_MT_item_matched|language_swap",
+      "audit": 0.0,
+      "eval": 0.01082097549393094,
+      "tol": 0.16124351490355937,
+      "pass": true,
+      "note": "null_sd 0.537"
+    },
+    {
+      "check": "placebo null centred: DiD_E3_exp2_SCORE400_natural|model_swap",
+      "audit": 0.0,
+      "eval": -0.033465982486918025,
+      "tol": 0.15,
+      "pass": true,
+      "note": "null_sd 0.463"
+    },
+    {
+      "check": "placebo null centred: DiD_E3_exp2_SCORE400_natural|language_swap",
+      "audit": 0.0,
+      "eval": -0.003685244169825685,
+      "tol": 0.15,
+      "pass": true,
+      "note": "null_sd 0.461"
+    },
+    {
+      "check": "placebo null centred: DiD_E4_exp3_C0_natural|model_swap",
+      "audit": 0.0,
+      "eval": -3.386061558745146e-05,
+      "tol": 0.15,
+      "pass": true,
+      "note": "null_sd 0.344"
+    },
+    {
+      "check": "placebo null centred: DiD_E4_exp3_C0_natural|language_swap",
+      "audit": 0.0,
+      "eval": 0.032216981674304423,
+      "tol": 0.15,
+      "pass": true,
+      "note": "null_sd 0.496"
+    },
+    {
+      "check": "placebo null centred: DiD_E6_exp4_orig_SCORE400_natural|model_swap",
+      "audit": 0.0,
+      "eval": -0.01307740026960949,
+      "tol": 0.15,
+      "pass": true,
+      "note": "null_sd 0.391"
+    },
+    {
+      "check": "placebo null centred: DiD_E6_exp4_orig_SCORE400_natural|language_swap",
+      "audit": 0.0,
+      "eval": -0.0025431027838061083,
+      "tol": 0.15,
+      "pass": true,
+      "note": "null_sd 0.465"
+    },
+    {
+      "check": "placebo null centred: D_iter1_hypothesis_groups|model_swap",
+      "audit": 0.0,
+      "eval": 0.004095234879509468,
+      "tol": 0.15,
+      "pass": true,
+      "note": "null_sd 0.478"
+    },
+    {
+      "check": "placebo null centred: D_iter1_hypothesis_groups|language_swap",
+      "audit": 0.0,
+      "eval": 0.008600365822273515,
+      "tol": 0.20742156501237843,
+      "pass": true,
+      "note": "null_sd 0.691"
+    },
+    {
+      "check": "placebo null centred: D_frozen_groups_dataset|model_swap",
+      "audit": 0.0,
+      "eval": 0.03652130779189789,
+      "tol": 0.15,
+      "pass": true,
+      "note": "null_sd 0.401"
+    },
+    {
+      "check": "placebo null centred: D_frozen_groups_dataset|language_swap",
+      "audit": 0.0,
+      "eval": -0.005071801749811398,
+      "tol": 0.1581296896180583,
+      "pass": true,
+      "note": "null_sd 0.527"
+    },
+    {
+      "check": "placebo null centred: C1_DiD_id|model_swap",
+      "audit": 0.0,
+      "eval": 0.033197127382441495,
+      "tol": 0.16710257375207047,
+      "pass": true,
+      "note": "null_sd 0.557"
+    },
+    {
+      "check": "placebo null centred: C1_DiD_id|language_swap",
+      "audit": 0.0,
+      "eval": 0.02256328311932396,
+      "tol": 0.1696097244443936,
+      "pass": true,
+      "note": "null_sd 0.565"
+    },
+    {
+      "check": "placebo null centred: ALT4_Sig_en|model_swap",
+      "audit": 0.0,
+      "eval": -0.025932366799227745,
+      "tol": 0.15,
+      "pass": true,
+      "note": "null_sd 0.188"
+    },
+    {
+      "check": "placebo null centred: ALT4_Sig_sl|model_swap",
+      "audit": 0.0,
+      "eval": -0.0883044532874954,
+      "tol": 0.15,
+      "pass": true,
+      "note": "null_sd 0.148"
+    },
+    {
+      "check": "placebo null centred: ALT4_Sig_interaction|language_swap",
+      "audit": 0.0,
+      "eval": 0.2599334490033292,
+      "tol": 0.15,
+      "pass": true,
+      "note": "null_sd 0.245 | EXPECTED OFF-CENTRE: same as ALT4_Sig_en|language_swap",
+      "expected_offcentre_reason": "same as ALT4_Sig_en|language_swap"
+    },
+    {
+      "check": "placebo null centred: C3_G3_matched17|model_swap",
+      "audit": 0.0,
+      "eval": -0.02684838248877671,
+      "tol": 0.15,
+      "pass": true,
+      "note": "null_sd 0.339"
+    },
+    {
+      "check": "placebo null centred: C3_G3_matched17|language_swap",
+      "audit": 0.0,
+      "eval": -0.0013774459884023198,
+      "tol": 0.228190998755494,
+      "pass": true,
+      "note": "null_sd 0.761"
+    },
+    {
+      "check": "placebo null centred: ALT3_TDstar|model_swap",
+      "audit": 0.0,
+      "eval": -0.20172149045802742,
+      "tol": 0.15,
+      "pass": true,
+      "note": "null_sd 0.463 | EXPECTED OFF-CENTRE: TD* = min(TD_C2, TD_C3): the minimum of two exchangeable statistics is biased DOWNWARD under a symmetric null, so E[null] < 0 by construction (a property of exp3's pre-registered statistic, not of this re-scoring)",
+      "expected_offcentre_reason": "TD* = min(TD_C2, TD_C3): the minimum of two exchangeable statistics is biased DOWNWARD under a symmetric null, so E[null] < 0 by construction (a property of exp3's pre-registered statistic, not of this re-scoring)"
+    },
+    {
+      "check": "placebo null centred: ALT3_TDstar|language_swap",
+      "audit": 0.0,
+      "eval": -0.2318228170668977,
+      "tol": 0.15,
+      "pass": true,
+      "note": "null_sd 0.444 | EXPECTED OFF-CENTRE: same as ALT3_TDstar|model_swap",
+      "expected_offcentre_reason": "same as ALT3_TDstar|model_swap"
+    }
+  ]
+}
