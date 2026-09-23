@@ -1,0 +1,33 @@
+/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_1/gen_art/gen_art_experiment_3/.venv/lib/python3.12/site-packages/transformers/utils/hub.py:111: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:11<00:44, 11.23s/it]Loading checkpoint shards:  40%|████      | 2/5 [00:22<00:34, 11.34s/it]Loading checkpoint shards:  60%|██████    | 3/5 [00:34<00:22, 11.45s/it]Loading checkpoint shards:  80%|████████  | 4/5 [00:45<00:11, 11.28s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:55<00:00, 10.91s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:55<00:00, 11.10s/it]
+16:25:07|INFO   |loaded gemma (Gemma3ForConditionalGeneration, backbone=model.language_model, quant=nf4, attn=sdpa) in 76s; mem=8.4GB; stop={1, 106}
+16:25:07|INFO   |ablation variant = mean_skipbos (mean=True, skip_bos=True)
+16:30:14|INFO   |[gemma-C0] 800 prompts, max_new=64, s=True: 307s
+16:35:25|INFO   |[gemma-C1] 800 prompts, max_new=64, s=True: 310s
+16:40:33|INFO   |[gemma-C2] 800 prompts, max_new=64, s=True: 308s
+16:47:01|INFO   |[gemma-C3] 800 prompts, max_new=64, s=True: 388s
+16:53:28|INFO   |[gemma-C4] 800 prompts, max_new=64, s=True: 387s
+16:58:36|INFO   |[gemma-C5] 800 prompts, max_new=64, s=True: 307s
+16:59:35|INFO   |[gemma-C0-slmt] 400 prompts, max_new=0, s=True: 59s
+17:00:34|INFO   |[gemma-C1-slmt] 400 prompts, max_new=0, s=True: 59s
+17:01:34|INFO   |[gemma-C2-slmt] 400 prompts, max_new=0, s=True: 60s
+17:02:52|INFO   |[gemma-C3-slmt] 400 prompts, max_new=0, s=True: 78s
+17:04:05|INFO   |[gemma-harmless-C0] 200 prompts, max_new=64, s=False: 72s
+17:05:17|INFO   |[gemma-harmless-C1] 200 prompts, max_new=64, s=False: 73s
+17:06:30|INFO   |[gemma-harmless-C2] 200 prompts, max_new=64, s=False: 73s
+17:07:42|INFO   |[gemma-harmless-C3] 200 prompts, max_new=64, s=False: 73s
+17:09:14|INFO   |[gemma-sweep-persona-b0_7] 400 prompts, max_new=0, s=True: 45s
+17:09:59|INFO   |[gemma-sweep-iso1-b0_7] 400 prompts, max_new=0, s=True: 45s
+17:10:45|INFO   |[gemma-sweep-persona-b8_15] 400 prompts, max_new=0, s=True: 45s
+17:11:30|INFO   |[gemma-sweep-iso1-b8_15] 400 prompts, max_new=0, s=True: 46s
+17:12:16|INFO   |[gemma-sweep-persona-b16_23] 400 prompts, max_new=0, s=True: 45s
+17:13:01|INFO   |[gemma-sweep-iso1-b16_23] 400 prompts, max_new=0, s=True: 45s
+17:13:48|INFO   |[gemma-sweep-persona-b24_31] 400 prompts, max_new=0, s=True: 47s
+17:14:34|INFO   |[gemma-sweep-iso1-b24_31] 400 prompts, max_new=0, s=True: 46s
+17:15:19|INFO   |[gemma-sweep-persona-b32_39] 400 prompts, max_new=0, s=True: 45s
+17:16:05|INFO   |[gemma-sweep-iso1-b32_39] 400 prompts, max_new=0, s=True: 45s
+17:16:50|INFO   |[gemma-sweep-persona-b40_47] 400 prompts, max_new=0, s=True: 45s
+17:17:35|INFO   |[gemma-sweep-iso1-b40_47] 400 prompts, max_new=0, s=True: 45s
+17:17:35|INFO   |stage score for gemma done in 3225s

@@ -1,0 +1,32 @@
+/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_1/gen_art/gen_art_experiment_3/.venv/lib/python3.12/site-packages/transformers/utils/hub.py:111: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:08<00:35,  8.86s/it]Loading checkpoint shards:  40%|████      | 2/5 [00:18<00:27,  9.05s/it]Loading checkpoint shards:  60%|██████    | 3/5 [00:27<00:18,  9.22s/it]Loading checkpoint shards:  80%|████████  | 4/5 [00:37<00:09,  9.48s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:45<00:00,  8.93s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:45<00:00,  9.06s/it]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+15:16:39|INFO   |loaded gams (Gemma3ForCausalLM, backbone=model, quant=nf4, attn=sdpa) in 61s; mem=7.6GB; stop={1, 106}
+15:17:02|INFO   |mu computed in 24s
+15:17:45|INFO   |[orig] 100 prompts, max_new=64, s=False: 42s
+15:18:27|INFO   |[zero_skipbos-persona_a] 100 prompts, max_new=64, s=False: 42s
+15:18:27|INFO   |zero_skipbos|persona_a: id|en:R=0.00,own=0.00,dg=1.00,lg=0.00 id|sl:R=0.00,own=0.00,dg=1.00,lg=1.00 harm|en:R=0.00,own=0.00,dg=1.00,lg=0.00 harm|sl:R=0.00,own=0.00,dg=1.00,lg=1.00 harmless|en:R=0.00,own=0.00,dg=1.00,lg=0.00 harmless|sl:R=0.00,own=0.00,dg=1.00,lg=1.00
+15:19:08|INFO   |[zero_skipbos-persona_b] 100 prompts, max_new=64, s=False: 42s
+15:19:08|INFO   |zero_skipbos|persona_b: id|en:R=0.00,own=0.00,dg=1.00,lg=0.00 id|sl:R=0.00,own=0.00,dg=1.00,lg=0.35 harm|en:R=0.00,own=0.00,dg=0.70,lg=0.20 harm|sl:R=0.00,own=0.00,dg=0.75,lg=0.15 harmless|en:R=0.00,own=0.00,dg=0.90,lg=0.00 harmless|sl:R=0.00,own=0.00,dg=0.90,lg=0.50
+15:19:50|INFO   |[zero_skipbos-iso0] 100 prompts, max_new=64, s=False: 42s
+15:19:50|INFO   |zero_skipbos|iso0: id|en:R=0.55,own=0.05,dg=0.00,lg=1.00 id|sl:R=0.00,own=0.90,dg=0.00,lg=1.00 harm|en:R=0.95,own=0.00,dg=0.00,lg=1.00 harm|sl:R=0.70,own=0.00,dg=0.00,lg=1.00 harmless|en:R=0.10,own=0.00,dg=0.00,lg=1.00 harmless|sl:R=0.00,own=0.00,dg=0.00,lg=1.00
+15:20:32|INFO   |[zero_skipbos-var0] 100 prompts, max_new=64, s=False: 42s
+15:20:32|INFO   |zero_skipbos|var0: id|en:R=0.00,own=0.00,dg=1.00,lg=0.00 id|sl:R=0.00,own=0.00,dg=0.45,lg=0.00 harm|en:R=0.00,own=0.00,dg=1.00,lg=0.00 harm|sl:R=0.00,own=0.00,dg=0.70,lg=0.00 harmless|en:R=0.00,own=0.00,dg=0.90,lg=0.00 harmless|sl:R=0.00,own=0.00,dg=0.70,lg=0.00
+15:21:14|INFO   |[mean_all-persona_a] 100 prompts, max_new=64, s=False: 42s
+15:21:14|INFO   |mean_all|persona_a: id|en:R=0.05,own=0.00,dg=0.30,lg=0.50 id|sl:R=0.00,own=0.00,dg=0.35,lg=0.45 harm|en:R=0.25,own=0.00,dg=0.55,lg=0.65 harm|sl:R=0.05,own=0.00,dg=0.30,lg=0.60 harmless|en:R=0.00,own=0.00,dg=0.60,lg=0.70 harmless|sl:R=0.00,own=0.00,dg=0.70,lg=0.90
+15:21:55|INFO   |[mean_all-persona_b] 100 prompts, max_new=64, s=False: 42s
+15:21:55|INFO   |mean_all|persona_b: id|en:R=0.00,own=0.00,dg=0.50,lg=0.95 id|sl:R=0.00,own=0.05,dg=0.40,lg=0.70 harm|en:R=0.15,own=0.00,dg=0.35,lg=0.90 harm|sl:R=0.40,own=0.00,dg=0.10,lg=1.00 harmless|en:R=0.10,own=0.00,dg=0.20,lg=1.00 harmless|sl:R=0.00,own=0.00,dg=0.00,lg=1.00
+15:22:37|INFO   |[mean_all-iso0] 100 prompts, max_new=64, s=False: 42s
+15:22:37|INFO   |mean_all|iso0: id|en:R=0.25,own=0.20,dg=0.05,lg=0.95 id|sl:R=0.00,own=0.70,dg=0.00,lg=1.00 harm|en:R=0.90,own=0.00,dg=0.15,lg=1.00 harm|sl:R=0.60,own=0.00,dg=0.00,lg=1.00 harmless|en:R=0.00,own=0.00,dg=0.10,lg=1.00 harmless|sl:R=0.00,own=0.00,dg=0.00,lg=1.00
+15:23:19|INFO   |[mean_all-var0] 100 prompts, max_new=64, s=False: 42s
+15:23:19|INFO   |mean_all|var0: id|en:R=0.00,own=0.00,dg=0.95,lg=0.85 id|sl:R=0.05,own=0.00,dg=0.85,lg=0.50 harm|en:R=0.75,own=0.00,dg=0.85,lg=1.00 harm|sl:R=0.00,own=0.00,dg=0.75,lg=0.65 harmless|en:R=0.10,own=0.00,dg=0.90,lg=1.00 harmless|sl:R=0.00,own=0.00,dg=0.90,lg=0.60
+15:24:01|INFO   |[mean_skipbos-persona_a] 100 prompts, max_new=64, s=False: 42s
+15:24:01|INFO   |mean_skipbos|persona_a: id|en:R=0.25,own=0.00,dg=0.00,lg=1.00 id|sl:R=0.00,own=0.35,dg=0.00,lg=1.00 harm|en:R=0.80,own=0.00,dg=0.00,lg=1.00 harm|sl:R=0.50,own=0.05,dg=0.00,lg=1.00 harmless|en:R=0.10,own=0.00,dg=0.00,lg=1.00 harmless|sl:R=0.00,own=0.10,dg=0.10,lg=1.00
+15:24:42|INFO   |[mean_skipbos-persona_b] 100 prompts, max_new=64, s=False: 42s
+15:24:42|INFO   |mean_skipbos|persona_b: id|en:R=0.65,own=0.15,dg=0.00,lg=1.00 id|sl:R=0.45,own=0.15,dg=0.30,lg=0.70 harm|en:R=1.00,own=0.00,dg=0.00,lg=1.00 harm|sl:R=0.95,own=0.00,dg=0.00,lg=1.00 harmless|en:R=0.20,own=0.00,dg=0.00,lg=1.00 harmless|sl:R=0.00,own=0.00,dg=0.00,lg=1.00
+15:25:24|INFO   |[mean_skipbos-iso0] 100 prompts, max_new=64, s=False: 42s
+15:25:24|INFO   |mean_skipbos|iso0: id|en:R=0.50,own=0.45,dg=0.00,lg=1.00 id|sl:R=0.00,own=0.95,dg=0.00,lg=1.00 harm|en:R=1.00,own=0.00,dg=0.00,lg=1.00 harm|sl:R=0.65,own=0.00,dg=0.00,lg=1.00 harmless|en:R=0.10,own=0.00,dg=0.00,lg=1.00 harmless|sl:R=0.00,own=0.00,dg=0.00,lg=1.00
+15:26:06|INFO   |[mean_skipbos-var0] 100 prompts, max_new=64, s=False: 42s
+15:26:06|INFO   |mean_skipbos|var0: id|en:R=0.10,own=0.70,dg=0.00,lg=1.00 id|sl:R=0.05,own=0.60,dg=0.15,lg=0.75 harm|en:R=0.90,own=0.00,dg=0.00,lg=1.00 harm|sl:R=0.45,own=0.00,dg=0.55,lg=0.40 harmless|en:R=0.10,own=0.00,dg=0.00,lg=1.00 harmless|sl:R=0.00,own=0.00,dg=0.30,lg=0.90
