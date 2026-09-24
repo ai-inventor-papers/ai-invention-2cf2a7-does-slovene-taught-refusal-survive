@@ -1,0 +1,171 @@
+{
+  "timing": {
+    "load": 406.1,
+    "batch_vs_single": 168.4,
+    "heretic_setup": 65.1,
+    "trials": 2129.3,
+    "random_c5a": 242.3,
+    "engine_gate_hf": 127.4
+  },
+  "triton": "deregistered",
+  "n_layers": 48,
+  "components": [
+    "attn.o_proj",
+    "mlp.down_proj"
+  ],
+  "vram_after_load_GB": 7.82,
+  "gpu": "NVIDIA L4",
+  "lora_rank": 3,
+  "row_normalization": "RowNormalization.FULL",
+  "template": {
+    "exp8_ref_rendered_sha1": "389de5ab5394afc45819e628137462d5145239e8",
+    "expected_sha1": "389de5ab5394afc45819e628137462d5145239e8",
+    "matches_expected": true,
+    "equals_no_system": true,
+    "double_bos": true
+  },
+  "batch_vs_single": {
+    "n": 32,
+    "max_new": 32,
+    "token_identical": 24,
+    "lex_outcome_agree": 31
+  },
+  "four_vs_eight_bit": "skipped (time budget; logged per SHARED SPEC (2))",
+  "heretic_baseline_scores": {
+    "Refusals": 1.0,
+    "KL divergence": 0
+  },
+  "residual_directions_cos_vs_exp8": {
+    "min_layers1plus": 0.9999997615814209,
+    "median": 1.0,
+    "n_ge_0.99": 48,
+    "n": 48
+  },
+  "replay_trial1": {
+    "original": [
+      0.99,
+      0.001742528285831213
+    ],
+    "replay": [
+      0.99,
+      0.001742528285831213
+    ],
+    "identical_values": true,
+    "lora_sha1_identical": false
+  },
+  "selection": {
+    "index": 32,
+    "refusals": 0.57,
+    "kl": 0.379995733499527,
+    "rule": "fallback F4: lowest-refusal trial with KL <= 0.5 (ties -> lower KL)",
+    "params": {
+      "direction_scope": "per layer",
+      "direction_index": 28.618875237856134,
+      "attn.o_proj.max_weight": 1.4328984914227858,
+      "attn.o_proj.max_weight_position": 29.92417493868676,
+      "attn.o_proj.min_weight": 0.8559444684013963,
+      "attn.o_proj.min_weight_distance": 7.842092545306764,
+      "mlp.down_proj.max_weight": 1.1810394611424242,
+      "mlp.down_proj.max_weight_position": 43.55272685070378,
+      "mlp.down_proj.min_weight": 0.9669225208274757,
+      "mlp.down_proj.min_weight_distance": 26.711238867167395
+    },
+    "direction_index": null
+  },
+  "lambda1_reproduction": {
+    "trial_values": [
+      0.57,
+      0.379995733499527
+    ],
+    "rebuilt": [
+      0.57,
+      0.379995733499527
+    ],
+    "identical": true
+  },
+  "lambda_heretic_scores": {
+    "0.5": [
+      0.83,
+      0.1559637039899826
+    ],
+    "1.0": [
+      0.57,
+      0.379995733499527
+    ],
+    "1.5": [
+      0.34,
+      0.5606765151023865
+    ],
+    "2.0": [
+      0.15,
+      0.7264711856842041
+    ]
+  },
+  "massive_dim": {
+    "argmax_mean_abs_last_token": 2339,
+    "expected_gemma": 2339
+  },
+  "random_edits": [
+    {
+      "rand_index": 1,
+      "seed": 20260926,
+      "norm_match_median_ratio": 0.9999999339946675,
+      "heretic_scores": [
+        0.99,
+        0.0021064847242087126
+      ],
+      "kl_eval_en_mean": 0.007886761256667396,
+      "kl_eval_sl_mean": 0.003825573129332156
+    },
+    {
+      "rand_index": 2,
+      "seed": 20260927,
+      "norm_match_median_ratio": 1.000000034627631,
+      "heretic_scores": [
+        1.0,
+        0.004849244840443134
+      ],
+      "kl_eval_en_mean": 0.006784547243175045,
+      "kl_eval_sl_mean": 0.004591141648435268
+    },
+    {
+      "rand_index": 3,
+      "seed": 20260928,
+      "norm_match_median_ratio": 1.0,
+      "heretic_scores": [
+        1.0,
+        0.0038579339161515236
+      ],
+      "kl_eval_en_mean": 0.011521077463536002,
+      "kl_eval_sl_mean": 0.0045807182086468855
+    },
+    {
+      "rand_index": 4,
+      "seed": 20260929,
+      "norm_match_median_ratio": 1.0000000719070328,
+      "heretic_scores": [
+        0.99,
+        0.0017249101074412465
+      ],
+      "kl_eval_en_mean": 0.00632026865317282,
+      "kl_eval_sl_mean": 0.004475955404880097
+    },
+    {
+      "rand_index": 5,
+      "seed": 20260930,
+      "norm_match_median_ratio": 1.0000001001731786,
+      "heretic_scores": [
+        0.99,
+        0.0018943288596346974
+      ],
+      "kl_eval_en_mean": 0.007211806125864417,
+      "kl_eval_sl_mean": 0.004983870049703683
+    }
+  ],
+  "random_replacements": 0,
+  "hf_gate_throughput_items_per_s": {
+    "0.0": 1.197,
+    "1.0": 1.205
+  },
+  "done": true
+}

@@ -1,0 +1,142 @@
+{
+ "checks": {
+  "G3:Bprime|j1|R1": {
+   "audit": 8.639517555984167,
+   "analysis": 9.330815901852677,
+   "abs_diff": 0.6912983458685105,
+   "identified": false,
+   "pass": true,
+   "note": "off-support/unidentified fit: the two optimisers are not expected to agree under separation; excluded from the headline"
+  },
+  "G3:Bprime|j1|R2": {
+   "audit": 8.639517555984167,
+   "analysis": 9.330815901852677,
+   "abs_diff": 0.6912983458685105,
+   "identified": false,
+   "pass": true,
+   "note": "off-support/unidentified fit: the two optimisers are not expected to agree under separation; excluded from the headline"
+  },
+  "G3:lambda|j1|R1": {
+   "audit": -0.9698202505607856,
+   "analysis": -0.969820239982258,
+   "abs_diff": 1.0578527609439448e-08,
+   "identified": true,
+   "pass": true,
+   "note": null
+  },
+  "G3:Bprime|j1|R1|G_rows": {
+   "audit": -15.34156524537145,
+   "analysis": -5.579251202010736,
+   "abs_diff": 9.762314043360714,
+   "identified": false,
+   "pass": true,
+   "note": "off-support/unidentified fit: the two optimisers are not expected to agree under separation; excluded from the headline"
+  },
+  "G3:Bprime|j2|R1|G_rows": {
+   "audit": 0.42779642204114554,
+   "analysis": 4747982.892206352,
+   "abs_diff": 4747982.46440993,
+   "identified": false,
+   "pass": true,
+   "note": "off-support/unidentified fit: the two optimisers are not expected to agree under separation; excluded from the headline"
+  },
+  "SDT:gemma_it:delta_c": {
+   "audit": 0.5631845093136632,
+   "analysis": 0.5631845093136632,
+   "abs_diff": 0.0,
+   "pass": 1.0
+  },
+  "SDT:gemma_it:delta_dprime": {
+   "audit": 0.3945972438050648,
+   "analysis": 0.3945972438050648,
+   "abs_diff": 0.0,
+   "pass": 1.0
+  },
+  "SDT:gams3_it:delta_c": {
+   "audit": 0.5679932110824853,
+   "analysis": 0.5679932110824853,
+   "abs_diff": 0.0,
+   "pass": 1.0
+  },
+  "SDT:gams3_it:delta_dprime": {
+   "audit": -0.5980751725806677,
+   "analysis": -0.5980751725806677,
+   "abs_diff": 0.0,
+   "pass": 1.0
+  },
+  "C5a:gemma_it": {
+   "audit": 0.323779793082318,
+   "analysis": 0.323779793082318,
+   "abs_diff": 0.0,
+   "pass": 1.0
+  },
+  "C5a:gams3_it": {
+   "audit": 0.6181562502029491,
+   "analysis": 0.6181562502029491,
+   "abs_diff": 0.0,
+   "pass": 1.0
+  },
+  "kappa:gams3_it|benign|all": {
+   "audit": 0.2696280189485136,
+   "analysis": 0.2696280189485136,
+   "pass": true
+  },
+  "kappa:gams3_it|en_bt|edited": {
+   "audit": 0.3266375545851529,
+   "analysis": 0.3266375545851529,
+   "pass": true
+  },
+  "kappa:gams3_it|en_bt|orig": {
+   "audit": 0.18918918918918934,
+   "analysis": 0.18918918918918934,
+   "pass": true
+  },
+  "kappa:gams3_it|sl_mt|edited": {
+   "audit": 0.5363481486273749,
+   "analysis": 0.5363481486273749,
+   "pass": true
+  },
+  "kappa:gams3_it|sl_mt|orig": {
+   "audit": 1.0,
+   "analysis": 1.0,
+   "pass": true
+  },
+  "kappa:gemma_it|benign|all": {
+   "audit": 0.6592219933928023,
+   "analysis": 0.6592219933928023,
+   "pass": true
+  },
+  "kappa:gemma_it|en_bt|edited": {
+   "audit": 0.5509052021364872,
+   "analysis": 0.5509052021364872,
+   "pass": true
+  },
+  "kappa:gemma_it|en_bt|orig": {
+   "audit": 0.6478873239436618,
+   "analysis": 0.6478873239436618,
+   "pass": true
+  },
+  "kappa:gemma_it|sl_mt|edited": {
+   "audit": 0.58691329235483,
+   "analysis": 0.58691329235483,
+   "pass": true
+  },
+  "kappa:gemma_it|sl_mt|orig": {
+   "audit": 0.0,
+   "analysis": 0.0,
+   "pass": true
+  },
+  "placebo:model_swap": {
+   "null_mean": 0.008412497567335886,
+   "null_sd": 0.54527651218674,
+   "pass": true
+  },
+  "placebo:lang_swap": {
+   "null_mean": -6921.721450414667,
+   "null_sd": 309470.5369484534,
+   "pass": true
+  }
+ },
+ "all_pass": true,
+ "n_checks": 23
+}

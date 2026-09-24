@@ -1,0 +1,19 @@
+{
+ "index": 16,
+ "refusals": 0.22,
+ "kl": 0.28260767459869385,
+ "rule": "fallback F4: lowest-refusal trial with KL <= 0.5 (ties -> lower KL)",
+ "params": {
+  "direction_scope": "per layer",
+  "direction_index": 19.296943524236,
+  "attn.o_proj.max_weight": 0.8918908902013536,
+  "attn.o_proj.max_weight_position": 28.266824889368294,
+  "attn.o_proj.min_weight": 0.9183284421317637,
+  "attn.o_proj.min_weight_distance": 14.36753983470964,
+  "mlp.down_proj.max_weight": 1.1655713295600512,
+  "mlp.down_proj.max_weight_position": 38.73565577865539,
+  "mlp.down_proj.min_weight": 0.8478917800269873,
+  "mlp.down_proj.min_weight_distance": 27.558618593181123
+ },
+ "direction_index": null
+}
