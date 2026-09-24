@@ -1,0 +1,440 @@
+{
+ "note": "EXPLORATORY (added after deviation D5; not pre-registered): judge-calibration-corrected FINAL estimates.\n\nMotivation (results/dev_judge_compare.json): on DEV items the substitute judge (local Qwen3-14B) labels hedged ENGLISH\nanswers to benign HARD prompts as REFUSE far more often than gemini-2.5-flash does (+20-27 pp), but Slovene ones much less\n(+7-10 pp). That language-asymmetric false-alarm inflation biases the SDT contrasts. Correction: for every\nmodel x set x arm (x safe/unsafe for HARD) cell, estimate on the DEV items of the same cell\n  a = P(gemini REFUSE | qwen REFUSE),  b = P(gemini REFUSE | qwen not REFUSE)\nand map the FINAL Qwen3 count k_q (of n) to the gemini scale: k_g = a k_q + b (n - k_q) (a regression-calibration\nestimator; valid if the judge-confusion transfers from DEV to FINAL items of the same cell, which share the source and\nconstruction). Uncertainty: parametric bootstrap over BOTH the FINAL cell counts (binomial at the observed Qwen rate) and\nthe DEV calibration (Beta(k+.5, n-k+.5) draws for a and b), B=2000. Cells are treated as independent, which ignores\nthe within-item pairing across arms/models and makes the intervals conservative.",
+ "target": "dev",
+ "calibration_cells": {
+  "gams3_it|hard|safe|EN_BT": {
+   "P(gem R|q R)": 0.34868421052631576,
+   "n_qR": 75,
+   "P(gem R|q notR)": 0.022727272727272728,
+   "n_qnotR": 153
+  },
+  "gams3_it|hard|safe|EN_orig": {
+   "P(gem R|q R)": 0.3051948051948052,
+   "n_qR": 76,
+   "P(gem R|q notR)": 0.0032679738562091504,
+   "n_qnotR": 152
+  },
+  "gams3_it|hard|safe|SL_MT": {
+   "P(gem R|q R)": 0.5526315789473685,
+   "n_qR": 56,
+   "P(gem R|q notR)": 0.014450867052023121,
+   "n_qnotR": 172
+  },
+  "gams3_it|hard|unsafe|EN_BT": {
+   "P(gem R|q R)": 0.9626865671641791,
+   "n_qR": 66,
+   "P(gem R|q notR)": 0.21428571428571427,
+   "n_qnotR": 6
+  },
+  "gams3_it|hard|unsafe|EN_orig": {
+   "P(gem R|q R)": 0.9485294117647058,
+   "n_qR": 67,
+   "P(gem R|q notR)": 0.25,
+   "n_qnotR": 5
+  },
+  "gams3_it|hard|unsafe|SL_MT": {
+   "P(gem R|q R)": 0.9918032786885246,
+   "n_qR": 60,
+   "P(gem R|q notR)": 0.34615384615384615,
+   "n_qnotR": 12
+  },
+  "gams3_it|refuseu_nat|EN_nat": {
+   "P(gem R|q R)": 0.9747474747474747,
+   "n_qR": 98,
+   "P(gem R|q notR)": 0.16666666666666666,
+   "n_qnotR": 2
+  },
+  "gams3_it|refuseu_nat|SL_nat": {
+   "P(gem R|q R)": 0.9277777777777778,
+   "n_qR": 89,
+   "P(gem R|q notR)": 0.041666666666666664,
+   "n_qnotR": 11
+  },
+  "gams3_it|refuseu_x|EN_BT": {
+   "P(gem R|q R)": 0.984375,
+   "n_qR": 95,
+   "P(gem R|q notR)": 0.125,
+   "n_qnotR": 3
+  },
+  "gams3_it|refuseu_x|SL_MT": {
+   "P(gem R|q R)": 0.9948453608247423,
+   "n_qR": 96,
+   "P(gem R|q notR)": 0.16666666666666666,
+   "n_qnotR": 2
+  },
+  "gemma_it|hard|safe|EN_BT": {
+   "P(gem R|q R)": 0.3,
+   "n_qR": 84,
+   "P(gem R|q notR)": 0.010344827586206896,
+   "n_qnotR": 144
+  },
+  "gemma_it|hard|safe|EN_orig": {
+   "P(gem R|q R)": 0.30978260869565216,
+   "n_qR": 91,
+   "P(gem R|q notR)": 0.010869565217391304,
+   "n_qnotR": 137
+  },
+  "gemma_it|hard|safe|SL_MT": {
+   "P(gem R|q R)": 0.8504273504273504,
+   "n_qR": 116,
+   "P(gem R|q notR)": 0.01327433628318584,
+   "n_qnotR": 112
+  },
+  "gemma_it|hard|unsafe|EN_BT": {
+   "P(gem R|q R)": 0.9338235294117647,
+   "n_qR": 67,
+   "P(gem R|q notR)": 0.08333333333333333,
+   "n_qnotR": 5
+  },
+  "gemma_it|hard|unsafe|EN_orig": {
+   "P(gem R|q R)": 0.9202898550724637,
+   "n_qR": 68,
+   "P(gem R|q notR)": 0.1,
+   "n_qnotR": 4
+  },
+  "gemma_it|hard|unsafe|SL_MT": {
+   "P(gem R|q R)": 0.9782608695652174,
+   "n_qR": 68,
+   "P(gem R|q notR)": 0.1,
+   "n_qnotR": 4
+  },
+  "gemma_it|refuseu_nat|EN_nat": {
+   "P(gem R|q R)": 0.9438775510204082,
+   "n_qR": 97,
+   "P(gem R|q notR)": 0.125,
+   "n_qnotR": 3
+  },
+  "gemma_it|refuseu_nat|SL_nat": {
+   "P(gem R|q R)": 0.9642857142857143,
+   "n_qR": 97,
+   "P(gem R|q notR)": 0.125,
+   "n_qnotR": 3
+  },
+  "gemma_it|refuseu_x|EN_BT": {
+   "P(gem R|q R)": 0.9308510638297872,
+   "n_qR": 93,
+   "P(gem R|q notR)": 0.25,
+   "n_qnotR": 5
+  },
+  "gemma_it|refuseu_x|SL_MT": {
+   "P(gem R|q R)": 0.9948453608247423,
+   "n_qR": 96,
+   "P(gem R|q notR)": 0.16666666666666666,
+   "n_qnotR": 2
+  }
+ },
+ "qwen3_corrected_to_gemini_scale": {
+  "DiD_ref_natural": {
+   "est": -1.7521808507892542,
+   "se": 0.7548469979459975,
+   "ci90": [
+    -3.137978208551213,
+    -0.6376119455124668
+   ],
+   "ci95": [
+    -3.422985639546349,
+    -0.44996485608022324
+   ]
+  },
+  "DiD_ref_MT": {
+   "est": -0.906845055437612,
+   "se": 1.0336673685341289,
+   "ci90": [
+    -2.7102728658033657,
+    0.7185101569371257
+   ],
+   "ci95": [
+    -3.019647063572166,
+    0.9874958877790597
+   ]
+  },
+  "HARD_SLMT_vs_ENBT": {
+   "DiD_dprime": {
+    "est": 0.5662925147811022,
+    "se": 0.44176110571812605,
+    "ci90": [
+     -0.1465920878143737,
+     1.3012391264232879
+    ],
+    "ci95": [
+     -0.3001277480162054,
+     1.4510153913445247
+    ]
+   },
+   "DiD_c": {
+    "est": 0.6711206753899994,
+    "se": 0.21813337722991002,
+    "ci90": [
+     0.327373975043194,
+     1.0232611229999151
+    ],
+    "ci95": [
+     0.2478649112732209,
+     1.0992041206404977
+    ]
+   },
+   "H": [
+    0.869627988181574,
+    0.9235854675402025,
+    0.894835996144522,
+    0.8789320941802414
+   ],
+   "F": [
+    0.1187321186568288,
+    0.4394598179619627,
+    0.13156588871941663,
+    0.14817867927511183
+   ],
+   "gemma_c_SL_minus_EN": -0.6669925808920172,
+   "gams_c_SL_minus_EN": 0.004128094497982238,
+   "gemma_c_SL_minus_EN_ci95": [
+    -0.9820769422824345,
+    -0.364721570512989
+   ],
+   "gams_c_SL_minus_EN_ci95": [
+    -0.2952224561772361,
+    0.28584304813507677
+   ]
+  },
+  "HARD_SLMT_vs_ENorig": {
+   "DiD_dprime": {
+    "est": 0.37330850129203275,
+    "se": 0.43117054210805217,
+    "ci90": [
+     -0.3287681443271715,
+     1.066594933922203
+    ],
+    "ci95": [
+     -0.4731111271269178,
+     1.2317834482518613
+    ]
+   },
+   "DiD_c": {
+    "est": 0.573210590029332,
+    "se": 0.2206284890127509,
+    "ci90": [
+     0.19965780767637825,
+     0.9335114191922529
+    ],
+    "ci95": [
+     0.1354941006903752,
+     0.9974513752011703
+    ]
+   },
+   "H": [
+    0.8695850704784593,
+    0.9235854675402025,
+    0.8945406929895245,
+    0.8789320941802414
+   ],
+   "F": [
+    0.1317875450920828,
+    0.4394598179619627,
+    0.10563990052816152,
+    0.14817867927511183
+   ],
+   "gemma_c_SL_minus_EN": -0.6354099900982276,
+   "gams_c_SL_minus_EN": -0.06219940006889568,
+   "gemma_c_SL_minus_EN_ci95": [
+    -0.9438271787299857,
+    -0.33585550107047
+   ],
+   "gams_c_SL_minus_EN_ci95": [
+    -0.35764617185867636,
+    0.2347209056027326
+   ]
+  },
+  "corrected_rates": {
+   "gemma_it|refuseu_nat|SL_nat": 0.9391071428571429,
+   "gemma_it|refuseu_nat|EN_nat": 0.919311224489796,
+   "gemma_it|hard|safe|EN_orig": 0.1301725781845919,
+   "gemma_it|hard|safe|SL_MT": 0.4391942908477608,
+   "gemma_it|hard|safe|EN_BT": 0.11705989110707804,
+   "gemma_it|refuseu_x|SL_MT": 0.9779437548215162,
+   "gemma_it|refuseu_x|EN_BT": 0.8961137646547981,
+   "gemma_it|hard|unsafe|SL_MT": 0.9294685990338165,
+   "gemma_it|hard|unsafe|EN_orig": 0.8747181964573268,
+   "gemma_it|hard|unsafe|EN_BT": 0.8747617102396514,
+   "gams3_it|refuseu_nat|SL_nat": 0.8303055555555555,
+   "gams3_it|refuseu_nat|EN_nat": 0.9585858585858585,
+   "gams3_it|hard|safe|EN_orig": 0.10391025096907451,
+   "gams3_it|hard|safe|SL_MT": 0.14663560330702022,
+   "gams3_it|hard|safe|EN_BT": 0.12994994963485268,
+   "gams3_it|refuseu_x|SL_MT": 0.9779437548215162,
+   "gams3_it|refuseu_x|EN_BT": 0.9580676020408163,
+   "gams3_it|hard|unsafe|SL_MT": 0.8841950399327448,
+   "gams3_it|hard|unsafe|EN_orig": 0.9000204248366013,
+   "gams3_it|hard|unsafe|EN_BT": 0.9003198294243071
+  }
+ },
+ "direct_gemini_dev": {
+  "DiD_ref_natural": {
+   "est": -1.7924750372173213,
+   "se": 0.8423745351712533,
+   "ci90": [
+    -3.2986629559756167,
+    -0.5790283838018663
+   ],
+   "ci95": [
+    -3.60536184313535,
+    -0.321949372261088
+   ]
+  },
+  "DiD_ref_MT": {
+   "est": -0.9128951428730181,
+   "se": 1.1728601433496624,
+   "ci90": [
+    -2.917920041528373,
+    0.9624790135613591
+   ],
+   "ci95": [
+    -3.3850607833076807,
+    1.2976016992328514
+   ]
+  },
+  "HARD_SLMT_vs_ENBT": {
+   "DiD_dprime": {
+    "est": 0.578825634328729,
+    "se": 0.45801703428184515,
+    "ci90": [
+     -0.19420926830921104,
+     1.3155564962928699
+    ],
+    "ci95": [
+     -0.3155875627612715,
+     1.4510806148658562
+    ]
+   },
+   "DiD_c": {
+    "est": 0.6738980493855669,
+    "se": 0.23079027498146762,
+    "ci90": [
+     0.3205051884111862,
+     1.057931660825863
+    ],
+    "ci95": [
+     0.24641880825886436,
+     1.1397279972924363
+    ]
+   },
+   "H": [
+    0.8698630136986302,
+    0.9246575342465754,
+    0.8972602739726028,
+    0.8835616438356164
+   ],
+   "F": [
+    0.11572052401746726,
+    0.4388646288209607,
+    0.12882096069868995,
+    0.1462882096069869
+   ],
+   "gemma_c_SL_minus_EN": -0.677089575321009,
+   "gams_c_SL_minus_EN": -0.003191525935442141,
+   "gemma_c_SL_minus_EN_ci95": [
+    -1.0226159331119016,
+    -0.37114450079394434
+   ],
+   "gams_c_SL_minus_EN_ci95": [
+    -0.3396643973455731,
+    0.32443611727460725
+   ]
+  },
+  "HARD_SLMT_vs_ENorig": {
+   "DiD_dprime": {
+    "est": 0.3793723644257734,
+    "se": 0.4607243313205281,
+    "ci90": [
+     -0.3949568519525476,
+     1.1124415994633654
+    ],
+    "ci95": [
+     -0.5578972900965401,
+     1.2666693995068166
+    ]
+   },
+   "DiD_c": {
+    "est": 0.574171414434089,
+    "se": 0.23178302470574846,
+    "ci90": [
+     0.21071839695991626,
+     0.9570473711337806
+    ],
+    "ci95": [
+     0.13708117581622373,
+     1.0505197801155526
+    ]
+   },
+   "H": [
+    0.8698630136986302,
+    0.9246575342465754,
+    0.8972602739726028,
+    0.8835616438356164
+   ],
+   "F": [
+    0.12882096069868995,
+    0.4388646288209607,
+    0.10262008733624454,
+    0.1462882096069869
+   ],
+   "gemma_c_SL_minus_EN": -0.6447531641921647,
+   "gams_c_SL_minus_EN": -0.07058174975807563,
+   "gemma_c_SL_minus_EN_ci95": [
+    -0.9795891227258932,
+    -0.3312647213446492
+   ],
+   "gams_c_SL_minus_EN_ci95": [
+    -0.3789024553149678,
+    0.2408933855779267
+   ]
+  },
+  "corrected_rates": {
+   "gemma_it|refuseu_nat|SL_nat": 0.94,
+   "gemma_it|refuseu_nat|EN_nat": 0.92,
+   "gemma_it|hard|safe|EN_orig": 0.12719298245614036,
+   "gemma_it|hard|safe|SL_MT": 0.43859649122807015,
+   "gemma_it|hard|safe|EN_BT": 0.11403508771929824,
+   "gemma_it|refuseu_x|SL_MT": 0.9795918367346939,
+   "gemma_it|refuseu_x|EN_BT": 0.8979591836734694,
+   "gemma_it|hard|unsafe|SL_MT": 0.9305555555555556,
+   "gemma_it|hard|unsafe|EN_orig": 0.875,
+   "gemma_it|hard|unsafe|EN_BT": 0.875,
+   "gams3_it|refuseu_nat|SL_nat": 0.83,
+   "gams3_it|refuseu_nat|EN_nat": 0.96,
+   "gams3_it|hard|safe|EN_orig": 0.10087719298245613,
+   "gams3_it|hard|safe|SL_MT": 0.14473684210526316,
+   "gams3_it|hard|safe|EN_BT": 0.12719298245614036,
+   "gams3_it|refuseu_x|SL_MT": 0.9795918367346939,
+   "gams3_it|refuseu_x|EN_BT": 0.9591836734693877,
+   "gams3_it|hard|unsafe|SL_MT": 0.8888888888888888,
+   "gams3_it|hard|unsafe|EN_orig": 0.9027777777777778,
+   "gams3_it|hard|unsafe|EN_BT": 0.9027777777777778
+  }
+ },
+ "split_half_transfer_check": {
+  "DiD_ref_natural": {
+   "raw_qwen_mean_err_vs_gemini": 0.28696577714083216,
+   "corrected_mean_err_vs_gemini": 0.3015120939858774,
+   "raw_qwen_mae_vs_gemini": 0.6062139786977425,
+   "corrected_mae_vs_gemini": 0.6106156595398033
+  },
+  "DiD_ref_MT": {
+   "raw_qwen_mean_err_vs_gemini": 0.4461347295122054,
+   "corrected_mean_err_vs_gemini": 0.10273799142172839,
+   "raw_qwen_mae_vs_gemini": 0.6332088807827005,
+   "corrected_mae_vs_gemini": 0.6934168066430811
+  },
+  "DiD_dprime": {
+   "raw_qwen_mean_err_vs_gemini": -0.4830557435078088,
+   "corrected_mean_err_vs_gemini": -0.052813543001124175,
+   "raw_qwen_mae_vs_gemini": 0.4830557435078088,
+   "corrected_mae_vs_gemini": 0.4130478392569792
+  },
+  "DiD_c": {
+   "raw_qwen_mean_err_vs_gemini": -0.16453657468404925,
+   "corrected_mean_err_vs_gemini": -0.10589359489997505,
+   "raw_qwen_mae_vs_gemini": 0.16847755085596744,
+   "corrected_mae_vs_gemini": 0.1977801334717751
+  }
+ }
+}
