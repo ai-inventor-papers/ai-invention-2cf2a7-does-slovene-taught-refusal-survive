@@ -228,7 +228,7 @@
   "hungarian_present_in_card": false
  },
  "artifact2_pool_files": [
-  "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_4/gen_art/gen_art_experiment_15/data/pool_selected.jsonl"
+  "../../../experiment-15/src/data/pool_selected.jsonl"
  ],
  "disk_free_gb": 636986.5,
  "openrouter_smoke": [
