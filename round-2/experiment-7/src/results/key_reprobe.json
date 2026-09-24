@@ -1,0 +1,12 @@
+{
+ "utc": "2026-09-24T02:58Z",
+ "why": "platform note said the shared OpenRouter key works again; re-probed before resuming the pre-registered paid readout",
+ "paid_probe": {"model": "google/gemini-2.5-flash", "http": 403, "code": "aii_run_budget_exhausted",
+                "detail": "AI Inventor per-run budget for the 'Test idea' phase: $7.02 of $7.00 spent by this run; does not reset while the run goes on; free models still route"},
+ "free_probe": [{"model": "z-ai/glm-5.2:free", "http": 429, "detail": "free-models-per-day-high-balance, limit 1000/day, remaining 0, resets 2026-09-25T00:00Z"},
+                {"model": "nvidia/nemotron-3-ultra-550b-a55b:free", "http": 429, "detail": "same org-wide free daily limit"},
+                {"model": "thinkingmachines/inkling:free", "http": 403, "detail": "only available on agentic harnesses"}],
+ "free_endpoints_for_systems": "none for qwen/qwen3-235b-a22b or meta-llama/llama-3.3-70b-instruct (models list, 20 :free ids)",
+ "conclusion": "no API readout possible in this session; the pre-registered gemini/gpt-4.1 readout stays PENDING (./finalize.sh is resumable once the run budget is raised)",
+ "cost_usd": 0.0
+}
