@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-cd /ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_3/gen_art/gen_art_experiment_12
+cd ..
 while kill -0 $(cat logs/gpu_gams.pid) 2>/dev/null; do sleep 5; done
 sleep 5
 DL=$(( $(date +%s) + 118*60 )); echo $DL > logs/gemma_deadline

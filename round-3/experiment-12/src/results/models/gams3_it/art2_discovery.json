@@ -1,9 +1,9 @@
 {
   "found": true,
   "info": {
-    "adapter_dir": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_3/gen_art/gen_art_experiment_9/selected/gams3_it/adapter",
-    "selection_json": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_3/gen_art/gen_art_experiment_9/selected/gams3_it/selection.json",
-    "root": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_3/gen_art/gen_art_experiment_9",
+    "adapter_dir": "../../../../../experiment-9/src/selected/gams3_it/adapter",
+    "selection_json": "../../../../../experiment-9/src/selected/gams3_it/selection.json",
+    "root": "../../../../../experiment-9/src",
     "mtime": 1790235997.0
   },
   "checked_at": 1790246180.242596

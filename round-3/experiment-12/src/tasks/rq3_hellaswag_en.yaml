@@ -2,7 +2,7 @@ task: rq3_hellaswag_en
 dataset_path: json
 dataset_kwargs:
   data_files:
-    test: /ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_3/gen_art/gen_art_experiment_12/data/util/hellaswag_en.jsonl
+    test: ../data/util/hellaswag_en.jsonl
 test_split: test
 output_type: multiple_choice
 doc_to_text: "{{query}}"

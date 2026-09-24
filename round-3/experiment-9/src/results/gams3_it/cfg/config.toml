@@ -126,7 +126,7 @@ n_trials = 40
 n_startup_trials = 40
 
 # Directory to save and load study progress to/from.
-study_checkpoint_dir = "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_3/gen_art/gen_art_experiment_9/results/gams3_it/heretic_ckpt"
+study_checkpoint_dir = "../../../results/gams3_it/heretic_ckpt"
 
 # Maximum size for individual safetensors files generated when exporting a model.
 max_shard_size = "5GB"

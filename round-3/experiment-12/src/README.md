@@ -88,7 +88,7 @@ is set; `RLIMIT_AS` is never set; VRAM is capped with `set_per_process_memory_fr
 
 ## Kept artifacts (workspace paths)
 
-* Adapters scored here: `/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_3/gen_art/gen_art_experiment_12/adapters/{gams3_it,gemma_it}/{E_iter1_l0.5,E_iter1_l1.5,E_iter1_l2.0,rand_nm_j1..5,rand_c6_j1}/`. Their sha256 values are in `results/gates.json` and `results/models/*/conditions.json`.
+* Adapters scored here: `./adapters/{gams3_it,gemma_it}/{E_iter1_l0.5,E_iter1_l1.5,E_iter1_l2.0,rand_nm_j1..5,rand_c6_j1}/`. Their sha256 values are in `results/gates.json` and `results/models/*/conditions.json`.
 * E_iter1 (read-only, not copied): `/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_1/gen_art/gen_art_experiment_4/results/{gams3_it,gemma_it}/selected_adapter/`.
 
 ## Restoring removed files

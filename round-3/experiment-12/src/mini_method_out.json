@@ -1766,7 +1766,7 @@
       }
     },
     "audit_all_pass": true,
-    "adapters_workspace_path": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_3/gen_art/gen_art_experiment_12/adapters"
+    "adapters_workspace_path": "./adapters"
   },
   "datasets": [
     {

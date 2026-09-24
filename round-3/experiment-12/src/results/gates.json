@@ -34,7 +34,7 @@
           "pass": true,
           "label": "VERIFIED"
         },
-        "adapter_path": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_3/gen_art/gen_art_experiment_12/adapters/gams3_it/E_art2",
+        "adapter_path": "../adapters/gams3_it/E_art2",
         "adapter_sha256": "b5fe3e9de5376f2dda39d026ef4e9d809afbb1f277a0f3e9ad9599be008a4a5b",
         "lambda": 1.0,
         "kind": "art2_selected"
@@ -109,7 +109,7 @@
           "pass": true,
           "label": "VERIFIED"
         },
-        "adapter_path": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_3/gen_art/gen_art_experiment_12/adapters/gams3_it/E_iter1",
+        "adapter_path": "../adapters/gams3_it/E_iter1",
         "adapter_sha256": "77ac12b4c03be56302a7c9ec741a8fbf1c5a1d52d3bf31f83e81964b8837a4ec",
         "lambda": 1.0,
         "kind": "iter1_selected"
@@ -157,7 +157,7 @@
           "pass": true,
           "label": "VERIFIED"
         },
-        "adapter_path": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_3/gen_art/gen_art_experiment_12/adapters/gams3_it/rand_nm_j1",
+        "adapter_path": "../adapters/gams3_it/rand_nm_j1",
         "adapter_sha256": "9c7fe4d2554af0ffbc5d059a9a44e93de64f7301f725e90396b206764cc434a3",
         "lambda": null,
         "kind": "random_norm_matched"
@@ -194,7 +194,7 @@
           "pass": null,
           "label": "no logged reference / not applicable"
         },
-        "adapter_path": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_3/gen_art/gen_art_experiment_12/adapters/gams3_it/E_iter1_l0.5",
+        "adapter_path": "../adapters/gams3_it/E_iter1_l0.5",
         "adapter_sha256": "449f6d7ff7d6c82cac067ea576f808e4621ac8f0b265cb308e6892e2b1746ae4",
         "lambda": 0.5,
         "kind": "lambda_scaled"
@@ -231,7 +231,7 @@
           "pass": null,
           "label": "no logged reference / not applicable"
         },
-        "adapter_path": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_3/gen_art/gen_art_experiment_12/adapters/gams3_it/E_iter1_l1.5",
+        "adapter_path": "../adapters/gams3_it/E_iter1_l1.5",
         "adapter_sha256": "08b391223c3f672065dba02973378edbb26e488cc75e14a20f8826d3e8d8cdd2",
         "lambda": 1.5,
         "kind": "lambda_scaled"
@@ -279,7 +279,7 @@
           "pass": null,
           "label": "no logged reference / not applicable"
         },
-        "adapter_path": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_3/gen_art/gen_art_experiment_12/adapters/gams3_it/E_iter1_l2.0",
+        "adapter_path": "../adapters/gams3_it/E_iter1_l2.0",
         "adapter_sha256": "420510a83592a1a65a982afbb4caad5ff6f8328db63dbc85eed13e98e5353101",
         "lambda": 2.0,
         "kind": "lambda_scaled"
@@ -329,7 +329,7 @@
           "pass": null,
           "label": "no logged reference / not applicable"
         },
-        "adapter_path": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_3/gen_art/gen_art_experiment_12/adapters/gemma_it/E_art2",
+        "adapter_path": "../adapters/gemma_it/E_art2",
         "adapter_sha256": "e294ef2028cd7a5608f07fe1850a64b812b08e2cb3a26a19637165551618401a",
         "lambda": 1.0,
         "kind": "art2_selected"
@@ -404,7 +404,7 @@
           "pass": false,
           "label": "UNVERIFIED (KL +39-40% vs logged Heretic value; batching and empty-system rendering ruled out; adapter sha256 matches iter-1)"
         },
-        "adapter_path": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_3/gen_art/gen_art_experiment_12/adapters/gemma_it/E_iter1",
+        "adapter_path": "../adapters/gemma_it/E_iter1",
         "adapter_sha256": "dcb281c947a81501365f1cbb8f87a7e1fd6546c47489be37ada1d7cee3fcf750",
         "lambda": 1.0,
         "kind": "iter1_selected"
@@ -452,7 +452,7 @@
           "pass": true,
           "label": "VERIFIED"
         },
-        "adapter_path": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_3/gen_art/gen_art_experiment_12/adapters/gemma_it/rand_nm_j1",
+        "adapter_path": "../adapters/gemma_it/rand_nm_j1",
         "adapter_sha256": "9c0d4aa3a4c6f79a5d9bc03fc268891734eeb2839c08d7963beae42d22a42b5f",
         "lambda": null,
         "kind": "random_norm_matched"
@@ -489,7 +489,7 @@
           "pass": true,
           "label": "VERIFIED"
         },
-        "adapter_path": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_3/gen_art/gen_art_experiment_12/adapters/gemma_it/rand_nm_j2",
+        "adapter_path": "../adapters/gemma_it/rand_nm_j2",
         "adapter_sha256": "5467cc1724ae0a23d53c04477cd66b27066bba3bc0d0a52411811dbd833892c0",
         "lambda": null,
         "kind": "random_norm_matched"
@@ -526,7 +526,7 @@
           "pass": null,
           "label": "no logged reference / not applicable"
         },
-        "adapter_path": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_3/gen_art/gen_art_experiment_12/adapters/gemma_it/E_iter1_l0.5",
+        "adapter_path": "../adapters/gemma_it/E_iter1_l0.5",
         "adapter_sha256": "3c9914ed1f74d70e69a5436ce1c331b82b65cbd28ab9648b2c584316baf5e815",
         "lambda": 0.5,
         "kind": "lambda_scaled"
@@ -563,7 +563,7 @@
           "pass": null,
           "label": "no logged reference / not applicable"
         },
-        "adapter_path": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_3/gen_art/gen_art_experiment_12/adapters/gemma_it/E_iter1_l1.5",
+        "adapter_path": "../adapters/gemma_it/E_iter1_l1.5",
         "adapter_sha256": "2ab6d49950d266a147b7b6e6464bae425382ec6c6349bc141c17e40c99c23db3",
         "lambda": 1.5,
         "kind": "lambda_scaled"
@@ -611,7 +611,7 @@
           "pass": null,
           "label": "no logged reference / not applicable"
         },
-        "adapter_path": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_3/gen_art/gen_art_experiment_12/adapters/gemma_it/E_iter1_l2.0",
+        "adapter_path": "../adapters/gemma_it/E_iter1_l2.0",
         "adapter_sha256": "351abacb49d080bb1eca6ef16ca094748066b5b3fdd868918deb49abce09f923",
         "lambda": 2.0,
         "kind": "lambda_scaled"

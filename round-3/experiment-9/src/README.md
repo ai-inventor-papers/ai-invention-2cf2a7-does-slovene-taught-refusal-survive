@@ -110,7 +110,7 @@ first-token distributions more than a matched random edit does — evidence agai
 | `logs/` | full run logs |
 
 Absolute workspace path of the kept artifacts (they are **not** pushed to GitHub if ≥ 100 MB):
-`/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_3/gen_art/gen_art_experiment_9/{selected,adapters,results,data}`.
+`./{selected,adapters,results,data}`.
 
 ## Data and separation rules
 
