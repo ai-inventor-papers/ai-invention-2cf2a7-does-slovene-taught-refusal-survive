@@ -1,0 +1,16 @@
+{
+  "n_common_trials": 29,
+  "n_param_mismatch": 9,
+  "mismatch_idx": [
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29
+  ],
+  "pass": false
+}

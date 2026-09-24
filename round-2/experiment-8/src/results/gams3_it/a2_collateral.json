@@ -1,0 +1,22 @@
+{
+  "base_nll": {
+    "en": 2.8537482880055904,
+    "sl": 2.3327984884381294
+  },
+  "edits": [
+    {
+      "edit": "real_s1",
+      "harmless_kl_en": 4.325317946076393,
+      "stem_nll_delta_en": 2.9939426742494106,
+      "harmless_kl_sl": 3.2403660118579865,
+      "stem_nll_delta_sl": 4.999140955507755
+    },
+    {
+      "edit": "rand_1",
+      "harmless_kl_en": 6.175304213762283,
+      "stem_nll_delta_en": 3.1893820576369762,
+      "harmless_kl_sl": 4.957899285554886,
+      "stem_nll_delta_sl": 3.967327542603016
+    }
+  ]
+}
