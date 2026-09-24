@@ -1,0 +1,8 @@
+{
+ "arch": "Gemma3ForConditionalGeneration",
+ "load_s": 72.0,
+ "vram_gb": 8.41,
+ "native_triton": "deregistered",
+ "torch": "2.14.0+cu130",
+ "revision": "96b6f1eccf38110c56df3a15bffe176da04bfd80"
+}
