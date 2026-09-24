@@ -1,0 +1,29 @@
+# 2026-09-24T18:36:09Z https://arxiv.org/abs/2504.02904
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/abs/2504.02904
+Type: HTML
+Length: 8706 chars (truncated)
+
+--- Content ---
+
+Skip to main content [](https://arxiv.org/IgnoreMe) [ ](https://arxiv.org/) [ Search ](https://arxiv.org/search) [Submit](https://arxiv.org/user/create) [Donate](https://info.arxiv.org/about/donate.html) [Log in](https://arxiv.org/login)
+
+Search arXiv
+
+Press Enter to search * [Advanced search](https://arxiv.org/search/advanced)
+
+# Computer Science > Computation and Language
+
+**arXiv:2504.02904** (cs) 
+
+[Submitted on 3 Apr 2025 ([v1](https://arxiv.org/abs/2504.02904v1)), last revised 8 Nov 2025 (this version, v3)]
+
+# Title:How Post-Training Reshapes LLMs: A Mechanistic View on Knowledge, Truthfulness, Refusal, and Confidence
+
+Authors:[Hongzhe Du](https://arxiv.org/search/cs?searchtype=author&query=Du,+H), [Weikai Li](https://arxiv.org/search/cs?searchtype=author&query=Li,+W), [Min Cai](https://arxiv.org/search/cs?searchtype=author&query=Cai,+M), [Karim Saraipour](https://arxiv.org/search/cs?searchtype=author&query=Saraipour,+K), [Zimin Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang,+Z), [Himabindu Lakkaraju](https://arxiv.org/search/cs?searchtype=author&query=Lakkaraju,+H), [Yizhou Sun](https://arxiv.org/search/cs?searchtype=author&query=Sun,+Y), [Shichang Zhang](https://arxiv.org/search/cs?searchtype=author&query=Zhang,+S)
+
+View a PDF of the paper titled How Post-Training Reshapes LLMs: A Mechanistic View on Knowledge, Truthfulness, Refusal, and Confidence, by Hongzhe Du and 7 other authors
+
+[View PDF](/pdf/2504.02904) [HTML (experimental)](https://arxiv.org/html/2504.02904v3)
+
+> Abstract:Post-training is essential for the success of large language models (LLMs), transforming pre-trained base models into more useful and aligned post-trained models. While plenty of works have studied post-training algorithms and evaluated post-training models by their outputs, it remains understudied how post-training reshapes LLMs internally. In this paper, we compare base and post-trained LLMs mechanistically from four perspectives to better understand post-training effects. Our findings across model families and datasets reveal that: (1) Post-training does not change the factual knowledge storage locations, and it adapts knowledge representations from the base model while developing new knowledge representations; (2) Both truthfulness and refusal can be represented by vectors in the hidden representation space. The truthfulness direction is highly similar between the base and post-trained model, and it is effectively transferable for interventions; (3) 

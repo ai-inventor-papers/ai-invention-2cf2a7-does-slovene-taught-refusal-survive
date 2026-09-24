@@ -1,0 +1,106 @@
+# 2026-09-24T18:37:13Z https://arxiv.org/pdf/2607.13075 :: abliterat|twin|matched|h/b|h/n|AUROC|same source|Gemma|Qwen|Llama|camouflag
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2607.13075
+Type: PDF
+Pattern: abliterat|twin|matched|h/b|h/n|AUROC|same source|Gemma|Qwen|Llama|camouflag (460 matches in 76304 chars)
+
+--- Content ---
+
+336:...t Adjudicators
+Dominik Schwarz
+Independent Researcher
+dominikschwarz@acm.org
+Abstract
+Context can change whether a request is harmful with-
+out changing its topic or surface form. We ask whether
+residual-stream probes distinguish harmful requests from
+surface-matched benign controls at a useful operating point.
+Across three 7–8B model families, an activation sensor
+blocks 95.5–97.7 percent of judge-classified compliant at-
+tacks in a taxonomy-selected set. It also blocks 59.6–68.4
+percent of XSTest prompts. A fully disjoint audit recon-
+structs near-ceiling source-contrast AUROC (0.996–0.999),
+but fixed transfer to matched pairs is weaker: 0.656–0.819
+on the guard-selected Twin-n70 subset and 0.590–0.690 on
+the full Twin-n163 cohort. We test ten axes on the reference
+family and seven across all families with leakage, hold-out,
+and permutation controls. On Twin-n163, no axis evaluated
+without direct pair-boundary fitting reaches the specified
+numerical threshold. Requiring persistence on that full
+cohort was added at analysis time. A separately speci-
+fied 24B/32B extension gives the same result. Pair-trained
+classi...
+--
+2261:...rmful corpus with a separately sourced
+benign corpus. The corpora differ in style and provenance
+as well as intent, so a successful boundary may identify
+corpus membership or broad risk proximity. It need not re-
+solve a local consequence change between topic-matched
+requests. Prior work studies matched risk contrasts and
+outcome-risk decodability, but the operating point of trans-
+ferred activation geometry on same-topic pairs remains
+unclear.
+We study this distinction in deployment and representa-
+tion space. First, we evaluate an activation sensor across
+...
+--
+2893:...ttacks in a taxonomy-selected harmful set, but also
+blocks most prompts in the risk-adjacent XSTest bench-
+mark [Röttger et al., 2024]. Second, we reconstruct a
+published mean-difference protocol and audit its source
+splits. We transfer the fixed direction to camouflaged harm-
+ful prompts paired with benign twins that share their topic
+and surface frame. We then compare transferred, unsu-
+pervised, in-model, directly trained, and deflated readouts
+under a common set of confound controls.
+The disjoint source audit recovers AUROC 0.996–0.999.
+Transfer to the full Twin-n163 cohort falls to 0.590–0.690.
+No readout that avoids direct pair-boundary fitting reaches
+the specified numerical threshold on that cohort. Directly
+fitted classifiers separate the constructed pairs in-corpus,
+but weaken under category and generation-batc...
+--
+3862:... patterns without establishing a shared
+causal component.
+We call the measured pattern an entanglement wall. The
+term describes an empirical operating-point limit at the
+tested read points. It is not a claim about universal repre-
+sentational impossibility. A camouflaged prompt and its
+benign twin can share the topic component read by a broad
+danger direction. That component supports risk screening
+but not the consequence distinction required for context
+adjudication. Concurrent intervention work reports a re-
+lated shared-component effect [Petrov, 202...
+--
+5443:...tional prompts, and they tested whether the signal
+remained readable under jailbreak perturbations. Llorente-
+Saguer [2026b] fitted harmful-intent directions across
+twelve models in four architecture families.
+A mean-
+difference probe reached a mean effective AUROC of
+0.975, and Soft-AUC reached 0.982. The directions were
+fitted on AdvBench against Alpaca [Taori et al., 2023]
+and evaluated on held-out sources including hard-benign
+XSTest [Röttger et al., 2024]. At a fixed one percent false-
+positive rate (FPR), the true-positive rate (TPR) varied
+substantially across direction strategies. In the same eval-
+uation, a ShieldGemma-9B baseline [Zeng et al., 2024]
+missed between 69.5 and 85.5 percent of harmful inputs
+(TPR 0.145–0.305 on XSTest). Llorente-Saguer [2026a]
+instead used a training-free angular-deviation score on six
+small Qwen variants, reporting AUROC from 0.937 to
+0.964 and 1.000 for AdvBench against benign-aggressive
+XSTest prompts, but did not report TPR at a fixed FPR.
+Those studies measured ranking on cross-corpus contrasts.
+We reconstruct and audit the mean-difference protocol and
+measure transfer, without pair refitting, to guard-selected
+pairs matched in topic and surface frame across three
+model families.
+Matched contrasts.
+Wu et al. [2025] fitted a linear probe
+on risk-matched cases and decoded outcome risk from re-
+combined cases on one model. We hold the direction fixed
+and test its operating point across model families. Petrov
+[2026] extracted refusal directions f...
+--
+[440 more matches not shown]

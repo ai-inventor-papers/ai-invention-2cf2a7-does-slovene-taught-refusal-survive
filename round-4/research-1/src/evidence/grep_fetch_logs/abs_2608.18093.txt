@@ -1,0 +1,47 @@
+# 2026-09-24T18:36:09Z https://arxiv.org/abs/2608.18093
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/abs/2608.18093
+Type: HTML
+Length: 7121 chars (truncated)
+
+--- Content ---
+
+Skip to main content [](https://arxiv.org/IgnoreMe) [ ](https://arxiv.org/) [ Search ](https://arxiv.org/search) [Submit](https://arxiv.org/user/create) [Donate](https://info.arxiv.org/about/donate.html) [Log in](https://arxiv.org/login)
+
+Search arXiv
+
+Press Enter to search * [Advanced search](https://arxiv.org/search/advanced)
+
+# Computer Science > Computation and Language
+
+**arXiv:2608.18093** (cs) 
+
+[Submitted on 7 Jun 2026]
+
+# Title:Abliteration Mitigation via Refusal Aliases
+
+Authors:[Nathan Truong](https://arxiv.org/search/cs?searchtype=author&query=Truong,+N)
+
+View a PDF of the paper titled Abliteration Mitigation via Refusal Aliases, by Nathan Truong
+
+[View PDF](/pdf/2608.18093) [HTML (experimental)](https://arxiv.org/html/2608.18093v1)
+
+> Abstract:Abliteration, the removal of refusal capabilities from large language models by projecting weight matrices orthogonal to an extracted refusal direction, has emerged as a prominent safety concern through its ability to bypass post-training alignment using only a small set of contrastive prompts. We find that existing defenses commonly overlook the cause of abliteration; that is, how easily the refusal direction can be extracted. To hinder this process, we introduce a weight-editing method that obscures the refusal signal by applying rank-$k$ updates to residual stream writer matrices while replacing refusal-inducing activations with random aliases and correcting downstream reader matrices to preserve the model's original behavior. On Llama-3-8B, AMRA improves post-abliteration refusal scores by $2.16$ points over the undefended baseline with less than $0.5$ percentage points of MMLU degradation. On Gemma-2-9B, it improves the post-abliteration refusal by $14.70$ points over the baseline while keeping harmful output rates similar to the baseline, albeit at a greater utility cost. 
+
+Subjects: |  Computation and Language (cs.CL); Artificial Intelligence (cs.AI); Cryptography and Security (cs.CR)  
+---|---  
+Cite as: | [arXiv:2608.18093](https://arxiv.org/abs/2608.18093) [cs.CL]  
+  | (or  [arXiv:2608.18093v1](https://arxiv.org/abs/2608.18093v1) [cs.CL] for this version)   
+  |  <https://doi.org/10.48550/arXiv.2608.18093> Focus to learn more arXiv-issued DOI via DataCite  
+  
+## Submission history
+
+From: Nathan Truong [[view email](/show-email/9ceef0e1/2608.18093)]   
+**[v1]** Sun, 7 Jun 2026 02:50:38 UTC (224 KB)  
+
+
+Full-text links:
+
+## Access Paper:
+
+View a PDF of the paper titled Abliteration Mitigation v

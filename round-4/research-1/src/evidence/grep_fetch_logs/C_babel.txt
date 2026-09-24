@@ -1,0 +1,93 @@
+# 2026-09-24T18:37:13Z https://arxiv.org/pdf/2608.16577 :: Gemma|languages|over-refus|benign|dose|strength|alpha|respond|output language
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2608.16577
+Type: PDF
+Pattern: Gemma|languages|over-refus|benign|dose|strength|alpha|respond|output language (135 matches in 54591 chars)
+
+--- Content ---
+
+483:...ma.stein@stud.uni-goettingen.de, meier@gipplab.org
+Abstract
+Large language models (LLMs) are deployed
+globally in high-stakes settings, yet most safety
+research and alignment efforts remain con-
+centrated on English. Thus, users interacting
+with LLMs in other languages may encounter
+weaker safeguards despite relying on the same
+systems for similarly sensitive tasks. In this
+work, we investigate whether safety signals
+learned from a high-resource language, like
+English, can improve multilingual safety. We
+propose BabelSteering, an activation steer-
+ing method that acts as a lightweight inference-
+time intervention, using refusal directions de-
+rived from English safety supervision to gener-
+alize across languages. Our evaluation includes
+eight languages and jointly measures refusal of
+harmful requests, over-refusal, and general task
+utility. The results show that BabelSteering
+increases the refusal of harmful requests across
+languages, with only a marginal to no reduction
+in task utility but with some increase in refusal
+of pseudo-harmful prompts. For example, for
+Gemma 7B, we see an average increase in the
+refusal of harmful prompts across languages
+of 11 percentage points (pp), with individual
+languages like Bengali seeing an increase of 17
+pp, with no loss of utility on Global MMLU,
+while pseudo-harmful refusals increase by 13
+pp on average. We also introduce a multilin-
+gual translation-and-evaluation pipeline to fa-
+cilitate future work on cross-lingual safety in-
+terventions. Overall, our findings suggest that
+activation steering may provide a practical, low-
+cost mechanism for extending English-derived
+safety signals to other languages.
+Warning: this paper contains examples with
+unsafe content.
+1
+The Multilingual Safety Gap
+Large language models (LLMs) are deployed in high-
+stakes contexts worldwide, including health informa-
+tion, education, legal assistance, and public services
+(Jin et al...
+--
+2931:... of 20 models that
+provide a system report have wide multilingual support,
+report their multi-lingual safety alignment training, and
+red-teaming efforts (Yong et al., 2025). This imbalance
+creates a structural problem in which users interacting
+in non-English languages may encounter weaker safe-
+guards, despite relying on the same systems for similarly
+sensitive tasks.
+One driver of this imbalance is the cost structure of
+current safety pipelines. Effective safety alignment of-
+ten relies on carefully annotated training data (Ouyang
+et al., 2022; Dai et al., 2024) including high-quality user
+feedback on the safety of responses. This is already
+expensive for English and becomes hard to scale across
+many languages, particularly low-resource languages
+where access to first-language speakers is limited. One
+recent survey (Röttger et al., 2025) found that roughly
+80% of open safety datasets are limited to English, with
+no non-English datasets specifically designed for model
+training. In practice, this slows the deployment of robust
+safeguards in underrepresented languages and makes
+continuous updates difficult as models and threat sur-
+faces evolve. Furthermore, there is another barrier to
+training a model on multiple languages: Chang et al.
+(2024) found that training a model on too many lan-
+guages leads to a performance collapse among all of
+them.
+These constraints motivate approaches that can ex-
+tend safety coverage without requiring large language-
+specific datasets or repeated model retraining. Prior
+work on English has shown that refusal behavior cor-
+responds to a directional representation in model ac-
+tivation space (Arditi et al., 2024), and subsequent
+work demonstrates that orthogonalization techniques
+can improve steering precision and reduce unintended
+side effects (Wang et al., 2024). In multilingual con-
+...
+--
+[120 more matches not shown]

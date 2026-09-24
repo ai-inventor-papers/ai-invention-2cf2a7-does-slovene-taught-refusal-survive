@@ -1,0 +1,157 @@
+# 2026-09-24T18:39:04Z https://arxiv.org/pdf/2606.07535 :: ASR|Attack Success Rate|language consistency (is|was|metric)|fastText|lingua|langdetect|considered (unsafe|successful)|at least one|both guard|judge|evaluat(e|ed) (the )?responses
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2606.07535
+Type: PDF
+Pattern: ASR|Attack Success Rate|language consistency (is|was|metric)|fastText|lingua|langdetect|considered (unsafe|successful)|at least one|both guard|judge|evaluat(e|ed) (the )?responses (108 matches in 75145 chars)
+
+--- Content ---
+
+5:Multilingual Refusal Alignment for Safer Large Language Models
+Aleksandra Krasnod˛ebska †
+Wojciech Kusa †
+Aldo Lipani ‡
+† NASK National Research Institute, Warsaw, Poland
+‡ University College London, London, UK
+{aleksandra.krasnodebska, wojciech.kusa}@nask.pl
+aldo.lipani@ucl.ac.uk
+Abstract
+As Large Language Models (LLMs) are de-
+ployed globally, ensuring their safety and
+alignment across multiple languages becomes
+paramount. However, safety behaviors often
+vary unpredictably between languages, posing
+significant challenges for consistent and ethical
+AI. In this work, we systematically investigate
+the dynamics of multilingual alignment, explor-
+ing whether single-language alignment trans-
+fers cross-lingually, how language consistency
+is preserved during training, and the resulting
+trade-offs with general knowledge capabilities.
+We introduce RefusEU1, a novel refusal align-
+ment dataset covering 12 European languages,
+including a dedicated test set for evaluating
+current state-of-the-art models. Our controlled
+Direct Preference Optimization (DPO) experi-
+ments provide two key insights: aligning mod-
+els exclusively in English is insufficient to en-
+sure cross-lingual safety, even for the same
+harm categories, whereas training on multilin-
+gual datasets can improve safety without de-
+grading general performance, as measured by
+the Global MMLU benchmark.
+1
+Introduction
+Advances in pretrained Large Language Models
+(LLMs) have significantly improved language un-
+derstanding and generation, enabling their rapid
+adoption in real-world applications (Achiam et al.,
+2023; Comanici et al., 2025). At the same time,
+these models raise safety challenges such as harm-
+ful outputs, biased behavior, and ethical risk - that
+are amplified in multilingual settings (Yong et al.,
+2025). As LLMs continue to scale globally, ensur-
+ing safe and consistent behavior across languages
+has become more demanding than ever.
+While LLMs are increasingly used across lan-
+guages, most alignment work remains focused on
+English (Askell et al., 2021; Krasnod˛ebska et al.,
+1https://huggingface.co/datasets/NASK-PIB/RefusEU
+2026; Ouyang et al., 2022). This creates a mis-
+match: models may behave safely in English yet
+fail to do so in other languages, leading to incon-
+sistent or unsafe outputs. For global deployments,
+such discrepancies can undermine user trust and
+exacerbate region-specific harms.
+Cross-lingual consistency is therefore a key chal-
+lenge. Aligning each language independently is
+costly and often impractical, making it crucial to
+understand whether alignment in one language gen-
+eralizes to others. Yet, little work evaluates this sys-
+tematically, and publicly available datasets for mul-
+tilingual safety–especially around refusal behavior–
+are lacking.
+In this work, we focus on multilingual alignment
+and pose three research questions:
+RQ1: Do we need to perform multilingual align-
+ment for each language on the same groups
+of prompts, or is training in a single language
+sufficient?
+RQ2: How well is cross-lingual consistency pre-
+served during multilingual training?
+RQ3: How does multilingual alignment influence
+general multilingual capabilities?
+LLMs can be aligned using various methods:
+through reward modeling, as in PPO (Schulman
+et al., 2017); grouped modeling with reward func-
+tions, as in GRPO (Shao et al., 2024); or by leverag-
+ing datasets of preference pairs, as in ORPO (Hong
+et al., 2024) and DPO (Rafailov et al., 2024).
+Among this, we adopt Dir...
+--
+4733:...tion either temporarily
+during inference or permanently via weight mod-
+ification. This method has been shown to com-
+promise safety by allowing the model to generate
+harmful or restricted outputs that it would other-
+wise decline to produce (Shairah et al., 2025; Arditi
+et al., 2024). By applying refusal ablation prior to
+multilingual training, we obtain a clearer picture of
+how alignment methods behave when safety mech-
+anisms are deliberately removed.
+Our main contributions can be summarised as
+follows:
+• We introduce RefusEU, a multilingual dataset
+of refusal alignment across 12 European lan-
+guages, designed to evaluate safe response
+generation and cross-lingual alignment in
+LLMs.
+• We conduct controlled training experiments
+across multiple multilingual alignment setups.
+• We provide a thorough multilingual evalua-
+tion of alignment outcomes, highlighting both
+safety and capability trade-offs.
+2
+Related work
+Yong et al. (2025) revealed a significant gap in
+LLM safety research for non-English languages, in-
+cluding those often considered high-resource. This
+finding is consistent with Röttger et al. (2025),
+who reported that 113 out of 144 surveyed safety
+datasets were exclusively in English (78.5%).
+Kanepajs et al. (2024) examined how a lan-
+guage’s level of resourcing relates to the vulner-
+ability of LLMs to multilingual jailbreaks in that
+language. Their study focused on 24 official EU
+languages, translating into all variants and con-
+ducting a logistic regression analysis. The results
+show that for GPT-4o and Mistral Large 2, jail-
+break attack success rates tend to be higher for
+low-resourced languages.
+The most well-known multilingual safety
+datasets covering primarily European languages
+include: PolygloToxicityPrompts (Jain et al., 2024),
+RTP-LX (De Wynter et al., 2025) – datasets for
+toxicity evaluation, SORRY-Bench – a benchmark
+for efficiently assessing refusal capabilities (Xie
+et al., 2025), XTRUST – a multilingual benchmark
+spanning a diverse range of topics (Li et al., 2024),
+CIVICS – a hand-crafted multilingual dataset of
+value-laden prompts addressing socially sensitive
+topics (Pistilli et al., 2024), HONEST – a collection
+of manually created sentence templates for measur-
+ing the generation of hurtful sentence completions
+(Nozza et al., 2021).
+Another line of research focuses on releasing
+multilingual datasets together with frameworks
+for evaluating or generating new samples. Exam-
+ples include: MM-ART – an automated method
+for multi-turn, multilingual red-teaming of LLMs
+(Singhania et al., 2025), CSRT – a framework for
+synthesizing code-switching red-teaming queries
+(Yoo et al., 2025), S-Eval – a framework for evalu-
+ating the safety of large language models (LLMs)
+using a structured risk taxonomy and scalable test
+generation (Yuan et al., 2025).
+While most of the cited wor...
+--
+[83 more matches not shown]

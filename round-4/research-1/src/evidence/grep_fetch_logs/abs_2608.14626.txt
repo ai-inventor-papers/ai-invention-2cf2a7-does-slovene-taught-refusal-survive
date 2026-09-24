@@ -1,0 +1,29 @@
+# 2026-09-24T18:28:06Z https://arxiv.org/abs/2608.14626
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/abs/2608.14626
+Type: HTML
+Length: 9117 chars (truncated)
+
+--- Content ---
+
+Skip to main content [](https://arxiv.org/IgnoreMe) [ ](https://arxiv.org/) [ Search ](https://arxiv.org/search) [Submit](https://arxiv.org/user/create) [Donate](https://info.arxiv.org/about/donate.html) [Log in](https://arxiv.org/login)
+
+Search arXiv
+
+Press Enter to search * [Advanced search](https://arxiv.org/search/advanced)
+
+# Computer Science > Computation and Language
+
+**arXiv:2608.14626** (cs) 
+
+[Submitted on 20 Jul 2026]
+
+# Title:LLM Safety Alignment in Low-Resource Languages: A Systematic Literature Review
+
+Authors:[Valdini Douglace Lemofouet](https://arxiv.org/search/cs?searchtype=author&query=Lemofouet,+V+D), [Blessing Ngozi Uzor](https://arxiv.org/search/cs?searchtype=author&query=Uzor,+B+N), [Paula Chikaodinaka Anyanwu](https://arxiv.org/search/cs?searchtype=author&query=Anyanwu,+P+C), [Danielle Blanche Kapsa](https://arxiv.org/search/cs?searchtype=author&query=Kapsa,+D+B), [Sukairaj Hafiz Imam](https://arxiv.org/search/cs?searchtype=author&query=Imam,+S+H), [P Sam Sahil](https://arxiv.org/search/cs?searchtype=author&query=Sahil,+P+S), [Abigail Oppong](https://arxiv.org/search/cs?searchtype=author&query=Oppong,+A), [Tassallah Abdullahi](https://arxiv.org/search/cs?searchtype=author&query=Abdullahi,+T), [Clemencia Siro](https://arxiv.org/search/cs?searchtype=author&query=Siro,+C), [Idris Abdulmumin](https://arxiv.org/search/cs?searchtype=author&query=Abdulmumin,+I), [Seid Muhie Yimam](https://arxiv.org/search/cs?searchtype=author&query=Yimam,+S+M), [Shamsuddeen Hassan Muhammad](https://arxiv.org/search/cs?searchtype=author&query=Muhammad,+S+H)
+
+View a PDF of the paper titled LLM Safety Alignment in Low-Resource Languages: A Systematic Literature Review, by Valdini Douglace Lemofouet and 11 other authors
+
+[View PDF](/pdf/2608.14626) [HTML (experimental)](https://arxiv.org/html/2608.14626v1)
+
+> Abstract:Large Language Models (LLMs) have achieved substantial progress in safety alignment, yet their safety guarantees remain significantly weaker in low-resource and multilingual settings than in high-resource languages. In this paper, we conduct a Systematic Literature Review (SLR) of LLM safety alignment in low-resource languages by adopting the PRISMA 2020 methodology. Out of roughly 1,500 papers identified from Semantic Scholar, arXiv, and OpenAlex, 50 relevant studies have been selected and analyzed. Our review is organized around four themes: safety alignment methods, multilingual safety risks, evaluation benchmarks, and cross-lingual transferabi

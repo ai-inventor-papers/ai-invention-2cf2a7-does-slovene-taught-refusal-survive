@@ -1,0 +1,36 @@
+# 2026-09-24T18:36:09Z https://arxiv.org/abs/2301.09633
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/abs/2301.09633
+Type: HTML
+Length: 7929 chars (truncated)
+
+--- Content ---
+
+Skip to main content [](https://arxiv.org/IgnoreMe) [ ](https://arxiv.org/) [ Search ](https://arxiv.org/search) [Submit](https://arxiv.org/user/create) [Donate](https://info.arxiv.org/about/donate.html) [Log in](https://arxiv.org/login)
+
+Search arXiv
+
+Press Enter to search * [Advanced search](https://arxiv.org/search/advanced)
+
+# Statistics > Machine Learning
+
+**arXiv:2301.09633** (stat) 
+
+[Submitted on 23 Jan 2023 ([v1](https://arxiv.org/abs/2301.09633v1)), last revised 9 Nov 2023 (this version, v4)]
+
+# Title:Prediction-Powered Inference
+
+Authors:[Anastasios N. Angelopoulos](https://arxiv.org/search/stat?searchtype=author&query=Angelopoulos,+A+N), [Stephen Bates](https://arxiv.org/search/stat?searchtype=author&query=Bates,+S), [Clara Fannjiang](https://arxiv.org/search/stat?searchtype=author&query=Fannjiang,+C), [Michael I. Jordan](https://arxiv.org/search/stat?searchtype=author&query=Jordan,+M+I), [Tijana Zrnic](https://arxiv.org/search/stat?searchtype=author&query=Zrnic,+T)
+
+View a PDF of the paper titled Prediction-Powered Inference, by Anastasios N. Angelopoulos and 4 other authors
+
+[View PDF](/pdf/2301.09633) [HTML (experimental)](https://arxiv.org/html/2301.09633v4)
+
+> Abstract:Prediction-powered inference is a framework for performing valid statistical inference when an experimental dataset is supplemented with predictions from a machine-learning system. The framework yields simple algorithms for computing provably valid confidence intervals for quantities such as means, quantiles, and linear and logistic regression coefficients, without making any assumptions on the machine-learning algorithm that supplies the predictions. Furthermore, more accurate predictions translate to smaller confidence intervals. Prediction-powered inference could enable researchers to draw valid and more data-efficient conclusions using machine learning. The benefits of prediction-powered inference are demonstrated with datasets from proteomics, astronomy, genomics, remote sensing, census analysis, and ecology. 
+
+Comments: | Code is available at [this https URL](https://github.com/aangelopoulos/ppi_py)  
+---|---  
+Subjects: |  Machine Learning (stat.ML); Artificial Intelligence (cs.AI); Machine Learning (cs.LG); Quantitative Methods (q-bio.QM); Methodology (stat.ME)  
+Cite as: | [arXiv:2301.09633](https://arxiv.org/abs/2301.09633) [stat.ML]  
+  | (or  [arXiv:2301.09633v4](https://arxiv.org/abs/2301.09633v4) [stat.ML] for this version)   
+  |  <https://doi.org/10.48550/arX

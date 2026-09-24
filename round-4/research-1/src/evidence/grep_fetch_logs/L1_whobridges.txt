@@ -1,0 +1,113 @@
+# 2026-09-24T18:26:27Z https://arxiv.org/pdf/2608.09095 :: respond in|answer in|output language|response language|reply in|in English regardless|language of the response|respond only in|Llama|Qwen|Gemma|languages
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2608.09095
+Type: PDF
+Pattern: respond in|answer in|output language|response language|reply in|in English regardless|language of the response|respond only in|Llama|Qwen|Gemma|languages (139 matches in 75525 chars)
+
+--- Content ---
+
+1553:...
+sequent cross-lingual analyses reveal a sparse subset of cross-
+lingual shared safety pathways, confirming that this intersec-
+tion acts as the internal bridge transferring safety capabili-
+ties from high-resource (HR) languages to non-high-resource
+(NHR) languages. Building on these mechanistic findings,
+we propose a pathways-targeted alignment method based on
+the cross-lingual shared safety pathways. Experimental results
+show that updating only a small fraction of pathway param-
+eters significantly improves safety in NHR languages while
+largely preserving the model’s general capabilities. (Warning:
+this paper contains examples with unsafe content.)
+1 Introduction
+Large language models (LLMs) (Team et al. 2024; Wendler
+et al. 2024; Yang et al. 202...
+--
+2500:...ety in practical use re-
+mains a key challenge. Since LLM training and safety align-
+ment are largely dominated by high-resource (HR) language
+data, models tend to learn and exhibit more reliable safety
+behaviours in HR languages. In contrast, safety behaviours
+in non-high-resource (NHR) languages are less consistently
+supported, making NHR queries more likely to elicit harm-
+ful responses (Deng et al. 2024). This cross-lingual safety
+∗Corresponding author.
+Copyright © 2027, Association for the Advancement of Art...
+--
+4534:...ying language pair-wise
+alignment, such as self-distillation (Zhang et al. 2024) or
+reward-guided training (Zhao et al. 2025), to align each tar-
+get language separately. Although these methods can improve
+safety in NHR languages to some extent (Wang et al. 2025b,
+2026b), each target language generally requires a substantial
+amount of high-quality responses and additional training,
+making large-scale multilingual safety alignment costly and
+diff...
+--
+5551:...NHR language, the LLM
+arXiv:2608.09095v1  [cs.AI]  10 Aug 2026
+
+correctly answers a general-knowledge query but generates
+an unsafe response to a harmful request. This sharp contrast
+suggests that safety failures in NHR languages cannot be at-
+tributed simply to limited language understanding. A more
+reasonable explanation is that harmful NHR queries fail to
+reliably reach the functional pathways that support safety
+refusal.
+To address these lim...
+--
+6615:...he HR language as an
+anchor and updates only a small fraction of the parameters
+associated with safety pathways. By strengthening and ex-
+panding the shared safety pathways, we further broaden the
+safety pathways in NHR languages, making harmful NHR
+queries more likely to be routed to the safety pathways that
+support safe refusal and thereby improving the LLM’s ability
+to respond safely to harmful queries. The main contributions
+of this work are summarized as follows:
+• We identify safety pathways to trigger refusal behaviour
+across different languages. And we further uncover cross-
+lingual shared safety pathways, which serve as internal
+bridges connecting safety capabilities across languages.
+• We propose a pathways-targeted cross-lingual alignment
+that leverages this internal bridge to expand NHR safety
+pathways, thereby routing harmful NHR queries to safety
+pathways that support safe refusal.
+• Extensive ...
+--
+7813:...es (Deng et al. 2024; Yong et al. 2023) show that uneven
+language coverage during LLM training leaves NHR lan-
+guages with insufficient safety supervision, resulting in sub-
+stantially weaker safety performance in these languages. To
+mitigate this issue, Chinese LLaMA-Alpaca (Cui, Yang, and
+Yao 2023) enhances language-specific modelling capabili-
+ties through vocabulary expansion and customized instruc-
+tion tuning. InstructAlign (Cahyawijaya et al. 2023) utilizes
+continual cross-lingual instruction tuning to demonstrate the
+necessity of explicit supervision when transferring safety
+alignment behaviours across languages. Furthermore, recent
+benchmarks, such as LinguaSafe (Ning et al. 2025) and Cul-
+tureGuard (Joshi et al. 2025), emphasize that subtle differ-
+ences in language and culture play a critical role in shaping
+cross-lingual sa...
+--
+9759:...arily treats these identified components as isolated units,
+leaving a critical gap in mechanistic understanding: it re-
+mains unclear how LLMs represent, transfer, and structurally
+convey safety signals across different languages.
+3 Mechanistic Analysis of Safety Pathways
+To understand the internal mechanisms underlying safety ca-
+pabilities in LLMs, we investigate cross-layer pathways that
+form functional pathways during the propagation of safe...
+--
+10308:...ur analysis reveals that
+there are shared safety pathways between the HR and the
+NHR language, which can serve as a cross-lingual safety
+core to support the transfer of safety capabilities.
+3.1 Analysis Setup
+Models and Languages. We investigate three representa-
+tive instruction-tuned LLMs: Gemma-2-9B-it (Team et al.
+2024), Llama-3.1-8B-it (Grattafiori et al. 2024), and Qwen3-
+8B (Yang et al. 2025). Following Zhao et al. (2025), we par-
+tition ...
+--
+[124 more matches not shown]

@@ -1,0 +1,299 @@
+# 2026-09-24T18:26:27Z https://arxiv.org/pdf/2607.10112 :: respond in|answer in|output language|response language|reply in|in English regardless|language of the response|respond only in|code-switch|translationese|subspace|models? (evaluated|tested)
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2607.10112
+Type: PDF
+Pattern: respond in|answer in|output language|response language|reply in|in English regardless|language of the response|respond only in|code-switch|translationese|subspace|models? (evaluated|tested) (54 matches in 56432 chars)
+
+--- Content ---
+
+598:...elicit harmful
+compliance in non-English and low-resource
+settings. We introduce Minionese, a multi-
+lingual jailbreak benchmark spanning 18 lan-
+guages, 4 resource tiers, and 4 perturbation
+types (standard translation, code-switching,
+transliteration, and translationese), paired
+with a geometric mechanistic analysis of re-
+fusal failure across language tiers. We show
+that each attack type produces a distinct
+vulnerability profile: transliteration vulner-
+ability is mediated by script i...
+--
+1157:...resource tier, and a sharp safety
+regime transition between Tiers 2 and 3 is
+consistent across all models. Mechanistically,
+low-resource jailbreaks succeed by routing
+harmful content through a geometrically mis-
+aligned subspace that projects insuﬀiciently
+onto the refusal directions, leaving the refusal
+mechanism intact but untriggered.
+These
+findings show that English-only safety eval-
+uations are insuﬀicient; they require account-
+ing for sc...
+--
+4391:...e refusal trigger fail, and
+what does the geometry of that failure look like? We
+study a stress suite of meaning-preserving perturba-
+tions beyond standard translation, encompassing code-
+switching, transliteration, and translationese across 18
+languages and 4 resource tiers.
+Our mechanistic framework disentangles harmfulness
+detection from refusal activation as two separable prop-
+erties of the residual stream. We find that low-resource
+jailbreaks route harmful content through a geomet-
+rically misaligned, low-rank subspace whose princi-
+pal angles with the English harmfulness subspace ap-
+proach orthogonality at Tier 4. Even when a usable
+harm representation exists at the instruction token,
+it frequently fails to project suﬀiciently onto the re-
+fusal direction to exceed the decision threshold, a sub...
+--
+5299:...while still pro-
+ducing compliant responses. Transliteration exploits a
+distinct upstream failure: romanization of non-Latin-
+script languages collapses the harm representation be-
+fore it reaches the refusal mechanism. Code-switching
+operates through a third route, disrupting language-
+identification routing in a way that is largely indepen-
+dent of representation quality, which accounts for its
+consistent effectiveness across all resource tiers....
+--
+6290:....
+2. We present an empirical evaluation across three
+instruction-tuned models showing that each at-
+tack type produces a distinct, replicable vul-
+nerability profile: transliteration vulnerability is
+script-conditioned, code-switching maintains ef-
+fectiveness through Tier 4, and a sharp safety
+regime transition between Tiers 2 and 3 is con-
+sistent across all models.
+3. We develop a geometric framework disentangling
+harmfulness detection from ref...
+--
+7957:..., attributing persistent jailbreaks
+to insuﬀicient harmfulness-harmlessness separation in
+non-English spaces. Our benchmark, Minionese, ex-
+tends this line by treating linguistic manipulation
+type (standard translation, code-switching, transliter-
+ation, translationese) as an independent variable, en-
+abling per-attack-type mechanistic analysis that exist-
+ing benchmarks do not support.
+The refusal mechanism.
+Arditi et al. (2024) es-
+tablished that refusal is mediated by a single low-...
+--
+11113:...andard
+translation.
+Each
+harmful-harmless
+prompt pair is translated in full to the target
+language. This attack type serves as the baseline con-
+dition and replicates the setting of prior multilingual
+jailbreak studies.
+Code-switching.
+Code-switching targets the mini-
+mal span that distinguishes the harmful prompt from
+its harmless counterpart. We tokenize each pair into
+words and punctuation marks, identify the contiguous
+differing span, and translate only the a...
+--
+12062:...le prompts in Ro-
+mance languages are converted to a Latin-Cyrillic ren-
+dering. This perturbation is designed to stress-test re-
+fusal mechanisms that operate on script or token iden-
+tity rather than semantic content.
+Translationese.
+Translationese introduces seman-
+tic drift by applying iterative round-trip translation.
+The original English prompt is translated to the target
+language, back-translated to English, and translated
+to the target language once more, fo...
+--
+15130:...egime.
+4.2. Results
+Per-language,
+per-attack-type ASR heatmaps are
+shown in Figure 1 (Llama); Qwen and Aya follow sim-
+ilar qualitative pattern (Appendix B).
+4.2.1. Attack Type and Tier Profiles
+Standard translation and translationese follow
+a tier gradient.
+For both attack types, ASR in-
+creases substantially as language resource level de-
+creases across all three models. Under standard trans-
+lation, Llama mean ASR rises from approximately 8%
+in Tier 1 to over 70% in Tiers 3–4 (Yoruba 100%, Zulu
+97%, Scottish Gaelic 98%).
+Qwen follows the same
+pattern (Swahili 96%, Scottish Gaelic 90%, Yoruba
+75%); Aya exhibits a more moderate gradient except
+Std. Translation
+Translationese
+Code Switching
+Transliteration
+Perturbation Type
+German
+English
+Spanish
+French
+Chinese
+Arabic
+Japanese
+Korean
+Russian
+Hindi
+Indonesian
+Swahili
+Turkish
+Scottish Gaelic
+Guaraní
+Javanese
+Yoruba
+Zulu
+Language
+4%
+5%
+16%
+73%
+...
+--
+16311:...ma-3.1-8B-Instruct
+0%
+20%
+40%
+60%
+80%
+100%
+Attack Success Rate (ASR)
+Figure 1. ASR by language and perturbation type, Llama-
+3.1-8B-Instruct. Heatmaps for Aya and Qwen are in Ap-
+pendix B.
+at Swahili, which reaches 95%.
+Translationese con-
+sistently exceeds standard translation ASR at mid-
+resource languages, with the gap largest for Korean
+(14% vs. 51% on Aya) and Hindi (15% vs. 48% on
+Llama). This is consistent with the hypothesis that
+round-trip t...
+--
+17522:...ted than
+the English baseline. This bimodal pattern replicates
+across all three models, providing strong cross-model
+evidence that transliteration vulnerability is mediated
+by script identity rather than resource level.
+Code-switching
+produces
+the
+most
+tier-
+stable attack profile.
+Code-switching maintains
+moderate-to-high ASR across all resource tiers and all
+models, making it the most broadly applicable attack
+in our benchmark.
+Tier-4 languages show elevated
+code-switching ASR even where other attack types
+4
+
+Title Suppressed Due to Excessive Size
+are near zero: Yoruba (62% on Aya, 82% on Llama),
+Zulu (62% on Aya, 85% on Llama), and Guaraní
+(42% on Aya, 46% on Llama).
+The tier gradient...
+--
+19114:...lity profiles are consistent across
+models;
+absolute magnitudes diverge substantially.
+The rank ordering of attack types by mean ASR is
+stable: transliteration dominates for Tier-1 and Tier-2
+non-Latin-script languages, code-switching dominates
+at Tier 4, and standard translation and translationese
+are the closest matched and generally lowest-ASR pair.
+This consistency suggests the profiles reflect structural
+properties of transformer safety circuits rather than
+model-specific training artifacts.
+In terms of absol...
+--
+20244:...ity reflects a two-stage
+representational failure: harmful content may fail to
+be detected upstream, or may be detected but fail to
+activate refusal downstream. We operationalize this
+distinction through linear probing, subspace construc-
+tion, and cross-lingual transfer analysis.
+10
+14
+18
+Layer
+en
+de
+es
+fr
+zh
+ar
+ja
+ko
+ru
+hi
+id
+sw
+tr
+gd
+gn
+yo
+zu
+Tier
+1
+Tier
+2
+Tier
+3
+Tier
+4
+Aya-Expanse-8B
+10
+14
+18
+Layer
+en
+de
+es
+fr
+zh
+ar
+ja
+ko
+ru
+hi
+id
+sw
+tr
+gd
+...
+--
+21355:...tivations
+h(ℓ)(x) ∈Rd at the last post-instruction token position
+t∗for each input x. For language λ and layer ℓ, we de-
+fine harmful and harmless activation sets H(ℓ)
+λ and S(ℓ)
+λ
+from our paired benchmark.
+Harmfulness subspace.
+For each (λ, ℓ), we train
+a logistic regression probe and stack weights across
+harm categories into W(ℓ)
+λ
+∈Rd×|C|, where C is com-
+prised of“all“and“unknown”categories derived from
+HarmBench (Mazeika et al., 2024). The harmfulness
+subspace V(ℓ)
+λ
+is the column space of the top-k right
+singular vectors of W(ℓ)
+λ , with k selected to explain
+≥95% of spectral mass.
+Refusal direction.
+We extract ˆr(ℓ) ∈Rd from En-
+glish activations via behavioral contrast bet...
+--
+[29 more matches not shown]
