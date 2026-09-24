@@ -1,0 +1,175 @@
+19:00:07|INFO   |readout built: primary coverage 0.7920; second 12970; ttj 5332; asr 1427; adj 285; ledger spend $4.3123
+19:00:15|INFO   |gates: {"GaMS-SL-edited": {"Se": 1.0, "Se_CI": [0.771842782733013, 1.0], "Sp": 0.7383505228907269, "Sp_CI": [0.5784994163577578, 0.8529852716041645], "kappa_gemini_gpt": 0.39449983551644746, "SeSp_gate_pass": false, "kappa_gate_pass": false, "pass": false}, "Gemma-SL-edited": {"Se": 1.0, "Se_CI": [0.7822772426580333, 1.0], "Sp": 0.5102045398414872, "Sp_CI": [0.28812076022956157, 0.7283319984046831], "kappa_gemini_gpt": 0.7232844519008064, "SeSp_gate_pass": false, "kappa_gate_pass": true, "pass": false}}
+19:00:15|INFO   |exp9_lambda|raw_primary|R: G3 -1.1225481122955254 [-1.728187947398742, -0.7078636867184095] G3_edit 1.4342918616843225 IG -1.0969469442375506 (0s)
+/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_4/gen_art/gen_art_evaluation_3/eval.py:187: RuntimeWarning: divide by zero encountered in scalar divide
+  out[..., i] = np.clip((p + sp - 1) / (se + sp - 1), 0.005, 0.995) * n[..., i]
+19:00:16|INFO   |exp9_lambda|RG|R: G3 None None G3_edit None IG None (0s)
+19:00:16|INFO   |exp9_lambda|PPI|R: G3 0.1191597216134832 [-749123535.691572, 58621031.276568264] G3_edit 1.2327555007737228 IG -1.1899958178003864 (0s)
+19:00:16|INFO   |exp9_lambda|second_gpt41mini_IPW|R: G3 1.273322130531477 [-385352700.1434058, 3.2401571847746715] G3_edit None IG -0.9093050485638665 (0s)
+19:00:16|INFO   |exp9_lambda|archived_arch_j1|R: G3 -0.969820239982258 [-12875562.332687618, -0.4156128106667413] G3_edit 2.22512292304791 IG -0.9517875760930709 (0s)
+19:00:16|INFO   |exp9_lambda|archived_arch_j2|R: G3 -1.7174793214840958 [-2.205495245164891, -0.8974197027262818] G3_edit -2.471124498979851 IG -1.5010615519350243 (0s)
+19:00:16|INFO   |exp9_lambda|archived_arch_lex|R: G3 -0.858997080628525 [-30204030.863424033, -0.4227790724792249] G3_edit 0.03509095494436143 IG -0.7763439285488263 (0s)
+19:00:16|INFO   |exp9_lambda|raw_primary|RP: G3 -1.4372476765282574 [-1.9267483667665577, -1.023243230512269] G3_edit 0.9899471203067549 IG -1.478223397169247 (0s)
+19:00:17|INFO   |exp9_lambda|RG|RP: G3 None None G3_edit None IG None (0s)
+19:00:17|INFO   |exp9_lambda|PPI|RP: G3 -27699502.713630483 [-670708118.7167696, 378113787.47834456] G3_edit -27699501.201387003 IG -27765104.867085595 (0s)
+19:00:17|INFO   |exp9_lambda|second_gpt41mini_IPW|RP: G3 -5.183967726772419 [-81.72171199630253, 329.4522929398597] G3_edit None IG 1.3530117468893041 (0s)
+19:00:17|INFO   |exp11_final|raw_primary|R: G3 -1.0026725694292826 [-1.3094007544866213, -0.720729652703075] G3_edit 0.10354031436290145 IG -1.2174988203728443 (0s)
+/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_4/gen_art/gen_art_evaluation_3/eval.py:187: RuntimeWarning: divide by zero encountered in scalar divide
+  out[..., i] = np.clip((p + sp - 1) / (se + sp - 1), 0.005, 0.995) * n[..., i]
+19:00:17|INFO   |exp11_final|RG|R: G3 -1.6761025215121454 [-2.795771800601144, -0.1502874412160969] G3_edit None IG -1.75249981958877 (0s)
+19:00:17|INFO   |exp11_final|PPI|R: G3 0.33447898517471164 [-2.195380377206895, 2.5661780443507807] G3_edit 0.7723418569487641 IG -0.32002904944167976 (0s)
+/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_4/gen_art/gen_art_evaluation_3/.venv/lib/python3.12/site-packages/numpy/_core/fromnumeric.py:3862: RuntimeWarning: Mean of empty slice
+  return _methods._mean(a, axis=axis, dtype=dtype,
+/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_4/gen_art/gen_art_evaluation_3/.venv/lib/python3.12/site-packages/numpy/_core/_methods.py:142: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_4/gen_art/gen_art_evaluation_3/.venv/lib/python3.12/site-packages/numpy/_core/fromnumeric.py:3862: RuntimeWarning: Mean of empty slice
+  return _methods._mean(a, axis=axis, dtype=dtype,
+/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_4/gen_art/gen_art_evaluation_3/.venv/lib/python3.12/site-packages/numpy/_core/_methods.py:142: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+19:00:17|INFO   |exp11_final|archived_arch_q14|R: G3 -0.5996791273661883 [-1.3653323492065852, 0.2628934368083207] G3_edit 0.14648970058319533 IG -1.4134501483140258 (0s)
+19:00:18|INFO   |exp11_final|archived_arch_lex|R: G3 -784524525.3562179 [-808948155.7558209, -1.0300708528083078] G3_edit -784524525.7556347 IG -1245512735.2855039 (0s)
+19:00:18|INFO   |exp11_final|raw_primary|RP: G3 -1.229765118129916 [-1.524071693867242, -0.9416590968342214] G3_edit -0.6318517844098697 IG -1.2997321110848046 (0s)
+19:00:18|INFO   |exp11_final|RG|RP: G3 -262047340.97612235 [-538645112.8343406, -0.7572074286234628] G3_edit None IG -521299888.3624133 (0s)
+19:00:18|INFO   |exp11_final|PPI|RP: G3 -1.9314715848431472 [-551223220.9725877, -0.7458073646774286] G3_edit -1.9314715848431472 IG -1.9387032224959295 (0s)
+/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_4/gen_art/gen_art_evaluation_3/.venv/lib/python3.12/site-packages/numpy/_core/fromnumeric.py:3862: RuntimeWarning: Mean of empty slice
+  return _methods._mean(a, axis=axis, dtype=dtype,
+/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_4/gen_art/gen_art_evaluation_3/.venv/lib/python3.12/site-packages/numpy/_core/_methods.py:142: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_4/gen_art/gen_art_evaluation_3/.venv/lib/python3.12/site-packages/numpy/_core/fromnumeric.py:3862: RuntimeWarning: Mean of empty slice
+  return _methods._mean(a, axis=axis, dtype=dtype,
+/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_4/gen_art/gen_art_evaluation_3/.venv/lib/python3.12/site-packages/numpy/_core/_methods.py:142: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+19:00:18|INFO   |exp8_A1|raw_primary|R: G3 -1.5401049267830689 [-2.0610094030525086, -1.0396492143634102] G3_edit -0.4077979943619363 IG -1.117369618242312 (0s)
+/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_4/gen_art/gen_art_evaluation_3/eval.py:187: RuntimeWarning: divide by zero encountered in scalar divide
+  out[..., i] = np.clip((p + sp - 1) / (se + sp - 1), 0.005, 0.995) * n[..., i]
+19:00:18|INFO   |exp8_A1|RG|R: G3 -2.82789130317203 [-4.387869662974597, -1.0178530781218385] G3_edit None IG -3.0661601386912194 (0s)
+19:00:19|INFO   |exp8_A1|PPI|R: G3 -1.177435504762192 [-2.988290088922577, 0.6718745992876918] G3_edit -0.748401567367535 IG -2.8253068863388293 (0s)
+19:00:19|INFO   |exp8_A1|archived_arch_q14|R: G3 1.5737166545632513 [0.12311329833860375, 2.4976741623746537] G3_edit 3.2136912908574304 IG -0.6687105131423019 (0s)
+19:00:19|INFO   |exp8_A1|archived_arch_lex|R: G3 -0.18694541577775614 [-0.5366845530182546, 0.10601036929292075] G3_edit 0.5817554700247187 IG -0.12659464054556474 (0s)
+19:00:19|INFO   |exp8_A1|archived_arch_m24|R: G3 7.5837386241629 [-26.44924378777766, 53.850613454076814] G3_edit None IG None (0s)
+19:00:19|INFO   |exp8_A1|raw_primary|RP: G3 -1.8726768452009084 [-2.352818176979681, -1.427404636186052] G3_edit -1.149864368215536 IG -1.746029246579419 (0s)
+19:00:19|INFO   |exp8_A1|RG|RP: G3 -3.0895998055882328 [-5.229972853002565, -1.2711016098596766] G3_edit None IG -3.3743802736594297 (0s)
+19:00:19|INFO   |exp8_A1|PPI|RP: G3 -2.615241998554567 [-3.6443236780700903, -1.705283221344064] G3_edit -3.1071484596366847 IG -4.275722125662806 (0s)
+19:00:19|INFO   |exp8_B|raw_primary|R: G3 -1.2049195812243625 [-1.7118190462802363, -0.5899413685985712] G3_edit 0.12073423267297012 IG -1.7758826928977507 (0s)
+/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_4/gen_art/gen_art_evaluation_3/eval.py:187: RuntimeWarning: divide by zero encountered in scalar divide
+  out[..., i] = np.clip((p + sp - 1) / (se + sp - 1), 0.005, 0.995) * n[..., i]
+19:00:20|INFO   |exp8_B|RG|R: G3 -1.7319080909434093 [-2.933902724019284, -0.23777214614903516] G3_edit None IG -1.5667087182085435 (0s)
+19:00:20|INFO   |exp8_B|PPI|R: G3 -0.39720363291506716 [-2.003050502484253, 0.9252071461840524] G3_edit -0.1916912142944897 IG -0.28292416744981114 (0s)
+19:00:20|INFO   |exp8_B|archived_arch_q14|R: G3 1.5651620743649493 [-0.395532590846549, 3.033386431808334] G3_edit 3.591913914534952 IG -1.9514831814134705 (0s)
+19:00:20|INFO   |exp8_B|archived_arch_lex|R: G3 -2.361747998220966 [-2.8741448427603413, -1.6905582053486228] G3_edit -1.7203713004444219 IG -3.1260327171252107 (0s)
+19:00:20|INFO   |exp8_B|archived_arch_m24|R: G3 0.03953953723552328 [-2.2783554900017604, 0.7802280142158228] G3_edit None IG -1.5978126263503838 (0s)
+19:00:20|INFO   |exp8_B|raw_primary|RP: G3 -1.2979025558929072 [-1.7496724146339149, -0.586988321988014] G3_edit -0.47283788001117544 IG -1.6842450402243736 (0s)
+19:00:21|INFO   |exp8_B|RG|RP: G3 -2.170897581475654 [-3.349489282217235, -0.48564239950222793] G3_edit None IG -1.8447735430274106 (0s)
+19:00:21|INFO   |exp8_B|PPI|RP: G3 -2.139054226273544 [-3.670640124468452, -0.8364831062197144] G3_edit -3.259519217450218 IG -2.1705270450028467 (0s)
+/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_4/gen_art/gen_art_evaluation_3/.venv/lib/python3.12/site-packages/numpy/_core/fromnumeric.py:3862: RuntimeWarning: Mean of empty slice
+  return _methods._mean(a, axis=axis, dtype=dtype,
+/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_4/gen_art/gen_art_evaluation_3/.venv/lib/python3.12/site-packages/numpy/_core/_methods.py:142: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+19:00:21|INFO   |exp9_trial_Bprime|raw_primary|R: G3 0.6235353051683181 [-42.27410763024649, 3.560602431865175] G3_edit 1.9097281748211636 IG None (0s)
+19:00:21|INFO   |exp9_trial_Bprime|archived_arch_j1|R: G3 9.330815901852677 [-37102832.07458876, 611809893.311309] G3_edit 10.487643739347691 IG -5.714925177438933 (0s)
+19:00:21|INFO   |exp9_trial_Bprime|archived_arch_j2|R: G3 4747982.892206352 [-337025847.2527222, 296754356.5716017] G3_edit 4747982.138561174 IG 6104921.862727877 (0s)
+19:00:21|INFO   |exp9_trial_Bprime|archived_arch_lex|R: G3 54.483570776073485 [-60.091141246827576, 108.74713116720955] G3_edit 53.35434385158577 IG -7.653554180651274 (0s)
+/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_4/gen_art/gen_art_evaluation_3/.venv/lib/python3.12/site-packages/numpy/_core/fromnumeric.py:3862: RuntimeWarning: Mean of empty slice
+  return _methods._mean(a, axis=axis, dtype=dtype,
+/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_4/gen_art/gen_art_evaluation_3/.venv/lib/python3.12/site-packages/numpy/_core/_methods.py:142: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+19:00:22|INFO   |exp9_trial_Bprime|raw_primary|RP: G3 0.6235353051683181 [-42.27410763024649, 3.560602431865175] G3_edit 1.7321476771710116 IG None (0s)
+19:00:22|INFO   |exp10|raw_primary|R: G3_op -2.415189115571431 [-4.222954101235328, -1.3953403252688945]
+/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_4/gen_art/gen_art_evaluation_3/eval.py:187: RuntimeWarning: divide by zero encountered in scalar divide
+  out[..., i] = np.clip((p + sp - 1) / (se + sp - 1), 0.005, 0.995) * n[..., i]
+/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_4/gen_art/gen_art_evaluation_3/eval.py:187: RuntimeWarning: invalid value encountered in scalar divide
+  out[..., i] = np.clip((p + sp - 1) / (se + sp - 1), 0.005, 0.995) * n[..., i]
+19:00:22|INFO   |exp10|RG|R: G3_op -2.665103552996559 [-4.756900461431223, -1.2940562928267647]
+19:00:22|INFO   |exp10|archived_lex|R: G3_op -2.3053519378907783 [-2.9430134385233186, -1.723836318465414]
+19:00:22|INFO   |exp10|raw_primary|RP: G3_op -2.2910507988123863 [-4.096580273427474, -1.2997245793561931]
+19:00:22|INFO   |exp10|RG|RP: G3_op -3.4918521148672887 [-4.930490954726353, 0.4470945262619308]
+/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_4/gen_art/gen_art_evaluation_3/.venv/lib/python3.12/site-packages/numpy/_core/fromnumeric.py:3862: RuntimeWarning: Mean of empty slice
+  return _methods._mean(a, axis=axis, dtype=dtype,
+/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_4/gen_art/gen_art_evaluation_3/.venv/lib/python3.12/site-packages/numpy/_core/_methods.py:142: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+19:00:22|ERROR  |An error has been caught in function '<module>', process 'MainProcess' (43596), thread 'MainThread' (134575250262912):
+Traceback (most recent call last):
+
+> File "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_4/gen_art/gen_art_evaluation_3/eval.py", line 893, in <module>
+    main()
+    └ <function main at 0x7a6438763ce0>
+
+  File "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_4/gen_art/gen_art_evaluation_3/eval.py", line 874, in main
+    riv = rivals(res, df, F)
+          │      │    │   └ {'exp9_lambda':       source  ... arch_q14_RP
+          │      │    │     0       exp9  ...         NaN
+          │      │    │     1       exp9  ...         NaN
+          │      │    │     2       exp9  ...  ...
+          │      │    └       source                                     key  ... arch_j2_RP arch_q14_RP
+          │      │      0       exp9   exp9|gemma_it|orig|en_bt|trai...
+          │      └ {'exp9_lambda|raw_primary|R': {'n_items': 300, 'B': 200, 'steps': {'gemma_it': [0.0, 0.25, 0.5, 0.75, 1.0, 1.25, 1.5, 1.75, 2...
+          └ <function rivals at 0x7a6438763240>
+
+  File "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_4/gen_art/gen_art_evaluation_3/eval.py", line 342, in rivals
+    ct = curve_stats(Curve(t, f"ttj_{coding}"), B=B_COR, **kw)
+         │           │     │         │            │        └ {'fitter': 'exp9', 'fit_include_orig': True, 'rule_min': 4, 'seed': 20260926, 'm': 0.675}
+         │           │     │         │            └ 100
+         │           │     │         └ 'R'
+         │           │     └       source  ... arch_q14_RP
+         │           │       139     exp9  ...         NaN
+         │           │       10637   exp9  ...         NaN
+         │           │       10638   exp9  ...         NaN
+         │           │       10642...
+         │           └ <class 'engine.Curve'>
+         └ <function curve_stats at 0x7a64388a4d60>
+
+  File "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_4/gen_art/gen_art_evaluation_3/src/engine.py", line 148, in curve_stats
+    pt = one(None, corr)
+         │         └ None
+         └ <function curve_stats.<locals>.one at 0x7a643870b1a0>
+
+  File "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_4/gen_art/gen_art_evaluation_3/src/engine.py", line 138, in one
+    lo = max(xr[mm].min() for mm in MODELS)
+             │  │             │     └ ('gemma_it', 'gams3_it')
+             │  │             └ 'gams3_it'
+             │  └ 'gams3_it'
+             └ {'gemma_it': array([], dtype=float64), 'gams3_it': array([], dtype=float64)}
+
+  File "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_4/gen_art/gen_art_evaluation_3/src/engine.py", line 138, in <genexpr>
+    lo = max(xr[mm].min() for mm in MODELS)
+             │  │             │     └ ('gemma_it', 'gams3_it')
+             │  │             └ 'gemma_it'
+             │  └ 'gemma_it'
+             └ {'gemma_it': array([], dtype=float64), 'gams3_it': array([], dtype=float64)}
+
+  File "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_4/gen_art/gen_art_evaluation_3/.venv/lib/python3.12/site-packages/numpy/_core/_methods.py", line 45, in _amin
+    return umr_minimum(a, axis, None, out, keepdims, initial, where)
+           │           │  │           │    │         │        └ True
+           │           │  │           │    │         └ <no value>
+           │           │  │           │    └ False
+           │           │  │           └ None
+           │           │  └ None
+           │           └ array([], dtype=float64)
+           └ <built-in method reduce of numpy.ufunc object at 0x7a653dacca40>
+
+ValueError: zero-size array to reduction operation minimum which has no identity
+Traceback (most recent call last):
+  File "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_4/gen_art/gen_art_evaluation_3/eval.py", line 893, in <module>
+    main()
+  File "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_4/gen_art/gen_art_evaluation_3/.venv/lib/python3.12/site-packages/loguru/_logger.py", line 1297, in catch_wrapper
+    return function(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_4/gen_art/gen_art_evaluation_3/eval.py", line 874, in main
+    riv = rivals(res, df, F)
+          ^^^^^^^^^^^^^^^^^^
+  File "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_4/gen_art/gen_art_evaluation_3/eval.py", line 342, in rivals
+    ct = curve_stats(Curve(t, f"ttj_{coding}"), B=B_COR, **kw)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_4/gen_art/gen_art_evaluation_3/src/engine.py", line 148, in curve_stats
+    pt = one(None, corr)
+         ^^^^^^^^^^^^^^^
+  File "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_4/gen_art/gen_art_evaluation_3/src/engine.py", line 138, in one
+    lo = max(xr[mm].min() for mm in MODELS)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_4/gen_art/gen_art_evaluation_3/src/engine.py", line 138, in <genexpr>
+    lo = max(xr[mm].min() for mm in MODELS)
+             ^^^^^^^^^^^^
+  File "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_4/gen_art/gen_art_evaluation_3/.venv/lib/python3.12/site-packages/numpy/_core/_methods.py", line 45, in _amin
+    return umr_minimum(a, axis, None, out, keepdims, initial, where)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: zero-size array to reduction operation minimum which has no identity

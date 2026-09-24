@@ -1,0 +1,35 @@
+18:57:55|INFO   |TTJ frame 5800 rows (5780 to do); round-trip 0 to do
+/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_4/gen_art/gen_art_evaluation_3/.venv/lib/python3.12/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+`torch_dtype` is deprecated! Use `dtype` instead!
+19:00:53|INFO   |NLLB slv_Latn->eng_Latn: 400 texts / 1267 segments in 54s
+19:00:53|INFO   |sl: 400/5780
+19:01:45|INFO   |NLLB slv_Latn->eng_Latn: 400 texts / 1665 segments in 51s
+19:01:45|INFO   |sl: 800/5780
+19:02:29|INFO   |NLLB slv_Latn->eng_Latn: 400 texts / 1456 segments in 44s
+19:02:29|INFO   |sl: 1200/5780
+19:03:21|INFO   |NLLB slv_Latn->eng_Latn: 400 texts / 1561 segments in 52s
+19:03:21|INFO   |sl: 1600/5780
+19:04:17|INFO   |NLLB slv_Latn->eng_Latn: 400 texts / 1429 segments in 57s
+19:04:17|INFO   |sl: 2000/5780
+19:05:06|INFO   |NLLB slv_Latn->eng_Latn: 400 texts / 1345 segments in 48s
+19:05:06|INFO   |sl: 2400/5780
+19:05:51|INFO   |NLLB slv_Latn->eng_Latn: 400 texts / 1363 segments in 45s
+19:05:51|INFO   |sl: 2800/5780
+19:06:55|INFO   |NLLB slv_Latn->eng_Latn: 400 texts / 1661 segments in 64s
+19:06:55|INFO   |sl: 3200/5780
+19:07:42|INFO   |NLLB slv_Latn->eng_Latn: 400 texts / 1395 segments in 48s
+19:07:42|INFO   |sl: 3600/5780
+19:08:38|INFO   |NLLB slv_Latn->eng_Latn: 400 texts / 1766 segments in 55s
+19:08:38|INFO   |sl: 4000/5780
+19:09:27|INFO   |NLLB slv_Latn->eng_Latn: 400 texts / 1598 segments in 50s
+19:09:27|INFO   |sl: 4400/5780
+19:10:28|INFO   |NLLB slv_Latn->eng_Latn: 400 texts / 1685 segments in 60s
+19:10:28|INFO   |sl: 4800/5780
+19:11:23|INFO   |NLLB slv_Latn->eng_Latn: 400 texts / 1610 segments in 56s
+19:11:23|INFO   |sl: 5200/5780
+19:12:23|INFO   |NLLB slv_Latn->eng_Latn: 400 texts / 1483 segments in 59s
+19:12:23|INFO   |sl: 5600/5780
+19:12:49|INFO   |NLLB slv_Latn->eng_Latn: 180 texts / 675 segments in 26s
+19:12:49|INFO   |sl: 5780/5780
+19:12:49|INFO   |NLLB done
