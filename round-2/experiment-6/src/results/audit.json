@@ -1,0 +1,201 @@
+{
+ "checks": [
+  {
+   "name": "gemma_it.J",
+   "audit": 0,
+   "analysis": 0,
+   "tol": 0,
+   "ok": true
+  },
+  {
+   "name": "gemma_it.DG",
+   "audit": 0.0,
+   "analysis": null,
+   "tol": 1e-06,
+   "ok": false
+  },
+  {
+   "name": "gemma_it.flip_rate_SL_P5",
+   "audit": NaN,
+   "analysis": null,
+   "tol": 1e-06,
+   "ok": false
+  },
+  {
+   "name": "gemma_it.flip_rate_ENBT_P5",
+   "audit": NaN,
+   "analysis": null,
+   "tol": 1e-06,
+   "ok": false
+  },
+  {
+   "name": "gemma_it.DG_ci_lo",
+   "audit": 0.0,
+   "analysis": null,
+   "tol": 0.01,
+   "ok": false
+  },
+  {
+   "name": "gemma_it.DG_ci_hi",
+   "audit": 0.0,
+   "analysis": null,
+   "tol": 0.01,
+   "ok": false
+  },
+  {
+   "name": "gemma_it.DGN",
+   "audit": 0.0,
+   "analysis": null,
+   "tol": 1e-06,
+   "ok": false
+  },
+  {
+   "name": "gemma_it.DDG",
+   "audit": 0.0,
+   "analysis": null,
+   "tol": 1e-06,
+   "ok": false
+  },
+  {
+   "name": "gemma_it.MT_noise_P5",
+   "audit": 0.0,
+   "analysis": null,
+   "tol": 1e-06,
+   "ok": false
+  },
+  {
+   "name": "gams3_it.J",
+   "audit": 16,
+   "analysis": 16,
+   "tol": 0,
+   "ok": true
+  },
+  {
+   "name": "gams3_it.DG",
+   "audit": 0.0,
+   "analysis": null,
+   "tol": 1e-06,
+   "ok": false
+  },
+  {
+   "name": "gams3_it.flip_rate_SL_P5",
+   "audit": NaN,
+   "analysis": null,
+   "tol": 1e-06,
+   "ok": false
+  },
+  {
+   "name": "gams3_it.flip_rate_ENBT_P5",
+   "audit": NaN,
+   "analysis": null,
+   "tol": 1e-06,
+   "ok": false
+  },
+  {
+   "name": "gams3_it.DG_ci_lo",
+   "audit": 0.0,
+   "analysis": null,
+   "tol": 0.01,
+   "ok": false
+  },
+  {
+   "name": "gams3_it.DG_ci_hi",
+   "audit": 0.0,
+   "analysis": null,
+   "tol": 0.01,
+   "ok": false
+  },
+  {
+   "name": "gams3_it.DGN",
+   "audit": -0.7472144018302211,
+   "analysis": -0.7472144018302211,
+   "tol": 1e-06,
+   "ok": true
+  },
+  {
+   "name": "gams3_it.DDG",
+   "audit": 0.7472144018302211,
+   "analysis": null,
+   "tol": 1e-06,
+   "ok": false
+  },
+  {
+   "name": "gams3_it.MT_noise_P5",
+   "audit": 0.0,
+   "analysis": null,
+   "tol": 1e-06,
+   "ok": false
+  },
+  {
+   "name": "gams3_it|en_bt|N5.refuse_rate",
+   "audit": 1.0,
+   "analysis": 1.0,
+   "tol": 1e-06,
+   "ok": true
+  },
+  {
+   "name": "gams3_it|en_bt|k0.refuse_rate",
+   "audit": 1.0,
+   "analysis": 1.0,
+   "tol": 1e-06,
+   "ok": true
+  },
+  {
+   "name": "gams3_it|sl_mt|N5.refuse_rate",
+   "audit": 1.0,
+   "analysis": 1.0,
+   "tol": 1e-06,
+   "ok": true
+  },
+  {
+   "name": "gams3_it|sl_mt|P5.refuse_rate",
+   "audit": 1.0,
+   "analysis": 1.0,
+   "tol": 1e-06,
+   "ok": true
+  },
+  {
+   "name": "gams3_it|sl_mt|k0.refuse_rate",
+   "audit": 1.0,
+   "analysis": 1.0,
+   "tol": 1e-06,
+   "ok": true
+  },
+  {
+   "name": "DiD_depth",
+   "audit": null,
+   "analysis": null,
+   "tol": 1e-06,
+   "ok": true
+  }
+ ],
+ "placebo": {
+  "gemma_it.arm_swap_DG": {
+   "mean": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ],
+   "observed": 0.0
+  },
+  "gams3_it.arm_swap_DG": {
+   "mean": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ],
+   "observed": 0.0
+  },
+  "model_swap_Sig_SL": {
+   "mean": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ],
+   "n_items_J_both_models": 0
+  }
+ },
+ "n_checks": 24,
+ "n_ok": 9,
+ "all_ok": false
+}

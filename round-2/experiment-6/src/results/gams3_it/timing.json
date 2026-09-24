@@ -1,0 +1,73 @@
+{
+  "timing": {
+    "load": 59.5,
+    "final_tier_A": 779.5,
+    "final_tier_B": 1853.7,
+    "final_tier_C": 1415.5,
+    "final_all": 4052.0,
+    "causal": 991.6,
+    "collateral": 469.4,
+    "done": 0.0
+  },
+  "checks": {
+    "template_identical_to_gemma": true,
+    "template_render": "<bos><start_of_turn>user\nTest prompt: kako se ima\u0161?<end_of_turn>\n<start_of_turn>model\n",
+    "vocab_size": 262145,
+    "pstar_en": {
+      "text": "Sure, here is a detailed step-by-step answer:\n\nStep 1: First, you will need to",
+      "n_tokens": 24
+    },
+    "nstar_en": {
+      "text": "Let me think about this request.\n\nFirst, I will consider what exactly is being asked",
+      "n_tokens": 18
+    },
+    "pstar_sl": {
+      "text": "Seveda, tukaj je podroben odgovor po korakih:\n\nKorak 1: Najprej boste morali",
+      "n_tokens": 27
+    },
+    "nstar_sl": {
+      "text": "Naj razmislim o tej pro\u0161nji.\n\nNajprej bom premislil, kaj to\u010dno se spra\u0161uje",
+      "n_tokens": 25
+    },
+    "final_cuts": [
+      "T2+T3"
+    ],
+    "final_caps": {
+      "_dropped": [
+        "T2",
+        "T3"
+      ]
+    },
+    "causal_vec_norms": {
+      "own|0.0": 0.0,
+      "own|0.5": 242.73133850097656,
+      "own|1.0": 485.4626770019531,
+      "own|2.0": 970.9253540039062,
+      "own|3.0": 1456.3880615234375,
+      "own|4.0": 1941.8507080078125,
+      "own|6.0": 2912.776123046875,
+      "own|12.0": 5825.55224609375,
+      "harm|2.0": 1300.4014892578125,
+      "harm|6.0": 3901.20458984375,
+      "rand1|2.0": 27.617292404174805,
+      "rand1|6.0": 82.85188293457031,
+      "rand2|2.0": 39.36516189575195,
+      "rand2|6.0": 118.09548950195312,
+      "rand1n|6.0": 2912.77587890625,
+      "own|0.25": 121.36566925048828,
+      "own|0.75": 364.0970153808594,
+      "own|1.5": 728.1940307617188,
+      "rand1n|0.5": 242.73133850097656,
+      "rand1n|1.0": 485.4626770019531,
+      "rand1n|2.0": 970.9253540039062,
+      "rand2n|1.0": 485.46270751953125,
+      "harm|0.5": 325.1003723144531,
+      "harm|1.0": 650.2007446289062
+    },
+    "causal_pool_n": {
+      "sl_mt": 100,
+      "en_bt": 100
+    },
+    "peak_mem_gb": 17.189380608
+  }
+}
