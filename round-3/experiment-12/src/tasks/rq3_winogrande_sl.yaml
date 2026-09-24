@@ -1,0 +1,19 @@
+task: rq3_winogrande_sl
+dataset_path: json
+dataset_kwargs:
+  data_files:
+    test: /ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_3/gen_art/gen_art_experiment_12/data/util/winogrande_sl.jsonl
+test_split: test
+output_type: multiple_choice
+doc_to_text: !function utils.wino_text
+doc_to_target: !function utils.wino_target
+doc_to_choice: !function utils.wino_choice
+metric_list:
+  - metric: acc
+    aggregation: mean
+    higher_is_better: true
+  - metric: acc_norm
+    aggregation: mean
+    higher_is_better: true
+metadata:
+  version: 1.0

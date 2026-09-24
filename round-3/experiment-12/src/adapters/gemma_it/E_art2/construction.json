@@ -1,0 +1,11 @@
+{
+  "kind": "art2_selected",
+  "lambda": 1.0,
+  "adapter_dir": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_3/gen_art/gen_art_experiment_9/selected/gemma_it/adapter",
+  "selection_json": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_3/gen_art/gen_art_experiment_9/selected/gemma_it/selection.json",
+  "root": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_3/gen_art/gen_art_experiment_9",
+  "mtime": 1790233091.0,
+  "sha256": "9714d8a4b8dc6d52e4f92f41dddceeeef5bc9c1c20145e02d955bbfbbcdec547",
+  "sum_lora_B_norm": 45.673,
+  "n_nonzero_B": 46
+}

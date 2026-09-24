@@ -1,0 +1,300 @@
+{"model": "gams3_it", "cond": "E_iter1", "task": "arc_challenge", "lang": "en", "item_id": "arc_challenge:Mercury_SC_414271", "lls": [-13.078954696655273, -18.905229568481445, -13.512737274169922, -19.273521423339844], "pred": 0, "gold": 2}
+{"model": "gams3_it", "cond": "E_iter1", "task": "arc_challenge", "lang": "en", "item_id": "arc_challenge:MEA_2013_8_8", "lls": [-10.356048583984375, -5.731049060821533, -9.856048583984375, -2.3560492992401123], "pred": 3, "gold": 3}
+{"model": "gams3_it", "cond": "E_iter1", "task": "arc_challenge", "lang": "en", "item_id": "arc_challenge:Mercury_7064260", "lls": [-22.785507202148438, -11.372882843017578, -19.505329132080078, -17.196258544921875], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "arc_challenge", "lang": "en", "item_id": "arc_challenge:Mercury_412780", "lls": [-11.497488021850586, -15.096504211425781, -24.908077239990234, -29.746667861938477], "pred": 0, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "arc_challenge", "lang": "en", "item_id": "arc_challenge:Mercury_SC_416177", "lls": [-25.441104888916016, -17.343156814575195, -17.37652015686035, -13.688507080078125], "pred": 3, "gold": 2}
+{"model": "gams3_it", "cond": "E_iter1", "task": "arc_challenge", "lang": "en", "item_id": "arc_challenge:Mercury_404272", "lls": [-23.97132110595703, -33.7125244140625, -31.148313522338867, -20.967483520507812], "pred": 3, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "arc_challenge", "lang": "en", "item_id": "arc_challenge:AKDE&ED_2008_8_48", "lls": [-17.046276092529297, -17.535354614257812, -18.810598373413086, -22.898250579833984], "pred": 0, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "arc_challenge", "lang": "en", "item_id": "arc_challenge:Mercury_SC_407138", "lls": [-16.434284210205078, -17.6143798828125, -19.367748260498047, -15.482196807861328], "pred": 3, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "arc_challenge", "lang": "en", "item_id": "arc_challenge:Mercury_7026355", "lls": [-15.01496696472168, -39.13731002807617, -31.819656372070312, -27.84092140197754], "pred": 0, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "arc_challenge", "lang": "en", "item_id": "arc_challenge:Mercury_401728", "lls": [-33.123130798339844, -24.000747680664062, -26.340435028076172, -16.690916061401367], "pred": 3, "gold": 3}
+{"model": "gams3_it", "cond": "E_iter1", "task": "arc_challenge", "lang": "en", "item_id": "arc_challenge:Mercury_7016800", "lls": [-18.910625457763672, -30.530452728271484, -10.659463882446289, -18.046524047851562], "pred": 2, "gold": 3}
+{"model": "gams3_it", "cond": "E_iter1", "task": "arc_challenge", "lang": "en", "item_id": "arc_challenge:NYSEDREGENTS_2008_8_42", "lls": [-18.033287048339844, -23.591856002807617, -13.110505104064941, -23.020401000976562], "pred": 2, "gold": 2}
+{"model": "gams3_it", "cond": "E_iter1", "task": "arc_challenge", "lang": "en", "item_id": "arc_challenge:MCAS_1998_4_12", "lls": [-26.416240692138672, -27.34897804260254, -20.475549697875977, -33.37541961669922], "pred": 2, "gold": 2}
+{"model": "gams3_it", "cond": "E_iter1", "task": "arc_challenge", "lang": "en", "item_id": "arc_challenge:Mercury_7132020", "lls": [-5.0472869873046875, -12.922286987304688, -8.672286987304688, -7.2972869873046875], "pred": 0, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "arc_challenge", "lang": "en", "item_id": "arc_challenge:Mercury_SC_401792", "lls": [-7.582486629486084, -6.457486629486084, -5.332486629486084, -9.582487106323242], "pred": 2, "gold": 2}
+{"model": "gams3_it", "cond": "E_iter1", "task": "arc_challenge", "lang": "en", "item_id": "arc_challenge:Mercury_7033828", "lls": [-9.901338577270508, -10.901338577270508, -7.401339054107666, -4.776339054107666], "pred": 3, "gold": 3}
+{"model": "gams3_it", "cond": "E_iter1", "task": "arc_challenge", "lang": "en", "item_id": "arc_challenge:Mercury_411224", "lls": [-8.317771911621094, -4.559537887573242, -7.905196189880371, -17.317689895629883], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "arc_challenge", "lang": "en", "item_id": "arc_challenge:MCAS_2001_8_4", "lls": [-29.108299255371094, -28.46184730529785, -24.869590759277344, -20.425737380981445], "pred": 3, "gold": 3}
+{"model": "gams3_it", "cond": "E_iter1", "task": "arc_challenge", "lang": "en", "item_id": "arc_challenge:Mercury_7038028", "lls": [-11.097870826721191, -20.678144454956055, -22.383180618286133, -25.70574188232422], "pred": 0, "gold": 2}
+{"model": "gams3_it", "cond": "E_iter1", "task": "arc_challenge", "lang": "en", "item_id": "arc_challenge:Mercury_7249708", "lls": [-30.430830001831055, -42.469783782958984, -33.999454498291016, -31.968368530273438], "pred": 0, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "arc_challenge", "lang": "en", "item_id": "arc_challenge:Mercury_175560", "lls": [-6.617154598236084, -7.742154598236084, -4.117154598236084, -10.492155075073242], "pred": 2, "gold": 2}
+{"model": "gams3_it", "cond": "E_iter1", "task": "arc_challenge", "lang": "en", "item_id": "arc_challenge:NYSEDREGENTS_2012_4_9", "lls": [-11.9697904586792, -17.683853149414062, -13.377443313598633, -7.443955421447754], "pred": 3, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "arc_challenge", "lang": "en", "item_id": "arc_challenge:Mercury_7013965", "lls": [-22.12601089477539, -28.047576904296875, -35.36309814453125, -28.956138610839844], "pred": 0, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "arc_challenge", "lang": "en", "item_id": "arc_challenge:MCAS_2013_8_29416", "lls": [-11.766168594360352, -8.267172813415527, -13.723156929016113, -12.623428344726562], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "arc_challenge", "lang": "en", "item_id": "arc_challenge:NYSEDREGENTS_2015_4_7", "lls": [-0.8924863934516907, -2.892486333847046, -4.370265960693359], "pred": 0, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "arc_challenge", "lang": "en", "item_id": "arc_challenge:Mercury_7093048", "lls": [-15.286016464233398, -12.819757461547852, -12.853595733642578, -19.169523239135742], "pred": 1, "gold": 2}
+{"model": "gams3_it", "cond": "E_iter1", "task": "arc_challenge", "lang": "en", "item_id": "arc_challenge:Mercury_407019", "lls": [-16.875682830810547, -33.792083740234375, -25.024154663085938, -15.007280349731445], "pred": 3, "gold": 3}
+{"model": "gams3_it", "cond": "E_iter1", "task": "arc_challenge", "lang": "en", "item_id": "arc_challenge:Mercury_7245840", "lls": [-8.079843521118164, -10.036188125610352, -13.600948333740234, -18.788196563720703], "pred": 0, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "arc_challenge", "lang": "en", "item_id": "arc_challenge:LEAP_2007_8_10417", "lls": [-18.417987823486328, -22.05234146118164, -21.76262664794922, -33.960693359375], "pred": 0, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "arc_challenge", "lang": "en", "item_id": "arc_challenge:Mercury_SC_400404", "lls": [-17.02858543395996, -33.39912033081055, -24.136959075927734, -29.34640884399414], "pred": 0, "gold": 3}
+{"model": "gams3_it", "cond": "E_iter1", "task": "arc_challenge", "lang": "en", "item_id": "arc_challenge:Mercury_7271670", "lls": [-21.304553985595703, -23.424480438232422, -25.08559226989746, -24.761165618896484], "pred": 0, "gold": 3}
+{"model": "gams3_it", "cond": "E_iter1", "task": "arc_challenge", "lang": "en", "item_id": "arc_challenge:Mercury_SC_415473", "lls": [-5.855024337768555, -4.605024337768555, -2.480024576187134, -4.739875793457031], "pred": 2, "gold": 2}
+{"model": "gams3_it", "cond": "E_iter1", "task": "arc_challenge", "lang": "en", "item_id": "arc_challenge:AKDE&ED_2012_8_6", "lls": [-11.680923461914062, -18.940683364868164, -15.429539680480957, -14.861603736877441], "pred": 0, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "arc_challenge", "lang": "en", "item_id": "arc_challenge:TAKS_2009_5_26", "lls": [-10.915517807006836, -16.05703353881836, -11.623435020446777, -8.915517807006836], "pred": 3, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "arc_challenge", "lang": "en", "item_id": "arc_challenge:Mercury_7106698", "lls": [-5.506823539733887, -13.756823539733887, -9.012524604797363, -7.506823539733887], "pred": 0, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "arc_challenge", "lang": "en", "item_id": "arc_challenge:Mercury_411071", "lls": [-10.567560195922852, -1.8194910287857056, -10.261571884155273, -11.020671844482422], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "arc_challenge", "lang": "en", "item_id": "arc_challenge:MCAS_2004_5_11", "lls": [-15.176220893859863, -22.77159881591797, -32.13520431518555, -11.442405700683594], "pred": 3, "gold": 3}
+{"model": "gams3_it", "cond": "E_iter1", "task": "arc_challenge", "lang": "en", "item_id": "arc_challenge:Mercury_404820", "lls": [-3.700392246246338, -5.700392246246338, -8.011457443237305, -2.570366144180298], "pred": 3, "gold": 3}
+{"model": "gams3_it", "cond": "E_iter1", "task": "arc_challenge", "lang": "en", "item_id": "arc_challenge:NYSEDREGENTS_2013_4_1", "lls": [-24.937122344970703, -22.46428680419922, -19.798295974731445, -29.487306594848633], "pred": 2, "gold": 2}
+{"model": "gams3_it", "cond": "E_iter1", "task": "arc_challenge", "lang": "en", "item_id": "arc_challenge:NYSEDREGENTS_2008_4_28", "lls": [-11.08299446105957, -30.270368576049805, -17.71619415283203, -13.835628509521484], "pred": 0, "gold": 2}
+{"model": "gams3_it", "cond": "E_iter1", "task": "arc_challenge", "lang": "en", "item_id": "arc_challenge:Mercury_SC_400392", "lls": [-24.606632232666016, -24.172222137451172, -28.574363708496094, -30.499919891357422], "pred": 1, "gold": 2}
+{"model": "gams3_it", "cond": "E_iter1", "task": "arc_challenge", "lang": "en", "item_id": "arc_challenge:MDSA_2009_5_20", "lls": [-23.806333541870117, -27.224563598632812, -20.166786193847656, -34.35185241699219], "pred": 2, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "arc_challenge", "lang": "en", "item_id": "arc_challenge:NYSEDREGENTS_2012_4_1", "lls": [-14.289377212524414, -14.425424575805664, -15.628650665283203, -12.874603271484375], "pred": 3, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "arc_challenge", "lang": "en", "item_id": "arc_challenge:Mercury_184363", "lls": [-21.785091400146484, -23.255475997924805, -44.35796356201172, -23.200746536254883], "pred": 0, "gold": 3}
+{"model": "gams3_it", "cond": "E_iter1", "task": "arc_challenge", "lang": "en", "item_id": "arc_challenge:Mercury_7106960", "lls": [-3.12246036529541, -11.37246036529541, -8.62246036529541, -9.24746036529541], "pred": 0, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "arc_challenge", "lang": "en", "item_id": "arc_challenge:Mercury_7228358", "lls": [-29.312362670898438, -17.95195198059082, -29.302112579345703, -13.02663803100586], "pred": 3, "gold": 3}
+{"model": "gams3_it", "cond": "E_iter1", "task": "arc_challenge", "lang": "en", "item_id": "arc_challenge:Mercury_7216965", "lls": [-8.420309066772461, -18.578414916992188, -4.456363201141357, -16.453414916992188], "pred": 2, "gold": 2}
+{"model": "gams3_it", "cond": "E_iter1", "task": "arc_challenge", "lang": "en", "item_id": "arc_challenge:Mercury_7173583", "lls": [-11.124035835266113, -17.058414459228516, -24.651769638061523, -24.46060562133789], "pred": 0, "gold": 2}
+{"model": "gams3_it", "cond": "E_iter1", "task": "arc_challenge", "lang": "en", "item_id": "arc_challenge:Mercury_7015995", "lls": [-7.085139274597168, -3.585139036178589, -7.335139274597168, -10.710139274597168], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "arc_challenge", "lang": "en", "item_id": "arc_challenge:Mercury_7270165", "lls": [-19.24697494506836, -18.47861099243164, -9.654422760009766, -18.20688247680664], "pred": 2, "gold": 2}
+{"model": "gams3_it", "cond": "E_iter1", "task": "boolq", "lang": "sl", "item_id": "boolq:1370", "lls": [-5.410889625549316, -5.660889625549316], "pred": 0, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "boolq", "lang": "sl", "item_id": "boolq:1057", "lls": [-6.1891679763793945, -6.8141679763793945], "pred": 0, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "boolq", "lang": "sl", "item_id": "boolq:1018", "lls": [-3.4970898628234863, -1.4970899820327759], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "boolq", "lang": "sl", "item_id": "boolq:1079", "lls": [-6.796567916870117, -4.546567916870117], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "boolq", "lang": "sl", "item_id": "boolq:455", "lls": [-5.470488548278809, -6.595488548278809], "pred": 0, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "boolq", "lang": "sl", "item_id": "boolq:894", "lls": [-5.372771263122559, -8.122771263122559], "pred": 0, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "boolq", "lang": "sl", "item_id": "boolq:2170", "lls": [-6.8771891593933105, -10.627189636230469], "pred": 0, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "boolq", "lang": "sl", "item_id": "boolq:2125", "lls": [-5.2989020347595215, -6.2989020347595215], "pred": 0, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "boolq", "lang": "sl", "item_id": "boolq:802", "lls": [-4.45058536529541, -1.575585126876831], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "boolq", "lang": "sl", "item_id": "boolq:1738", "lls": [-4.322259902954102, -7.697259902954102], "pred": 0, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "boolq", "lang": "sl", "item_id": "boolq:1384", "lls": [-4.436702251434326, -5.811702251434326], "pred": 0, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "boolq", "lang": "sl", "item_id": "boolq:1606", "lls": [-7.182900905609131, -4.807900905609131], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "boolq", "lang": "sl", "item_id": "boolq:1486", "lls": [-5.546978950500488, -5.921978950500488], "pred": 0, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "boolq", "lang": "sl", "item_id": "boolq:850", "lls": [-5.623068332672119, -4.748068332672119], "pred": 1, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "boolq", "lang": "sl", "item_id": "boolq:2334", "lls": [-5.204658508300781, -9.329658508300781], "pred": 0, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "boolq", "lang": "sl", "item_id": "boolq:3045", "lls": [-4.693312644958496, -7.318312644958496], "pred": 0, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "boolq", "lang": "sl", "item_id": "boolq:2265", "lls": [-5.114765644073486, -8.364766120910645], "pred": 0, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "boolq", "lang": "sl", "item_id": "boolq:2840", "lls": [-5.275100231170654, -5.275100231170654], "pred": 0, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "boolq", "lang": "sl", "item_id": "boolq:2769", "lls": [-5.644687175750732, -5.769687175750732], "pred": 0, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "boolq", "lang": "sl", "item_id": "boolq:2724", "lls": [-6.149277687072754, -6.774277687072754], "pred": 0, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "boolq", "lang": "sl", "item_id": "boolq:979", "lls": [-4.67165994644165, -7.92165994644165], "pred": 0, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "boolq", "lang": "sl", "item_id": "boolq:284", "lls": [-6.4115447998046875, -6.7865447998046875], "pred": 0, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "boolq", "lang": "sl", "item_id": "boolq:1109", "lls": [-6.432290554046631, -5.182290554046631], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "boolq", "lang": "sl", "item_id": "boolq:812", "lls": [-12.078442573547363, -6.203442573547363], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "boolq", "lang": "sl", "item_id": "boolq:355", "lls": [-1.97035813331604, -3.59535813331604], "pred": 0, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "boolq", "lang": "sl", "item_id": "boolq:1313", "lls": [-8.04227352142334, -4.792273998260498], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "boolq", "lang": "sl", "item_id": "boolq:2613", "lls": [-5.842353343963623, -5.592353343963623], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "boolq", "lang": "sl", "item_id": "boolq:1417", "lls": [-8.755864143371582, -5.505864143371582], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "boolq", "lang": "sl", "item_id": "boolq:1733", "lls": [-8.585823059082031, -5.710823059082031], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "boolq", "lang": "sl", "item_id": "boolq:2972", "lls": [-5.639218330383301, -6.264218330383301], "pred": 0, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "boolq", "lang": "sl", "item_id": "boolq:3128", "lls": [-8.816238403320312, -5.5662384033203125], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "boolq", "lang": "sl", "item_id": "boolq:3133", "lls": [-4.628198623657227, -8.253198623657227], "pred": 0, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "boolq", "lang": "sl", "item_id": "boolq:1162", "lls": [-8.48342514038086, -5.733424663543701], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "boolq", "lang": "sl", "item_id": "boolq:347", "lls": [-10.144034385681152, -4.769033908843994], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "boolq", "lang": "sl", "item_id": "boolq:1171", "lls": [-4.667254447937012, -8.792254447937012], "pred": 0, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "boolq", "lang": "sl", "item_id": "boolq:724", "lls": [-9.430727005004883, -5.930727005004883], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "boolq", "lang": "sl", "item_id": "boolq:2954", "lls": [-7.605200290679932, -5.355200290679932], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "boolq", "lang": "sl", "item_id": "boolq:2975", "lls": [-6.902872562408447, -4.902872562408447], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "boolq", "lang": "sl", "item_id": "boolq:927", "lls": [-8.832812309265137, -5.582812309265137], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "boolq", "lang": "sl", "item_id": "boolq:2522", "lls": [-7.656300067901611, -5.656300067901611], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "boolq", "lang": "sl", "item_id": "boolq:2508", "lls": [-1.985593318939209, -2.610593318939209], "pred": 0, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "boolq", "lang": "sl", "item_id": "boolq:1031", "lls": [-6.515288352966309, -5.890288352966309], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "boolq", "lang": "sl", "item_id": "boolq:3134", "lls": [-4.149415493011475, -1.6494157314300537], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "boolq", "lang": "sl", "item_id": "boolq:839", "lls": [-4.70820426940918, -9.20820426940918], "pred": 0, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "boolq", "lang": "sl", "item_id": "boolq:3051", "lls": [-4.798344612121582, -8.548344612121582], "pred": 0, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "boolq", "lang": "sl", "item_id": "boolq:2403", "lls": [-6.676794052124023, -5.926794052124023], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "boolq", "lang": "sl", "item_id": "boolq:96", "lls": [-9.979280471801758, -5.104280471801758], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "boolq", "lang": "sl", "item_id": "boolq:2519", "lls": [-8.274752616882324, -5.899752140045166], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "boolq", "lang": "sl", "item_id": "boolq:74", "lls": [-9.056562423706055, -5.431562423706055], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "boolq", "lang": "sl", "item_id": "boolq:3263", "lls": [-3.378847122192383, -1.7538472414016724], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "hellaswag", "lang": "en", "item_id": "hellaswag:2369", "lls": [-11.245521545410156, -23.185462951660156, -23.419517517089844, -28.54421615600586], "pred": 0, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "hellaswag", "lang": "en", "item_id": "hellaswag:1031", "lls": [-63.14213562011719, -51.69738006591797, -50.7769775390625, -87.4756088256836], "pred": 2, "gold": 2}
+{"model": "gams3_it", "cond": "E_iter1", "task": "hellaswag", "lang": "en", "item_id": "hellaswag:2095", "lls": [-42.429039001464844, -31.959245681762695, -50.741817474365234, -27.5533447265625], "pred": 3, "gold": 2}
+{"model": "gams3_it", "cond": "E_iter1", "task": "hellaswag", "lang": "en", "item_id": "hellaswag:7250", "lls": [-71.31929016113281, -110.84300231933594, -85.77488708496094, -47.207008361816406], "pred": 3, "gold": 3}
+{"model": "gams3_it", "cond": "E_iter1", "task": "hellaswag", "lang": "en", "item_id": "hellaswag:3831", "lls": [-72.66181945800781, -107.4270248413086, -109.92693328857422, -105.1816635131836], "pred": 0, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "hellaswag", "lang": "en", "item_id": "hellaswag:5868", "lls": [-75.47340393066406, -68.42567443847656, -79.06169128417969, -51.098594665527344], "pred": 3, "gold": 3}
+{"model": "gams3_it", "cond": "E_iter1", "task": "hellaswag", "lang": "en", "item_id": "hellaswag:5651", "lls": [-45.90867614746094, -87.6249771118164, -118.57847595214844, -59.86180114746094], "pred": 0, "gold": 3}
+{"model": "gams3_it", "cond": "E_iter1", "task": "hellaswag", "lang": "en", "item_id": "hellaswag:6278", "lls": [-80.79930114746094, -81.73039245605469, -169.92431640625, -55.83341598510742], "pred": 3, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "hellaswag", "lang": "en", "item_id": "hellaswag:3258", "lls": [-64.20437622070312, -94.39958190917969, -55.54106140136719, -69.02432250976562], "pred": 2, "gold": 2}
+{"model": "gams3_it", "cond": "E_iter1", "task": "hellaswag", "lang": "en", "item_id": "hellaswag:2633", "lls": [-34.79986572265625, -31.578857421875, -44.653560638427734, -34.06773376464844], "pred": 1, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "hellaswag", "lang": "en", "item_id": "hellaswag:951", "lls": [-46.10255432128906, -55.20454025268555, -76.77112579345703, -40.133583068847656], "pred": 3, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "hellaswag", "lang": "en", "item_id": "hellaswag:7718", "lls": [-124.08734893798828, -133.6258544921875, -111.37610626220703, -158.34503173828125], "pred": 2, "gold": 2}
+{"model": "gams3_it", "cond": "E_iter1", "task": "hellaswag", "lang": "en", "item_id": "hellaswag:4766", "lls": [-107.65120697021484, -121.98761749267578, -178.66915893554688, -189.42066955566406], "pred": 0, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "hellaswag", "lang": "en", "item_id": "hellaswag:6577", "lls": [-83.11328125, -124.76770782470703, -134.50425720214844, -62.956199645996094], "pred": 3, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "hellaswag", "lang": "en", "item_id": "hellaswag:2984", "lls": [-118.11550903320312, -38.188377380371094, -38.880393981933594, -45.53110885620117], "pred": 1, "gold": 3}
+{"model": "gams3_it", "cond": "E_iter1", "task": "hellaswag", "lang": "en", "item_id": "hellaswag:906", "lls": [-35.83357238769531, -35.5394401550293, -46.45851135253906, -37.105106353759766], "pred": 1, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "hellaswag", "lang": "en", "item_id": "hellaswag:8811", "lls": [-151.75653076171875, -141.42083740234375, -125.60173034667969, -86.05320739746094], "pred": 3, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "hellaswag", "lang": "en", "item_id": "hellaswag:9619", "lls": [-79.38876342773438, -47.61391067504883, -157.09646606445312, -79.93421936035156], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "hellaswag", "lang": "en", "item_id": "hellaswag:437", "lls": [-23.404802322387695, -23.007293701171875, -17.212736129760742, -36.185302734375], "pred": 2, "gold": 2}
+{"model": "gams3_it", "cond": "E_iter1", "task": "hellaswag", "lang": "en", "item_id": "hellaswag:2177", "lls": [-20.64549446105957, -38.5146598815918, -51.36819076538086, -41.49114990234375], "pred": 0, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "hellaswag", "lang": "en", "item_id": "hellaswag:394", "lls": [-66.61165618896484, -41.48002624511719, -26.246780395507812, -86.66445922851562], "pred": 2, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "hellaswag", "lang": "en", "item_id": "hellaswag:9327", "lls": [-129.93045043945312, -84.22935485839844, -62.18876647949219, -97.40617370605469], "pred": 2, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "hellaswag", "lang": "en", "item_id": "hellaswag:9579", "lls": [-170.09573364257812, -55.9511833190918, -100.23450469970703, -145.15890502929688], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "hellaswag", "lang": "en", "item_id": "hellaswag:6322", "lls": [-49.49073791503906, -175.3972930908203, -100.78277587890625, -137.86688232421875], "pred": 0, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "hellaswag", "lang": "en", "item_id": "hellaswag:861", "lls": [-69.99447631835938, -42.183170318603516, -30.14154052734375, -41.7496223449707], "pred": 2, "gold": 2}
+{"model": "gams3_it", "cond": "E_iter1", "task": "hellaswag", "lang": "en", "item_id": "hellaswag:8075", "lls": [-118.55767822265625, -83.38211059570312, -109.9743423461914, -91.07571411132812], "pred": 1, "gold": 3}
+{"model": "gams3_it", "cond": "E_iter1", "task": "hellaswag", "lang": "en", "item_id": "hellaswag:7622", "lls": [-96.83122253417969, -106.8510513305664, -102.79635620117188, -105.84486389160156], "pred": 0, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "hellaswag", "lang": "en", "item_id": "hellaswag:327", "lls": [-34.33720779418945, -46.23256301879883, -38.63717269897461, -27.003849029541016], "pred": 3, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "hellaswag", "lang": "en", "item_id": "hellaswag:484", "lls": [-34.557159423828125, -23.068195343017578, -48.53661346435547, -53.28032302856445], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "hellaswag", "lang": "en", "item_id": "hellaswag:146", "lls": [-16.801712036132812, -30.92848014831543, -18.943553924560547, -9.997207641601562], "pred": 3, "gold": 3}
+{"model": "gams3_it", "cond": "E_iter1", "task": "hellaswag", "lang": "en", "item_id": "hellaswag:114", "lls": [-13.781627655029297, -32.64764404296875, -37.8984260559082, -43.49179458618164], "pred": 0, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "hellaswag", "lang": "en", "item_id": "hellaswag:6749", "lls": [-130.25070190429688, -112.92597198486328, -93.54883575439453, -108.65180969238281], "pred": 2, "gold": 2}
+{"model": "gams3_it", "cond": "E_iter1", "task": "hellaswag", "lang": "en", "item_id": "hellaswag:176", "lls": [-52.87254333496094, -94.2333984375, -47.16618728637695, -35.04936218261719], "pred": 3, "gold": 3}
+{"model": "gams3_it", "cond": "E_iter1", "task": "hellaswag", "lang": "en", "item_id": "hellaswag:9712", "lls": [-103.68486785888672, -108.4447021484375, -38.69042205810547, -96.8956298828125], "pred": 2, "gold": 2}
+{"model": "gams3_it", "cond": "E_iter1", "task": "hellaswag", "lang": "en", "item_id": "hellaswag:193", "lls": [-37.12873840332031, -13.769491195678711, -43.5839729309082, -49.73115539550781], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "hellaswag", "lang": "en", "item_id": "hellaswag:4855", "lls": [-168.46054077148438, -107.3905029296875, -69.54301452636719, -85.98200225830078], "pred": 2, "gold": 3}
+{"model": "gams3_it", "cond": "E_iter1", "task": "hellaswag", "lang": "en", "item_id": "hellaswag:5823", "lls": [-154.86148071289062, -78.99100494384766, -83.7630615234375, -104.11250305175781], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "hellaswag", "lang": "en", "item_id": "hellaswag:168", "lls": [-68.03238677978516, -25.048988342285156, -23.57597541809082, -42.830589294433594], "pred": 2, "gold": 2}
+{"model": "gams3_it", "cond": "E_iter1", "task": "hellaswag", "lang": "en", "item_id": "hellaswag:6895", "lls": [-128.74090576171875, -147.86473083496094, -138.81190490722656, -138.11376953125], "pred": 0, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "hellaswag", "lang": "en", "item_id": "hellaswag:8041", "lls": [-174.0714874267578, -143.4156951904297, -82.61354064941406, -96.31349182128906], "pred": 2, "gold": 3}
+{"model": "gams3_it", "cond": "E_iter1", "task": "hellaswag", "lang": "en", "item_id": "hellaswag:5348", "lls": [-165.23818969726562, -182.19381713867188, -61.86130905151367, -94.73184967041016], "pred": 2, "gold": 2}
+{"model": "gams3_it", "cond": "E_iter1", "task": "hellaswag", "lang": "en", "item_id": "hellaswag:1486", "lls": [-18.90906524658203, -30.235279083251953, -38.57597351074219, -34.59208297729492], "pred": 0, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "hellaswag", "lang": "en", "item_id": "hellaswag:3315", "lls": [-106.62754821777344, -160.29275512695312, -76.13890838623047, -95.54898071289062], "pred": 2, "gold": 3}
+{"model": "gams3_it", "cond": "E_iter1", "task": "hellaswag", "lang": "en", "item_id": "hellaswag:6735", "lls": [-177.75741577148438, -103.3080062866211, -139.20135498046875, -61.44624710083008], "pred": 3, "gold": 3}
+{"model": "gams3_it", "cond": "E_iter1", "task": "hellaswag", "lang": "en", "item_id": "hellaswag:7709", "lls": [-69.71014404296875, -79.13461303710938, -161.4508056640625, -84.682373046875], "pred": 0, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "hellaswag", "lang": "en", "item_id": "hellaswag:3209", "lls": [-23.516616821289062, -69.2274398803711, -75.6770248413086, -37.614723205566406], "pred": 0, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "hellaswag", "lang": "en", "item_id": "hellaswag:2618", "lls": [-28.54431915283203, -24.744291305541992, -35.72173309326172, -38.82554244995117], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "hellaswag", "lang": "en", "item_id": "hellaswag:1221", "lls": [-54.79320526123047, -28.20064926147461, -61.12311935424805, -36.18632507324219], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "hellaswag", "lang": "en", "item_id": "hellaswag:7705", "lls": [-134.1525115966797, -64.07952117919922, -204.00509643554688, -208.13095092773438], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "hellaswag", "lang": "en", "item_id": "hellaswag:3416", "lls": [-103.14430236816406, -62.11875534057617, -176.09475708007812, -105.73030853271484], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "openbookqa", "lang": "sl", "item_id": "openbookqa:7-1050", "lls": [-23.058013916015625, -49.18377685546875, -21.09187889099121, -29.705711364746094], "pred": 2, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "openbookqa", "lang": "sl", "item_id": "openbookqa:7-459", "lls": [-13.446207046508789, -3.222222089767456, -8.99221420288086, -13.886739730834961], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "openbookqa", "lang": "sl", "item_id": "openbookqa:8-403", "lls": [-18.733888626098633, -36.66004180908203, -17.17308807373047, -16.58678436279297], "pred": 3, "gold": 2}
+{"model": "gams3_it", "cond": "E_iter1", "task": "openbookqa", "lang": "sl", "item_id": "openbookqa:810", "lls": [-35.433143615722656, -32.91810607910156, -20.990291595458984, -29.428062438964844], "pred": 2, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "openbookqa", "lang": "sl", "item_id": "openbookqa:636", "lls": [-15.453892707824707, -15.067655563354492, -14.210946083068848, -12.035672187805176], "pred": 3, "gold": 2}
+{"model": "gams3_it", "cond": "E_iter1", "task": "openbookqa", "lang": "sl", "item_id": "openbookqa:9-645", "lls": [-6.614758491516113, -11.40321159362793, -16.121212005615234, -16.950321197509766], "pred": 0, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "openbookqa", "lang": "sl", "item_id": "openbookqa:158", "lls": [-9.890569686889648, -17.961721420288086, -12.205338478088379, -13.761148452758789], "pred": 0, "gold": 3}
+{"model": "gams3_it", "cond": "E_iter1", "task": "openbookqa", "lang": "sl", "item_id": "openbookqa:9-528", "lls": [-9.981202125549316, -11.927481651306152, -2.467728614807129, -8.472495079040527], "pred": 2, "gold": 2}
+{"model": "gams3_it", "cond": "E_iter1", "task": "openbookqa", "lang": "sl", "item_id": "openbookqa:9-229", "lls": [-23.02126693725586, -26.50478744506836, -31.442413330078125, -30.034774780273438], "pred": 0, "gold": 3}
+{"model": "gams3_it", "cond": "E_iter1", "task": "openbookqa", "lang": "sl", "item_id": "openbookqa:7-725", "lls": [-43.99931335449219, -35.438968658447266, -28.369495391845703, -35.64980697631836], "pred": 2, "gold": 3}
+{"model": "gams3_it", "cond": "E_iter1", "task": "openbookqa", "lang": "sl", "item_id": "openbookqa:9-894", "lls": [-26.125019073486328, -16.922348022460938, -12.58926010131836, -17.783048629760742], "pred": 2, "gold": 2}
+{"model": "gams3_it", "cond": "E_iter1", "task": "openbookqa", "lang": "sl", "item_id": "openbookqa:9-916", "lls": [-14.192898750305176, -4.134280204772949, -13.621082305908203, -11.284996032714844], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "openbookqa", "lang": "sl", "item_id": "openbookqa:9-1053", "lls": [-18.46126937866211, -20.053165435791016, -16.2961368560791, -14.163614273071289], "pred": 3, "gold": 3}
+{"model": "gams3_it", "cond": "E_iter1", "task": "openbookqa", "lang": "sl", "item_id": "openbookqa:9-163", "lls": [-16.25641632080078, -22.519983291625977, -24.84283447265625, -25.64080810546875], "pred": 0, "gold": 2}
+{"model": "gams3_it", "cond": "E_iter1", "task": "openbookqa", "lang": "sl", "item_id": "openbookqa:7-417", "lls": [-28.806411743164062, -14.442607879638672, -22.461454391479492, -16.05250358581543], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "openbookqa", "lang": "sl", "item_id": "openbookqa:9-669", "lls": [-16.476543426513672, -22.1202449798584, -15.651823043823242, -23.59527587890625], "pred": 2, "gold": 2}
+{"model": "gams3_it", "cond": "E_iter1", "task": "openbookqa", "lang": "sl", "item_id": "openbookqa:7-391", "lls": [-21.772499084472656, -22.69390106201172, -27.502960205078125, -24.081344604492188], "pred": 0, "gold": 2}
+{"model": "gams3_it", "cond": "E_iter1", "task": "openbookqa", "lang": "sl", "item_id": "openbookqa:7-1105", "lls": [-35.162384033203125, -24.040393829345703, -29.801687240600586, -19.46717071533203], "pred": 3, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "openbookqa", "lang": "sl", "item_id": "openbookqa:9-771", "lls": [-17.126628875732422, -16.410499572753906, -21.811634063720703, -20.6459903717041], "pred": 1, "gold": 3}
+{"model": "gams3_it", "cond": "E_iter1", "task": "openbookqa", "lang": "sl", "item_id": "openbookqa:948", "lls": [-38.176597595214844, -48.12944793701172, -24.164222717285156, -50.815521240234375], "pred": 2, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "openbookqa", "lang": "sl", "item_id": "openbookqa:9-674", "lls": [-50.88618087768555, -23.36153221130371, -28.449249267578125, -32.8967170715332], "pred": 1, "gold": 2}
+{"model": "gams3_it", "cond": "E_iter1", "task": "openbookqa", "lang": "sl", "item_id": "openbookqa:785", "lls": [-39.17250061035156, -37.11125183105469, -30.524181365966797, -17.030723571777344], "pred": 3, "gold": 3}
+{"model": "gams3_it", "cond": "E_iter1", "task": "openbookqa", "lang": "sl", "item_id": "openbookqa:7-435", "lls": [-12.928671836853027, -12.947918891906738, -10.543477058410645, -12.635882377624512], "pred": 2, "gold": 2}
+{"model": "gams3_it", "cond": "E_iter1", "task": "openbookqa", "lang": "sl", "item_id": "openbookqa:9-24", "lls": [-23.06511116027832, -22.98655891418457, -33.968509674072266, -26.049392700195312], "pred": 1, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "openbookqa", "lang": "sl", "item_id": "openbookqa:9-692", "lls": [-14.479628562927246, -10.904394149780273, -14.66086196899414, -19.229888916015625], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "openbookqa", "lang": "sl", "item_id": "openbookqa:7-93", "lls": [-23.750438690185547, -15.581327438354492, -17.527847290039062, -25.74036407470703], "pred": 1, "gold": 2}
+{"model": "gams3_it", "cond": "E_iter1", "task": "openbookqa", "lang": "sl", "item_id": "openbookqa:1272", "lls": [-17.59212303161621, -35.27503204345703, -39.20146179199219, -27.8344783782959], "pred": 0, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "openbookqa", "lang": "sl", "item_id": "openbookqa:8-28", "lls": [-25.4522705078125, -20.61986541748047, -31.068471908569336, -18.579078674316406], "pred": 3, "gold": 3}
+{"model": "gams3_it", "cond": "E_iter1", "task": "openbookqa", "lang": "sl", "item_id": "openbookqa:8-378", "lls": [-16.25969696044922, -19.72820281982422, -16.594810485839844, -10.074094772338867], "pred": 3, "gold": 3}
+{"model": "gams3_it", "cond": "E_iter1", "task": "openbookqa", "lang": "sl", "item_id": "openbookqa:9-727", "lls": [-13.54900074005127, -15.156848907470703, -18.361343383789062, -14.820870399475098], "pred": 0, "gold": 3}
+{"model": "gams3_it", "cond": "E_iter1", "task": "openbookqa", "lang": "sl", "item_id": "openbookqa:850", "lls": [-28.203556060791016, -40.28248596191406, -46.76034164428711, -44.836387634277344], "pred": 0, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "openbookqa", "lang": "sl", "item_id": "openbookqa:8-130", "lls": [-14.082385063171387, -14.978666305541992, -14.479070663452148, -15.653468132019043], "pred": 0, "gold": 2}
+{"model": "gams3_it", "cond": "E_iter1", "task": "openbookqa", "lang": "sl", "item_id": "openbookqa:9-322", "lls": [-18.786314010620117, -10.359045028686523, -19.635591506958008, -20.73790740966797], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "openbookqa", "lang": "sl", "item_id": "openbookqa:7-208", "lls": [-26.233978271484375, -33.23877716064453, -39.384857177734375, -29.85238265991211], "pred": 0, "gold": 2}
+{"model": "gams3_it", "cond": "E_iter1", "task": "openbookqa", "lang": "sl", "item_id": "openbookqa:8-35", "lls": [-29.523895263671875, -26.713939666748047, -30.649696350097656, -33.075645446777344], "pred": 1, "gold": 3}
+{"model": "gams3_it", "cond": "E_iter1", "task": "openbookqa", "lang": "sl", "item_id": "openbookqa:397", "lls": [-26.120891571044922, -18.021442413330078, -24.977313995361328, -40.456722259521484], "pred": 1, "gold": 3}
+{"model": "gams3_it", "cond": "E_iter1", "task": "openbookqa", "lang": "sl", "item_id": "openbookqa:9-774", "lls": [-40.772037506103516, -23.769954681396484, -20.436737060546875, -32.94598388671875], "pred": 2, "gold": 2}
+{"model": "gams3_it", "cond": "E_iter1", "task": "openbookqa", "lang": "sl", "item_id": "openbookqa:9-124", "lls": [-31.11164093017578, -22.956876754760742, -21.466123580932617, -29.060596466064453], "pred": 2, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "openbookqa", "lang": "sl", "item_id": "openbookqa:9-1102", "lls": [-20.05917739868164, -25.227476119995117, -20.21957778930664, -19.011138916015625], "pred": 3, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "openbookqa", "lang": "sl", "item_id": "openbookqa:1393", "lls": [-33.4964714050293, -26.555217742919922, -37.090187072753906, -11.706145286560059], "pred": 3, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "openbookqa", "lang": "sl", "item_id": "openbookqa:7-710", "lls": [-23.555837631225586, -24.982097625732422, -27.531047821044922, -26.966772079467773], "pred": 0, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "openbookqa", "lang": "sl", "item_id": "openbookqa:1582", "lls": [-14.34152603149414, -16.37359046936035, -10.195707321166992, -16.60638999938965], "pred": 2, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "openbookqa", "lang": "sl", "item_id": "openbookqa:9-1046", "lls": [-16.834274291992188, -23.052566528320312, -20.78740882873535, -18.94268226623535], "pred": 0, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "openbookqa", "lang": "sl", "item_id": "openbookqa:9-523", "lls": [-11.785255432128906, -17.600738525390625, -19.9753475189209, -19.295047760009766], "pred": 0, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "openbookqa", "lang": "sl", "item_id": "openbookqa:8-257", "lls": [-41.0967903137207, -13.855528831481934, -16.016468048095703, -23.230178833007812], "pred": 1, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "openbookqa", "lang": "sl", "item_id": "openbookqa:3", "lls": [-20.134998321533203, -15.373604774475098, -16.559051513671875, -23.376434326171875], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "openbookqa", "lang": "sl", "item_id": "openbookqa:7-157", "lls": [-26.840286254882812, -15.219549179077148, -24.95961570739746, -32.42429733276367], "pred": 1, "gold": 3}
+{"model": "gams3_it", "cond": "E_iter1", "task": "openbookqa", "lang": "sl", "item_id": "openbookqa:9-983", "lls": [-31.921337127685547, -20.0858211517334, -26.8726863861084, -23.697404861450195], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "openbookqa", "lang": "sl", "item_id": "openbookqa:8-491", "lls": [-22.901105880737305, -29.169084548950195, -29.475990295410156, -20.226037979125977], "pred": 3, "gold": 3}
+{"model": "gams3_it", "cond": "E_iter1", "task": "openbookqa", "lang": "sl", "item_id": "openbookqa:1074", "lls": [-14.01465129852295, -14.948381423950195, -12.506303787231445, -16.53870964050293], "pred": 2, "gold": 2}
+{"model": "gams3_it", "cond": "E_iter1", "task": "piqa", "lang": "en", "item_id": "piqa:1761", "lls": [-23.735397338867188, -15.67608642578125], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "piqa", "lang": "en", "item_id": "piqa:249", "lls": [-51.390098571777344, -57.822574615478516], "pred": 0, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "piqa", "lang": "en", "item_id": "piqa:416", "lls": [-107.13156127929688, -129.43856811523438], "pred": 0, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "piqa", "lang": "en", "item_id": "piqa:1330", "lls": [-28.260032653808594, -33.992088317871094], "pred": 0, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "piqa", "lang": "en", "item_id": "piqa:1500", "lls": [-27.783727645874023, -21.442161560058594], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "piqa", "lang": "en", "item_id": "piqa:1217", "lls": [-28.667770385742188, -23.248119354248047], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "piqa", "lang": "en", "item_id": "piqa:15", "lls": [-40.98006820678711, -42.56045913696289], "pred": 0, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "piqa", "lang": "en", "item_id": "piqa:657", "lls": [-82.01907348632812, -70.160400390625], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "piqa", "lang": "en", "item_id": "piqa:30", "lls": [-101.473388671875, -87.45132446289062], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "piqa", "lang": "en", "item_id": "piqa:958", "lls": [-27.212406158447266, -33.58399200439453], "pred": 0, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "piqa", "lang": "en", "item_id": "piqa:943", "lls": [-50.78265380859375, -51.86103057861328], "pred": 0, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "piqa", "lang": "en", "item_id": "piqa:520", "lls": [-172.90643310546875, -154.696044921875], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "piqa", "lang": "en", "item_id": "piqa:385", "lls": [-81.1655044555664, -77.3277587890625], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "piqa", "lang": "en", "item_id": "piqa:1624", "lls": [-83.40518951416016, -90.31388854980469], "pred": 0, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "piqa", "lang": "en", "item_id": "piqa:1096", "lls": [-27.575563430786133, -13.025527954101562], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "piqa", "lang": "en", "item_id": "piqa:505", "lls": [-18.223033905029297, -27.993412017822266], "pred": 0, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "piqa", "lang": "en", "item_id": "piqa:121", "lls": [-16.756017684936523, -22.13905906677246], "pred": 0, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "piqa", "lang": "en", "item_id": "piqa:386", "lls": [-116.45337677001953, -106.68041229248047], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "piqa", "lang": "en", "item_id": "piqa:1399", "lls": [-20.823543548583984, -20.27035140991211], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "piqa", "lang": "en", "item_id": "piqa:1507", "lls": [-9.389814376831055, -7.178598403930664], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "piqa", "lang": "en", "item_id": "piqa:1493", "lls": [-33.18665313720703, -31.185115814208984], "pred": 1, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "piqa", "lang": "en", "item_id": "piqa:1366", "lls": [-54.21540451049805, -43.14692306518555], "pred": 1, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "piqa", "lang": "en", "item_id": "piqa:1124", "lls": [-29.27422332763672, -32.16242980957031], "pred": 0, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "piqa", "lang": "en", "item_id": "piqa:341", "lls": [-219.48007202148438, -215.2030487060547], "pred": 1, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "piqa", "lang": "en", "item_id": "piqa:519", "lls": [-56.665618896484375, -38.592140197753906], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "piqa", "lang": "en", "item_id": "piqa:1698", "lls": [-72.0084228515625, -77.73419952392578], "pred": 0, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "piqa", "lang": "en", "item_id": "piqa:1459", "lls": [-36.491371154785156, -22.566625595092773], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "piqa", "lang": "en", "item_id": "piqa:448", "lls": [-94.28606414794922, -45.062530517578125], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "piqa", "lang": "en", "item_id": "piqa:305", "lls": [-58.922218322753906, -51.72185516357422], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "piqa", "lang": "en", "item_id": "piqa:1767", "lls": [-29.556732177734375, -42.78968811035156], "pred": 0, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "piqa", "lang": "en", "item_id": "piqa:1292", "lls": [-70.64109802246094, -80.56501770019531], "pred": 0, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "piqa", "lang": "en", "item_id": "piqa:1572", "lls": [-38.724342346191406, -39.05131530761719], "pred": 0, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "piqa", "lang": "en", "item_id": "piqa:542", "lls": [-48.499290466308594, -62.089195251464844], "pred": 0, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "piqa", "lang": "en", "item_id": "piqa:1357", "lls": [-73.41090393066406, -78.43869018554688], "pred": 0, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "piqa", "lang": "en", "item_id": "piqa:1792", "lls": [-16.470657348632812, -32.77613830566406], "pred": 0, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "piqa", "lang": "en", "item_id": "piqa:488", "lls": [-16.56920623779297, -35.13448715209961], "pred": 0, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "piqa", "lang": "en", "item_id": "piqa:347", "lls": [-134.21697998046875, -110.13627624511719], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "piqa", "lang": "en", "item_id": "piqa:1271", "lls": [-49.33306121826172, -54.350162506103516], "pred": 0, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "piqa", "lang": "en", "item_id": "piqa:547", "lls": [-40.534767150878906, -40.013790130615234], "pred": 1, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "piqa", "lang": "en", "item_id": "piqa:1602", "lls": [-102.45601654052734, -96.68000793457031], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "piqa", "lang": "en", "item_id": "piqa:365", "lls": [-44.08192443847656, -41.44435119628906], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "piqa", "lang": "en", "item_id": "piqa:862", "lls": [-20.244688034057617, -12.876803398132324], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "piqa", "lang": "en", "item_id": "piqa:96", "lls": [-146.44705200195312, -140.08511352539062], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "piqa", "lang": "en", "item_id": "piqa:548", "lls": [-25.77591323852539, -12.277416229248047], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "piqa", "lang": "en", "item_id": "piqa:1422", "lls": [-43.63727569580078, -39.40795135498047], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "piqa", "lang": "en", "item_id": "piqa:876", "lls": [-22.864124298095703, -26.75954818725586], "pred": 0, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "piqa", "lang": "en", "item_id": "piqa:1104", "lls": [-133.23599243164062, -102.41900634765625], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "piqa", "lang": "en", "item_id": "piqa:1378", "lls": [-62.51380920410156, -73.83441925048828], "pred": 0, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "piqa", "lang": "en", "item_id": "piqa:483", "lls": [-43.99437713623047, -59.51789093017578], "pred": 0, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "piqa", "lang": "en", "item_id": "piqa:1518", "lls": [-52.57743835449219, -59.50345993041992], "pred": 0, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "winogrande", "lang": "sl", "item_id": "winogrande:461", "lls": [-8.790582656860352, -9.116061210632324], "pred": 0, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "winogrande", "lang": "sl", "item_id": "winogrande:1084", "lls": [-8.386767387390137, -12.182016372680664], "pred": 0, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "winogrande", "lang": "sl", "item_id": "winogrande:8", "lls": [-27.564865112304688, -25.68097496032715], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "winogrande", "lang": "sl", "item_id": "winogrande:702", "lls": [-4.048300266265869, -5.1783552169799805], "pred": 0, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "winogrande", "lang": "sl", "item_id": "winogrande:558", "lls": [-8.955822944641113, -9.786783218383789], "pred": 0, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "winogrande", "lang": "sl", "item_id": "winogrande:317", "lls": [-15.1414794921875, -12.738945007324219], "pred": 1, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "winogrande", "lang": "sl", "item_id": "winogrande:304", "lls": [-11.782903671264648, -5.523033618927002], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "winogrande", "lang": "sl", "item_id": "winogrande:1048", "lls": [-16.97698211669922, -17.92201042175293], "pred": 0, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "winogrande", "lang": "sl", "item_id": "winogrande:842", "lls": [-23.06268882751465, -21.521984100341797], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "winogrande", "lang": "sl", "item_id": "winogrande:405", "lls": [-7.198798179626465, -10.99301528930664], "pred": 0, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "winogrande", "lang": "sl", "item_id": "winogrande:1206", "lls": [-9.897924423217773, -10.063037872314453], "pred": 0, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "winogrande", "lang": "sl", "item_id": "winogrande:1232", "lls": [-8.448240280151367, -7.905670166015625], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "winogrande", "lang": "sl", "item_id": "winogrande:441", "lls": [-31.507707595825195, -28.12788200378418], "pred": 1, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "winogrande", "lang": "sl", "item_id": "winogrande:97", "lls": [-13.027231216430664, -13.289831161499023], "pred": 0, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "winogrande", "lang": "sl", "item_id": "winogrande:725", "lls": [-2.48032283782959, -6.020171165466309], "pred": 0, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "winogrande", "lang": "sl", "item_id": "winogrande:199", "lls": [-14.326581001281738, -15.904350280761719], "pred": 0, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "winogrande", "lang": "sl", "item_id": "winogrande:622", "lls": [-22.55390167236328, -20.532840728759766], "pred": 1, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "winogrande", "lang": "sl", "item_id": "winogrande:219", "lls": [-9.911293029785156, -10.884245872497559], "pred": 0, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "winogrande", "lang": "sl", "item_id": "winogrande:338", "lls": [-6.460414886474609, -8.196991920471191], "pred": 0, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "winogrande", "lang": "sl", "item_id": "winogrande:124", "lls": [-5.14876651763916, -4.662702560424805], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "winogrande", "lang": "sl", "item_id": "winogrande:1123", "lls": [-7.843439102172852, -3.791801691055298], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "winogrande", "lang": "sl", "item_id": "winogrande:1210", "lls": [-12.113521575927734, -12.126602172851562], "pred": 0, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "winogrande", "lang": "sl", "item_id": "winogrande:1251", "lls": [-6.359848976135254, -5.519048690795898], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "winogrande", "lang": "sl", "item_id": "winogrande:914", "lls": [-11.065521240234375, -13.02075481414795], "pred": 0, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "winogrande", "lang": "sl", "item_id": "winogrande:159", "lls": [-15.130586624145508, -11.321541786193848], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "winogrande", "lang": "sl", "item_id": "winogrande:641", "lls": [-3.610650062561035, -5.240625381469727], "pred": 0, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "winogrande", "lang": "sl", "item_id": "winogrande:236", "lls": [-18.193811416625977, -19.169471740722656], "pred": 0, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "winogrande", "lang": "sl", "item_id": "winogrande:339", "lls": [-19.47686767578125, -19.497692108154297], "pred": 0, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "winogrande", "lang": "sl", "item_id": "winogrande:632", "lls": [-20.96733856201172, -17.14232063293457], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "winogrande", "lang": "sl", "item_id": "winogrande:395", "lls": [-20.713972091674805, -14.889738082885742], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "winogrande", "lang": "sl", "item_id": "winogrande:626", "lls": [-10.06142807006836, -8.495498657226562], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "winogrande", "lang": "sl", "item_id": "winogrande:739", "lls": [-11.181914329528809, -10.20607852935791], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "winogrande", "lang": "sl", "item_id": "winogrande:850", "lls": [-12.73964786529541, -16.03844451904297], "pred": 0, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "winogrande", "lang": "sl", "item_id": "winogrande:141", "lls": [-14.287744522094727, -7.1282806396484375], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "winogrande", "lang": "sl", "item_id": "winogrande:544", "lls": [-25.543983459472656, -26.738174438476562], "pred": 0, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "winogrande", "lang": "sl", "item_id": "winogrande:507", "lls": [-21.000032424926758, -22.487564086914062], "pred": 0, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "winogrande", "lang": "sl", "item_id": "winogrande:489", "lls": [-9.9907808303833, -10.622917175292969], "pred": 0, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "winogrande", "lang": "sl", "item_id": "winogrande:590", "lls": [-13.2896728515625, -8.371563911437988], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "winogrande", "lang": "sl", "item_id": "winogrande:803", "lls": [-45.92438507080078, -44.131629943847656], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "winogrande", "lang": "sl", "item_id": "winogrande:872", "lls": [-18.89666748046875, -19.120498657226562], "pred": 0, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "winogrande", "lang": "sl", "item_id": "winogrande:945", "lls": [-14.796735763549805, -12.114356994628906], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "winogrande", "lang": "sl", "item_id": "winogrande:1075", "lls": [-6.676504135131836, -9.376577377319336], "pred": 0, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "winogrande", "lang": "sl", "item_id": "winogrande:200", "lls": [-16.57041358947754, -15.31024169921875], "pred": 1, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "winogrande", "lang": "sl", "item_id": "winogrande:158", "lls": [-22.129653930664062, -20.84267807006836], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "winogrande", "lang": "sl", "item_id": "winogrande:1090", "lls": [-25.04379653930664, -26.370115280151367], "pred": 0, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "winogrande", "lang": "sl", "item_id": "winogrande:789", "lls": [-19.913372039794922, -23.53646469116211], "pred": 0, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "winogrande", "lang": "sl", "item_id": "winogrande:925", "lls": [-37.450111389160156, -41.31526565551758], "pred": 0, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "winogrande", "lang": "sl", "item_id": "winogrande:258", "lls": [-12.152176856994629, -14.854774475097656], "pred": 0, "gold": 0}
+{"model": "gams3_it", "cond": "E_iter1", "task": "winogrande", "lang": "sl", "item_id": "winogrande:235", "lls": [-17.890579223632812, -17.50816535949707], "pred": 1, "gold": 1}
+{"model": "gams3_it", "cond": "E_iter1", "task": "winogrande", "lang": "sl", "item_id": "winogrande:78", "lls": [-10.415627479553223, -11.636201858520508], "pred": 0, "gold": 1}
