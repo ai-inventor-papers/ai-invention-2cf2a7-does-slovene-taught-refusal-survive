@@ -1,8 +1,0 @@
-warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
-URL: https://arxiv.org/abs/2606.28843
-Type: HTML
-Pattern: safety outcomes are highly sensitive to both the choice of f (1 matches in 8535 chars)
-
---- Content ---
-
-2185:...ted across nine languages. We find that safety outcomes are highly sensitive to both the choice of fine-tuning language and the evaluation l...

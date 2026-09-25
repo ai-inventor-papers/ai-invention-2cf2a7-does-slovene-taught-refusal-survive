@@ -1,8 +1,0 @@
-warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
-URL: https://arxiv.org/abs/2605.17173
-Type: HTML
-Pattern: 22 model configurations are more vulnerable in English than  (1 matches in 8460 chars)
-
---- Content ---
-
-2094:...ades largely in low-resource languages, 22 model configurations are more vulnerable in English than in low-resource languages. Low-resource ...

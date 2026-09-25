@@ -1,5 +1,0 @@
-04:09:23|INFO   |[gemini] loaded 15968 gens, 4376 labels, 0 validation labels, 0 id labels
-04:09:24|INFO   |T1 done
-04:09:24|INFO   |T2 done
-04:09:41|INFO   |T3 done
-04:09:48|INFO   |wrote results/analysis_gemini_partial.json; verdicts: {"ALT5_decision_T1": "PENDING (teacher rows not labelled under this readout)", "language_clause_T2": "PENDING (teacher rows not labelled under this readout)", "wording_T3": "PENDING (classifier could not be trained: n/a (fewer than 30 per class: {'gemma': 263}))", "depth_T4": "not shown (secondary; Q14 is a white-box stand-in)", "identity_T5": "DESCRIPTIVE"}

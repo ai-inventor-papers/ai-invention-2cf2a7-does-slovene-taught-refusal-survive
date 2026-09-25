@@ -1,6 +1,0 @@
-/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_4/gen_art/gen_art_experiment_14/.venv/lib/python3.12/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
-  warnings.warn(
-/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_4/gen_art/gen_art_experiment_14/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
-  warnings.warn(
-21:42:28|INFO   |J1 labelled 8000 rows of gams3_it.jsonl in 57s
-21:42:35|INFO   |J1 labelled 600 rows of dev_gams3_it.jsonl in 6s

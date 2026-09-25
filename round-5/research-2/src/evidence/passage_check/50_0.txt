@@ -1,8 +1,0 @@
-warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
-URL: https://arxiv.org/abs/2608.22490
-Type: HTML
-Pattern: non-English users consistently bear a higher Safety Cost tha (1 matches in 7608 chars)
-
---- Content ---
-
-1518:...erparts, we find a systematic inequity: non-English users consistently bear a higher Safety Cost than English users. We further identify thr...

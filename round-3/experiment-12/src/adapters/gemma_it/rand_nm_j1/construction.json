@@ -1,9 +1,0 @@
-{
-  "kind": "random_norm_matched",
-  "j": 1,
-  "seed": 20260924,
-  "c": 1.0,
-  "construction": "heretic Model.abliterate(rand_dirs(j), direction_index, SAME params)",
-  "sum_lora_B_norm": 58.0902,
-  "n_nonzero_B": 69
-}

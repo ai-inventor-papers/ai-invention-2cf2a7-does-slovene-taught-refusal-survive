@@ -1,3 +1,0 @@
-15:30:11|INFO   |en: {"train_n": 2748, "cv5_acc": 0.9007, "cv5_macroF1": 0.8942, "test_n": 141, "test_acc": 0.8865, "test_macroF1": 0.8375, "test_top2_acc": 0.9787}
-15:31:26|INFO   |sl: {"train_n": 2748, "cv5_acc": 0.8443, "cv5_macroF1": 0.8199, "test_n": 141, "test_acc": 0.8652, "test_macroF1": 0.8405, "test_top2_acc": 0.922}
-15:31:26|INFO   |saved 14859 tfidf votes: {('calib_test', 'en'): 141, ('calib_test', 'sl'): 141, ('dose', 'en'): 1933, ('dose', 'sl'): 4306, ('eval', 'en'): 1400, ('eval', 'sl'): 1400, ('hard', 'en'): 2069, ('hard', 'sl'): 2069, ('refuseu_x', 'sl'): 1400}

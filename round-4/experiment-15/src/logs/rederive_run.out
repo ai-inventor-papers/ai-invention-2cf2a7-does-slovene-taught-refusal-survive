@@ -1,1 +1,0 @@
-22:26:01|INFO   |audit: 81/81 checks pass; placebo {'mean': -0.008649304908625316, 'sd': 0.12678539808194425, 'n': 300, 'centred': True}; all_pass=True

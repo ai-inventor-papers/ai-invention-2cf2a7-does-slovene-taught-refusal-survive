@@ -1,54 +1,0 @@
-Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:08<00:35,  8.83s/it]Loading checkpoint shards:  40%|████      | 2/5 [00:18<00:28,  9.56s/it]Loading checkpoint shards:  60%|██████    | 3/5 [00:31<00:21, 10.81s/it]Loading checkpoint shards:  80%|████████  | 4/5 [00:49<00:13, 13.87s/it]Loading checkpoint shards: 100%|██████████| 5/5 [01:03<00:00, 13.65s/it]Loading checkpoint shards: 100%|██████████| 5/5 [01:03<00:00, 12.61s/it]
-00:51:49|INFO   |kl_gpu|loaded gemma_it {'arch': 'Gemma3ForConditionalGeneration', 'load_s': 85.2, 'vram_gb': 8.41, 'native_triton': 'deregistered', 'torch': '2.14.0+cu130', 'revision': '96b6f1eccf38110c56df3a15bffe176da04bfd80'}
-00:51:55|INFO   |kl_gpu|gemma_it en E_exp9 lam=0.7695 kl_mean=0.09627
-00:51:57|INFO   |kl_gpu|gemma_it en E_exp9 lam=1.1551 kl_mean=0.20913
-00:51:58|INFO   |kl_gpu|gemma_it en E_exp9 lam=1.5603 kl_mean=0.30838
-00:52:00|INFO   |kl_gpu|gemma_it en E_exp9 lam=2.0 kl_mean=0.38015
-00:52:02|INFO   |kl_gpu|gemma_it en rand_1 lam=0.7695 kl_mean=0.00296
-00:52:03|INFO   |kl_gpu|gemma_it en rand_1 lam=1.1551 kl_mean=0.00325
-00:52:05|INFO   |kl_gpu|gemma_it en rand_1 lam=1.5603 kl_mean=0.00470
-00:52:06|INFO   |kl_gpu|gemma_it en rand_1 lam=2.0 kl_mean=0.00807
-00:52:08|INFO   |kl_gpu|gemma_it en rand_2 lam=0.7695 kl_mean=0.00215
-00:52:10|INFO   |kl_gpu|gemma_it en rand_2 lam=1.1551 kl_mean=0.00244
-00:52:11|INFO   |kl_gpu|gemma_it en rand_2 lam=1.5603 kl_mean=0.00657
-00:52:13|INFO   |kl_gpu|gemma_it en rand_2 lam=2.0 kl_mean=0.01103
-00:52:17|INFO   |kl_gpu|gemma_it sl E_exp9 lam=0.7695 kl_mean=0.21092
-00:52:18|INFO   |kl_gpu|gemma_it sl E_exp9 lam=1.1551 kl_mean=0.39269
-00:52:20|INFO   |kl_gpu|gemma_it sl E_exp9 lam=1.5603 kl_mean=0.58110
-00:52:22|INFO   |kl_gpu|gemma_it sl E_exp9 lam=2.0 kl_mean=0.73529
-00:52:24|INFO   |kl_gpu|gemma_it sl rand_1 lam=0.7695 kl_mean=0.00456
-00:52:25|INFO   |kl_gpu|gemma_it sl rand_1 lam=1.1551 kl_mean=0.00950
-00:52:27|INFO   |kl_gpu|gemma_it sl rand_1 lam=1.5603 kl_mean=0.01666
-00:52:29|INFO   |kl_gpu|gemma_it sl rand_1 lam=2.0 kl_mean=0.01921
-00:52:31|INFO   |kl_gpu|gemma_it sl rand_2 lam=0.7695 kl_mean=0.00403
-00:52:32|INFO   |kl_gpu|gemma_it sl rand_2 lam=1.1551 kl_mean=0.00715
-00:52:34|INFO   |kl_gpu|gemma_it sl rand_2 lam=1.5603 kl_mean=0.01257
-00:52:36|INFO   |kl_gpu|gemma_it sl rand_2 lam=2.0 kl_mean=0.01929
-Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:06<00:27,  6.80s/it]Loading checkpoint shards:  40%|████      | 2/5 [00:13<00:20,  6.98s/it]Loading checkpoint shards:  60%|██████    | 3/5 [00:22<00:15,  7.56s/it]Loading checkpoint shards:  80%|████████  | 4/5 [00:31<00:08,  8.20s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:38<00:00,  7.78s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:38<00:00,  7.67s/it]
-The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
-00:53:16|INFO   |kl_gpu|loaded gams3_it {'arch': 'Gemma3ForCausalLM', 'load_s': 39.7, 'vram_gb': 7.58, 'native_triton': 'deregistered', 'torch': '2.14.0+cu130', 'revision': '1d0b27af5748784482600d24779409e7e1dc9adc'}
-00:53:19|INFO   |kl_gpu|gams3_it en E_exp9 lam=0.3013 kl_mean=0.02003
-00:53:21|INFO   |kl_gpu|gams3_it en E_exp9 lam=0.6313 kl_mean=0.05990
-00:53:22|INFO   |kl_gpu|gams3_it en E_exp9 lam=0.978 kl_mean=0.10496
-00:53:24|INFO   |kl_gpu|gams3_it en E_exp9 lam=1.5375 kl_mean=0.15793
-00:53:26|INFO   |kl_gpu|gams3_it en rand_1 lam=0.3013 kl_mean=0.00093
-00:53:27|INFO   |kl_gpu|gams3_it en rand_1 lam=0.6313 kl_mean=0.00156
-00:53:29|INFO   |kl_gpu|gams3_it en rand_1 lam=0.978 kl_mean=0.00256
-00:53:30|INFO   |kl_gpu|gams3_it en rand_1 lam=1.5375 kl_mean=0.00330
-00:53:32|INFO   |kl_gpu|gams3_it en rand_2 lam=0.3013 kl_mean=0.00115
-00:53:34|INFO   |kl_gpu|gams3_it en rand_2 lam=0.6313 kl_mean=0.00133
-00:53:35|INFO   |kl_gpu|gams3_it en rand_2 lam=0.978 kl_mean=0.00189
-00:53:37|INFO   |kl_gpu|gams3_it en rand_2 lam=1.5375 kl_mean=0.00529
-00:53:40|INFO   |kl_gpu|gams3_it sl E_exp9 lam=0.3013 kl_mean=0.01233
-00:53:42|INFO   |kl_gpu|gams3_it sl E_exp9 lam=0.6313 kl_mean=0.04024
-00:53:44|INFO   |kl_gpu|gams3_it sl E_exp9 lam=0.978 kl_mean=0.07172
-00:53:45|INFO   |kl_gpu|gams3_it sl E_exp9 lam=1.5375 kl_mean=0.11545
-00:53:47|INFO   |kl_gpu|gams3_it sl rand_1 lam=0.3013 kl_mean=0.00134
-00:53:49|INFO   |kl_gpu|gams3_it sl rand_1 lam=0.6313 kl_mean=0.00161
-00:53:51|INFO   |kl_gpu|gams3_it sl rand_1 lam=0.978 kl_mean=0.00223
-00:53:53|INFO   |kl_gpu|gams3_it sl rand_1 lam=1.5375 kl_mean=0.00382
-00:53:54|INFO   |kl_gpu|gams3_it sl rand_2 lam=0.3013 kl_mean=0.00153
-00:53:56|INFO   |kl_gpu|gams3_it sl rand_2 lam=0.6313 kl_mean=0.00201
-00:53:58|INFO   |kl_gpu|gams3_it sl rand_2 lam=0.978 kl_mean=0.00223
-00:54:00|INFO   |kl_gpu|gams3_it sl rand_2 lam=1.5375 kl_mean=0.00406
-00:54:00|INFO   |kl_gpu|done

@@ -1,52 +1,0 @@
-Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:09<00:38,  9.69s/it]Loading checkpoint shards:  40%|████      | 2/5 [00:21<00:32, 10.93s/it]Loading checkpoint shards:  60%|██████    | 3/5 [00:31<00:20, 10.40s/it]Loading checkpoint shards:  80%|████████  | 4/5 [00:40<00:10, 10.13s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:49<00:00,  9.65s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:49<00:00,  9.96s/it]
-19:40:38|INFO   |loaded gemma_it {'arch': 'Gemma3ForConditionalGeneration', 'load_s': 72.0, 'vram_gb': 8.41, 'native_triton': 'deregistered', 'torch': '2.14.0+cu130', 'revision': '96b6f1eccf38110c56df3a15bffe176da04bfd80'}
-19:40:38|INFO   |BODY plan gemma_it: {'label': 'harm300', 'N_H': 300, 'N_T': 120, 'rand_seeds': 2, 'N_RH': 200, 'N_RT': 0, 'en_orig_max': True, 'projected_rows': 15920, 'rate_rows_per_s': 3.3, 'rate_source': "manual override: DEV batches of 100 rows (2.6-2.7 rows/s) under-measure body throughput at batch ~160; 3.3 rows/s assumed (between the DEV rate and the ~4 rows/s expected from exp11's 2.2 rows/s at 128 tokens); random arm is deadline-truncated if the rate is lower", 'budget_s': 5520, 'capacity_rows': 18216, 'flash_budget_rule': 'random arm harmful rows only (N_RT = 0), TTJ/ASR restricted to 4 window steps + lambda 0 + max lambda'}
-19:40:38|INFO   |BODY gemma_it: 13 steps in randomised order [8, 4, 12, 7, 6, 10, 5, 2, 3, 9, 11, 0, 1]; H=300 T=120
-19:40:38|INFO   |adapter attached {'edit': 'E_exp9', 'adapter_dir': '/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_3/gen_art/gen_art_experiment_9/selected/gemma_it/adapter', 'adapter_sha256': '9714d8a4b8dc6d52e4f92f41dddceeeef5bc9c1c20145e02d955bbfbbcdec547', 'n_tensors': 192, 'n_lora_modules': 96, 'ranks': [3], 'scaling': 1.0, 'impl': 'forward hooks, bf16, delta = lambda * scaling * B A x'}
-19:41:47|INFO   |[ladder] gemma_it E_exp9 lam=1.035: 116 rows in 69s (1.69/s)
-19:45:52|INFO   |[ladder] gemma_it E_exp9 lam=0.612: 840 rows in 245s (3.43/s)
-19:50:01|INFO   |[ladder] gemma_it E_exp9 lam=0.769: 840 rows in 248s (3.38/s)
-19:54:12|INFO   |[ladder] gemma_it E_exp9 lam=1.560: 840 rows in 251s (3.35/s)
-19:58:17|INFO   |[ladder] gemma_it E_exp9 lam=1.857: 840 rows in 245s (3.43/s)
-20:02:18|INFO   |[ladder] gemma_it E_exp9 lam=0.000: 840 rows in 241s (3.49/s)
-20:06:23|INFO   |[ladder] gemma_it E_exp9 lam=0.254: 840 rows in 245s (3.43/s)
-/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_4/gen_art/gen_art_experiment_15/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
-  warnings.warn(
-20:06:30|WARNING|AutoTokenizer failed ('list' object has no attribute 'keys'); loading tokenizer.json directly
-20:06:31|INFO   |J1 loaded on cuda:0; sha256 7c805d7fb2d9; unexpected 0
-20:06:38|INFO   |J1 labelled 2000 rows -> primary_j1.jsonl in 6s
-20:06:42|INFO   |J1 labelled 1600 rows -> primary_j1.jsonl in 4s
-20:06:42|INFO   |labels ready 3600/3600 (local/j1) after 0s
-20:08:24|WARNING|OOM at bs=153 -> halving
-20:09:49|WARNING|OOM at bs=137 -> halving
-20:11:17|WARNING|OOM at bs=114 -> halving
-20:12:32|WARNING|OOM at bs=87 -> halving
-20:13:41|INFO   |[fillin] gemma_it E_exp9 lam=0.863: 840 rows in 420s (2.00/s)
-20:14:49|WARNING|OOM at bs=123 -> halving
-20:15:41|INFO   |[en_orig] gemma_it none lam=0.000: 300 rows in 120s (2.50/s)
-20:16:50|WARNING|OOM at bs=123 -> halving
-20:17:43|INFO   |[en_orig] gemma_it E_exp9 lam=2.000: 300 rows in 122s (2.46/s)
-20:17:43|INFO   |adapter attached {'edit': 'rand_1', 'adapter_dir': '/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_3/gen_art/gen_art_experiment_9/adapters/gemma_it/rand_1', 'adapter_sha256': '096a361b0142a6ea31263bc9a3524bc60f28cbccc61e62807efb82f7d587434b', 'n_tensors': 192, 'n_lora_modules': 96, 'ranks': [3], 'scaling': 1.0, 'impl': 'forward hooks, bf16, delta = lambda * scaling * B A x'}
-20:19:10|WARNING|OOM at bs=134 -> halving
-20:20:51|INFO   |[random] gemma_it rand_1 lam=0.769: 400 rows in 187s (2.14/s)
-20:22:05|WARNING|OOM at bs=134 -> halving
-20:23:44|INFO   |[random] gemma_it rand_1 lam=1.155: 400 rows in 174s (2.30/s)
-20:24:58|WARNING|OOM at bs=134 -> halving
-20:26:38|INFO   |[random] gemma_it rand_1 lam=1.560: 400 rows in 174s (2.30/s)
-20:27:52|WARNING|OOM at bs=134 -> halving
-20:29:32|INFO   |[random] gemma_it rand_1 lam=2.000: 400 rows in 173s (2.31/s)
-20:29:32|INFO   |adapter attached {'edit': 'rand_2', 'adapter_dir': '/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_3/gen_art/gen_art_experiment_9/adapters/gemma_it/rand_2', 'adapter_sha256': 'd09e06a59dab7848ec797023c18f4e7107b22aeb090d7fa18108869f2b87455e', 'n_tensors': 192, 'n_lora_modules': 96, 'ranks': [3], 'scaling': 1.0, 'impl': 'forward hooks, bf16, delta = lambda * scaling * B A x'}
-20:31:44|INFO   |[random] gemma_it rand_2 lam=0.769: 400 rows in 132s (3.04/s)
-20:33:55|INFO   |[random] gemma_it rand_2 lam=1.155: 400 rows in 132s (3.04/s)
-20:36:07|INFO   |[random] gemma_it rand_2 lam=1.560: 400 rows in 132s (3.04/s)
-20:36:07|WARNING|deadline reached; random arm truncated at rand_2 lam 2.0
-20:36:07|INFO   |adapter attached {'edit': 'E_exp9', 'adapter_dir': '/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_3/gen_art/gen_art_experiment_9/selected/gemma_it/adapter', 'adapter_sha256': '9714d8a4b8dc6d52e4f92f41dddceeeef5bc9c1c20145e02d955bbfbbcdec547', 'n_tensors': 192, 'n_lora_modules': 96, 'ranks': [3], 'scaling': 1.0, 'impl': 'forward hooks, bf16, delta = lambda * scaling * B A x'}
-20:36:09|INFO   |adapter attached {'edit': 'E_exp9', 'adapter_dir': '/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_3/gen_art/gen_art_experiment_9/selected/gemma_it/adapter', 'adapter_sha256': '9714d8a4b8dc6d52e4f92f41dddceeeef5bc9c1c20145e02d955bbfbbcdec547', 'n_tensors': 192, 'n_lora_modules': 96, 'ranks': [3], 'scaling': 1.0, 'impl': 'forward hooks, bf16, delta = lambda * scaling * B A x'}
-20:36:29|INFO   |adapter attached {'edit': 'rand_1', 'adapter_dir': '/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_3/gen_art/gen_art_experiment_9/adapters/gemma_it/rand_1', 'adapter_sha256': '096a361b0142a6ea31263bc9a3524bc60f28cbccc61e62807efb82f7d587434b', 'n_tensors': 192, 'n_lora_modules': 96, 'ranks': [3], 'scaling': 1.0, 'impl': 'forward hooks, bf16, delta = lambda * scaling * B A x'}
-20:36:35|INFO   |adapter attached {'edit': 'rand_2', 'adapter_dir': '/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_3/gen_art/gen_art_experiment_9/adapters/gemma_it/rand_2', 'adapter_sha256': 'd09e06a59dab7848ec797023c18f4e7107b22aeb090d7fa18108869f2b87455e', 'n_tensors': 192, 'n_lora_modules': 96, 'ranks': [3], 'scaling': 1.0, 'impl': 'forward hooks, bf16, delta = lambda * scaling * B A x'}
-20:36:42|INFO   |adapter attached {'edit': 'E_exp9', 'adapter_dir': '/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_3/gen_art/gen_art_experiment_9/selected/gemma_it/adapter', 'adapter_sha256': '9714d8a4b8dc6d52e4f92f41dddceeeef5bc9c1c20145e02d955bbfbbcdec547', 'n_tensors': 192, 'n_lora_modules': 96, 'ranks': [3], 'scaling': 1.0, 'impl': 'forward hooks, bf16, delta = lambda * scaling * B A x'}
-20:36:44|INFO   |adapter attached {'edit': 'E_exp9', 'adapter_dir': '/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_3/gen_art/gen_art_experiment_9/selected/gemma_it/adapter', 'adapter_sha256': '9714d8a4b8dc6d52e4f92f41dddceeeef5bc9c1c20145e02d955bbfbbcdec547', 'n_tensors': 192, 'n_lora_modules': 96, 'ranks': [3], 'scaling': 1.0, 'impl': 'forward hooks, bf16, delta = lambda * scaling * B A x'}
-20:37:05|INFO   |adapter attached {'edit': 'rand_1', 'adapter_dir': '/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_3/gen_art/gen_art_experiment_9/adapters/gemma_it/rand_1', 'adapter_sha256': '096a361b0142a6ea31263bc9a3524bc60f28cbccc61e62807efb82f7d587434b', 'n_tensors': 192, 'n_lora_modules': 96, 'ranks': [3], 'scaling': 1.0, 'impl': 'forward hooks, bf16, delta = lambda * scaling * B A x'}
-20:37:12|INFO   |adapter attached {'edit': 'rand_2', 'adapter_dir': '/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_3/gen_art/gen_art_experiment_9/adapters/gemma_it/rand_2', 'adapter_sha256': 'd09e06a59dab7848ec797023c18f4e7107b22aeb090d7fa18108869f2b87455e', 'n_tensors': 192, 'n_lora_modules': 96, 'ranks': [3], 'scaling': 1.0, 'impl': 'forward hooks, bf16, delta = lambda * scaling * B A x'}
-20:37:19|INFO   |KL done for gemma_it: 40 rows
-20:37:19|INFO   |gen gemma_it finished phases ['body', 'kl']

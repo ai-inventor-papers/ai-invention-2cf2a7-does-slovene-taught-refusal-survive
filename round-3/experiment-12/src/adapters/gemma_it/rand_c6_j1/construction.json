@@ -1,9 +1,0 @@
-{
-  "kind": "random_c6",
-  "j": 1,
-  "seed": 20260924,
-  "c": 6.0,
-  "construction": "rand_dirs(1) with max/min weights x 6 (iter-1 largest random edit)",
-  "sum_lora_B_norm": 142.3096,
-  "n_nonzero_B": 69
-}

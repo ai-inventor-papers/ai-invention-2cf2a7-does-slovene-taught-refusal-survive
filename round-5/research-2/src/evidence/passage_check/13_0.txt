@@ -1,8 +1,0 @@
-warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
-URL: https://arxiv.org/abs/2606.01196
-Type: HTML
-Pattern: Yet harmful refusal drops from 87\.9% to 43\.9%\. (1 matches in 7830 chars)
-
---- Content ---
-
-1630:...The relevant representation is present. Yet harmful refusal drops from 87.9% to 43.9%. The model fails to convert the represen...
