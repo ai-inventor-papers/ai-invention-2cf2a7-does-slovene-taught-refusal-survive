@@ -1969,9 +1969,9 @@
     },
     "openrouter_spend_usd": 0.9442107,
     "per_item_files": [
-      "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_1/gen_art/gen_art_experiment_4/results/gams3_it/orig_score400.jsonl",
-      "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_1/gen_art/gen_art_experiment_4/results/gams3_it/posthoc_kl.jsonl",
-      "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_1/gen_art/gen_art_experiment_4/results/gams3_it/posthoc_probe.jsonl"
+      "./results/gams3_it/orig_score400.jsonl",
+      "./results/gams3_it/posthoc_kl.jsonl",
+      "./results/gams3_it/posthoc_probe.jsonl"
     ]
   },
   "datasets": [
