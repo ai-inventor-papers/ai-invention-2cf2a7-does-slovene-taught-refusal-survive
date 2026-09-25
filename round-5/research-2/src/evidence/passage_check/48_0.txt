@@ -1,8 +1,0 @@
-warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
-URL: https://arxiv.org/abs/2609.27758
-Type: HTML
-Pattern: we replicate near-perfect transfer \(AUROC > 0\.98\) when harml (1 matches in 8247 chars)
-
---- Content ---
-
-1602:...anguages spanning three resource tiers, we replicate near-perfect transfer (AUROC > 0.98) when harmless prompts come from an unrelated distr...

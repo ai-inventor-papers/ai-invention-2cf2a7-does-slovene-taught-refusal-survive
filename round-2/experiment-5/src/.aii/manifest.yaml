@@ -1,7 +1,0 @@
-entries:
-  - path: .venv/
-    delete: regenerable
-    source: "uv sync   # pinned by pyproject.toml + uv.lock + requirements.lock (torch 2.14.0+cu130, transformers 4.57.6, bitsandbytes 0.50.2)"
-  - path: src/__pycache__/
-    delete: regenerable
-    source: "python -m compileall src   # bytecode cache, recreated automatically on import"

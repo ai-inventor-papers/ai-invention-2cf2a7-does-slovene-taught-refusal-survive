@@ -1,60 +1,0 @@
-=== 00:51:54 ../.venv/bin/python gen.py --model gemma_it --phases smoke,dev,conf
-/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_5/gen_art/gen_art_experiment_16/.venv/lib/python3.12/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
-  warnings.warn(
-Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:08<00:35,  8.78s/it]Loading checkpoint shards:  40%|████      | 2/5 [00:18<00:27,  9.12s/it]Loading checkpoint shards:  60%|██████    | 3/5 [00:27<00:18,  9.16s/it]Loading checkpoint shards:  80%|████████  | 4/5 [00:36<00:09,  9.28s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:46<00:00,  9.28s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:46<00:00,  9.22s/it]
-00:54:52|INFO   |loaded gemma_it {'arch': 'Gemma3ForConditionalGeneration', 'load_s': 69.3, 'vram_gb': 8.41, 'native_triton': 'deregistered', 'torch': '2.14.0+cu126', 'repo': 'google/gemma-3-12b-it', 'revision': '96b6f1eccf38110c56df3a15bffe176da04bfd80', 'template_sha1': '3f7731dd04d6fb3e41478bea860489dac5c6115c', 'gemma_template_sha1': '3f7731dd04d6fb3e41478bea860489dac5c6115c', 'template_override_to_gemma': False, 'rendered_template_sha1': '586e0e943e73a82c594c435262bb9deab4f6f3fe'}
-00:54:52|INFO   |adapter attached {'adapter_dir': 'gen_art/gen_art_experiment_9/selected/gemma_it/adapter', 'adapter_sha256': '9714d8a4b8dc6d52e4f92f41dddceeeef5bc9c1c20145e02d955bbfbbcdec547', 'n_tensors': 192, 'n_lora_modules': 96, 'impl': 'forward hooks, bf16, scaling = lambda', 'which': 'real'}
-00:54:52|INFO   |adapter attached {'adapter_dir': 'gen_art/gen_art_experiment_9/adapters/gemma_it/rand_1', 'adapter_sha256': '096a361b0142a6ea31263bc9a3524bc60f28cbccc61e62807efb82f7d587434b', 'n_tensors': 192, 'n_lora_modules': 96, 'impl': 'forward hooks, bf16, scaling = lambda', 'which': 'rand'}
-00:54:54|INFO   |adapter attached {'adapter_dir': 'gen_art/gen_art_experiment_9/selected/gemma_it/adapter', 'adapter_sha256': '9714d8a4b8dc6d52e4f92f41dddceeeef5bc9c1c20145e02d955bbfbbcdec547', 'n_tensors': 192, 'n_lora_modules': 96, 'impl': 'forward hooks, bf16, scaling = lambda', 'which': 'real'}
-00:54:54|INFO   |adapter attached {'adapter_dir': 'gen_art/gen_art_experiment_9/selected/gemma_it/adapter', 'adapter_sha256': '9714d8a4b8dc6d52e4f92f41dddceeeef5bc9c1c20145e02d955bbfbbcdec547', 'n_tensors': 192, 'n_lora_modules': 96, 'impl': 'forward hooks, bf16, scaling = lambda', 'which': 'real'}
-00:54:54|INFO   |adapter attached {'adapter_dir': 'gen_art/gen_art_experiment_9/selected/gemma_it/adapter', 'adapter_sha256': '9714d8a4b8dc6d52e4f92f41dddceeeef5bc9c1c20145e02d955bbfbbcdec547', 'n_tensors': 192, 'n_lora_modules': 96, 'impl': 'forward hooks, bf16, scaling = lambda', 'which': 'real'}
-00:54:55|INFO   |adapter attached {'adapter_dir': 'gen_art/gen_art_experiment_9/selected/gemma_it/adapter', 'adapter_sha256': '9714d8a4b8dc6d52e4f92f41dddceeeef5bc9c1c20145e02d955bbfbbcdec547', 'n_tensors': 192, 'n_lora_modules': 96, 'impl': 'forward hooks, bf16, scaling = lambda', 'which': 'real'}
-00:54:55|INFO   |adapter attached {'adapter_dir': 'gen_art/gen_art_experiment_9/selected/gemma_it/adapter', 'adapter_sha256': '9714d8a4b8dc6d52e4f92f41dddceeeef5bc9c1c20145e02d955bbfbbcdec547', 'n_tensors': 192, 'n_lora_modules': 96, 'impl': 'forward hooks, bf16, scaling = lambda', 'which': 'real'}
-00:54:55|INFO   |adapter attached {'adapter_dir': 'gen_art/gen_art_experiment_9/selected/gemma_it/adapter', 'adapter_sha256': '9714d8a4b8dc6d52e4f92f41dddceeeef5bc9c1c20145e02d955bbfbbcdec547', 'n_tensors': 192, 'n_lora_modules': 96, 'impl': 'forward hooks, bf16, scaling = lambda', 'which': 'real'}
-00:54:56|INFO   |adapter attached {'adapter_dir': 'gen_art/gen_art_experiment_9/selected/gemma_it/adapter', 'adapter_sha256': '9714d8a4b8dc6d52e4f92f41dddceeeef5bc9c1c20145e02d955bbfbbcdec547', 'n_tensors': 192, 'n_lora_modules': 96, 'impl': 'forward hooks, bf16, scaling = lambda', 'which': 'real'}
-00:54:56|INFO   |adapter attached {'adapter_dir': 'gen_art/gen_art_experiment_9/selected/gemma_it/adapter', 'adapter_sha256': '9714d8a4b8dc6d52e4f92f41dddceeeef5bc9c1c20145e02d955bbfbbcdec547', 'n_tensors': 192, 'n_lora_modules': 96, 'impl': 'forward hooks, bf16, scaling = lambda', 'which': 'real'}
-00:54:59|INFO   |adapter attached {'adapter_dir': 'gen_art/gen_art_experiment_9/adapters/gemma_it/lambda_1.00', 'adapter_sha256': '1b691a05143898cf724560037b35371ef7cc0e51005140540898e2d89d173e46', 'n_tensors': 192, 'n_lora_modules': 96, 'impl': 'forward hooks, bf16, scaling = lambda', 'which': 'rand'}
-00:55:02|INFO   |adapter attached {'adapter_dir': 'gen_art/gen_art_experiment_9/adapters/gemma_it/rand_1', 'adapter_sha256': '096a361b0142a6ea31263bc9a3524bc60f28cbccc61e62807efb82f7d587434b', 'n_tensors': 192, 'n_lora_modules': 96, 'impl': 'forward hooks, bf16, scaling = lambda', 'which': 'rand'}
-00:55:02|INFO   |identity checks {'lam0_vs_nohook_maxabs': 0.0, 'lam1_vs_nohook_maxabs_mean': 31.794189453125, 'n': 8, 'saved_lambda1_sha256': '1b691a05143898cf724560037b35371ef7cc0e51005140540898e2d89d173e46', 'selected_sha256': '9714d8a4b8dc6d52e4f92f41dddceeeef5bc9c1c20145e02d955bbfbbcdec547', 'lam1_vs_saved_first16_agree': 20, 'lam1_vs_saved_n': 20}
-00:55:02|INFO   |[dev] gemma_it: 333 to generate (0 done)
-00:55:26|INFO   |[dev] dev0 lam=0 37/333 24s (1.54/s) bs=37 degen 0.000 ETA 3.2 min
-00:55:50|INFO   |[dev] dev0.25 lam=0.25 74/333 48s (1.55/s) bs=37 degen 0.000 ETA 2.8 min
-00:56:13|INFO   |[dev] dev0.4 lam=0.4 111/333 71s (1.56/s) bs=37 degen 0.000 ETA 2.4 min
-00:56:37|INFO   |[dev] dev0.5 lam=0.5 148/333 95s (1.56/s) bs=37 degen 0.000 ETA 2.0 min
-00:57:00|INFO   |[dev] dev0.6 lam=0.6 185/333 118s (1.56/s) bs=37 degen 0.000 ETA 1.6 min
-00:57:24|INFO   |[dev] dev0.7 lam=0.7 222/333 142s (1.56/s) bs=37 degen 0.000 ETA 1.2 min
-00:57:47|INFO   |[dev] dev0.8 lam=0.8 259/333 166s (1.56/s) bs=37 degen 0.000 ETA 0.8 min
-00:58:11|INFO   |[dev] dev1 lam=1 296/333 189s (1.56/s) bs=37 degen 0.000 ETA 0.4 min
-00:58:35|INFO   |[dev] dev1.25 lam=1.25 333/333 213s (1.56/s) bs=37 degen 0.000 ETA 0.0 min
-00:58:40|INFO   |J1 reassembled, sha256 7c805d7fb2d9b684
-/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_5/gen_art/gen_art_experiment_16/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
-  warnings.warn(
-00:58:49|INFO   |dose rule gemma_it: lo=0.6 hi=0.7 dose*=0.6 support_ok=True
-00:58:49|INFO   |[gate] gemma_it: 666 to generate (0 done)
-00:59:33|WARNING|OOM at bs=140 -> halving
-01:00:05|INFO   |[gate] gate_zero lam=0 70/666 76s (0.92/s) bs=70 degen 0.000 ETA 10.8 min
-01:00:38|INFO   |[gate] gate_zero lam=0 140/666 109s (1.28/s) bs=70 degen 0.000 ETA 6.8 min
-01:01:19|WARNING|OOM at bs=126 -> halving
-01:01:47|INFO   |[gate] gate_zero lam=0 203/666 179s (1.14/s) bs=63 degen 0.000 ETA 6.8 min
-01:02:17|INFO   |[gate] gate_zero lam=0 266/666 208s (1.28/s) bs=63 degen 0.000 ETA 5.2 min
-01:02:58|INFO   |[gate] gate_zero lam=0 333/666 250s (1.33/s) bs=67 degen 0.000 ETA 4.2 min
-01:03:43|WARNING|OOM at bs=140 -> halving
-01:04:15|INFO   |[gate] gate_hi lam=0.7 403/666 326s (1.23/s) bs=70 degen 0.000 ETA 3.5 min
-01:04:48|INFO   |[gate] gate_hi lam=0.7 473/666 359s (1.32/s) bs=70 degen 0.000 ETA 2.4 min
-01:05:30|WARNING|OOM at bs=126 -> halving
-01:05:59|INFO   |[gate] gate_hi lam=0.7 536/666 430s (1.25/s) bs=63 degen 0.000 ETA 1.7 min
-01:06:28|INFO   |[gate] gate_hi lam=0.7 599/666 460s (1.30/s) bs=63 degen 0.000 ETA 0.9 min
-01:07:11|INFO   |[gate] gate_hi lam=0.7 666/666 502s (1.33/s) bs=67 degen 0.000 ETA 0.0 min
-01:07:11|INFO   |git commit: [master f92a7f8] dose addendum gemma_it: lo=0.6 hi=0.7 dose*=0.6
- 2 files changed, 118 insertions(+)
- create mode 100644 dose_addendum_gemma_it.sha256
- create m
-01:07:12|INFO   |[conf] gemma_it: 12472 to generate (0 done)
-01:07:57|WARNING|OOM at bs=157 -> halving
-01:08:28|INFO   |[conf] zero lam=0 78/12472 76s (1.02/s) bs=78 degen 0.000 ETA 201.6 min
-01:08:59|INFO   |[conf] zero lam=0 157/12472 108s (1.46/s) bs=79 degen 0.000 ETA 140.6 min
-01:09:44|WARNING|OOM at bs=155 -> halving
-01:10:16|INFO   |[conf] zero lam=0 234/12472 184s (1.27/s) bs=77 degen 0.000 ETA 160.3 min
-01:10:47|INFO   |[conf] zero lam=0 312/12472 215s (1.45/s) bs=78 degen 0.000 ETA 139.9 min
-01:11:33|WARNING|OOM at bs=153 -> halving
-01:12:04|INFO   |[conf] zero lam=0 388/12472 292s (1.33/s) bs=76 degen 0.000 ETA 151.8 min

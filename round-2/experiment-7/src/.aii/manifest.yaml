@@ -1,7 +1,0 @@
-entries:
-  - path: .venv/
-    delete: regenerable
-    source: "uv sync"
-  - path: src/__pycache__/
-    delete: regenerable
-    source: "python -c 'import compileall; compileall.compile_dir(\"src\")'"

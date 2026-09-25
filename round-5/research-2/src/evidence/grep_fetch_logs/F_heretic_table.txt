@@ -1,9 +1,0 @@
-# 2026-09-25T00:56:25Z https://raw.githubusercontent.com/p-e-w/heretic/master/README.md
-warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
-URL: https://raw.githubusercontent.com/p-e-w/heretic/master/README.md
-Type: HTML
-Length: 17147 chars (truncated) (offset: 2750)
-
---- Content ---
-
-*[p-e-w/gemma-3-12b-it-heretic](https://huggingface.co/p-e-w/gemma-3-12b-it-heretic) (ours)** | **3/100** | **0.16** | The Heretic version, generated without any human effort, achieves the same level of refusal suppression as other abliterations, but at a much lower KL divergence, indicating less damage to the original model's capabilities. *(You can reproduce those numbers using Heretic's built-in evaluation functionality, e.g. `heretic --model google/gemma-3-12b-it --evaluate-model p-e-w/gemma-3-12b-it-heretic`. Note that the exact values might be platform- and hardware-dependent. The table above was compiled using PyTorch 2.8 on an RTX 5090.)* Of course, mathematical metrics and automated benchmarks never tell the whole story, and are no substitute for human evaluation. Models generated with Heretic have been well-received by users (links and emphasis added): > "I was skeptical before, but I just downloaded > [**GPT-OSS 20B Heretic**](https://huggingface.co/p-e-w/gpt-oss-20b-heretic) > model and holy shit. It gives properly formatted long responses to sensitive topics, > using the exact uncensored words that you would expect from an uncensored model, > produces markdown format tables with details and whatnot. Looks like this is > the best abliterated version of this model so far..." > [*(Link to comment)*](https://old.reddit.com/r/LocalLLaMA/comments/1oymku1/heretic_fully_au

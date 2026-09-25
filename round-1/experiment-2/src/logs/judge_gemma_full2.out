@@ -1,3 +1,0 @@
-16:21:34|INFO   |judge: 13173 jobs, 5998 to do, spent so far $1.263
-16:24:38|INFO   |judge spend $2.321; total $2.321
-16:24:40|INFO   |kappa: ind_ctrl|gemma|en n=138 k=0.5578056908485003; ind_ctrl|gemma|sl n=139 k=0.7333859866862236; ind_pt|gemma|en n=134 k=0.15076717811874624; ind_pt|gemma|sl n=140 k=0.75; orig|gemma|en n=150 k=0.16943521594684446; orig|gemma|sl n=150 k=0.7319034852546917

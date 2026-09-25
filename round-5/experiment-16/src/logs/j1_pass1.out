@@ -1,9 +1,0 @@
-/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_5/gen_art/gen_art_experiment_16/.venv/lib/python3.12/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
-  warnings.warn(
-/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_5/gen_art/gen_art_experiment_16/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
-  warnings.warn(
-[W925 02:31:25.362947001 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 289406976 bytes (free: 98566144, total: 23669637120).
-[W925 02:31:45.599192469 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 360710144 bytes (free: 113246208, total: 23669637120).
-[W925 02:32:14.031807567 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 402653184 bytes (free: 295698432, total: 23669637120).
-02:33:45|INFO   |J1: 9450 rows in 156s
-02:34:28|INFO   |TTJ-J1: 3642 rows

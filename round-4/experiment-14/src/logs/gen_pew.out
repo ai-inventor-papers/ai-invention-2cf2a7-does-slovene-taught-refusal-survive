@@ -1,21 +1,0 @@
-Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:07<00:30,  7.61s/it]Loading checkpoint shards:  40%|████      | 2/5 [00:15<00:23,  7.92s/it]Loading checkpoint shards:  60%|██████    | 3/5 [00:23<00:15,  7.95s/it]Loading checkpoint shards:  80%|████████  | 4/5 [00:32<00:08,  8.14s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:40<00:00,  8.21s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:40<00:00,  8.10s/it]
-21:45:06|INFO   |loaded pew_heretic {'arch': 'Gemma3ForConditionalGeneration', 'load_s': 59.0, 'vram_gb': 8.41, 'native_triton': 'deregistered', 'torch': '2.14.0+cu130', 'repo': 'p-e-w/gemma-3-12b-it-heretic', 'revision': 'e037e6e112ea85777fc3858469cdc31fdfceaa13', 'template_sha1': '3f7731dd04d6fb3e41478bea860489dac5c6115c', 'gemma_template_sha1': '3f7731dd04d6fb3e41478bea860489dac5c6115c', 'template_override_to_gemma': False}
-21:45:06|INFO   |[ext] pew_heretic: 1800 to generate (0 done)
-21:45:51|INFO   |[ext] ext lam=0 127/1800 45s (2.82/s) degen 0.000 ETA 9.9 min
-21:46:33|INFO   |[ext] ext lam=0 252/1800 88s (2.88/s) degen 0.004 ETA 9.0 min
-21:47:16|INFO   |[ext] ext lam=0 374/1800 130s (2.87/s) degen 0.005 ETA 8.3 min
-21:48:00|INFO   |[ext] ext lam=0 493/1800 174s (2.84/s) degen 0.006 ETA 7.7 min
-21:48:43|INFO   |[ext] ext lam=0 609/1800 217s (2.80/s) degen 0.007 ETA 7.1 min
-21:49:27|INFO   |[ext] ext lam=0 724/1800 261s (2.77/s) degen 0.008 ETA 6.5 min
-21:50:11|INFO   |[ext] ext lam=0 837/1800 305s (2.74/s) degen 0.010 ETA 5.9 min
-21:50:55|INFO   |[ext] ext lam=0 949/1800 350s (2.71/s) degen 0.009 ETA 5.2 min
-21:51:40|INFO   |[ext] ext lam=0 1059/1800 394s (2.69/s) degen 0.008 ETA 4.6 min
-21:52:25|INFO   |[ext] ext lam=0 1167/1800 439s (2.66/s) degen 0.009 ETA 4.0 min
-21:53:10|INFO   |[ext] ext lam=0 1273/1800 484s (2.63/s) degen 0.008 ETA 3.3 min
-21:53:55|INFO   |[ext] ext lam=0 1378/1800 529s (2.60/s) degen 0.007 ETA 2.7 min
-21:54:41|INFO   |[ext] ext lam=0 1479/1800 575s (2.57/s) degen 0.007 ETA 2.1 min
-21:55:27|INFO   |[ext] ext lam=0 1576/1800 621s (2.54/s) degen 0.008 ETA 1.5 min
-21:56:13|INFO   |[ext] ext lam=0 1667/1800 668s (2.50/s) degen 0.008 ETA 0.9 min
-21:57:01|INFO   |[ext] ext lam=0 1750/1800 715s (2.45/s) degen 0.009 ETA 0.3 min
-21:57:36|INFO   |[ext] ext lam=0 1800/1800 750s (2.40/s) degen 0.008 ETA 0.0 min
-21:57:36|INFO   |done

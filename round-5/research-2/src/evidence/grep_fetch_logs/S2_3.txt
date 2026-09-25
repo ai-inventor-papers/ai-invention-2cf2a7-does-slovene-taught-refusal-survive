@@ -1,3 +1,0 @@
-# 2026-09-25T00:56:14Z https://api.semanticscholar.org/graph/v1/paper/search?fields=title,year,externalIds,publicationDate&limit=40&query=abliteration+multilingual+refusal+languages
-warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
-Error: HTTP 429
