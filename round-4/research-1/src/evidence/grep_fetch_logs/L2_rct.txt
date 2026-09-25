@@ -1,0 +1,44 @@
+# 2026-09-24T18:29:14Z https://arxiv.org/abs/2605.05427 :: language|refusal|Title
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/abs/2605.05427
+Type: HTML
+Pattern: language|refusal|Title (17 matches in 7576 chars)
+
+--- Content ---
+
+522:...ch * [Advanced search](https://arxiv.org/search/advanced)
+
+# Computer Science > Artificial Intelligence
+
+**arXiv:2605.05427** (cs) 
+
+[Submitted on 6 May 2026 ([v1](https://arxiv.org/abs/2605.05427v1)), last revised 30 May 2026 (this version, v2)]
+
+# Title:The Refusal--Compliance Tradeoff: A Large-Scale Safety Behavior Audit of Large Language Models
+
+Authors:[Alif Al Hasan](https://arxiv.org/search/cs?searchtype=author&query=Hasan,+A+A), [Sumon Biswas](https://arxiv.org/search/cs?searchtype=author&query=Biswas,+S)
+
+View a PDF of the paper titled The Refusal--Compliance Tradeoff: A Large-Scale Safety Behavior Audit of Large Language Models, by Alif Al Hasan and 1 other authors
+
+[View PDF](/pdf/2605.05427) [HTML (experimental)](https://arxiv.org/html/2605.05427v2)
+
+> Abstract:Refusal rates are a poor proxy for LLM safety, i.e., a model may over-refuse benign prompts while still complying with harmful ones. We audit both failure modes across 21 open-weight LLMs on four safety benchmarks (OR-Bench, XSTest, ToxiGen, BOLD), using a ...
+--
+1583:...nt to isolate model sensitivity from dataset toxicity confounds. We report three findings. First, models adopt fundamentally different calibration strategies: conservative ecosystems such as Llama suppress unsafe outputs at the cost of elevated over-refusals, while permissive ecosystems such as DeepSeek and Qwen preserve helpfulness but tolerate higher harmful compliance. Second, demographic protection is unequal: models over-protect prominent racial and religious groups, frequently refusing even benign prompts about them, while providing substantially weaker protection against disability-targeted attacks. Third, refusal and compliance tendencies are stable within model families across generations and scales, suggesting that post-training objectives shape safety behavior more than architecture. Our results call for joint, demographically-aware, and multi-judge safet...
+--
+2832:...om: Alif Al Hasan [[view email](/show-email/97ec1ce3/2605.05427)]   
+**[[v1]](/abs/2605.05427v1)** Wed, 6 May 2026 20:35:57 UTC (123 KB)  
+**[v2]** Sat, 30 May 2026 15:07:19 UTC (77 KB)  
+
+
+Full-text links:
+
+## Access Paper:
+
+View a PDF of the paper titled The Refusal--Compliance Tradeoff: A Large-Scale Safety Behavior Audit of Large Language Models, by Alif Al Hasan and 1 other authors
+
+  * [View PDF](/pdf/2605.05427)
+  * [HTML (experimental)](https://arxiv.org/html/2605.05427v2)
+  * [TeX Source ](/...
+--
+[7 more matches not shown]

@@ -1,0 +1,86 @@
+# 2026-09-24T18:38:24Z https://arxiv.org/pdf/2605.17173 :: respond in|output language|response language|input language|Gemma|languages|comprehen|generation
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2605.17173
+Type: PDF
+Pattern: respond in|output language|response language|input language|Gemma|languages|comprehen|generation (92 matches in 93920 chars)
+
+--- Content ---
+
+85:Published as a conference paper at COLM 2026
+Why Do Safety Guardrails Degrade Across Languages?
+Max Zhang∗, Ameen Patel∗, Sang Truong∗∗, Sanmi Koyejo∗∗
+Stanford University
+∗: Equal contribution, ∗∗: Equal senior authorship
+Abstract
+Large language models exhibit safety degradation in non-English lan-
+guages. Standard evaluation relies on Jailbreak Success Rate (JSR), which...
+--
+880:...c safety robustness (θ), intrinsic prompt hardness (β), global lan-
+guage processing diﬀiculty (γ), and a prompt-specific cross-lingual safety
+gap (τ). Using the MultiJail dataset, we evaluate the safety robustness of
+61 model configurations across 5 closed-model families and 10 languages
+of varying resource, aggregating a dataset of 1.9 million responses. Ex-
+ploratory Factor Analysis shows safety is primarily unidimensional: mod-
+els refuse different harm types mainly through a shared mechanism. Con-
+trary to the expected trend that safety degrades largely in low-resource
+languages, 22 model configurations are more vulnerable in English than
+in low-resource languages. Low-resource languages produce more uncer-
+tain responses (high entropy) than high-resource languages. Also, high-τ
+prompts cluster in physical harm categories like Theft and Weapons and
+lower-resource languages, trends validated through cross-dataset general-
+ization. While global translation quality shows low correlation with τ, se-
+vere mistranslations drive high-bias outliers, as validated by native speak-
+ers. Cultural and conceptual grounding mismatches may also contribute
+to τ. I...
+--
+2320:...fety evaluation
+and targeted improvements in dataset construction.
+Code: https://github.com/aims-foundations/safety-irt
+Data: https://huggingface.co/datasets/aims-foundations/safety-irt
+1
+Introduction
+Large language models (LLMs) exhibit degraded safety guardrails in non-English
+languages, particularly in low-resource languages such as Swahili, Bengali, and Ja-
+vanese (Deng et al., 2024; Wang et al., 2024), posing potential global safety concerns.
+Standard evaluation relies on Jailbreak Success Rate (JSR) or Attack Success Rate (ASR),
+aggregating binary outcomes into a single number. As Chouldechova et...
+--
+4327:...sponse by separating ability, language effects, and
+prompt diﬀiculty.
+Is the failure a lack of model capability, and is it language-specific? Is it a translation error
+corrupting safety-relevant semantics? Or are certain harm concepts fundamentally harder
+to represent in certain languages due to cultural framing? Lastly, does judge selection or
+question ambiguity impose extra prompt diﬀiculties?
+Prior work supports these concerns: physical harm concepts align poorly in vector space
+across languages compared to abstract ones (Peng & Søgaard, 2024). Yet without an suitable
+measurement framework, these causes cannot be fully disentangled.
+We propose a Multi-Group Item Response Theory (IRT; Baker 2001) framework that maps
+each source of failure to a distinct latent parameter: ...
+--
+5729:...ross-lingual safety gap” for our study as it is more accessible for an
+ML audience and multilingual setting.
+By decomposing safety failures into these latent factors, we move beyond aggregate metrics
+(JSR/ASR) to diagnose precisely where models are successfully jailbroken across languages.
+Figure 1 provides an overview. Our contributions are as follows:
+1. Framework. We introduce a multi-group IRT framework separating ability (θj),
+language diﬀiculty (γL), and prompt-specific cross-lingual safety gaps (τiL), eval-
+uating 61 model configurations across 5 families and 10 languages.
+2. Safety is unidimensional. Exploratory Factor Analysis reveals safety is primarily
+unidimensional: models that refuse one harm category generally refuse others.
+3. Reversed multilingual safety patterns. Contrary to standard assumptions, 22 of
+61 model configurations exhibit t...
+--
+7265:...ept-specific prompts, explaining τ
+outliers with perfect translation; τ also correlates weakly with judge disagreement.
+2
+Related Work
+Multilingual safety benchmarks.
+Multilingual safety benchmarks have shown that LLM
+guardrails often degrade outside English. MultiJail covers 10 languages and 18 harm cat-
+egories across 3,150 prompts (Deng et al., 2024), while XSafety is larger, at roughly 28k
+prompts across 14 harm categories and 10 languages (Wang et al., 2024). Other datasets
+differ in scope: M-ALERT contains 75k prompts but focuses only on five high-resource
+European languages (Friedrich et al., 2024), while LinguaSafe combines translated, tran-
+screated, and natively authored prompts across 12 languages (Ning et ...
+--
+[77 more matches not shown]

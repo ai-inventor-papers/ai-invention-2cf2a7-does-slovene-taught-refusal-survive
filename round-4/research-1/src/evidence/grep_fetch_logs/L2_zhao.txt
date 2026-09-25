@@ -1,0 +1,27 @@
+# 2026-09-24T18:29:14Z https://arxiv.org/abs/2507.11878 :: harmfulness|refusal|separate
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/abs/2507.11878
+Type: HTML
+Pattern: harmfulness|refusal|separate (35 matches in 8296 chars)
+
+--- Content ---
+
+541:...ch](https://arxiv.org/search/advanced)
+
+# Computer Science > Computation and Language
+
+**arXiv:2507.11878** (cs) 
+
+[Submitted on 16 Jul 2025 ([v1](https://arxiv.org/abs/2507.11878v1)), last revised 6 Jul 2026 (this version, v5)]
+
+# Title:LLMs Encode Harmfulness and Refusal Separately
+
+Authors:[Jiachen Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao,+J), [Jing Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang,+J), [Zhengxuan Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu,+Z), [David Bau](https://arxiv.org/search/cs?searchtype=author&query=Bau,+D), [Weiyan Shi](https://arxiv.org/search/cs?searchtype=author&query=Shi,+W)
+
+View a PDF of the paper titled LLMs Encode Harmfulness and Refusal Separately, by Jiachen Zhao and 4 other authors
+
+[View PDF](/pdf/2507.11878) [HTML (experimental)](https://arxiv.org/html/2507.11878v5)
+
+> Abstract:LLMs are trained to refuse harmful instructions, but do they truly understand harmfulness beyond just refusing? Prior work has shown that LLMs' refusal behaviors can be mediated by a one-dimensional subspace, i.e., a refusal direction. In this work, we identify a new dimension to analyze safety mechanisms in LLMs, i.e., harmfulness, which is encoded internally as a separate concept from refusal. There exists a harmfulness direction that is distinct from the refusal direction. As causal evidence, steering along the harmfulness direction can lead LLMs to interpret harmless instr...
+--
+[25 more matches not shown]

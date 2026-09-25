@@ -1,0 +1,44 @@
+# 2026-09-24T18:27:09Z scholarly :: translated responses judge bias multilingual safety evaluation
+Search: translated responses judge bias multilingual safety evaluation  [scholarly via openalex]
+Found: 10 results
+
+1. A Multitask, Multilingual, Multimodal Evaluation of ChatGPT on Reasoning, Hallucination, and Interactivity
+   https://doi.org/10.18653/v1/2023.ijcnlp-main.45
+   2023 · cited by 663...
+
+2. A Multitask, Multilingual, Multimodal Evaluation of ChatGPT on Reasoning, Hallucination, and Interactivity
+   https://doi.org/10.48550/arxiv.2302.04023
+   arXiv (Cornell University) · 2023 · cited by 360...
+
+3. Large language models encode clinical knowledge
+   https://doi.org/10.1038/s41586-023-06291-2
+   Nature · 2023 · cited by 3874...
+
+4. Service Robots Rising: How Humanoid Robots Influence Service Experiences and Elicit Compensatory Consumer Responses
+   https://doi.org/10.1177/0022243718822827
+   Journal of Marketing Research · 2019 · cited by 1186...
+
+5. Opinion Paper: “So what if ChatGPT wrote it?” Multidisciplinary perspectives on opportunities, challenges and implications of generative conversational AI for research, practice and policy
+   https://doi.org/10.1016/j.ijinfomgt.2023.102642
+   International Journal of Information Management · 2023 · cited by 4372...
+
+6. Towards building multilingual language model for medicine
+   https://doi.org/10.1038/s41467-024-52417-z
+   Nature Communications · 2024 · cited by 132...
+
+7. A survey of multilingual large language models
+   https://doi.org/10.1016/j.patter.2024.101118
+   Patterns · 2025 · cited by 105...
+
+8. Seamless: Multilingual Expressive and Streaming Speech Translation
+   https://doi.org/10.48550/arxiv.2312.05187
+   arXiv (Cornell University) · 2023 · cited by 41...
+
+9. A Survey of Large Language Models
+   https://doi.org/10.1007/s11704-026-60308-3
+   Frontiers of Computer Science · 2026 · cited by 1558...
+
+10. GPT-4 Technical Report
+   https://doi.org/10.4230/lipics.cosit.2024.11
+   arXiv (Cornell University) · 2023 · cited by 2490...
+

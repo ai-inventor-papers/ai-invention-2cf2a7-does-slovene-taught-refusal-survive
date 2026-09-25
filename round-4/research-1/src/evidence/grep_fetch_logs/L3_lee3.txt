@@ -1,0 +1,267 @@
+# 2026-09-24T18:35:45Z https://arxiv.org/pdf/2511.21140 :: label shift|covariate|same conditional|invariant|8\. |Distribution Shift|PPI estimator|become biased|lower variance|adaptive allocation|m0 and m1|github
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2511.21140
+Type: PDF
+Pattern: label shift|covariate|same conditional|invariant|8\. |Distribution Shift|PPI estimator|become biased|lower variance|adaptive allocation|m0 and m1|github (39 matches in 83322 chars)
+
+--- Content ---
+
+1021:...ionally, it uses an adaptive strategy
+to allocate calibration samples for tighter intervals.
+Importantly, we characterize parameter regimes
+defined by the true evaluation score and the LLM
+judge’s sensitivity and specificity in which our
+LLM-based evaluation yields more reliable esti-
+mates than human-only evaluation. Moreover, we
+show that our framework remains unbiased under
+distribution shift between the test and calibration
+datasets, in contrast to existing approaches.
+1. Introduction
+The use of large language models (LLMs) as judges has
+become a low-cost and scalable alternative to human evalua-
+tion across various tasks (Zheng et al., 2023; Liu et al., 2023;
+Wang et al., 2023; Li et al., 2025; Gu et al., 2024). A com-
+mon practice is to summarize such evaluation...
+--
+6072:...amples whose true label is incorrect (e.g.,
+4 + 7 = 3), and the number of calibration samples whose true label is correct (e.g., 4 + 7 = 11), respectively. (c) The resulting estimator
+ˆθ is unbiased when the true values of q0 and q1 are known, or when a sufficiently large calibration dataset is available. A plug-in Python
+implementation of this procedure is provided at https://github.com/UW-Madison-Lee-Lab/LLM-judge-reporting.
+may reflect bias from judgment errors rather than genuine
+model gains. Since different evaluation procedures can in-
+duce biases of different magnitudes and directions, some
+apparent advances may arise from evaluation artifacts. This
+motivates careful comparison of LLM-based evaluation re-
+sults and highlights the need for bias adjus...
+--
+7136:...ubstituted into the correction formula. This leads to the
+bias-corrected estimator ˆθ illustrated in Figure 2c.
+More broadly, several bias-correction methods have been
+studied for imperfect evaluators. In particular, prediction-
+powered inference (Angelopoulos et al., 2023a;b) provides
+a general framework that extends beyond categorical out-
+comes and can yield estimators with lower variance; see
+also Kloos et al. (2021); Chen et al. (2026). However, we
+show that existing methods can become biased under dis-
+tribution shift between the test and calibration datasets, a
+setting that can arise in LLM-as-a-judge evaluation (Jung
+et al., 2024). In contrast, the estimator ˆθ based on Rogan
+& Gladen (1978) remains unbiased under such shifts. We
+therefore adopt this estimator and focus our analysis on ˆθ.
+Since ˆθ can have higher variance than some existing alterna-
+tives, we f...
+--
+14334:...distinguishes calibration instances from test instances in-
+dexed by i. Using the calibration dataset, we estimate the
+sensitivity q1 and specificity q0 of the LLM judge in (3) as
+ˆq1 :=
+P
+j∈[m]1{ˆzj=1,zj=1}
+m1
+, ˆq0 :=
+P
+j∈[m]1{ˆzj=0,zj=0}
+m0
+,
+where 1{·} denotes the indicator function. In the main
+analysis, we assume P = Q. In Section 8, we relax this
+assumption and consider distribution shift, where P̸ = Q.
+Problem Statement.
+Because the LLM judge is imperfect,
+the naive estimator ˆp is generally biased for the true accuracy
+θ defined in (1), i.e., E[ˆp]̸ = θ. Moreover, existing LLM-
+as-a-judge evaluations typically report this point estimate
+without quantifying uncertainty via confidence intervals.
+Our objective is therefore twofold: (i) to construct a bias-
+corre...
+--
+15163:...provide
+statistically sound confidence intervals that reflect uncer-
+tainty arising from both the test and calibration datasets.
+3
+
+How to Correctly Report LLM-as-a-Judge Evaluations
+4. Method to Correctly Report
+LLM-as-a-Judge Evaluations
+In this section, we present a bias-corrected estimator ˆθ and a
+confidence interval for LLM-as-a-judge evaluations. We fur-
+ther propose an adaptive allocation strategy for constructing
+the calibration dataset that reduces the confidence interval
+length. Derivations and theoretical guarantees for the pro-
+posed method are provided in Section 5.
+4.1. Mitigating Bias in Point Estimator
+We begin with the setting in which the sensitivity q1 and
+specificity q0 in (3) are known. In this case, an unbiased
+estimator of the true accuracy θ in...
+--
+17751:...allocation across label types (m0 = m1), while
+solid curves correspond to calibration sets using the adaptive allo-
+cation strategy in Algorithm 1, which results in shorter intervals.
+minimal cost, the test-set size n can often be made extremely
+large. In the limit n →∞, test-set uncertainty vanishes, and
+the interval length is determined solely by the calibration
+sample sizes m0 and m1. This observation enables practi-
+tioners to target a desired interval length and determine the
+minimal calibration budget required to achieve it.
+Figure 3 illustrates how the confidence-interval length de-
+creases as the calibration dataset grows. The dashed curves
+correspond to calibration datasets with m0 = m1. For
+example, when ˆp = 0.3 is estimated from the test set and
+ˆ...
+--
+18772:...el composition can sometimes
+be influenced through sampling strategies. As a result, asym-
+metric label sizes (m0̸ = m1) are feasible. This flexibility
+matters because the two label types typically contribute
+asymmetrically to the overall uncertainty, so an imbalanced
+allocation can reduce the interval length.
+Motivated by the benefits of asymmetric allocation, we
+introduce an adaptive allocation strategy in Algorithm 1.
+The algorithm first collects a small pilot calibration set (e.g.,
+mpilot = 10 per label type) to obtain preliminary estimates
+˜q0 and ˜q1. It then computes the empirical error ratio (1 −
+˜q0)/(1 −˜q1) and combines it with the test-set estimate ˆp
+to determine an allocation (m0, m1) that approximately
+minimizes the confidence-interval length in (6). As shown
+by the solid curves in Figure 3, this adaptive allocation
+gives shorter intervals under a fixed calibration budget than
+symmetric allocation. The optimality of this strategy in
+minimizing the confidence-interval length under a fixed
+calibration budget is established in the following section.
+4
+
+How to Correctly Report LLM-as-a-Judge Evaluations
+5. Theoretical Justification of Our Method
+We provide theoretical justification for the me...
+--
+23829:...p, the
+proportion of test-set responses judged as ‘correct’ by the
+LLM, is large, more calibration samples should be allocated
+to estimating ˜q1 to minimize the interval length, resulting
+in an optimal allocation with m0 < m1. In practice, we ap-
+proximate the optimal allocation using Algorithm 1, which
+estimates the error ratio ˆκ from a pilot calibration sample
+and allocates m0 and m1 according to Proposition 5.2.
+6. When Are LLM-as-a-Judge Evaluations
+Preferable to Human-Only Evaluation?
+In Section 5, we show that a human-labeled calibration
+dataset is essential for reliable LLM-as-a-judge evaluation
+because it enables bias correction. This raises a natural
+question: If human annotators are available, why not instead
+estimate the target accuracy θ directly...
+--
+24944:...ctly to m test instances to estimate the true accuracy
+5
+
+How to Correctly Report LLM-as-a-Judge Evaluations
+from human evaluation alone. We compare these two strate-
+gies and show that LLM-as-a-judge evaluation with our
+correction method can be statistically more efficient than
+human-only evaluation in certain parameter regimes.
+Parameter Regimes Where LLM-as-a-Judge Achieves
+Lower Variance.
+Human-only evaluation relies on a lim-
+ited annotation budget, which restricts how many test in-
+stances can be evaluated and therefore limits how much
+the variance of the estimator can be reduced. In contrast,
+LLM-as-a-judge evaluation can be applied to an arbitrarily
+large test set at negligible marginal cost, so that the domi-
+nant uncertainty stems from bias correction ba...
+--
+29239:...0
+0.2
+0.4
+0.6
+0.8
+1.0
+Interval length of 
+where Var( )
+Var( )
+Figure 6. Estimated sensitivity q1 and specificity q0 of seven con-
+temporary LLM-as-a-judge models on Chatbot Arena pairwise
+comparisons between Alpaca-13B and other models. Each
+point corresponds to one judge. The grayscale background in-
+dicates the range of θ values where calibrated LLM-as-a-judge
+evaluation has lower variance than human-only evaluation, accord-
+ing to Proposition 6.1. Darker shades indicate a wider such range.
+Figure 6 maps the estimated sensitivity and specificity of
+each judge onto the (q0, q1) space. The grayscale back-
+ground indicates the range of θ values for which the condi-
+tion in Proposition 6.1 holds. Darker shades correspond to
+a wider range of θ values where calibrated LLM-as-a-judge
+evaluation has lower variance than human-only evaluation.
+6
+
+How to Correctly Report LLM-as-a-Judge Evaluations
+0.00
+0.25
+0.50
+0.75
+1.00
+True accuracy ( )
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+Estimate
+p
+p±z SE
+Ours ( )
+Our CI
+(a) Estimates
+0.00
+0.25
+0.50
+0.75
+1.00
+True accuracy ( )
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+Coverage probability
+p±z SE
+Our CI
+95%
+(b) Coverage probability
+0.00
+0.25
+0.50
+0.75
+1.00
+True accuracy ( )
+0.00
+0.0...
+--
+37343:...
+Appendix K provides additional Chatbot Arena results
+using Gemini-3-Flash, Claude-Haiku-4.5, and
+GPT-4.1 as LLM judges, which show the same trend as in
+Figure 7. It also shows that raw LLM judgments can distort
+the ground-truth ranking of models based on Chatbot Arena
+win rates computed from human preference labels, while
+our estimator improves ranking recovery in such cases.
+8. Robust Estimation under Distribution Shift
+As mentioned in Section 1, a variety of bias-correction meth-
+ods have been proposed for imperfect evaluators, typically
+under the assumption P = Q between the test distribution P
+and the calibration distribution Q. When this assumption is
+violated, bias correction can fail.
+In practice, however, not every marginal or conditional prob-
+ability under P need coincide with its counterpart under Q.
+Instead, only certain conditional distributions of the data-
+generating process may remain invariant across P and Q,
+while others may change. We therefore clarify which proba-
+bilistic assumptions are plausibly shared between P and Q
+in practice. Under minimal assumptions that are realistic
+in LLM-as-a-judge evaluation, we then characterize which
+methods remain unbiased under distribution shift.
+Data-Generating Process for LLM-as-a-Judge Eval-
+uation.
+LLM-as-a-judge evaluatio...
+--
+[23 more matches not shown]

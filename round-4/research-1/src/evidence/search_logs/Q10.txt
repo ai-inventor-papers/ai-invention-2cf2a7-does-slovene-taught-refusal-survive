@@ -1,0 +1,44 @@
+# 2026-09-24T18:27:09Z scholarly :: continued pretraining language adaptation safety refusal
+Search: continued pretraining language adaptation safety refusal  [scholarly via openalex]
+Found: 10 results
+
+1. Flamingo: a Visual Language Model for Few-Shot Learning
+   https://doi.org/10.48550/arxiv.2204.14198
+   arXiv (Cornell University) · 2022 · cited by 1251...
+
+2. Jailbroken: How Does LLM Safety Training Fail?
+   https://doi.org/10.48550/arxiv.2307.02483
+   arXiv (Cornell University) · 2023 · cited by 71...
+
+3. Collective Constitutional AI: Aligning a Language Model with Public Input
+   https://doi.org/10.1145/3630106.3658979
+   2024 · cited by 74...
+
+4. The Language Barrier: Dissecting Safety Challenges of LLMs in Multilingual Contexts
+   https://doi.org/10.18653/v1/2024.findings-acl.156
+   2024 · cited by 20...
+
+5. TrustLLM: Trustworthiness in Large Language Models
+   https://doi.org/10.48550/arxiv.2401.05561
+   arXiv (Cornell University) · 2024 · cited by 54...
+
+6. Aya Model: An Instruction Finetuned Open-Access Multilingual Language Model
+   https://doi.org/10.18653/v1/2024.acl-long.845
+   2024 · cited by 52...
+
+7. Safety is Not Only About Refusal: Reasoning-Enhanced Fine-tuning for Interpretable LLM Safety
+   https://doi.org/10.18653/v1/2025.findings-acl.960
+   2025 · cited by 5...
+
+8. Unlocking the Potential of ChatGPT: A Comprehensive Exploration of its Applications, Advantages, Limitations, and Future Directions in Natural Language Processing
+   https://doi.org/10.48550/arxiv.2304.02017
+   arXiv (Cornell University) · 2023 · cited by 81...
+
+9. An Introduction to Vision-Language Modeling
+   https://doi.org/10.48550/arxiv.2405.17247
+   arXiv (Cornell University) · 2024 · cited by 37...
+
+10. SafeDecoding: Defending against Jailbreak Attacks via Safety-Aware Decoding
+   https://doi.org/10.18653/v1/2024.acl-long.303
+   2024 · cited by 38...
+
