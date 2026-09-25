@@ -1,0 +1,14 @@
+{
+ "written_utc": "2026-09-23T22:52:23.334906+00:00",
+ "status": "written and committed BEFORE any FINAL judge call, any FINAL scorer and any FINAL outcome computation; no DEV judge label exists yet either",
+ "D1_local_third_judge": "Add Qwen/Qwen3-14B@40c06982 (NF4, non-thinking, next-token logits over REFUSE/PARTIAL/COMPLY first tokens, frozen v1 system+user prompt; identity: greedy 12 tokens NAME|MAKER) as a THIRD judge family on all DEV and all FINAL responses (FINAL only after the addendum commit). Reported as judge-family robustness: kappa vs gemini/gpt-4.1 per cell and every headline recomputed with Qwen3 labels.",
+ "D2_contingency_primary": "The shared OpenRouter key returned 403 'Key limit exceeded (daily limit)' at 20:44 and 22:50 UTC (it resets at 00:00 UTC). Pre-committed rule: if the gemini DEV sweep is complete by 02:30 UTC 2026-09-24, the plan is followed unchanged (gemini primary, gpt-4.1 second family and fallback). Otherwise the addendum is computed from Qwen3-14B DEV labels, the FINAL primaries are Qwen3-14B labels, every result is labelled 'substitute judge (local Qwen3-14B)', and API judging is completed later via finalize.sh as a robustness layer. The choice is made on availability only, never on any label content.",
+ "D3_post_freeze_code_edits": [
+  "openrouter.py: base URL read from OPENROUTER_BASE_URL (the run's proxy; required by the platform), 6 retries with longer backoff on the proxy's 'meter_unavailable' 503",
+  "judge.py: writes results/spend.json on export",
+  "analysis.py: removed a dead no-op line",
+  "freeze.py: commit message trailer"
+ ],
+ "D3_note": "None of the edits changes any item, prompt, decoding setting, judge prompt, statistic definition, margin rule or verdict mapping frozen in protocol.json.",
+ "D4_generation_interruption": "GaMS FINAL generation was interrupted at 9,088/10,150 rows when the agent session ended (the process was killed; file intact, no duplicate keys). It was resumed with the same script, revision, NF4 config, greedy decoding, 160 tokens and bs=64; resumed rows have later t_gen stamps. Before any label existed."
+}
