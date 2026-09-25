@@ -65,7 +65,7 @@ The RefusEU `evaluation` split is reserved for the confirmation iteration and wa
 | `figures/` | fig1 forest (per-category DiD), fig2 base rates, fig3 D across outcomes, fig4 identity names, fig5 meta-regression |
 | `method_out.json` (+ `full_`/`mini_`/`preview_`) | final artifact output |
 
-Kept artifacts live at `/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/`
+Kept artifacts live at `./`
 (`outputs/`, `data/`, `results/`, `figures/`, `method_out.json`). No model weights are stored in this workspace.
 
 ## How to run
