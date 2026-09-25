@@ -1,0 +1,2989 @@
+{
+ "description": "96 row-paired EN/SL utility items (8 pairs x 6 tasks) with per-item correctness (primary lm-eval metric) for every model x condition; plus full-run reference macros/gates.",
+ "examples": [
+  {
+   "item_id": "arc_challenge:Mercury_SC_414271",
+   "pair_id": "arc_challenge:Mercury_SC_414271",
+   "task": "arc_challenge",
+   "lang": "en",
+   "primary_metric": "acc_norm",
+   "n_choices": 4,
+   "gold": "2",
+   "input": "Question: Which statement describes how the life cycle of butterflies is different from the life cycle of frogs?\nAnswer:\n(0) Butterfly life cycles have more stages.\n(1) Butterfly life cycles have an egg stage.\n(2) Butterfly life cycles have a pupa stage.\n(3) Butterfly life cycles have an adult stage.",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 0,
+     "E_iter1": 0,
+     "orig": 1,
+     "rand_nm_j1": 1
+    },
+    "gemma_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1,
+     "rand_nm_j2": 1
+    }
+   }
+  },
+  {
+   "item_id": "arc_challenge:Mercury_SC_414271",
+   "pair_id": "arc_challenge:Mercury_SC_414271",
+   "task": "arc_challenge",
+   "lang": "sl",
+   "primary_metric": "acc_norm",
+   "n_choices": 4,
+   "gold": "2",
+   "input": "Vprašanje: Katera trditev opisuje, kako se življenjski cikel metuljev razlikuje od življenjskega cikla žab?\nodgovor:\n(0) Življenjski cikel metuljev ima več stopenj.\n(1) Življenjski cikel metuljev vključuje fazo jajčeca.\n(2) Življenjski cikel metuljev vključuje fazo bube.\n(3) Življenjski cikel metuljev vključuje odraslo fazo.",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 0,
+     "E_iter1": 0,
+     "orig": 0,
+     "rand_nm_j1": 0
+    },
+    "gemma_it": {
+     "E_art2": 0,
+     "E_iter1": 0,
+     "orig": 0,
+     "rand_nm_j1": 0,
+     "rand_nm_j2": 0
+    }
+   }
+  },
+  {
+   "item_id": "arc_challenge:Mercury_404820",
+   "pair_id": "arc_challenge:Mercury_404820",
+   "task": "arc_challenge",
+   "lang": "en",
+   "primary_metric": "acc_norm",
+   "n_choices": 4,
+   "gold": "3",
+   "input": "Question: An atom of chromium has 24 protons, 28 neutrons, and 24 electrons. How many subatomic particles are in the nucleus of a chromium atom?\nAnswer:\n(0) 24\n(1) 28\n(2) 48\n(3) 52",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1
+    },
+    "gemma_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1,
+     "rand_nm_j2": 1
+    }
+   }
+  },
+  {
+   "item_id": "arc_challenge:Mercury_404820",
+   "pair_id": "arc_challenge:Mercury_404820",
+   "task": "arc_challenge",
+   "lang": "sl",
+   "primary_metric": "acc_norm",
+   "n_choices": 4,
+   "gold": "3",
+   "input": "Vprašanje: Kromov atom ima 24 protonov, 28 nevtronov in 24 elektronov. Koliko subatomskih delcev je v jedru kromovega atoma?\nodgovor:\n(0) 24\n(1) 28\n(2) 48\n(3) 52",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1
+    },
+    "gemma_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1,
+     "rand_nm_j2": 1
+    }
+   }
+  },
+  {
+   "item_id": "arc_challenge:Mercury_7263060",
+   "pair_id": "arc_challenge:Mercury_7263060",
+   "task": "arc_challenge",
+   "lang": "en",
+   "primary_metric": "acc_norm",
+   "n_choices": 4,
+   "gold": "3",
+   "input": "Question: Which theory of the origin of the Moon proposes that Earth's Moon formed by the same process that formed Mars, Jupiter, and Neptune?\nAnswer:\n(0) The Giant Impact Theory\n(1) The Fission Theory\n(2) The Capture Theory\n(3) The Coaccretion Theory",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 0,
+     "E_iter1": 0,
+     "orig": 0,
+     "rand_nm_j1": 0
+    },
+    "gemma_it": {
+     "E_art2": 0,
+     "E_iter1": 0,
+     "orig": 0,
+     "rand_nm_j1": 0,
+     "rand_nm_j2": 0
+    }
+   }
+  },
+  {
+   "item_id": "arc_challenge:Mercury_7263060",
+   "pair_id": "arc_challenge:Mercury_7263060",
+   "task": "arc_challenge",
+   "lang": "sl",
+   "primary_metric": "acc_norm",
+   "n_choices": 4,
+   "gold": "3",
+   "input": "Vprašanje: Katera teorija o izvoru Lune pravi, da je Zemljina Luna nastala v enakem procesu kot Mars, Jupiter in Neptun?\nodgovor:\n(0) Teorija velikega trka.\n(1) Teorija cepitve.\n(2) Teorija zajetja.\n(3) Teorija sooblikovanja.",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 0,
+     "E_iter1": 0,
+     "orig": 0,
+     "rand_nm_j1": 0
+    },
+    "gemma_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1,
+     "rand_nm_j2": 1
+    }
+   }
+  },
+  {
+   "item_id": "arc_challenge:MCAS_8_2015_18",
+   "pair_id": "arc_challenge:MCAS_8_2015_18",
+   "task": "arc_challenge",
+   "lang": "en",
+   "primary_metric": "acc_norm",
+   "n_choices": 4,
+   "gold": "0",
+   "input": "Question: Which of the following combinations is a mixture rather than a compound?\nAnswer:\n(0) oxygen and nitrogen in air\n(1) sodium and chlorine in salt\n(2) hydrogen and oxygen in water\n(3) nitrogen and hydrogen in ammonia",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1
+    },
+    "gemma_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1,
+     "rand_nm_j2": 1
+    }
+   }
+  },
+  {
+   "item_id": "arc_challenge:MCAS_8_2015_18",
+   "pair_id": "arc_challenge:MCAS_8_2015_18",
+   "task": "arc_challenge",
+   "lang": "sl",
+   "primary_metric": "acc_norm",
+   "n_choices": 4,
+   "gold": "0",
+   "input": "Vprašanje: Katera od naslednjih kombinacij je mešanica in ne spojina?\nodgovor:\n(0) Kisik in dušik v zraku.\n(1) Natrij in klor v soli.\n(2) Vodik in kisik v vodi.\n(3) Dušik in vodik v amonijaku.",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1
+    },
+    "gemma_it": {
+     "E_art2": 0,
+     "E_iter1": 0,
+     "orig": 0,
+     "rand_nm_j1": 0,
+     "rand_nm_j2": 0
+    }
+   }
+  },
+  {
+   "item_id": "arc_challenge:Mercury_SC_413143",
+   "pair_id": "arc_challenge:Mercury_SC_413143",
+   "task": "arc_challenge",
+   "lang": "en",
+   "primary_metric": "acc_norm",
+   "n_choices": 4,
+   "gold": "2",
+   "input": "Question: Heavy rain can cause soil to flow quickly downhill. What is this change called?\nAnswer:\n(0) a tornado\n(1) a flood\n(2) a landslide\n(3) an earthquake",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1
+    },
+    "gemma_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1,
+     "rand_nm_j2": 1
+    }
+   }
+  },
+  {
+   "item_id": "arc_challenge:Mercury_SC_413143",
+   "pair_id": "arc_challenge:Mercury_SC_413143",
+   "task": "arc_challenge",
+   "lang": "sl",
+   "primary_metric": "acc_norm",
+   "n_choices": 4,
+   "gold": "2",
+   "input": "Vprašanje: Močno deževje lahko povzroči hitro premikanje zemlje po bregu navzdol. Kako se imenuje ta pojav?\nodgovor:\n(0) Tornado.\n(1) Poplava.\n(2) Zemeljski plaz.\n(3) Potres.",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1
+    },
+    "gemma_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1,
+     "rand_nm_j2": 1
+    }
+   }
+  },
+  {
+   "item_id": "arc_challenge:TAKS_2009_8_36",
+   "pair_id": "arc_challenge:TAKS_2009_8_36",
+   "task": "arc_challenge",
+   "lang": "en",
+   "primary_metric": "acc_norm",
+   "n_choices": 4,
+   "gold": "1",
+   "input": "Question: How many elements are in the compound Mg(OH)2?\nAnswer:\n(0) 2\n(1) 3\n(2) 4\n(3) 5",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1
+    },
+    "gemma_it": {
+     "E_art2": 0,
+     "E_iter1": 0,
+     "orig": 0,
+     "rand_nm_j1": 0,
+     "rand_nm_j2": 0
+    }
+   }
+  },
+  {
+   "item_id": "arc_challenge:TAKS_2009_8_36",
+   "pair_id": "arc_challenge:TAKS_2009_8_36",
+   "task": "arc_challenge",
+   "lang": "sl",
+   "primary_metric": "acc_norm",
+   "n_choices": 4,
+   "gold": "1",
+   "input": "Vprašanje: Koliko različnih elementov je v spojini Mg(OH)2?\nodgovor:\n(0) 2.\n(1) 3.\n(2) 4.\n(3) 5.",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1
+    },
+    "gemma_it": {
+     "E_art2": 0,
+     "E_iter1": 0,
+     "orig": 0,
+     "rand_nm_j1": 0,
+     "rand_nm_j2": 0
+    }
+   }
+  },
+  {
+   "item_id": "arc_challenge:Mercury_SC_400401",
+   "pair_id": "arc_challenge:Mercury_SC_400401",
+   "task": "arc_challenge",
+   "lang": "en",
+   "primary_metric": "acc_norm",
+   "n_choices": 4,
+   "gold": "1",
+   "input": "Question: Which land feature is most likely the result of a glacier?\nAnswer:\n(0) large, arid desert\n(1) deep, bowl-shaped lake\n(2) long crack in the ground\n(3) volcanic mountain range",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 0,
+     "E_iter1": 0,
+     "orig": 0,
+     "rand_nm_j1": 0
+    },
+    "gemma_it": {
+     "E_art2": 0,
+     "E_iter1": 0,
+     "orig": 0,
+     "rand_nm_j1": 0,
+     "rand_nm_j2": 0
+    }
+   }
+  },
+  {
+   "item_id": "arc_challenge:Mercury_SC_400401",
+   "pair_id": "arc_challenge:Mercury_SC_400401",
+   "task": "arc_challenge",
+   "lang": "sl",
+   "primary_metric": "acc_norm",
+   "n_choices": 4,
+   "gold": "1",
+   "input": "Vprašanje: Kateri kopenski pojav je najverjetneje posledica ledenika?\nodgovor:\n(0) Velika, suha puščava.\n(1) Globoko, skledasto jezero.\n(2) Dolga razpoka v tleh.\n(3) Vulkansko gorovje.",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 0,
+     "E_iter1": 0,
+     "orig": 0,
+     "rand_nm_j1": 0
+    },
+    "gemma_it": {
+     "E_art2": 0,
+     "E_iter1": 0,
+     "orig": 0,
+     "rand_nm_j1": 0,
+     "rand_nm_j2": 0
+    }
+   }
+  },
+  {
+   "item_id": "arc_challenge:Mercury_416645",
+   "pair_id": "arc_challenge:Mercury_416645",
+   "task": "arc_challenge",
+   "lang": "en",
+   "primary_metric": "acc_norm",
+   "n_choices": 4,
+   "gold": "3",
+   "input": "Question: Dominic is observing a volvox colony and a paramecium under a microscope. He makes a note in his journal that the volvox colony and the paramecium are similar because they have many organelles for movement. What would Dominic most likely notice about the movement of a volvox colony and a paramecium?\nAnswer:\n(0) They both move at the same rate.\n(1) They both move away from light.\n(2) They both move in the same direction.\n(3) They both move toward an energy source.",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 0,
+     "E_iter1": 0,
+     "orig": 0,
+     "rand_nm_j1": 0
+    },
+    "gemma_it": {
+     "E_art2": 0,
+     "E_iter1": 0,
+     "orig": 0,
+     "rand_nm_j1": 0,
+     "rand_nm_j2": 0
+    }
+   }
+  },
+  {
+   "item_id": "arc_challenge:Mercury_416645",
+   "pair_id": "arc_challenge:Mercury_416645",
+   "task": "arc_challenge",
+   "lang": "sl",
+   "primary_metric": "acc_norm",
+   "n_choices": 4,
+   "gold": "3",
+   "input": "Vprašanje: Dominic opazuje kolonijo volvoksov in paramecij pod mikroskopom. V svoj dnevnik zapiše, da sta kolonija volvoksov in paramecij podobna, ker imata oba veliko organelov za gibanje. Kaj bi Dominic najverjetneje opazil glede gibanja kolonije volvoksov in paramecija?\nodgovor:\n(0) Oba se premikata z enako hitrostjo.\n(1) Oba se odmikata od svetlobe.\n(2) Oba se premikata v isto smer.\n(3) Oba se premikata proti viru energije.",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 0,
+     "E_iter1": 0,
+     "orig": 0,
+     "rand_nm_j1": 0
+    },
+    "gemma_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1,
+     "rand_nm_j2": 1
+    }
+   }
+  },
+  {
+   "item_id": "boolq:1370",
+   "pair_id": "boolq:1370",
+   "task": "boolq",
+   "lang": "en",
+   "primary_metric": "acc",
+   "n_choices": 2,
+   "gold": "0",
+   "input": "Rafflesia -- The name ``corpse flower'' applied to Rafflesia can be confusing because this common name also refers to the titan arum (Amorphophallus titanum) of the family Araceae. Moreover, because Amorphophallus has the world's largest unbranched inflorescence, it is sometimes mistakenly credited as having the world's largest flower. Both Rafflesia and Amorphophallus are flowering plants, but they are only distantly related. Rafflesia arnoldii has the largest single flower of any flowering plant, at least in terms of weight. Amorphophallus titanum has the largest unbranched inflorescence, wh",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 0,
+     "E_iter1": 0,
+     "orig": 0,
+     "rand_nm_j1": 0
+    },
+    "gemma_it": {
+     "E_art2": 0,
+     "E_iter1": 0,
+     "orig": 0,
+     "rand_nm_j1": 0,
+     "rand_nm_j2": 0
+    }
+   }
+  },
+  {
+   "item_id": "boolq:1370",
+   "pair_id": "boolq:1370",
+   "task": "boolq",
+   "lang": "sl",
+   "primary_metric": "acc",
+   "n_choices": 2,
+   "gold": "0",
+   "input": "Rafflesia -- Ime ``cvet trupla`` se uporablja za Rafflesio, kar je lahko zmedeno, saj se to splošno ime nanaša tudi na titan arum (Amorphophallus titanum) iz družine Araceae. Poleg tega, ker Amorphophallus razvije največje nerazvejano socvetje na svetu, se mu včasih pomotoma pripisuje, da ima največji cvet na svetu. Rafflesia in Amorphophallus sta cvetoči rastlini, vendar sta le v daljnem sorodstvu. Rafflesia arnoldii ima največji posamezni cvet med vsemi cvetočimi rastlinami, vsaj kar zadeva težo. Amorphophallus titanum ima največje nerazvejano socvetje, medtem ko ima talipotova palma (Coryph",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 0
+    },
+    "gemma_it": {
+     "E_art2": 0,
+     "E_iter1": 0,
+     "orig": 0,
+     "rand_nm_j1": 0,
+     "rand_nm_j2": 0
+    }
+   }
+  },
+  {
+   "item_id": "boolq:2975",
+   "pair_id": "boolq:2975",
+   "task": "boolq",
+   "lang": "en",
+   "primary_metric": "acc",
+   "n_choices": 2,
+   "gold": "1",
+   "input": "Ronnie O'Sullivan -- In the World Championship, O'Sullivan beat David Gilbert 10--7 in the first round. After the match, he refused to attend a mandatory press conference, and also refused to talk to the tournament broadcasters, the BBC. He received a formal warning from World Snooker, and was advised that further breaches of contract would lead to fines. In the second round, he lost 12--13 to Barry Hawkins, his first loss against Hawkins in 14 years and only the second time in 13 years that he had failed to reach the World Championship quarterfinals.\nQuestion: is ronnie o sullivan in the worl",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1
+    },
+    "gemma_it": {
+     "E_art2": 0,
+     "E_iter1": 0,
+     "orig": 0,
+     "rand_nm_j1": 0,
+     "rand_nm_j2": 0
+    }
+   }
+  },
+  {
+   "item_id": "boolq:2975",
+   "pair_id": "boolq:2975",
+   "task": "boolq",
+   "lang": "sl",
+   "primary_metric": "acc",
+   "n_choices": 2,
+   "gold": "1",
+   "input": "Ronnie O'Sullivan -- Na svetovnem prvenstvu je O'Sullivan v prvem krogu premagal Davida Gilberta z 10--7. Po tekmi je zavrnil udeležbo na obvezni tiskovni konferenci in prav tako ni želel govoriti z oddajniki turnirja, BBC-jem. Prejel je uradno opozorilo od Svetovnega snookerja in bil opozorjen, da bodo nadaljnje kršitve pogodbe privedle do kazni. V drugem krogu je izgubil 12--13 proti Barryju Hawkinsu, kar je bil njegov prvi poraz proti Hawkinsu v 14 letih in šele drugič v 13 letih, da ni uspel doseči četrtfinala svetovnega prvenstva.\nVprašanje: Je bil Ronnie O'Sullivan na svetovnem prvenstvu",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1
+    },
+    "gemma_it": {
+     "E_art2": 0,
+     "E_iter1": 0,
+     "orig": 0,
+     "rand_nm_j1": 0,
+     "rand_nm_j2": 0
+    }
+   }
+  },
+  {
+   "item_id": "boolq:519",
+   "pair_id": "boolq:519",
+   "task": "boolq",
+   "lang": "en",
+   "primary_metric": "acc",
+   "n_choices": 2,
+   "gold": "1",
+   "input": "List of Marvel Cinematic Universe films -- The first film in the series was Iron Man (2008), which was distributed by Paramount Pictures. Paramount also distributed Iron Man 2 (2010), Thor (2011) and Captain America: The First Avenger (2011), while Universal Pictures distributed The Incredible Hulk (2008). Walt Disney Studios Motion Pictures began distributing the films with the 2012 crossover film The Avengers, which concluded Phase One of the franchise. Phase Two includes Iron Man 3 (2013), Thor: The Dark World (2013), Captain America: The Winter Soldier (2014), Guardians of the Galaxy (2014",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1
+    },
+    "gemma_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1,
+     "rand_nm_j2": 1
+    }
+   }
+  },
+  {
+   "item_id": "boolq:519",
+   "pair_id": "boolq:519",
+   "task": "boolq",
+   "lang": "sl",
+   "primary_metric": "acc",
+   "n_choices": 2,
+   "gold": "1",
+   "input": "Seznam filmov Marvelovega filmskega vesolja -- Prvi film v seriji je bil 'Iron Man' (2008), ki ga je distribuiral Paramount Pictures. Paramount je distribuiral tudi 'Iron Man 2' (2010), 'Thor' (2011) in 'Stotnik Amerika: Prvi maščevalec' (2011), medtem ko je Universal Pictures distribuiral 'Neverjetni Hulk' (2008). Walt Disney Studios Motion Pictures je začel distribucijo filmov s prelomnim filmom 'Maščevalci' iz leta 2012, ki je zaključil prvo fazo franšize. Druga faza vključuje 'Iron Man 3' (2013), 'Thor: Temni svet' (2013), 'Stotnik Amerika: Zimski vojak' (2014), 'Varuhi galaksije' (2014), ",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1
+    },
+    "gemma_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1,
+     "rand_nm_j2": 1
+    }
+   }
+  },
+  {
+   "item_id": "boolq:2930",
+   "pair_id": "boolq:2930",
+   "task": "boolq",
+   "lang": "en",
+   "primary_metric": "acc",
+   "n_choices": 2,
+   "gold": "1",
+   "input": "Alcohol consumption by youth in the United States -- Although the minimum legal age to purchase alcohol is 21 in all states (see National Minimum Drinking Age Act), the legal details vary greatly. While a few states completely ban alcohol usage for people under 21, the majority have exceptions that permit consumption.\nQuestion: can you drink under the age of 21?\nAnswer:\n(0) no\n(1) yes",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1
+    },
+    "gemma_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1,
+     "rand_nm_j2": 1
+    }
+   }
+  },
+  {
+   "item_id": "boolq:2930",
+   "pair_id": "boolq:2930",
+   "task": "boolq",
+   "lang": "sl",
+   "primary_metric": "acc",
+   "n_choices": 2,
+   "gold": "1",
+   "input": "Uživanje alkohola med mladimi v Združenih državah -- Čeprav je najnižja zakonsko določena starost za nakup alkohola 21 let v vseh državah (glejte Nacionalni zakon o najnižji starosti za pitje alkohola), se pravne podrobnosti zelo razlikujejo. Medtem ko nekaj držav popolnoma prepoveduje uživanje alkohola za osebe, mlajše od 21 let, ima večina izjeme, ki dovoljujejo uživanje.\nVprašanje: ali lahko pijete, mlajši od 21 let?\nOdgovor:\n(0) ne\n(1) da",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1
+    },
+    "gemma_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1,
+     "rand_nm_j2": 1
+    }
+   }
+  },
+  {
+   "item_id": "boolq:1038",
+   "pair_id": "boolq:1038",
+   "task": "boolq",
+   "lang": "en",
+   "primary_metric": "acc",
+   "n_choices": 2,
+   "gold": "1",
+   "input": "Fiddle -- A fiddle is a bowed string musical instrument, most often a violin. It is a colloquial term for the violin, used by players in all genres including classical music. Fiddle playing, or fiddling, refers to various styles of music. The fiddle is part of many traditional (folk) styles of music which are aural traditions, taught 'by ear' rather than via written music.\nQuestion: are the violin and the fiddle the same thing?\nAnswer:\n(0) no\n(1) yes",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1
+    },
+    "gemma_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1,
+     "rand_nm_j2": 1
+    }
+   }
+  },
+  {
+   "item_id": "boolq:1038",
+   "pair_id": "boolq:1038",
+   "task": "boolq",
+   "lang": "sl",
+   "primary_metric": "acc",
+   "n_choices": 2,
+   "gold": "1",
+   "input": "Gosli -- Gosli so godalno glasbilo, najpogosteje violina. Izraz 'gosli' se pogovorno uporablja za violino in ga uporabljajo glasbeniki vseh zvrsti, vključno s klasično glasbo. Igranje na gosli ali godbanje obsega različne glasbene sloge. Gosli so del mnogih tradicionalnih (ljudskih) glasbenih stilov, ki so ustna tradicija, učena 'na uho' in ne preko notnega zapisa.\nVprašanje: Ali sta violina in gosli ista stvar?\nOdgovor:\n(0) ne\n(1) da",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1
+    },
+    "gemma_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1,
+     "rand_nm_j2": 1
+    }
+   }
+  },
+  {
+   "item_id": "boolq:2412",
+   "pair_id": "boolq:2412",
+   "task": "boolq",
+   "lang": "en",
+   "primary_metric": "acc",
+   "n_choices": 2,
+   "gold": "0",
+   "input": "Stalingrad (2013 film) -- The original script by Ilya Tilkin does not have any literary source. The screenwriter studied diaries of the participants of the Battle of Stalingrad. He also used museum archives, documents and recorded stories of its participants.\nQuestion: is the movie stalingrad based on a true story?\nAnswer:\n(0) no\n(1) yes",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 0,
+     "E_iter1": 0,
+     "orig": 0,
+     "rand_nm_j1": 0
+    },
+    "gemma_it": {
+     "E_art2": 0,
+     "E_iter1": 0,
+     "orig": 0,
+     "rand_nm_j1": 0,
+     "rand_nm_j2": 0
+    }
+   }
+  },
+  {
+   "item_id": "boolq:2412",
+   "pair_id": "boolq:2412",
+   "task": "boolq",
+   "lang": "sl",
+   "primary_metric": "acc",
+   "n_choices": 2,
+   "gold": "0",
+   "input": "Stalingrad (film iz 2013) -- Izvirni scenarij Ilje Tilkina ne temelji na nobenem literarnem viru. Scenarist je preučeval dnevnike udeležencev bitke za Stalingrad. Uporabil je tudi muzejske arhive, dokumente in zapisane zgodbe udeležencev.\nVprašanje: Je film Stalingrad _ na resnični zgodbi?\nOdgovor:\n(0) ne\n(1) da",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 0,
+     "E_iter1": 0,
+     "orig": 1,
+     "rand_nm_j1": 1
+    },
+    "gemma_it": {
+     "E_art2": 0,
+     "E_iter1": 0,
+     "orig": 0,
+     "rand_nm_j1": 0,
+     "rand_nm_j2": 0
+    }
+   }
+  },
+  {
+   "item_id": "boolq:745",
+   "pair_id": "boolq:745",
+   "task": "boolq",
+   "lang": "en",
+   "primary_metric": "acc",
+   "n_choices": 2,
+   "gold": "1",
+   "input": "Independence Day (Philippines) -- Independence Day (Filipino: Araw ng Kasarinlan; also known as Araw ng Kalayaan, (or ``Day of Freedom'') is an annual national holiday in the Philippines observed on June 12, commemorating the independence of the Philippines from Spain.\nQuestion: is june 12 a holiday in the philippines?\nAnswer:\n(0) no\n(1) yes",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1
+    },
+    "gemma_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1,
+     "rand_nm_j2": 1
+    }
+   }
+  },
+  {
+   "item_id": "boolq:745",
+   "pair_id": "boolq:745",
+   "task": "boolq",
+   "lang": "sl",
+   "primary_metric": "acc",
+   "n_choices": 2,
+   "gold": "1",
+   "input": "Dan neodvisnosti (Filipini) – Dan neodvisnosti (filipinsko: Araw ng Kasarinlan; znan tudi kot Araw ng Kalayaan, (ali „Dan svobode“) je letni državni praznik na Filipinih, ki ga praznujemo 12. junija, v spomin na neodvisnost Filipinov iz Španije.\nVprašanje: Je 12. junij praznik na Filipinih?\nOdgovor:\n(0) ne\n(1) da",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1
+    },
+    "gemma_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1,
+     "rand_nm_j2": 1
+    }
+   }
+  },
+  {
+   "item_id": "boolq:2243",
+   "pair_id": "boolq:2243",
+   "task": "boolq",
+   "lang": "en",
+   "primary_metric": "acc",
+   "n_choices": 2,
+   "gold": "1",
+   "input": "Companies Act 2006 -- The Act provides a comprehensive code of company law for the United Kingdom, and made changes to almost every facet of the law in relation to companies. The key provisions are:\nQuestion: does companies act 2006 apply to all companies?\nAnswer:\n(0) no\n(1) yes",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 0,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1
+    },
+    "gemma_it": {
+     "E_art2": 0,
+     "E_iter1": 0,
+     "orig": 0,
+     "rand_nm_j1": 0,
+     "rand_nm_j2": 0
+    }
+   }
+  },
+  {
+   "item_id": "boolq:2243",
+   "pair_id": "boolq:2243",
+   "task": "boolq",
+   "lang": "sl",
+   "primary_metric": "acc",
+   "n_choices": 2,
+   "gold": "1",
+   "input": "Zakon o gospodarskih družbah iz leta 2006 – Zakon zagotavlja obsežen kodeks prava družb za Združeno kraljestvo in je spremenil skoraj vse vidike zakona v zvezi s podjetji. Ključne določbe so:\nVprašanje: ali zakon o gospodarskih družbah 2006 velja za vsa podjetja?\nOdgovor:\n(0) ne\n(1) da",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 0,
+     "E_iter1": 0,
+     "orig": 0,
+     "rand_nm_j1": 0
+    },
+    "gemma_it": {
+     "E_art2": 0,
+     "E_iter1": 0,
+     "orig": 0,
+     "rand_nm_j1": 0,
+     "rand_nm_j2": 0
+    }
+   }
+  },
+  {
+   "item_id": "hellaswag:2369",
+   "pair_id": "hellaswag:2369",
+   "task": "hellaswag",
+   "lang": "en",
+   "primary_metric": "acc_norm",
+   "n_choices": 4,
+   "gold": "0",
+   "input": "Making a sandwich: A hand cooked the bacon on the pan. The tomato\n(0) is being sliced on the board.\n(1) was spread over the egg with a knife.\n(2) is peeled along with the lettuce.\n(3) is mashed onto a baking pan.",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1
+    },
+    "gemma_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1,
+     "rand_nm_j2": 1
+    }
+   }
+  },
+  {
+   "item_id": "hellaswag:2369",
+   "pair_id": "hellaswag:2369",
+   "task": "hellaswag",
+   "lang": "sl",
+   "primary_metric": "acc_norm",
+   "n_choices": 4,
+   "gold": "0",
+   "input": "Priprava sendviča: Na ponvi je roka pekla slanino. Paradižnik\n(0) se reže na deski.\n(1) je bil razmazan po jajcu z nožem.\n(2) je olupljen skupaj s solato.\n(3) je pretlačen na pekač.",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 0,
+     "E_iter1": 0,
+     "orig": 0,
+     "rand_nm_j1": 0
+    },
+    "gemma_it": {
+     "E_art2": 0,
+     "E_iter1": 0,
+     "orig": 0,
+     "rand_nm_j1": 0,
+     "rand_nm_j2": 0
+    }
+   }
+  },
+  {
+   "item_id": "hellaswag:168",
+   "pair_id": "hellaswag:168",
+   "task": "hellaswag",
+   "lang": "en",
+   "primary_metric": "acc_norm",
+   "n_choices": 4,
+   "gold": "2",
+   "input": "Having an ice cream: There is a woman eating ice cream from a tub and talking to the camera man. And he tries to look into the tub, but she pulls it away. The camera person\n(0) continues talking to the social media to find a rich husband in that world.\n(1) is sitting in the bushes watching the woman.\n(2) sits down to continue talking to the woman.\n(3) stops at a jar of liquid in the sink.",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1
+    },
+    "gemma_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1,
+     "rand_nm_j2": 1
+    }
+   }
+  },
+  {
+   "item_id": "hellaswag:168",
+   "pair_id": "hellaswag:168",
+   "task": "hellaswag",
+   "lang": "sl",
+   "primary_metric": "acc_norm",
+   "n_choices": 4,
+   "gold": "2",
+   "input": "Ob sladoledu: ženska jé sladoled iz banjice in se pogovarja s snemalcem. In poskuša pogledati v kad, a ga ona umakne. Kameralec\n(0) še naprej govori s socialnimi mediji, da bi na tem svetu našla bogatega moža.\n(1) sedi v grmovju in opazuje žensko.\n(2) se usede in nadaljuje pogovor z žensko.\n(3) se ustavi pri kozarcu tekočine v umivalniku.",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1
+    },
+    "gemma_it": {
+     "E_art2": 0,
+     "E_iter1": 0,
+     "orig": 0,
+     "rand_nm_j1": 0,
+     "rand_nm_j2": 0
+    }
+   }
+  },
+  {
+   "item_id": "hellaswag:2094",
+   "pair_id": "hellaswag:2094",
+   "task": "hellaswag",
+   "lang": "en",
+   "primary_metric": "acc_norm",
+   "n_choices": 4,
+   "gold": "1",
+   "input": "Ice fishing: He gently tries to pull up and then reel the fishing line out of the hole. He dips and lowers while taking a break. He\n(0) gets back on his hook and pulls a fish out while just looking at it.\n(1) tries to reel the line out again.\n(2) speaks to the camera again in the pitch black.\n(3) is almost completely in his fishing hole when something catches his eye.",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1
+    },
+    "gemma_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1,
+     "rand_nm_j2": 1
+    }
+   }
+  },
+  {
+   "item_id": "hellaswag:2094",
+   "pair_id": "hellaswag:2094",
+   "task": "hellaswag",
+   "lang": "sl",
+   "primary_metric": "acc_norm",
+   "n_choices": 4,
+   "gold": "1",
+   "input": "Ribolov na ledu: Nežno poskuša potegniti in nato naviti ribiško vrvico iz luknje. Med odmorom se potaplja in spušča. On\n(0) se vrne na svojo trnko in izvleče ribo, medtem ko jo samo opazuje.\n(1) znova poskuša naviti vrvico.\n(2) spet govori v kamero v popolni temi.\n(3) je skoraj popolnoma v svoji ribiški luknji, ko nekaj pritegne njegovo pozornost.",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 0,
+     "E_iter1": 0,
+     "orig": 0,
+     "rand_nm_j1": 0
+    },
+    "gemma_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1,
+     "rand_nm_j2": 1
+    }
+   }
+  },
+  {
+   "item_id": "hellaswag:6918",
+   "pair_id": "hellaswag:6918",
+   "task": "hellaswag",
+   "lang": "en",
+   "primary_metric": "acc_norm",
+   "n_choices": 4,
+   "gold": "3",
+   "input": "Personal Care and Style: How to identify a narcissist. Watch for a change in behavior. Most relationships with a person with narcissism will start off well. They will initially come off as friendly and confident, and seek to find ways to show that you two are similar.\n(0) Many narcissists display glazed anger over their own flaws or criticize themselves as well. Pick up on the signs of a change in behavior, like : Sudden, abrupt, or drastic mood swings.\n(1) They will introduce themselves to you and then they may drop hints that you need to get on with your life. For example, they might begin a",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1
+    },
+    "gemma_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1,
+     "rand_nm_j2": 1
+    }
+   }
+  },
+  {
+   "item_id": "hellaswag:6918",
+   "pair_id": "hellaswag:6918",
+   "task": "hellaswag",
+   "lang": "sl",
+   "primary_metric": "acc_norm",
+   "n_choices": 4,
+   "gold": "3",
+   "input": "Osebna nega in stil: Kako prepoznati narcisa. Bodite pozorni na spremembo vedenja. Večina odnosov z osebo z narcisizmom se bo dobro začela. Na začetku bodo delovali prijazno in samozavestno ter iskali načine, kako pokazati, da sta si podobna.\n(0) Številni narcisi izkazujejo zastekljeno jezo zaradi lastnih napak ali pa kritizirajo tudi sami sebe. Zaznajte znake spremembe v vedenju, kot so: nenadne, abruptne ali drastične spremembe razpoloženja.\n(1) Predstavili se vam bodo in nato morda spustili namige, da morate nadaljevati s svojim življenjem. Na primer, lahko vas začnejo povezovati z zdravstv",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 0,
+     "E_iter1": 0,
+     "orig": 0,
+     "rand_nm_j1": 0
+    },
+    "gemma_it": {
+     "E_art2": 0,
+     "E_iter1": 0,
+     "orig": 0,
+     "rand_nm_j1": 0,
+     "rand_nm_j2": 0
+    }
+   }
+  },
+  {
+   "item_id": "hellaswag:7758",
+   "pair_id": "hellaswag:7758",
+   "task": "hellaswag",
+   "lang": "en",
+   "primary_metric": "acc_norm",
+   "n_choices": 4,
+   "gold": "0",
+   "input": "Personal Care and Style: How to apply hair tattoos. Purchase hair tattoos. You can buy them in well-stocked beauty shops and online. Some clothing stores may also sell them.\n(0) They come in packages of 2 to 3 sheets, and look like the temporary tattoos you put on your skin.. Cut out the tattoo that you want.\n(1) Your tattoo artist can either peel you off or remove it permanently from your body. These methods usually involve a time-release marker in an ink spot, or a badge.\n(2) The officer will also have a list of tattoo artists in the area. Tattoos may also be purchased from drug stores.\n(3) ",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1
+    },
+    "gemma_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1,
+     "rand_nm_j2": 1
+    }
+   }
+  },
+  {
+   "item_id": "hellaswag:7758",
+   "pair_id": "hellaswag:7758",
+   "task": "hellaswag",
+   "lang": "sl",
+   "primary_metric": "acc_norm",
+   "n_choices": 4,
+   "gold": "0",
+   "input": "Osebna nega in stil: Kako narediti lasne tetovaže. Nakup lasnih tetovaž. Kupite jih lahko v dobro založenih kozmetičnih trgovinah in na spletu. Nekatere trgovine z oblačili jih lahko tudi prodajajo.\n(0) Prihajajo v pakiranjih po 2 do 3 liste in izgledajo kot začasni tatuji, ki jih nanesete na kožo. Izrežite tatu, ki ga želite.\n(1) Vaš tatoo umetnik vas lahko olupi ali trajno odstrani s telesa. Ti načini običajno vključujejo označevalec s časovnim sproščanjem v madežu črnila ali značko.\n(2) Policist bo imel tudi seznam tetovatorjev na tem območju. Tatuje lahko kupite tudi v lekarnah.\n(3) Začnit",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1
+    },
+    "gemma_it": {
+     "E_art2": 0,
+     "E_iter1": 0,
+     "orig": 0,
+     "rand_nm_j1": 0,
+     "rand_nm_j2": 0
+    }
+   }
+  },
+  {
+   "item_id": "hellaswag:8526",
+   "pair_id": "hellaswag:8526",
+   "task": "hellaswag",
+   "lang": "en",
+   "primary_metric": "acc_norm",
+   "n_choices": 4,
+   "gold": "0",
+   "input": "Computers and Electronics: How to insert a video link in constant contact. Visit the constantcontact website.. Click the \" log in \" button in the top right hand corner of the page.. Enter the user name and password associated with your constant contact account and click \" login \".\n(0)  You will be taken immediately to the \" home \" tab of your account page.. Select the edit icon next to the email you want to insert a video link in.\n(1)  Follow the on-screen prompts to complete the blank page and link your video to the website.. Click the \" continue \" button to continue to the page.\n(2)  Click t",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1
+    },
+    "gemma_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1,
+     "rand_nm_j2": 1
+    }
+   }
+  },
+  {
+   "item_id": "hellaswag:8526",
+   "pair_id": "hellaswag:8526",
+   "task": "hellaswag",
+   "lang": "sl",
+   "primary_metric": "acc_norm",
+   "n_choices": 4,
+   "gold": "0",
+   "input": "Računalništvo in elektronika: Kako vstaviti video povezavo v Constant Contact. Obiščite spletno mesto constantcontact.com. Kliknite gumb »prijava« v zgornjem desnem kotu strani. Vnesite uporabniško ime in geslo, povezano z vašim računom Constant Contact, in kliknite »prijava«.\n(0) Takoj boste preusmerjeni na zavihek »domov« na strani vašega računa. Izberite ikono za urejanje poleg e-poštnega sporočila, v katerega želite vstaviti video povezavo.\n(1) Sledite pozivom na zaslonu, da dokončate prazno stran in povežete svoj videoposnetek s spletnim mestom. Za nadaljevanje na stran kliknite gumb »nap",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1
+    },
+    "gemma_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1,
+     "rand_nm_j2": 1
+    }
+   }
+  },
+  {
+   "item_id": "hellaswag:481",
+   "pair_id": "hellaswag:481",
+   "task": "hellaswag",
+   "lang": "en",
+   "primary_metric": "acc_norm",
+   "n_choices": 4,
+   "gold": "0",
+   "input": "Shoveling snow: A person is standing in the heavy falling snow. They\n(0) are trying to clear the snow off the sidewalk.\n(1) flip over and fall sitting in the snow.\n(2) play a game of skiing.\n(3) are unable to get up because of the large weight on their backs.",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1
+    },
+    "gemma_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1,
+     "rand_nm_j2": 1
+    }
+   }
+  },
+  {
+   "item_id": "hellaswag:481",
+   "pair_id": "hellaswag:481",
+   "task": "hellaswag",
+   "lang": "sl",
+   "primary_metric": "acc_norm",
+   "n_choices": 4,
+   "gold": "0",
+   "input": "Odmetavanje snega: Oseba stoji v močnem padajočem snegu. Oni_\n(0) poskušajo očistiti sneg s pločnika.\n(1) se prevrnejo in padejo, sedeč v snegu.\n(2) igrajo igro smučanja.\n(3) ne morejo vstati zaraj velike teže na hrbtu.",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1
+    },
+    "gemma_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1,
+     "rand_nm_j2": 1
+    }
+   }
+  },
+  {
+   "item_id": "hellaswag:8106",
+   "pair_id": "hellaswag:8106",
+   "task": "hellaswag",
+   "lang": "en",
+   "primary_metric": "acc_norm",
+   "n_choices": 4,
+   "gold": "0",
+   "input": "Personal Care and Style: How to style a one piece swimsuit. Select a one piece in a bright color or pattern for a vibrant style. Choose fun, funky colors like bright pink, aqua, or lime green. This adds a splash of color to your outfits and beach looks, and you can easily pair this with bright-colored accessories as well.\n(0)  You can go with a solid-colored swimsuit in a bright color, or a colorful patterned one piece. For example, look for a bathing suit in hot pink or a suit with hot pink polka dots.\n(1)  Get some beach beads or pretty beach jewelry to help bring out this article of clothin",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1
+    },
+    "gemma_it": {
+     "E_art2": 0,
+     "E_iter1": 0,
+     "orig": 0,
+     "rand_nm_j1": 0,
+     "rand_nm_j2": 0
+    }
+   }
+  },
+  {
+   "item_id": "hellaswag:8106",
+   "pair_id": "hellaswag:8106",
+   "task": "hellaswag",
+   "lang": "sl",
+   "primary_metric": "acc_norm",
+   "n_choices": 4,
+   "gold": "0",
+   "input": "Osebna nega in stil: Kako oblikovati enodelne kopalke. Izberite enodelne kopalke v živi barvi ali z vzorcem za živahen videz. Izberite zabavne, živahne barve, kot so svetlo roza, vodna ali limetno zelena. To doda piko na i vašim oblačilom in videzu na plaži, poleg tega pa jih lahko enostavno kombinirate tudi z dodatki v živih barvah.\n(0) Izberete lahko enobarvne kopalke v živi barvi ali enodelne kopalke s pisanim vzorcem. Na primer, poiščite kopalke v živo rožnati barvi ali kopalke z vzorcem živo rožnatih pik.\n(1) Pridobite nekaj plažnih biserov ali lep plažni nakit, ki bo poudaril ta kos obla",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1
+    },
+    "gemma_it": {
+     "E_art2": 0,
+     "E_iter1": 0,
+     "orig": 0,
+     "rand_nm_j1": 0,
+     "rand_nm_j2": 0
+    }
+   }
+  },
+  {
+   "item_id": "openbookqa:7-1050",
+   "pair_id": "openbookqa:7-1050",
+   "task": "openbookqa",
+   "lang": "en",
+   "primary_metric": "acc_norm",
+   "n_choices": 4,
+   "gold": "1",
+   "input": "Evaporation\n(0) only happens in the summer\n(1) is like nature's disappearing water trick\n(2) is caused by snow\n(3) involves the disappearance of sunlight",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 0,
+     "E_iter1": 0,
+     "orig": 0,
+     "rand_nm_j1": 0
+    },
+    "gemma_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1,
+     "rand_nm_j2": 1
+    }
+   }
+  },
+  {
+   "item_id": "openbookqa:7-1050",
+   "pair_id": "openbookqa:7-1050",
+   "task": "openbookqa",
+   "lang": "sl",
+   "primary_metric": "acc_norm",
+   "n_choices": 4,
+   "gold": "1",
+   "input": "Izhlapevanje\n(0) poteka samo poleti.\n(1) je kot trik z izginjajočo vodo, ki ga izvaja narava.\n(2) povzroča sneg.\n(3) vključuje izginjanje sončne svetlobe.",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 0,
+     "E_iter1": 0,
+     "orig": 0,
+     "rand_nm_j1": 0
+    },
+    "gemma_it": {
+     "E_art2": 0,
+     "E_iter1": 0,
+     "orig": 0,
+     "rand_nm_j1": 0,
+     "rand_nm_j2": 0
+    }
+   }
+  },
+  {
+   "item_id": "openbookqa:9-124",
+   "pair_id": "openbookqa:9-124",
+   "task": "openbookqa",
+   "lang": "en",
+   "primary_metric": "acc_norm",
+   "n_choices": 4,
+   "gold": "1",
+   "input": "The pull the human planet space rock orbiter has on certain bodies of dihydrogen monooxide results in?\n(0) telescope views\n(1) water level fluctuations\n(2) animal\n(3) plant harvesting",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1
+    },
+    "gemma_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1,
+     "rand_nm_j2": 1
+    }
+   }
+  },
+  {
+   "item_id": "openbookqa:9-124",
+   "pair_id": "openbookqa:9-124",
+   "task": "openbookqa",
+   "lang": "sl",
+   "primary_metric": "acc_norm",
+   "n_choices": 4,
+   "gold": "1",
+   "input": "Kaj od naštetega je posledica vpliva, ki ga ima skalno telo, ki kroži okrog človeškega planeta, na določene zbirnike divodikovega monoksida?\n(0) Ogledi s teleskopom.\n(1) Nihanja vodne gladine.\n(2) Žival.\n(3) Žetev rastlin.",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1
+    },
+    "gemma_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1,
+     "rand_nm_j2": 1
+    }
+   }
+  },
+  {
+   "item_id": "openbookqa:1528",
+   "pair_id": "openbookqa:1528",
+   "task": "openbookqa",
+   "lang": "en",
+   "primary_metric": "acc_norm",
+   "n_choices": 4,
+   "gold": "2",
+   "input": "Wind can cause\n(0) leaves to remain on branches\n(1) trees to stand perfectly still\n(2) dunes at the beach to be depleted\n(3) still waters on the ocean",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 0,
+     "E_iter1": 0,
+     "orig": 0,
+     "rand_nm_j1": 0
+    },
+    "gemma_it": {
+     "E_art2": 0,
+     "E_iter1": 0,
+     "orig": 0,
+     "rand_nm_j1": 0,
+     "rand_nm_j2": 0
+    }
+   }
+  },
+  {
+   "item_id": "openbookqa:1528",
+   "pair_id": "openbookqa:1528",
+   "task": "openbookqa",
+   "lang": "sl",
+   "primary_metric": "acc_norm",
+   "n_choices": 4,
+   "gold": "2",
+   "input": "Veter lahko povzroči, da\n(0) listje ostane na vejah.\n(1) drevesa stojijo popolnoma mirno.\n(2) se sipine na plaži izpraznijo.\n(3) je morska voda mirna.",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 0,
+     "E_iter1": 0,
+     "orig": 0,
+     "rand_nm_j1": 0
+    },
+    "gemma_it": {
+     "E_art2": 0,
+     "E_iter1": 0,
+     "orig": 0,
+     "rand_nm_j1": 0,
+     "rand_nm_j2": 0
+    }
+   }
+  },
+  {
+   "item_id": "openbookqa:9-35",
+   "pair_id": "openbookqa:9-35",
+   "task": "openbookqa",
+   "lang": "en",
+   "primary_metric": "acc_norm",
+   "n_choices": 4,
+   "gold": "0",
+   "input": "If you wanted to make a necklace, how long would you have to wait for the materials to appear inside the Earth?\n(0) millions of years\n(1) 1 day\n(2) 10 days\n(3) 100 days",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1
+    },
+    "gemma_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1,
+     "rand_nm_j2": 1
+    }
+   }
+  },
+  {
+   "item_id": "openbookqa:9-35",
+   "pair_id": "openbookqa:9-35",
+   "task": "openbookqa",
+   "lang": "sl",
+   "primary_metric": "acc_norm",
+   "n_choices": 4,
+   "gold": "0",
+   "input": "Če bi želeli narediti ogrlico, kako dolgo bi morali čakati, da bi se materiali pojavili v Zemlji?\n(0) Več milijonov let.\n(1) 1 dan.\n(2) 10 dni.\n(3) 100 dni.",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1
+    },
+    "gemma_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1,
+     "rand_nm_j2": 1
+    }
+   }
+  },
+  {
+   "item_id": "openbookqa:8-125",
+   "pair_id": "openbookqa:8-125",
+   "task": "openbookqa",
+   "lang": "en",
+   "primary_metric": "acc_norm",
+   "n_choices": 4,
+   "gold": "0",
+   "input": "A prisoner is kept in a stone room, unable to see the sun. The prisoner knows that he needs vitamin D to survive, so he\n(0) asks for milk\n(1) asks for television\n(2) asks for water\n(3) asks for sleep",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 0,
+     "E_iter1": 0,
+     "orig": 0,
+     "rand_nm_j1": 0
+    },
+    "gemma_it": {
+     "E_art2": 0,
+     "E_iter1": 0,
+     "orig": 0,
+     "rand_nm_j1": 0,
+     "rand_nm_j2": 0
+    }
+   }
+  },
+  {
+   "item_id": "openbookqa:8-125",
+   "pair_id": "openbookqa:8-125",
+   "task": "openbookqa",
+   "lang": "sl",
+   "primary_metric": "acc_norm",
+   "n_choices": 4,
+   "gold": "0",
+   "input": "Zapornika zadržujejo v kamniti sobi in ne more videti sonca. Zapornik ve, da za življenje potrebuje vitamin D, zato\n(0) prosi za mleko.\n(1) prosi za televizijo.\n(2) prosi za vodo.\n(3) prosi za spanje.",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 0,
+     "E_iter1": 0,
+     "orig": 0,
+     "rand_nm_j1": 0
+    },
+    "gemma_it": {
+     "E_art2": 0,
+     "E_iter1": 0,
+     "orig": 0,
+     "rand_nm_j1": 0,
+     "rand_nm_j2": 0
+    }
+   }
+  },
+  {
+   "item_id": "openbookqa:869",
+   "pair_id": "openbookqa:869",
+   "task": "openbookqa",
+   "lang": "en",
+   "primary_metric": "acc_norm",
+   "n_choices": 4,
+   "gold": "0",
+   "input": "A food that is a source of heat is\n(0) ramen\n(1) salad\n(2) ice cream\n(3) sushi",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 0,
+     "E_iter1": 0,
+     "orig": 0,
+     "rand_nm_j1": 0
+    },
+    "gemma_it": {
+     "E_art2": 0,
+     "E_iter1": 0,
+     "orig": 0,
+     "rand_nm_j1": 0,
+     "rand_nm_j2": 0
+    }
+   }
+  },
+  {
+   "item_id": "openbookqa:869",
+   "pair_id": "openbookqa:869",
+   "task": "openbookqa",
+   "lang": "sl",
+   "primary_metric": "acc_norm",
+   "n_choices": 4,
+   "gold": "0",
+   "input": "Živilo, ki je vir toplote, je\n(0) ramen.\n(1) solata.\n(2) sladoled.\n(3) suši.",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 0,
+     "E_iter1": 0,
+     "orig": 0,
+     "rand_nm_j1": 0
+    },
+    "gemma_it": {
+     "E_art2": 0,
+     "E_iter1": 0,
+     "orig": 0,
+     "rand_nm_j1": 0,
+     "rand_nm_j2": 0
+    }
+   }
+  },
+  {
+   "item_id": "openbookqa:8-293",
+   "pair_id": "openbookqa:8-293",
+   "task": "openbookqa",
+   "lang": "en",
+   "primary_metric": "acc_norm",
+   "n_choices": 4,
+   "gold": "1",
+   "input": "A pot of pasta is boiling on the stove, and the lid on top of the pot is shaking as the water boils more rapidly. A person goes to the stove and removes the pot, releasing steam into the air above, and so the steam is\n(0) cold air\n(1) water vapor\n(2) very dry\n(3) boiling water",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1
+    },
+    "gemma_it": {
+     "E_art2": 0,
+     "E_iter1": 0,
+     "orig": 0,
+     "rand_nm_j1": 0,
+     "rand_nm_j2": 0
+    }
+   }
+  },
+  {
+   "item_id": "openbookqa:8-293",
+   "pair_id": "openbookqa:8-293",
+   "task": "openbookqa",
+   "lang": "sl",
+   "primary_metric": "acc_norm",
+   "n_choices": 4,
+   "gold": "1",
+   "input": "Lonec s testeninami se kuha na štedilniku, pokrov na vrhu lonca pa se trese, saj voda vedno bolj vre. Oseba gre do štedilnika in odstrani lonec, pri čemer se para sprosti v zrak nad njim. Para tako postane\n(0) hladen zrak.\n(1) vodna para.\n(2) zelo suha.\n(3) vrela voda.",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1
+    },
+    "gemma_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1,
+     "rand_nm_j2": 1
+    }
+   }
+  },
+  {
+   "item_id": "openbookqa:1924",
+   "pair_id": "openbookqa:1924",
+   "task": "openbookqa",
+   "lang": "en",
+   "primary_metric": "acc_norm",
+   "n_choices": 4,
+   "gold": "1",
+   "input": "Desert environments features\n(0) tropical plants\n(1) tons of sun\n(2) massive rain totals\n(3) icy precipitation",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 0,
+     "E_iter1": 0,
+     "orig": 0,
+     "rand_nm_j1": 0
+    },
+    "gemma_it": {
+     "E_art2": 0,
+     "E_iter1": 0,
+     "orig": 0,
+     "rand_nm_j1": 0,
+     "rand_nm_j2": 0
+    }
+   }
+  },
+  {
+   "item_id": "openbookqa:1924",
+   "pair_id": "openbookqa:1924",
+   "task": "openbookqa",
+   "lang": "sl",
+   "primary_metric": "acc_norm",
+   "n_choices": 4,
+   "gold": "1",
+   "input": "Značilnost puščavskih okolij\n(0) so tropske rastline.\n(1) je ogromno sonca.\n(2) so obilna deževja.\n(3) so ledene padavine.",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 0,
+     "E_iter1": 0,
+     "orig": 0,
+     "rand_nm_j1": 0
+    },
+    "gemma_it": {
+     "E_art2": 0,
+     "E_iter1": 0,
+     "orig": 0,
+     "rand_nm_j1": 0,
+     "rand_nm_j2": 0
+    }
+   }
+  },
+  {
+   "item_id": "piqa:1761",
+   "pair_id": "piqa:1761",
+   "task": "piqa",
+   "lang": "en",
+   "primary_metric": "acc_norm",
+   "n_choices": 2,
+   "gold": "1",
+   "input": "Question: Remove greasy prints from walls.\nAnswer:\n(0) Wipe walls with lettuce.\n(1) Wipe walls with white bread.",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1
+    },
+    "gemma_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1,
+     "rand_nm_j2": 1
+    }
+   }
+  },
+  {
+   "item_id": "piqa:1761",
+   "pair_id": "piqa:1761",
+   "task": "piqa",
+   "lang": "sl",
+   "primary_metric": "acc_norm",
+   "n_choices": 2,
+   "gold": "1",
+   "input": "Vprašanje: Odstranite mastne odtise s sten.\nOdgovor:\n(0) Obrišite stene s solato.\n(1) Obrišite stene z belim kruhom.",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1
+    },
+    "gemma_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1,
+     "rand_nm_j2": 1
+    }
+   }
+  },
+  {
+   "item_id": "piqa:1271",
+   "pair_id": "piqa:1271",
+   "task": "piqa",
+   "lang": "en",
+   "primary_metric": "acc_norm",
+   "n_choices": 2,
+   "gold": "0",
+   "input": "Question: How can you neatly cut a cake?\nAnswer:\n(0) Run the knife you use for cutting under hot water, dry the knife and cut, repeat as needed.\n(1) Run the knife you use for cutting under cold water, dry the knife and cut, repeat as needed.",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1
+    },
+    "gemma_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1,
+     "rand_nm_j2": 1
+    }
+   }
+  },
+  {
+   "item_id": "piqa:1271",
+   "pair_id": "piqa:1271",
+   "task": "piqa",
+   "lang": "sl",
+   "primary_metric": "acc_norm",
+   "n_choices": 2,
+   "gold": "0",
+   "input": "Vprašanje: Kako lahko lepo razrežete torto?\nOdgovor:\n(0) Nož, ki ga uporabljate za rezanje, sperite pod vročo vodo, nož posušite in nato režite, po potrebi ponavljajte.\n(1) Nož, ki ga uporabljate za rezanje, sperite pod hladno vodo, nož posušite in nato režite, po potrebi ponavljajte.",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 1,
+     "E_iter1": 0,
+     "orig": 0,
+     "rand_nm_j1": 0
+    },
+    "gemma_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1,
+     "rand_nm_j2": 1
+    }
+   }
+  },
+  {
+   "item_id": "piqa:1439",
+   "pair_id": "piqa:1439",
+   "task": "piqa",
+   "lang": "en",
+   "primary_metric": "acc_norm",
+   "n_choices": 2,
+   "gold": "0",
+   "input": "Question: Avoid corrosion on metal light fixture.\nAnswer:\n(0) Coat holder with car wax.\n(1) Coat holder with candle wax.",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 0,
+     "E_iter1": 0,
+     "orig": 0,
+     "rand_nm_j1": 0
+    },
+    "gemma_it": {
+     "E_art2": 0,
+     "E_iter1": 0,
+     "orig": 0,
+     "rand_nm_j1": 0,
+     "rand_nm_j2": 0
+    }
+   }
+  },
+  {
+   "item_id": "piqa:1439",
+   "pair_id": "piqa:1439",
+   "task": "piqa",
+   "lang": "sl",
+   "primary_metric": "acc_norm",
+   "n_choices": 2,
+   "gold": "0",
+   "input": "Vprašanje: Izogibajte se koroziji na kovinski svetilki.\nOdgovor:\n(0) Premažite nosilec s avtomobilskim voskom.\n(1) Premažite nosilec s svečnim voskom.",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1
+    },
+    "gemma_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1,
+     "rand_nm_j2": 1
+    }
+   }
+  },
+  {
+   "item_id": "piqa:502",
+   "pair_id": "piqa:502",
+   "task": "piqa",
+   "lang": "en",
+   "primary_metric": "acc_norm",
+   "n_choices": 2,
+   "gold": "1",
+   "input": "Question: To drive in a screw at an angle.\nAnswer:\n(0) Drill the screw in at an angle. Drill a guide hole using a bit smaller than the screw at the same angle.\n(1) Drill a guide hole using a bit smaller than the screw at an angle. Drill the screw in into the guide hole.",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 0,
+     "E_iter1": 0,
+     "orig": 0,
+     "rand_nm_j1": 0
+    },
+    "gemma_it": {
+     "E_art2": 0,
+     "E_iter1": 0,
+     "orig": 0,
+     "rand_nm_j1": 0,
+     "rand_nm_j2": 0
+    }
+   }
+  },
+  {
+   "item_id": "piqa:502",
+   "pair_id": "piqa:502",
+   "task": "piqa",
+   "lang": "sl",
+   "primary_metric": "acc_norm",
+   "n_choices": 2,
+   "gold": "1",
+   "input": "Vprašanje: Za privijanje vijaka pod kotom.\nOdgovor:\n(0) Vijak privijte pod kotom. Izvrtajte vodilno luknjo z svedrom, manjšim od vijaka, pod istim kotom.\n(1) Izvrtajte vodilno luknjo z svedrom, manjšim od vijaka, pod kotom. Vijak privijte v vodilno luknjo.",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1
+    },
+    "gemma_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1,
+     "rand_nm_j2": 1
+    }
+   }
+  },
+  {
+   "item_id": "piqa:1368",
+   "pair_id": "piqa:1368",
+   "task": "piqa",
+   "lang": "en",
+   "primary_metric": "acc_norm",
+   "n_choices": 2,
+   "gold": "0",
+   "input": "Question: how do you prepay a pizza delivery order?\nAnswer:\n(0) give the company your card information before they deliver.\n(1) give the company your cash before they deliver.",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1
+    },
+    "gemma_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1,
+     "rand_nm_j2": 1
+    }
+   }
+  },
+  {
+   "item_id": "piqa:1368",
+   "pair_id": "piqa:1368",
+   "task": "piqa",
+   "lang": "sl",
+   "primary_metric": "acc_norm",
+   "n_choices": 2,
+   "gold": "0",
+   "input": "Vprašanje: kako predplačaš naročilo dostave pice?\nOdgovor:\n(0) podjetju posreduj podatke o svoji kartici, preden dostavijo.\n(1) podjetju izroči gotovino, preden dostavijo.",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1
+    },
+    "gemma_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1,
+     "rand_nm_j2": 1
+    }
+   }
+  },
+  {
+   "item_id": "piqa:1229",
+   "pair_id": "piqa:1229",
+   "task": "piqa",
+   "lang": "en",
+   "primary_metric": "acc_norm",
+   "n_choices": 2,
+   "gold": "1",
+   "input": "Question: How to Make Dipping Sauce for Onion Rings\nAnswer:\n(0) To make a dipping sauce for onion rings, combine in a medium bowl mayo, horseradish, paprika, salt, oregano, black pepper, and cayenne pepper. Beat with a hand mixer until frothy.\n(1) To make a dipping sauce for onion rings, combine in a medium bowl mayo, horseradish, paprika, salt, oregano, black pepper, and cayenne pepper. Mix well to combine.",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1
+    },
+    "gemma_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1,
+     "rand_nm_j2": 1
+    }
+   }
+  },
+  {
+   "item_id": "piqa:1229",
+   "pair_id": "piqa:1229",
+   "task": "piqa",
+   "lang": "sl",
+   "primary_metric": "acc_norm",
+   "n_choices": 2,
+   "gold": "1",
+   "input": "Vprašanje: Kako pripraviti omako za namakanje čebulnih obročkov\nOdgovor:\n(0) Za pripravo omake za čebulne obročke v srednji skledi združite majonezo, hren, papriko, sol, origano, črni poper in kajenski poper. Z ročnim mešalnikom stepajte, dokler ni penasto.\n(1) Za pripravo omake za čebulne obročke v srednji skledi združite majonezo, hren, papriko, sol, origano, črni poper in kajenski poper. Dobro premešajte, da se sestavine povežejo.",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1
+    },
+    "gemma_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1,
+     "rand_nm_j2": 1
+    }
+   }
+  },
+  {
+   "item_id": "piqa:1815",
+   "pair_id": "piqa:1815",
+   "task": "piqa",
+   "lang": "en",
+   "primary_metric": "acc_norm",
+   "n_choices": 2,
+   "gold": "0",
+   "input": "Question: how do you eat boiled egg?\nAnswer:\n(0) just eat the egg itself.\n(1) cut off the white that is around the yolk and eat the yolk.",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 0,
+     "E_iter1": 0,
+     "orig": 1,
+     "rand_nm_j1": 1
+    },
+    "gemma_it": {
+     "E_art2": 0,
+     "E_iter1": 0,
+     "orig": 0,
+     "rand_nm_j1": 0,
+     "rand_nm_j2": 0
+    }
+   }
+  },
+  {
+   "item_id": "piqa:1815",
+   "pair_id": "piqa:1815",
+   "task": "piqa",
+   "lang": "sl",
+   "primary_metric": "acc_norm",
+   "n_choices": 2,
+   "gold": "0",
+   "input": "Vprašanje: kako ješ kuhano jajce?\nOdgovor:\n(0) pojej samo jajce.\n(1) odreži beljak, ki je okoli rumenjaka, in pojej rumenjak.",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 0,
+     "E_iter1": 0,
+     "orig": 0,
+     "rand_nm_j1": 0
+    },
+    "gemma_it": {
+     "E_art2": 0,
+     "E_iter1": 0,
+     "orig": 0,
+     "rand_nm_j1": 0,
+     "rand_nm_j2": 0
+    }
+   }
+  },
+  {
+   "item_id": "piqa:1467",
+   "pair_id": "piqa:1467",
+   "task": "piqa",
+   "lang": "en",
+   "primary_metric": "acc_norm",
+   "n_choices": 2,
+   "gold": "1",
+   "input": "Question: how do you hang something?\nAnswer:\n(0) let it sit on the ground.\n(1) leave it dangling on a string.",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1
+    },
+    "gemma_it": {
+     "E_art2": 0,
+     "E_iter1": 0,
+     "orig": 0,
+     "rand_nm_j1": 0,
+     "rand_nm_j2": 0
+    }
+   }
+  },
+  {
+   "item_id": "piqa:1467",
+   "pair_id": "piqa:1467",
+   "task": "piqa",
+   "lang": "sl",
+   "primary_metric": "acc_norm",
+   "n_choices": 2,
+   "gold": "1",
+   "input": "Vprašanje: kako kaj obesiš?\nOdgovor:\n(0) naj sedi na tleh.\n(1) pustite ga viseti na vrvici.",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1
+    },
+    "gemma_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1,
+     "rand_nm_j2": 1
+    }
+   }
+  },
+  {
+   "item_id": "winogrande:461",
+   "pair_id": "winogrande:461",
+   "task": "winogrande",
+   "lang": "en",
+   "primary_metric": "acc",
+   "n_choices": 2,
+   "gold": "0",
+   "input": " .\n(0) The girl put her money in her bag instead of her pocket because the bully looked in the pocket\n(1) The girl put her money in her bag instead of her pocket because the bully looked in the bag",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1
+    },
+    "gemma_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1,
+     "rand_nm_j2": 1
+    }
+   }
+  },
+  {
+   "item_id": "winogrande:461",
+   "pair_id": "winogrande:461",
+   "task": "winogrande",
+   "lang": "sl",
+   "primary_metric": "acc",
+   "n_choices": 2,
+   "gold": "0",
+   "input": " .\n(0) Deklica je dala denar v torbo namesto v žep, ker je nasilnež pogledal v žep\n(1) Deklica je dala denar v torbo namesto v žep, ker je nasilnež pogledal v torbo",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1
+    },
+    "gemma_it": {
+     "E_art2": 1,
+     "E_iter1": 0,
+     "orig": 0,
+     "rand_nm_j1": 1,
+     "rand_nm_j2": 0
+    }
+   }
+  },
+  {
+   "item_id": "winogrande:590",
+   "pair_id": "winogrande:590",
+   "task": "winogrande",
+   "lang": "en",
+   "primary_metric": "acc",
+   "n_choices": 2,
+   "gold": "1",
+   "input": " would soothe it.\n(0) Because of his rash, he opted not to wash with soap but with oil, as the soap\n(1) Because of his rash, he opted not to wash with soap but with oil, as the oil",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1
+    },
+    "gemma_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1,
+     "rand_nm_j2": 1
+    }
+   }
+  },
+  {
+   "item_id": "winogrande:590",
+   "pair_id": "winogrande:590",
+   "task": "winogrande",
+   "lang": "sl",
+   "primary_metric": "acc",
+   "n_choices": 2,
+   "gold": "1",
+   "input": " ublažilo.\n(0) Zaradi izpuščaja se ni odločil za umivanje z milom, ampak z oljem, saj naj bi ga milo\n(1) Zaradi izpuščaja se ni odločil za umivanje z milom, ampak z oljem, saj naj bi ga olje",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1
+    },
+    "gemma_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1,
+     "rand_nm_j2": 1
+    }
+   }
+  },
+  {
+   "item_id": "winogrande:1039",
+   "pair_id": "winogrande:1039",
+   "task": "winogrande",
+   "lang": "en",
+   "primary_metric": "acc",
+   "n_choices": 2,
+   "gold": "1",
+   "input": " went to the jewelry store and bought an expensive ring.\n(0) Felicia wanted to be pampered by Emily, so Felicia\n(1) Felicia wanted to be pampered by Emily, so Emily",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 0,
+     "E_iter1": 0,
+     "orig": 0,
+     "rand_nm_j1": 0
+    },
+    "gemma_it": {
+     "E_art2": 0,
+     "E_iter1": 0,
+     "orig": 0,
+     "rand_nm_j1": 0,
+     "rand_nm_j2": 0
+    }
+   }
+  },
+  {
+   "item_id": "winogrande:1039",
+   "pair_id": "winogrande:1039",
+   "task": "winogrande",
+   "lang": "sl",
+   "primary_metric": "acc",
+   "n_choices": 2,
+   "gold": "1",
+   "input": " odšla v zlatarno in kupila drag prstan.\n(0) Felicia je želela, da jo Emily razvaja, zato je Felicia\n(1) Felicia je želela, da jo Emily razvaja, zato je Emily",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1
+    },
+    "gemma_it": {
+     "E_art2": 0,
+     "E_iter1": 0,
+     "orig": 0,
+     "rand_nm_j1": 0,
+     "rand_nm_j2": 0
+    }
+   }
+  },
+  {
+   "item_id": "winogrande:329",
+   "pair_id": "winogrande:329",
+   "task": "winogrande",
+   "lang": "en",
+   "primary_metric": "acc",
+   "n_choices": 2,
+   "gold": "0",
+   "input": " vehicle was smaller.\n(0) In the accident the vehicle of Nelson received more damage than that of Justin, since Nelson\n(1) In the accident the vehicle of Nelson received more damage than that of Justin, since Justin",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 0,
+     "E_iter1": 0,
+     "orig": 0,
+     "rand_nm_j1": 0
+    },
+    "gemma_it": {
+     "E_art2": 0,
+     "E_iter1": 0,
+     "orig": 0,
+     "rand_nm_j1": 0,
+     "rand_nm_j2": 0
+    }
+   }
+  },
+  {
+   "item_id": "winogrande:329",
+   "pair_id": "winogrande:329",
+   "task": "winogrande",
+   "lang": "sl",
+   "primary_metric": "acc",
+   "n_choices": 2,
+   "gold": "0",
+   "input": " vozilo manjše.\n(0) V nesreči je Nelsonovo vozilo utrpelo več škode kot Justinovo, saj je bilo Nelsonovo\n(1) V nesreči je Nelsonovo vozilo utrpelo več škode kot Justinovo, saj je bilo Justinovo",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1
+    },
+    "gemma_it": {
+     "E_art2": 0,
+     "E_iter1": 0,
+     "orig": 0,
+     "rand_nm_j1": 0,
+     "rand_nm_j2": 0
+    }
+   }
+  },
+  {
+   "item_id": "winogrande:426",
+   "pair_id": "winogrande:426",
+   "task": "winogrande",
+   "lang": "en",
+   "primary_metric": "acc",
+   "n_choices": 2,
+   "gold": "1",
+   "input": " is leasing out the house.\n(0) Kenneth is accused of destroying drywall in Jeffrey's house, Kenneth\n(1) Kenneth is accused of destroying drywall in Jeffrey's house, Jeffrey",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1
+    },
+    "gemma_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1,
+     "rand_nm_j2": 1
+    }
+   }
+  },
+  {
+   "item_id": "winogrande:426",
+   "pair_id": "winogrande:426",
+   "task": "winogrande",
+   "lang": "sl",
+   "primary_metric": "acc",
+   "n_choices": 2,
+   "gold": "1",
+   "input": " hišo oddaja v najem.\n(0) Kenneth je obtožen uničenja mavčne stene v Jeffreyjevi hiši; Kenneth\n(1) Kenneth je obtožen uničenja mavčne stene v Jeffreyjevi hiši; Jeffrey",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1
+    },
+    "gemma_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1,
+     "rand_nm_j2": 1
+    }
+   }
+  },
+  {
+   "item_id": "winogrande:720",
+   "pair_id": "winogrande:720",
+   "task": "winogrande",
+   "lang": "en",
+   "primary_metric": "acc",
+   "n_choices": 2,
+   "gold": "1",
+   "input": " was too light.\n(0) Jody wanted new mascara and eyeliner, either black or brown, but the black\n(1) Jody wanted new mascara and eyeliner, either black or brown, but the brown",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1
+    },
+    "gemma_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1,
+     "rand_nm_j2": 1
+    }
+   }
+  },
+  {
+   "item_id": "winogrande:720",
+   "pair_id": "winogrande:720",
+   "task": "winogrande",
+   "lang": "sl",
+   "primary_metric": "acc",
+   "n_choices": 2,
+   "gold": "1",
+   "input": " presvetlo.\n(0) Jody je želela novo maskaro in črtalo za oči, črno ali rjavo, vendar je bilo črno\n(1) Jody je želela novo maskaro in črtalo za oči, črno ali rjavo, vendar je bilo rjavo",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1
+    },
+    "gemma_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1,
+     "rand_nm_j2": 1
+    }
+   }
+  },
+  {
+   "item_id": "winogrande:482",
+   "pair_id": "winogrande:482",
+   "task": "winogrande",
+   "lang": "en",
+   "primary_metric": "acc",
+   "n_choices": 2,
+   "gold": "0",
+   "input": " was heavier.\n(0) Tommy was able to carry the tripod himself, but his friend had to help him carry the camera because the camera\n(1) Tommy was able to carry the tripod himself, but his friend had to help him carry the camera because the tripod",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1
+    },
+    "gemma_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1,
+     "rand_nm_j2": 1
+    }
+   }
+  },
+  {
+   "item_id": "winogrande:482",
+   "pair_id": "winogrande:482",
+   "task": "winogrande",
+   "lang": "sl",
+   "primary_metric": "acc",
+   "n_choices": 2,
+   "gold": "0",
+   "input": " težji.\n(0) Tommy je lahko sam nosil trinožnik, vendar mu je moral prijatelj pomagati nositi fotoaparat, ker je bil fotoaparat\n(1) Tommy je lahko sam nosil trinožnik, vendar mu je moral prijatelj pomagati nositi fotoaparat, ker je bil trinožnik",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1
+    },
+    "gemma_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1,
+     "rand_nm_j2": 1
+    }
+   }
+  },
+  {
+   "item_id": "winogrande:140",
+   "pair_id": "winogrande:140",
+   "task": "winogrande",
+   "lang": "en",
+   "primary_metric": "acc",
+   "n_choices": 2,
+   "gold": "0",
+   "input": " was too strong.\n(0) The wind during the last hurricane tried to knock over their new house, but the house\n(1) The wind during the last hurricane tried to knock over their new house, but the wind",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 0,
+     "E_iter1": 0,
+     "orig": 0,
+     "rand_nm_j1": 0
+    },
+    "gemma_it": {
+     "E_art2": 1,
+     "E_iter1": 1,
+     "orig": 1,
+     "rand_nm_j1": 1,
+     "rand_nm_j2": 1
+    }
+   }
+  },
+  {
+   "item_id": "winogrande:140",
+   "pair_id": "winogrande:140",
+   "task": "winogrande",
+   "lang": "sl",
+   "primary_metric": "acc",
+   "n_choices": 2,
+   "gold": "0",
+   "input": " premočan.\n(0) Veter med zadnjim orkanom je poskušal podreti njun novi dom, vendar je bil dom\n(1) Veter med zadnjim orkanom je poskušal podreti njun novi dom, vendar je bil veter",
+   "correct": {
+    "gams3_it": {
+     "E_art2": 0,
+     "E_iter1": 0,
+     "orig": 0,
+     "rand_nm_j1": 0
+    },
+    "gemma_it": {
+     "E_art2": 0,
+     "E_iter1": 0,
+     "orig": 0,
+     "rand_nm_j1": 0,
+     "rand_nm_j2": 0
+    }
+   }
+  }
+ ],
+ "full_run_reference": {
+  "source": "full run of art_Q-LED_B1t1VK (300 pairs/task, 2000 bootstrap draws)",
+  "gates": {
+   "gams3_it": {
+    "E_art2": "OK",
+    "E_iter1": "OK",
+    "rand_nm_j1": "OK",
+    "E_iter1_l0.5": "OK",
+    "E_iter1_l1.5": "OK",
+    "E_iter1_l2.0": "OK"
+   },
+   "gemma_it": {
+    "E_art2": "OK",
+    "E_iter1": "OK",
+    "rand_nm_j1": "OK",
+    "rand_nm_j2": "OK",
+    "E_iter1_l0.5": "OK",
+    "E_iter1_l1.5": "OK",
+    "E_iter1_l2.0": "POSSIBLY_CATASTROPHIC"
+   }
+  },
+  "macros": {
+   "gams3_it": {
+    "E_art2": {
+     "en": {
+      "macro_H": -0.01988,
+      "macro_H_ci95": [
+       -0.04281,
+       0.00278
+      ],
+      "macro_H_ci90": [
+       -0.0392,
+       -0.0009
+      ],
+      "macro_loss": 0.01988,
+      "macro_loss_hi95": 0.04281,
+      "eligible_tasks": [
+       "arc_challenge",
+       "boolq",
+       "hellaswag",
+       "openbookqa",
+       "piqa",
+       "winogrande"
+      ],
+      "ineligible_tasks": [],
+      "raw_pp_macro": -0.7223,
+      "raw_pp_macro_ci95": [
+       -1.44444,
+       -0.05556
+      ],
+      "rel_pct_macro": -1.065,
+      "F6_raw_pp_rule": false
+     },
+     "sl": {
+      "macro_H": -0.00885,
+      "macro_H_ci95": [
+       -0.03762,
+       0.02194
+      ],
+      "macro_H_ci90": [
+       -0.03355,
+       0.01753
+      ],
+      "macro_loss": 0.00885,
+      "macro_loss_hi95": 0.03762,
+      "eligible_tasks": [
+       "arc_challenge",
+       "boolq",
+       "hellaswag",
+       "openbookqa",
+       "piqa",
+       "winogrande"
+      ],
+      "ineligible_tasks": [],
+      "raw_pp_macro": -0.278,
+      "raw_pp_macro_ci95": [
+       -0.94444,
+       0.44444
+      ],
+      "rel_pct_macro": -0.2918,
+      "F6_raw_pp_rule": false
+     },
+     "pooled_macro_H": -0.01436,
+     "pooled_macro_H_ci95": [
+      -0.03329,
+      0.005
+     ],
+     "A_sl_minus_en": 0.01104,
+     "A_ci95": [
+      -0.0234,
+      0.0504
+     ],
+     "A_ci90": [
+      -0.01857,
+      0.04384
+     ]
+    },
+    "E_iter1": {
+     "en": {
+      "macro_H": -0.018,
+      "macro_H_ci95": [
+       -0.03922,
+       0.00401
+      ],
+      "macro_H_ci90": [
+       -0.03573,
+       0.00065
+      ],
+      "macro_loss": 0.018,
+      "macro_loss_hi95": 0.03922,
+      "eligible_tasks": [
+       "arc_challenge",
+       "boolq",
+       "hellaswag",
+       "openbookqa",
+       "piqa",
+       "winogrande"
+      ],
+      "ineligible_tasks": [],
+      "raw_pp_macro": -0.7223,
+      "raw_pp_macro_ci95": [
+       -1.38889,
+       -0.05556
+      ],
+      "rel_pct_macro": -1.0728,
+      "F6_raw_pp_rule": false
+     },
+     "sl": {
+      "macro_H": 0.00653,
+      "macro_H_ci95": [
+       -0.02083,
+       0.03737
+      ],
+      "macro_H_ci90": [
+       -0.016,
+       0.03253
+      ],
+      "macro_loss": -0.00653,
+      "macro_loss_hi95": 0.02083,
+      "eligible_tasks": [
+       "arc_challenge",
+       "boolq",
+       "hellaswag",
+       "openbookqa",
+       "piqa",
+       "winogrande"
+      ],
+      "ineligible_tasks": [],
+      "raw_pp_macro": 0.1112,
+      "raw_pp_macro_ci95": [
+       -0.55556,
+       0.83333
+      ],
+      "rel_pct_macro": 0.1972,
+      "F6_raw_pp_rule": false
+     },
+     "pooled_macro_H": -0.00574,
+     "pooled_macro_H_ci95": [
+      -0.02372,
+      0.01327
+     ],
+     "A_sl_minus_en": 0.02453,
+     "A_ci95": [
+      -0.0092,
+      0.06021
+     ],
+     "A_ci90": [
+      -0.00445,
+      0.05533
+     ]
+    },
+    "rand_nm_j1": {
+     "en": {
+      "macro_H": -0.00343,
+      "macro_H_ci95": [
+       -0.01894,
+       0.01327
+      ],
+      "macro_H_ci90": [
+       -0.01619,
+       0.01087
+      ],
+      "macro_loss": 0.00343,
+      "macro_loss_hi95": 0.01894,
+      "eligible_tasks": [
+       "arc_challenge",
+       "boolq",
+       "hellaswag",
+       "openbookqa",
+       "piqa",
+       "winogrande"
+      ],
+      "ineligible_tasks": [],
+      "raw_pp_macro": -0.0557,
+      "raw_pp_macro_ci95": [
+       -0.5,
+       0.44444
+      ],
+      "rel_pct_macro": -0.0392,
+      "F6_raw_pp_rule": false
+     },
+     "sl": {
+      "macro_H": -0.03003,
+      "macro_H_ci95": [
+       -0.05776,
+       -0.00362
+      ],
+      "macro_H_ci90": [
+       -0.05215,
+       -0.00814
+      ],
+      "macro_loss": 0.03003,
+      "macro_loss_hi95": 0.05776,
+      "eligible_tasks": [
+       "arc_challenge",
+       "boolq",
+       "hellaswag",
+       "openbookqa",
+       "piqa",
+       "winogrande"
+      ],
+      "ineligible_tasks": [],
+      "raw_pp_macro": -0.7223,
+      "raw_pp_macro_ci95": [
+       -1.33333,
+       -0.11111
+      ],
+      "rel_pct_macro": -0.9515,
+      "F6_raw_pp_rule": false
+     },
+     "pooled_macro_H": -0.01673,
+     "pooled_macro_H_ci95": [
+      -0.03199,
+      -0.00118
+     ],
+     "A_sl_minus_en": -0.0266,
+     "A_ci95": [
+      -0.05908,
+      0.00463
+     ],
+     "A_ci90": [
+      -0.05299,
+      -0.00075
+     ]
+    }
+   },
+   "gemma_it": {
+    "E_art2": {
+     "en": {
+      "macro_H": 0.01634,
+      "macro_H_ci95": [
+       -0.00226,
+       0.03709
+      ],
+      "macro_H_ci90": [
+       0.00108,
+       0.03367
+      ],
+      "macro_loss": -0.01634,
+      "macro_loss_hi95": 0.00226,
+      "eligible_tasks": [
+       "arc_challenge",
+       "boolq",
+       "hellaswag",
+       "openbookqa",
+       "piqa",
+       "winogrande"
+      ],
+      "ineligible_tasks": [],
+      "raw_pp_macro": 0.4445,
+      "raw_pp_macro_ci95": [
+       -0.11111,
+       1.0
+      ],
+      "rel_pct_macro": 0.6777,
+      "F6_raw_pp_rule": false
+     },
+     "sl": {
+      "macro_H": 0.04908,
+      "macro_H_ci95": [
+       0.00016,
+       0.14118
+      ],
+      "macro_H_ci90": [
+       0.00734,
+       0.11334
+      ],
+      "macro_loss": -0.04908,
+      "macro_loss_hi95": -0.00016,
+      "eligible_tasks": [
+       "arc_challenge",
+       "boolq",
+       "hellaswag",
+       "openbookqa",
+       "piqa",
+       "winogrande"
+      ],
+      "ineligible_tasks": [],
+      "raw_pp_macro": 0.6667,
+      "raw_pp_macro_ci95": [
+       -0.11111,
+       1.44444
+      ],
+      "rel_pct_macro": 1.239,
+      "F6_raw_pp_rule": false
+     },
+     "pooled_macro_H": 0.03271,
+     "pooled_macro_H_ci95": [
+      0.00654,
+      0.07939
+     ],
+     "A_sl_minus_en": 0.03275,
+     "A_ci95": [
+      -0.02034,
+      0.12511
+     ],
+     "A_ci90": [
+      -0.01232,
+      0.09711
+     ]
+    },
+    "E_iter1": {
+     "en": {
+      "macro_H": 0.00772,
+      "macro_H_ci95": [
+       -0.00873,
+       0.02532
+      ],
+      "macro_H_ci90": [
+       -0.00649,
+       0.02222
+      ],
+      "macro_loss": -0.00772,
+      "macro_loss_hi95": 0.00873,
+      "eligible_tasks": [
+       "arc_challenge",
+       "boolq",
+       "hellaswag",
+       "openbookqa",
+       "piqa",
+       "winogrande"
+      ],
+      "ineligible_tasks": [],
+      "raw_pp_macro": 0.2777,
+      "raw_pp_macro_ci95": [
+       -0.22222,
+       0.77778
+      ],
+      "rel_pct_macro": 0.3598,
+      "F6_raw_pp_rule": false
+     },
+     "sl": {
+      "macro_H": 0.0218,
+      "macro_H_ci95": [
+       -0.02374,
+       0.09039
+      ],
+      "macro_H_ci90": [
+       -0.01631,
+       0.07625
+      ],
+      "macro_loss": -0.0218,
+      "macro_loss_hi95": 0.02374,
+      "eligible_tasks": [
+       "arc_challenge",
+       "boolq",
+       "hellaswag",
+       "openbookqa",
+       "piqa",
+       "winogrande"
+      ],
+      "ineligible_tasks": [],
+      "raw_pp_macro": 0.1665,
+      "raw_pp_macro_ci95": [
+       -0.61111,
+       0.88889
+      ],
+      "rel_pct_macro": 0.4538,
+      "F6_raw_pp_rule": false
+     },
+     "pooled_macro_H": 0.01476,
+     "pooled_macro_H_ci95": [
+      -0.00949,
+      0.05136
+     ],
+     "A_sl_minus_en": 0.01408,
+     "A_ci95": [
+      -0.03647,
+      0.08215
+     ],
+     "A_ci90": [
+      -0.02737,
+      0.06849
+     ]
+    },
+    "rand_nm_j1": {
+     "en": {
+      "macro_H": 0.00852,
+      "macro_H_ci95": [
+       -0.00284,
+       0.0215
+      ],
+      "macro_H_ci90": [
+       -0.00126,
+       0.01925
+      ],
+      "macro_loss": -0.00852,
+      "macro_loss_hi95": 0.00284,
+      "eligible_tasks": [
+       "arc_challenge",
+       "boolq",
+       "hellaswag",
+       "openbookqa",
+       "piqa",
+       "winogrande"
+      ],
+      "ineligible_tasks": [],
+      "raw_pp_macro": 0.2777,
+      "raw_pp_macro_ci95": [
+       -0.05556,
+       0.66667
+      ],
+      "rel_pct_macro": 0.3737,
+      "F6_raw_pp_rule": false
+     },
+     "sl": {
+      "macro_H": 0.00157,
+      "macro_H_ci95": [
+       -0.0448,
+       0.06855
+      ],
+      "macro_H_ci90": [
+       -0.03596,
+       0.05364
+      ],
+      "macro_loss": -0.00157,
+      "macro_loss_hi95": 0.0448,
+      "eligible_tasks": [
+       "arc_challenge",
+       "boolq",
+       "hellaswag",
+       "openbookqa",
+       "piqa",
+       "winogrande"
+      ],
+      "ineligible_tasks": [],
+      "raw_pp_macro": -0.1112,
+      "raw_pp_macro_ci95": [
+       -0.77778,
+       0.5
+      ],
+      "rel_pct_macro": -0.2277,
+      "F6_raw_pp_rule": false
+     },
+     "pooled_macro_H": 0.00505,
+     "pooled_macro_H_ci95": [
+      -0.01884,
+      0.04034
+     ],
+     "A_sl_minus_en": -0.00695,
+     "A_ci95": [
+      -0.05334,
+      0.06077
+     ],
+     "A_ci90": [
+      -0.04597,
+      0.04451
+     ]
+    },
+    "rand_nm_j2": {
+     "en": {
+      "macro_H": -0.00672,
+      "macro_H_ci95": [
+       -0.02239,
+       0.00766
+      ],
+      "macro_H_ci90": [
+       -0.01922,
+       0.00506
+      ],
+      "macro_loss": 0.00672,
+      "macro_loss_hi95": 0.02239,
+      "eligible_tasks": [
+       "arc_challenge",
+       "boolq",
+       "hellaswag",
+       "openbookqa",
+       "piqa",
+       "winogrande"
+      ],
+      "ineligible_tasks": [],
+      "raw_pp_macro": -0.1665,
+      "raw_pp_macro_ci95": [
+       -0.61111,
+       0.22222
+      ],
+      "rel_pct_macro": -0.2165,
+      "F6_raw_pp_rule": false
+     },
+     "sl": {
+      "macro_H": -0.00752,
+      "macro_H_ci95": [
+       -0.05946,
+       0.05374
+      ],
+      "macro_H_ci90": [
+       -0.05017,
+       0.04044
+      ],
+      "macro_loss": 0.00752,
+      "macro_loss_hi95": 0.05946,
+      "eligible_tasks": [
+       "arc_challenge",
+       "boolq",
+       "hellaswag",
+       "openbookqa",
+       "piqa",
+       "winogrande"
+      ],
+      "ineligible_tasks": [],
+      "raw_pp_macro": -0.1112,
+      "raw_pp_macro_ci95": [
+       -0.77778,
+       0.5
+      ],
+      "rel_pct_macro": -0.3385,
+      "F6_raw_pp_rule": false
+     },
+     "pooled_macro_H": -0.00712,
+     "pooled_macro_H_ci95": [
+      -0.03479,
+      0.02475
+     ],
+     "A_sl_minus_en": -0.00079,
+     "A_ci95": [
+      -0.05244,
+      0.06065
+     ],
+     "A_ci90": [
+      -0.04439,
+      0.04982
+     ]
+    }
+   }
+  },
+  "interaction": {
+   "E_iter1": {
+    "I": 0.01045,
+    "I_ci95": [
+     -0.06544,
+     0.07428
+    ],
+    "I_ci90": [
+     -0.04939,
+     0.06298
+    ],
+    "note": "resolution limit ~0.10-0.12 of headroom (80% power, alpha .05); |I| below it is an estimate, not 'no asymmetry'"
+   },
+   "E_art2": {
+    "I": -0.02171,
+    "I_ci95": [
+     -0.11623,
+     0.04326
+    ],
+    "I_ci90": [
+     -0.09936,
+     0.03302
+    ],
+    "note": "resolution limit ~0.10-0.12 of headroom (80% power, alpha .05); |I| below it is an estimate, not 'no asymmetry'"
+   },
+   "rand_nm_j1": {
+    "I": -0.01965,
+    "I_ci95": [
+     -0.0961,
+     0.03432
+    ],
+    "I_ci90": [
+     -0.07827,
+     0.024
+    ],
+    "note": "resolution limit ~0.10-0.12 of headroom (80% power, alpha .05); |I| below it is an estimate, not 'no asymmetry'"
+   }
+  }
+ }
+}

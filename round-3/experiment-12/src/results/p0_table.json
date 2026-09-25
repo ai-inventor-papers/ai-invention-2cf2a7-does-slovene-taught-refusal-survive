@@ -101,8 +101,8 @@
     "lexical_provisional": {
       "status": "PROVISIONAL (lexical refusal marker from artifact 4 final generations; its judge labels were not yet available)",
       "files": [
-        "../../../experiment-11/src/results/final/gens_gams3_it.jsonl",
-        "../../../experiment-11/src/results/final/gens_gemma_it.jsonl"
+        "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_3/gen_art/gen_art_experiment_11/results/final/gens_gams3_it.jsonl",
+        "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_3/gen_art/gen_art_experiment_11/results/final/gens_gemma_it.jsonl"
       ],
       "deltas": {
         "gams3_it|hard|L3_MT|False": {
@@ -181,9 +181,9 @@
   "RQ4": {
     "status": "see artifact 3",
     "iter3_workspaces_with_README": [
-      "../../../evaluation-2/src",
-      "../../../experiment-11/src",
-      "../../../experiment-9/src"
+      "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_3/gen_art/gen_art_evaluation_2",
+      "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_3/gen_art/gen_art_experiment_11",
+      "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_3/gen_art/gen_art_experiment_9"
     ]
   },
   "EN_refusal_cut_gate": "requires artifact 2/4 post-edit refusal rows; PENDING unless RQ2 FOUND (en_cut_relative >= 0.50)"

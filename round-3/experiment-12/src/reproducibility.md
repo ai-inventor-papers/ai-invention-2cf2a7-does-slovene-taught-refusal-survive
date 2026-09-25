@@ -8,7 +8,7 @@ Every deviation is also logged in `results/cuts.json`.
 cp -r <this folder> ~/rq3 && cd ~/rq3
 ```
 Paths below are relative to the artifact root. Read-only inputs are referenced by absolute path on the run volume
-(`/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/...`), set in `src/common.py`:
+(`../../../...`), set in `src/common.py`:
 * iter-1 selected adapters, `selection_pick.json`, `random_edits.json`, `residual_directions.pt` and `cfg/config.toml`: `3_invention_loop/iter_1/gen_art/gen_art_experiment_4/results/{gams3_it,gemma_it}/`
 * dataset dependency `art_EG6OpEkGvysx`, used only for the zero-overlap audit: `3_invention_loop/iter_1/gen_art/gen_art_dataset_1/full_data_out.json`
 * RQ1 refusal rates: `3_invention_loop/iter_2/gen_art/gen_art_experiment_5/results/analysis_final.json`

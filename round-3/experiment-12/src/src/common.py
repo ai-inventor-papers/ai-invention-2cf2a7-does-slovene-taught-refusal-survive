@@ -20,12 +20,12 @@ for _d in (DATA, RESULTS, ITEMS, LOGS, ADAPTERS):
 SEED = 20260925
 ITER1_SEED = 20260923  # iter-1 Heretic seed; rand_dirs(j) uses ITER1_SEED + j (copied verbatim)
 
-RUN = Path("/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I")
+RUN = Path(__file__).resolve().parents[4]
 ITER1_EXP4 = RUN / "3_invention_loop/iter_1/gen_art/gen_art_experiment_4"
 ITER1_DATASET = RUN / "3_invention_loop/iter_1/gen_art/gen_art_dataset_1"
 ITER2_EXP8 = RUN / "3_invention_loop/iter_2/gen_art/gen_art_experiment_8"
 ITER2_EXP5 = RUN / "3_invention_loop/iter_2/gen_art/gen_art_experiment_5"
-ITER3_GENART = RUN / "3_invention_loop/iter_3/gen_art"
+ITER3_GENART = RUN / "round-3"
 
 MODELS = {
     "gams3_it": {"repo": "cjvt/GaMS3-12B-Instruct", "revision": "1d0b27af5748784482600d24779409e7e1dc9adc"},
