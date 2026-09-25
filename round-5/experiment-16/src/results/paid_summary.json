@@ -1,0 +1,25 @@
+{
+ "n_calls": 5509,
+ "usd": 4.00895938,
+ "by_model": {
+  "anthropic/claude-haiku-4.5": {
+   "n": 400,
+   "usd": 0.381059
+  },
+  "deepseek/deepseek-chat-v3.1": {
+   "n": 162,
+   "usd": 0.03604648
+  },
+  "google/gemini-2.5-flash": {
+   "n": 4547,
+   "usd": 2.9622439
+  },
+  "openai/gpt-4.1": {
+   "n": 400,
+   "usd": 0.62961
+  }
+ },
+ "errors": 0,
+ "blocked": 3,
+ "hard_stop": 4.0
+}

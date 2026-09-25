@@ -1,0 +1,16 @@
+{
+ "model": "pew_heretic",
+ "compliance": {
+  "EN>SL": {
+   "gate_ext": 0.9189,
+   "min": 0.9189,
+   "n": 37
+  },
+  "SF_SL>SL": {
+   "gate_ext": 1.0,
+   "min": 1.0,
+   "n": 37
+  }
+ },
+ "dropped_cells": []
+}
