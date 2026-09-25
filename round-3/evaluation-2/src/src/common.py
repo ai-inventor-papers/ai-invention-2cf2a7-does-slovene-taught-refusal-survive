@@ -18,14 +18,14 @@ WORK, LABELS, LOGS, FIG, ADJ, RES = (WS / d for d in ("work", "labels", "logs", 
 for _d in (WORK, LABELS, LOGS, FIG, ADJ, RES):
     _d.mkdir(parents=True, exist_ok=True)
 
-RUN = Path("/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I")
-IT2 = RUN / "3_invention_loop" / "iter_2" / "gen_art"
+RUN = Path(__file__).resolve().parents[4]
+IT2 = RUN / "." / "round-2" / "."
 E8 = IT2 / "gen_art_experiment_8"
 E5 = IT2 / "gen_art_experiment_5"
 E6 = IT2 / "gen_art_experiment_6"
 E7 = IT2 / "gen_art_experiment_7"
 EV1 = IT2 / "gen_art_evaluation_1"
-DS1 = RUN / "3_invention_loop" / "iter_1" / "gen_art" / "gen_art_dataset_1"
+DS1 = RUN / "." / "round-1" / "." / "gen_art_dataset_1"
 
 SEED = 20260925
 M_C3 = 0.6752386824941827      # frozen iter-1 margin (exp8 protocol.json margins.m_C3)

@@ -13,7 +13,7 @@ run budget was exhausted; **$0 of API spend**.
 cp -r <this folder> ~/readout_repair && cd ~/readout_repair
 ```
 All read-only inputs live at absolute paths under
-`/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_2/gen_art/` (exp5, exp7, exp8, evaluation_1) and
+`../../../round-2/` (exp5, exp7, exp8, evaluation_1) and
 `.../iter_1/gen_art/gen_art_dataset_1`; `src/common.py` hard-codes them. On a fresh machine, place those dependency
 workspaces at the same paths (or edit the constants in `src/common.py`).
 
