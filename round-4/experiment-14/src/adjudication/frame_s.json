@@ -1,0 +1,699 @@
+{
+ "gams|sl|edited|in=sl": {
+  "N": 400,
+  "n": 30
+ },
+ "gams|sl|edited|in=en": {
+  "N": 400,
+  "n": 30
+ },
+ "gams|en|edited": {
+  "N": 1200,
+  "n": 30
+ },
+ "gams|hu|edited": {
+  "N": 1200,
+  "n": 30
+ },
+ "lambda0": {
+  "N": 1800,
+  "n": 15
+ },
+ "_rows": {
+  "s000": {
+   "stratum": "gams|sl|edited|in=sl",
+   "N": 400,
+   "n": 30
+  },
+  "s001": {
+   "stratum": "gams|sl|edited|in=en",
+   "N": 400,
+   "n": 30
+  },
+  "s002": {
+   "stratum": "gams|sl|edited|in=sl",
+   "N": 400,
+   "n": 30
+  },
+  "s003": {
+   "stratum": "gams|sl|edited|in=sl",
+   "N": 400,
+   "n": 30
+  },
+  "s004": {
+   "stratum": "gams|en|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "s005": {
+   "stratum": "gams|en|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "s006": {
+   "stratum": "gams|sl|edited|in=sl",
+   "N": 400,
+   "n": 30
+  },
+  "s007": {
+   "stratum": "gams|hu|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "s008": {
+   "stratum": "lambda0",
+   "N": 1800,
+   "n": 15
+  },
+  "s009": {
+   "stratum": "gams|en|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "s010": {
+   "stratum": "gams|en|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "s011": {
+   "stratum": "gams|sl|edited|in=en",
+   "N": 400,
+   "n": 30
+  },
+  "s012": {
+   "stratum": "gams|hu|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "s013": {
+   "stratum": "gams|sl|edited|in=en",
+   "N": 400,
+   "n": 30
+  },
+  "s014": {
+   "stratum": "gams|en|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "s015": {
+   "stratum": "gams|sl|edited|in=sl",
+   "N": 400,
+   "n": 30
+  },
+  "s016": {
+   "stratum": "gams|sl|edited|in=sl",
+   "N": 400,
+   "n": 30
+  },
+  "s017": {
+   "stratum": "gams|sl|edited|in=en",
+   "N": 400,
+   "n": 30
+  },
+  "s018": {
+   "stratum": "gams|hu|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "s019": {
+   "stratum": "gams|hu|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "s020": {
+   "stratum": "gams|hu|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "s021": {
+   "stratum": "gams|sl|edited|in=en",
+   "N": 400,
+   "n": 30
+  },
+  "s022": {
+   "stratum": "gams|sl|edited|in=sl",
+   "N": 400,
+   "n": 30
+  },
+  "s023": {
+   "stratum": "gams|hu|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "s024": {
+   "stratum": "gams|en|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "s025": {
+   "stratum": "gams|hu|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "s026": {
+   "stratum": "gams|sl|edited|in=sl",
+   "N": 400,
+   "n": 30
+  },
+  "s027": {
+   "stratum": "gams|en|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "s028": {
+   "stratum": "gams|sl|edited|in=sl",
+   "N": 400,
+   "n": 30
+  },
+  "s029": {
+   "stratum": "gams|sl|edited|in=sl",
+   "N": 400,
+   "n": 30
+  },
+  "s030": {
+   "stratum": "gams|hu|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "s031": {
+   "stratum": "gams|en|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "s032": {
+   "stratum": "gams|en|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "s033": {
+   "stratum": "gams|hu|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "s034": {
+   "stratum": "gams|hu|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "s035": {
+   "stratum": "gams|hu|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "s036": {
+   "stratum": "gams|en|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "s037": {
+   "stratum": "gams|hu|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "s038": {
+   "stratum": "gams|hu|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "s039": {
+   "stratum": "gams|en|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "s040": {
+   "stratum": "gams|hu|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "s041": {
+   "stratum": "gams|en|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "s042": {
+   "stratum": "gams|sl|edited|in=sl",
+   "N": 400,
+   "n": 30
+  },
+  "s043": {
+   "stratum": "lambda0",
+   "N": 1800,
+   "n": 15
+  },
+  "s044": {
+   "stratum": "gams|en|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "s045": {
+   "stratum": "gams|sl|edited|in=en",
+   "N": 400,
+   "n": 30
+  },
+  "s046": {
+   "stratum": "gams|sl|edited|in=sl",
+   "N": 400,
+   "n": 30
+  },
+  "s047": {
+   "stratum": "gams|en|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "s048": {
+   "stratum": "gams|en|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "s049": {
+   "stratum": "lambda0",
+   "N": 1800,
+   "n": 15
+  },
+  "s050": {
+   "stratum": "gams|en|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "s051": {
+   "stratum": "gams|en|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "s052": {
+   "stratum": "gams|en|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "s053": {
+   "stratum": "gams|sl|edited|in=en",
+   "N": 400,
+   "n": 30
+  },
+  "s054": {
+   "stratum": "gams|en|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "s055": {
+   "stratum": "gams|sl|edited|in=sl",
+   "N": 400,
+   "n": 30
+  },
+  "s056": {
+   "stratum": "gams|hu|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "s057": {
+   "stratum": "gams|sl|edited|in=en",
+   "N": 400,
+   "n": 30
+  },
+  "s058": {
+   "stratum": "lambda0",
+   "N": 1800,
+   "n": 15
+  },
+  "s059": {
+   "stratum": "gams|en|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "s060": {
+   "stratum": "gams|hu|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "s061": {
+   "stratum": "lambda0",
+   "N": 1800,
+   "n": 15
+  },
+  "s062": {
+   "stratum": "gams|sl|edited|in=sl",
+   "N": 400,
+   "n": 30
+  },
+  "s063": {
+   "stratum": "gams|en|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "s064": {
+   "stratum": "gams|sl|edited|in=sl",
+   "N": 400,
+   "n": 30
+  },
+  "s065": {
+   "stratum": "gams|hu|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "s066": {
+   "stratum": "gams|hu|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "s067": {
+   "stratum": "gams|sl|edited|in=en",
+   "N": 400,
+   "n": 30
+  },
+  "s068": {
+   "stratum": "gams|hu|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "s069": {
+   "stratum": "gams|hu|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "s070": {
+   "stratum": "gams|sl|edited|in=en",
+   "N": 400,
+   "n": 30
+  },
+  "s071": {
+   "stratum": "gams|sl|edited|in=sl",
+   "N": 400,
+   "n": 30
+  },
+  "s072": {
+   "stratum": "gams|sl|edited|in=en",
+   "N": 400,
+   "n": 30
+  },
+  "s073": {
+   "stratum": "gams|sl|edited|in=en",
+   "N": 400,
+   "n": 30
+  },
+  "s074": {
+   "stratum": "gams|sl|edited|in=sl",
+   "N": 400,
+   "n": 30
+  },
+  "s075": {
+   "stratum": "gams|sl|edited|in=en",
+   "N": 400,
+   "n": 30
+  },
+  "s076": {
+   "stratum": "gams|sl|edited|in=en",
+   "N": 400,
+   "n": 30
+  },
+  "s077": {
+   "stratum": "gams|hu|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "s078": {
+   "stratum": "gams|sl|edited|in=en",
+   "N": 400,
+   "n": 30
+  },
+  "s079": {
+   "stratum": "gams|sl|edited|in=en",
+   "N": 400,
+   "n": 30
+  },
+  "s080": {
+   "stratum": "gams|sl|edited|in=en",
+   "N": 400,
+   "n": 30
+  },
+  "s081": {
+   "stratum": "gams|hu|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "s082": {
+   "stratum": "gams|hu|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "s083": {
+   "stratum": "gams|sl|edited|in=sl",
+   "N": 400,
+   "n": 30
+  },
+  "s084": {
+   "stratum": "gams|sl|edited|in=en",
+   "N": 400,
+   "n": 30
+  },
+  "s085": {
+   "stratum": "lambda0",
+   "N": 1800,
+   "n": 15
+  },
+  "s086": {
+   "stratum": "gams|sl|edited|in=en",
+   "N": 400,
+   "n": 30
+  },
+  "s087": {
+   "stratum": "gams|sl|edited|in=sl",
+   "N": 400,
+   "n": 30
+  },
+  "s088": {
+   "stratum": "gams|sl|edited|in=en",
+   "N": 400,
+   "n": 30
+  },
+  "s089": {
+   "stratum": "lambda0",
+   "N": 1800,
+   "n": 15
+  },
+  "s090": {
+   "stratum": "lambda0",
+   "N": 1800,
+   "n": 15
+  },
+  "s091": {
+   "stratum": "gams|sl|edited|in=en",
+   "N": 400,
+   "n": 30
+  },
+  "s092": {
+   "stratum": "gams|sl|edited|in=en",
+   "N": 400,
+   "n": 30
+  },
+  "s093": {
+   "stratum": "gams|en|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "s094": {
+   "stratum": "gams|hu|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "s095": {
+   "stratum": "gams|sl|edited|in=sl",
+   "N": 400,
+   "n": 30
+  },
+  "s096": {
+   "stratum": "lambda0",
+   "N": 1800,
+   "n": 15
+  },
+  "s097": {
+   "stratum": "gams|en|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "s098": {
+   "stratum": "gams|hu|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "s099": {
+   "stratum": "gams|sl|edited|in=sl",
+   "N": 400,
+   "n": 30
+  },
+  "s100": {
+   "stratum": "gams|en|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "s101": {
+   "stratum": "gams|sl|edited|in=sl",
+   "N": 400,
+   "n": 30
+  },
+  "s102": {
+   "stratum": "gams|en|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "s103": {
+   "stratum": "lambda0",
+   "N": 1800,
+   "n": 15
+  },
+  "s104": {
+   "stratum": "gams|sl|edited|in=sl",
+   "N": 400,
+   "n": 30
+  },
+  "s105": {
+   "stratum": "gams|en|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "s106": {
+   "stratum": "gams|hu|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "s107": {
+   "stratum": "gams|sl|edited|in=en",
+   "N": 400,
+   "n": 30
+  },
+  "s108": {
+   "stratum": "lambda0",
+   "N": 1800,
+   "n": 15
+  },
+  "s109": {
+   "stratum": "gams|hu|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "s110": {
+   "stratum": "gams|sl|edited|in=en",
+   "N": 400,
+   "n": 30
+  },
+  "s111": {
+   "stratum": "gams|sl|edited|in=sl",
+   "N": 400,
+   "n": 30
+  },
+  "s112": {
+   "stratum": "gams|sl|edited|in=sl",
+   "N": 400,
+   "n": 30
+  },
+  "s113": {
+   "stratum": "gams|sl|edited|in=en",
+   "N": 400,
+   "n": 30
+  },
+  "s114": {
+   "stratum": "gams|sl|edited|in=en",
+   "N": 400,
+   "n": 30
+  },
+  "s115": {
+   "stratum": "gams|sl|edited|in=en",
+   "N": 400,
+   "n": 30
+  },
+  "s116": {
+   "stratum": "gams|sl|edited|in=sl",
+   "N": 400,
+   "n": 30
+  },
+  "s117": {
+   "stratum": "gams|hu|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "s118": {
+   "stratum": "gams|sl|edited|in=sl",
+   "N": 400,
+   "n": 30
+  },
+  "s119": {
+   "stratum": "gams|sl|edited|in=en",
+   "N": 400,
+   "n": 30
+  },
+  "s120": {
+   "stratum": "gams|en|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "s121": {
+   "stratum": "lambda0",
+   "N": 1800,
+   "n": 15
+  },
+  "s122": {
+   "stratum": "gams|en|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "s123": {
+   "stratum": "gams|hu|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "s124": {
+   "stratum": "lambda0",
+   "N": 1800,
+   "n": 15
+  },
+  "s125": {
+   "stratum": "gams|sl|edited|in=en",
+   "N": 400,
+   "n": 30
+  },
+  "s126": {
+   "stratum": "gams|en|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "s127": {
+   "stratum": "lambda0",
+   "N": 1800,
+   "n": 15
+  },
+  "s128": {
+   "stratum": "gams|sl|edited|in=sl",
+   "N": 400,
+   "n": 30
+  },
+  "s129": {
+   "stratum": "gams|en|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "s130": {
+   "stratum": "gams|sl|edited|in=sl",
+   "N": 400,
+   "n": 30
+  },
+  "s131": {
+   "stratum": "gams|sl|edited|in=sl",
+   "N": 400,
+   "n": 30
+  },
+  "s132": {
+   "stratum": "lambda0",
+   "N": 1800,
+   "n": 15
+  },
+  "s133": {
+   "stratum": "gams|hu|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "s134": {
+   "stratum": "gams|sl|edited|in=en",
+   "N": 400,
+   "n": 30
+  }
+ }
+}

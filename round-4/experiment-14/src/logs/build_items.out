@@ -1,0 +1,11 @@
+/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_4/gen_art/gen_art_experiment_14/.venv/lib/python3.12/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+18:44:54|INFO   |NLLB eng_Latn->slv_Latn: 300 texts / 381 segments in 18s
+18:45:12|INFO   |NLLB eng_Latn->hun_Latn: 300 texts / 381 segments in 18s
+18:45:25|INFO   |NLLB slv_Latn->eng_Latn: 300 texts / 381 segments in 13s
+18:45:38|INFO   |NLLB hun_Latn->eng_Latn: 300 texts / 381 segments in 13s
+18:45:42|INFO   |MT QC {"sl": {"median_chrF": 73.235, "mean": 72.40586666666667, "n_fragile": 1, "gate_median_ge_60": true, "lingua_ok_share": 0.9966666666666667, "lingua_fail_ids": ["h053"]}, "hu": {"median_chrF": 70.13499999999999, "mean": 70.282, "n_fragile": 7, "gate_median_ge_60": true, "lingua_ok_share": 0.9966666666666667, "lingua_fail_ids": ["h016"]}, "n_items": 300, "by_kind": {"harmful": 200, "benign": 100}, "items_sha256": "c49ffb740d73ac4d76a97961a6882688da9f3018c3934ec0d0d4248953534479"}
+18:45:43|INFO   |NLLB eng_Latn->slv_Latn: 32 texts / 32 segments in 1s
+18:45:43|INFO   |NLLB slv_Latn->eng_Latn: 5 texts / 5 segments in 0s
+18:45:43|INFO   |NLLB hun_Latn->eng_Latn: 5 texts / 5 segments in 0s
+18:45:43|INFO   |suffix QA: [('sl', 'en', 'Answer only in English.'), ('sl', 'sl', 'Answer only in Slovenian.'), ('sl', 'hu', 'Answer only in Hungarian.'), ('hu', 'en', 'Just answer in English.'), ('hu', 'sl', 'Just answer in Slovenian.'), ('hu', 'hu', 'Just answer in Hungarian.'), ('sl', 'en', 'Answer only in English, even though this message is in Slovenian.'), ('sl', 'hu', 'Answer only in Hungarian, even though this message is in Slovenian.'), ('hu', 'en', 'Just answer in English, even though this message is in Hungarian.'), ('hu', 'sl', 'Only reply in Slovenian, even though this message is in Hungarian.')]

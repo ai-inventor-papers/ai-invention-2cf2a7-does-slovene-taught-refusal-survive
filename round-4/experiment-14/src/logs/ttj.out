@@ -1,0 +1,19 @@
+/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_4/gen_art/gen_art_experiment_14/.venv/lib/python3.12/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+22:01:38|INFO   |TTJ gemma_it: 3600 rows to translate
+22:02:01|INFO   |NLLB slv_Latn->eng_Latn: 600 texts / 2914 segments in 23s
+22:02:20|INFO   |NLLB slv_Latn->eng_Latn: 600 texts / 2843 segments in 19s
+22:02:38|INFO   |NLLB slv_Latn->eng_Latn: 600 texts / 2809 segments in 19s
+22:03:05|INFO   |NLLB hun_Latn->eng_Latn: 600 texts / 2826 segments in 27s
+22:03:24|INFO   |NLLB hun_Latn->eng_Latn: 600 texts / 2739 segments in 19s
+22:03:43|INFO   |NLLB hun_Latn->eng_Latn: 600 texts / 2657 segments in 19s
+22:03:43|INFO   |TTJ gams3_it: 3000 rows to translate
+22:04:05|INFO   |NLLB slv_Latn->eng_Latn: 600 texts / 3431 segments in 22s
+22:04:30|INFO   |NLLB slv_Latn->eng_Latn: 600 texts / 3244 segments in 25s
+22:04:47|INFO   |NLLB slv_Latn->eng_Latn: 300 texts / 1454 segments in 17s
+22:05:15|INFO   |NLLB hun_Latn->eng_Latn: 600 texts / 2974 segments in 28s
+22:05:47|INFO   |NLLB hun_Latn->eng_Latn: 600 texts / 2870 segments in 31s
+22:06:06|INFO   |NLLB hun_Latn->eng_Latn: 300 texts / 1334 segments in 20s
+22:06:07|INFO   |TTJ pew_heretic: 1200 rows to translate
+22:06:36|INFO   |NLLB slv_Latn->eng_Latn: 600 texts / 3105 segments in 29s
+22:07:01|INFO   |NLLB hun_Latn->eng_Latn: 600 texts / 2776 segments in 26s
