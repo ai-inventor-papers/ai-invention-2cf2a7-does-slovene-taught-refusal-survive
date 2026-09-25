@@ -1,0 +1,143 @@
+# 2026-09-24T18:32:17Z https://arxiv.org/pdf/2603.01691 :: Hungarian|madž|Croatian|Serbian|Bosnian|FineWeb-2|Nemotron|safety|459|human-written|140B|tokens of|percent|%
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2603.01691
+Type: PDF
+Pattern: Hungarian|madž|Croatian|Serbian|Bosnian|FineWeb-2|Nemotron|safety|459|human-written|140B|tokens of|percent|% (203 matches in 86464 chars)
+
+--- Content ---
+
+1171:...s
+parameter range. We adapted the model to the Slovene language using three-stage continual pre-training
+of the Gemma 3 model, followed by two-stage supervised fine-tuning (SFT). We trained the model on
+a combination of 140B Slovene, English, Bosnian, Serbian, and Croatian pretraining tokens, and over
+200 thousand English and Slovene SFT examples. We evaluate GaMS3-12B on the Slovenian-LLM-Eval
+datasets, English-to-Slovene translation, and the Slovene LLM arena. We show that the described model
+outperforms 12B Gemma 3 across all three scenarios and performs comparably to much larger commercial
+GPT-4o in the Slovene LLM arena, achieving a win rate of over 60 %.
+Keywords: GaMS, large language models, language adaptation, less-resourced language
+1.
+Introduction
+Large language models (LLMs), particularly generative LLMs like GPT models, have dramatically
+transformed natural lang...
+--
+2068:...ssing (NLP), advancing our understanding and ability to generate
+human language. As a result of this rapid development, new open-source decoder-type transformer
+LLMs such as Gemma (Team 2024), Llama (Dubey et al. 2024), Nemotron (NVIDIA 2025), and many
+others are released on a regular basis. These models are trained predominantly on high-resource
+languages (primarily English) while their attention and performance on less-resourced languages,
+su...
+--
+3741:...dapt it for Slovene. We perform
+three continual pretraining (CPT) stages, followed by two supervised fine-tuning (SFT) stages. To
+increase the amount of training data, we also include texts from similar languages, i.e., Croatian,
+Bosnian, and Serbian, which can improve the models’ performance. Additionally, we generate more
+data by performing an OCR of high-quality Slovene PDFs, such as the repositories of top Slovene
+universities and the digital archive of the national library. We also translate high-quality English
+corpora such as Wikipedia and Nemotron datasets.
+Our contributions are as follows:
+• GaMS, a State-of-the-art open-source generative model for Slovene;
+• An open-source code for the OCR of Slovene documents, that can be transferred to other
+less-resourced la...
+--
+7450:... most interesting family of models mentioned above is Gemma due to its strong
+performance and EuroLLM due to its focus on EU languages. EuroLLM was trained from scratch on a
+
+Under review
+3
+data mixture consisting of 50 % of English texts, 5 % of code/math data, and 45 % of other languages.
+These other languages represent the majority of European languages. Slovene data represents 1 % of
+the other languages’ data. The percentage of Slovene data used for pretraining of Gemma models is
+unclear, but it is significant enough that the 27B version of Gemma 3 performs better than the rest
+of multi–lingual models in the Slovenian-LLM-Eval (CJVT 2024...
+--
+10227:... useful in practice compared to current models. However, they provide
+valuable insights into the Slovenian specialization. They show the benefits of training the model
+combined with languages similar to Slovene, such as Croatian (CroSloEngual BERT), and the impact
+of vocabulary modification and embedding transfer (GaMS-1B). Currently, the most relevant Slovene
+specialized decoder-type LLMs are Gemma 2 based GaMS models (Vreš et al. 2025) with 9B and 27B
+parameters and Mistral NeMo based Zlatorog 12B (Savodnik 2025b). The best performing model
+out of these is GaMS-27B-Instruct-Nemotron (Petrič, Vreš, Bajec, Arčon, et al. 2025a). Compared
+to GaMS3, all of these models were trained on much less data (around 15B tokens) and on much
+shorter contexts (Zlatorog has the longest context window with 16k tokens), making them useless
+on longer texts. GaMS3, on the other hand was trained on around 140B tokens and supports the
+context window of 131k tokens.
+3.
+Continual pretraining
+The adaptation of an LLM to a specific language can be split into two phases: continual pretraining
+and supervised fine-tuning. We describe...
+--
+13934:...of tokens and training documents for parallel alignment corpora. The numbers are displayed after
+tokenization using the Gemma 3 tokenizer, sequence packing, and padding.
+Corpus
+Number of tokens
+Number of documents
+Total percentage
+DGT
+804,847,616
+12,281
+6.3 %
+MaCoCu
+430,374,912
+6,567
+3.4 %
+KAS
+31,391,744
+479
+0.2 %
+Wikipedia
+11,529,093,120
+175,920
+90.1 %
+Total
+12,795,707,392
+195,247
+We aligned English and Slovene texts on three levels. In the paragraph-level alignment, paragraphs
+of parallel documents were concatenated. A paragraph in one language was followed by the sa...
+--
+15386:...supports a context window of 131k tokens and we
+did not want to override its long context capabilities by using too short sequence length. During
+this stage, the model was trained on general corpora of Slovene, English, Croatian, Bosnian, and
+Serbian. We included English corpora to prevent forgetting, while Croatian, Bosnian, and Serbian
+corpora were utilized due to their cultural and language similarity to Slovene and additional support
+for code-mixed texts. Previous research (M. Ulčar and M. Robnik-Šikonja 2020; Vreš et al. 2024)
+shows that adding such languages is beneficial for the model’s performance in Slovene, and it also
+leads to decent performance in these similar languages.
+We combined the following types of data in the base CPT mix:
+• NVIDIA’s Nemotron pretraining datasets (NVIDIA et al. 2025; Mahabadi et al. 2025):
+combination of English pretraining datasets released by NVIDIA. We selected a subset of splits
+from the released dataset and randomly subsampled data from...
+--
+17092:...lovene National and University
+Library (NUK). The used data is not copyright-protected and consists of old newspapers, journals,
+and books. There are also some modern scientific journals or papers.
+• Wikipedia: Slovene, Croatian, Bosnian, and Serbian Wikipedia dumps in markdown format.
+The dump date for all languages is January 1st, 2025.
+• Web crawls: Slovene parts of CLASSLA-web (Ljubešić and Kuzman 2024) and FineWeb2 (Penedo
+et al. 2025). We enhanced a part of the CLASSLA corpus (1 million documents) using Gemma 3
+27B and a data generation prompt based on the ReWire method (Nguyen et al. 2025);
+• Web PDFs: Slovene, Croatian, Bosnian, and Serbian splits of the FinePDFs corpus (Kydlíček,
+Penedo, and Werra 2025). Approximately 75% of the data is used at this stage, while the remaining
+25% is saved for the long CPT stage.
+The tokenized data sizes for the base CPT corpora are shown in Table 2.
+3.3
+Long CPT
+In the final, long CPT stage, the context window was increased to 131k tokens to capture the full
+Gemma 3 context window. In this stage, only the following, highest-quality, corpora were used:
+• Nemotron corpora: compared to the base CPT stage, we omitted the Math-3 and Pretraining-
+Code splits. For the remaining splits, we used smaller and disjoint subsets than in the base CPT
+stage. Additionally, we translated the Mat...
+--
+18744:... 2. Number of tokens and training documents for the base CPT corpora. The numbers are shown after the tokenization
+using the Gemma 3 tokenizer, sequence packing and padding. Wikipedia-Yugo stands for combined Slovenian, Bosnian,
+Croatian and Serbian Wikipedia dums. NUK stands for the Slovenian National and University Library.
+Corpus
+Language
+Number of tokens
+Number of documents
+Total percentage
+Nemotron-Pretraining-Code
+English
+1,952,120,832
+2...
+--
+[163 more matches not shown]

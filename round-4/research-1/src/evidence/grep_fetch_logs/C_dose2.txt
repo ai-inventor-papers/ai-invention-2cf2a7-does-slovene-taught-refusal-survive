@@ -1,0 +1,148 @@
+# 2026-09-24T18:37:13Z https://arxiv.org/pdf/2602.02132 :: dose|dose-response|over-refusal|trade-off|strength|alpha
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2602.02132
+Type: PDF
+Pattern: dose|dose-response|over-refusal|trade-off|strength|alpha (64 matches in 118909 chars)
+
+--- Content ---
+
+690:...account is incomplete: across diverse re-
+fusal and non-compliance categories, refusal
+behaviors correspond to geometrically distinct
+directions in activation space. Yet activation
+steering along any refusal-related direction
+produces nearly identical refusal–over-refusal
+trade-offs, acting as a shared one-dimensional
+control knob. Thus, different directions primar-
+ily affect not whether the model refuses, but
+how it refuses. Using sparse autoencoders, we
+uncover a structured internal representation of
+refusal: a reusable core of share...
+--
+4203:... requests, unsup-
+ported requests that exceed the model’s capabilities,
+humanizing requests that anthropomorphize the
+model, unqualified professional advice, inappropri-
+ate topics governed by contextual norms, safety re-
+fusals involving harmful content, and over-refusals
+to benign requests. Together, these categories cover
+a broad spectrum of refusal and non-compliance
+in real-world interactions. We study them through
+linear interventions in activation space and find
+their associated directions are geometrically dis-
+tinct, suggesting differences in refusal expression.
+Despite these geometric differences, we find that
+activation steering along any of these directions
+yields similar refusal efficacy across inputs: as
+steering strength increases, the model increasingly
+refuses prompts, including benign ones, across
+datasets. Steering thus behaves like a single con-
+trol knob: turning it up pushes the model toward
+refusal more often, independent of which refusal-
+related direction is used. T...
+--
+7045:...attened by linear interventions.
+We address three research questions in this work:
+RQ1 How different are refusal directions for differ-
+ent types of refusal behavior beyond safety?
+RQ2 Do geometrically distinct refusal directions
+produce different refusal and over-refusal
+rates, or does activation steering follow a
+largely invariant decision boundary?
+RQ3 When refusal rates are similar across direc-
+tions, how do refusal forms vary at the surface
+level, and how is this variation reflected in
+shared versus category-specific SAE...
+--
+8348:...ction per split, used for steering and ablation.
+Let xt ∈Rd denote the residual-stream activa-
+tion at token position t, and r ∈Rd denote the nor-
+malized refusal direction. Refusal induction adds
+this direction, x′
+t ←xt + αr, where α > 0 con-
+trols steering strength. Refusal ablation projects
+it out, x′
+t ←xt −(xt · r) r. We use these inter-
+ventions to test the representational relevance of
+refusal directions, rather than to establish causal
+mediation, and evaluate refusal, over-refusal, and
+
+accuracy. This procedure yields one intervention
+direction per evaluation split.
+2.2
+Identifying Refusal in SAE Space
+We use sparse autoencoders (SAEs) to decompose
+activation-space refusal directions into sparse latent
+features. While activation-space ...
+--
+11338:...d benign-complied pools:
+∆(s)
+j,ℓ= f(s)
+j,ℓ(HR) −f(s)
+j,ℓ(BC)
+Restricting the analysis to these two correct-
+outcome subsets isolates refusal-related activations
+from cases where the base model already behaves
+anomalously, e.g., jailbreak compliance or benign
+over-refusal. For each split and layer, we rank la-
+tents by ∆(s)
+j,ℓand select the top-K positive-scoring
+latents as the refusal latents for that split. These
+latent sets are the basic building blocks for subse-
+quent SAE analyses, including activation steering,
+directio...
+--
+12086:.... , jK}, we construct
+an SAE-based refusal direction by averaging their
+decoder directions, d(s,ℓ)
+SAE = 1
+K
+PK
+k=1 d(ℓ)
+jk . During
+generation, we apply steering at layer ℓby mod-
+ifying the residual stream as x′ = x + β d(s,ℓ)
+SAE,
+where β controls steering strength. This mirrors
+activation-space steering, but grounds the interven-
+tion in a small bundle of SAE features rather than
+a single mean-difference vector.
+Ablations and control baselines:
+To test neces-
+sity, we perform SAE-based ablations by encoding
+the decisio...
+--
+13465:...oNot, SorryBench, and WildGuardMix, di-
+rections use a shared benign prompt pool drawn
+
+from WildGuardMix completions, so differences
+across directions are driven by the non-compliant
+prompt set. XSTest is treated separately because
+it is designed to evaluate over-refusal using adver-
+sarially framed benign prompts. We estimate acti-
+vation centroids using 32 prompts per class, con-
+sistent with the public implementation of the prior
+activation-steering baseline (Arditi et al., 2024).1
+When sufficient data is available, we con...
+--
+15743:...ls, ablation uses
+the residual projection x′ ←x −(x · r)r at ev-
+ery layer (resid_pre, resid_mid, resid_post),
+while steering is applied only at the selected layer.
+1https://colab.research.google.com/drive/
+1a-aQvKC9avdZpdyBn4jgRQFObTPy1JZw
+We select steering strength α by grid search over a
+small set (e.g., α ∈{5, 10, 20, 30, 60}), choosing
+the smallest value that reaches at least a 90% re-
+fusal rate on harmful prompts while keeping benign
+over-refusals below a chosen threshold. Unless oth-
+erwise noted, we report these selected α values.
+SAE resources and configuration:
+For SAE
+analyses, we use pretrained JumpReLU residual-
+stream SAEs.
+For Gemma experiments, we
+use GEMMASCOPE SAEs (Lieberum et al.,
+2024) ...
+--
+[52 more matches not shown]

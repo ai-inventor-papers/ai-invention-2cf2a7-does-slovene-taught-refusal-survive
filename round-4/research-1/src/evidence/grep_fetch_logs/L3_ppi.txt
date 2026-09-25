@@ -1,0 +1,42 @@
+# 2026-09-24T18:30:17Z https://arxiv.org/pdf/2301.09656 :: i\.i\.d|same distribution|labeled data|rectifier|assum
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2301.09656
+Type: PDF
+Pattern: i\.i\.d|same distribution|labeled data|rectifier|assum (6 matches in 115268 chars)
+
+--- Content ---
+
+27730:...examples of who the individual
+recipient is according to the XAI use case). However, this approach creates additional workload and
+requires time and resources that not every individual can afford. Alternatively, one may assume
+there is shared preferences for a task, and collect human input via a panel of annotators similar to
+the target users and apply their input to generative selective explanations for all. In some situations,
+individuals ...
+--
+80519:...ple may have different constraints on what
+actions they can take to improve their chance of loan approval versus their health risk. Current XAI
+methods, while claiming to support resource, have been criticized for false assumptions [7], includ-
+ing lacking mapping from changes in features to real-world actions, and negligence of interrelated
+changes between features or with real-life factors invisible to the model. While selective explanatio...
+--
+82938:...portance. Therefore, we speculate that more
+sophisticated sampling methods may be required for tabular data to elicit human input efficiently
+and effectively. Furthermore, for the belief prediction, we made a simplified assumption that the
+role of each feature is stable across instances. A natural extension is to relax this assumption and
+explore the different roles of features in different instances. For text data, one possible strategy is
+to use contextualized word embeddings.
+Beyond feature-importance explanations. The extension of our framew...
+--
+84437:...ch features would be considered most relevant by the recipient and
+assign higher weights to them.
+Potential issues with selective explanations. We also encourage future work to critically examine
+potential issues in the assumptions underlying selective explanations. The first is a fundamental
+tension between selectivity and faithfulness of explanations. Whether model explanations should
+always be faithful is a debated topic. While it is argu...
+--
+88502:...fect of ai explanations on complementary team performance.
+In Proceedings of the 2021 CHI Conference on Human Factors in Computing Systems. 1–16.
+[7] Solon Barocas, Andrew D Selbst, and Manish Raghavan. 2020. The hidden assumptions behind counterfactual
+explanations and principal reasons. In Proceedings of the 2020 Conference on Fairness, Accountability, and Transparency.
+80–89.
+[8] Reuben Binns, Max Van Kleek, Michael Veale, Ulrik Lyngs, Ju...

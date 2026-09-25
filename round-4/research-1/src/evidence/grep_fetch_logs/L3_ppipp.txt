@@ -1,0 +1,99 @@
+# 2026-09-24T18:30:17Z https://arxiv.org/pdf/2311.01453 :: i\.i\.d|same distribution|power.tun|lambda|never worse|assum
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2311.01453
+Type: PDF
+Pattern: i\.i\.d|same distribution|power.tun|lambda|never worse|assum (38 matches in 64407 chars)
+
+--- Content ---
+
+1166:... the benefits of the proposed adaptations.
+1
+Introduction
+We cannot realize the promise of machine learning models—their ability to ingest huge amounts
+of data, predict accurately in many domains, their minimal modeling assumptions—until we can
+effectively, efficiently, and responsibly use their predictions in support of scientific inquiry. This
+paper takes a step toward that promise by showing how, in problems where labeled observations
+or ...
+--
+3224:...elihood of a conditional model for Y given X, ℓθ(x, y) = −log pθ(y | x). We
+receive n labeled data points (Xi, Yi) iid
+∼P and N unlabeled data points e
+Xi
+iid
+∼PX, where Xi and e
+Xi
+have identical distributions. The key assumption is that we also have access to a black-box model
+f mapping X to predictions bY = f(X), which we use to impute labels for e
+Xi. PPI [1] performs
+inference on a so-called rectifier (an analog of a control variate or ...
+--
+5283:...ion over the entire parameter vector, PPI++’s improved statistical efficiency in the pres-
+ence of nuisances allows for inference on single coordinates of regression coefficients while avoiding
+multiplicity correction.
++Power tuning.
+To address problem (L2), we develop a lightweight modification of PPI that
+adapts to the accuracy of the predictive model f. The modification automatically selects a param-
+eter λ to interpolate between classical and prediction-powered inference. The optimal value of this
+λ admits a simple plug-in estimate, which we term power tuning, because it optimizes statistical
+power.
+Our experiments and theoretical results indicate that power tuning is essentially never
+worse than either classical or prediction-powered inference, and it can outperform both substan-
+tially. Power tuning improves the performance of the original PPI algorithms when f is not highly
+accurate, and, when f is accurate, it can sometimes guarantee full statistical efficiency.
+2
+Preliminaries
+We formalize our problem setting...
+--
+8919:...al M-estimators. In Section 5,
+we show that the PPI++ intervals are asymptotically equivalent to the naive strategy (2), so the
+increased computational efficiency comes with no cost in terms of statistical power.
+3
+
+2.2
+Power tuning: overview
+The prediction-powered estimator (P1) need not outperform classical inference when f is inaccuate:
+limitation (L2) of PPI. We thus generalize PPI to allow it to adapt to the “usefulness” of the supplied
+predictions, yielding an estimator never worse than classical inference. To do so, we introduce a
+tuning parameter λ ∈R, defining
+ˆθPP
+λ
+= arg min
+θ
+LPP
+λ (θ), where LPP
+λ (θ) := Ln(θ) + λ · (eLf
+N(θ) −Lf
+n(θ)).
+(Pλ)
+Certainly the objective remains unbiased for any ...
+--
+12686:... emphasis in PPI is distinct, however; while
+semiparametric inference in principle allows machine learning to estimate nuisance parameters
+(E[Y | X] in the AIPW estimator (4)), we develop easy-to-compute, practical, and assumption-light
+estimators, where we truly treat f as an unknown black box, and PPI++ leverages the predictions
+as much as is possible. The practicality is essential (as our experiments highlight), and it reflects
+the growin...
+--
+15180:...um of convex terms, and one can
+compute ˆθPP
+λ
+efficiently [4]. In this setting, the following corollary of our forthcoming Theorem 1
+shows the asymptotic normality of the prediction-powered point estimate.
+Corollary 1. Assume that ˆλ = λ+oP (1) for some limit λ, n
+N →r and that Hθ⋆:= E[ψ′′(X⊤θ⋆)XX⊤]
+is nonsingular. Define the covariance matrices
+V λ
+f,θ⋆:= λ2Cov
+
+(ψ′(X⊤θ⋆) −f(X))X
+
+and
+V λ
+∆,θ⋆:= Cov
+
+(1 −λ)ψ′(X⊤θ⋆)X + (λf(X) −Y )X
+
+.
+5...
+--
+[28 more matches not shown]

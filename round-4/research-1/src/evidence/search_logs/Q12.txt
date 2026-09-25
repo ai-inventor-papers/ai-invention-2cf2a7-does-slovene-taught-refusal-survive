@@ -1,0 +1,44 @@
+# 2026-09-24T18:27:09Z scholarly :: low-resource language refusal generation quality incompetence safety
+Search: low-resource language refusal generation quality incompetence safety  [scholarly via openalex]
+Found: 10 results
+
+1. 22q11.2 deletion syndrome
+   https://doi.org/10.1038/nrdp.2015.71
+   Nature Reviews Disease Primers · 2015 · cited by 2279...
+
+2. Siren's Song in the AI Ocean: A Survey on Hallucination in Large Language Models
+   https://doi.org/10.48550/arxiv.2309.01219
+   arXiv (Cornell University) · 2023 · cited by 244...
+
+3. 🧜Siren’s Song in the AI Ocean: A Survey on Hallucination in Large Language Models
+   https://doi.org/10.1162/coli.a.16
+   Computational Linguistics · 2025 · cited by 233...
+
+4. Gigification of English Language Instructor Work in Higher Education: Precarious Employment and Magic Time
+   https://doi.org/10.1002/tesq.3206
+   TESOL Quarterly · 2022 · cited by 23...
+
+5. Post-Conflict Recovery: Resource Mobilization and Peacebuilding
+   https://doi.org/10.7275/1282859
+   RePEc: Research Papers in Economics · 2022 · cited by 7...
+
+6. What Are Conspiracy Theories? A Definitional Approach to Their Correlates, Consequences, and Communication
+   https://doi.org/10.1146/annurev-psych-032420-031329
+   Annual Review of Psychology · 2022 · cited by 322...
+
+7. “I fought my entire way”: Experiences of declining maternity care services in British Columbia
+   https://doi.org/10.1371/journal.pone.0252645
+   PLoS ONE · 2021 · cited by 53...
+
+8. General practice in UK newspapers: an empirical analysis of over 400 articles
+   https://doi.org/10.3399/bjgp19x700757
+   British Journal of General Practice · 2019 · cited by 45...
+
+9. Lawyer as Translator Representation as Text: Towards an Ethnography of Legal Discourse
+   https://openalex.org/W1583477507
+   Scholarship @ Cornell Law (Cornell University) · 1992 · cited by 78...
+
+10. Haemodiafiltration, haemofiltration and haemodialysis for end-stage kidney disease
+   https://doi.org/10.1002/14651858.cd006258.pub2
+   Cochrane Database of Systematic Reviews · 2015 · cited by 129...
+

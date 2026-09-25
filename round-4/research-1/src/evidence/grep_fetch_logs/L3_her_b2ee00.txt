@@ -1,0 +1,183 @@
+# 2026-09-24T18:30:17Z https://github.com/p-e-w/heretic/commit/3521f86
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://github.com/p-e-w/heretic/commit/3521f86
+Type: HTML
+Length: 20527 chars (truncated)
+
+--- Content ---
+
+Skip to content
+
+## Navigation Menu
+
+[](/)
+
+[Sign in](/login?return_to=https%3A%2F%2Fgithub.com%2Fp-e-w%2Fheretic%2Fcommit%2F3521f86)
+
+Appearance settings
+
+  * Platform
+
+    * AI CODE CREATION
+      * [GitHub CopilotWrite better code with AI](https://github.com/features/copilot)
+      * [GitHub Copilot appDirect agents from issue to merge](https://github.com/features/ai/github-app)
+      * [MCP RegistryIntegrate external tools](https://github.com/mcp)
+
+    * DEVELOPER WORKFLOWS
+      * [ActionsAutomate any workflow](https://github.com/features/actions)
+      * [CodespacesInstant dev environments](https://github.com/features/codespaces)
+      * [IssuesPlan and track work](https://github.com/features/issues)
+      * [Code ReviewManage code changes](https://github.com/features/code-review)
+      * [Code QualityEnforce quality at merge](https://github.com/features/code-quality)
+
+    * APPLICATION SECURITY
+      * [GitHub Advanced SecurityFind and fix vulnerabilities](https://github.com/security/advanced-security)
+      * [Code securitySecure your code as you build](https://github.com/security/advanced-security/code-security)
+      * [Secret protectionStop leaks before they start](https://github.com/security/advanced-security/secret-protection)
+
+    * EXPLORE
+      * [Why GitHub](https://github.com/why-github)
+      * [Documentation](https://docs.github.com)
+      * [Blog](https://github.blog)
+      * [Changelog](https://github.blog/changelog)
+      * [Marketplace](https://github.com/marketplace)
+
+[View all features](https://github.com/features)
+
+  * Solutions
+
+    * BY COMPANY SIZE
+      * [Enterprises](https://github.com/enterprise)
+      * [Small and medium teams](https://github.com/team)
+      * [Startups](https://github.com/enterprise/startups)
+      * [Nonprofits](https://github.com/solutions/industry/nonprofits)
+
+    * BY USE CASE
+      * [App Modernization](https://github.com/solutions/use-case/app-modernization)
+      * [DevSecOps](https://github.com/solutions/use-case/devsecops)
+      * [DevOps](https://github.com/solutions/use-case/devops)
+      * [CI/CD](https://github.com/solutions/use-case/ci-cd)
+      * [View all use cases](https://github.com/solutions/use-case)
+
+    * BY INDUSTRY
+      * [Healthcare](https://github.com/solutions/industry/healthcare)
+      * [Financial services](https://github.com/solutions/industry/financial-services)
+      * [Manufacturing](https://github.com/solutions/industry/manufacturing)
+      * [Government](https://github.com/solutions/industry/government)
+      * [View all industries](https://github.com/solutions/industry)
+
+[View all solutions](https://github.com/solutions)
+
+  * Resources
+
+    * EXPLORE BY TOPIC
+      * [AI](https://github.com/resources/articles?topic=ai)
+      * [Software Development](https://github.com/resources/articles?topic=software-development)
+      * [DevOps](https://github.com/resources/articles?topic=devops)
+      * [Security](https://github.com/resources/articles?topic=security)
+      * [View all topics](https://github.com/resources/articles)
+
+    * EXPLORE BY TYPE
+      * [Customer stories](https://github.com/customer-stories)
+      * [Events & webinars](https://github.com/resources/events)
+      * [Ebooks & reports](https://github.com/resources/whitepapers)
+      * [Business insights](https://github.com/solutions/executive-insights)
+      * [GitHub Skills](https://skills.github.com)
+
+    * SUPPORT & SERVICES
+      * [Documentation](https://docs.github.com)
+      * [Customer support](https://support.github.com)
+      * [Community forum](https://github.com/orgs/community/discussions)
+      * [Trust center](https://github.com/trust-center)
+      * [Partners](https://github.com/partners)
+
+[View all resources](https://github.com/resources)
+
+  * Open Source
+
+    * COMMUNITY
+      * [GitHub SponsorsFund open source developers](https://github.com/open-source/sponsors)
+
+    * PROGRAMS
+      * [Security Lab](https://securitylab.github.com)
+      * [Maintainer Community](https://maintainers.github.com)
+      * [GitHub Stars](https://stars.github.com)
+      * [Archive Program](https://archiveprogram.github.com)
+
+    * REPOSITORIES
+      * [Topics](https://github.com/topics)
+      * [Trending](https://github.com/trending)
+      * [Collections](https://github.com/collections)
+
+  * Enterprise
+
+    * ENTERPRISE SOLUTIONS
+      * [Enterprise platformAI-powered developer platform](https://github.com/enterprise)
+
+    * AVAILABLE ADD-ONS
+      * [GitHub Advanced SecurityEnterprise-grade security features](https://github.com/security/advanced-security)
+      * [Copilot for BusinessEnterprise-grade AI features](https://github.com/features/copilot/copilot-business)
+      * [Premium SupportEnterprise-grade 24/7 support](https://github.com/enterprise/premium-support)
+
+  * [Pricing](https://github.com/pricing)
+
+
+
+Search`/`
+
+[Sign in](/login?return_to=https%3A%2F%2Fgithub.com%2Fp-e-w%2Fheretic%2Fcommit%2F3521f86)
+
+[Sign up](/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F%3Cuser-name%3E%2F%3Crepo-name%3E%2Fcommit%2Fshow&source=header-repo&source_repo=p-e-w%2Fheretic)
+
+Appearance settings
+
+You signed in with another tab or window. [Reload]() to refresh your session. You signed out in another tab or window. [Reload]() to refresh your session. You switched accounts on another tab or window. [Reload]() to refresh your session. Dismiss alert
+
+{{ message }}
+
+[ p-e-w ](/p-e-w) / **[heretic](/p-e-w/heretic) ** Public
+
+  * [ Notifications ](/login?return_to=%2Fp-e-w%2Fheretic) You must be signed in to change notification settings
+  * [ Fork 3.6k ](/login?return_to=%2Fp-e-w%2Fheretic)
+  * [ Star  32.3k ](/login?return_to=%2Fp-e-w%2Fheretic)
+
+
+
+
+  * [ Code ](/p-e-w/heretic)
+  * [ Issues 49 ](/p-e-w/heretic/issues)
+  * [ Pull requests 37 ](/p-e-w/heretic/pulls)
+  * [ Discussions ](/p-e-w/heretic/discussions)
+  * [ Actions ](/p-e-w/heretic/actions)
+  * [ Projects ](/p-e-w/heretic/projects)
+  * [ Security and quality 0 ](/p-e-w/heretic/security)
+  * [ Insights ](/p-e-w/heretic/pulse)
+
+
+
+Additional navigation options
+
+  * [ Code  ](/p-e-w/heretic)
+  * [ Issues  ](/p-e-w/heretic/issues)
+  * [ Pull requests  ](/p-e-w/heretic/pulls)
+  * [ Discussions  ](/p-e-w/heretic/discussions)
+  * [ Actions  ](/p-e-w/heretic/actions)
+  * [ Projects  ](/p-e-w/heretic/projects)
+  * [ Security and quality  ](/p-e-w/heretic/security)
+  * [ Insights  ](/p-e-w/heretic/pulse)
+
+
+
+[](/p-e-w/heretic)
+
+# Commit 3521f86
+
+[Browse files](/p-e-w/heretic/tree/3521f8648a0dccf6e12a92666862632235fac7e6)Browse the repository at this point in the history[](/p-e-w/heretic/tree/3521f8648a0dccf6e12a92666862632235fac7e6)Browse files
+
+[](/Vinay-Umrethe)[Vinay-Umrethe](/p-e-w/heretic/commits?author=Vinay-Umrethe)
+
+authored
+
+feat: A better logic for detecting the thinking prefix in the response. ([#423](https://github.com/p-e-w/heretic/pull/423))
+
+* fix: Check response prefix. In case if the model adds <think> at the end of user prompt and only generates </think> end, then the detection goes wrong. * fix: Handle whitespace in CoT, remove redundant checks * fix: Type checker * fix: try looking at tag positions, not text end regex * ruff, fix import sorting * fix: rich markup * fix: I missed other ones * feat: Update SHA256SUMS file hashes in the tests. A major change that affects reproducibility. * fix: It is now sensible to also update the extra SHA256SUMS.ci2 file. * fix: Only consider whitespace, no other text or instructions. because mistral-3 as additional reasoning instructions in its chat template. And I suppose many other models can have it too. * fix: Update windows hashes. * fix: Update CI hashes too * as always update case two of mistral-3 (ci2 hash) * docs: update comment * feat: Handle the edge case for models having additional instructions. * fix: Update windows hash for mistral-3 * docs: remove a line from the comments because I'm not sure about GPT-OSS models' thinking tags and it cannot be confirmed using an untrained tiny GPT-OSS model. 

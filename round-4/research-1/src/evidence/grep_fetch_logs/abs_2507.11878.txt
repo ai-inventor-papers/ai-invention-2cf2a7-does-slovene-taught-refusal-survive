@@ -1,0 +1,29 @@
+# 2026-09-24T18:36:09Z https://arxiv.org/abs/2507.11878
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/abs/2507.11878
+Type: HTML
+Length: 8296 chars (truncated)
+
+--- Content ---
+
+Skip to main content [](https://arxiv.org/IgnoreMe) [ ](https://arxiv.org/) [ Search ](https://arxiv.org/search) [Submit](https://arxiv.org/user/create) [Donate](https://info.arxiv.org/about/donate.html) [Log in](https://arxiv.org/login)
+
+Search arXiv
+
+Press Enter to search * [Advanced search](https://arxiv.org/search/advanced)
+
+# Computer Science > Computation and Language
+
+**arXiv:2507.11878** (cs) 
+
+[Submitted on 16 Jul 2025 ([v1](https://arxiv.org/abs/2507.11878v1)), last revised 6 Jul 2026 (this version, v5)]
+
+# Title:LLMs Encode Harmfulness and Refusal Separately
+
+Authors:[Jiachen Zhao](https://arxiv.org/search/cs?searchtype=author&query=Zhao,+J), [Jing Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang,+J), [Zhengxuan Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu,+Z), [David Bau](https://arxiv.org/search/cs?searchtype=author&query=Bau,+D), [Weiyan Shi](https://arxiv.org/search/cs?searchtype=author&query=Shi,+W)
+
+View a PDF of the paper titled LLMs Encode Harmfulness and Refusal Separately, by Jiachen Zhao and 4 other authors
+
+[View PDF](/pdf/2507.11878) [HTML (experimental)](https://arxiv.org/html/2507.11878v5)
+
+> Abstract:LLMs are trained to refuse harmful instructions, but do they truly understand harmfulness beyond just refusing? Prior work has shown that LLMs' refusal behaviors can be mediated by a one-dimensional subspace, i.e., a refusal direction. In this work, we identify a new dimension to analyze safety mechanisms in LLMs, i.e., harmfulness, which is encoded internally as a separate concept from refusal. There exists a harmfulness direction that is distinct from the refusal direction. As causal evidence, steering along the harmfulness direction can lead LLMs to interpret harmless instructions as harmful, but steering along the refusal direction tends to elicit refusal responses directly without reversing the model's judgment on harmfulness. Furthermore, using our identified harmfulness concept, we find that certain jailbreak methods work by reducing the refusal signals without reversing the model's internal belief of harmfulness. We also find that adversarially finetuning models to accept harmful instructions has minimal impact on the model's internal belief of harmfulness. These insights lead to a practical safety application: The model's latent harmfulness representation can serve as an intrinsic safeguard (Latent Guard) for detecting unsafe inputs and reducing over-refusals that is robust to finetuning attacks

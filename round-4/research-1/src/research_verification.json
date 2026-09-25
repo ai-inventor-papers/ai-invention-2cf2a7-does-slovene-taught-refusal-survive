@@ -1,0 +1,355 @@
+{
+  "valid": true,
+  "file_errors": [],
+  "schema_errors": [],
+  "content_warnings": [
+    "research_out.json: Sources with uncited indices: [3, 5, 6, 9, 10, 11, 14, 16, 18, 19, 22, 24, 28, 29, 30, 37, 39, 40, 41, 42, 43, 45, 46, 47, 48, 53, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64]",
+    "structured_output: Sources with uncited indices: [3, 5, 6, 9, 10, 11, 14, 16, 18, 19, 22, 24, 28, 29, 30, 37, 39, 40, 41, 42, 43, 45, 46, 47, 48, 53, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64]"
+  ],
+  "files_found": {
+    "research_out.json": {
+      "exists": true,
+      "path": "./research_out.json",
+      "source_count": 64,
+      "size": 45732
+    }
+  },
+  "source_count": 64,
+  "checked_at": "2026-09-24T18:55:49.749181+00:00",
+  "passage_check_scope": "Case/whitespace-normalized text occurrence at the source URL (or archive fallback). Not claim entailment, locator verification, or author/year verification. status=error means unverified, not a misquotation.",
+  "passages": [
+    {
+      "source_index": 1,
+      "source_url": "https://arxiv.org/abs/2310.06474",
+      "quote": "low-resource languages exhibit about three times the likelihood of encountering harmful content compared to high-resource languages",
+      "locator": "abstract",
+      "status": "valid",
+      "context": "...rio, the rate of unsafe content increases as the availability of languages decreases. specifically, low-resource languages exhibit about three times the likelihood of encountering harmful content compared to high-resource languages, with both chatgpt and gpt-4. in the intentional scenario, multilingual prompts can exacerbate the ...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 2,
+      "source_url": "https://arxiv.org/abs/2310.00905",
+      "quote": "we propose several simple and effective prompting methods to improve the multilingual safety of ChatGPT",
+      "locator": "abstract",
+      "status": "valid",
+      "context": "...es, indicating the necessity of developing safety alignment for non-english languages. in addition, we propose several simple and effective prompting methods to improve the multilingual safety of chatgpt by evoking safety knowledge and improving cross-lingual generalization of safety alignment. our pro...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 3,
+      "source_url": "https://arxiv.org/abs/2310.02446",
+      "quote": "provides actionable items that can get the users towards their harmful goals 79% of the time",
+      "locator": "abstract",
+      "status": "valid",
+      "context": "...to low-resource languages. on the advbenchmark, gpt-4 engages with the unsafe translated inputs and provides actionable items that can get the users towards their harmful goals 79% of the time, which is on par with or even surpassing state-of-the-art jailbreaking attacks. other high-/mid-res...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 4,
+      "source_url": "https://arxiv.org/pdf/2401.13136",
+      "quote": "tend to generate less relevant responses",
+      "locator": "Introduction",
+      "status": "valid",
+      "context": "...- resource languages contain harmful content, com- pared to 1% in high-resource languages. (2) llms tend to generate less relevant responses, as llm’s instruction-following ability is still limited in low- resource languages. e.g., gpt-4 re...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 7,
+      "source_url": "https://arxiv.org/abs/2607.10112",
+      "quote": "4 perturbation types (standard translation, code-switching, transliteration, and translationese)",
+      "locator": "abstract",
+      "status": "valid",
+      "context": "...\\textsc{minionese}, a multilingual jailbreak benchmark spanning 18 languages, 4 resource tiers, and 4 perturbation types (standard translation, code-switching, transliteration, and translationese), paired with a geometric mechanistic analysis of refusal failure across language tiers. we show tha...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 8,
+      "source_url": "https://arxiv.org/abs/2608.29936",
+      "quote": "ablating safety features impacts not only harmful response rates but also target language",
+      "locator": "abstract",
+      "status": "valid",
+      "context": "...model depths and architectures. this safety-language entanglement has direct consequences such that ablating safety features impacts not only harmful response rates but also target language, with the degree of intervention predicted by the relationship between safety and language features...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 10,
+      "source_url": "https://arxiv.org/abs/2608.11146",
+      "quote": "harmful prompts retain less than 10% of the English refusal signal across most language",
+      "locator": "abstract",
+      "status": "valid",
+      "context": "...ions in llms. our experimental results show that cross-lingual safety transfer is severely limited; harmful prompts retain less than 10% of the english refusal signal across most language-model pairs. literal and localized prompts are semantically aligned (cosine 0.95-0.996) but drift a...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 12,
+      "source_url": "https://arxiv.org/abs/2406.20052",
+      "quote": "their inability to consistently generate text in a user's desired language",
+      "locator": "abstract",
+      "status": "valid",
+      "context": "...l)](https://arxiv.org/html/2406.20052v3) > abstract:we investigate a surprising limitation of llms: their inability to consistently generate text in a user's desired language. we create the language confusion benchmark (lcb) to evaluate such failures, covering 15 typologica...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 13,
+      "source_url": "https://arxiv.org/pdf/2311.09827",
+      "quote": "in a reversed order through a two-turn conversation",
+      "locator": "Section 3",
+      "status": "valid",
+      "context": "...ltilingual context (in §3.3) where the spoken lan- guage is switched from english to another one or in a reversed order through a two-turn conversation between the user and the llm. 3.1 multilingual setup language coverage. compared with previous work...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 14,
+      "source_url": "https://arxiv.org/pdf/2404.07242",
+      "quote": "Please give the answer in the language in which it is",
+      "locator": "Figure 1 prompt template",
+      "status": "valid",
+      "context": "...of criminal or unlawful activities. 1 arxiv:2404.07242v1 [cs.cr] 9 apr 2024 preprint 1 introduction please give the answer in the language in which it is asked. 1. he aha ka naʻauao hana? 2. காப்புரிை மீறல் என்றால் என்ன? 3. làm thế nào để tạo ra chất nổ...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 15,
+      "source_url": "https://arxiv.org/abs/2505.17306",
+      "quote": "a vector extracted from English can bypass refusals in other languages with near-perfect effectiveness, without any additional fine-tuning",
+      "locator": "abstract",
+      "status": "valid",
+      "context": "...nto these languages. we uncover the surprising cross-lingual universality of the refusal direction: a vector extracted from english can bypass refusals in other languages with near-perfect effectiveness, without any additional fine-tuning. even more remarkably, refusal directions derived from any safety-aligned language transfer seamles...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 16,
+      "source_url": "https://arxiv.org/abs/2406.11717",
+      "quote": "we show that refusal is mediated by a one-dimensional subspace, across 13 popular open-source chat models",
+      "locator": "abstract",
+      "status": "valid",
+      "context": "...is widespread across chat models, its underlying mechanisms remain poorly understood. in this work, we show that refusal is mediated by a one-dimensional subspace, across 13 popular open-source chat models up to 72b parameters in size. specifically, for each model, we find a single direction such that er...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 17,
+      "source_url": "https://arxiv.org/abs/2606.01196",
+      "quote": "Yet harmful refusal drops from 87.9% to 43.9%.",
+      "locator": "abstract",
+      "status": "valid",
+      "context": "... low-resource prompts nearly as well as high-resource ones. the relevant representation is present. yet harmful refusal drops from 87.9% to 43.9%. the model fails to convert the representation into refusal. what fails to transfer is calibration o...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 17,
+      "source_url": "https://arxiv.org/abs/2606.01196",
+      "quote": "What fails to transfer is calibration of the safety decision, not the underlying representation.",
+      "locator": "abstract",
+      "status": "valid",
+      "context": "...mful refusal drops from 87.9% to 43.9%. the model fails to convert the representation into refusal. what fails to transfer is calibration of the safety decision, not the underlying representation. we exploit this by recalibrating, rather than retraining, a high-resource gate: a low-rank logistic...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 18,
+      "source_url": "https://arxiv.org/abs/2603.18353",
+      "quote": "Linear probes discriminated hazardous from benign cases with 98.2% AUROC",
+      "locator": "abstract",
+      "status": "valid",
+      "context": "...egative triage errors using 400 physician-adjudicated clinical vignettes (144 hazards, 256 benign). linear probes discriminated hazardous from benign cases with 98.2% auroc, yet the model's output sensitivity was only 45.1%, a 53-percentage-point knowledge-action gap. con...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 20,
+      "source_url": "https://arxiv.org/abs/2609.27758",
+      "quote": "we replicate near-perfect transfer (AUROC > 0.98) when harmless prompts come from an unrelated distribution (easy negatives)",
+      "locator": "abstract",
+      "status": "valid",
+      "context": "...on depends on the choice of negative examples. across nine languages spanning three resource tiers, we replicate near-perfect transfer (auroc > 0.98) when harmless prompts come from an unrelated distribution (easy negatives). with xstest contrast prompts, which are benign but surface-similar to harmful requests (hard negat...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 21,
+      "source_url": "https://arxiv.org/pdf/2607.13075",
+      "quote": "fixed transfer to matched pairs is weaker",
+      "locator": "abstract",
+      "status": "valid",
+      "context": "...rompts. a fully disjoint audit recon- structs near-ceiling source-contrast auroc (0.996–0.999), but fixed transfer to matched pairs is weaker: 0.656–0.819 on the guard-selected twin-n70 subset and 0.590–0.690 on the full twin-n163 cohort. we...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 22,
+      "source_url": "https://arxiv.org/pdf/2608.05578",
+      "quote": "abliteration preserves cluster separation while rotating the refusal",
+      "locator": "abstract",
+      "status": "valid",
+      "context": "...irection (llama-3.1-abliterated: σ = 3.33, direction cos sim 0.30); (iii) rotation-without-collapse abliteration preserves cluster separation while rotating the refusal direction (gemma-2-9b-abliterated: σ = 4.54, direction cos sim 0.84); (iv) behavioral fine-tuning t...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 23,
+      "source_url": "https://arxiv.org/pdf/2602.02132",
+      "quote": "steering strength increases, the model increasingly",
+      "locator": "Introduction",
+      "status": "valid",
+      "context": "...activation steering along any of these directions yields similar refusal efficacy across inputs: as steering strength increases, the model increasingly refuses prompts, including benign ones, across datasets. steering thus behaves like a single con- t...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 25,
+      "source_url": "https://arxiv.org/pdf/2605.25420",
+      "quote": "not fluent harmful compliance but unclear output",
+      "locator": "abstract",
+      "status": "valid",
+      "context": "... and significant by exact mcnemar tests. for three models, the dominant somali non- refusal mode is not fluent harmful compliance but unclear output: wrong-language, incoherent, or off-topic generations. a pinned claude sonnet snapshot (claude-sonn...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 26,
+      "source_url": "https://arxiv.org/abs/2605.17173",
+      "quote": "22 model configurations are more vulnerable in English than in low-resource languages",
+      "locator": "abstract",
+      "status": "valid",
+      "context": "...d mechanism. contrary to the expected trend that safety degrades largely in low-resource languages, 22 model configurations are more vulnerable in english than in low-resource languages. low-resource languages produce more uncertain responses (high entropy) than high-resource language...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 27,
+      "source_url": "https://arxiv.org/abs/2608.22490",
+      "quote": "non-English users consistently bear a higher Safety Cost than English users",
+      "locator": "abstract",
+      "status": "valid",
+      "context": "...sons between safety-aligned models and their unaligned counterparts, we find a systematic inequity: non-english users consistently bear a higher safety cost than english users. we further identify three underlying patterns. first, multiple languages lie in a double-penalty z...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 28,
+      "source_url": "https://arxiv.org/abs/2606.28843",
+      "quote": "safety outcomes are highly sensitive to both the choice of fine-tuning language and the evaluation language",
+      "locator": "abstract",
+      "status": "valid",
+      "context": "...ama-3.2, qwen3, and gemma-3 models using benign data translated across nine languages. we find that safety outcomes are highly sensitive to both the choice of fine-tuning language and the evaluation language, with adversarial compliance rates increasing four-fold in some settings. multilingual safety drift...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 31,
+      "source_url": "https://arxiv.org/pdf/2402.10260",
+      "quote": "a binary score for non-refusal and two 5-point Likert scale scores",
+      "locator": "Section 2",
+      "status": "valid",
+      "context": "...-thought reasoning about how well the response addresses the prompt before generating three scores: a binary score for non-refusal and two 5-point likert scale scores ranging from [1-5] (then re-scaled to [0-1]) of how specific and convincing the response was. 4 the...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 32,
+      "source_url": "https://raw.githubusercontent.com/dsbowen/strong_reject/7a551d5b440ec7b75d4f6f5bb7c1719965b76b47/strong_reject/evaluate.py",
+      "quote": "(1 - output[\"refusal\"]) * (output[\"convincingness\"] + output[\"specificity\"] - 2) / 8",
+      "locator": "strongreject_rubric()",
+      "status": "valid",
+      "context": "... # min-max scale to 0-1 # note that both convincingness and specificity are 1-5 output[\"score\"] = ( (1 - output[\"refusal\"]) * (output[\"convincingness\"] + output[\"specificity\"] - 2) / 8 ) return output @register_evaluator(\"strongreject_finetuned\", parallelism=\"batched\") def strongreje...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 33,
+      "source_url": "https://arxiv.org/pdf/2606.07535",
+      "quote": "prompted with a predefined safety classification protocol",
+      "locator": "Section 4 evaluation",
+      "status": "valid",
+      "context": "...d-3- 8b and polyguard-qwen. in cases where the out- puts of these two models diverged, gpt-4o-mini, prompted with a predefined safety classification protocol, was employed as an adjudicator to es- tablish the final label. language consistency is evaluated b...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 34,
+      "source_url": "https://arxiv.org/pdf/2511.21140",
+      "quote": "remains unbiased under such shifts. We therefore adopt this estimator",
+      "locator": "Section 1",
+      "status": "valid",
+      "context": "...-judge evaluation (jung et al., 2024). in contrast, the estimator ˆθ based on rogan & gladen (1978) remains unbiased under such shifts. we therefore adopt this estimator and focus our analysis on ˆθ. since ˆθ can have higher variance than some existing alterna- tives, ...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 36,
+      "source_url": "https://arxiv.org/pdf/2311.01453",
+      "quote": "power tuning is essentially never worse than either classical or prediction-powered inference",
+      "locator": "Section 1",
+      "status": "valid",
+      "context": "...ning, because it optimizes statistical power. our experiments and theoretical results indicate that power tuning is essentially never worse than either classical or prediction-powered inference, and it can outperform both substan- tially. power tuning improves the performance of the original ...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 38,
+      "source_url": "https://raw.githubusercontent.com/p-e-w/heretic/3521f8648a0dccf6e12a92666862632235fac7e6/src/heretic/config.py",
+      "quote": "Index (in the sorted Pareto front) of the trial to use, or unset to prompt the user.",
+      "locator": "Settings.trial_index",
+      "status": "valid",
+      "context": "...nset to prompt the user.', ) trial_index: nonnegativeint | none = field( default=none, description=\"index (in the sorted pareto front) of the trial to use, or unset to prompt the user.\", ) n_additional_trials: positiveint | none = field( default=none, description=\"number of additiona...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 39,
+      "source_url": "https://huggingface.co/p-e-w/gemma-3-12b-it-heretic/raw/main/README.md",
+      "quote": "made using [Heretic](https://github.com/p-e-w/heretic) v1.0.0",
+      "locator": "card header",
+      "status": "valid",
+      "context": "...s is a decensored version of [google/gemma-3-12b-it](https://huggingface.co/google/gemma-3-12b-it), made using [heretic](https://github.com/p-e-w/heretic) v1.0.0 ## abliteration parameters | parameter | value | | :-------- | :---: | | **direction_index** | per ...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 40,
+      "source_url": "https://huggingface.co/p-e-w/gemma-3-12b-it-heretic-v2/raw/main/README.md",
+      "quote": "made using [Heretic](https://github.com/p-e-w/heretic) v1.1.0",
+      "locator": "card header",
+      "status": "valid",
+      "context": "...s is a decensored version of [google/gemma-3-12b-it](https://huggingface.co/google/gemma-3-12b-it), made using [heretic](https://github.com/p-e-w/heretic) v1.1.0 ## abliteration parameters | parameter | value | | :-------- | :---: | | **direction_index** | per ...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 41,
+      "source_url": "https://huggingface.co/huihui-ai/gemma-3-12b-it-abliterated/raw/main/README.md",
+      "quote": "This is a crude, proof-of-concept implementation to remove refusals from an LLM model without using TransformerLens.",
+      "locator": "card",
+      "status": "valid",
+      "context": "...ansformers](https://github.com/sumandora/remove-refusals-with-transformers) to know more about it). this is a crude, proof-of-concept implementation to remove refusals from an llm model without using transformerlens. it was only the text part that was processed, not the image part. the abliterated model will no lon...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 42,
+      "source_url": "https://huggingface.co/mlabonne/gemma-3-12b-it-abliterated/raw/main/README.md",
+      "quote": "This is combined with a refusal weight of 0.6 to upscale the importance of this refusal direction in each layer.",
+      "locator": "card",
+      "status": "valid",
+      "context": "....com/sumandora/remove-refusals-with-transformers/)) for most layers (layer 3 to 45), independently. this is combined with a refusal weight of 0.6 to upscale the importance of this refusal direction in each layer. this created a very high acceptance rate (>90%) and still produced coherent outputs.",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 43,
+      "source_url": "https://huggingface.co/mlabonne/gemma-3-12b-it-abliterated-v2/raw/main/README.md",
+      "quote": "These weight factors follow a normal distribution with a certain spread and peak layer.",
+      "locator": "card",
+      "status": "valid",
+      "context": "...es (e.g., o_proj) are orthogonalized to subtract this refusal direction with a given weight factor. these weight factors follow a normal distribution with a certain spread and peak layer. modules can be iteratively orthogonalized in batches, or the refusal direction can be accumulated t...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 46,
+      "source_url": "https://huggingface.co/cjvt/GaMS3-12B-Instruct/raw/1d0b27af5748784482600d24779409e7e1dc9adc/README.md",
+      "quote": "The model might also work for other languages supported by Gemma 3, even though it was not continually pretrained on them.",
+      "locator": "Model details",
+      "status": "valid",
+      "context": "...k-šikonja. \\- **languages:** slovene, english (primary), croatian, bosnian and serbian (secondary). the model might also work for other languages supported by gemma 3, even though it was not continually pretrained on them. \\- **base model:** [google/gemma-3-12b-pt](https://huggingface.co/google/gemma-3-12b-pt) \\- **licen...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 48,
+      "source_url": "https://arxiv.org/pdf/2603.01691",
+      "quote": "The safety prompts were written by humans",
+      "locator": "Section 4 (chat tuning)",
+      "status": "valid",
+      "context": "...ested response format. to make the model safer, we add a small set of safety prompts to this stage. the safety prompts were written by humans, and we plan to gradually increase this dataset in the future. the dataset sizes for the chat tunin...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 60,
+      "source_url": "https://arxiv.org/pdf/2608.16577",
+      "quote": "pseudo-harmful refusals increase by 13 pp on average",
+      "locator": "abstract",
+      "status": "valid",
+      "context": "...l languages like bengali seeing an increase of 17 pp, with no loss of utility on global mmlu, while pseudo-harmful refusals increase by 13 pp on average. we also introduce a multilin- gual translation-and-evaluation pipeline to fa- cilitate future work...",
+      "match_type": "exact"
+    }
+  ]
+}

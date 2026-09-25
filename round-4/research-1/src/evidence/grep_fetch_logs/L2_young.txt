@@ -1,0 +1,82 @@
+# 2026-09-24T18:40:02Z https://arxiv.org/pdf/2512.13655 :: multilingual|non-English|random (direction|vector)|control|Gemma|KL
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2512.13655
+Type: PDF
+Pattern: multilingual|non-English|random (direction|vector)|control|Gemma|KL (38 matches in 53670 chars)
+
+--- Content ---
+
+908:... evaluates four
+abliteration tools (Heretic, DECCP, ErisForge, FailSpy) across sixteen
+instruction-tuned models (7B–14B parameters), reporting tool compatibility on all 16
+models and quantitative metrics on subsets dictated by tool support (Heretic: KL
+divergence + refusal rate on eight models; benchmark preservation on three models
+with baselines plus Zephyr-7B-beta). Single-pass methods demonstrated superior
+capability preservation on the benchmarked subset (avg GSM8K ∆across three
+models: ErisForge −0.28 pp; DECCP −0.13 pp), while Bayesian-optimized
+abliteration produced variable distribution shift (KL divergence: 0.043–1.646) with
+model-dependent capability impact. These findings provide researchers with
+evidence-based selection criteria for abliteration tool deployment across diverse model
+architectures. The principal finding indicates that math...
+--
+5389:...sfully and baseline scores were available.
+Three hypotheses guide this investigation:
+H1 (Model Dependence): Abliteration outcomes are strongly model-dependent:
+under a fixed evaluation protocol, some models will exhibit both low distribution shift (KL
+divergence) and low remaining refusal rates, while others will exhibit coupled resistance
+(higher KL divergence and higher residual refusals).
+H2 (Capability Preservation): On models with complete baselines and multi-tool
+coverage, single-pass methods (DECCP/ErisForge) will show smaller average capability
+degradation than optimization-based Heretic...
+--
+7672:...efusal as separate representations, with jailbreaks
+suppressing refusal without altering internal harmfulness beliefs.
+Defining the refusal direction as⃗r, the abliteration operation for a weight matrix W
+becomes:
+W ′ = W −α ·⃗r ·⃗rT · W
+(1)
+where α controls the ablation strength and⃗r ·⃗rT is the projection matrix onto the
+refusal direction.
+2.2
+Ablation Method Variants
+Several variants of the basic ablation operation have been developed:
+Standard Ablation: The original approach directly subtracts the...
+--
+8864:...hes and trade-offs:
+Heretic [3] implements Optuna-based Tree-structured Parzen Estimator (TPE)
+parameter optimization, automatically searching across layer ranges, ablation weights, and
+direction indices to minimize a multi-objective score combining KL divergence and refusal
+rate. The tool operates directly on PyTorch weight tensors without framework
+dependencies, enabling universal model compatibility (16/16 models in this evaluation).
+Processing time ranges from roughly 30–110 minutes per model ...
+--
+10590:...Layer or AdditionDecoderLayer modules that apply
+direction modifications during forward passes. This architecture enables both refusal
+removal (ablation) and direction injection (addition), the latter being useful for research
+applications requiring controlled behavior modification. The tool supports configurable
+weight parameters (0.6–1.0) controlling ablation strength.
+2.4
+Safety Alignment and Jailbreaking Context
+Modern LLMs undergo multiple stages of safety alignment to prevent generation of
+harmful content [23]. The typical pipeline begins with Supervised Fine-Tuning (SFT),
+where the pret...
+--
+11567:...orcement Learning from Human Feedback (RLHF) [24] builds on SFT by
+training a reward model on human preference data comparing response pairs, then
+optimizing the language model via PPO to maximize this reward while maintaining output
+quality through KL divergence penalty terms against the SFT model. Constitutional
+AI [25] extends this approach by using the model itself to critique and revise outputs
+4/25
+
+according to a set of principles (the “constitution”), enabling RLAIF (RL from AI
+Feedback) t...
+--
+12151:...] reformulates the RLHF objective as a simple classification loss on preference
+pairs, eliminating the need for explicit reward modeling and significantly simplifying
+training while achieving comparable alignment quality. In deployed systems, safety controls
+often also include separate input/output guardrail models (e.g., Llama Guard) [27].
+These alignment techniques embed refusal behavior through gradient updates that
+modify the model’s internal representations. Critically, the resulting “safety
+repre...
+--
+[28 more matches not shown]

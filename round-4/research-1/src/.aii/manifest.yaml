@@ -1,0 +1,4 @@
+# No file in this workspace reaches the 10 MB auto-keep floor; nothing heavy needs a decision.
+# analysis/data/ (5.6 MB of third-party benchmark files) is excluded from publication via
+# upload_ignore_regexes and can be restored with: bash analysis/fetch_data.sh
+entries: []
