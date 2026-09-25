@@ -8,7 +8,7 @@ import numpy as np
 from loguru import logger
 
 ROOT = Path(__file__).resolve().parent.parent
-RUN = ROOT.parents[3]  # /ai-inventor/aii_data/runs/run_FVi3e3O9CH5I
+RUN = ROOT.parents[3]  # ../../../..
 S0 = RUN / "iter_2/gen_hypo/claude_agent/stage0"
 S0B = RUN / "iter_3/gen_hypo/claude_agent/stage0b"
 DS = ROOT / "temp/datasets"

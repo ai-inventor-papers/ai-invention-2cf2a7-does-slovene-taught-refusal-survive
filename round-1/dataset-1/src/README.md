@@ -2,7 +2,7 @@
 
 This workspace builds the **confirmation-only (reserved) inputs** and the **audited supervision-dose covariate** for the study of bilingual (EN/SL) refusal in GaMS3-12B-Instruct vs Gemma-3-12B-IT.
 
-- Workspace (absolute): `/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_1/gen_art/gen_art_dataset_1`
+- Workspace (absolute): `.`
 - Main deliverable: `full_data_out.json` (exp_sel_data_out schema, validated; 35 MB, below the 100 MB split limit).
 - `mini_data_out.json`: from the aii-json format script, 3 examples in every block.
 - `preview_data_out.json`: written by `data.py`, 3 examples per block with strings truncated to 200 chars. The aii-json script's preview kept only the first 3 of the 8 blocks, so it was not used.
