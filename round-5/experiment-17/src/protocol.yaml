@@ -22,7 +22,7 @@ seed: 20260925
 status_vocabulary: [CONFIRMATORY, DESCRIPTIVE, EXPLORATORY, NOT_EXECUTED]
 
 data:
-  source: "art_EG6OpEkGvysx iter_1/gen_art/gen_art_dataset_1/full_data_out.json, block refuseu_eval (NASK-PIB/RefusEU@5523ce30b9)"
+  source: "art_EG6OpEkGvysx round-1/dataset-1/src/full_data_out.json, block refuseu_eval (NASK-PIB/RefusEU@5523ce30b9)"
   final: "fold refuseu_eval_FINAL: 1,300 pairs x {en, sl} = 2,600 prompts (natural RefusEU prompts; EN and SL are NOT translations, LaBSE ~0.55)"
   dev: "fold refuseu_eval_DEV: 100 pairs; used ONLY for the dose gate and MINI smoke tests"
   assertions: [fold membership vs split_manifest.json, DEV/FINAL disjoint, 1300x2 and 100x2 counts, max prompt chars > 200, contamination grep]
@@ -41,7 +41,7 @@ models:
 
 edit:
   name: "frozen-core edit = SAVED iteration-3 exp9 selected Heretic LoRA (r=3, o_proj + down_proj)"
-  paths: "iter_3/gen_art/gen_art_experiment_9/selected/{gemma_it,gams3_it}/adapter"
+  paths: "round-3/experiment-9/src/selected/{gemma_it,gams3_it}/adapter"
   application: "forward hook out += lambda * B(A(x)); lambda 0 = hook skipped (bit-identical to base, asserted)"
   selection_facts: "Gemma trial 32 (refusals 0.57, KL 0.380); GaMS trial 16 (refusals 0.22, KL 0.283); rule F4 = OURS"
   conditions:

@@ -209,7 +209,7 @@
    "horizon": "first token",
    "edit": "E_exp9",
    "verdict": "POINT-ONLY",
-   "source": "RUN/iter_4/gen_art/gen_art_experiment_15/results/kl_harmless.jsonl"
+   "source": "RUN/round-4/experiment-15/src/results/kl_harmless.jsonl"
   },
   "gams3_it": {
    "lambdas_with_random": [
@@ -398,7 +398,7 @@
    "horizon": "first token",
    "edit": "E_exp9",
    "verdict": "POINT-ONLY",
-   "source": "RUN/iter_4/gen_art/gen_art_experiment_15/results/kl_harmless.jsonl"
+   "source": "RUN/round-4/experiment-15/src/results/kl_harmless.jsonl"
   }
  },
  "exp14": {
@@ -497,7 +497,7 @@
    "prompt_set": "exp14 32 KL stems",
    "horizon": "first token",
    "edit": "E_exp9 (lambda-scaled hook)",
-   "source": "RUN/iter_4/gen_art/gen_art_experiment_14/results/kl_gemma_it.json",
+   "source": "RUN/round-4/experiment-14/src/results/kl_gemma_it.json",
    "verdict": "UNDETERMINED"
   },
   "gams3_it": {
@@ -595,7 +595,7 @@
    "prompt_set": "exp14 32 KL stems",
    "horizon": "first token",
    "edit": "E_exp9 (lambda-scaled hook)",
-   "source": "RUN/iter_4/gen_art/gen_art_experiment_14/results/kl_gams3_it.json",
+   "source": "RUN/round-4/experiment-14/src/results/kl_gams3_it.json",
    "verdict": "NO-LEAKAGE"
   }
  },
@@ -719,7 +719,7 @@
    "prompt_set": "exp8 eval_kl stems (100 items)",
    "horizon": "first token",
    "edit": "exp9 selected adapter (lambda 1)",
-   "source": "RUN/iter_3/gen_art/gen_art_experiment_9/results/gemma_it/c5a_kl.jsonl",
+   "source": "RUN/round-3/experiment-9/src/results/gemma_it/c5a_kl.jsonl",
    "verdict": "NO-LEAKAGE"
   },
   "gams3_it": {
@@ -841,7 +841,7 @@
    "prompt_set": "exp8 eval_kl stems (100 items)",
    "horizon": "first token",
    "edit": "exp9 selected adapter (lambda 1)",
-   "source": "RUN/iter_3/gen_art/gen_art_experiment_9/results/gams3_it/c5a_kl.jsonl",
+   "source": "RUN/round-3/experiment-9/src/results/gams3_it/c5a_kl.jsonl",
    "verdict": "NO-LEAKAGE"
   }
  },
@@ -1234,7 +1234,7 @@
     "horizon": "first token",
     "lambda": 1.0,
     "edit": "iter-1 selected Heretic",
-    "source": "RUN/iter_1/gen_art/gen_art_experiment_4/results/analysis.json",
+    "source": "RUN/round-1/experiment-4/src/results/analysis.json",
     "json_path": "C5a/gemma_it/norm_matched/excess",
     "verdict": "NO-LEAKAGE"
    },
@@ -1251,7 +1251,7 @@
     "horizon": "first token",
     "lambda": 1.0,
     "edit": "iter-1 selected Heretic",
-    "source": "RUN/iter_1/gen_art/gen_art_experiment_4/results/analysis.json",
+    "source": "RUN/round-1/experiment-4/src/results/analysis.json",
     "json_path": "C5a/gams3_it/norm_matched/excess",
     "verdict": "NO-LEAKAGE"
    },
@@ -1272,7 +1272,7 @@
     "horizon": "first token",
     "lambda": 1.0,
     "edit": "exp9 selected adapter (lambda 1)",
-    "source": "RUN/iter_3/gen_art/gen_art_experiment_9/results/gemma_it/c5a_kl.jsonl",
+    "source": "RUN/round-3/experiment-9/src/results/gemma_it/c5a_kl.jsonl",
     "json_path": "per-item rows",
     "verdict": "NO-LEAKAGE"
    },
@@ -1293,7 +1293,7 @@
     "horizon": "first token",
     "lambda": 1.0,
     "edit": "exp9 selected adapter (lambda 1)",
-    "source": "RUN/iter_3/gen_art/gen_art_experiment_9/results/gams3_it/c5a_kl.jsonl",
+    "source": "RUN/round-3/experiment-9/src/results/gams3_it/c5a_kl.jsonl",
     "json_path": "per-item rows",
     "verdict": "NO-LEAKAGE"
    },
@@ -1310,7 +1310,7 @@
     "horizon": "first token",
     "lambda": 1.0,
     "edit": "E_iter1",
-    "source": "RUN/iter_3/gen_art/gen_art_experiment_12/results/kl_footprint.json",
+    "source": "RUN/round-3/experiment-12/src/results/kl_footprint.json",
     "json_path": "kl/gemma_it/ratios/E_iter1/first/sl_over_enbt/excess_vs_rand",
     "verdict": "UNDETERMINED"
    },
@@ -1327,7 +1327,7 @@
     "horizon": "32-token (multi)",
     "lambda": 1.0,
     "edit": "E_iter1",
-    "source": "RUN/iter_3/gen_art/gen_art_experiment_12/results/kl_footprint.json",
+    "source": "RUN/round-3/experiment-12/src/results/kl_footprint.json",
     "json_path": "kl/gemma_it/ratios/E_iter1/multi/sl_over_enbt/excess_vs_rand",
     "verdict": "NO-LEAKAGE"
    },
@@ -1344,7 +1344,7 @@
     "horizon": "first token",
     "lambda": 1.0,
     "edit": "E_iter1",
-    "source": "RUN/iter_3/gen_art/gen_art_experiment_12/results/kl_footprint.json",
+    "source": "RUN/round-3/experiment-12/src/results/kl_footprint.json",
     "json_path": "kl/gams3_it/ratios/E_iter1/first/sl_over_enbt/excess_vs_rand",
     "verdict": "NO-LEAKAGE"
    },
@@ -1361,7 +1361,7 @@
     "horizon": "32-token (multi)",
     "lambda": 1.0,
     "edit": "E_iter1",
-    "source": "RUN/iter_3/gen_art/gen_art_experiment_12/results/kl_footprint.json",
+    "source": "RUN/round-3/experiment-12/src/results/kl_footprint.json",
     "json_path": "kl/gams3_it/ratios/E_iter1/multi/sl_over_enbt/excess_vs_rand",
     "verdict": "NO-LEAKAGE"
    },
@@ -1378,7 +1378,7 @@
     "horizon": "first token",
     "lambda": 1.0,
     "edit": "E_exp9 (lambda-scaled hook)",
-    "source": "RUN/iter_4/gen_art/gen_art_experiment_14/results/kl_gemma_it.json",
+    "source": "RUN/round-4/experiment-14/src/results/kl_gemma_it.json",
     "json_path": "per_stem",
     "verdict": "UNDETERMINED"
    },
@@ -1395,7 +1395,7 @@
     "horizon": "first token",
     "lambda": 0.625,
     "edit": "E_exp9 (lambda-scaled hook)",
-    "source": "RUN/iter_4/gen_art/gen_art_experiment_14/results/kl_gams3_it.json",
+    "source": "RUN/round-4/experiment-14/src/results/kl_gams3_it.json",
     "json_path": "per_stem",
     "verdict": "NO-LEAKAGE"
    },
@@ -1412,7 +1412,7 @@
     "horizon": "first token",
     "lambda": 2.0,
     "edit": "E_exp9",
-    "source": "RUN/iter_4/gen_art/gen_art_experiment_15/results/kl_harmless.jsonl + results/kl_items_exp15_recomputed.jsonl",
+    "source": "RUN/round-4/experiment-15/src/results/kl_harmless.jsonl + results/kl_items_exp15_recomputed.jsonl",
     "json_path": "kl_mean rows",
     "verdict": "UNDETERMINED"
    },
@@ -1429,7 +1429,7 @@
     "horizon": "first token",
     "lambda": 1.5375,
     "edit": "E_exp9",
-    "source": "RUN/iter_4/gen_art/gen_art_experiment_15/results/kl_harmless.jsonl + results/kl_items_exp15_recomputed.jsonl",
+    "source": "RUN/round-4/experiment-15/src/results/kl_harmless.jsonl + results/kl_items_exp15_recomputed.jsonl",
     "json_path": "kl_mean rows",
     "verdict": "UNDETERMINED"
    }

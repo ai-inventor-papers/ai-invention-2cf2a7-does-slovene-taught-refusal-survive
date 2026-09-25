@@ -5,7 +5,7 @@ Each block is copied verbatim from the named file (itself generated from that ar
 
 ## exp11 - per-step Hautus rates, a/b, four-readout G3, gates, 5-cell adjudication
 
-Source: `RUN/iter_3/gen_art/gen_art_experiment_11/results/RESULTS_tables.md` (12 tables)
+Source: `RUN/round-3/experiment-11/src/results/RESULTS_tables.md` (12 tables)
 
 
 **Judge gate: qwen3_14b vs archived gemini labels** [source: exp11]
@@ -138,7 +138,7 @@ Source: `RUN/iter_3/gen_art/gen_art_experiment_11/results/RESULTS_tables.md` (12
 
 ## exp9 - SDT block (Delta-c, DiD_c), C5a, judge validity
 
-Source: `RUN/iter_3/gen_art/gen_art_experiment_9/results/summary_tables.md` (9 tables)
+Source: `RUN/round-3/experiment-9/src/results/summary_tables.md` (9 tables)
 
 
 **ESTIMATE** [source: exp9]
@@ -276,7 +276,7 @@ Source: `RUN/iter_3/gen_art/gen_art_experiment_9/results/summary_tables.md` (9 t
 
 ## exp10 - geometry, induction (u_lang alpha50), add-on tables
 
-Source: `RUN/iter_3/gen_art/gen_art_experiment_10/results/summary_tables.md` (8 tables)
+Source: `RUN/round-3/experiment-10/src/results/summary_tables.md` (8 tables)
 
 
 **DEV decisions** [source: exp10]
@@ -399,7 +399,7 @@ Source: `RUN/iter_3/gen_art/gen_art_experiment_10/results/summary_tables.md` (8 
 
 ## exp12 - Belebele and first-token / multi-token KL
 
-Source: `RUN/iter_3/gen_art/gen_art_experiment_12/results/RESULTS.md` (11 tables)
+Source: `RUN/round-3/experiment-12/src/results/RESULTS.md` (11 tables)
 
 
 **1. Catastrophe gate (pre-registered: macro headroom-normalised loss > 0.20 in EN or SL)** [source: exp12]
@@ -611,8 +611,8 @@ Source: `RUN/iter_3/gen_art/gen_art_experiment_12/results/RESULTS.md` (11 tables
 | gemma_it | rand_nm_j1 | 0.014 | 0.103 | 0.001 | 0.80 | 0.312 |
 | gemma_it | rand_nm_j2 | 0.015 | 0.106 | 0.001 | 0.71 | 0.375 |
 | gemma_it | E_art2 | 0.024 | 0.136 | 0.009 | 0.65 | 0.562 |
-- check exp9 SDT DiD_c (j1|R1): -0.0048 [-0.4160706822497849, 0.48192172055902566] (`RUN/iter_3/gen_art/gen_art_experiment_9/results/analysis.json`)
-- check exp11 C-LAG G3 (q_R): -0.5997 [-1.3074282573425433, 0.4010312906661551] (`RUN/iter_3/gen_art/gen_art_experiment_11/results/analysis.json`)
-- check exp10 u_lang SL alpha50 (GaMS3, gemini R): 1.7845  (`RUN/iter_3/gen_art/gen_art_experiment_10/results/analysis.json`)
-- check exp12 multi-token excess E_iter1 GaMS3: 0.5657  (`RUN/iter_3/gen_art/gen_art_experiment_12/results/kl_footprint.json`)
-- check exp12 multi-token excess E_iter1 Gemma: 0.2942  (`RUN/iter_3/gen_art/gen_art_experiment_12/results/kl_footprint.json`)
+- check exp9 SDT DiD_c (j1|R1): -0.0048 [-0.4160706822497849, 0.48192172055902566] (`RUN/round-3/experiment-9/src/results/analysis.json`)
+- check exp11 C-LAG G3 (q_R): -0.5997 [-1.3074282573425433, 0.4010312906661551] (`RUN/round-3/experiment-11/src/results/analysis.json`)
+- check exp10 u_lang SL alpha50 (GaMS3, gemini R): 1.7845  (`RUN/round-3/experiment-10/src/results/analysis.json`)
+- check exp12 multi-token excess E_iter1 GaMS3: 0.5657  (`RUN/round-3/experiment-12/src/results/kl_footprint.json`)
+- check exp12 multi-token excess E_iter1 Gemma: 0.2942  (`RUN/round-3/experiment-12/src/results/kl_footprint.json`)

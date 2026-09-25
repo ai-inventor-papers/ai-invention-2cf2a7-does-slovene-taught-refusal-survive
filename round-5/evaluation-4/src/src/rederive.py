@@ -15,7 +15,7 @@ import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[1]
 RUNI4 = Path(__import__("os").environ.get("AII_DEPS_ROOT", str(Path(__file__).resolve().parents[4]))) / "round-4"
-E14 = RUNI4 / "gen_art_experiment_14"
+E14 = RUNI4 / "experiment-14/src"
 SEED = 20260925
 B = 2000
 

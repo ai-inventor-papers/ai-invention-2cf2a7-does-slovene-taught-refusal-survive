@@ -25,8 +25,8 @@ from loguru import logger  # noqa: E402
 
 WS = Path(__file__).resolve().parents[1]
 RUN = Path(os.environ.get("AII_RUN_ROOT", str(WS.parents[2]))).resolve()  # same single constant as src/common.py
-EXP9 = RUN / "iter_3/gen_art/gen_art_experiment_9"
-EXP15 = RUN / "iter_4/gen_art/gen_art_experiment_15"
+EXP9 = RUN / "round-3/experiment-9/src"
+EXP15 = RUN / "round-4/experiment-15/src"
 OUT = WS / "results/kl_items_exp15_recomputed.jsonl"
 MODELS = {"gemma_it": {"repo": "google/gemma-3-12b-it", "revision": "96b6f1eccf38110c56df3a15bffe176da04bfd80"},
           "gams3_it": {"repo": "cjvt/GaMS3-12B-Instruct", "revision": "1d0b27af5748784482600d24779409e7e1dc9adc"}}

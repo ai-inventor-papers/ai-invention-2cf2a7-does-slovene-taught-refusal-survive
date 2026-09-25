@@ -76,7 +76,7 @@
     "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
    },
    "judge": "paid gemini-2.5-flash (P1)",
-   "source_file": "RUN/iter_4/gen_art/gen_art_evaluation_3/results/recompute.json",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
    "json_path": "curves/exp9_lambda|raw_primary|R",
    "decomposition_status": "edit-induced",
    "ceiling_verdict_G3_orig": "ROBUST-OFFSET",
@@ -87,7 +87,7 @@
    "readout": "RG",
    "coding": "R",
    "status_note": "no estimate saved",
-   "source_file": "RUN/iter_4/gen_art/gen_art_evaluation_3/results/recompute.json",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
    "json_path": "curves/exp9_lambda|RG|R",
    "decomposition_status": null,
    "ceiling_verdict_G3_orig": "ROBUST-OFFSET"
@@ -168,7 +168,7 @@
     "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
    },
    "judge": "gemini + PPI++ (author-model adjudication)",
-   "source_file": "RUN/iter_4/gen_art/gen_art_evaluation_3/results/recompute.json",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
    "json_path": "curves/exp9_lambda|PPI|R",
    "decomposition_status": "underdetermined",
    "ceiling_verdict_G3_orig": "ROBUST-OFFSET"
@@ -237,7 +237,7 @@
     "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
    },
    "judge": "paid gpt-4.1-mini (IPW sample)",
-   "source_file": "RUN/iter_4/gen_art/gen_art_evaluation_3/results/recompute.json",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
    "json_path": "curves/exp9_lambda|second_gpt41mini_IPW|R",
    "decomposition_status": null,
    "ceiling_verdict_G3_orig": "ROBUST-OFFSET"
@@ -318,7 +318,7 @@
     "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
    },
    "judge": "translate-then-judge (J1 on NLLB English, AM2)",
-   "source_file": "RUN/iter_4/gen_art/gen_art_evaluation_3/results/recompute.json",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
    "json_path": "curves/exp9_lambda|ttj|R",
    "decomposition_status": "underdetermined",
    "ceiling_verdict_G3_orig": "ROBUST-OFFSET"
@@ -328,7 +328,7 @@
    "readout": "asr_noharm",
    "coding": "R",
    "status_note": "fewer than 3 steps with labels",
-   "source_file": "RUN/iter_4/gen_art/gen_art_evaluation_3/results/recompute.json",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
    "json_path": "curves/exp9_lambda|asr_noharm|R",
    "decomposition_status": null,
    "ceiling_verdict_G3_orig": "ROBUST-OFFSET"
@@ -409,7 +409,7 @@
     "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
    },
    "judge": "archived local judge: j1",
-   "source_file": "RUN/iter_4/gen_art/gen_art_evaluation_3/results/recompute.json",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
    "json_path": "curves/exp9_lambda|archived_arch_j1|R",
    "decomposition_status": "edit-induced",
    "ceiling_verdict_G3_orig": "ROBUST-OFFSET",
@@ -491,7 +491,7 @@
     "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
    },
    "judge": "archived local judge: j2",
-   "source_file": "RUN/iter_4/gen_art/gen_art_evaluation_3/results/recompute.json",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
    "json_path": "curves/exp9_lambda|archived_arch_j2|R",
    "decomposition_status": "underdetermined",
    "ceiling_verdict_G3_orig": "ROBUST-OFFSET"
@@ -572,7 +572,7 @@
     "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
    },
    "judge": "archived local judge: lex",
-   "source_file": "RUN/iter_4/gen_art/gen_art_evaluation_3/results/recompute.json",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
    "json_path": "curves/exp9_lambda|archived_arch_lex|R",
    "decomposition_status": "underdetermined",
    "ceiling_verdict_G3_orig": "ROBUST-OFFSET"
@@ -653,7 +653,7 @@
     "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
    },
    "judge": "paid gemini-2.5-flash (P1)",
-   "source_file": "RUN/iter_4/gen_art/gen_art_evaluation_3/results/recompute.json",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
    "json_path": "curves/exp9_lambda|raw_primary|RP",
    "decomposition_status": "underdetermined",
    "ceiling_verdict_G3_orig": "ROBUST-OFFSET"
@@ -663,7 +663,7 @@
    "readout": "RG",
    "coding": "RP",
    "status_note": "no estimate saved",
-   "source_file": "RUN/iter_4/gen_art/gen_art_evaluation_3/results/recompute.json",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
    "json_path": "curves/exp9_lambda|RG|RP",
    "decomposition_status": null,
    "ceiling_verdict_G3_orig": "ROBUST-OFFSET"
@@ -744,7 +744,7 @@
     "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
    },
    "judge": "gemini + PPI++ (author-model adjudication)",
-   "source_file": "RUN/iter_4/gen_art/gen_art_evaluation_3/results/recompute.json",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
    "json_path": "curves/exp9_lambda|PPI|RP",
    "decomposition_status": "underdetermined",
    "ceiling_verdict_G3_orig": "ROBUST-OFFSET"
@@ -813,7 +813,7 @@
     "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
    },
    "judge": "paid gpt-4.1-mini (IPW sample)",
-   "source_file": "RUN/iter_4/gen_art/gen_art_evaluation_3/results/recompute.json",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
    "json_path": "curves/exp9_lambda|second_gpt41mini_IPW|RP",
    "decomposition_status": null,
    "ceiling_verdict_G3_orig": "ROBUST-OFFSET"
@@ -894,7 +894,7 @@
     "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
    },
    "judge": "translate-then-judge (J1 on NLLB English, AM2)",
-   "source_file": "RUN/iter_4/gen_art/gen_art_evaluation_3/results/recompute.json",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
    "json_path": "curves/exp9_lambda|ttj|RP",
    "decomposition_status": "underdetermined",
    "ceiling_verdict_G3_orig": "ROBUST-OFFSET"
@@ -975,7 +975,7 @@
     "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
    },
    "judge": "paid gemini-2.5-flash (P1)",
-   "source_file": "RUN/iter_4/gen_art/gen_art_evaluation_3/results/recompute.json",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
    "json_path": "curves/exp11_final|raw_primary|R",
    "decomposition_status": "underdetermined",
    "ceiling_verdict_G3_orig": "CEILING-ARTEFACT"
@@ -1044,7 +1044,7 @@
     "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
    },
    "judge": "gemini + Rogan-Gladen (author-model adjudication)",
-   "source_file": "RUN/iter_4/gen_art/gen_art_evaluation_3/results/recompute.json",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
    "json_path": "curves/exp11_final|RG|R",
    "decomposition_status": null,
    "ceiling_verdict_G3_orig": "CEILING-ARTEFACT"
@@ -1125,7 +1125,7 @@
     "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
    },
    "judge": "gemini + PPI++ (author-model adjudication)",
-   "source_file": "RUN/iter_4/gen_art/gen_art_evaluation_3/results/recompute.json",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
    "json_path": "curves/exp11_final|PPI|R",
    "decomposition_status": "underdetermined",
    "ceiling_verdict_G3_orig": "CEILING-ARTEFACT"
@@ -1135,7 +1135,7 @@
    "readout": "second_gpt41mini_IPW",
    "coding": "R",
    "status_note": "point estimate unusable: fewer than 2 usable steps",
-   "source_file": "RUN/iter_4/gen_art/gen_art_evaluation_3/results/recompute.json",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
    "json_path": "curves/exp11_final|second_gpt41mini_IPW|R",
    "decomposition_status": null,
    "ceiling_verdict_G3_orig": "CEILING-ARTEFACT"
@@ -1216,7 +1216,7 @@
     "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
    },
    "judge": "translate-then-judge (J1 on NLLB English, AM2)",
-   "source_file": "RUN/iter_4/gen_art/gen_art_evaluation_3/results/recompute.json",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
    "json_path": "curves/exp11_final|ttj|R",
    "decomposition_status": "underdetermined",
    "ceiling_verdict_G3_orig": "CEILING-ARTEFACT"
@@ -1297,7 +1297,7 @@
     "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
    },
    "judge": "archived local judge: q14",
-   "source_file": "RUN/iter_4/gen_art/gen_art_evaluation_3/results/recompute.json",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
    "json_path": "curves/exp11_final|archived_arch_q14|R",
    "decomposition_status": "underdetermined",
    "ceiling_verdict_G3_orig": "CEILING-ARTEFACT"
@@ -1307,7 +1307,7 @@
    "readout": "archived_arch_lex",
    "coding": "R",
    "status_note": "point estimate unusable: quasi-separation (|a| or |b| > 30)",
-   "source_file": "RUN/iter_4/gen_art/gen_art_evaluation_3/results/recompute.json",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
    "json_path": "curves/exp11_final|archived_arch_lex|R",
    "decomposition_status": null,
    "ceiling_verdict_G3_orig": "CEILING-ARTEFACT"
@@ -1388,7 +1388,7 @@
     "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
    },
    "judge": "paid gemini-2.5-flash (P1)",
-   "source_file": "RUN/iter_4/gen_art/gen_art_evaluation_3/results/recompute.json",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
    "json_path": "curves/exp11_final|raw_primary|RP",
    "decomposition_status": "underdetermined",
    "ceiling_verdict_G3_orig": "CEILING-ARTEFACT"
@@ -1457,7 +1457,7 @@
     "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
    },
    "judge": "gemini + Rogan-Gladen (author-model adjudication)",
-   "source_file": "RUN/iter_4/gen_art/gen_art_evaluation_3/results/recompute.json",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
    "json_path": "curves/exp11_final|RG|RP",
    "decomposition_status": null,
    "ceiling_verdict_G3_orig": "CEILING-ARTEFACT"
@@ -1538,7 +1538,7 @@
     "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
    },
    "judge": "gemini + PPI++ (author-model adjudication)",
-   "source_file": "RUN/iter_4/gen_art/gen_art_evaluation_3/results/recompute.json",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
    "json_path": "curves/exp11_final|PPI|RP",
    "decomposition_status": "underdetermined",
    "ceiling_verdict_G3_orig": "CEILING-ARTEFACT"
@@ -1548,7 +1548,7 @@
    "readout": "second_gpt41mini_IPW",
    "coding": "RP",
    "status_note": "point estimate unusable: fewer than 2 usable steps",
-   "source_file": "RUN/iter_4/gen_art/gen_art_evaluation_3/results/recompute.json",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
    "json_path": "curves/exp11_final|second_gpt41mini_IPW|RP",
    "decomposition_status": null,
    "ceiling_verdict_G3_orig": "CEILING-ARTEFACT"
@@ -1629,7 +1629,7 @@
     "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
    },
    "judge": "translate-then-judge (J1 on NLLB English, AM2)",
-   "source_file": "RUN/iter_4/gen_art/gen_art_evaluation_3/results/recompute.json",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
    "json_path": "curves/exp11_final|ttj|RP",
    "decomposition_status": "underdetermined",
    "ceiling_verdict_G3_orig": "CEILING-ARTEFACT"
@@ -1710,7 +1710,7 @@
     "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
    },
    "judge": "paid gemini-2.5-flash (P1)",
-   "source_file": "RUN/iter_4/gen_art/gen_art_evaluation_3/results/recompute.json",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
    "json_path": "curves/exp8_A1|raw_primary|R",
    "decomposition_status": "underdetermined",
    "ceiling_verdict_G3_orig": "CEILING-ARTEFACT"
@@ -1779,7 +1779,7 @@
     "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
    },
    "judge": "gemini + Rogan-Gladen (author-model adjudication)",
-   "source_file": "RUN/iter_4/gen_art/gen_art_evaluation_3/results/recompute.json",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
    "json_path": "curves/exp8_A1|RG|R",
    "decomposition_status": null,
    "ceiling_verdict_G3_orig": "CEILING-ARTEFACT"
@@ -1860,7 +1860,7 @@
     "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
    },
    "judge": "gemini + PPI++ (author-model adjudication)",
-   "source_file": "RUN/iter_4/gen_art/gen_art_evaluation_3/results/recompute.json",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
    "json_path": "curves/exp8_A1|PPI|R",
    "decomposition_status": "underdetermined",
    "ceiling_verdict_G3_orig": "CEILING-ARTEFACT"
@@ -1870,7 +1870,7 @@
    "readout": "second_gpt41mini_IPW",
    "coding": "R",
    "status_note": "point estimate unusable: fewer than 2 usable steps",
-   "source_file": "RUN/iter_4/gen_art/gen_art_evaluation_3/results/recompute.json",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
    "json_path": "curves/exp8_A1|second_gpt41mini_IPW|R",
    "decomposition_status": null,
    "ceiling_verdict_G3_orig": "CEILING-ARTEFACT"
@@ -1951,7 +1951,7 @@
     "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
    },
    "judge": "archived local judge: q14",
-   "source_file": "RUN/iter_4/gen_art/gen_art_evaluation_3/results/recompute.json",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
    "json_path": "curves/exp8_A1|archived_arch_q14|R",
    "decomposition_status": "edit-induced",
    "ceiling_verdict_G3_orig": "CEILING-ARTEFACT",
@@ -2033,7 +2033,7 @@
     "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
    },
    "judge": "archived local judge: lex",
-   "source_file": "RUN/iter_4/gen_art/gen_art_evaluation_3/results/recompute.json",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
    "json_path": "curves/exp8_A1|archived_arch_lex|R",
    "decomposition_status": "underdetermined",
    "ceiling_verdict_G3_orig": "CEILING-ARTEFACT"
@@ -2102,7 +2102,7 @@
     "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
    },
    "judge": "archived local judge: m24",
-   "source_file": "RUN/iter_4/gen_art/gen_art_evaluation_3/results/recompute.json",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
    "json_path": "curves/exp8_A1|archived_arch_m24|R",
    "decomposition_status": null,
    "ceiling_verdict_G3_orig": "CEILING-ARTEFACT"
@@ -2183,7 +2183,7 @@
     "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
    },
    "judge": "paid gemini-2.5-flash (P1)",
-   "source_file": "RUN/iter_4/gen_art/gen_art_evaluation_3/results/recompute.json",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
    "json_path": "curves/exp8_A1|raw_primary|RP",
    "decomposition_status": "underdetermined",
    "ceiling_verdict_G3_orig": "CEILING-ARTEFACT"
@@ -2252,7 +2252,7 @@
     "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
    },
    "judge": "gemini + Rogan-Gladen (author-model adjudication)",
-   "source_file": "RUN/iter_4/gen_art/gen_art_evaluation_3/results/recompute.json",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
    "json_path": "curves/exp8_A1|RG|RP",
    "decomposition_status": null,
    "ceiling_verdict_G3_orig": "CEILING-ARTEFACT"
@@ -2333,7 +2333,7 @@
     "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
    },
    "judge": "gemini + PPI++ (author-model adjudication)",
-   "source_file": "RUN/iter_4/gen_art/gen_art_evaluation_3/results/recompute.json",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
    "json_path": "curves/exp8_A1|PPI|RP",
    "decomposition_status": "edit-induced",
    "ceiling_verdict_G3_orig": "CEILING-ARTEFACT",
@@ -2344,7 +2344,7 @@
    "readout": "second_gpt41mini_IPW",
    "coding": "RP",
    "status_note": "point estimate unusable: fewer than 2 usable steps",
-   "source_file": "RUN/iter_4/gen_art/gen_art_evaluation_3/results/recompute.json",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
    "json_path": "curves/exp8_A1|second_gpt41mini_IPW|RP",
    "decomposition_status": null,
    "ceiling_verdict_G3_orig": "CEILING-ARTEFACT"
@@ -2425,7 +2425,7 @@
     "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
    },
    "judge": "paid gemini-2.5-flash (P1)",
-   "source_file": "RUN/iter_4/gen_art/gen_art_evaluation_3/results/recompute.json",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
    "json_path": "curves/exp8_B|raw_primary|R",
    "decomposition_status": "underdetermined",
    "ceiling_verdict_G3_orig": "CEILING-ARTEFACT"
@@ -2494,7 +2494,7 @@
     "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
    },
    "judge": "gemini + Rogan-Gladen (author-model adjudication)",
-   "source_file": "RUN/iter_4/gen_art/gen_art_evaluation_3/results/recompute.json",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
    "json_path": "curves/exp8_B|RG|R",
    "decomposition_status": null,
    "ceiling_verdict_G3_orig": "CEILING-ARTEFACT"
@@ -2575,7 +2575,7 @@
     "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
    },
    "judge": "gemini + PPI++ (author-model adjudication)",
-   "source_file": "RUN/iter_4/gen_art/gen_art_evaluation_3/results/recompute.json",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
    "json_path": "curves/exp8_B|PPI|R",
    "decomposition_status": "underdetermined",
    "ceiling_verdict_G3_orig": "CEILING-ARTEFACT"
@@ -2585,7 +2585,7 @@
    "readout": "second_gpt41mini_IPW",
    "coding": "R",
    "status_note": "point estimate unusable: fewer than 2 usable steps",
-   "source_file": "RUN/iter_4/gen_art/gen_art_evaluation_3/results/recompute.json",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
    "json_path": "curves/exp8_B|second_gpt41mini_IPW|R",
    "decomposition_status": null,
    "ceiling_verdict_G3_orig": "CEILING-ARTEFACT"
@@ -2666,7 +2666,7 @@
     "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
    },
    "judge": "archived local judge: q14",
-   "source_file": "RUN/iter_4/gen_art/gen_art_evaluation_3/results/recompute.json",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
    "json_path": "curves/exp8_B|archived_arch_q14|R",
    "decomposition_status": "edit-induced",
    "ceiling_verdict_G3_orig": "CEILING-ARTEFACT",
@@ -2748,7 +2748,7 @@
     "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
    },
    "judge": "archived local judge: lex",
-   "source_file": "RUN/iter_4/gen_art/gen_art_evaluation_3/results/recompute.json",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
    "json_path": "curves/exp8_B|archived_arch_lex|R",
    "decomposition_status": "edit-induced",
    "ceiling_verdict_G3_orig": "CEILING-ARTEFACT",
@@ -2818,7 +2818,7 @@
     "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
    },
    "judge": "archived local judge: m24",
-   "source_file": "RUN/iter_4/gen_art/gen_art_evaluation_3/results/recompute.json",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
    "json_path": "curves/exp8_B|archived_arch_m24|R",
    "decomposition_status": null,
    "ceiling_verdict_G3_orig": "CEILING-ARTEFACT"
@@ -2899,7 +2899,7 @@
     "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
    },
    "judge": "paid gemini-2.5-flash (P1)",
-   "source_file": "RUN/iter_4/gen_art/gen_art_evaluation_3/results/recompute.json",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
    "json_path": "curves/exp8_B|raw_primary|RP",
    "decomposition_status": "underdetermined",
    "ceiling_verdict_G3_orig": "CEILING-ARTEFACT"
@@ -2968,7 +2968,7 @@
     "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
    },
    "judge": "gemini + Rogan-Gladen (author-model adjudication)",
-   "source_file": "RUN/iter_4/gen_art/gen_art_evaluation_3/results/recompute.json",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
    "json_path": "curves/exp8_B|RG|RP",
    "decomposition_status": null,
    "ceiling_verdict_G3_orig": "CEILING-ARTEFACT"
@@ -3049,7 +3049,7 @@
     "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
    },
    "judge": "gemini + PPI++ (author-model adjudication)",
-   "source_file": "RUN/iter_4/gen_art/gen_art_evaluation_3/results/recompute.json",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
    "json_path": "curves/exp8_B|PPI|RP",
    "decomposition_status": "edit-induced",
    "ceiling_verdict_G3_orig": "CEILING-ARTEFACT",
@@ -3060,7 +3060,7 @@
    "readout": "second_gpt41mini_IPW",
    "coding": "RP",
    "status_note": "point estimate unusable: fewer than 2 usable steps",
-   "source_file": "RUN/iter_4/gen_art/gen_art_evaluation_3/results/recompute.json",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
    "json_path": "curves/exp8_B|second_gpt41mini_IPW|RP",
    "decomposition_status": null,
    "ceiling_verdict_G3_orig": "CEILING-ARTEFACT"
@@ -3070,7 +3070,7 @@
    "readout": "raw_primary",
    "coding": "R",
    "status_note": "point estimate unusable: fewer than 2 usable steps",
-   "source_file": "RUN/iter_4/gen_art/gen_art_evaluation_3/results/recompute.json",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
    "json_path": "curves/exp9_trial_Bprime|raw_primary|R",
    "decomposition_status": null,
    "ceiling_verdict_G3_orig": null
@@ -3151,7 +3151,7 @@
     "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
    },
    "judge": "archived local judge: j1",
-   "source_file": "RUN/iter_4/gen_art/gen_art_evaluation_3/results/recompute.json",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
    "json_path": "curves/exp9_trial_Bprime|archived_arch_j1|R",
    "decomposition_status": "underdetermined",
    "ceiling_verdict_G3_orig": null
@@ -3161,7 +3161,7 @@
    "readout": "archived_arch_j2",
    "coding": "R",
    "status_note": "point estimate unusable: quasi-separation (|a| or |b| > 30)",
-   "source_file": "RUN/iter_4/gen_art/gen_art_evaluation_3/results/recompute.json",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
    "json_path": "curves/exp9_trial_Bprime|archived_arch_j2|R",
    "decomposition_status": null,
    "ceiling_verdict_G3_orig": null
@@ -3171,7 +3171,7 @@
    "readout": "archived_arch_lex",
    "coding": "R",
    "status_note": "point estimate unusable: quasi-separation (|a| or |b| > 30)",
-   "source_file": "RUN/iter_4/gen_art/gen_art_evaluation_3/results/recompute.json",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
    "json_path": "curves/exp9_trial_Bprime|archived_arch_lex|R",
    "decomposition_status": null,
    "ceiling_verdict_G3_orig": null
@@ -3181,7 +3181,7 @@
    "readout": "raw_primary",
    "coding": "RP",
    "status_note": "point estimate unusable: fewer than 2 usable steps",
-   "source_file": "RUN/iter_4/gen_art/gen_art_evaluation_3/results/recompute.json",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
    "json_path": "curves/exp9_trial_Bprime|raw_primary|RP",
    "decomposition_status": null,
    "ceiling_verdict_G3_orig": null
@@ -3250,7 +3250,7 @@
     "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
    },
    "judge": "paid gemini-2.5-flash (P1)",
-   "source_file": "RUN/iter_4/gen_art/gen_art_evaluation_3/results/recompute.json",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
    "json_path": "curves/exp10_op|raw_primary|R",
    "decomposition_status": "edit-induced",
    "ceiling_verdict_G3_orig": "NOT-OUTSIDE-MARGIN",
@@ -3308,7 +3308,7 @@
     "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
    },
    "judge": "gemini + Rogan-Gladen (author-model adjudication)",
-   "source_file": "RUN/iter_4/gen_art/gen_art_evaluation_3/results/recompute.json",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
    "json_path": "curves/exp10_op|RG|R",
    "decomposition_status": null,
    "ceiling_verdict_G3_orig": "NOT-OUTSIDE-MARGIN"
@@ -3377,7 +3377,7 @@
     "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
    },
    "judge": "archived_lex",
-   "source_file": "RUN/iter_4/gen_art/gen_art_evaluation_3/results/recompute.json",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
    "json_path": "curves/exp10_op|archived_lex|R",
    "decomposition_status": "underdetermined",
    "ceiling_verdict_G3_orig": "NOT-OUTSIDE-MARGIN"
@@ -3446,7 +3446,7 @@
     "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
    },
    "judge": "paid gemini-2.5-flash (P1)",
-   "source_file": "RUN/iter_4/gen_art/gen_art_evaluation_3/results/recompute.json",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
    "json_path": "curves/exp10_op|raw_primary|RP",
    "decomposition_status": "edit-induced",
    "ceiling_verdict_G3_orig": "NOT-OUTSIDE-MARGIN",
@@ -3504,7 +3504,7 @@
     "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
    },
    "judge": "gemini + Rogan-Gladen (author-model adjudication)",
-   "source_file": "RUN/iter_4/gen_art/gen_art_evaluation_3/results/recompute.json",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
    "json_path": "curves/exp10_op|RG|RP",
    "decomposition_status": null,
    "ceiling_verdict_G3_orig": "NOT-OUTSIDE-MARGIN"
@@ -3585,7 +3585,7 @@
     "note": "CI NA: slope draws not saved jointly"
    },
    "judge": "local J1 (mdeberta distilled from gemini; fallback readout)",
-   "source_file": "RUN/iter_4/gen_art/gen_art_experiment_15/results/analysis.json",
+   "source_file": "RUN/round-4/experiment-15/src/results/analysis.json",
    "json_path": "headline/R/RAW",
    "notes": "",
    "decomposition_status": "underdetermined",
@@ -3649,7 +3649,7 @@
     "note": "CI NA: slope draws not saved jointly"
    },
    "judge": "J1 + Rogan-Gladen",
-   "source_file": "RUN/iter_4/gen_art/gen_art_experiment_15/results/analysis.json",
+   "source_file": "RUN/round-4/experiment-15/src/results/analysis.json",
    "json_path": "headline/R/RG",
    "notes": "",
    "decomposition_status": "underdetermined",
@@ -3713,7 +3713,7 @@
     "note": "CI NA: slope draws not saved jointly"
    },
    "judge": "J1 + PPI",
-   "source_file": "RUN/iter_4/gen_art/gen_art_experiment_15/results/analysis.json",
+   "source_file": "RUN/round-4/experiment-15/src/results/analysis.json",
    "json_path": "headline/R/PPI",
    "notes": "",
    "decomposition_status": "underdetermined",
@@ -3759,7 +3759,7 @@
     "note": "CI NA: slope draws not saved jointly"
    },
    "judge": "paid gemini-2.5-flash second reader (IPW)",
-   "source_file": "RUN/iter_4/gen_art/gen_art_experiment_15/results/analysis.json",
+   "source_file": "RUN/round-4/experiment-15/src/results/analysis.json",
    "json_path": "headline/R/second_family_IPW",
    "notes": "",
    "decomposition_status": null,
@@ -3841,7 +3841,7 @@
     "note": "CI NA: slope draws not saved jointly"
    },
    "judge": "local J1 (mdeberta distilled from gemini; fallback readout)",
-   "source_file": "RUN/iter_4/gen_art/gen_art_experiment_15/results/analysis.json",
+   "source_file": "RUN/round-4/experiment-15/src/results/analysis.json",
    "json_path": "headline/RP/RAW",
    "notes": "RP == R (J1 emits no PARTIAL)",
    "decomposition_status": "underdetermined",
@@ -3905,7 +3905,7 @@
     "note": "CI NA: slope draws not saved jointly"
    },
    "judge": "J1 + Rogan-Gladen",
-   "source_file": "RUN/iter_4/gen_art/gen_art_experiment_15/results/analysis.json",
+   "source_file": "RUN/round-4/experiment-15/src/results/analysis.json",
    "json_path": "headline/RP/RG",
    "notes": "RP == R (J1 emits no PARTIAL)",
    "decomposition_status": "underdetermined",
@@ -3969,7 +3969,7 @@
     "note": "CI NA: slope draws not saved jointly"
    },
    "judge": "J1 + PPI",
-   "source_file": "RUN/iter_4/gen_art/gen_art_experiment_15/results/analysis.json",
+   "source_file": "RUN/round-4/experiment-15/src/results/analysis.json",
    "json_path": "headline/RP/PPI",
    "notes": "RP == R (J1 emits no PARTIAL)",
    "decomposition_status": "underdetermined",
@@ -4015,7 +4015,7 @@
     "note": "CI NA: slope draws not saved jointly"
    },
    "judge": "paid gemini-2.5-flash second reader (IPW)",
-   "source_file": "RUN/iter_4/gen_art/gen_art_experiment_15/results/analysis.json",
+   "source_file": "RUN/round-4/experiment-15/src/results/analysis.json",
    "json_path": "headline/RP/second_family_IPW",
    "notes": "RP == R (J1 emits no PARTIAL)",
    "decomposition_status": null,
@@ -4069,7 +4069,7 @@
     "ci95": null
    },
    "judge": "translate-then-judge (J1 on NLLB English)",
-   "source_file": "RUN/iter_4/gen_art/gen_art_experiment_15/results/analysis.json",
+   "source_file": "RUN/round-4/experiment-15/src/results/analysis.json",
    "json_path": "ttj/R",
    "decomposition_status": "underdetermined",
    "ceiling_verdict_G3_orig": "CEILING-ARTEFACT"
@@ -4114,7 +4114,7 @@
     "point": null
    },
    "judge": "local J1",
-   "source_file": "RUN/iter_4/gen_art/gen_art_experiment_15/results/analysis.json",
+   "source_file": "RUN/round-4/experiment-15/src/results/analysis.json",
    "json_path": "random_arm/by_rank/0",
    "decomposition_status": "underdetermined",
    "ceiling_verdict_G3_orig": null
@@ -4159,7 +4159,7 @@
     "point": null
    },
    "judge": "local J1",
-   "source_file": "RUN/iter_4/gen_art/gen_art_experiment_15/results/analysis.json",
+   "source_file": "RUN/round-4/experiment-15/src/results/analysis.json",
    "json_path": "random_arm/by_rank/1",
    "decomposition_status": "underdetermined",
    "ceiling_verdict_G3_orig": null
@@ -4204,7 +4204,7 @@
     "point": null
    },
    "judge": "local J1",
-   "source_file": "RUN/iter_4/gen_art/gen_art_experiment_15/results/analysis.json",
+   "source_file": "RUN/round-4/experiment-15/src/results/analysis.json",
    "json_path": "random_arm/by_rank/2",
    "decomposition_status": "underdetermined",
    "ceiling_verdict_G3_orig": null
@@ -4249,7 +4249,7 @@
     "point": null
    },
    "judge": "local J1",
-   "source_file": "RUN/iter_4/gen_art/gen_art_experiment_15/results/analysis.json",
+   "source_file": "RUN/round-4/experiment-15/src/results/analysis.json",
    "json_path": "random_arm/by_rank/3",
    "decomposition_status": "underdetermined",
    "ceiling_verdict_G3_orig": null
@@ -4304,7 +4304,7 @@
    "gams_compliance": 0.9966666666666667,
    "flag": "",
    "judge": "local J1",
-   "source_file": "RUN/iter_4/gen_art/gen_art_experiment_14/results/analysis.json",
+   "source_file": "RUN/round-4/experiment-14/src/results/analysis.json",
    "json_path": "readouts/raw_R/G3|slsl ; readouts/raw_R/G3edit|slsl",
    "decomposition_status": "edit-induced",
    "ceiling_verdict_G3_orig": null,
@@ -4360,7 +4360,7 @@
    "gams_compliance": 0.985,
    "flag": "",
    "judge": "local J1",
-   "source_file": "RUN/iter_4/gen_art/gen_art_experiment_14/results/analysis.json",
+   "source_file": "RUN/round-4/experiment-14/src/results/analysis.json",
    "json_path": "readouts/raw_R/G3|ensl ; readouts/raw_R/G3edit|ensl",
    "decomposition_status": "underdetermined",
    "ceiling_verdict_G3_orig": null
@@ -4415,7 +4415,7 @@
    "gams_compliance": 0.865,
    "flag": "INVALID-MANIPULATION (GaMS output-language compliance < 0.90)",
    "judge": "local J1",
-   "source_file": "RUN/iter_4/gen_art/gen_art_experiment_14/results/analysis.json",
+   "source_file": "RUN/round-4/experiment-14/src/results/analysis.json",
    "json_path": "readouts/raw_R/G3|husl ; readouts/raw_R/G3edit|husl",
    "decomposition_status": "edit-induced",
    "ceiling_verdict_G3_orig": null,
@@ -4471,7 +4471,7 @@
    "gams_compliance": 1.0,
    "flag": "",
    "judge": "local J1",
-   "source_file": "RUN/iter_4/gen_art/gen_art_experiment_14/results/analysis.json",
+   "source_file": "RUN/round-4/experiment-14/src/results/analysis.json",
    "json_path": "readouts/raw_R/G3|enen ; readouts/raw_R/G3edit|enen",
    "decomposition_status": "underdetermined",
    "ceiling_verdict_G3_orig": null
@@ -4526,7 +4526,7 @@
    "gams_compliance": 0.0,
    "flag": "INVALID-MANIPULATION (GaMS output-language compliance < 0.90)",
    "judge": "local J1",
-   "source_file": "RUN/iter_4/gen_art/gen_art_experiment_14/results/analysis.json",
+   "source_file": "RUN/round-4/experiment-14/src/results/analysis.json",
    "json_path": "readouts/raw_R/G3|slen ; readouts/raw_R/G3edit|slen",
    "decomposition_status": "underdetermined",
    "ceiling_verdict_G3_orig": null
@@ -4581,7 +4581,7 @@
    "gams_compliance": 0.9716666666666667,
    "flag": "",
    "judge": "local J1",
-   "source_file": "RUN/iter_4/gen_art/gen_art_experiment_14/results/analysis.json",
+   "source_file": "RUN/round-4/experiment-14/src/results/analysis.json",
    "json_path": "readouts/raw_R/G3|enhu ; readouts/raw_R/G3edit|enhu",
    "decomposition_status": "underdetermined",
    "ceiling_verdict_G3_orig": null
@@ -4636,7 +4636,7 @@
    "gams_compliance": 1.0,
    "flag": "",
    "judge": "local J1",
-   "source_file": "RUN/iter_4/gen_art/gen_art_experiment_14/results/analysis.json",
+   "source_file": "RUN/round-4/experiment-14/src/results/analysis.json",
    "json_path": "readouts/raw_R/G3|huhu ; readouts/raw_R/G3edit|huhu",
    "decomposition_status": "underdetermined",
    "ceiling_verdict_G3_orig": null
@@ -4691,7 +4691,7 @@
    "gams_compliance": 0.555,
    "flag": "INVALID-MANIPULATION (GaMS output-language compliance < 0.90)",
    "judge": "local J1",
-   "source_file": "RUN/iter_4/gen_art/gen_art_experiment_14/results/analysis.json",
+   "source_file": "RUN/round-4/experiment-14/src/results/analysis.json",
    "json_path": "readouts/raw_R/G3|slhu ; readouts/raw_R/G3edit|slhu",
    "decomposition_status": "underdetermined",
    "ceiling_verdict_G3_orig": null
@@ -4746,7 +4746,7 @@
    "gams_compliance": 0.13833333333333334,
    "flag": "INVALID-MANIPULATION (GaMS output-language compliance < 0.90)",
    "judge": "local J1",
-   "source_file": "RUN/iter_4/gen_art/gen_art_experiment_14/results/analysis.json",
+   "source_file": "RUN/round-4/experiment-14/src/results/analysis.json",
    "json_path": "readouts/raw_R/G3|huen ; readouts/raw_R/G3edit|huen",
    "decomposition_status": "underdetermined",
    "ceiling_verdict_G3_orig": null
@@ -4801,7 +4801,7 @@
    "gams_compliance": 0.9966666666666667,
    "flag": "",
    "judge": "local J1 (RP)",
-   "source_file": "RUN/iter_4/gen_art/gen_art_experiment_14/results/analysis.json",
+   "source_file": "RUN/round-4/experiment-14/src/results/analysis.json",
    "json_path": "readouts/raw_RP/G3|slsl ; readouts/raw_RP/G3edit|slsl",
    "decomposition_status": "edit-induced",
    "ceiling_verdict_G3_orig": null,
@@ -4857,7 +4857,7 @@
    "gams_compliance": 0.985,
    "flag": "",
    "judge": "local J1 (RP)",
-   "source_file": "RUN/iter_4/gen_art/gen_art_experiment_14/results/analysis.json",
+   "source_file": "RUN/round-4/experiment-14/src/results/analysis.json",
    "json_path": "readouts/raw_RP/G3|ensl ; readouts/raw_RP/G3edit|ensl",
    "decomposition_status": "underdetermined",
    "ceiling_verdict_G3_orig": null
@@ -4912,7 +4912,7 @@
    "gams_compliance": 0.865,
    "flag": "INVALID-MANIPULATION (GaMS output-language compliance < 0.90)",
    "judge": "local J1 (RP)",
-   "source_file": "RUN/iter_4/gen_art/gen_art_experiment_14/results/analysis.json",
+   "source_file": "RUN/round-4/experiment-14/src/results/analysis.json",
    "json_path": "readouts/raw_RP/G3|husl ; readouts/raw_RP/G3edit|husl",
    "decomposition_status": "edit-induced",
    "ceiling_verdict_G3_orig": null,
@@ -4968,7 +4968,7 @@
    "gams_compliance": 1.0,
    "flag": "",
    "judge": "local J1 (RP)",
-   "source_file": "RUN/iter_4/gen_art/gen_art_experiment_14/results/analysis.json",
+   "source_file": "RUN/round-4/experiment-14/src/results/analysis.json",
    "json_path": "readouts/raw_RP/G3|enen ; readouts/raw_RP/G3edit|enen",
    "decomposition_status": "underdetermined",
    "ceiling_verdict_G3_orig": null
@@ -5023,7 +5023,7 @@
    "gams_compliance": 0.0,
    "flag": "INVALID-MANIPULATION (GaMS output-language compliance < 0.90)",
    "judge": "local J1 (RP)",
-   "source_file": "RUN/iter_4/gen_art/gen_art_experiment_14/results/analysis.json",
+   "source_file": "RUN/round-4/experiment-14/src/results/analysis.json",
    "json_path": "readouts/raw_RP/G3|slen ; readouts/raw_RP/G3edit|slen",
    "decomposition_status": "underdetermined",
    "ceiling_verdict_G3_orig": null
@@ -5078,7 +5078,7 @@
    "gams_compliance": 0.9716666666666667,
    "flag": "",
    "judge": "local J1 (RP)",
-   "source_file": "RUN/iter_4/gen_art/gen_art_experiment_14/results/analysis.json",
+   "source_file": "RUN/round-4/experiment-14/src/results/analysis.json",
    "json_path": "readouts/raw_RP/G3|enhu ; readouts/raw_RP/G3edit|enhu",
    "decomposition_status": "underdetermined",
    "ceiling_verdict_G3_orig": null
@@ -5133,7 +5133,7 @@
    "gams_compliance": 1.0,
    "flag": "",
    "judge": "local J1 (RP)",
-   "source_file": "RUN/iter_4/gen_art/gen_art_experiment_14/results/analysis.json",
+   "source_file": "RUN/round-4/experiment-14/src/results/analysis.json",
    "json_path": "readouts/raw_RP/G3|huhu ; readouts/raw_RP/G3edit|huhu",
    "decomposition_status": "underdetermined",
    "ceiling_verdict_G3_orig": null
@@ -5188,7 +5188,7 @@
    "gams_compliance": 0.555,
    "flag": "INVALID-MANIPULATION (GaMS output-language compliance < 0.90)",
    "judge": "local J1 (RP)",
-   "source_file": "RUN/iter_4/gen_art/gen_art_experiment_14/results/analysis.json",
+   "source_file": "RUN/round-4/experiment-14/src/results/analysis.json",
    "json_path": "readouts/raw_RP/G3|slhu ; readouts/raw_RP/G3edit|slhu",
    "decomposition_status": "underdetermined",
    "ceiling_verdict_G3_orig": null
@@ -5243,7 +5243,7 @@
    "gams_compliance": 0.13833333333333334,
    "flag": "INVALID-MANIPULATION (GaMS output-language compliance < 0.90)",
    "judge": "local J1 (RP)",
-   "source_file": "RUN/iter_4/gen_art/gen_art_experiment_14/results/analysis.json",
+   "source_file": "RUN/round-4/experiment-14/src/results/analysis.json",
    "json_path": "readouts/raw_RP/G3|huen ; readouts/raw_RP/G3edit|huen",
    "decomposition_status": "underdetermined",
    "ceiling_verdict_G3_orig": null
@@ -5298,7 +5298,7 @@
    "gams_compliance": 0.9966666666666667,
    "flag": "",
    "judge": "J1 + RG (degenerate)",
-   "source_file": "RUN/iter_4/gen_art/gen_art_experiment_14/results/analysis.json",
+   "source_file": "RUN/round-4/experiment-14/src/results/analysis.json",
    "json_path": "readouts/rg_R/G3|slsl ; readouts/rg_R/G3edit|slsl",
    "decomposition_status": "underdetermined",
    "ceiling_verdict_G3_orig": null
@@ -5353,7 +5353,7 @@
    "gams_compliance": 0.985,
    "flag": "",
    "judge": "J1 + RG (degenerate)",
-   "source_file": "RUN/iter_4/gen_art/gen_art_experiment_14/results/analysis.json",
+   "source_file": "RUN/round-4/experiment-14/src/results/analysis.json",
    "json_path": "readouts/rg_R/G3|ensl ; readouts/rg_R/G3edit|ensl",
    "decomposition_status": "edit-induced",
    "ceiling_verdict_G3_orig": null,
@@ -5409,7 +5409,7 @@
    "gams_compliance": 0.865,
    "flag": "INVALID-MANIPULATION (GaMS output-language compliance < 0.90)",
    "judge": "J1 + RG (degenerate)",
-   "source_file": "RUN/iter_4/gen_art/gen_art_experiment_14/results/analysis.json",
+   "source_file": "RUN/round-4/experiment-14/src/results/analysis.json",
    "json_path": "readouts/rg_R/G3|husl ; readouts/rg_R/G3edit|husl",
    "decomposition_status": "edit-induced",
    "ceiling_verdict_G3_orig": null,
@@ -5465,7 +5465,7 @@
    "gams_compliance": 1.0,
    "flag": "",
    "judge": "J1 + RG (degenerate)",
-   "source_file": "RUN/iter_4/gen_art/gen_art_experiment_14/results/analysis.json",
+   "source_file": "RUN/round-4/experiment-14/src/results/analysis.json",
    "json_path": "readouts/rg_R/G3|enen ; readouts/rg_R/G3edit|enen",
    "decomposition_status": "underdetermined",
    "ceiling_verdict_G3_orig": null
@@ -5520,7 +5520,7 @@
    "gams_compliance": 0.0,
    "flag": "INVALID-MANIPULATION (GaMS output-language compliance < 0.90)",
    "judge": "J1 + RG (degenerate)",
-   "source_file": "RUN/iter_4/gen_art/gen_art_experiment_14/results/analysis.json",
+   "source_file": "RUN/round-4/experiment-14/src/results/analysis.json",
    "json_path": "readouts/rg_R/G3|slen ; readouts/rg_R/G3edit|slen",
    "decomposition_status": "underdetermined",
    "ceiling_verdict_G3_orig": null
@@ -5575,7 +5575,7 @@
    "gams_compliance": 0.9716666666666667,
    "flag": "",
    "judge": "J1 + RG (degenerate)",
-   "source_file": "RUN/iter_4/gen_art/gen_art_experiment_14/results/analysis.json",
+   "source_file": "RUN/round-4/experiment-14/src/results/analysis.json",
    "json_path": "readouts/rg_R/G3|enhu ; readouts/rg_R/G3edit|enhu",
    "decomposition_status": "underdetermined",
    "ceiling_verdict_G3_orig": null
@@ -5630,7 +5630,7 @@
    "gams_compliance": 1.0,
    "flag": "",
    "judge": "J1 + RG (degenerate)",
-   "source_file": "RUN/iter_4/gen_art/gen_art_experiment_14/results/analysis.json",
+   "source_file": "RUN/round-4/experiment-14/src/results/analysis.json",
    "json_path": "readouts/rg_R/G3|huhu ; readouts/rg_R/G3edit|huhu",
    "decomposition_status": "underdetermined",
    "ceiling_verdict_G3_orig": null
@@ -5685,7 +5685,7 @@
    "gams_compliance": 0.555,
    "flag": "INVALID-MANIPULATION (GaMS output-language compliance < 0.90)",
    "judge": "J1 + RG (degenerate)",
-   "source_file": "RUN/iter_4/gen_art/gen_art_experiment_14/results/analysis.json",
+   "source_file": "RUN/round-4/experiment-14/src/results/analysis.json",
    "json_path": "readouts/rg_R/G3|slhu ; readouts/rg_R/G3edit|slhu",
    "decomposition_status": "underdetermined",
    "ceiling_verdict_G3_orig": null
@@ -5740,7 +5740,7 @@
    "gams_compliance": 0.13833333333333334,
    "flag": "INVALID-MANIPULATION (GaMS output-language compliance < 0.90)",
    "judge": "J1 + RG (degenerate)",
-   "source_file": "RUN/iter_4/gen_art/gen_art_experiment_14/results/analysis.json",
+   "source_file": "RUN/round-4/experiment-14/src/results/analysis.json",
    "json_path": "readouts/rg_R/G3|huen ; readouts/rg_R/G3edit|huen",
    "decomposition_status": "underdetermined",
    "ceiling_verdict_G3_orig": null
@@ -5795,7 +5795,7 @@
    "gams_compliance": 0.9966666666666667,
    "flag": "",
    "judge": "J1 + PPI++",
-   "source_file": "RUN/iter_4/gen_art/gen_art_experiment_14/results/analysis.json",
+   "source_file": "RUN/round-4/experiment-14/src/results/analysis.json",
    "json_path": "readouts/ppi_R/G3|slsl ; readouts/ppi_R/G3edit|slsl",
    "decomposition_status": "underdetermined",
    "ceiling_verdict_G3_orig": null
@@ -5850,7 +5850,7 @@
    "gams_compliance": 0.985,
    "flag": "",
    "judge": "J1 + PPI++",
-   "source_file": "RUN/iter_4/gen_art/gen_art_experiment_14/results/analysis.json",
+   "source_file": "RUN/round-4/experiment-14/src/results/analysis.json",
    "json_path": "readouts/ppi_R/G3|ensl ; readouts/ppi_R/G3edit|ensl",
    "decomposition_status": "underdetermined",
    "ceiling_verdict_G3_orig": null
@@ -5905,7 +5905,7 @@
    "gams_compliance": 0.865,
    "flag": "INVALID-MANIPULATION (GaMS output-language compliance < 0.90)",
    "judge": "J1 + PPI++",
-   "source_file": "RUN/iter_4/gen_art/gen_art_experiment_14/results/analysis.json",
+   "source_file": "RUN/round-4/experiment-14/src/results/analysis.json",
    "json_path": "readouts/ppi_R/G3|husl ; readouts/ppi_R/G3edit|husl",
    "decomposition_status": "underdetermined",
    "ceiling_verdict_G3_orig": null
@@ -5960,7 +5960,7 @@
    "gams_compliance": 1.0,
    "flag": "",
    "judge": "J1 + PPI++",
-   "source_file": "RUN/iter_4/gen_art/gen_art_experiment_14/results/analysis.json",
+   "source_file": "RUN/round-4/experiment-14/src/results/analysis.json",
    "json_path": "readouts/ppi_R/G3|enen ; readouts/ppi_R/G3edit|enen",
    "decomposition_status": "underdetermined",
    "ceiling_verdict_G3_orig": null
@@ -6015,7 +6015,7 @@
    "gams_compliance": 0.0,
    "flag": "INVALID-MANIPULATION (GaMS output-language compliance < 0.90)",
    "judge": "J1 + PPI++",
-   "source_file": "RUN/iter_4/gen_art/gen_art_experiment_14/results/analysis.json",
+   "source_file": "RUN/round-4/experiment-14/src/results/analysis.json",
    "json_path": "readouts/ppi_R/G3|slen ; readouts/ppi_R/G3edit|slen",
    "decomposition_status": "underdetermined",
    "ceiling_verdict_G3_orig": null
@@ -6070,7 +6070,7 @@
    "gams_compliance": 0.9716666666666667,
    "flag": "",
    "judge": "J1 + PPI++",
-   "source_file": "RUN/iter_4/gen_art/gen_art_experiment_14/results/analysis.json",
+   "source_file": "RUN/round-4/experiment-14/src/results/analysis.json",
    "json_path": "readouts/ppi_R/G3|enhu ; readouts/ppi_R/G3edit|enhu",
    "decomposition_status": "underdetermined",
    "ceiling_verdict_G3_orig": null
@@ -6125,7 +6125,7 @@
    "gams_compliance": 1.0,
    "flag": "",
    "judge": "J1 + PPI++",
-   "source_file": "RUN/iter_4/gen_art/gen_art_experiment_14/results/analysis.json",
+   "source_file": "RUN/round-4/experiment-14/src/results/analysis.json",
    "json_path": "readouts/ppi_R/G3|huhu ; readouts/ppi_R/G3edit|huhu",
    "decomposition_status": "underdetermined",
    "ceiling_verdict_G3_orig": null
@@ -6180,7 +6180,7 @@
    "gams_compliance": 0.555,
    "flag": "INVALID-MANIPULATION (GaMS output-language compliance < 0.90)",
    "judge": "J1 + PPI++",
-   "source_file": "RUN/iter_4/gen_art/gen_art_experiment_14/results/analysis.json",
+   "source_file": "RUN/round-4/experiment-14/src/results/analysis.json",
    "json_path": "readouts/ppi_R/G3|slhu ; readouts/ppi_R/G3edit|slhu",
    "decomposition_status": "underdetermined",
    "ceiling_verdict_G3_orig": null
@@ -6235,7 +6235,7 @@
    "gams_compliance": 0.13833333333333334,
    "flag": "INVALID-MANIPULATION (GaMS output-language compliance < 0.90)",
    "judge": "J1 + PPI++",
-   "source_file": "RUN/iter_4/gen_art/gen_art_experiment_14/results/analysis.json",
+   "source_file": "RUN/round-4/experiment-14/src/results/analysis.json",
    "json_path": "readouts/ppi_R/G3|huen ; readouts/ppi_R/G3edit|huen",
    "decomposition_status": "underdetermined",
    "ceiling_verdict_G3_orig": null
@@ -6315,7 +6315,7 @@
    "verified_MDE_G3": 0.4220094473750568,
    "verified_MDE_G3_edit": 2.3188880001587497,
    "verified_abs_G3_edit_bound_90": 1.9138666777053137,
-   "source": "RUN/iter_4/gen_art/gen_art_experiment_15/results/analysis.json :: headline/R/RAW/*/mde ; verdict/abs_G3_edit_bound_90"
+   "source": "RUN/round-4/experiment-15/src/results/analysis.json :: headline/R/RAW/*/mde ; verdict/abs_G3_edit_bound_90"
   }
  },
  "rule": "edit-induced: G3_edit CI95 excl 0 & |G3_edit|>=m/2; baseline: G3_orig CI95 excl 0 & G3_edit CI90 within +-m; else underdetermined"

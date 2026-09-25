@@ -48,13 +48,13 @@ def _run_root() -> Path:
 
 
 RUN = _run_root()
-DS_DIR = RUN / "iter_1/gen_art/gen_art_dataset_1"
-E8 = RUN / "iter_2/gen_art/gen_art_experiment_8"
-E9 = RUN / "iter_3/gen_art/gen_art_experiment_9"
-E11 = RUN / "iter_3/gen_art/gen_art_experiment_11"
-E14 = RUN / "iter_4/gen_art/gen_art_experiment_14"
-E15 = RUN / "iter_4/gen_art/gen_art_experiment_15"
-RES1 = RUN / "iter_4/gen_art/gen_art_research_1"
+DS_DIR = RUN / "round-1/dataset-1/src"
+E8 = RUN / "round-2/experiment-8/src"
+E9 = RUN / "round-3/experiment-9/src"
+E11 = RUN / "round-3/experiment-11/src"
+E14 = RUN / "round-4/experiment-14/src"
+E15 = RUN / "round-4/experiment-15/src"
+RES1 = RUN / "round-4/research-1/src"
 
 SEED = 20260925
 MAX_NEW = 128

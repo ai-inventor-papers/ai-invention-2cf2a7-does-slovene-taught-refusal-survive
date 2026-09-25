@@ -92,12 +92,12 @@
  "readout_provenance": {
   "n_rows": 19195,
   "source_sha256": {
-   "iter_3/gen_art/gen_art_experiment_9/results/gemma_it/gens.jsonl": "b892b3b2b26ef9b12a97a94487359d9aa3d2752124fb813d8f9b019e4c722465",
-   "iter_3/gen_art/gen_art_experiment_9/results/gams3_it/gens.jsonl": "ee0dc99acbcc5150c8ca01a04dc1430739d559572d9215373bb545398e91bd67",
-   "iter_3/gen_art/gen_art_experiment_11/results/final/gens_gemma_it.jsonl": "dec1c4d442ef95754b3813f8cdb042e4240b9ff0b869b1f8fa20f63672036146",
-   "iter_2/gen_art/gen_art_experiment_5/outputs/final/gen_gemma_it.jsonl": "c2e311209368bb2aeddde25940e23d8ba8f99e9303ef9bd17dfa92b56e79f2e1",
-   "iter_3/gen_art/gen_art_experiment_11/results/final/gens_gams3_it.jsonl": "a587e7e99419cd284eff1a097179fbbe2e34238f011179ca511f8c4c56aa5303",
-   "iter_2/gen_art/gen_art_experiment_5/outputs/final/gen_gams3_it.jsonl": "c26ee620c763b0cb6b2330fe751461f243ce03cb300010a4f685d453357a49e8"
+   "round-3/experiment-9/src/results/gemma_it/gens.jsonl": "b892b3b2b26ef9b12a97a94487359d9aa3d2752124fb813d8f9b019e4c722465",
+   "round-3/experiment-9/src/results/gams3_it/gens.jsonl": "ee0dc99acbcc5150c8ca01a04dc1430739d559572d9215373bb545398e91bd67",
+   "round-3/experiment-11/src/results/final/gens_gemma_it.jsonl": "dec1c4d442ef95754b3813f8cdb042e4240b9ff0b869b1f8fa20f63672036146",
+   "round-2/experiment-5/src/outputs/final/gen_gemma_it.jsonl": "c2e311209368bb2aeddde25940e23d8ba8f99e9303ef9bd17dfa92b56e79f2e1",
+   "round-3/experiment-11/src/results/final/gens_gams3_it.jsonl": "a587e7e99419cd284eff1a097179fbbe2e34238f011179ca511f8c4c56aa5303",
+   "round-2/experiment-5/src/outputs/final/gen_gams3_it.jsonl": "c26ee620c763b0cb6b2330fe751461f243ce03cb300010a4f685d453357a49e8"
   },
   "labels_present": false,
   "note": "frozen re-readout frame; no labels were produced"
