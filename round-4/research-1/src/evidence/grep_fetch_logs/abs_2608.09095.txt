@@ -1,0 +1,29 @@
+# 2026-09-24T18:25:20Z https://arxiv.org/abs/2608.09095
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/abs/2608.09095
+Type: HTML
+Length: 8002 chars (truncated)
+
+--- Content ---
+
+Skip to main content [](https://arxiv.org/IgnoreMe) [ ](https://arxiv.org/) [ Search ](https://arxiv.org/search) [Submit](https://arxiv.org/user/create) [Donate](https://info.arxiv.org/about/donate.html) [Log in](https://arxiv.org/login)
+
+Search arXiv
+
+Press Enter to search * [Advanced search](https://arxiv.org/search/advanced)
+
+# Computer Science > Artificial Intelligence
+
+**arXiv:2608.09095** (cs) 
+
+[Submitted on 10 Aug 2026]
+
+# Title:Who Bridges Safety? Identifying and Targeting Cross-Lingual Shared Safety Pathways
+
+Authors:[Shuyi Miao](https://arxiv.org/search/cs?searchtype=author&query=Miao,+S), [Wangjie Qiu](https://arxiv.org/search/cs?searchtype=author&query=Qiu,+W), [Pengyang Shao](https://arxiv.org/search/cs?searchtype=author&query=Shao,+P), [Canran Xiao](https://arxiv.org/search/cs?searchtype=author&query=Xiao,+C), [Fei Shen](https://arxiv.org/search/cs?searchtype=author&query=Shen,+F), [Zhiming Zheng](https://arxiv.org/search/cs?searchtype=author&query=Zheng,+Z), [Tat-Seng Chua](https://arxiv.org/search/cs?searchtype=author&query=Chua,+T)
+
+View a PDF of the paper titled Who Bridges Safety? Identifying and Targeting Cross-Lingual Shared Safety Pathways, by Shuyi Miao and 6 other authors
+
+[View PDF](/pdf/2608.09095) [HTML (experimental)](https://arxiv.org/html/2608.09095v1)
+
+> Abstract:Uncovering the internal mechanisms underlying the safety capabilities of large language models (LLMs) is crucial for developing trustworthy artificial intelligence. Currently, mechanistic interpretability studies on multilingual safety are largely confined to local components, such as isolated neurons. However, this static and fragmented perspective overlooks the synergy among components and fails to elucidate how safety signals dynamically propagate within the model to drive safety decisions ultimately. In this work, we move beyond isolated neurons to identify and target the cross-layer functional pathways formed during safety signal propagation, thereby uncovering the mechanisms driving the cross-lingual safety gap. Specifically, we first identify monolingual safety pathways and validate their impact on refusing harmful requests. Subsequent cross-lingual analyses reveal a sparse subset of cross-lingual shared safety pathways, confirming that this intersection acts as the internal bridge transferring safety capabilities from high-resource (HR) languages to non-high-resource (NHR) languages. Building on these mechanistic findings, we propose a pathways-targeted alig

@@ -1,0 +1,29 @@
+# 2026-09-24T18:36:09Z https://arxiv.org/abs/2401.01854
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/abs/2401.01854
+Type: HTML
+Length: 8104 chars (truncated)
+
+--- Content ---
+
+Skip to main content [](https://arxiv.org/IgnoreMe) [ ](https://arxiv.org/) [ Search ](https://arxiv.org/search) [Submit](https://arxiv.org/user/create) [Donate](https://info.arxiv.org/about/donate.html) [Log in](https://arxiv.org/login)
+
+Search arXiv
+
+Press Enter to search * [Advanced search](https://arxiv.org/search/advanced)
+
+# Computer Science > Computation and Language
+
+**arXiv:2401.01854** (cs) 
+
+[Submitted on 3 Jan 2024 ([v1](https://arxiv.org/abs/2401.01854v1)), last revised 21 May 2024 (this version, v4)]
+
+# Title:Multilingual Instruction Tuning With Just a Pinch of Multilinguality
+
+Authors:[Uri Shaham](https://arxiv.org/search/cs?searchtype=author&query=Shaham,+U), [Jonathan Herzig](https://arxiv.org/search/cs?searchtype=author&query=Herzig,+J), [Roee Aharoni](https://arxiv.org/search/cs?searchtype=author&query=Aharoni,+R), [Idan Szpektor](https://arxiv.org/search/cs?searchtype=author&query=Szpektor,+I), [Reut Tsarfaty](https://arxiv.org/search/cs?searchtype=author&query=Tsarfaty,+R), [Matan Eyal](https://arxiv.org/search/cs?searchtype=author&query=Eyal,+M)
+
+View a PDF of the paper titled Multilingual Instruction Tuning With Just a Pinch of Multilinguality, by Uri Shaham and 5 other authors
+
+[View PDF](/pdf/2401.01854) [HTML (experimental)](https://arxiv.org/html/2401.01854v4)
+
+> Abstract:As instruction-tuned large language models (LLMs) gain global adoption, their ability to follow instructions in multiple languages becomes increasingly crucial. In this work, we investigate how multilinguality during instruction tuning of a multilingual LLM affects instruction-following across languages from the pre-training corpus. We first show that many languages transfer some instruction-following capabilities to other languages from even monolingual tuning. Furthermore, we find that only 40 multilingual examples integrated in an English tuning set substantially improve multilingual instruction-following, both in seen and unseen languages during tuning. In general, we observe that models tuned on multilingual mixtures exhibit comparable or superior performance in multiple languages compared to monolingually tuned models, despite training on 10x fewer examples in those languages. Finally, we find that diversifying the instruction tuning set with even just 2-4 languages significantly improves cross-lingual generalization. Our results suggest that building massively multilingual instruction-tuned models can be done with only a very small set of multilingual ins

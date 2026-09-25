@@ -1,0 +1,9 @@
+# 2026-09-24T18:41:40Z https://arxiv.org/pdf/2401.16765 :: respond in|answer in|output language|response language|reply in|in English regardless|language of the response|respond(s|ing)? (only )?in English|answer(s|ing)? in English|in the same language
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2401.16765
+Type: PDF
+Pattern: respond in|answer in|output language|response language|reply in|in English regardless|language of the response|respond(s|ing)? (only )?in English|answer(s|ing)? in English|in the same language (0 matches in 76969 chars)
+
+--- Content ---
+
+No matches found for pattern: respond in|answer in|output language|response language|reply in|in English regardless|language of the response|respond(s|ing)? (only )?in English|answer(s|ing)? in English|in the same language

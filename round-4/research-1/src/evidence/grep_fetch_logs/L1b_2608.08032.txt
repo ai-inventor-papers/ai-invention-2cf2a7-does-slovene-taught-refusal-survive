@@ -1,0 +1,21 @@
+# 2026-09-24T18:28:06Z https://arxiv.org/pdf/2608.08032 :: respond in|answer in|output language|response language|reply in|in English regardless|language of the response|respond only in|language of (the )?(output|generation)|write late|written late
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2608.08032
+Type: PDF
+Pattern: respond in|answer in|output language|response language|reply in|in English regardless|language of the response|respond only in|language of (the )?(output|generation)|write late|written late (1 matches in 22260 chars)
+
+--- Content ---
+
+88:Published at the Workshop on Actionable Interpretability at COLM 2026
+Decided Upstream, Written Late:
+Locating and Pricing the Cross-Lingual Refusal Circuit of a
+Multilingual MoE
+Ramakrishna P. Kompella
+G¨odel Machines
+rk@goedelmachines.com
+Aadit Mahajan
+G¨odel Machines
+IIT Madras
+aadit2003@outlook.com
+Abstract
+Safety alignment in multilingual models is unev...

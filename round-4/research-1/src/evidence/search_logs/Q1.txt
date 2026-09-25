@@ -1,0 +1,44 @@
+# 2026-09-24T18:27:09Z scholarly :: respond in English jailbreak multilingual safety
+Search: respond in English jailbreak multilingual safety  [scholarly via openalex]
+Found: 10 results
+
+1. "Do Anything Now": Characterizing and Evaluating In-The-Wild Jailbreak Prompts on Large Language Models
+   https://doi.org/10.1145/3658644.3670388
+   2024 · cited by 229...
+
+2. Red teaming ChatGPT via Jailbreaking: Bias, Robustness, Reliability and Toxicity
+   https://doi.org/10.48550/arxiv.2301.12867
+   arXiv (Cornell University) · 2023 · cited by 173...
+
+3. Multilingual Jailbreak Challenges in Large Language Models
+   https://doi.org/10.48550/arxiv.2310.06474
+   arXiv (Cornell University) · 2023 · cited by 16...
+
+4. A survey of multilingual large language models
+   https://doi.org/10.1016/j.patter.2024.101118
+   Patterns · 2025 · cited by 105...
+
+5. GPT-4 Technical Report
+   https://doi.org/10.4230/lipics.cosit.2024.11
+   arXiv (Cornell University) · 2023 · cited by 2490...
+
+6. Low-Resource Languages Jailbreak GPT-4
+   https://doi.org/10.48550/arxiv.2310.02446
+   arXiv (Cornell University) · 2023 · cited by 21...
+
+7. A Wolf in Sheep’s Clothing: Generalized Nested Jailbreak Prompts can Fool Large Language Models Easily
+   https://doi.org/10.18653/v1/2024.naacl-long.118
+   2024 · cited by 55...
+
+8. "Do Anything Now": Characterizing and Evaluating In-The-Wild Jailbreak Prompts on Large Language Models
+   https://doi.org/10.48550/arxiv.2308.03825
+   arXiv (Cornell University) · 2023 · cited by 44...
+
+9. The Language Barrier: Dissecting Safety Challenges of LLMs in Multilingual Contexts
+   https://doi.org/10.18653/v1/2024.findings-acl.156
+   2024 · cited by 20...
+
+10. DrAttack: Prompt Decomposition and Reconstruction Makes Powerful LLMs Jailbreakers
+   https://doi.org/10.18653/v1/2024.findings-emnlp.813
+   2024 · cited by 24...
+
