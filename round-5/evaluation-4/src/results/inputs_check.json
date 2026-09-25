@@ -1,0 +1,146 @@
+{
+ "exp14_rows": {
+  "path": "iter_4/gen_art/gen_art_experiment_14/results/rows_final.jsonl",
+  "exists": true,
+  "bytes": 23209877,
+  "sha256": "d5aebff434b200ede1b749585f82a477a0357b2cd2db84eab3932752b1a95d42"
+ },
+ "exp14_ttj": {
+  "path": "iter_4/gen_art/gen_art_experiment_14/results/labels/ttj_translations.jsonl",
+  "exists": true,
+  "bytes": 3578046,
+  "sha256": "7fac78a8e81415824f70bdb21e4da3b6c050823bc3dbec032c2547f4df2b6140"
+ },
+ "exp14_labels": {
+  "path": "iter_4/gen_art/gen_art_experiment_14/results/labels/labels.jsonl",
+  "exists": true,
+  "bytes": 4562510,
+  "sha256": "777bad493da3a4154b0133866a481094b16e9bd24dee173b24b4c12b676b09ce"
+ },
+ "exp14_compliance": {
+  "path": "iter_4/gen_art/gen_art_experiment_14/results/cells_compliance.json",
+  "exists": true,
+  "bytes": 4530,
+  "sha256": "d73a6ae6cb306686279f6bfa9591f40105f20ec63b1c70213bb5ee3095b83cf1"
+ },
+ "exp14_analysis": {
+  "path": "iter_4/gen_art/gen_art_experiment_14/results/analysis.json",
+  "exists": true,
+  "bytes": 305298,
+  "sha256": "e15df12cb9a859ff9f6628cca1e3d7c1b9d7dd152d96343b1310c6c2e98fa962"
+ },
+ "exp14_tables": {
+  "path": "iter_4/gen_art/gen_art_experiment_14/results/RESULTS_tables.md",
+  "exists": true,
+  "bytes": 19250,
+  "sha256": "8e1c1160e7fad79ace9cdc2156c1fdc478e259f5b3fef9358f34455750212715"
+ },
+ "exp14_judge_validity": {
+  "path": "iter_4/gen_art/gen_art_experiment_14/results/judge_validity.json",
+  "exists": true,
+  "bytes": 23804,
+  "sha256": "3cebe7a9608a7b61bc5f126be37b002881ffd84c57d71c0006e90eef1d8c59d6"
+ },
+ "exp14_items": {
+  "path": "iter_4/gen_art/gen_art_experiment_14/data/items.jsonl",
+  "exists": true,
+  "bytes": 288062,
+  "sha256": "c49ffb740d73ac4d76a97961a6882688da9f3018c3934ec0d0d4248953534479"
+ },
+ "exp14_sr_templates": {
+  "path": "iter_4/gen_art/gen_art_experiment_14/data/strongreject_judge_templates.json",
+  "exists": true,
+  "bytes": 18451,
+  "sha256": "6d01841899e99f1f57c4f19153056051684ede2a7e1b54ebbb37b5ddff981768"
+ },
+ "exp14_human_audit": {
+  "path": "iter_4/gen_art/gen_art_experiment_14/results/human_audit_request.json",
+  "exists": true,
+  "bytes": 951,
+  "sha256": "4621a46fbdf7b2c22a8c4dd58775951a0df1c9f60e00f60905cdfa37ebb97cea"
+ },
+ "exp14_adj_frame_g": {
+  "path": "iter_4/gen_art/gen_art_experiment_14/adjudication/frame_g.json",
+  "exists": true,
+  "bytes": 10569,
+  "sha256": "ffd5ad21ef84c1a26519b5c16ab579fb1a88ea0b753e24757521ce376f59f668"
+ },
+ "exp14_adj_key_g": {
+  "path": "iter_4/gen_art/gen_art_experiment_14/adjudication/_key_g.json",
+  "exists": true,
+  "bytes": 5397,
+  "sha256": "b41882114242857f50874012a08acae618b9f0aa2fb537e9aa2bc4963dc16805"
+ },
+ "exp14_adj_labels_g": {
+  "path": "iter_4/gen_art/gen_art_experiment_14/adjudication/author_labels_g.json",
+  "exists": true,
+  "bytes": 2451,
+  "sha256": "aa4e340c61f9dfe48ff1b8a9534de5d34ba83c6bf7d4c349cbb2790ffaaac915"
+ },
+ "exp14_stats_core": {
+  "path": "iter_4/gen_art/gen_art_experiment_14/src/stats_core.py",
+  "exists": true,
+  "bytes": 3975,
+  "sha256": "4423640109ef20959184761d83729dac31e92385f780a2b5556fe88d5599c069"
+ },
+ "exp15_rows": {
+  "path": "iter_4/gen_art/gen_art_experiment_15/results/rows_final.jsonl",
+  "exists": true,
+  "bytes": 46882128,
+  "sha256": "4eb6a514fc7c5207bec1006ec1474fe5487b6c1bed0cb634eec6a0aca959c1f1"
+ },
+ "exp15_ttj": {
+  "path": "iter_4/gen_art/gen_art_experiment_15/results/ttj.jsonl",
+  "exists": true,
+  "bytes": 2516144,
+  "sha256": "0530e2cd344a445c48359a8f6b8d19747e6a6d986c41f741aabbba3643756d16"
+ },
+ "exp15_analysis": {
+  "path": "iter_4/gen_art/gen_art_experiment_15/results/analysis.json",
+  "exists": true,
+  "bytes": 106860,
+  "sha256": "dfdf21b487de4ed0fb9f8682e596aa47d0263eca76f50b189fbe34b97e1fe207"
+ },
+ "exp15_headline": {
+  "path": "iter_4/gen_art/gen_art_experiment_15/results/headline_flat.json",
+  "exists": true,
+  "bytes": 7485,
+  "sha256": "19e9a6e175447ef7038d91761dc337dd951154e79ae9c1714b25b8fe5f2f7ef0"
+ },
+ "exp15_items": {
+  "path": "iter_4/gen_art/gen_art_experiment_15/data/items.jsonl",
+  "exists": true,
+  "bytes": 965351,
+  "sha256": "352e89330d2aa00bcfcb3c7177eac68e90ca086fc06b36e2405295f5be0260e3"
+ },
+ "eval3_matrices": {
+  "path": "iter_4/gen_art/gen_art_evaluation_3/results/judge_error_matrices_v2.json",
+  "exists": true,
+  "bytes": 52000,
+  "sha256": "21301414cfb2163a8072d8d6935dc34c1bd6dcf702182c63362ba5965699a883"
+ },
+ "eval3_readout": {
+  "path": "iter_4/gen_art/gen_art_evaluation_3/labels/readout_rows.jsonl.gz",
+  "exists": true,
+  "bytes": 16783491,
+  "sha256": "5e8c21b96ac0970e5d80d155f886b5735fb766330aeb9f58f1ba693fdc8f4b06"
+ },
+ "eval3_rubric_v2": {
+  "path": "iter_4/gen_art/gen_art_evaluation_3/prompts/adjudication_rubric_v2.md",
+  "exists": true,
+  "bytes": 1570,
+  "sha256": "fc3b93fe07975b80a4447507484b76ff24d53c0c920d94aa0b9a027844326e2c"
+ },
+ "exp13_tier_table": {
+  "path": "iter_4/gen_art/gen_art_experiment_13/results/tier_table.json",
+  "exists": true,
+  "bytes": 3210,
+  "sha256": "4fc3b4038d5250d7ed119b32e70a23ab3eba3a63f7d4071313e144714f90bfc1"
+ },
+ "eval2_matrices": {
+  "path": "iter_3/gen_art/gen_art_evaluation_2/judge_error_matrices.json",
+  "exists": true,
+  "bytes": 16806,
+  "sha256": "f49e245789e317663ea221c4cd27b69cb4346936f76a613b058f965f215ca8d0"
+ }
+}
