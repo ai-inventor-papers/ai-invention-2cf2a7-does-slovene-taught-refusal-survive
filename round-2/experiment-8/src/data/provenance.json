@@ -8,10 +8,10 @@
     "evaluation_split_loaded": false
   },
   "iter1_sources": {
-    "score": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_1/gen_art/gen_art_experiment_4/data/splits/score.jsonl",
-    "trial_probe_excluded": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_1/gen_art/gen_art_experiment_4/data/splits/trial_probe.jsonl",
-    "construct": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_1/gen_art/gen_art_experiment_4/data/splits/construct.jsonl",
-    "frozen_groups": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_1/gen_art/gen_art_dataset_1/outputs/frozen_groups.json"
+    "score": "../../../../round-1/experiment-4/src/data/splits/score.jsonl",
+    "trial_probe_excluded": "../../../../round-1/experiment-4/src/data/splits/trial_probe.jsonl",
+    "construct": "../../../../round-1/experiment-4/src/data/splits/construct.jsonl",
+    "frozen_groups": "../../../../round-1/dataset-1/src/outputs/frozen_groups.json"
   },
   "mt": {
     "model": "facebook/nllb-200-distilled-1.3B",

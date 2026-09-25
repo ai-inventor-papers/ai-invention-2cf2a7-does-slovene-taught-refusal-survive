@@ -24,9 +24,9 @@
   ]
  },
  "splits": {
-  "source": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_1/gen_art/gen_art_dataset_1/full_data_out.json",
+  "source": "../../../round-1/dataset-1/src/full_data_out.json",
   "source_sha256": "35c98bc5d5336829af33a341d3d8b92a83d696e99a530ee5bc947d262c30803c",
-  "harmless_source": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_1/gen_art/gen_art_experiment_2/data/alpaca_harmless.jsonl",
+  "harmless_source": "../../../round-1/experiment-2/src/data/alpaca_harmless.jsonl",
   "seed": 20260924,
   "depth600_ids_sha256": "21b1bc99684928c2487648d299de2c1fb2e799d65664bf0a78eed1880cccd627",
   "d300_ids_sha256": "5192d825dc1802a53aea353361ae5a4a0988e0a151ed39b7e561a61d619c7b0a",

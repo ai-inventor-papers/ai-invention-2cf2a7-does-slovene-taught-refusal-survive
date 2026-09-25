@@ -17,7 +17,7 @@ import os
 from pathlib import Path
 import json as _json
 from loguru import logger as _lg
-_E4 = Path('/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_1/gen_art/gen_art_experiment_4')
+_E4 = Path(__file__).resolve().parents[4] / 'round-1/experiment-4/src'
 RESULTS = _E4 / 'results'
 SPLITS = _E4 / 'data' / 'splits'
 SEED = 20260923

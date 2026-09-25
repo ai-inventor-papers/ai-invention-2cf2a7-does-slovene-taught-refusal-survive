@@ -14,11 +14,11 @@ from loguru import logger
 
 WS = Path(__file__).resolve().parent.parent
 ITER1 = Path(__file__).resolve().parents[4] / "round-1"
-EXP1 = ITER1 / "gen_art_experiment_1"
-EXP2 = ITER1 / "gen_art_experiment_2"
-EXP3 = ITER1 / "gen_art_experiment_3"
-EXP4 = ITER1 / "gen_art_experiment_4"
-DSET = ITER1 / "gen_art_dataset_1"
+EXP1 = ITER1 / "experiment-1/src"
+EXP2 = ITER1 / "experiment-2/src"
+EXP3 = ITER1 / "experiment-3/src"
+EXP4 = ITER1 / "experiment-4/src"
+DSET = ITER1 / "dataset-1/src"
 LABELS = WS / "labels"
 WORK = WS / "work"
 FIG = WS / "figures"

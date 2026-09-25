@@ -1,4 +1,8 @@
 #!/usr/bin/env python3
+# NOTE (published copy): this file names server paths this repository
+# does not publish (a stage it does not ship, or another run's workspace),
+# so the steps that read them will not run from a clone as written:
+#   /ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/iter_1/gen_hypo/claude_agent/work/heretic_config.default.toml
 """Per-model GPU block: LOAD -> checks -> Heretic directions -> PHASE O (original) -> PHASE H (Heretic study with
 bilingual off-objective logging) -> PHASE P (selection, random edits, lambda curve) -> save.
 

@@ -1,4 +1,8 @@
 #!/usr/bin/env python3
+# NOTE (published copy): this file names server paths this repository
+# does not publish (a stage it does not ship, or another run's workspace),
+# so the steps that read them will not run from a clone as written:
+#   /ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_1/gen_strat/gen_strat_1/build_strategy.py
 """Freeze protocol.json (SCREEN-SPEC v1 verbatim, selection rule, thresholds, lexicon, prefix sets, split manifests
 with sha256) and write protocol.sha256 BEFORE any GPU scoring."""
 import hashlib
