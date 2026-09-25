@@ -1,0 +1,231 @@
+# 2026-09-25T00:46:22Z https://arxiv.org/pdf/2412.11704 :: safety performance|less safe|safety degrad|MultiJail|harmful rate|safety of|unsafe
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2412.11704
+Type: PDF
+Pattern: safety performance|less safe|safety degrad|MultiJail|harmful rate|safety of|unsafe (7 matches in 157687 chars)
+
+--- Content ---
+
+1703:...e weight difference between the source base and
+chat models. We propose ElChat, a new language adaptation method for chat LLMs that
+adapts a chat model directly on target unlabeled data, without a base model. It elicits chat
+abilities by injecting information from the source chat model. ElChat offers more robust
+and competitive target language and safety performance while achieving superior English,
+chat, and instruction-following abilities compared to CV.1
+1
+Introduction
+Vocabulary expansion (VE) is the de-facto approach to adapting large language models (LLMs) in a target
+language (Cui et al., 2024; Fujii et al., 2024; Choi et al., 2024). It typically consists of two main steps: (i) new
+tokens are added to ...
+--
+30735:...2.5. This is primarily due to the use of Merge
+instead of Copy in ElChat (see Table 7). Specifi-
+cally, ElChat without Copy follows similar trends to
+ElChat, while ElChat without Merge exhibits simi-
+lar trends to Chat+VE and CV. This is intuitive, as
+merging a model with the lowest target safety per-
+formance (i.e., Chat) with Chat+VE can degrade
+safety performance.
+We finally find that ElChat, CV, and Chat+VE out-
+perform the Chat baseline across tasks and models,
+with gains ranging from 1.4 (TruthfulQA with Llama 3.1 using ElChat) to 20 points (TruthfulQA
+with Qwen2.5 using ElChat). The only exceptions are CV and Chat+VE in TruthfulQA, where they
+underperform Chat by 11 and 14 points, respectively. This instability highlights the advantage of ElChat,
+as it consistently enhances safety performance over Chat across tasks.
+Chat and Instruction-following.
+Figure 3 (b) shows the aggregated mean performance across chat and
+instruction-following tasks in English (source). We first analyze the extent to which ElChat impacts perfor-
+mance on chat and instruction-following tasks compared to the Chat baseline. Note that some performance
+degradation i...
+--
+123285:...fety.
+Table 8 shows that the results of Qwen3 align with those of Qwen2.5 in Figure 3. Specifically,
+CV outperforms ElChat on ToxiGen and ImplicitHate by up to 5 points, while ElChat performs slightly
+better on TruthfulQA (except for Telugu). Notably, both ElChat and CV generally surpass the Chat
+baseline across tasks, indicating that they improve safety performance even in this newer, larger model.
+Chat and Instruction-following.
+Table 8 demonstrates that ElChat significantly better recovers chat
+and instruction-following abilities compared to CV across all tasks and languages. For example, ElChat
+shows drops of up to 6, 6, and 0.41 points from the Chat baseline in IFEval, GSM8K, and MT-Bench,
+respectively. ...
+--
+130268:...Tamil
+{passage} \n ேகள்வ¥: {question} \n A. {answer 1}\n B. {an-
+swer 2}\n C. {answer 3}\n D. {answer 4}\n பத¦ல்:
+Telugu
+{passage} \n పȼశన్: {question} \n A. {answer 1}\n B. {answer
+2}\n C. {answer 3}\n D. {answer 4}\n జవాబు:
+34
+
+Published in Transactions on Machine Learning Research (09/2025)
+Table 6: Qwen2.5 2 7B chat, instruction-following, and safety performance. Darker blue and red shades
+indicate higher positive and negative relative performance change over Chat per language and task, re-
+spectively. Experiments are limited to models that use the chat template, except for IFEval to verify the
+performance gain of CV over its adapted base model, Base+VE.
+IFEval
+GSM8K
+MT-Bench
+am
+bn
+my
+gu
+si
+ta
+te
+am
+bn
+my...
+--
+131823:...09
+.10
+.07
+.09
+.09
+Chat+CPT
+.55
+.59
+.38
+.56
+.47
+.59
+.55
+.17
+.17
+.10
+.13
+.13
+.14
+.12
+.16
+.16
+.11
+.13
+.13
+.14
+.12
+Chat+VE
+.59
+.56
+.51
+.60
+.49
+.59
+.56
+.18
+.21
+.19
+.21
+.21
+.19
+.20
+.14
+.19
+.18
+.20
+.19
+.18
+.18
+ElChat
+.54
+.60
+.49
+.58
+.53
+.60
+.61
+.12
+.18
+.17
+.17
+.16
+.16
+.16
+.09
+.17
+.17
+.17
+.14
+.15
+.15
+Table 7: Llama 3.1 8B chat, instruction-following, and safety performance. Darker blue and red shades
+indicate higher positive and negative relative performance change over Chat per language and task, respec-
+tively. (L) stands for linear merging. Experiments are limited to models that use the chat template, except
+for IFEval to verify the performance gain of CV over its adapted base model, Base+VE.
+IFEval
+GSM8K
+MT-Benc...
+--
+134076:...
+.21
+.22
+.06
+.17
+.15
+.18
+.14
+.16
+.14
+ElChat \Copy
+.42
+.45
+.27
+.16
+.52
+.26
+.60
+.10
+.19
+.15
+.19
+.16
+.18
+.16
+.06
+.17
+.15
+.18
+.14
+.16
+.14
+ElChat (L)
+.43
+.44
+.23
+.14
+.46
+.24
+.63
+.10
+.18
+.14
+.18
+.14
+.17
+.15
+.06
+.16
+.14
+.17
+.12
+.16
+.13
+35
+
+Published in Transactions on Machine Learning Research (09/2025)
+Table 8: Qwen3 14B chat, instruction-following, and safety performance. Darker blue and red shades indicate
+higher positive and negative relative performance change over Chat per language and task, respectively.
+Experiments are limited to models that use the chat template, except for IFEval to verify the performance
+gain of CV over its adapted base model, Base+VE.
+IFEval
+GSM8K
+MT-Bench
+am
+bn
+te
+am
+bn
+te
+am
+bn
+te
+Base...

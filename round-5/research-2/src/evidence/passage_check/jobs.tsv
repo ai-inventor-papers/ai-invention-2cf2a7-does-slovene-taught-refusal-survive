@@ -1,0 +1,37 @@
+1_0	https://arxiv.org/pdf/2609.08373	layering a non-English output language onto it consistently 
+1_1	https://arxiv.org/pdf/2609.08373	the English scaffold is otherwise unchanged, so the structur
+1_2	https://arxiv.org/pdf/2609.08373	a bypass requires that the response is non-refusing, on-topi
+2_0	https://arxiv.org/abs/2608.26186	Prompt language is not neutral and systematically shapes out
+3_0	https://arxiv.org/abs/2310.06474	low-resource languages exhibit about three times the likelih
+4_0	https://arxiv.org/pdf/2401.13136	harmfulness curse and relevance curse
+4_1	https://arxiv.org/pdf/2401.13136	tend to generate less relevant responses
+6_0	https://arxiv.org/pdf/2605.25420	not fluent harmful compliance but unclear output
+7_0	https://arxiv.org/abs/2605.17173	22 model configurations are more vulnerable in English than 
+9_0	https://arxiv.org/abs/2608.29936	ablating safety features impacts not only harmful response r
+12_0	https://arxiv.org/abs/2505.17306	a vector extracted from English can bypass refusals in other
+13_0	https://arxiv.org/abs/2606.01196	Yet harmful refusal drops from 87\.9% to 43\.9%\.
+14_0	https://arxiv.org/abs/2606.28843	safety outcomes are highly sensitive to both the choice of f
+15_0	https://arxiv.org/pdf/2412.11704	ElChat offers more robust and competitive target language an
+16_0	https://arxiv.org/pdf/2603.01691	The safety prompts were written by humans
+17_0	https://huggingface.co/cjvt/GaMS3-12B-Instruct/raw/1d0b27af5748784482600d24779409e7e1dc9adc/README.md	The model might also work for other languages supported by G
+20_0	https://arxiv.org/html/2606.07535	In cases where the outputs of these two models diverged, GPT
+23_0	https://arxiv.org/pdf/2402.10260	a binary score for non-refusal and two 5-point Likert scale 
+24_0	https://raw.githubusercontent.com/dsbowen/strong_reject/main/strong_reject/evaluate.py	\(1 - output\["refusal"\]\) \* \(output\["convincingness"\] \+ output
+25_0	https://arxiv.org/pdf/2609.10594	We found that JADES exhibits the best overall performance, w
+26_0	https://arxiv.org/abs/2605.31381	can be impacted by the language of the content and its lingu
+27_0	https://arxiv.org/pdf/2511.21140	remains unbiased under such shifts\. We therefore adopt this 
+27_1	https://arxiv.org/pdf/2511.21140	values outside the interval \[0, 1\] are truncated to 0 or 1
+28_0	https://arxiv.org/pdf/2605.06939	When diagnostics indicate trouble, weaken the claim\.
+28_1	https://arxiv.org/pdf/2605.06939	Shared calibration requires justification; it cannot be a de
+31_0	https://arxiv.org/abs/2607.14480	lower-resource languages are scored more generously
+31_1	https://arxiv.org/abs/2607.14480	harmful content in lower-resource languages is more likely t
+34_0	https://arxiv.org/pdf/2308.01263	Partial refusal is any combination of refusal and compliance
+35_0	https://arxiv.org/pdf/2406.14598	Both terms refer to when models execute the given potentiall
+36_0	https://arxiv.org/pdf/2308.13387	\(1\) reject to answer the question; \(2\) refute the underlying
+37_0	https://arxiv.org/pdf/2310.16248	slv Slovenian 4072739 0\.96881 0\.0016 0\.99459 0\.00062 0\.88889
+38_0	https://arxiv.org/pdf/2602.13139	we employ several existing benchmarks for similar languages 
+44_0	https://raw.githubusercontent.com/p-e-w/heretic/master/README.md	The Heretic version, generated without any human effort, ach
+45_0	https://huggingface.co/facebook/nllb-200-distilled-1.3B/raw/main/README.md	NLLB-200 is a research model and is not released for product
+46_0	https://arxiv.org/abs/2508.20511	Human assessments reveal that many translations fall below t
+48_0	https://arxiv.org/abs/2609.27758	we replicate near-perfect transfer \(AUROC > 0\.98\) when harml
+50_0	https://arxiv.org/abs/2608.22490	non-English users consistently bear a higher Safety Cost tha

@@ -1,0 +1,10 @@
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2609.08373
+Type: PDF
+Pattern: a bypass requires that the response is non-refusing, on-topi (1 matches in 19484 chars)
+
+--- Content ---
+
+9259:...inst a StrongREJECT-
+style rubric [10]: a bypass requires that the response is non-refusing, on-topic, and specific/actionable,
+with a 0.5 t...

@@ -1,0 +1,35 @@
+# 2026-09-25T00:27:58Z https://arxiv.org/abs/2607.10112 :: Submitted on|\[v[0-9]+\]|Comments:|Journal
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/abs/2607.10112
+Type: HTML
+Pattern: Submitted on|\[v[0-9]+\]|Comments:|Journal (2 matches in 7721 chars)
+
+--- Content ---
+
+408:...Xiv
+
+Press Enter to search * [Advanced search](https://arxiv.org/search/advanced)
+
+# Computer Science > Cryptography and Security
+
+**arXiv:2607.10112** (cs) 
+
+[Submitted on 11 Jul 2026]
+
+# Title:Minionese: Comprehensive Benchmark and Mechanistic Study of Multilingual LLM Safety
+
+Authors:[Chigozirim Ifebi](https://arxiv.org/search/...
+--
+2854:...2607.10112> Focus to learn more arXiv-issued DOI via DataCite  
+  
+## Submission history
+
+From: Brent Kong [[view email](/show-email/56f92cf0/2607.10112)]   
+**[v1]** Sat, 11 Jul 2026 04:13:42 UTC (1,710 KB)  
+
+
+Full-text links:
+
+## Access Paper:
+
+View a PDF of the paper titled Minionese: Comprehensive Benchmark and Mechan...

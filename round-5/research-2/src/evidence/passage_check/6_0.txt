@@ -1,0 +1,10 @@
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2605.25420
+Type: PDF
+Pattern: not fluent harmful compliance but unclear output (1 matches in 37731 chars)
+
+--- Content ---
+
+936:...he dominant Somali non-
+refusal mode is not fluent harmful compliance but unclear output: wrong-language, incoherent,
+or off-top...

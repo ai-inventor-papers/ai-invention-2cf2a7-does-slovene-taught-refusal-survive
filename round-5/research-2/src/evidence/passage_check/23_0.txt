@@ -1,0 +1,10 @@
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2402.10260
+Type: PDF
+Pattern: a binary score for non-refusal and two 5-point Likert scale  (1 matches in 84882 chars)
+
+--- Content ---
+
+16039:... prompt before
+generating three scores: a binary score for non-refusal and two 5-point Likert scale scores ranging
+from [1-5] (then re-scale...

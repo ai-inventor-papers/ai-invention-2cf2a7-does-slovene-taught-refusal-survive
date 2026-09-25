@@ -1,0 +1,44 @@
+# 2026-09-25T00:18:12Z scholarly :: output language harmful compliance multilingual LLM
+Search: output language harmful compliance multilingual LLM  [scholarly via crossref]
+Found: 10 results
+
+1. LLM Output Compliance with Handcrafted Linguistic Features: An Experiment
+   https://doi.org/10.5220/0013350400003890
+   Proceedings of the 17th International Conference on Agents and Artificial Intelligence · 2025...
+
+2. Triple X: A LLM-Based Multilingual Speech Recognition System for the INTERSPEECH2025 MLC-SLM Challenge
+   https://doi.org/10.21437/mlcslm.2025-3
+   Workshop on Multilingual Conversational Speech Language Model (MLC-SLM) · 2025...
+
+3. Evaluating the Multilingual Capabilities of LLM-based Web UI Agents
+   https://doi.org/10.62891/2d7c8429
+   2025...
+
+4. A Unified Speech LLM for Diarization and Speech Recognition in Multilingual Conversations
+   https://doi.org/10.21437/mlcslm.2025-13
+   Workshop on Multilingual Conversational Speech Language Model (MLC-SLM) · 2025...
+
+5. Table 3: Efficacy of LLM in detecting harmful questions.
+   https://doi.org/10.7717/peerj-cs.2374/table-3
+
+6. Multilingual KokoroChat: A Multi-LLM Ensemble Translation Method for Creating a Multilingual Counseling Dialogue Dataset
+   https://doi.org/10.63317/2d2qyq4zbps7
+   Proceedings of the Language Resources and Evaluation Conference · 2026...
+
+7. Insecure Output Handling in Large Language Models (LLMs) and Approaches to Enhance Output Security, Including Prevention of LLM-Based Web Application Attacks
+   https://doi.org/10.36227/techrxiv.176539610.04050608/v1
+   2025...
+
+8. Checklist Engineering Empowers Multilingual LLM Judges
+   https://doi.org/10.26615/978-954-452-105-9-021
+   Proceedings of the Workshop on Beyond English: Natural Language Processing for all Languages in an Era of Large Language Models · 2025...
+
+9. Language Models in Space Diplomacy Education: A Case Study of a Multilingual LLM Prompt Library
+   https://doi.org/10.52202/078378-0141
+   IAF Space Education and Outreach Symposium · 2024...
+
+10. Multimodal Transformer Framework for Multilingual Harmful Meme Classification
+   https://doi.org/10.18653/v1/2026.ltedi-1.9
+   Proceedings of the Sixth Workshop on Language Technology for Equality, Diversity, Inclusion · 2026...
+
+

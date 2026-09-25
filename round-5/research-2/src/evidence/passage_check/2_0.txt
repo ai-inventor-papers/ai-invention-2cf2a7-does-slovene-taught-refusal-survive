@@ -1,0 +1,8 @@
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/abs/2608.26186
+Type: HTML
+Pattern: Prompt language is not neutral and systematically shapes out (1 matches in 7815 chars)
+
+--- Content ---
+
+2324:...cross models, indicating heterogeneity. Prompt language is not neutral and systematically shapes output length and lexical realization, with...

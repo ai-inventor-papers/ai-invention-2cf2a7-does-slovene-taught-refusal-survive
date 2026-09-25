@@ -1,0 +1,33 @@
+# 2026-09-25T00:34:29Z https://arxiv.org/abs/2301.09633 :: Submitted|\[v[0-9]\]|Prediction-Powered
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/abs/2301.09633
+Type: HTML
+Pattern: Submitted|\[v[0-9]\]|Prediction-Powered (14 matches in 7929 chars)
+
+--- Content ---
+
+395:... arXiv
+
+Press Enter to search * [Advanced search](https://arxiv.org/search/advanced)
+
+# Statistics > Machine Learning
+
+**arXiv:2301.09633** (stat) 
+
+[Submitted on 23 Jan 2023 ([v1](https://arxiv.org/abs/2301.09633v1)), last revised 9 Nov 2023 (this version, v4)]
+
+# Title:Prediction-Powered Inference
+
+Authors:[Anastasios N. Angelopoulos](https://arxiv.org/search/stat?searchtype=author&query=Angelopoulos,+A+N), [Stephen Bates](https://arx...
+--
+1025:...?searchtype=author&query=Jordan,+M+I), [Tijana Zrnic](https://arxiv.org/search/stat?searchtype=author&query=Zrnic,+T)
+
+View a PDF of the paper titled Prediction-Powered Inference, by Anastasios N. Angelopoulos and 4 other authors
+
+[View PDF](/pdf/2301.09633) [HTML (experimental)](https://arxiv.org/html/2301.09633v4)
+
+> Abstract:Prediction-powered inference is a framework for performing valid statistical inference when an experimental dataset is supplemented with predictions from a machine-lear...
+--
+1743:...ns on the machine-learning algorithm that supplies the predictions. Furthermore, more accurate predictions translate to smaller confidence intervals. Prediction-powered inference could enable researchers to draw valid and more data-efficient conclusions using machine learning. The benefits of prediction-powered infer...
+--
+[8 more matches not shown]

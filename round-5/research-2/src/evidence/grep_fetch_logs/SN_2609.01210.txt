@@ -1,0 +1,14 @@
+# 2026-09-25T00:30:36Z https://arxiv.org/pdf/2609.01210 :: respond in|answer in|reply in|output language|response language|language of the response|respond only in|in English regardless|StrongREJECT|abliterat|continued pre-?training|base model
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2609.01210
+Type: PDF
+Pattern: respond in|answer in|reply in|output language|response language|language of the response|respond only in|in English regardless|StrongREJECT|abliterat|continued pre-?training|base model (1 matches in 93156 chars)
+
+--- Content ---
+
+88044:...ns. arXiv preprint arXiv:2601.00588,
+2026.
+[40] Alexandra Souly, Qingyuan Lu, Dillon Bowen, Tu Trinh, Elvis Hsieh, Sana Pandey, Pieter Abbeel, Justin Svegliato,
+Scott Emmons, Olivia Watkins, et al. A strongreject for empty jailbreaks. Advances in Neural Information
+Processing Systems, 37:125416–125440, 2024.
+[41] Dong Shu, Chong Zhang, Mingyu Jin, Zihao Zhou, and Lingyao Li. Attackeval: How to evaluate the ef...

@@ -1,0 +1,29 @@
+# 2026-09-25T00:39:48Z https://arxiv.org/abs/2601.05420 :: Submitted|Title:|Abstract
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/abs/2601.05420
+Type: HTML
+Pattern: Submitted|Title:|Abstract (3 matches in 7900 chars)
+
+--- Content ---
+
+399:Skip to main content [](https://arxiv.org/IgnoreMe) [ ](https://arxiv.org/) [ Search ](https://arxiv.org/search) [Submit](https://arxiv.org/user/create) [Donate](https://info.arxiv.org/about/donate.html) [Log in](https://arxiv.org/login)
+
+Search arXiv
+
+Press Enter to search * [Advanced search](https://arxiv.org/search/advanced)
+
+# Computer Science > Machine Learning
+
+**arXiv:2601.05420** (cs) 
+
+[Submitted on 8 Jan 2026]
+
+# Title:Efficient Inference for Noisy LLM-as-a-Judge Evaluation
+
+Authors:[Yiqun T Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen,+Y+T), [Sizhu Lu](https://arxiv.org/search/cs?searchtype=author&query=Lu,+S), [Sijia Li](https://arxiv.org/search/cs?searchtype=author&query=Li,+S), [Moran Guo](https://arxiv.org/search/cs?searchtype=author&query=Guo,+M), [Shengyi Li](https://arxiv.org/search/cs?searchtype=author&query=Li,+S)
+
+View a PDF of the paper titled Efficient Inference for Noisy LLM-as-a-Judge Evaluation, by Yiqun T Chen and 4 other authors
+
+[View PDF](/pdf/2601.05420) [HTML (experimental)](https://arxiv.org/html/2601.05420v1)
+
+> Abstract:Large language models (LLMs) are increasingly used as automatic evaluators of generative AI outputs, a paradigm often referred to as "LLM-as-a-judge." In practice, LLM judges are imperfect predictions for the underlying truth and can exhibit systematic, non-random errors. Two main approaches have recently been proposed to address this issue: (i) direct measurementerror correction based on misclassification models such as Rogan-Gladen-style estimators, and (ii) surrogate-outcome approaches such as prediction-powered inference (PPI), which correct bias by calibrating prediction residuals on a s...

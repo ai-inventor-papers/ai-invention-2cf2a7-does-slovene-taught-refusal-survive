@@ -1,0 +1,94 @@
+# 2026-09-25T01:18:56Z https://arxiv.org/pdf/2606.07535 :: Appendix [A-Z]|Prompts|we use four prompts|four prompts
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2606.07535
+Type: PDF
+Pattern: Appendix [A-Z]|Prompts|we use four prompts|four prompts (40 matches in 75145 chars)
+
+--- Content ---
+
+2952:...ys-
+tematically, and publicly available datasets for mul-
+tilingual safety–especially around refusal behavior–
+are lacking.
+In this work, we focus on multilingual alignment
+and pose three research questions:
+RQ1: Do we need to perform multilingual align-
+ment for each language on the same groups
+of prompts, or is training in a single language
+sufficient?
+RQ2: How well is cross-lingual consistency pre-
+served during multilingual training?
+RQ3: How does multilingual alignment influence
+general multilingual capabilities?
+LLMs can be aligned using various methods:
+through reward modeling, as in PPO (Schu...
+--
+6154:...iants and con-
+ducting a logistic regression analysis. The results
+show that for GPT-4o and Mistral Large 2, jail-
+break attack success rates tend to be higher for
+low-resourced languages.
+The most well-known multilingual safety
+datasets covering primarily European languages
+include: PolygloToxicityPrompts (Jain et al., 2024),
+RTP-LX (De Wynter et al., 2025) – datasets for
+toxicity evaluation, SORRY-Bench – a benchmark
+for efficiently assessing refusal capabilities (Xie
+et al., 2025), XTRUST – a multilingual benchmark
+spanning a diverse range of topics (Li et al., 2024),
+CIVICS – a hand-crafted multilingual dataset of
+value-laden prompts addressing socially sensitive
+topics (Pistilli et al., 2024), HONEST – a collection
+of manually created sentence templates for measur-
+ing the generation of hurtful sentence completions
+(Nozza et al., 2021).
+Another line of research focuses on releasing
+multilingual datasets together with framework...
+--
+7654:... few notable
+exceptions combine dataset release with mitigation
+approaches: XSAFETY – a benchmark that also
+proposes a prompting-based mitigation method for
+improving safety (Wang et al., 2024), Massive Mul-
+tilingual Holistic Bias (MMHB) – accompanied
+by a mitigation strategy using gender-balanced
+prompts (Tan et al., 2024). Only a few articles
+have focused on multilingual training datasets and
+conducting training experiments. Bhardwaj et al.
+(2024) proposed a method to re-align a fine-tuned
+model by simply performing an arithmetic addition
+of a safety vector to the model’s weights, and they
+also in...
+--
+8344:...ve “break-fix”
+cycle as repeated rounds of safety dataset curation,
+post-training optimization, and comprehensive re-
+sponsible AI (RAI) benchmarking. Well-described
+multilingual training approaches are presented in
+Aakanksha et al. (2024), where the first human-
+annotated collection of adversarial prompts across
+eight languages was introduced. The authors tested
+various mitigation techniques such as supervised
+fine-tuning and DPO with different proportions of
+training safety samples. They also distinguished
+between “global” and “local” harms.
+Another
+method for training safety data collection is de-...
+--
+9831:...uestion, chosen, rejected), making it directly suit-
+able for DPO, and includes a separate test split for
+evaluation.
+3
+Dataset construction
+The detailed dataset construction process is illus-
+trated in Figure 1. We follow the framework pro-
+posed by Krasnod˛ebska et al. (2025), where ad-
+versarial prompts are generated in a single step by
+specifying the crime category, the detailed crim-
+inal activity, and the desired writing style. We
+adopt 14 crime categories based on the Llama-
+Guard taxonomy and 10 different attack styles fol-
+lowing the original Rainbow teaming methodology
+(Samvelyan et al., 20...
+--
+[34 more matches not shown]

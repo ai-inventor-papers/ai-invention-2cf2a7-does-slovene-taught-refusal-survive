@@ -1,0 +1,45 @@
+# 2026-09-25T00:18:12Z scholarly :: language confusion safety wrong-language response jailbreak
+Search: language confusion safety wrong-language response jailbreak  [scholarly via crossref]
+Found: 10 results
+
+1. Cross-Modal Safety-Component Steering for Audio-Language Model Jailbreak Defense
+   https://doi.org/10.2139/ssrn.7417884
+   2026...
+
+2. Withdrawn: Optimizing Safety Alignment and Jailbreak Defense for Large Language Models
+   https://doi.org/10.20944/preprints202511.1521.v1
+   2025...
+
+3. Prompt Injection and Jailbreak Attacks in Large Language Model-Based Agents
+   https://doi.org/10.2139/ssrn.6740060
+   2026...
+
+4. Author response for "RogueGPT: Unleashing Jailbreak Prompts on LLMs A comparative analysis of security efficiency across large language models"
+   https://doi.org/10.1002/eng2.70069/v2/response1
+   2025...
+
+5. Author response for "RogueGPT: Unleashing Jailbreak Prompts on LLMs A comparative analysis of security efficiency across large language models"
+   https://doi.org/10.1002/eng2.70069/v3/response1
+   2025...
+
+6. SafeInt: Shielding Large Language Models from Jailbreak Attacks via Safety-Aware Representation Intervention
+   https://doi.org/10.18653/v1/2025.findings-emnlp.450
+   Findings of the Association for Computational Linguistics: EMNLP 2025 · 2025...
+
+7. Prophecies of Language
+   https://doi.org/10.5422/fordham/9780823274017.001.0001
+   2016...
+
+8. Review for "RogueGPT: Unleashing Jailbreak Prompts on LLMs A comparative analysis of security efficiency across large language models"
+   https://doi.org/10.1002/eng2.70069/v2/review1
+   2025...
+
+9. Specialized Domain Jailbreak Benchmark: Exposing Severe Jailbreak Vulnerabilities in Large Language Models
+   https://doi.org/10.1109/ccai69603.2026.11642016
+   2026 6th International Conference on Computer Communication and Artificial Intelligence (CCAI) · 2026...
+
+10. Introduction
+   https://doi.org/10.5422/fordham/9780823274017.003.0001
+   Prophecies of Language · 2016...
+
+
