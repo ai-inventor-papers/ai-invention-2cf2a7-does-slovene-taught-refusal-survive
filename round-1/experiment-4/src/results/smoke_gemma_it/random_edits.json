@@ -1,0 +1,44 @@
+{
+  "pick_heretic_kl": 0.026857271790504456,
+  "bisection": [
+    {
+      "c": 1.0,
+      "kl": 0.002087259665131569
+    },
+    {
+      "c": 6.0,
+      "kl": 0.009534872137010098
+    }
+  ],
+  "c_star": 6.0,
+  "status": "unmatchable (c=6 still short)",
+  "edits": [
+    {
+      "j": 1,
+      "variant": "norm_matched",
+      "c": 1.0,
+      "heretic_refusals": 1.0,
+      "heretic_kl": 0.002087259665131569,
+      "R_en": 0.875,
+      "s_en": 12.6865793466568,
+      "KL_sel_en": 0.0014764316268075159,
+      "KL_eval_en": 0.005438530756626037,
+      "R_sl": 1.0,
+      "s_sl": 12.220690488815308,
+      "KL_sel_sl": 0.0011362769938614292,
+      "KL_eval_sl": 0.003130974351762461
+    },
+    {
+      "j": 1,
+      "variant": "en_kl_matched",
+      "c": 6.0,
+      "status": "unmatchable (c=6 still short)",
+      "heretic_kl": 0.009534872137010098,
+      "KL_sel_en": 0.006010745444099172,
+      "KL_sel_sl": 0.0020805392331340045,
+      "KL_eval_en": 0.06730208939192828,
+      "KL_eval_sl": 0.012186638431955998
+    }
+  ],
+  "per_layer_scope": true
+}
