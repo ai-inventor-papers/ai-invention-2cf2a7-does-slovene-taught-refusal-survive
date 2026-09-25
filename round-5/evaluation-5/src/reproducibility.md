@@ -25,16 +25,16 @@ recorded in `results/inputs_manifest.json`):
 
 | artifact id | folder (relative to `AII_RUN_ROOT`) |
 |---|---|
-| art_piu0nI9vij_F (exp15) | `iter_4/gen_art/gen_art_experiment_15` |
-| art_4Mf1Fazk33yZ (exp14) | `iter_4/gen_art/gen_art_experiment_14` |
+| art_piu0nI9vij_F (exp15) | `round-4/experiment-15/src` |
+| art_4Mf1Fazk33yZ (exp14) | `round-4/experiment-14/src` |
 | exp13 | `iter_4/gen_art/gen_art_experiment_13` |
-| eval3 | `iter_4/gen_art/gen_art_evaluation_3` |
-| research_1 | `iter_4/gen_art/gen_art_research_1` |
-| art_n3Crj0p24sBa (exp9) | `iter_3/gen_art/gen_art_experiment_9` |
-| art_Aw3AXCXv9pUg (exp11) | `iter_3/gen_art/gen_art_experiment_11` |
-| exp10, exp12, eval2 | `iter_3/gen_art/gen_art_experiment_10`, `..._12`, `gen_art_evaluation_2` |
-| exp5 / exp4 | `iter_2/gen_art/gen_art_experiment_5`, `iter_1/gen_art/gen_art_experiment_4` |
-| iteration-4 paper draft and review | `iter_4/gen_report_text/gen_report_text/paper_draft.md`, `iter_4/review_report/review_report/.terminal_claude_agent_struct_out.json` |
+| eval3 | `round-4/evaluation-3/src` |
+| research_1 | `round-4/research-1/src` |
+| art_n3Crj0p24sBa (exp9) | `round-3/experiment-9/src` |
+| art_Aw3AXCXv9pUg (exp11) | `round-3/experiment-11/src` |
+| exp10, exp12, eval2 | `round-3/experiment-10/src`, `..._12`, `gen_art_evaluation_2` |
+| exp5 / exp4 | `round-2/experiment-5/src`, `round-1/experiment-4/src` |
+| iteration-4 paper draft and review | `round-4/report-text/paper_draft.md`, `round-4/review/.terminal_claude_agent_struct_out.json` |
 
 Caveats on these inputs:
 

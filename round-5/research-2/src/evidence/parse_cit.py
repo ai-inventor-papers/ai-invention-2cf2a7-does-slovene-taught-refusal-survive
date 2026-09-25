@@ -1,6 +1,6 @@
 import sys,re,json,glob
 old=set()
-for f in glob.glob('/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_4/gen_art/gen_art_research_1/evidence/search_logs/cit_*.json'):
+for f in glob.glob(str(__import__("pathlib").Path(__file__).resolve().parents[4] / 'round-4/research-1/src/evidence/search_logs/cit_*.json')):
     t=open(f).read(); old|=set(re.findall(r'\d{4}\.\d{4,5}',t))
 for f in sys.argv[1:]:
     t=open(f).read()

@@ -1,4 +1,4 @@
-# exp14 tables regenerated from `RUN/iter_4/gen_art/gen_art_experiment_14/results/analysis.json` (no hand-typed numbers)
+# exp14 tables regenerated from `RUN/round-4/experiment-14/src/results/analysis.json` (no hand-typed numbers)
 
 Readout: local J1 (mdeberta distilled from gemini) unless stated; adjudication = author model, NOT human.
 

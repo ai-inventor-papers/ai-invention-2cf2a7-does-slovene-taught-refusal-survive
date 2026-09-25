@@ -19,8 +19,8 @@ from scipy import stats
 
 WS = Path(__file__).resolve().parents[1]
 RUN = Path(os.environ.get("AII_RUN_ROOT", str(WS.parents[2]))).resolve()  # same single constant as src/common.py
-E15, E14, E13 = RUN / "iter_4/gen_art/gen_art_experiment_15", RUN / "iter_4/gen_art/gen_art_experiment_14", RUN / "iter_4/gen_art/gen_art_experiment_13"
-EV3, E9 = RUN / "iter_4/gen_art/gen_art_evaluation_3", RUN / "iter_3/gen_art/gen_art_experiment_9"
+E15, E14, E13 = RUN / "round-4/experiment-15/src", RUN / "round-4/experiment-14/src", RUN / "iter_4/gen_art/gen_art_experiment_13"
+EV3, E9 = RUN / "round-4/evaluation-3/src", RUN / "round-3/experiment-9/src"
 M = 0.675
 checks = []
 

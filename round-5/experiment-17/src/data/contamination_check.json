@@ -1,14 +1,14 @@
 {
  "files_scanned": 19,
  "files_with_hits": {
-  "iter_3/gen_art/gen_art_experiment_11/results/final/gens_gams3_it.jsonl": 1110,
-  "iter_3/gen_art/gen_art_experiment_11/results/final/gens_gemma_it.jsonl": 400,
+  "round-3/experiment-11/src/results/final/gens_gams3_it.jsonl": 1110,
+  "round-3/experiment-11/src/results/final/gens_gemma_it.jsonl": 400,
   "iter_4/gen_art/gen_art_experiment_13/results/final/readout_rows.jsonl": 1101
  },
  "n_hit_files": 3,
  "rule": "grep 'refuseu_eval_<n>' ids of FINAL items inside any gens/rows file of iter_2..4 gen_art workspaces",
  "interpretation": {
-  "iter_3/gen_art/gen_art_experiment_11/results/final/gens_gams3_it.jsonl": {
+  "round-3/experiment-11/src/results/final/gens_gams3_it.jsonl": {
    "rows_by_arm": {
     "SL_MT": 2052,
     "EN_BT": 2501,
@@ -21,7 +21,7 @@
    },
    "distinct_FINAL_pair_ids": 1110
   },
-  "iter_3/gen_art/gen_art_experiment_11/results/final/gens_gemma_it.jsonl": {
+  "round-3/experiment-11/src/results/final/gens_gemma_it.jsonl": {
    "rows_by_arm": {
     "SL_MT": 1600,
     "EN_BT": 1600,

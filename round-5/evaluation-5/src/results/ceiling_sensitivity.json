@@ -2,9 +2,9 @@
  "target": "exp15 G3_orig = M0_GaMS - M0_Gemma (lambda 0, R coding, J1 raw, Hautus logits)",
  "m": 0.675,
  "source": {
-  "file": "RUN/iter_4/gen_art/gen_art_experiment_15/results/rows_final.jsonl",
+  "file": "RUN/round-4/experiment-15/src/results/rows_final.jsonl",
   "filter": "set==BODY & edit==E_exp9 & block in (ladder,fillin) & arm in (EN_BT,SL_MT) & lambda==0 (analysis.py Cube)",
-  "saved": "RUN/iter_4/gen_art/gen_art_experiment_15/results/analysis.json :: steps_R/*/[lambda=0], headline/R/RAW/G3_orig"
+  "saved": "RUN/round-4/experiment-15/src/results/analysis.json :: steps_R/*/[lambda=0], headline/R/RAW/G3_orig"
  },
  "smoke": {
   "counts_saved_steps_R": {
@@ -344,7 +344,7 @@
   "p_two_sided": 0.07598480303939212
  },
  "judge_error": {
-  "source": "RUN/iter_4/gen_art/gen_art_experiment_15/results/analysis.json :: judge_validity/cells/*|orig/primary_R",
+  "source": "RUN/round-4/experiment-15/src/results/analysis.json :: judge_validity/cells/*|orig/primary_R",
   "adjudicator": "author model, NOT human",
   "per_cell": {
    "gemma_it|en|orig": {

@@ -7394,8 +7394,8 @@
  ],
  "secondary_correction": {
   "files": [
-   "iter_5/gen_art/gen_art_evaluation_4/results/error_matrices_v3_sonnet_ref.json",
-   "iter_5/gen_art/gen_art_evaluation_4/results/error_matrices_v3.json"
+   "round-5/evaluation-4/src/results/error_matrices_v3_sonnet_ref.json",
+   "round-5/evaluation-4/src/results/error_matrices_v3.json"
   ],
   "status": "EXPLORATORY",
   "note": "present; not applied to headline (MT items with suffix != natural prompts)"

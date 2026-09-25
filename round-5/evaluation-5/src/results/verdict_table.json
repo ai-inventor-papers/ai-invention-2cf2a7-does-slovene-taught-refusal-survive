@@ -13,7 +13,7 @@
    "verdict": "ESTIMATE (G3 LAG_BEYOND_MARGIN; B' curve unidentified; judge-qualified)",
    "evidence_tier": "CONFIRMATION (qualified)",
    "readout": "local J1",
-   "source": "RUN/iter_3/gen_art/gen_art_experiment_9/results/analysis.json"
+   "source": "RUN/round-3/experiment-9/src/results/analysis.json"
   },
   {
    "claim": "C3 / C-LAG (reserved FINAL split, iter 3)",
@@ -28,7 +28,7 @@
    "verdict": "ESTIMATE (support rule failed)",
    "evidence_tier": "CONFIRMATION (support failed)",
    "readout": "local Qwen3-14B",
-   "source": "RUN/iter_3/gen_art/gen_art_experiment_11/results/analysis.json"
+   "source": "RUN/round-3/experiment-11/src/results/analysis.json"
   },
   {
    "claim": "C3 / C-LAG pooled (iter 4)",
@@ -43,7 +43,7 @@
    "verdict": "READOUT NOT VALIDATED / rule outcome REFUTE-BOUND",
    "evidence_tier": "CONFIRMATION (gate failed)",
    "readout": "paid gemini-2.5-flash",
-   "source": "RUN/iter_4/gen_art/gen_art_evaluation_3/results/recompute.json"
+   "source": "RUN/round-4/evaluation-3/src/results/recompute.json"
   },
   {
    "claim": "C-LAG edit-induced component",
@@ -58,7 +58,7 @@
    "verdict": "NOT MET (underdetermined; per-body G3_edit spans both signs)",
    "evidence_tier": "CONFIRMATION (gate failed)",
    "readout": "paid gemini",
-   "source": "RUN/iter_4/gen_art/gen_art_evaluation_3/results/recompute.json"
+   "source": "RUN/round-4/evaluation-3/src/results/recompute.json"
   },
   {
    "claim": "C-LAG edit-induced component",
@@ -73,7 +73,7 @@
    "verdict": "NOT MET; |G3_edit| 90% bound 1.91",
    "evidence_tier": "SCREEN",
    "readout": "local J1",
-   "source": "RUN/iter_4/gen_art/gen_art_experiment_15/results/analysis.json"
+   "source": "RUN/round-4/experiment-15/src/results/analysis.json"
   },
   {
    "claim": "R-BASE (baseline offset)",
@@ -88,7 +88,7 @@
    "verdict": "exp15 R_BASE_SUPPORTED=True (read as 'not refuted'); ceiling: CEILING-ARTEFACT (FI_m=1)",
    "evidence_tier": "SCREEN (post-hoc sensitivity)",
    "readout": "local J1",
-   "source": "RUN/iter_4/gen_art/gen_art_experiment_15/results/analysis.json + results/ceiling_sensitivity.json"
+   "source": "RUN/round-4/experiment-15/src/results/analysis.json + results/ceiling_sensitivity.json"
   },
   {
    "claim": "R-JUDGE (judge-language artefact)",
@@ -103,7 +103,7 @@
    "verdict": "NOT SUPPORTED as a full explanation (TTJ lag persists); SDT criterion component present",
    "evidence_tier": "SCREEN",
    "readout": "TTJ (J1 on NLLB English)",
-   "source": "RUN/iter_4/gen_art/gen_art_experiment_15/results/analysis.json"
+   "source": "RUN/round-4/experiment-15/src/results/analysis.json"
   },
   {
    "claim": "R-INCAP (incapacity instead of compliance)",
@@ -115,7 +115,7 @@
    "verdict": "UNTESTED in exp15 (A4 key limit); exploratory author-model flag only",
    "evidence_tier": "SCREEN",
    "readout": "n/a",
-   "source": "RUN/iter_4/gen_art/gen_art_experiment_15/results/analysis.json"
+   "source": "RUN/round-4/experiment-15/src/results/analysis.json"
   },
   {
    "claim": "M-OUT / M-IN (mechanism, SL)",
@@ -130,7 +130,7 @@
    "verdict": "raw: M-OUT SUPPORTED; robust=False",
    "evidence_tier": "SCREEN (exploratory)",
    "readout": "local J1 + author-model gold",
-   "source": "RUN/iter_4/gen_art/gen_art_experiment_14/results/analysis.json"
+   "source": "RUN/round-4/experiment-14/src/results/analysis.json"
   },
   {
    "claim": "C5a (no Slovene-specific KL leakage)",
@@ -154,7 +154,7 @@
    "verdict": "supported=False",
    "evidence_tier": "SCREEN",
    "readout": "n/a",
-   "source": "RUN/iter_1/gen_art/gen_art_experiment_4/results/analysis.json"
+   "source": "RUN/round-1/experiment-4/src/results/analysis.json"
   },
   {
    "claim": "Criterion shift (SDT DiD_c, harmonised)",
@@ -178,7 +178,7 @@
    "verdict": "directional replication in 1 checkpoint (descriptive)",
    "evidence_tier": "SCREEN",
    "readout": "local J1",
-   "source": "RUN/iter_4/gen_art/gen_art_experiment_14/results/analysis.json"
+   "source": "RUN/round-4/experiment-14/src/results/analysis.json"
   },
   {
    "claim": "RQ2 / C-OUT confirmation (iteration 5)",
