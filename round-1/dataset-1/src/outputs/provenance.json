@@ -1,0 +1,259 @@
+{
+ "NASK-PIB/RefusEU": {
+  "revision_pinned": "5523ce30b9b6af59e95ade9c610b8b974412a6bb",
+  "head_at_download": "5523ce30b9b6af59e95ade9c610b8b974412a6bb",
+  "head_matches_pin": true,
+  "card_license_tags": [
+   "license:llama3.1"
+  ],
+  "license_note": "card tag llama3.1; licence text 'to be specified' on the card -> FLAG (research use only)",
+  "downloads_30d": 56,
+  "files": {
+   "evaluation/eval-00000-of-00001.parquet": {
+    "path": "temp/datasets/NASK-PIB__RefusEU/evaluation/eval-00000-of-00001.parquet",
+    "bytes": 3416852,
+    "sha256": "937ea1c2525b54a1654d34c04449a9e981f9c5e88d83ddc0d39cf728d2e9cb0e"
+   },
+   "lang_en/train-00000-of-00001.parquet": {
+    "path": "temp/datasets/NASK-PIB__RefusEU/lang_en/train-00000-of-00001.parquet",
+    "bytes": 6005894,
+    "sha256": "74434227cb663f258d00792e02ddd0da588e768342206551c5022633436d1f1b"
+   },
+   "lang_en/test-00000-of-00001.parquet": {
+    "path": "temp/datasets/NASK-PIB__RefusEU/lang_en/test-00000-of-00001.parquet",
+    "bytes": 319321,
+    "sha256": "b2562ca0b6870ec2273eff2f44516f74b45cb3e8b6a73c2502e615b2605f0f1d"
+   },
+   "lang_sl/train-00000-of-00001.parquet": {
+    "path": "temp/datasets/NASK-PIB__RefusEU/lang_sl/train-00000-of-00001.parquet",
+    "bytes": 4380670,
+    "sha256": "66e3722bed3c5955e348f5c7bf308cf04022b6bc1265f2bcabcad8b77ae12534"
+   },
+   "lang_sl/test-00000-of-00001.parquet": {
+    "path": "temp/datasets/NASK-PIB__RefusEU/lang_sl/test-00000-of-00001.parquet",
+    "bytes": 241830,
+    "sha256": "d4ffa738983e20d11a19fa71dd6aef023b3473cb8e0a854ad36d2be2601d4e2f"
+   },
+   "README.md": {
+    "path": "temp/datasets/NASK-PIB__RefusEU/README.md",
+    "bytes": 12580,
+    "sha256": "111805819e0f7a264fa1613d4455e2bb3c88f8cd0180839f1eb899272c09bf38"
+   }
+  }
+ },
+ "cjvt/GaMS-Nemotron-Chat": {
+  "revision_pinned": "0eab0b3cfcaaedf3958fe08ab1a7cd09302d65d7",
+  "head_at_download": "0eab0b3cfcaaedf3958fe08ab1a7cd09302d65d7",
+  "head_matches_pin": true,
+  "card_license_tags": [],
+  "license_note": "see card (recorded in provenance.json)",
+  "downloads_30d": 34,
+  "files": {
+   "data/train-00000-of-00001.parquet": {
+    "path": "temp/datasets/cjvt__GaMS-Nemotron-Chat/data/train-00000-of-00001.parquet",
+    "bytes": 172074390,
+    "sha256": "6102fb2a060531d992ac4c6a0f1fa193eebdd9d3ce4c32a642dc5eff4ca3d1db"
+   },
+   "README.md": {
+    "path": "temp/datasets/cjvt__GaMS-Nemotron-Chat/README.md",
+    "bytes": 6148,
+    "sha256": "962674566bcf07f90128b47e1e03a0224782a7138782c88279dc1e74b683c978"
+   }
+  }
+ },
+ "Paul/XSTest": {
+  "revision_pinned": "f600c994b256f12867dfa5b3eb3d545a3e62f8b5",
+  "head_at_download": "f600c994b256f12867dfa5b3eb3d545a3e62f8b5",
+  "head_matches_pin": true,
+  "card_license_tags": [
+   "license:cc-by-4.0"
+  ],
+  "license_note": "CC-BY-4.0",
+  "downloads_30d": 4537,
+  "files": {
+   "xstest_prompts.csv": {
+    "path": "temp/datasets/Paul__XSTest/xstest_prompts.csv",
+    "bytes": 38719,
+    "sha256": "11783fb294ed017473ee53c207d71f2161c7672c8d0b037501e78387f801cb5a"
+   },
+   "README.md": {
+    "path": "temp/datasets/Paul__XSTest/README.md",
+    "bytes": 1922,
+    "sha256": "9f9fd4e2fe20d4e36c695db145097e7652362119a6e054398ec6a486a1a6bd03"
+   }
+  }
+ },
+ "natolambert/xstest-v2-copy": {
+  "revision_pinned": "b71afe2a6d10e5a6254ea8bcb006c48b095a15d5",
+  "head_at_download": "b71afe2a6d10e5a6254ea8bcb006c48b095a15d5",
+  "head_matches_pin": true,
+  "card_license_tags": [
+   "license:cc-by-4.0"
+  ],
+  "license_note": "CC-BY-4.0 (fallback copy of XSTest v2)",
+  "downloads_30d": 4531,
+  "files": {
+   "data/prompts-00000-of-00001.parquet": {
+    "path": "temp/datasets/natolambert__xstest-v2-copy/data/prompts-00000-of-00001.parquet",
+    "bytes": 20531,
+    "sha256": "322d4e89df9fb419c296d5b360067f3265845d40a561a37d9be77a078d219522"
+   }
+  }
+ },
+ "bench-llm/or-bench": {
+  "revision_pinned": "e36d8b80e81837c8a8f264bbb2a49f1b32c7e272",
+  "head_at_download": "e36d8b80e81837c8a8f264bbb2a49f1b32c7e272",
+  "head_matches_pin": true,
+  "card_license_tags": [
+   "license:cc-by-4.0"
+  ],
+  "license_note": "CC-BY-4.0",
+  "downloads_30d": 9371,
+  "files": {
+   "or-bench-hard-1k.csv": {
+    "path": "temp/datasets/bench-llm__or-bench/or-bench-hard-1k.csv",
+    "bytes": 169255,
+    "sha256": "a6e2f1166416efe5901f3bb05c47dc92ab3aca3acfe143693d38b8057d841e6d"
+   },
+   "or-bench-toxic.csv": {
+    "path": "temp/datasets/bench-llm__or-bench/or-bench-toxic.csv",
+    "bytes": 64721,
+    "sha256": "3be45901faae3b4b2b51bf7f8a2784c1650a1cc8c631dbc8b171d5312d4e0057"
+   },
+   "README.md": {
+    "path": "temp/datasets/bench-llm__or-bench/README.md",
+    "bytes": 7764,
+    "sha256": "fe467de5f4e5810a06c1f40d146a0e0ff98148e3d4dfe5afcdcb0118912831ec"
+   }
+  }
+ },
+ "OpenAssistant/oasst2": {
+  "revision_pinned": "179dd21fc55192153d94adb0e0ce8f69e222bf75",
+  "head_at_download": "179dd21fc55192153d94adb0e0ce8f69e222bf75",
+  "head_matches_pin": true,
+  "card_license_tags": [
+   "license:apache-2.0"
+  ],
+  "license_note": "Apache-2.0",
+  "downloads_30d": 17124,
+  "files": {
+   "data/train-00000-of-00001-88ba0162028a73fc.parquet": {
+    "path": "temp/datasets/OpenAssistant__oasst2/data/train-00000-of-00001-88ba0162028a73fc.parquet",
+    "bytes": 63494018,
+    "sha256": "9638227b41b0a4fb69afa5d5c4b52e3fb6abfd56c9870d81bae32c9981e769b1"
+   },
+   "data/validation-00000-of-00001-1deeef95c3248fe0.parquet": {
+    "path": "temp/datasets/OpenAssistant__oasst2/data/validation-00000-of-00001-1deeef95c3248fe0.parquet",
+    "bytes": 3180111,
+    "sha256": "fd46c63babc0756909a957ee40975bcf5610d58c5d1ab5ff2c57c0f57be1f273"
+   },
+   "README.md": {
+    "path": "temp/datasets/OpenAssistant__oasst2/README.md",
+    "bytes": 10606,
+    "sha256": "52bd472cf3cae04a4b21ecd5316f929741c47d991d4763b041c3a94de072dc31"
+   }
+  }
+ },
+ "DAMO-NLP-SG/MultiJail": {
+  "revision_pinned": "93d65c778925d55973b9ff30c7bccc8545494eb6",
+  "head_at_download": "93d65c778925d55973b9ff30c7bccc8545494eb6",
+  "head_matches_pin": true,
+  "card_license_tags": [
+   "license:mit"
+  ],
+  "license_note": "MIT",
+  "downloads_30d": 1073,
+  "files": {
+   "MultiJail.csv": {
+    "path": "temp/datasets/DAMO-NLP-SG__MultiJail/MultiJail.csv",
+    "bytes": 344347,
+    "sha256": "953132d40b8bf562f20bd9db0a9edf6a3564dc7362bd15a8bb649c8afd128ef4"
+   }
+  }
+ },
+ "LibrAI/do-not-answer": {
+  "revision_pinned": "74e74f2e4507ef256fe536f78a776f4a1ff67955",
+  "head_at_download": "74e74f2e4507ef256fe536f78a776f4a1ff67955",
+  "head_matches_pin": true,
+  "card_license_tags": [
+   "license:apache-2.0"
+  ],
+  "license_note": "Apache-2.0",
+  "downloads_30d": 4009,
+  "files": {
+   "data/train-00000-of-00001-6ba0076b818accff.parquet": {
+    "path": "temp/datasets/LibrAI__do-not-answer/data/train-00000-of-00001-6ba0076b818accff.parquet",
+    "bytes": 1709142,
+    "sha256": "cc03d6e34df834c4272ccb67eacb21f8016c1ac59c9dda77b74f93cc4154c04b"
+   }
+  }
+ },
+ "JailbreakBench/JBB-Behaviors": {
+  "revision_pinned": "886acc352a31533ffbcf4ef22c744658688086fc",
+  "head_at_download": "886acc352a31533ffbcf4ef22c744658688086fc",
+  "head_matches_pin": true,
+  "card_license_tags": [
+   "license:mit"
+  ],
+  "license_note": "MIT",
+  "downloads_30d": 49614,
+  "files": {
+   "data/harmful-behaviors.csv": {
+    "path": "temp/datasets/JailbreakBench__JBB-Behaviors/data/harmful-behaviors.csv",
+    "bytes": 23116,
+    "sha256": "4a8ec6832056b631eb092dccc60d37a61c3d441268268888b3d006288afeffa1"
+   },
+   "data/benign-behaviors.csv": {
+    "path": "temp/datasets/JailbreakBench__JBB-Behaviors/data/benign-behaviors.csv",
+    "bytes": 20570,
+    "sha256": "3cda234d21a991fa309bbfea4b6d9dae31ccdf8e9d452424b6a983e4fdc33468"
+   }
+  }
+ },
+ "nvidia/Aegis-AI-Content-Safety-Dataset-2.0": {
+  "revision_pinned": "d86bb8bedff51d25ac834ab7838f1cc61acb7a2c",
+  "head_at_download": "d86bb8bedff51d25ac834ab7838f1cc61acb7a2c",
+  "head_matches_pin": true,
+  "card_license_tags": [
+   "license:cc-by-4.0"
+  ],
+  "license_note": "CC-BY-4.0",
+  "downloads_30d": 8525,
+  "files": {
+   "test.json": {
+    "path": "temp/datasets/nvidia__Aegis-AI-Content-Safety-Dataset-2.0/test.json",
+    "bytes": 1731373,
+    "sha256": "b0a6d602260524866053cb34105194f074f2c2906e3691b68d43b9e6e9318f35"
+   }
+  }
+ },
+ "CohereLabs/aya_redteaming": {
+  "revision_pinned": "5a16fee03c19d681b4f3527b6a750e1ed4d434c7",
+  "head_at_download": "5a16fee03c19d681b4f3527b6a750e1ed4d434c7",
+  "head_matches_pin": true,
+  "card_license_tags": [
+   "license:apache-2.0"
+  ],
+  "license_note": "Apache-2.0",
+  "downloads_30d": 1159,
+  "files": {
+   "aya_eng.jsonl": {
+    "path": "temp/datasets/CohereLabs__aya_redteaming/aya_eng.jsonl",
+    "bytes": 301786,
+    "sha256": "08104abe7a3d84218941df35a4195096f991751a8512355ee16dd9116035f2c5"
+   },
+   "aya_srp.jsonl": {
+    "path": "temp/datasets/CohereLabs__aya_redteaming/aya_srp.jsonl",
+    "bytes": 393326,
+    "sha256": "a08f23048438540bdfb77d48df8adb16aac3941e2463006859c14469f1aba089"
+   }
+  }
+ },
+ "CLARIN.SI/GaMS-Instruct-SAFE_0.5": {
+  "source": "http://hdl.handle.net/11356/2218",
+  "copied_from": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/iter_2/gen_hypo/claude_agent/stage0/safe05/GaMS-Instruct-SAFE_0.5/GaMS-Instruct-SAFE_0.5.json",
+  "license_note": "CC BY-SA 4.0",
+  "sha256": "15843ab7fef61bd91462e2182b524c183591684b12e3e1f25dfd32ea50a3802f",
+  "n_rows": 501
+ }
+}

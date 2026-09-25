@@ -1,0 +1,78 @@
+{
+ "n_items": 2069,
+ "by_source": {
+  "orbench_hard1k": 1319,
+  "orbench_toxic": 300,
+  "xstest": 450
+ },
+ "chrf_by_source": {
+  "orbench_hard1k": {
+   "median": 79.33,
+   "p10": 62.45,
+   "lt40_after_retry": 4,
+   "retried": 28,
+   "kept": 1315,
+   "dropped": 4
+  },
+  "orbench_toxic": {
+   "median": 79.84,
+   "p10": 60.87,
+   "lt40_after_retry": 0,
+   "retried": 1,
+   "kept": 300,
+   "dropped": 0
+  },
+  "xstest": {
+   "median": 77.78,
+   "p10": 54.34,
+   "lt40_after_retry": 7,
+   "retried": 11,
+   "kept": 443,
+   "dropped": 7
+  }
+ },
+ "fold_counts": {
+  "hard_FINAL": 1442,
+  "hard_DEV": 616,
+  "hard_dropped_mt": 11
+ },
+ "mt_fragile": 250,
+ "pure_share": 0.4505,
+ "majority_label_counts": {
+  "S2": 637,
+  "S6": 289,
+  "S1": 207,
+  "S7": 202,
+  "S10": 187,
+  "S14": 151,
+  "S5": 108,
+  "S11": 101,
+  "S12": 99,
+  "S9": 33,
+  "S3": 22,
+  "S8": 16,
+  "S4": 11,
+  "S13": 6
+ },
+ "llama_guard_unsafe_rate_by_source_harm": {
+  "orbench_hard1k|False": {
+   "en": 0.1865,
+   "sl": 0.235
+  },
+  "orbench_toxic|True": {
+   "en": 0.8267,
+   "sl": 0.7067
+  },
+  "xstest|False": {
+   "en": 0.028,
+   "sl": 0.08
+  },
+  "xstest|True": {
+   "en": 0.82,
+   "sl": 0.71
+  }
+ },
+ "mt_system": "google/gemini-2.5-flash (EN->SL) / openai/gpt-4.1-mini (SL->EN back-translation); NLLB-1.3B/opus-mt round trip kept as secondary nllb_* columns",
+ "nllb_chrf_median": 69.16,
+ "comet_qe": "skipped (Unbabel/wmt22-cometkiwi-da not accessible: HTTP 404/gated)"
+}

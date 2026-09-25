@@ -1,0 +1,5 @@
+15:33:32|INFO   |tiebreak rows 928/6239
+15:33:32|INFO   |llama70_dose.jsonl: 0 cached, 928 to call (spent so far $8.657)
+15:33:33|INFO   |llama70_dose.jsonl: 0/928 errors=0 spent=$8.658 step=0.000
+15:34:38|INFO   |llama70_dose.jsonl: 500/928 errors=0 spent=$8.718 step=0.061
+15:35:35|INFO   |llama70_dose.jsonl: finished, 924 ok, errors=4, spent=$8.771

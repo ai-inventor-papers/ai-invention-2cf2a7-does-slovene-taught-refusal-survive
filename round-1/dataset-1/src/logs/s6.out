@@ -1,0 +1,62 @@
+/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_1/gen_art/gen_art_dataset_1/.venv/lib/python3.12/site-packages/transformers/utils/hub.py:111: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:01,  1.52it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:01,  1.36it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:02<00:00,  1.19it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.60it/s]
+15:21:23|INFO   |0 cached, 8928 to classify
+15:21:25|WARNING|OOM -> bs 16
+15:21:28|WARNING|OOM -> bs 8
+15:21:41|INFO   |160/8928 in 19s
+15:21:52|INFO   |320/8928 in 29s
+15:22:02|INFO   |480/8928 in 39s
+15:22:11|INFO   |640/8928 in 49s
+15:22:20|INFO   |800/8928 in 58s
+15:22:30|INFO   |960/8928 in 67s
+15:22:38|INFO   |1120/8928 in 76s
+15:22:47|INFO   |1280/8928 in 85s
+15:22:56|INFO   |1440/8928 in 93s
+15:23:04|INFO   |1600/8928 in 102s
+15:23:12|INFO   |1760/8928 in 110s
+15:23:21|INFO   |1920/8928 in 118s
+15:23:29|INFO   |2080/8928 in 126s
+15:23:36|INFO   |2240/8928 in 134s
+15:23:44|INFO   |2400/8928 in 142s
+15:23:52|INFO   |2560/8928 in 149s
+15:24:00|INFO   |2720/8928 in 157s
+15:24:07|INFO   |2880/8928 in 165s
+15:24:15|INFO   |3040/8928 in 172s
+15:24:22|INFO   |3200/8928 in 179s
+15:24:29|INFO   |3360/8928 in 187s
+15:24:36|INFO   |3520/8928 in 194s
+15:24:43|INFO   |3680/8928 in 201s
+15:24:50|INFO   |3840/8928 in 208s
+15:24:57|INFO   |4000/8928 in 215s
+15:25:05|INFO   |4160/8928 in 222s
+15:25:12|INFO   |4320/8928 in 229s
+15:25:19|INFO   |4480/8928 in 236s
+15:25:25|INFO   |4640/8928 in 243s
+15:25:32|INFO   |4800/8928 in 249s
+15:25:38|INFO   |4960/8928 in 256s
+15:25:45|INFO   |5120/8928 in 262s
+15:25:52|INFO   |5280/8928 in 269s
+15:25:58|INFO   |5440/8928 in 276s
+15:26:05|INFO   |5600/8928 in 282s
+15:26:11|INFO   |5760/8928 in 288s
+15:26:17|INFO   |5920/8928 in 295s
+15:26:23|INFO   |6080/8928 in 301s
+15:26:30|INFO   |6240/8928 in 307s
+15:26:36|INFO   |6400/8928 in 313s
+15:26:42|INFO   |6560/8928 in 320s
+15:26:49|INFO   |6720/8928 in 326s
+15:26:55|INFO   |6880/8928 in 332s
+15:27:01|INFO   |7040/8928 in 339s
+15:27:08|INFO   |7200/8928 in 345s
+15:27:14|INFO   |7360/8928 in 351s
+15:27:20|INFO   |7520/8928 in 358s
+15:27:27|INFO   |7680/8928 in 364s
+15:27:33|INFO   |7840/8928 in 370s
+15:27:39|INFO   |8000/8928 in 376s
+15:27:45|INFO   |8160/8928 in 383s
+15:27:51|INFO   |8320/8928 in 389s
+15:27:57|INFO   |8480/8928 in 395s
+15:28:03|INFO   |8640/8928 in 401s
+15:28:09|INFO   |8800/8928 in 407s
+15:28:14|INFO   |{('calib', 'unsafe'): 588, ('calib', 'safe'): 2, ('eval', 'unsafe'): 2799, ('eval', 'safe'): 1, ('hard_en', 'safe'): 1404, ('hard_en', 'unsafe'): 665, ('hard_sl', 'safe'): 1420, ('hard_sl', 'unsafe'): 649, ('refuseu_x', 'unsafe'): 1381, ('refuseu_x', 'safe'): 19}

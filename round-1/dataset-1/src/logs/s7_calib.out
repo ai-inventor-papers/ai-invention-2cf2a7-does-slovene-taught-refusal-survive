@@ -1,0 +1,20 @@
+15:16:46|INFO   |gpt_calib_v1.jsonl: 0 cached, 590 to call (spent so far $0.003)
+15:16:47|INFO   |gpt_calib_v1.jsonl: 0/590 errors=0 spent=$0.004 step=0.000
+15:17:06|INFO   |gpt_calib_v1.jsonl: 500/590 errors=0 spent=$0.176 step=0.173
+15:17:10|INFO   |gpt_calib_v1.jsonl: finished, 590 ok, errors=0, spent=$0.207
+15:17:10|INFO   |gpt calib v1 acc {'en': 0.7085, 'sl': 0.6271}
+15:17:10|INFO   |gpt_calib_v2.jsonl: 0 cached, 590 to call (spent so far $0.207)
+15:17:11|INFO   |gpt_calib_v2.jsonl: 0/590 errors=0 spent=$0.208 step=0.204
+15:17:29|INFO   |gpt_calib_v2.jsonl: 500/590 errors=0 spent=$0.384 step=0.381
+15:17:34|INFO   |gpt_calib_v2.jsonl: finished, 590 ok, errors=0, spent=$0.417
+15:17:34|INFO   |gpt calib v2 acc {'en': 0.7322, 'sl': 0.6305} -> v2
+15:17:34|INFO   |gem_calib_v1.jsonl: 0 cached, 590 to call (spent so far $0.417)
+15:17:35|INFO   |gem_calib_v1.jsonl: 0/590 errors=0 spent=$0.418 step=0.414
+15:17:55|INFO   |gem_calib_v1.jsonl: 500/590 errors=0 spent=$0.573 step=0.570
+15:18:07|INFO   |gem_calib_v1.jsonl: finished, 590 ok, errors=0, spent=$0.601
+15:18:07|INFO   |gem calib v1 acc {'en': 0.7017, 'sl': 0.6203}
+15:18:07|INFO   |gem_calib_v2.jsonl: 0 cached, 590 to call (spent so far $0.601)
+15:18:07|INFO   |gem_calib_v2.jsonl: 0/590 errors=0 spent=$0.601 step=0.598
+15:18:23|INFO   |gem_calib_v2.jsonl: 500/590 errors=0 spent=$0.812 step=0.808
+15:18:34|INFO   |gem_calib_v2.jsonl: finished, 590 ok, errors=0, spent=$0.844
+15:18:34|INFO   |gem calib v2 acc {'en': 0.722, 'sl': 0.6746} -> v2
