@@ -96,7 +96,7 @@ replacement with a status. **No model is run and no GPU is used**: iter-1 worksp
 | `logs/` | run logs |
 
 Artifacts kept at this absolute path for later rounds:
-`/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_2/gen_art/gen_art_evaluation_1/`
+`./`
 (`eval_out.json`, `RECONCILIATION.md`, `labels/`, `work/`, `figures/`).
 
 ## How to run

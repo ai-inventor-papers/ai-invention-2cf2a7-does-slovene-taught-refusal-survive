@@ -13,7 +13,7 @@ from typing import Any, Iterable
 from loguru import logger
 
 WS = Path(__file__).resolve().parent.parent
-ITER1 = Path("/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_1/gen_art")
+ITER1 = Path(__file__).resolve().parents[4] / "round-1"
 EXP1 = ITER1 / "gen_art_experiment_1"
 EXP2 = ITER1 / "gen_art_experiment_2"
 EXP3 = ITER1 / "gen_art_experiment_3"
