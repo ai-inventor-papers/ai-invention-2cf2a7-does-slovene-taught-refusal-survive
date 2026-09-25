@@ -107,7 +107,7 @@ def attach(model, ad: Path, tag: str) -> dict:
         A = ab["A"].to("cuda:0", torch.bfloat16)
         B = ab["B"].to("cuda:0", torch.bfloat16)
         _LORA["handles"].append(mods[name].register_forward_hook(_hook(A, B, tag)))
-    info = {"tag": tag, "adapter_dir": str(ad).split("3_invention_loop/")[-1],
+    info = {"tag": tag, "adapter_dir": str(ad).split(".")[-1],
             "adapter_sha256": sha256_file(ad / "adapter_model.safetensors"),
             "adapter_sha1": sha1_file(ad / "adapter_model.safetensors"), "n_tensors": len(sd),
             "n_lora_modules": len(pairs), "impl": "forward hooks, bf16, scaling = lambda",

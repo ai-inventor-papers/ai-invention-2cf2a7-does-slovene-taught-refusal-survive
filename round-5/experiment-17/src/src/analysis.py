@@ -621,7 +621,7 @@ def main() -> None:
     # secondary correction (artifact 3)
     import glob
     sec = glob.glob(str(RUN / "iter_5/gen_art/*evaluation*/**/*error_matri*.json"), recursive=True)
-    res["secondary_correction"] = {"files": [s.split("3_invention_loop/")[-1] for s in sec],
+    res["secondary_correction"] = {"files": [s.split(".")[-1] for s in sec],
                                    "status": "NOT_EXECUTED" if not sec else "EXPLORATORY",
                                    "note": "secondary correction not available" if not sec else
                                    "present; not applied to headline (MT items with suffix != natural prompts)"}

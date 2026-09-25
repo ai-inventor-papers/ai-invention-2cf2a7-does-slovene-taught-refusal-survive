@@ -88,7 +88,7 @@ def main() -> None:
             continue
         k = len(found & ids)
         if k:
-            hits[f.split("3_invention_loop/")[-1]] = k
+            hits[f.split(".")[-1]] = k
     dump(DATA / "contamination_check.json", {"files_scanned": len(pat_files), "files_with_hits": hits,
                                              "n_hit_files": len(hits),
                                              "rule": "grep 'refuseu_eval_<n>' ids of FINAL items inside any gens/rows "

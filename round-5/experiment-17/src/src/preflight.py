@@ -15,7 +15,7 @@ from common import (ADAPTER_DIR, DS_DIR, E8, E11, E14, GUARDS, JUDGE_PROMPT_SHA,
 
 
 def rel(p) -> str:
-    return str(p).split("3_invention_loop/")[-1]
+    return str(p).split(".")[-1]
 
 
 @logger.catch(reraise=True)
