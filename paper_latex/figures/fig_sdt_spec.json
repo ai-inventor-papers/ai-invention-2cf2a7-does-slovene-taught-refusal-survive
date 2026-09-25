@@ -1,0 +1,61 @@
+{
+  "figure_id": "fig_sdt",
+  "renderer": "fig_sdt.py (hand-written with the aii-data-fig-gen house style; the catalogue 'forest' type draws only symmetric intervals in one colour, and these bootstrap CIs are asymmetric)",
+  "aspect": "21:9",
+  "width_in": 7.0,
+  "provenance": {
+    "artifact": "gen_art_experiment_5 (iteration 2, FINAL sealed-outcome split)",
+    "files": [
+      "results/analysis_final.json -> C2_hard_sdt.primary_SLMT_vs_ENBT (cells.F, DiD_c, DiD_dprime)",
+      "results/analysis_final.json -> descriptives[<model>|hard|<arm>|{orbench_hard1k,xstest}|safe] (refusal counts)",
+      "results/RESULTS.md -> 'HARD secondary contrasts: primary_SLMT_vs_ENBT'"
+    ],
+    "judge": "local Qwen3-14B (NF4, frozen v1 prompt), substituted for the pre-registered gemini-2.5-flash judge after the run budget ran out (artifact deviation D5)",
+    "outcome_coding": "R = judge label REFUSE (PARTIAL counts as non-refusal)",
+    "item_set": "HARD set: 349 harmful + 1,093 safe items (XSTest 139/173, OR-Bench toxic 210 / OR-Bench-hard-1k 920); Slovene arm = machine translation (SL_MT), English arm = back-translation (EN_BT)",
+    "sdt_definition": "rates log-linear corrected (k+0.5)/(n+1); d' = z(H) - z(F); c = -(z(H)+z(F))/2; DiD = (GaMS3 SL - GaMS3 EN) - (Gemma SL - Gemma EN), so DiD_c > 0 means Gemma's criterion moves toward refusal in Slovene relative to GaMS3",
+    "ci": "95% percentile intervals from 2,000 item-level bootstrap draws (stratified by harmful/safe)"
+  },
+  "panel_a": {
+    "title": "False-alarm rate on safe items",
+    "xlabel": "Model",
+    "ylabel": "False-alarm rate F (proportion)",
+    "ylim": [0.0, 0.7],
+    "reference_line": 0.5,
+    "categories": ["Gemma", "GaMS3"],
+    "n_safe": 1093,
+    "series": [
+      {
+        "label": "English",
+        "refusals": [398, 298],
+        "values": [0.3642595978062157, 0.27285191956124316],
+        "wilson95": [[0.3361, 0.3931], [0.2471, 0.2998]]
+      },
+      {
+        "label": "Slovene",
+        "refusals": [622, 298],
+        "values": [0.5690127970749543, 0.27285191956124316],
+        "wilson95": [[0.5395, 0.5981], [0.2471, 0.2998]]
+      }
+    ]
+  },
+  "panel_b": {
+    "title": "Difference-in-differences",
+    "xlabel": "DiD estimate (z units)",
+    "null_line": 0.0,
+    "rows": [
+      {
+        "label": "DiD_c (criterion)",
+        "est": 0.5224445032059439,
+        "ci95": [0.3812540601476006, 0.6826414082572464],
+        "color": "vermilion"
+      },
+      {
+        "label": "DiD_d' (sensitivity)",
+        "est": -0.002974241989206927,
+        "ci95": [-0.32819381574869955, 0.29260995233835446],
+        "color": "grey"
+      }
+    ]
+  }
+}

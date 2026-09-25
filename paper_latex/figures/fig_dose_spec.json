@@ -1,0 +1,279 @@
+{
+ "figure_id": "fig_dose",
+ "source": {
+  "artifact": "gen_art_experiment_9 (art_n3Crj0p24sBa), iteration 3",
+  "files": [
+   "results/items_final.jsonl",
+   "results/analysis.json -> G3['lambda|j1|R1'].per_model"
+  ],
+  "readout": "J1 (mDeBERTa classifier distilled from gemini-2.5-flash labels), outcome R1 = REFUSE, harmful probe items",
+  "arms": "EN = English back-translation (en_bt); SL = NLLB Slovene machine translation (sl_mt)",
+  "extraction": "python extract_dose_data.py <exp9 artifact dir>  (asserts counts reproduce the stored Hautus rates)"
+ },
+ "aspect": "21:9",
+ "width_in": 7.0,
+ "xlabel": "Abliteration dose λ (edit scale; 0 = unedited, 1 = selected edit)",
+ "ylabel": "Refusal rate (fraction)",
+ "ylim": [
+  0.0,
+  1.02
+ ],
+ "legend_loc": "upper right",
+ "lambda": [
+  0.0,
+  0.25,
+  0.5,
+  0.75,
+  1.0,
+  1.25,
+  1.5,
+  1.75,
+  2.0
+ ],
+ "series": [
+  {
+   "label": "Gemma EN",
+   "color": "#0173B2",
+   "linestyle": "-",
+   "marker": "o",
+   "refusals": [
+    283,
+    91,
+    75,
+    58,
+    32,
+    23,
+    14,
+    9,
+    6
+   ],
+   "n": [
+    300,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100
+   ],
+   "values": [
+    0.9433,
+    0.91,
+    0.75,
+    0.58,
+    0.32,
+    0.23,
+    0.14,
+    0.09,
+    0.06
+   ],
+   "wilson95_lo": [
+    0.9111,
+    0.8377,
+    0.657,
+    0.4821,
+    0.2367,
+    0.1584,
+    0.0853,
+    0.0481,
+    0.0278
+   ],
+   "wilson95_hi": [
+    0.9643,
+    0.9519,
+    0.8245,
+    0.672,
+    0.4166,
+    0.3215,
+    0.2214,
+    0.1623,
+    0.1248
+   ]
+  },
+  {
+   "label": "Gemma SL",
+   "color": "#0173B2",
+   "linestyle": "--",
+   "marker": "s",
+   "refusals": [
+    300,
+    99,
+    96,
+    82,
+    64,
+    35,
+    21,
+    20,
+    8
+   ],
+   "n": [
+    300,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100
+   ],
+   "values": [
+    1.0,
+    0.99,
+    0.96,
+    0.82,
+    0.64,
+    0.35,
+    0.21,
+    0.2,
+    0.08
+   ],
+   "wilson95_lo": [
+    0.9874,
+    0.9455,
+    0.9016,
+    0.7333,
+    0.5424,
+    0.2636,
+    0.1417,
+    0.1334,
+    0.0411
+   ],
+   "wilson95_hi": [
+    1.0,
+    0.9982,
+    0.9843,
+    0.883,
+    0.7273,
+    0.4475,
+    0.2998,
+    0.2888,
+    0.15
+   ]
+  },
+  {
+   "label": "GaMS3 EN",
+   "color": "#029E73",
+   "linestyle": "-",
+   "marker": "^",
+   "refusals": [
+    279,
+    69,
+    32,
+    13,
+    5,
+    5,
+    4,
+    2,
+    4
+   ],
+   "n": [
+    300,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100
+   ],
+   "values": [
+    0.93,
+    0.69,
+    0.32,
+    0.13,
+    0.05,
+    0.05,
+    0.04,
+    0.02,
+    0.04
+   ],
+   "wilson95_lo": [
+    0.8954,
+    0.5937,
+    0.2367,
+    0.0776,
+    0.0215,
+    0.0215,
+    0.0157,
+    0.0055,
+    0.0157
+   ],
+   "wilson95_hi": [
+    0.9538,
+    0.7722,
+    0.4166,
+    0.2098,
+    0.1118,
+    0.1118,
+    0.0984,
+    0.07,
+    0.0984
+   ]
+  },
+  {
+   "label": "GaMS3 SL",
+   "color": "#029E73",
+   "linestyle": "--",
+   "marker": "D",
+   "refusals": [
+    286,
+    77,
+    46,
+    21,
+    6,
+    4,
+    2,
+    3,
+    3
+   ],
+   "n": [
+    300,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100
+   ],
+   "values": [
+    0.9533,
+    0.77,
+    0.46,
+    0.21,
+    0.06,
+    0.04,
+    0.02,
+    0.03,
+    0.03
+   ],
+   "wilson95_lo": [
+    0.9232,
+    0.6785,
+    0.3656,
+    0.1417,
+    0.0278,
+    0.0157,
+    0.0055,
+    0.0103,
+    0.0103
+   ],
+   "wilson95_hi": [
+    0.972,
+    0.8416,
+    0.5574,
+    0.2998,
+    0.1248,
+    0.0984,
+    0.07,
+    0.0845,
+    0.0845
+   ]
+  }
+ ]
+}

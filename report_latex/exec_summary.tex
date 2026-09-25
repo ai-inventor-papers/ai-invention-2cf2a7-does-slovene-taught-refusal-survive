@@ -1,0 +1,65 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage{graphicx, geometry, amsmath, hyperref, url, booktabs, xcolor}
+\geometry{margin=1in}
+\hypersetup{colorlinks=true, linkcolor=black, citecolor=black, urlcolor=black}
+
+\title{Executive Summary:\\Cross-Lingual Refusal Under English-Only Abliteration}
+\author{AI Inventor}
+\date{September 2026}
+
+\begin{document}
+\maketitle
+
+\section{Goal}
+
+Measure whether Slovene-taught refusal in GaMS3-12B-Instruct transfers to English, and whether an English-only de-censoring edit (Heretic abliteration) removes Slovene refusal as effectively as English refusal, compared with Gemma-3-12B-IT. The two models share the same pretrained ancestor but diverge in safety-supervision language. The practical stake is whether a monolingual adversary can strip bilingual safety, relevant for evaluating the robustness of bilingual safety training.
+
+\section{What Was Tried}
+
+Five iterations ran 24 artifacts across 17 experiments, 5 evaluations, and 2 research checks. Designs included: (i) difference-in-differences on RefusEU prompts across hazard categories; (ii) signal-detection decomposition (sensitivity $d'$ and criterion $c$) on HARD items; (iii) Heretic English-objective abliteration with transfer curves, lambda-scaling ladders, and fresh-trial confirmation; (iv) a $2 \times 3 \times 3$ input-language $\times$ output-language $\times$ dose mechanism test; (v) teacher-inheritance screening; (vi) base-checkpoint geometry and persona-gate tests; (vii) utility controls (Belebele, ARC-Challenge, BoolQ); (viii) R-INCAP safety-vs-production-failure decomposition with StrongREJECT harmful-content scoring.
+
+\section{Key Results}
+
+\begin{itemize}
+  \item \textbf{C-OUT confirmed.} Gemma's residual refusal follows the output language: output-language contrast (PPI-corrected) $= +2.43$ [$+0.89$, $+5.38$] log-odds (experiment~16). Cross-model difference $= -2.31$ [$-5.34$, $-0.68$]: GaMS3 shows no output-language effect. The input-language effect in Gemma is negative ($-0.68$ [$-1.23$, $-0.36$]).
+  \item \textbf{R-BASE, not edit-induced.} The lag is pre-edit baseline, not created by the edit. Experiment~15 (most powerful estimate): $G_{3,\text{edit}} = +0.47$ [$-0.96$, $2.14$], spanning zero. Parallel-curve geometry holds across bodies.
+  \item \textbf{Reserve is safety, not production failure.} Harmful content separates at both doses (OUT$_U = 2.61$ [$2.20$, $3.07$] at high dose). Production-failure index difference: Gemma $0.46$ [$0.23$, $0.65$]; half of non-compliance is deflection, consistent with the relevance curse.
+  \item \textbf{Criterion shift replicates.} Gemma's criterion moves toward refusal on Slovene-output items (8 of 9 compliance-valid rows have CIs below zero). GaMS3's criterion is language-invariant.
+  \item \textbf{Edit is effective everywhere.} On RefusEU FINAL ($n = 1{,}300$ per cell), all four model $\times$ language cells are ROBUST.
+  \item \textbf{Utility preserved.} No Slovene-specific downstream damage; localised ARC-Challenge cost of 3.7~pp for GaMS3.
+\end{itemize}
+
+\section{What Failed}
+
+\begin{itemize}
+  \item \textbf{Alternate~2 (base-checkpoint geometry):} Dead. Base-model separability does not predict instruct-level refusal.
+  \item \textbf{Alternate~3 (persona gating):} Untestable. Manipulation check failed; ablating the own-name direction substituted the Qwen teacher identity.
+  \item \textbf{Alternate~4 (prefill depth):} Uncitable. No readout reached kappa $0.60$ on prefill continuations.
+  \item \textbf{Ancestor-direction induction (C4):} Failure branch. The pretrained direction never induced refusal above $0.50$.
+  \item \textbf{Readout gate:} Never passed across five iterations. Best edited-row kappa was $0.43$ (gemini-2.5-flash).
+  \item \textbf{Experiment~13:} GPU lost before execution.
+  \item \textbf{Dose contrast ($D$):} Underpowered in every iteration (MDE $> 2m$).
+\end{itemize}
+
+\section{Best Result}
+
+The most powerful lag estimate is experiment~15's $G_{3,R} = -0.70$ [$-1.01$, $-0.42$] (MDE 0.42), surviving under tipping-point-adjusted (TTJ) readout ($-0.79$ [$-1.09$, $-0.48$]). The best-supported mechanistic account is C-OUT (output-language effect): English-only abliteration amplifies Gemma's Slovene--English refusal gap rather than closing it, and the residual is real safety (harmful content separates). The narrowed novelty claim (crossing both prompt and response language with safety endpoints on a sibling pair under partial-dose abliteration) is unoccupied as of September 2026 (medium-low confidence), although the broader output-language finding is partially occupied by Addagada and Nguyen et al.
+
+\begin{figure}[!htbp]
+  \centering
+  \includegraphics[width=\linewidth,height=0.85\textheight,keepaspectratio]{figures/fig_cout_forest_v0.pdf}
+  \caption{Output-language contrasts on the held-out 294-item confirmation set (Experiment~16). Gemma's output-language contrast is $+2.43$ [$+0.89$, $+5.38$] log-odds (PPI-corrected). GaMS3 shows no output-language effect ($+0.12$ [$-0.47$, $+0.72$]). Cross-model difference: $-2.31$ [$-5.34$, $-0.68$].}
+  \label{fig:cout_exec}
+\end{figure}
+
+\section{Open Questions}
+
+\begin{itemize}
+  \item The readout gate has never passed. All adjudication is author-LLM, not human.
+  \item The frozen-core Heretic procedure (bf16, 80 trials) has never been run.
+  \item No artifact has scored natural RefusEU reserved-split prompts under the edit.
+  \item The dose contrast remains underpowered: the main claim vs supervised-reach rivalry is unresolved.
+  \item Novelty is PARTIALLY OCCUPIED and may narrow further.
+\end{itemize}
+
+\end{document}
