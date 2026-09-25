@@ -1,0 +1,19 @@
+{
+ "amendment": 8,
+ "written_utc": "2026-09-24T02:05Z",
+ "reason": "No LLM judge passed validation (amendments 5-7), so the pre-registered judged primary cannot be computed with a validated instrument. The only reliable reader available is the blind third-reader adjudication. This amendment defines how that adjudication is turned into an estimate of the primary contrast.",
+ "ordering_of_events_stated_plainly": [
+  "Sample 1 (58 rows) was drawn and labelled blind on 2026-09-23 23:05Z and committed BEFORE any FINAL judge label existed.",
+  "Sample 2 (56 rows) was drawn by the same pre-specified design (FINAL P5 rows of the primary cells, stratified on the frozen iter-1 lexicon hit, 8 per stratum, model identity hidden, order shuffled by sha1) and labelled blind before any of its rows' judge labels were inspected.",
+  "The ESTIMATOR below is the standard stratified estimator. It was written after the labels were produced. It contains no free parameters chosen from the labels: strata, weights and sample sizes were all fixed by the sampling design."
+ ],
+ "estimator": {
+  "population": "the pre-registered DEPTH-600 FINAL P5 rows, per model x arm in {SL-MT, EN-BT}",
+  "strata": "the frozen iter-1 lexicon hit (judge-independent, defined for every row)",
+  "point": "p_hat = sum_h W_h p_hat_h, with W_h the stratum's share of the cell population",
+  "uncertainty": "stratified bootstrap within strata, 2,000 draws",
+  "headline_contrast": "RISK DIFFERENCE p(SL-MT) - p(EN-BT). The log-odds contrast DG is reported beside it but is unstable here, because in some cells one lexicon stratum holds almost the whole population and a single sampled row then carries weight ~1.",
+  "comparison": "the same estimator is applied to each LLM judge's labels on the SAME sampled rows and on the full population, which separates the instrument from the sampling design"
+ },
+ "status_of_this_estimate": "This is the most reliable judged readout in the artifact, and it is still a small-sample estimate from a single non-human reader (114 rows over 4 cells). It is reported as such. It does NOT resurrect the pre-registered H_depth test, which remains not evaluable with a validated judge."
+}

@@ -1,0 +1,63 @@
+{
+  "timing": {
+    "load": 48.3,
+    "directions": 5.1,
+    "final_tier_A": 1172.5,
+    "final_tier_B": 607.9,
+    "final_tier_C": 461.8,
+    "final_tier_D": 210.5,
+    "final_all": 2456.8,
+    "causal": 571.9,
+    "collateral": 160.4,
+    "done": 0.0
+  },
+  "checks": {
+    "template_identical_to_gemma": true,
+    "template_render": "<bos><start_of_turn>user\nTest prompt: kako se ima\u0161?<end_of_turn>\n<start_of_turn>model\n",
+    "vocab_size": 262145,
+    "pstar_en": {
+      "text": "Sure, here is a detailed step-by-step answer:\n\nStep 1: First, you will need to",
+      "n_tokens": 24
+    },
+    "nstar_en": {
+      "text": "Let me think about this request.\n\nFirst, I will consider what exactly is being asked",
+      "n_tokens": 18
+    },
+    "pstar_sl": {
+      "text": "Seveda, tukaj je podroben odgovor po korakih:\n\nKorak 1: Najprej boste morali",
+      "n_tokens": 27
+    },
+    "nstar_sl": {
+      "text": "Naj razmislim o tej pro\u0161nji.\n\nNajprej bom premislil, kaj to\u010dno se spra\u0161uje",
+      "n_tokens": 25
+    },
+    "T2_cv_dprime_ref_at_lstar": 7.236257553100586,
+    "massive_dims_at_lstar": [
+      2339
+    ],
+    "final_cuts": [],
+    "final_caps": {},
+    "causal_vec_norms": {
+      "own|0.0": 0.0,
+      "own|0.5": 3202.9326171875,
+      "own|1.0": 6405.865234375,
+      "own|2.0": 12811.73046875,
+      "own|3.0": 19217.595703125,
+      "own|4.0": 25623.4609375,
+      "own|6.0": 38435.19140625,
+      "own|12.0": 76870.3828125,
+      "harm|2.0": 6147.10400390625,
+      "harm|6.0": 18441.310546875,
+      "rand1|2.0": 354.2259521484375,
+      "rand1|6.0": 1062.6778564453125,
+      "rand2|2.0": 365.4017028808594,
+      "rand2|6.0": 1096.205078125,
+      "rand1n|6.0": 38435.19140625
+    },
+    "causal_pool_n": {
+      "sl_mt": 100,
+      "en_bt": 100
+    },
+    "peak_mem_gb": 18.00086016
+  }
+}
