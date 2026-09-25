@@ -20,12 +20,12 @@ for _d in (WORK, LABELS, LOGS, FIG, ADJ, RES):
 
 RUN = Path(__file__).resolve().parents[4]
 IT2 = RUN / "." / "round-2" / "."
-E8 = IT2 / "gen_art_experiment_8"
-E5 = IT2 / "gen_art_experiment_5"
-E6 = IT2 / "gen_art_experiment_6"
-E7 = IT2 / "gen_art_experiment_7"
-EV1 = IT2 / "gen_art_evaluation_1"
-DS1 = RUN / "." / "round-1" / "." / "gen_art_dataset_1"
+E8 = IT2 / "experiment-8/src"
+E5 = IT2 / "experiment-5/src"
+E6 = IT2 / "experiment-6/src"
+E7 = IT2 / "experiment-7/src"
+EV1 = IT2 / "evaluation-1/src"
+DS1 = RUN / "." / "round-1" / "." / "dataset-1/src"
 
 SEED = 20260925
 M_C3 = 0.6752386824941827      # frozen iter-1 margin (exp8 protocol.json margins.m_C3)

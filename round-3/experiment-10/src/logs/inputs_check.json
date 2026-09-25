@@ -1,125 +1,125 @@
 {
   "P200": {
-    "path": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/data/probe_P200.jsonl",
+    "path": "../../../../round-2/experiment-8/src/data/probe_P200.jsonl",
     "exists": true,
     "sha256": "e152fe5430810a82ba3686a736fe8e89ad4c7a530f0d849d52dc5e36a77b0d63",
     "expected": "e152fe5430810a82ba3686a736fe8e89ad4c7a530f0d849d52dc5e36a77b0d63",
     "match": true
   },
   "construct_A2": {
-    "path": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/data/construct_A2.jsonl",
+    "path": "../../../../round-2/experiment-8/src/data/construct_A2.jsonl",
     "exists": true,
     "sha256": "93c993566a4f496f79c84bbbf4ccc8961f0b45990d81c05d6a2a2e30bd672449",
     "expected": "93c993566a4f496f79c84bbbf4ccc8961f0b45990d81c05d6a2a2e30bd672449",
     "match": true
   },
   "exp8_split_manifest": {
-    "path": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/data/split_manifest.json",
+    "path": "../../../../round-2/experiment-8/src/data/split_manifest.json",
     "exists": true,
     "sha256": "73791b7727dce802baec8dfefd5e29716d37cc42c2a9af37efb09d8f81d3cf39",
     "expected": null,
     "match": null
   },
   "exp8_provenance": {
-    "path": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/data/provenance.json",
+    "path": "../../../../round-2/experiment-8/src/data/provenance.json",
     "exists": true,
     "sha256": "12cb59c2763c3b4d410c9a0aaf5e0602fd2f97e8e07231181aa2304cdf4d29e5",
     "expected": null,
     "match": null
   },
   "exp8_gpu_block": {
-    "path": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/src/gpu_block.py",
+    "path": "../../../../round-2/experiment-8/src/src/gpu_block.py",
     "exists": true,
     "sha256": "21669c470c4974d59480e107a4b4b10ac95e857ba15e5b881ec73e0517670a2e",
     "expected": null,
     "match": null
   },
   "exp8_probe": {
-    "path": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/src/probe.py",
+    "path": "../../../../round-2/experiment-8/src/src/probe.py",
     "exists": true,
     "sha256": "814c2c130cf21e3f2159f8f3f241fa1971baa3b003a98ad3add485ad4eb50262",
     "expected": null,
     "match": null
   },
   "exp8_common": {
-    "path": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/src/common.py",
+    "path": "../../../../round-2/experiment-8/src/src/common.py",
     "exists": true,
     "sha256": "2096511062b6b2d4e8d4c5802d23cce3f433044b31dafaa223647b497b2656ee",
     "expected": null,
     "match": null
   },
   "exp8_judge": {
-    "path": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/src/judge.py",
+    "path": "../../../../round-2/experiment-8/src/src/judge.py",
     "exists": true,
     "sha256": "44bc0bb046bce535863d3e2a73b49f76774bf39db2ae89e3086b0eecdefe4cd1",
     "expected": null,
     "match": null
   },
   "exp8_analysis": {
-    "path": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/src/analysis.py",
+    "path": "../../../../round-2/experiment-8/src/src/analysis.py",
     "exists": true,
     "sha256": "c61254e03aa3eef859240e3979ac0673bda96c9291c8212d513dd9457918d2a1",
     "expected": null,
     "match": null
   },
   "exp8_protocol_amendments": {
-    "path": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/protocol_amendments.json",
+    "path": "../../../../round-2/experiment-8/src/results/protocol_amendments.json",
     "exists": true,
     "sha256": "f420dcedecbf1c23edb52d82e5e69d2f2cc8d007a74efdef9b705ef69f21a24e",
     "expected": null,
     "match": null
   },
   "exp8_judge_labels": {
-    "path": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/judge_labels.jsonl",
+    "path": "../../../../round-2/experiment-8/src/results/judge_labels.jsonl",
     "exists": true,
     "sha256": "06bdfe199bdacf590e885079808e979a217c414cafe4221af39adf2c9a1b2362",
     "expected": null,
     "match": null
   },
   "dataset_full": {
-    "path": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_1/gen_art/gen_art_dataset_1/full_data_out.json",
+    "path": "../../../../round-1/dataset-1/src/full_data_out.json",
     "exists": true,
     "sha256": "35c98bc5d5336829af33a341d3d8b92a83d696e99a530ee5bc947d262c30803c",
     "expected": null,
     "match": null
   },
   "adapter_gemma": {
-    "path": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_1/gen_art/gen_art_experiment_4/results/gemma_it/selected_adapter/adapter_model.safetensors",
+    "path": "../../../../round-1/experiment-4/src/results/gemma_it/selected_adapter/adapter_model.safetensors",
     "exists": true,
     "sha256": "84671c8ec5c134cb07eba70933693a81b77379e1a1a10100288ec603e3018377",
     "expected": null,
     "match": null
   },
   "adapter_gams": {
-    "path": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_1/gen_art/gen_art_experiment_4/results/gams3_it/selected_adapter/adapter_model.safetensors",
+    "path": "../../../../round-1/experiment-4/src/results/gams3_it/selected_adapter/adapter_model.safetensors",
     "exists": true,
     "sha256": "514b29020cb80eed365cf892b4cd1e78988c2f54c11ab80e04a1d3f77e1469de",
     "expected": null,
     "match": null
   },
   "selection_pick_gemma": {
-    "path": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_1/gen_art/gen_art_experiment_4/results/gemma_it/selection_pick.json",
+    "path": "../../../../round-1/experiment-4/src/results/gemma_it/selection_pick.json",
     "exists": true,
     "sha256": "749fa1a2f833c8f87268dd42b0c5449c0972c9ab0b408225cc67e6ea39783e38",
     "expected": null,
     "match": null
   },
   "selection_pick_gams": {
-    "path": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_1/gen_art/gen_art_experiment_4/results/gams3_it/selection_pick.json",
+    "path": "../../../../round-1/experiment-4/src/results/gams3_it/selection_pick.json",
     "exists": true,
     "sha256": "3b821a459ce8bb61241a027e2f9f5c1632b3386c47733399a33725c0d59152c5",
     "expected": null,
     "match": null
   },
   "m_json": {
-    "path": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_1/gen_art/gen_art_experiment_4/results/m.json",
+    "path": "../../../../round-1/experiment-4/src/results/m.json",
     "exists": true,
     "sha256": "64f23861585f87685770cfe0c366be478f15e2c781e7de74cb2833bbd5d5442c",
     "expected": null,
     "match": null
   },
   "harmonised_P1": {
-    "path": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_2/gen_art/gen_art_evaluation_1/labels/harmonised_P1.jsonl.gz",
+    "path": "../../../../round-2/evaluation-1/src/labels/harmonised_P1.jsonl.gz",
     "exists": true,
     "sha256": "26bec2498b68cfd78ca9a917a94cc2bbfd039ccdbc3e51524f5d88f9e98c5c6c",
     "expected": null,

@@ -26,11 +26,11 @@ for _d in (DATA, RESULTS, LOGS, FIG, FINAL_DIR, DEV_DIR, LABELS):
     _d.mkdir(parents=True, exist_ok=True)
 
 RUN = Path(__file__).resolve().parents[4]
-DS_DIR = RUN / "iter_1/gen_art/gen_art_dataset_1"
-E5 = RUN / "iter_2/gen_art/gen_art_experiment_5"
-E8 = RUN / "iter_2/gen_art/gen_art_experiment_8"
-E4 = RUN / "iter_1/gen_art/gen_art_experiment_4"
-EV1 = RUN / "iter_2/gen_art/gen_art_evaluation_1"
+DS_DIR = RUN / "round-1/dataset-1/src"
+E5 = RUN / "round-2/experiment-5/src"
+E8 = RUN / "round-2/experiment-8/src"
+E4 = RUN / "round-1/experiment-4/src"
+EV1 = RUN / "round-2/evaluation-1/src"
 SIBLING_ITER3 = RUN / "round-3"
 
 SEED = 20260925

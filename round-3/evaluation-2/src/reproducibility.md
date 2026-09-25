@@ -14,7 +14,7 @@ cp -r <this folder> ~/readout_repair && cd ~/readout_repair
 ```
 All read-only inputs live at absolute paths under
 `../../../round-2/` (exp5, exp7, exp8, evaluation_1) and
-`.../iter_1/gen_art/gen_art_dataset_1`; `src/common.py` hard-codes them. On a fresh machine, place those dependency
+`.../round-1/dataset-1/src`; `src/common.py` hard-codes them. On a fresh machine, place those dependency
 workspaces at the same paths (or edit the constants in `src/common.py`).
 
 ## 2. System + Python
@@ -65,7 +65,7 @@ EVAL_NBOOT=1000 .venv/bin/python eval.py
 .venv/bin/python src/rederive.py
 
 # validate + mini/preview
-SKILL=/ai-inventor/.claude/skills/aii-json
+SKILL=../../../tools/aii-json
 $SKILL/../.ability_client_venv/bin/python $SKILL/scripts/aii_json_validate_schema.py --format exp_eval_sol_out --file "$PWD/eval_out.json"
 $SKILL/../.ability_client_venv/bin/python $SKILL/scripts/aii_json_format_mini_preview.py --input "$PWD/eval_out.json"
 ```

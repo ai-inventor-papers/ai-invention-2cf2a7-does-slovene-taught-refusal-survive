@@ -21,10 +21,10 @@ SEED = 20260925
 ITER1_SEED = 20260923  # iter-1 Heretic seed; rand_dirs(j) uses ITER1_SEED + j (copied verbatim)
 
 RUN = Path(__file__).resolve().parents[4]
-ITER1_EXP4 = RUN / "3_invention_loop/iter_1/gen_art/gen_art_experiment_4"
-ITER1_DATASET = RUN / "3_invention_loop/iter_1/gen_art/gen_art_dataset_1"
-ITER2_EXP8 = RUN / "3_invention_loop/iter_2/gen_art/gen_art_experiment_8"
-ITER2_EXP5 = RUN / "3_invention_loop/iter_2/gen_art/gen_art_experiment_5"
+ITER1_EXP4 = RUN / "round-1/experiment-4/src"
+ITER1_DATASET = RUN / "round-1/dataset-1/src"
+ITER2_EXP8 = RUN / "round-2/experiment-8/src"
+ITER2_EXP5 = RUN / "round-2/experiment-5/src"
 ITER3_GENART = RUN / "round-3"
 
 MODELS = {

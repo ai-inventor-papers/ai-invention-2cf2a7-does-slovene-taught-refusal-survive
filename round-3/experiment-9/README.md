@@ -22,7 +22,7 @@ VALIDITY: 16,780 scored rows, 0% degeneracy, 100% SL language consistency, chrF 
 
 AMENDMENTS (results/protocol_amendments.json, each written before the affected work): A1 OpenRouter budget was already exhausted at start -> local distilled judges; A2 readout spec; A3 pool exhaustion; A4 randomized-SVD replay is value-identical but not bit-identical; A5 vLLM 0.30 dropped bitsandbytes -> FP8 generation, engine-equivalence gate FAILED (agreement 0.86/0.88) and both siblings were run on the same FP8 engine, absolute levels are engine-specific; A6 trial curve truncated to 7 paired steps.
 
-FOR LATER ARTIFACTS: selected/{gemma_it,gams3_it}/ holds each model's selected adapter, Optuna journal and residual directions at workspace path /ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_3/gen_art/gen_art_experiment_9/selected/; adapters/ holds all 40 trial + 8 lambda + random adapters per model; judge_model/ holds the distilled judge.
+FOR LATER ARTIFACTS: selected/{gemma_it,gams3_it}/ holds each model's selected adapter, Optuna journal and residual directions at workspace path src/selected/; adapters/ holds all 40 trial + 8 lambda + random adapters per model; judge_model/ holds the distilled judge.
 
 ## Dependencies
 

@@ -26,10 +26,10 @@ for _d in (DATA, RESULTS, LOGS, ACTS, FIGS):
     _d.mkdir(parents=True, exist_ok=True)
 
 RUN = Path(__file__).resolve().parents[4]
-EXP8 = RUN / "iter_2/gen_art/gen_art_experiment_8"
-ITER1_EXP4 = RUN / "iter_1/gen_art/gen_art_experiment_4"
-ITER1_DATASET = RUN / "iter_1/gen_art/gen_art_dataset_1"
-EVAL1 = RUN / "iter_2/gen_art/gen_art_evaluation_1"
+EXP8 = RUN / "round-2/experiment-8/src"
+ITER1_EXP4 = RUN / "round-1/experiment-4/src"
+ITER1_DATASET = RUN / "round-1/dataset-1/src"
+EVAL1 = RUN / "round-2/evaluation-1/src"
 SEED = 20260925
 
 MODELS = {
