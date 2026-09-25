@@ -1,0 +1,60 @@
+{
+  "figure_id": "fig_sdt",
+  "renderer": "render_fig_sdt.py (hand-written; house style + layout gates from aii-data-fig-gen/chart_style.py)",
+  "title": "Criterion shift without sensitivity change",
+  "aspect": "16:9",
+  "width_in": 7.0,
+  "provenance": {
+    "artifact": "gen_art_experiment_5 (art_Z4IDI9MPfitU), Experiment 5, reserved FINAL split, HARD set",
+    "file": "results/analysis_final.json",
+    "block": "C2_hard_sdt.primary_SLMT_vs_ENBT (Slovene machine translation vs English back-translation)",
+    "judge": "local Qwen3-14B refusal judge (frozen prompt); PARTIAL coded as non-refusal in this primary block",
+    "cell_order_in_file": ["Gemma EN", "Gemma SL", "GaMS3 EN", "GaMS3 SL"],
+    "note": "F and c are the file's SDT cell values (F carries the file's log-linear correction, (k+0.5)/(n+1)); raw refusal counts come from mcnemar_within_model_SL_vs_EN.<model>.safe (rate * n)."
+  },
+  "models": ["Gemma-3-12B-IT", "GaMS3-12B-Instruct"],
+  "model_tick_labels": {"Gemma-3-12B-IT": "Gemma 3", "GaMS3-12B-Instruct": "GaMS3"},
+  "languages": ["English", "Slovene"],
+  "n_safe": 1093,
+  "n_unsafe": 349,
+  "panels": {
+    "false_alarm": {
+      "title": "False-alarm rate, benign items",
+      "ylabel": "False-alarm rate F (proportion)",
+      "ylim": [0.0, 0.9],
+      "values": {
+        "Gemma-3-12B-IT": {"English": 0.3642595978062157, "Slovene": 0.5690127970749543},
+        "GaMS3-12B-Instruct": {"English": 0.27285191956124316, "Slovene": 0.27285191956124316}
+      },
+      "refused_counts": {
+        "Gemma-3-12B-IT": {"English": 398, "Slovene": 622},
+        "GaMS3-12B-Instruct": {"English": 298, "Slovene": 298}
+      },
+      "error_bars": "Wilson 95% CI on refused_counts / n_safe",
+      "paired_test": {
+        "name": "exact McNemar, SL vs EN on the same 1,093 benign items",
+        "Gemma-3-12B-IT": {"SL_only": 322, "EN_only": 98, "p_exact": 6.052504172431616e-29, "label": "+0.21, McNemar p < 10⁻²⁸"},
+        "GaMS3-12B-Instruct": {"SL_only": 135, "EN_only": 135, "p_exact": 1.0, "label": "±0.00, McNemar p = 1.0"}
+      }
+    },
+    "criterion": {
+      "title": "SDT criterion c",
+      "ylabel": "Criterion c (z units)",
+      "ylim": [-1.05, 0.62],
+      "values": {
+        "Gemma-3-12B-IT": {"English": -0.43971605812142567, "Slovene": -0.870370445804438},
+        "GaMS3-12B-Instruct": {"English": -0.32664652641972436, "Slovene": -0.23485641089679277}
+      },
+      "within_model_delta_c_SL_minus_EN": {
+        "Gemma-3-12B-IT": {"est": -0.43065438768301234, "ci95": [-0.5691135315853479, -0.3093951549790569]},
+        "GaMS3-12B-Instruct": {"est": 0.09179011552293159, "ci95": [-0.0015997978533215714, 0.19143686512654204]}
+      },
+      "DiD_c": {"definition": "delta_c(GaMS3) - delta_c(Gemma)", "est": 0.5224445032059439, "ci95": [0.3812540601476006, 0.6826414082572464]}
+    }
+  },
+  "not_drawn_reported_in_caption": {
+    "DiD_dprime": {"est": -0.002974241989206927, "ci95": [-0.32819381574869955, 0.29260995233835446]},
+    "dprime_cells": [1.5736241238303696, 1.3930181347737134, 1.8617136370355636, 1.6781334059897004],
+    "DiD_c_partial_as_refusal": {"block": "C2_hard_sdt.primary_Rp", "est": -0.3052429269813497, "ci95": [-0.6242676289444021, -0.08913291495871829]}
+  }
+}
