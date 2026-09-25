@@ -1,0 +1,3763 @@
+{
+ "metadata": {
+  "source": "full_method_out.json of iter_3/gen_art_experiment_12 (RQ3 capability control)",
+  "subset": "8 row-paired EN/SL items per task x 6 tasks (random.Random(20260925).sample over the 300 pairs)",
+  "n_rows": 96,
+  "correct_definition": "1 if the lm-eval zero-shot loglik argmax (primary metric: acc_norm for ARC-C/HellaSwag/OBQA/PIQA, acc for BoolQ/Winogrande) equals gold",
+  "full_run_reference": {
+   "macros": {
+    "gams3_it": {
+     "E_art2": {
+      "en": {
+       "macro_H": -0.01988,
+       "macro_H_ci95": [
+        -0.04281,
+        0.00278
+       ],
+       "macro_H_ci90": [
+        -0.0392,
+        -0.0009
+       ],
+       "macro_loss": 0.01988,
+       "macro_loss_hi95": 0.04281,
+       "eligible_tasks": [
+        "arc_challenge",
+        "boolq",
+        "hellaswag",
+        "openbookqa",
+        "piqa",
+        "winogrande"
+       ],
+       "ineligible_tasks": [],
+       "raw_pp_macro": -0.7223,
+       "raw_pp_macro_ci95": [
+        -1.44444,
+        -0.05556
+       ],
+       "rel_pct_macro": -1.065,
+       "F6_raw_pp_rule": false
+      },
+      "sl": {
+       "macro_H": -0.00885,
+       "macro_H_ci95": [
+        -0.03762,
+        0.02194
+       ],
+       "macro_H_ci90": [
+        -0.03355,
+        0.01753
+       ],
+       "macro_loss": 0.00885,
+       "macro_loss_hi95": 0.03762,
+       "eligible_tasks": [
+        "arc_challenge",
+        "boolq",
+        "hellaswag",
+        "openbookqa",
+        "piqa",
+        "winogrande"
+       ],
+       "ineligible_tasks": [],
+       "raw_pp_macro": -0.278,
+       "raw_pp_macro_ci95": [
+        -0.94444,
+        0.44444
+       ],
+       "rel_pct_macro": -0.2918,
+       "F6_raw_pp_rule": false
+      },
+      "pooled_macro_H": -0.01436,
+      "pooled_macro_H_ci95": [
+       -0.03329,
+       0.005
+      ],
+      "A_sl_minus_en": 0.01104,
+      "A_ci95": [
+       -0.0234,
+       0.0504
+      ],
+      "A_ci90": [
+       -0.01857,
+       0.04384
+      ]
+     },
+     "E_iter1": {
+      "en": {
+       "macro_H": -0.018,
+       "macro_H_ci95": [
+        -0.03922,
+        0.00401
+       ],
+       "macro_H_ci90": [
+        -0.03573,
+        0.00065
+       ],
+       "macro_loss": 0.018,
+       "macro_loss_hi95": 0.03922,
+       "eligible_tasks": [
+        "arc_challenge",
+        "boolq",
+        "hellaswag",
+        "openbookqa",
+        "piqa",
+        "winogrande"
+       ],
+       "ineligible_tasks": [],
+       "raw_pp_macro": -0.7223,
+       "raw_pp_macro_ci95": [
+        -1.38889,
+        -0.05556
+       ],
+       "rel_pct_macro": -1.0728,
+       "F6_raw_pp_rule": false
+      },
+      "sl": {
+       "macro_H": 0.00653,
+       "macro_H_ci95": [
+        -0.02083,
+        0.03737
+       ],
+       "macro_H_ci90": [
+        -0.016,
+        0.03253
+       ],
+       "macro_loss": -0.00653,
+       "macro_loss_hi95": 0.02083,
+       "eligible_tasks": [
+        "arc_challenge",
+        "boolq",
+        "hellaswag",
+        "openbookqa",
+        "piqa",
+        "winogrande"
+       ],
+       "ineligible_tasks": [],
+       "raw_pp_macro": 0.1112,
+       "raw_pp_macro_ci95": [
+        -0.55556,
+        0.83333
+       ],
+       "rel_pct_macro": 0.1972,
+       "F6_raw_pp_rule": false
+      },
+      "pooled_macro_H": -0.00574,
+      "pooled_macro_H_ci95": [
+       -0.02372,
+       0.01327
+      ],
+      "A_sl_minus_en": 0.02453,
+      "A_ci95": [
+       -0.0092,
+       0.06021
+      ],
+      "A_ci90": [
+       -0.00445,
+       0.05533
+      ]
+     },
+     "rand_nm_j1": {
+      "en": {
+       "macro_H": -0.00343,
+       "macro_H_ci95": [
+        -0.01894,
+        0.01327
+       ],
+       "macro_H_ci90": [
+        -0.01619,
+        0.01087
+       ],
+       "macro_loss": 0.00343,
+       "macro_loss_hi95": 0.01894,
+       "eligible_tasks": [
+        "arc_challenge",
+        "boolq",
+        "hellaswag",
+        "openbookqa",
+        "piqa",
+        "winogrande"
+       ],
+       "ineligible_tasks": [],
+       "raw_pp_macro": -0.0557,
+       "raw_pp_macro_ci95": [
+        -0.5,
+        0.44444
+       ],
+       "rel_pct_macro": -0.0392,
+       "F6_raw_pp_rule": false
+      },
+      "sl": {
+       "macro_H": -0.03003,
+       "macro_H_ci95": [
+        -0.05776,
+        -0.00362
+       ],
+       "macro_H_ci90": [
+        -0.05215,
+        -0.00814
+       ],
+       "macro_loss": 0.03003,
+       "macro_loss_hi95": 0.05776,
+       "eligible_tasks": [
+        "arc_challenge",
+        "boolq",
+        "hellaswag",
+        "openbookqa",
+        "piqa",
+        "winogrande"
+       ],
+       "ineligible_tasks": [],
+       "raw_pp_macro": -0.7223,
+       "raw_pp_macro_ci95": [
+        -1.33333,
+        -0.11111
+       ],
+       "rel_pct_macro": -0.9515,
+       "F6_raw_pp_rule": false
+      },
+      "pooled_macro_H": -0.01673,
+      "pooled_macro_H_ci95": [
+       -0.03199,
+       -0.00118
+      ],
+      "A_sl_minus_en": -0.0266,
+      "A_ci95": [
+       -0.05908,
+       0.00463
+      ],
+      "A_ci90": [
+       -0.05299,
+       -0.00075
+      ]
+     }
+    },
+    "gemma_it": {
+     "E_art2": {
+      "en": {
+       "macro_H": 0.01634,
+       "macro_H_ci95": [
+        -0.00226,
+        0.03709
+       ],
+       "macro_H_ci90": [
+        0.00108,
+        0.03367
+       ],
+       "macro_loss": -0.01634,
+       "macro_loss_hi95": 0.00226,
+       "eligible_tasks": [
+        "arc_challenge",
+        "boolq",
+        "hellaswag",
+        "openbookqa",
+        "piqa",
+        "winogrande"
+       ],
+       "ineligible_tasks": [],
+       "raw_pp_macro": 0.4445,
+       "raw_pp_macro_ci95": [
+        -0.11111,
+        1.0
+       ],
+       "rel_pct_macro": 0.6777,
+       "F6_raw_pp_rule": false
+      },
+      "sl": {
+       "macro_H": 0.04908,
+       "macro_H_ci95": [
+        0.00016,
+        0.14118
+       ],
+       "macro_H_ci90": [
+        0.00734,
+        0.11334
+       ],
+       "macro_loss": -0.04908,
+       "macro_loss_hi95": -0.00016,
+       "eligible_tasks": [
+        "arc_challenge",
+        "boolq",
+        "hellaswag",
+        "openbookqa",
+        "piqa",
+        "winogrande"
+       ],
+       "ineligible_tasks": [],
+       "raw_pp_macro": 0.6667,
+       "raw_pp_macro_ci95": [
+        -0.11111,
+        1.44444
+       ],
+       "rel_pct_macro": 1.239,
+       "F6_raw_pp_rule": false
+      },
+      "pooled_macro_H": 0.03271,
+      "pooled_macro_H_ci95": [
+       0.00654,
+       0.07939
+      ],
+      "A_sl_minus_en": 0.03275,
+      "A_ci95": [
+       -0.02034,
+       0.12511
+      ],
+      "A_ci90": [
+       -0.01232,
+       0.09711
+      ]
+     },
+     "E_iter1": {
+      "en": {
+       "macro_H": 0.00772,
+       "macro_H_ci95": [
+        -0.00873,
+        0.02532
+       ],
+       "macro_H_ci90": [
+        -0.00649,
+        0.02222
+       ],
+       "macro_loss": -0.00772,
+       "macro_loss_hi95": 0.00873,
+       "eligible_tasks": [
+        "arc_challenge",
+        "boolq",
+        "hellaswag",
+        "openbookqa",
+        "piqa",
+        "winogrande"
+       ],
+       "ineligible_tasks": [],
+       "raw_pp_macro": 0.2777,
+       "raw_pp_macro_ci95": [
+        -0.22222,
+        0.77778
+       ],
+       "rel_pct_macro": 0.3598,
+       "F6_raw_pp_rule": false
+      },
+      "sl": {
+       "macro_H": 0.0218,
+       "macro_H_ci95": [
+        -0.02374,
+        0.09039
+       ],
+       "macro_H_ci90": [
+        -0.01631,
+        0.07625
+       ],
+       "macro_loss": -0.0218,
+       "macro_loss_hi95": 0.02374,
+       "eligible_tasks": [
+        "arc_challenge",
+        "boolq",
+        "hellaswag",
+        "openbookqa",
+        "piqa",
+        "winogrande"
+       ],
+       "ineligible_tasks": [],
+       "raw_pp_macro": 0.1665,
+       "raw_pp_macro_ci95": [
+        -0.61111,
+        0.88889
+       ],
+       "rel_pct_macro": 0.4538,
+       "F6_raw_pp_rule": false
+      },
+      "pooled_macro_H": 0.01476,
+      "pooled_macro_H_ci95": [
+       -0.00949,
+       0.05136
+      ],
+      "A_sl_minus_en": 0.01408,
+      "A_ci95": [
+       -0.03647,
+       0.08215
+      ],
+      "A_ci90": [
+       -0.02737,
+       0.06849
+      ]
+     },
+     "rand_nm_j1": {
+      "en": {
+       "macro_H": 0.00852,
+       "macro_H_ci95": [
+        -0.00284,
+        0.0215
+       ],
+       "macro_H_ci90": [
+        -0.00126,
+        0.01925
+       ],
+       "macro_loss": -0.00852,
+       "macro_loss_hi95": 0.00284,
+       "eligible_tasks": [
+        "arc_challenge",
+        "boolq",
+        "hellaswag",
+        "openbookqa",
+        "piqa",
+        "winogrande"
+       ],
+       "ineligible_tasks": [],
+       "raw_pp_macro": 0.2777,
+       "raw_pp_macro_ci95": [
+        -0.05556,
+        0.66667
+       ],
+       "rel_pct_macro": 0.3737,
+       "F6_raw_pp_rule": false
+      },
+      "sl": {
+       "macro_H": 0.00157,
+       "macro_H_ci95": [
+        -0.0448,
+        0.06855
+       ],
+       "macro_H_ci90": [
+        -0.03596,
+        0.05364
+       ],
+       "macro_loss": -0.00157,
+       "macro_loss_hi95": 0.0448,
+       "eligible_tasks": [
+        "arc_challenge",
+        "boolq",
+        "hellaswag",
+        "openbookqa",
+        "piqa",
+        "winogrande"
+       ],
+       "ineligible_tasks": [],
+       "raw_pp_macro": -0.1112,
+       "raw_pp_macro_ci95": [
+        -0.77778,
+        0.5
+       ],
+       "rel_pct_macro": -0.2277,
+       "F6_raw_pp_rule": false
+      },
+      "pooled_macro_H": 0.00505,
+      "pooled_macro_H_ci95": [
+       -0.01884,
+       0.04034
+      ],
+      "A_sl_minus_en": -0.00695,
+      "A_ci95": [
+       -0.05334,
+       0.06077
+      ],
+      "A_ci90": [
+       -0.04597,
+       0.04451
+      ]
+     },
+     "rand_nm_j2": {
+      "en": {
+       "macro_H": -0.00672,
+       "macro_H_ci95": [
+        -0.02239,
+        0.00766
+       ],
+       "macro_H_ci90": [
+        -0.01922,
+        0.00506
+       ],
+       "macro_loss": 0.00672,
+       "macro_loss_hi95": 0.02239,
+       "eligible_tasks": [
+        "arc_challenge",
+        "boolq",
+        "hellaswag",
+        "openbookqa",
+        "piqa",
+        "winogrande"
+       ],
+       "ineligible_tasks": [],
+       "raw_pp_macro": -0.1665,
+       "raw_pp_macro_ci95": [
+        -0.61111,
+        0.22222
+       ],
+       "rel_pct_macro": -0.2165,
+       "F6_raw_pp_rule": false
+      },
+      "sl": {
+       "macro_H": -0.00752,
+       "macro_H_ci95": [
+        -0.05946,
+        0.05374
+       ],
+       "macro_H_ci90": [
+        -0.05017,
+        0.04044
+       ],
+       "macro_loss": 0.00752,
+       "macro_loss_hi95": 0.05946,
+       "eligible_tasks": [
+        "arc_challenge",
+        "boolq",
+        "hellaswag",
+        "openbookqa",
+        "piqa",
+        "winogrande"
+       ],
+       "ineligible_tasks": [],
+       "raw_pp_macro": -0.1112,
+       "raw_pp_macro_ci95": [
+        -0.77778,
+        0.5
+       ],
+       "rel_pct_macro": -0.3385,
+       "F6_raw_pp_rule": false
+      },
+      "pooled_macro_H": -0.00712,
+      "pooled_macro_H_ci95": [
+       -0.03479,
+       0.02475
+      ],
+      "A_sl_minus_en": -0.00079,
+      "A_ci95": [
+       -0.05244,
+       0.06065
+      ],
+      "A_ci90": [
+       -0.04439,
+       0.04982
+      ]
+     }
+    }
+   },
+   "interaction": {
+    "E_iter1": {
+     "I": 0.01045,
+     "I_ci95": [
+      -0.06544,
+      0.07428
+     ],
+     "I_ci90": [
+      -0.04939,
+      0.06298
+     ],
+     "note": "resolution limit ~0.10-0.12 of headroom (80% power, alpha .05); |I| below it is an estimate, not 'no asymmetry'"
+    },
+    "E_art2": {
+     "I": -0.02171,
+     "I_ci95": [
+      -0.11623,
+      0.04326
+     ],
+     "I_ci90": [
+      -0.09936,
+      0.03302
+     ],
+     "note": "resolution limit ~0.10-0.12 of headroom (80% power, alpha .05); |I| below it is an estimate, not 'no asymmetry'"
+    },
+    "rand_nm_j1": {
+     "I": -0.01965,
+     "I_ci95": [
+      -0.0961,
+      0.03432
+     ],
+     "I_ci90": [
+      -0.07827,
+      0.024
+     ],
+     "note": "resolution limit ~0.10-0.12 of headroom (80% power, alpha .05); |I| below it is an estimate, not 'no asymmetry'"
+    }
+   },
+   "random_adjusted": {
+    "gams3_it": {
+     "E_art2": {
+      "en": {
+       "H_excess": -0.01646,
+       "ci95": [
+        -0.04032,
+        0.0069
+       ]
+      },
+      "sl": {
+       "H_excess": 0.02118,
+       "ci95": [
+        -0.00976,
+        0.05502
+       ]
+      },
+      "A_excess": {
+       "value": 0.03764,
+       "ci95": [
+        0.00117,
+        0.08027
+       ]
+      }
+     },
+     "E_iter1": {
+      "en": {
+       "H_excess": -0.01457,
+       "ci95": [
+        -0.03756,
+        0.00835
+       ]
+      },
+      "sl": {
+       "H_excess": 0.03656,
+       "ci95": [
+        0.00443,
+        0.07237
+       ]
+      },
+      "A_excess": {
+       "value": 0.05113,
+       "ci95": [
+        0.01162,
+        0.0927
+       ]
+      }
+     }
+    },
+    "gemma_it": {
+     "E_art2": {
+      "en": {
+       "H_excess": 0.00782,
+       "ci95": [
+        -0.01078,
+        0.02805
+       ]
+      },
+      "sl": {
+       "H_excess": 0.04751,
+       "ci95": [
+        0.00208,
+        0.10944
+       ]
+      },
+      "A_excess": {
+       "value": 0.03969,
+       "ci95": [
+        -0.00944,
+        0.10254
+       ]
+      }
+     },
+     "E_iter1": {
+      "en": {
+       "H_excess": -0.0008,
+       "ci95": [
+        -0.0196,
+        0.01737
+       ]
+      },
+      "sl": {
+       "H_excess": 0.02023,
+       "ci95": [
+        -0.02422,
+        0.0689
+       ]
+      },
+      "A_excess": {
+       "value": 0.02103,
+       "ci95": [
+        -0.02825,
+        0.07261
+       ]
+      }
+     }
+    }
+   },
+   "gates": {
+    "gams3_it": {
+     "E_art2": "OK",
+     "E_iter1": "OK",
+     "rand_nm_j1": "OK",
+     "E_iter1_l0.5": "OK",
+     "E_iter1_l1.5": "OK",
+     "E_iter1_l2.0": "OK"
+    },
+    "gemma_it": {
+     "E_art2": "OK",
+     "E_iter1": "OK",
+     "rand_nm_j1": "OK",
+     "rand_nm_j2": "OK",
+     "E_iter1_l0.5": "OK",
+     "E_iter1_l1.5": "OK",
+     "E_iter1_l2.0": "POSSIBLY_CATASTROPHIC"
+    }
+   }
+  }
+ },
+ "examples": [
+  {
+   "item_id": "arc_challenge:Mercury_SC_401290",
+   "pair_id": "arc_challenge:Mercury_SC_401290",
+   "task": "arc_challenge",
+   "lang": "en",
+   "primary_metric": "acc_norm",
+   "input": "Question: Which is the best piece of equipment to determine the topography of the United States?\nAnswer:\n(0) radar\n(1) compass\n(2) satellite\n(3) radio",
+   "gold": "2",
+   "n_choices": 4,
+   "correct": {
+    "gams3_it__E_art2": 1,
+    "gams3_it__E_iter1": 1,
+    "gams3_it__orig": 1,
+    "gams3_it__rand_nm_j1": 1,
+    "gemma_it__E_art2": 1,
+    "gemma_it__E_iter1": 1,
+    "gemma_it__orig": 1,
+    "gemma_it__rand_nm_j1": 1,
+    "gemma_it__rand_nm_j2": 1
+   },
+   "predict": {
+    "gams3_it__E_art2": "2",
+    "gams3_it__E_iter1": "2",
+    "gams3_it__orig": "2",
+    "gams3_it__rand_nm_j1": "2",
+    "gemma_it__E_art2": "2",
+    "gemma_it__E_iter1": "2",
+    "gemma_it__orig": "2",
+    "gemma_it__rand_nm_j1": "2",
+    "gemma_it__rand_nm_j2": "2"
+   }
+  },
+  {
+   "item_id": "arc_challenge:Mercury_7159810",
+   "pair_id": "arc_challenge:Mercury_7159810",
+   "task": "arc_challenge",
+   "lang": "en",
+   "primary_metric": "acc_norm",
+   "input": "Question: A pharmaceutical company developed a drug to help relieve headaches. Recently, the pharmaceutical company discovered that the drug may cause nausea in a small number of people who might take the drug. Which is the most ethical course of action that the drug company could take?\nAnswer:\n(0) Discontinue the use of the drug.\n(1) Inform people of the possible side effects.\n(2) Reduce the amount of drug given to people.\n(3) Modify the drug to include medicine that prevents nausea.",
+   "gold": "1",
+   "n_choices": 4,
+   "correct": {
+    "gams3_it__E_art2": 0,
+    "gams3_it__E_iter1": 0,
+    "gams3_it__orig": 0,
+    "gams3_it__rand_nm_j1": 0,
+    "gemma_it__E_art2": 1,
+    "gemma_it__E_iter1": 1,
+    "gemma_it__orig": 1,
+    "gemma_it__rand_nm_j1": 1,
+    "gemma_it__rand_nm_j2": 1
+   },
+   "predict": {
+    "gams3_it__E_art2": "0",
+    "gams3_it__E_iter1": "0",
+    "gams3_it__orig": "0",
+    "gams3_it__rand_nm_j1": "0",
+    "gemma_it__E_art2": "1",
+    "gemma_it__E_iter1": "1",
+    "gemma_it__orig": "1",
+    "gemma_it__rand_nm_j1": "1",
+    "gemma_it__rand_nm_j2": "1"
+   }
+  },
+  {
+   "item_id": "arc_challenge:Mercury_SC_407710",
+   "pair_id": "arc_challenge:Mercury_SC_407710",
+   "task": "arc_challenge",
+   "lang": "en",
+   "primary_metric": "acc_norm",
+   "input": "Question: Brianna thinks larger pumpkin seeds will sprout faster than smaller pumpkin seeds. She investigates by planting four seeds of each size in the same container. What term is used to describe what Brianna thinks will happen?\nAnswer:\n(0) a trial\n(1) a result\n(2) a variable\n(3) a hypothesis",
+   "gold": "3",
+   "n_choices": 4,
+   "correct": {
+    "gams3_it__E_art2": 1,
+    "gams3_it__E_iter1": 1,
+    "gams3_it__orig": 1,
+    "gams3_it__rand_nm_j1": 1,
+    "gemma_it__E_art2": 1,
+    "gemma_it__E_iter1": 1,
+    "gemma_it__orig": 1,
+    "gemma_it__rand_nm_j1": 1,
+    "gemma_it__rand_nm_j2": 1
+   },
+   "predict": {
+    "gams3_it__E_art2": "3",
+    "gams3_it__E_iter1": "3",
+    "gams3_it__orig": "3",
+    "gams3_it__rand_nm_j1": "3",
+    "gemma_it__E_art2": "3",
+    "gemma_it__E_iter1": "3",
+    "gemma_it__orig": "3",
+    "gemma_it__rand_nm_j1": "3",
+    "gemma_it__rand_nm_j2": "3"
+   }
+  },
+  {
+   "item_id": "arc_challenge:LEAP_2005_8_10404",
+   "pair_id": "arc_challenge:LEAP_2005_8_10404",
+   "task": "arc_challenge",
+   "lang": "en",
+   "primary_metric": "acc_norm",
+   "input": "Question: The radiant energy that comes to Earth from the Sun is\nAnswer:\n(0) only one wavelength that we see as yellow.\n(1) a narrow band of wavelengths that is entirely visible light.\n(2) mostly long wavelengths that become heat energy.\n(3) a range of many wavelengths from long to very short.",
+   "gold": "3",
+   "n_choices": 4,
+   "correct": {
+    "gams3_it__E_art2": 0,
+    "gams3_it__E_iter1": 0,
+    "gams3_it__orig": 0,
+    "gams3_it__rand_nm_j1": 0,
+    "gemma_it__E_art2": 0,
+    "gemma_it__E_iter1": 0,
+    "gemma_it__orig": 0,
+    "gemma_it__rand_nm_j1": 0,
+    "gemma_it__rand_nm_j2": 0
+   },
+   "predict": {
+    "gams3_it__E_art2": "1",
+    "gams3_it__E_iter1": "1",
+    "gams3_it__orig": "1",
+    "gams3_it__rand_nm_j1": "1",
+    "gemma_it__E_art2": "1",
+    "gemma_it__E_iter1": "1",
+    "gemma_it__orig": "1",
+    "gemma_it__rand_nm_j1": "1",
+    "gemma_it__rand_nm_j2": "1"
+   }
+  },
+  {
+   "item_id": "arc_challenge:Mercury_SC_401372",
+   "pair_id": "arc_challenge:Mercury_SC_401372",
+   "task": "arc_challenge",
+   "lang": "en",
+   "primary_metric": "acc_norm",
+   "input": "Question: Adaptive characteristics that help dolphins survive life in the ocean include all of these except\nAnswer:\n(0) their sleek skin.\n(1) swimming very fast.\n(2) their body shape.\n(3) traveling alone.",
+   "gold": "3",
+   "n_choices": 4,
+   "correct": {
+    "gams3_it__E_art2": 0,
+    "gams3_it__E_iter1": 0,
+    "gams3_it__orig": 0,
+    "gams3_it__rand_nm_j1": 0,
+    "gemma_it__E_art2": 0,
+    "gemma_it__E_iter1": 0,
+    "gemma_it__orig": 0,
+    "gemma_it__rand_nm_j1": 0,
+    "gemma_it__rand_nm_j2": 0
+   },
+   "predict": {
+    "gams3_it__E_art2": "1",
+    "gams3_it__E_iter1": "1",
+    "gams3_it__orig": "1",
+    "gams3_it__rand_nm_j1": "1",
+    "gemma_it__E_art2": "1",
+    "gemma_it__E_iter1": "1",
+    "gemma_it__orig": "1",
+    "gemma_it__rand_nm_j1": "1",
+    "gemma_it__rand_nm_j2": "1"
+   }
+  },
+  {
+   "item_id": "arc_challenge:CSZ_2005_5_CSZ10021",
+   "pair_id": "arc_challenge:CSZ_2005_5_CSZ10021",
+   "task": "arc_challenge",
+   "lang": "en",
+   "primary_metric": "acc_norm",
+   "input": "Question: Why is watering plants and grass in the early morning a way to conserve water?\nAnswer:\n(0) There is always more water in the morning.\n(1) Smaller amounts of water evaporate in the cool morning.\n(2) Water used in the morning can be recycled for afternoon use.\n(3) Grass can absorb water only in the morning.",
+   "gold": "1",
+   "n_choices": 4,
+   "correct": {
+    "gams3_it__E_art2": 1,
+    "gams3_it__E_iter1": 1,
+    "gams3_it__orig": 1,
+    "gams3_it__rand_nm_j1": 1,
+    "gemma_it__E_art2": 1,
+    "gemma_it__E_iter1": 1,
+    "gemma_it__orig": 1,
+    "gemma_it__rand_nm_j1": 1,
+    "gemma_it__rand_nm_j2": 1
+   },
+   "predict": {
+    "gams3_it__E_art2": "1",
+    "gams3_it__E_iter1": "1",
+    "gams3_it__orig": "1",
+    "gams3_it__rand_nm_j1": "1",
+    "gemma_it__E_art2": "1",
+    "gemma_it__E_iter1": "1",
+    "gemma_it__orig": "1",
+    "gemma_it__rand_nm_j1": "1",
+    "gemma_it__rand_nm_j2": "1"
+   }
+  },
+  {
+   "item_id": "arc_challenge:Mercury_7071523",
+   "pair_id": "arc_challenge:Mercury_7071523",
+   "task": "arc_challenge",
+   "lang": "en",
+   "primary_metric": "acc_norm",
+   "input": "Question: Students use tweezers and magnifying glasses to examine a piece of mold on bread. Which should they also use for safety in this investigation?\nAnswer:\n(0) bright light\n(1) dark glasses\n(2) breathing masks\n(3) hot plates",
+   "gold": "2",
+   "n_choices": 4,
+   "correct": {
+    "gams3_it__E_art2": 1,
+    "gams3_it__E_iter1": 1,
+    "gams3_it__orig": 1,
+    "gams3_it__rand_nm_j1": 1,
+    "gemma_it__E_art2": 1,
+    "gemma_it__E_iter1": 1,
+    "gemma_it__orig": 1,
+    "gemma_it__rand_nm_j1": 1,
+    "gemma_it__rand_nm_j2": 1
+   },
+   "predict": {
+    "gams3_it__E_art2": "2",
+    "gams3_it__E_iter1": "2",
+    "gams3_it__orig": "2",
+    "gams3_it__rand_nm_j1": "2",
+    "gemma_it__E_art2": "2",
+    "gemma_it__E_iter1": "2",
+    "gemma_it__orig": "2",
+    "gemma_it__rand_nm_j1": "2",
+    "gemma_it__rand_nm_j2": "2"
+   }
+  },
+  {
+   "item_id": "arc_challenge:Mercury_SC_401587",
+   "pair_id": "arc_challenge:Mercury_SC_401587",
+   "task": "arc_challenge",
+   "lang": "en",
+   "primary_metric": "acc_norm",
+   "input": "Question: Which stage occurs in both the life cycle of a tree and in the life cycle of a frog?\nAnswer:\n(0) growth\n(1) dormancy\n(2) hibernation\n(3) metamorphosis",
+   "gold": "0",
+   "n_choices": 4,
+   "correct": {
+    "gams3_it__E_art2": 0,
+    "gams3_it__E_iter1": 0,
+    "gams3_it__orig": 0,
+    "gams3_it__rand_nm_j1": 0,
+    "gemma_it__E_art2": 0,
+    "gemma_it__E_iter1": 0,
+    "gemma_it__orig": 0,
+    "gemma_it__rand_nm_j1": 0,
+    "gemma_it__rand_nm_j2": 0
+   },
+   "predict": {
+    "gams3_it__E_art2": "3",
+    "gams3_it__E_iter1": "3",
+    "gams3_it__orig": "3",
+    "gams3_it__rand_nm_j1": "3",
+    "gemma_it__E_art2": "3",
+    "gemma_it__E_iter1": "3",
+    "gemma_it__orig": "3",
+    "gemma_it__rand_nm_j1": "3",
+    "gemma_it__rand_nm_j2": "3"
+   }
+  },
+  {
+   "item_id": "arc_challenge:Mercury_SC_401290",
+   "pair_id": "arc_challenge:Mercury_SC_401290",
+   "task": "arc_challenge",
+   "lang": "sl",
+   "primary_metric": "acc_norm",
+   "input": "Vprašanje: Kateri kos opreme je najboljši za določanje topografije Združenih držav Amerike?\nodgovor:\n(0) radar\n(1) kompas\n(2) satelit\n(3) radio",
+   "gold": "2",
+   "n_choices": 4,
+   "correct": {
+    "gams3_it__E_art2": 1,
+    "gams3_it__E_iter1": 1,
+    "gams3_it__orig": 1,
+    "gams3_it__rand_nm_j1": 1,
+    "gemma_it__E_art2": 1,
+    "gemma_it__E_iter1": 1,
+    "gemma_it__orig": 1,
+    "gemma_it__rand_nm_j1": 1,
+    "gemma_it__rand_nm_j2": 1
+   },
+   "predict": {
+    "gams3_it__E_art2": "2",
+    "gams3_it__E_iter1": "2",
+    "gams3_it__orig": "2",
+    "gams3_it__rand_nm_j1": "2",
+    "gemma_it__E_art2": "2",
+    "gemma_it__E_iter1": "2",
+    "gemma_it__orig": "2",
+    "gemma_it__rand_nm_j1": "2",
+    "gemma_it__rand_nm_j2": "2"
+   }
+  },
+  {
+   "item_id": "arc_challenge:Mercury_7159810",
+   "pair_id": "arc_challenge:Mercury_7159810",
+   "task": "arc_challenge",
+   "lang": "sl",
+   "primary_metric": "acc_norm",
+   "input": "Vprašanje: Farmacevtsko podjetje je razvilo zdravilo za lajšanje glavobolov. Pred kratkim je to farmacevtsko podjetje odkrilo, da lahko zdravilo povzroči slabost pri majhnem številu ljudi, ki uživajo to zdravilo. Kaj od naštetega predstavlja najbolj etičen ukrep, ki ga lahko podjetje sprejme?\nodgovor:\n(0) Preneha z uporabo zdravila.\n(1) Obvesti ljudi o možnih stranskih učinkih.\n(2) Zmanjša količino zdravila, ki se jo predpisuje ljudem.\n(3) Spremeni zdravilo tako, da vključuje zdravilo proti slabosti.",
+   "gold": "1",
+   "n_choices": 4,
+   "correct": {
+    "gams3_it__E_art2": 0,
+    "gams3_it__E_iter1": 0,
+    "gams3_it__orig": 0,
+    "gams3_it__rand_nm_j1": 0,
+    "gemma_it__E_art2": 1,
+    "gemma_it__E_iter1": 1,
+    "gemma_it__orig": 1,
+    "gemma_it__rand_nm_j1": 1,
+    "gemma_it__rand_nm_j2": 1
+   },
+   "predict": {
+    "gams3_it__E_art2": "3",
+    "gams3_it__E_iter1": "3",
+    "gams3_it__orig": "3",
+    "gams3_it__rand_nm_j1": "3",
+    "gemma_it__E_art2": "1",
+    "gemma_it__E_iter1": "1",
+    "gemma_it__orig": "1",
+    "gemma_it__rand_nm_j1": "1",
+    "gemma_it__rand_nm_j2": "1"
+   }
+  },
+  {
+   "item_id": "arc_challenge:Mercury_SC_407710",
+   "pair_id": "arc_challenge:Mercury_SC_407710",
+   "task": "arc_challenge",
+   "lang": "sl",
+   "primary_metric": "acc_norm",
+   "input": "Vprašanje: Brianna meni, da bodo večja bučna semena vzklila hitreje kot manjša bučna semena. Raziskuje tako, da v isto posodo posadi štiri semena vsake velikosti. Kateri izraz se uporablja za opis tega, kar Brianna misli, da se bo zgodilo?\nodgovor:\n(0) Poskus.\n(1) Rezultat.\n(2) Spremenljivka.\n(3) Hipoteza.",
+   "gold": "3",
+   "n_choices": 4,
+   "correct": {
+    "gams3_it__E_art2": 1,
+    "gams3_it__E_iter1": 1,
+    "gams3_it__orig": 1,
+    "gams3_it__rand_nm_j1": 1,
+    "gemma_it__E_art2": 1,
+    "gemma_it__E_iter1": 1,
+    "gemma_it__orig": 1,
+    "gemma_it__rand_nm_j1": 1,
+    "gemma_it__rand_nm_j2": 1
+   },
+   "predict": {
+    "gams3_it__E_art2": "3",
+    "gams3_it__E_iter1": "3",
+    "gams3_it__orig": "3",
+    "gams3_it__rand_nm_j1": "3",
+    "gemma_it__E_art2": "3",
+    "gemma_it__E_iter1": "3",
+    "gemma_it__orig": "3",
+    "gemma_it__rand_nm_j1": "3",
+    "gemma_it__rand_nm_j2": "3"
+   }
+  },
+  {
+   "item_id": "arc_challenge:LEAP_2005_8_10404",
+   "pair_id": "arc_challenge:LEAP_2005_8_10404",
+   "task": "arc_challenge",
+   "lang": "sl",
+   "primary_metric": "acc_norm",
+   "input": "Vprašanje: Sevalna energija, ki prihaja na Zemljo od Sonca,\nodgovor:\n(0) ima samo eno valovno dolžino, ki jo vidimo kot rumeno.\n(1) je ozek spekter valovnih dolžin, ki so v celoti vidna svetloba.\n(2) ima večinoma dolge valovne dolžine, ki se pretvorijo v toplotno energijo.\n(3) je razpon mnogih valovnih dolžin, od dolgih do zelo kratkih.",
+   "gold": "3",
+   "n_choices": 4,
+   "correct": {
+    "gams3_it__E_art2": 0,
+    "gams3_it__E_iter1": 0,
+    "gams3_it__orig": 0,
+    "gams3_it__rand_nm_j1": 0,
+    "gemma_it__E_art2": 0,
+    "gemma_it__E_iter1": 0,
+    "gemma_it__orig": 0,
+    "gemma_it__rand_nm_j1": 0,
+    "gemma_it__rand_nm_j2": 0
+   },
+   "predict": {
+    "gams3_it__E_art2": "2",
+    "gams3_it__E_iter1": "2",
+    "gams3_it__orig": "2",
+    "gams3_it__rand_nm_j1": "2",
+    "gemma_it__E_art2": "2",
+    "gemma_it__E_iter1": "2",
+    "gemma_it__orig": "2",
+    "gemma_it__rand_nm_j1": "2",
+    "gemma_it__rand_nm_j2": "2"
+   }
+  },
+  {
+   "item_id": "arc_challenge:Mercury_SC_401372",
+   "pair_id": "arc_challenge:Mercury_SC_401372",
+   "task": "arc_challenge",
+   "lang": "sl",
+   "primary_metric": "acc_norm",
+   "input": "Vprašanje: Prilagoditvene značilnosti, ki delfinom pomagajo preživeti v oceanu, vključujejo vse navedeno razen\nodgovor:\n(0) njihove gladke kože.\n(1) zelo hitrega plavanja.\n(2) njihove oblike telesa.\n(3) samostojnega potovanja.",
+   "gold": "3",
+   "n_choices": 4,
+   "correct": {
+    "gams3_it__E_art2": 0,
+    "gams3_it__E_iter1": 0,
+    "gams3_it__orig": 0,
+    "gams3_it__rand_nm_j1": 0,
+    "gemma_it__E_art2": 0,
+    "gemma_it__E_iter1": 0,
+    "gemma_it__orig": 0,
+    "gemma_it__rand_nm_j1": 0,
+    "gemma_it__rand_nm_j2": 0
+   },
+   "predict": {
+    "gams3_it__E_art2": "2",
+    "gams3_it__E_iter1": "2",
+    "gams3_it__orig": "2",
+    "gams3_it__rand_nm_j1": "2",
+    "gemma_it__E_art2": "2",
+    "gemma_it__E_iter1": "2",
+    "gemma_it__orig": "2",
+    "gemma_it__rand_nm_j1": "2",
+    "gemma_it__rand_nm_j2": "2"
+   }
+  },
+  {
+   "item_id": "arc_challenge:CSZ_2005_5_CSZ10021",
+   "pair_id": "arc_challenge:CSZ_2005_5_CSZ10021",
+   "task": "arc_challenge",
+   "lang": "sl",
+   "primary_metric": "acc_norm",
+   "input": "Vprašanje: Zakaj varčujemo z vodo, če zalivamo rastline in travo zgodaj zjutraj?\nodgovor:\n(0) Zjutraj je vedno več vode.\n(1) V hladnem jutru izhlapijo manjše količine vode.\n(2) Voda, uporabljena zjutraj, se lahko ponovno uporabi popoldne.\n(3) Trava lahko absorbira vodo samo zjutraj.",
+   "gold": "1",
+   "n_choices": 4,
+   "correct": {
+    "gams3_it__E_art2": 0,
+    "gams3_it__E_iter1": 0,
+    "gams3_it__orig": 0,
+    "gams3_it__rand_nm_j1": 0,
+    "gemma_it__E_art2": 1,
+    "gemma_it__E_iter1": 1,
+    "gemma_it__orig": 1,
+    "gemma_it__rand_nm_j1": 1,
+    "gemma_it__rand_nm_j2": 1
+   },
+   "predict": {
+    "gams3_it__E_art2": "2",
+    "gams3_it__E_iter1": "2",
+    "gams3_it__orig": "2",
+    "gams3_it__rand_nm_j1": "2",
+    "gemma_it__E_art2": "1",
+    "gemma_it__E_iter1": "1",
+    "gemma_it__orig": "1",
+    "gemma_it__rand_nm_j1": "1",
+    "gemma_it__rand_nm_j2": "1"
+   }
+  },
+  {
+   "item_id": "arc_challenge:Mercury_7071523",
+   "pair_id": "arc_challenge:Mercury_7071523",
+   "task": "arc_challenge",
+   "lang": "sl",
+   "primary_metric": "acc_norm",
+   "input": "Vprašanje: Učenci s pinceto in povečevalnimi stekli pregledujejo košček plesni na kruhu. Kaj naj zaradi varnosti prav tako uporabijo pri tej preiskavi?\nodgovor:\n(0) Svetlo luč.\n(1) Temna očala.\n(2) Dihalne maske.\n(3) Grelne plošče.",
+   "gold": "2",
+   "n_choices": 4,
+   "correct": {
+    "gams3_it__E_art2": 1,
+    "gams3_it__E_iter1": 1,
+    "gams3_it__orig": 1,
+    "gams3_it__rand_nm_j1": 1,
+    "gemma_it__E_art2": 1,
+    "gemma_it__E_iter1": 1,
+    "gemma_it__orig": 1,
+    "gemma_it__rand_nm_j1": 1,
+    "gemma_it__rand_nm_j2": 1
+   },
+   "predict": {
+    "gams3_it__E_art2": "2",
+    "gams3_it__E_iter1": "2",
+    "gams3_it__orig": "2",
+    "gams3_it__rand_nm_j1": "2",
+    "gemma_it__E_art2": "2",
+    "gemma_it__E_iter1": "2",
+    "gemma_it__orig": "2",
+    "gemma_it__rand_nm_j1": "2",
+    "gemma_it__rand_nm_j2": "2"
+   }
+  },
+  {
+   "item_id": "arc_challenge:Mercury_SC_401587",
+   "pair_id": "arc_challenge:Mercury_SC_401587",
+   "task": "arc_challenge",
+   "lang": "sl",
+   "primary_metric": "acc_norm",
+   "input": "Vprašanje: Katera faza se pojavi tako v življenjskem ciklu drevesa kot v življenjskem ciklu žabe?\nodgovor:\n(0) Rast.\n(1) Mirovanje.\n(2) Hibernacija.\n(3) Metamorfoza.",
+   "gold": "0",
+   "n_choices": 4,
+   "correct": {
+    "gams3_it__E_art2": 0,
+    "gams3_it__E_iter1": 0,
+    "gams3_it__orig": 0,
+    "gams3_it__rand_nm_j1": 0,
+    "gemma_it__E_art2": 0,
+    "gemma_it__E_iter1": 0,
+    "gemma_it__orig": 0,
+    "gemma_it__rand_nm_j1": 0,
+    "gemma_it__rand_nm_j2": 0
+   },
+   "predict": {
+    "gams3_it__E_art2": "3",
+    "gams3_it__E_iter1": "3",
+    "gams3_it__orig": "3",
+    "gams3_it__rand_nm_j1": "3",
+    "gemma_it__E_art2": "3",
+    "gemma_it__E_iter1": "3",
+    "gemma_it__orig": "3",
+    "gemma_it__rand_nm_j1": "3",
+    "gemma_it__rand_nm_j2": "3"
+   }
+  },
+  {
+   "item_id": "boolq:455",
+   "pair_id": "boolq:455",
+   "task": "boolq",
+   "lang": "en",
+   "primary_metric": "acc",
+   "input": "Pickled cucumber -- A pickled cucumber (commonly known as a pickle in the United States and Canada and a gherkin in Britain, Ireland, Australia, South Africa and New Zealand) is a cucumber that has been pickled in a brine, vinegar, or other solution and left to ferment for a period of time, by either immersing the cucumbers in an acidic solution or through souring by lacto-fermentation. Pickled cucumbers are often part of mixed pickles.\nQuestion: is a pickle and a gherkin the same thing?\nAnswer:\n(0) no\n(1) yes",
+   "gold": "1",
+   "n_choices": 2,
+   "correct": {
+    "gams3_it__E_art2": 0,
+    "gams3_it__E_iter1": 0,
+    "gams3_it__orig": 0,
+    "gams3_it__rand_nm_j1": 0,
+    "gemma_it__E_art2": 0,
+    "gemma_it__E_iter1": 0,
+    "gemma_it__orig": 0,
+    "gemma_it__rand_nm_j1": 0,
+    "gemma_it__rand_nm_j2": 0
+   },
+   "predict": {
+    "gams3_it__E_art2": "0",
+    "gams3_it__E_iter1": "0",
+    "gams3_it__orig": "0",
+    "gams3_it__rand_nm_j1": "0",
+    "gemma_it__E_art2": "0",
+    "gemma_it__E_iter1": "0",
+    "gemma_it__orig": "0",
+    "gemma_it__rand_nm_j1": "0",
+    "gemma_it__rand_nm_j2": "0"
+   }
+  },
+  {
+   "item_id": "boolq:3134",
+   "pair_id": "boolq:3134",
+   "task": "boolq",
+   "lang": "en",
+   "primary_metric": "acc",
+   "input": "Statelessness -- In International law a stateless person is someone who is ``not considered as a national by any state under the operation of its law''. Some stateless persons are also refugees. However, not all refugees are stateless, and many persons who are stateless have never crossed an international border.\nQuestion: can a person be a citizen of no country?\nAnswer:\n(0) no\n(1) yes",
+   "gold": "1",
+   "n_choices": 2,
+   "correct": {
+    "gams3_it__E_art2": 1,
+    "gams3_it__E_iter1": 1,
+    "gams3_it__orig": 1,
+    "gams3_it__rand_nm_j1": 1,
+    "gemma_it__E_art2": 1,
+    "gemma_it__E_iter1": 1,
+    "gemma_it__orig": 1,
+    "gemma_it__rand_nm_j1": 1,
+    "gemma_it__rand_nm_j2": 1
+   },
+   "predict": {
+    "gams3_it__E_art2": "1",
+    "gams3_it__E_iter1": "1",
+    "gams3_it__orig": "1",
+    "gams3_it__rand_nm_j1": "1",
+    "gemma_it__E_art2": "1",
+    "gemma_it__E_iter1": "1",
+    "gemma_it__orig": "1",
+    "gemma_it__rand_nm_j1": "1",
+    "gemma_it__rand_nm_j2": "1"
+   }
+  },
+  {
+   "item_id": "boolq:460",
+   "pair_id": "boolq:460",
+   "task": "boolq",
+   "lang": "en",
+   "primary_metric": "acc",
+   "input": "Arm span -- Arm span or reach (sometimes referred to as wingspan) is the physical measurement of the length from one end of an individual's arms (measured at the fingertips) to the other when raised parallel to the ground at shoulder height at a 90° angle. The average reach correlates to the person's height. Age and sex have to be taken into account to best predict height from arm span.\nQuestion: is the width of your arms your height?\nAnswer:\n(0) no\n(1) yes",
+   "gold": "1",
+   "n_choices": 2,
+   "correct": {
+    "gams3_it__E_art2": 0,
+    "gams3_it__E_iter1": 0,
+    "gams3_it__orig": 0,
+    "gams3_it__rand_nm_j1": 0,
+    "gemma_it__E_art2": 0,
+    "gemma_it__E_iter1": 0,
+    "gemma_it__orig": 0,
+    "gemma_it__rand_nm_j1": 0,
+    "gemma_it__rand_nm_j2": 0
+   },
+   "predict": {
+    "gams3_it__E_art2": "0",
+    "gams3_it__E_iter1": "0",
+    "gams3_it__orig": "0",
+    "gams3_it__rand_nm_j1": "0",
+    "gemma_it__E_art2": "0",
+    "gemma_it__E_iter1": "0",
+    "gemma_it__orig": "0",
+    "gemma_it__rand_nm_j1": "0",
+    "gemma_it__rand_nm_j2": "0"
+   }
+  },
+  {
+   "item_id": "boolq:2854",
+   "pair_id": "boolq:2854",
+   "task": "boolq",
+   "lang": "en",
+   "primary_metric": "acc",
+   "input": "List of Blue's Clues characters -- Blue is a playful and energetic female puppy with light blue fur and dark blue spots. She cannot talk but communicates with her owners, Steve and Joe, through barks that they interpret based on her tone and expression. In each episode, she plays a game called Blue's Clues, in which she leaves three blue paw print clues for the host and viewers to find in order to answer a question. She has the ability to enter storybooks and picture frames by ``skidooing'' into them with a special dance routine. In the sixth season, she is granted a magic playroom called Blue's Room in which she can interact with the viewer and a cast of live-action puppet characters. She is voiced by Traci Paige Johnson, one of the series' creators. Johnson was cast as the character's voice because out of the crew, she was able to sound the most like a dog.\nQuestion: is blue off of blue's clues a girl?\nAnswer:\n(0) no\n(1) yes",
+   "gold": "1",
+   "n_choices": 2,
+   "correct": {
+    "gams3_it__E_art2": 1,
+    "gams3_it__E_iter1": 1,
+    "gams3_it__orig": 1,
+    "gams3_it__rand_nm_j1": 1,
+    "gemma_it__E_art2": 1,
+    "gemma_it__E_iter1": 1,
+    "gemma_it__orig": 1,
+    "gemma_it__rand_nm_j1": 1,
+    "gemma_it__rand_nm_j2": 1
+   },
+   "predict": {
+    "gams3_it__E_art2": "1",
+    "gams3_it__E_iter1": "1",
+    "gams3_it__orig": "1",
+    "gams3_it__rand_nm_j1": "1",
+    "gemma_it__E_art2": "1",
+    "gemma_it__E_iter1": "1",
+    "gemma_it__orig": "1",
+    "gemma_it__rand_nm_j1": "1",
+    "gemma_it__rand_nm_j2": "1"
+   }
+  },
+  {
+   "item_id": "boolq:1671",
+   "pair_id": "boolq:1671",
+   "task": "boolq",
+   "lang": "en",
+   "primary_metric": "acc",
+   "input": "FIFA World Cup qualification -- The hosts of the World Cup receive an automatic berth. Unlike many other sports, results of the previous World Cups or of the continental championships are not taken into account. Until 2002, the defending champions also received an automatic berth, but starting from the 2006 World Cup this is no longer the case.\nQuestion: does host team automatically qualify for world cup?\nAnswer:\n(0) no\n(1) yes",
+   "gold": "1",
+   "n_choices": 2,
+   "correct": {
+    "gams3_it__E_art2": 1,
+    "gams3_it__E_iter1": 1,
+    "gams3_it__orig": 1,
+    "gams3_it__rand_nm_j1": 1,
+    "gemma_it__E_art2": 1,
+    "gemma_it__E_iter1": 1,
+    "gemma_it__orig": 1,
+    "gemma_it__rand_nm_j1": 1,
+    "gemma_it__rand_nm_j2": 1
+   },
+   "predict": {
+    "gams3_it__E_art2": "1",
+    "gams3_it__E_iter1": "1",
+    "gams3_it__orig": "1",
+    "gams3_it__rand_nm_j1": "1",
+    "gemma_it__E_art2": "1",
+    "gemma_it__E_iter1": "1",
+    "gemma_it__orig": "1",
+    "gemma_it__rand_nm_j1": "1",
+    "gemma_it__rand_nm_j2": "1"
+   }
+  },
+  {
+   "item_id": "boolq:489",
+   "pair_id": "boolq:489",
+   "task": "boolq",
+   "lang": "en",
+   "primary_metric": "acc",
+   "input": "Visa policy of Georgia -- Holders of visas or residence permits of EU/EFTA/GCC countries, overseas territories of EU countries (except Anguilla, Montserrat, Pitcairn, Saint Helena, Ascension and Tristan da Cunha), Australia, Canada, Israel, Japan, New Zealand, South Korea or the United States do not require a visa for max 90 days in a 180-day period. The visa/residence permit must be valid on arrival to Georgia. However, there have been many cases where those holding valid residency of GCC countries have been denied access without assigning any reason, especially if they are citizens of India and Pakistan.\nQuestion: do american citizens need a visa for georgia?\nAnswer:\n(0) no\n(1) yes",
+   "gold": "0",
+   "n_choices": 2,
+   "correct": {
+    "gams3_it__E_art2": 1,
+    "gams3_it__E_iter1": 1,
+    "gams3_it__orig": 1,
+    "gams3_it__rand_nm_j1": 1,
+    "gemma_it__E_art2": 1,
+    "gemma_it__E_iter1": 1,
+    "gemma_it__orig": 1,
+    "gemma_it__rand_nm_j1": 1,
+    "gemma_it__rand_nm_j2": 1
+   },
+   "predict": {
+    "gams3_it__E_art2": "0",
+    "gams3_it__E_iter1": "0",
+    "gams3_it__orig": "0",
+    "gams3_it__rand_nm_j1": "0",
+    "gemma_it__E_art2": "0",
+    "gemma_it__E_iter1": "0",
+    "gemma_it__orig": "0",
+    "gemma_it__rand_nm_j1": "0",
+    "gemma_it__rand_nm_j2": "0"
+   }
+  },
+  {
+   "item_id": "boolq:1288",
+   "pair_id": "boolq:1288",
+   "task": "boolq",
+   "lang": "en",
+   "primary_metric": "acc",
+   "input": "Public holidays in the United Kingdom -- The two terms ``bank holidays'' and ``public holidays'' are often used interchangeably, although strictly and legally there is a difference. A government website describes the difference as follows:\nQuestion: are bank holidays and public holidays the same?\nAnswer:\n(0) no\n(1) yes",
+   "gold": "0",
+   "n_choices": 2,
+   "correct": {
+    "gams3_it__E_art2": 1,
+    "gams3_it__E_iter1": 1,
+    "gams3_it__orig": 1,
+    "gams3_it__rand_nm_j1": 1,
+    "gemma_it__E_art2": 1,
+    "gemma_it__E_iter1": 1,
+    "gemma_it__orig": 1,
+    "gemma_it__rand_nm_j1": 1,
+    "gemma_it__rand_nm_j2": 1
+   },
+   "predict": {
+    "gams3_it__E_art2": "0",
+    "gams3_it__E_iter1": "0",
+    "gams3_it__orig": "0",
+    "gams3_it__rand_nm_j1": "0",
+    "gemma_it__E_art2": "0",
+    "gemma_it__E_iter1": "0",
+    "gemma_it__orig": "0",
+    "gemma_it__rand_nm_j1": "0",
+    "gemma_it__rand_nm_j2": "0"
+   }
+  },
+  {
+   "item_id": "boolq:2626",
+   "pair_id": "boolq:2626",
+   "task": "boolq",
+   "lang": "en",
+   "primary_metric": "acc",
+   "input": "Exploration of Neptune -- The exploration of Neptune has only begun with one spacecraft, Voyager 2 in 1989. Currently there are no approved future missions to visit the Neptunian system. NASA, ESA and also independent academic groups have proposed future scientific missions to visit Neptune. Some mission plans are still active, while others have been abandoned or put on hold.\nQuestion: have any satellites or robots been to neptune?\nAnswer:\n(0) no\n(1) yes",
+   "gold": "1",
+   "n_choices": 2,
+   "correct": {
+    "gams3_it__E_art2": 1,
+    "gams3_it__E_iter1": 1,
+    "gams3_it__orig": 1,
+    "gams3_it__rand_nm_j1": 1,
+    "gemma_it__E_art2": 0,
+    "gemma_it__E_iter1": 0,
+    "gemma_it__orig": 0,
+    "gemma_it__rand_nm_j1": 0,
+    "gemma_it__rand_nm_j2": 0
+   },
+   "predict": {
+    "gams3_it__E_art2": "1",
+    "gams3_it__E_iter1": "1",
+    "gams3_it__orig": "1",
+    "gams3_it__rand_nm_j1": "1",
+    "gemma_it__E_art2": "0",
+    "gemma_it__E_iter1": "0",
+    "gemma_it__orig": "0",
+    "gemma_it__rand_nm_j1": "0",
+    "gemma_it__rand_nm_j2": "0"
+   }
+  },
+  {
+   "item_id": "boolq:455",
+   "pair_id": "boolq:455",
+   "task": "boolq",
+   "lang": "sl",
+   "primary_metric": "acc",
+   "input": "Vložena kumara – Vložena kumara (v Združenih državah in Kanadi običajno znana kot 'pickle', v Veliki Britaniji, na Irskem, v Avstraliji, Južni Afriki in Novi Zelandiji pa kot 'gherkin') je kumara, ki je bila vložena v slanico, kis ali drugo raztopino in pustila fermentirati za določen čas, bodisi z potapljanjem kumar v kislo raztopino ali s fermentacijo z mlečnokislinsko fermentacijo. Vložene kumare so pogosto del mešanih vloženih zelenjav.\nVprašanje: Ali sta kumarica in kornišon ista stvar?\nOdgovor:\n(0) ne\n(1) da",
+   "gold": "1",
+   "n_choices": 2,
+   "correct": {
+    "gams3_it__E_art2": 0,
+    "gams3_it__E_iter1": 0,
+    "gams3_it__orig": 0,
+    "gams3_it__rand_nm_j1": 0,
+    "gemma_it__E_art2": 0,
+    "gemma_it__E_iter1": 0,
+    "gemma_it__orig": 1,
+    "gemma_it__rand_nm_j1": 1,
+    "gemma_it__rand_nm_j2": 1
+   },
+   "predict": {
+    "gams3_it__E_art2": "0",
+    "gams3_it__E_iter1": "0",
+    "gams3_it__orig": "0",
+    "gams3_it__rand_nm_j1": "0",
+    "gemma_it__E_art2": "0",
+    "gemma_it__E_iter1": "0",
+    "gemma_it__orig": "1",
+    "gemma_it__rand_nm_j1": "1",
+    "gemma_it__rand_nm_j2": "1"
+   }
+  },
+  {
+   "item_id": "boolq:3134",
+   "pair_id": "boolq:3134",
+   "task": "boolq",
+   "lang": "sl",
+   "primary_metric": "acc",
+   "input": "Apatridnost -- V mednarodnem pravu je oseba brez državljanstva nekdo, ki ga ``nobena država ne šteje za državljana v skladu z njeno zakonodajo``. Nekatere osebe brez državljanstva so tudi begunci. Vendar niso vsi begunci brez državljanstva in veliko oseb brez državljanstva ni nikoli prestopilo mednarodne meje.\nVprašanje: ali je človek lahko državljan nobene države?\nOdgovor:\n(0) ne\n(1) da",
+   "gold": "1",
+   "n_choices": 2,
+   "correct": {
+    "gams3_it__E_art2": 1,
+    "gams3_it__E_iter1": 1,
+    "gams3_it__orig": 1,
+    "gams3_it__rand_nm_j1": 1,
+    "gemma_it__E_art2": 1,
+    "gemma_it__E_iter1": 1,
+    "gemma_it__orig": 1,
+    "gemma_it__rand_nm_j1": 1,
+    "gemma_it__rand_nm_j2": 1
+   },
+   "predict": {
+    "gams3_it__E_art2": "1",
+    "gams3_it__E_iter1": "1",
+    "gams3_it__orig": "1",
+    "gams3_it__rand_nm_j1": "1",
+    "gemma_it__E_art2": "1",
+    "gemma_it__E_iter1": "1",
+    "gemma_it__orig": "1",
+    "gemma_it__rand_nm_j1": "1",
+    "gemma_it__rand_nm_j2": "1"
+   }
+  },
+  {
+   "item_id": "boolq:460",
+   "pair_id": "boolq:460",
+   "task": "boolq",
+   "lang": "sl",
+   "primary_metric": "acc",
+   "input": "Razpon rok – Razpon rok ali doseg (včasih imenovan tudi razpon kril) predstavlja fizično meritev dolžine od enega konca posameznikovih rok (merjeno na konicah prstov) do drugega, ko so roke dvignjene vzporedno s tlemi na višini ramen pod kotom 90°. Povprečni doseg se ujema z višino osebe. Pri napovedovanju višine iz razpona rok je treba upoštevati starost in spol.\nVprašanje: Je širina vaših rok enaka vaši višini?\nOdgovor:\n(0) ne\n(1) da",
+   "gold": "1",
+   "n_choices": 2,
+   "correct": {
+    "gams3_it__E_art2": 0,
+    "gams3_it__E_iter1": 0,
+    "gams3_it__orig": 0,
+    "gams3_it__rand_nm_j1": 0,
+    "gemma_it__E_art2": 0,
+    "gemma_it__E_iter1": 0,
+    "gemma_it__orig": 0,
+    "gemma_it__rand_nm_j1": 0,
+    "gemma_it__rand_nm_j2": 0
+   },
+   "predict": {
+    "gams3_it__E_art2": "0",
+    "gams3_it__E_iter1": "0",
+    "gams3_it__orig": "0",
+    "gams3_it__rand_nm_j1": "0",
+    "gemma_it__E_art2": "0",
+    "gemma_it__E_iter1": "0",
+    "gemma_it__orig": "0",
+    "gemma_it__rand_nm_j1": "0",
+    "gemma_it__rand_nm_j2": "0"
+   }
+  },
+  {
+   "item_id": "boolq:2854",
+   "pair_id": "boolq:2854",
+   "task": "boolq",
+   "lang": "sl",
+   "primary_metric": "acc",
+   "input": "Seznam likov iz oddaje Blue's Clues -- Blue je igriva in energična psička s svetlo modrim kožuhom in temno modrimi lisami. Ne more govoriti, ampak komunicira s svojima lastnikoma, Stevom in Joejem, z laježem, ki ga razlagajo na podlagi njenega tona in izraza. V vsaki epizodi igra igro, imenovano Blue's Clues, v kateri pusti tri modre odtise šap, ki jih gostitelj in gledalci najdejo, da bi odgovorili na vprašanje. Sposobna je vstopiti v knjige s zgodbami in okvirje za slike tako, da 'skidooing' vanje s posebno plesno rutino. V šesti sezoni ji dodelijo čarobno igralnico, imenovano Blue's Room, v kateri lahko komunicira z gledalcem in zasedbo lutkovnih likov v živo. Glas ji je posodila Traci Paige Johnson, ena od ustvarjalcev serije. Johnsonova je bila izbrana za glas lika, ker je od ekipe zvenela najbolj kot pes.\nVprašanje: Je Blue iz oddaje Blue's Clues psička?\nOdgovor:\n(0) ne\n(1) da",
+   "gold": "1",
+   "n_choices": 2,
+   "correct": {
+    "gams3_it__E_art2": 1,
+    "gams3_it__E_iter1": 1,
+    "gams3_it__orig": 1,
+    "gams3_it__rand_nm_j1": 1,
+    "gemma_it__E_art2": 1,
+    "gemma_it__E_iter1": 1,
+    "gemma_it__orig": 1,
+    "gemma_it__rand_nm_j1": 1,
+    "gemma_it__rand_nm_j2": 1
+   },
+   "predict": {
+    "gams3_it__E_art2": "1",
+    "gams3_it__E_iter1": "1",
+    "gams3_it__orig": "1",
+    "gams3_it__rand_nm_j1": "1",
+    "gemma_it__E_art2": "1",
+    "gemma_it__E_iter1": "1",
+    "gemma_it__orig": "1",
+    "gemma_it__rand_nm_j1": "1",
+    "gemma_it__rand_nm_j2": "1"
+   }
+  },
+  {
+   "item_id": "boolq:1671",
+   "pair_id": "boolq:1671",
+   "task": "boolq",
+   "lang": "sl",
+   "primary_metric": "acc",
+   "input": "Kvalifikacije za svetovno prvenstvo v nogometu -- Gostitelji svetovnega prvenstva prejmejo samodejno mesto. Za razliko od mnogih drugih športov se rezultati prejšnjih svetovnih prvenstev ali celinskih prvenstev ne upoštevajo. Do leta 2002 so branilci naslova dobivali tudi avtomatski privez, od svetovnega prvenstva 2006 pa temu ni več tako.\nVprašanje: Ali se ekipa gostiteljica samodejno kvalificira za svetovno prvenstvo?\nOdgovor:\n(0) ne\n(1) da",
+   "gold": "1",
+   "n_choices": 2,
+   "correct": {
+    "gams3_it__E_art2": 1,
+    "gams3_it__E_iter1": 1,
+    "gams3_it__orig": 1,
+    "gams3_it__rand_nm_j1": 1,
+    "gemma_it__E_art2": 1,
+    "gemma_it__E_iter1": 1,
+    "gemma_it__orig": 1,
+    "gemma_it__rand_nm_j1": 1,
+    "gemma_it__rand_nm_j2": 1
+   },
+   "predict": {
+    "gams3_it__E_art2": "1",
+    "gams3_it__E_iter1": "1",
+    "gams3_it__orig": "1",
+    "gams3_it__rand_nm_j1": "1",
+    "gemma_it__E_art2": "1",
+    "gemma_it__E_iter1": "1",
+    "gemma_it__orig": "1",
+    "gemma_it__rand_nm_j1": "1",
+    "gemma_it__rand_nm_j2": "1"
+   }
+  },
+  {
+   "item_id": "boolq:489",
+   "pair_id": "boolq:489",
+   "task": "boolq",
+   "lang": "sl",
+   "primary_metric": "acc",
+   "input": "Vizumska politika Gruzije -- Imetniki vizumov ali dovoljenj za prebivanje držav EU/EFTA/GCC, čezmorskih ozemelj držav EU (razen Angvile, Montserrata, Pitcairna, Svete Helene, Ascensiona in Tristana da Cunha), Avstralije, Kanade, Izraela, Japonske, Nove Zelandije, Južne Koreje ali Združenih držav Amerike ne potrebujejo vizuma za obdobje do 90 dni v 180-dnevnem obdobju. Vizum ali dovoljenje za prebivanje mora biti veljavno ob prihodu v Gruzijo. Vendar pa so bili številni primeri, ko je bilo osebam z veljavnim prebivališčem v državah GCC zavrnjen vstop brez navedbe razloga, še posebej, če so bili državljani Indije in Pakistana.\nVprašanje: Ali ameriški državljani potrebujejo vizum za Gruzijo?\nOdgovor:\n(0) ne\n(1) da",
+   "gold": "0",
+   "n_choices": 2,
+   "correct": {
+    "gams3_it__E_art2": 1,
+    "gams3_it__E_iter1": 1,
+    "gams3_it__orig": 1,
+    "gams3_it__rand_nm_j1": 1,
+    "gemma_it__E_art2": 1,
+    "gemma_it__E_iter1": 1,
+    "gemma_it__orig": 1,
+    "gemma_it__rand_nm_j1": 1,
+    "gemma_it__rand_nm_j2": 1
+   },
+   "predict": {
+    "gams3_it__E_art2": "0",
+    "gams3_it__E_iter1": "0",
+    "gams3_it__orig": "0",
+    "gams3_it__rand_nm_j1": "0",
+    "gemma_it__E_art2": "0",
+    "gemma_it__E_iter1": "0",
+    "gemma_it__orig": "0",
+    "gemma_it__rand_nm_j1": "0",
+    "gemma_it__rand_nm_j2": "0"
+   }
+  },
+  {
+   "item_id": "boolq:1288",
+   "pair_id": "boolq:1288",
+   "task": "boolq",
+   "lang": "sl",
+   "primary_metric": "acc",
+   "input": "Državni prazniki v Združenem kraljestvu -- Izraza ``bankovni prazniki`` in ``državni prazniki`` se pogosto uporabljata izmenično, čeprav strogo in pravno obstaja razlika. Vladno spletno mesto opisuje razliko takole:\nVprašanje: Ali so bankovni prazniki in državni prazniki enaki?\nOdgovor:\n(0) ne\n(1) da",
+   "gold": "0",
+   "n_choices": 2,
+   "correct": {
+    "gams3_it__E_art2": 1,
+    "gams3_it__E_iter1": 1,
+    "gams3_it__orig": 1,
+    "gams3_it__rand_nm_j1": 1,
+    "gemma_it__E_art2": 1,
+    "gemma_it__E_iter1": 1,
+    "gemma_it__orig": 1,
+    "gemma_it__rand_nm_j1": 1,
+    "gemma_it__rand_nm_j2": 1
+   },
+   "predict": {
+    "gams3_it__E_art2": "0",
+    "gams3_it__E_iter1": "0",
+    "gams3_it__orig": "0",
+    "gams3_it__rand_nm_j1": "0",
+    "gemma_it__E_art2": "0",
+    "gemma_it__E_iter1": "0",
+    "gemma_it__orig": "0",
+    "gemma_it__rand_nm_j1": "0",
+    "gemma_it__rand_nm_j2": "0"
+   }
+  },
+  {
+   "item_id": "boolq:2626",
+   "pair_id": "boolq:2626",
+   "task": "boolq",
+   "lang": "sl",
+   "primary_metric": "acc",
+   "input": "Raziskovanje Neptuna -- Raziskovanje Neptuna se je začelo šele z enim vesoljskim plovilom, Voyagerjem 2 leta 1989. Trenutno ni odobrenih prihodnjih misij za obisk Neptunovega sistema. NASA, ESA in tudi neodvisne akademske skupine so predlagale prihodnje znanstvene misije za obisk Neptuna. Nekateri načrti misij so še vedno aktivni, drugi pa so bili opuščeni ali začasno ustavljeni.\nVprašanje: Ali so bili na Neptunu že kakšni sateliti ali roboti?\nOdgovor:\n(0) ne\n(1) da",
+   "gold": "1",
+   "n_choices": 2,
+   "correct": {
+    "gams3_it__E_art2": 1,
+    "gams3_it__E_iter1": 1,
+    "gams3_it__orig": 1,
+    "gams3_it__rand_nm_j1": 1,
+    "gemma_it__E_art2": 1,
+    "gemma_it__E_iter1": 1,
+    "gemma_it__orig": 1,
+    "gemma_it__rand_nm_j1": 1,
+    "gemma_it__rand_nm_j2": 1
+   },
+   "predict": {
+    "gams3_it__E_art2": "1",
+    "gams3_it__E_iter1": "1",
+    "gams3_it__orig": "1",
+    "gams3_it__rand_nm_j1": "1",
+    "gemma_it__E_art2": "1",
+    "gemma_it__E_iter1": "1",
+    "gemma_it__orig": "1",
+    "gemma_it__rand_nm_j1": "1",
+    "gemma_it__rand_nm_j2": "1"
+   }
+  },
+  {
+   "item_id": "hellaswag:2095",
+   "pair_id": "hellaswag:2095",
+   "task": "hellaswag",
+   "lang": "en",
+   "primary_metric": "acc_norm",
+   "input": "Ice fishing: He gently tries to pull up and then reel the fishing line out of the hole. He dips and lowers while taking a break. He tries to reel the line out again. He\n(0) looks up from his shallow hole rubbing his face.\n(1) pulls up, takes a few drags and starts reeling again.\n(2) removes his gloves and gets to his knees and back up as he tries to pull the line out of the hole repeatedly.\n(3) reels the fish out once more and pulls it out of the hole.",
+   "gold": "2",
+   "n_choices": 4,
+   "correct": {
+    "gams3_it__E_art2": 1,
+    "gams3_it__E_iter1": 1,
+    "gams3_it__orig": 1,
+    "gams3_it__rand_nm_j1": 1,
+    "gemma_it__E_art2": 1,
+    "gemma_it__E_iter1": 1,
+    "gemma_it__orig": 1,
+    "gemma_it__rand_nm_j1": 1,
+    "gemma_it__rand_nm_j2": 1
+   },
+   "predict": {
+    "gams3_it__E_art2": "2",
+    "gams3_it__E_iter1": "2",
+    "gams3_it__orig": "2",
+    "gams3_it__rand_nm_j1": "2",
+    "gemma_it__E_art2": "2",
+    "gemma_it__E_iter1": "2",
+    "gemma_it__orig": "2",
+    "gemma_it__rand_nm_j1": "2",
+    "gemma_it__rand_nm_j2": "2"
+   }
+  },
+  {
+   "item_id": "hellaswag:4069",
+   "pair_id": "hellaswag:4069",
+   "task": "hellaswag",
+   "lang": "en",
+   "primary_metric": "acc_norm",
+   "input": "Personal Care and Style: How to study at the last minute. Focus on your weak spots. Because you are studying at the last minute, you will not have time to go through all of your class material or your study notes. Instead, you should read over the class material and identify any topics you struggle with or have trouble recalling.\n(0) You should then focus your studying on brushing up on your weak spots so you are better prepared heading into the test. You may take a practice exam and note questions that you did poorly on or scored low on.\n(1) Try some tips on studying at the last minute : Take notes in class of your own if you want to remember and maybe ask a study partner to proofread your notes. Study at least one thing at a time.\n(2)  Your teacher may tell you to retake a semester after you are absent from class. Ask your teacher to agree not to retake some of your missed assignments that you missed.\n(3)  If you are struggling with certain classes, then consider making a list of just the parts you struggle with and try to swap that for something else. For example, if you struggle with journalism and you struggle with proof supports, try revising your essay on leno a new topic of study.",
+   "gold": "0",
+   "n_choices": 4,
+   "correct": {
+    "gams3_it__E_art2": 1,
+    "gams3_it__E_iter1": 1,
+    "gams3_it__orig": 1,
+    "gams3_it__rand_nm_j1": 1,
+    "gemma_it__E_art2": 1,
+    "gemma_it__E_iter1": 1,
+    "gemma_it__orig": 1,
+    "gemma_it__rand_nm_j1": 1,
+    "gemma_it__rand_nm_j2": 1
+   },
+   "predict": {
+    "gams3_it__E_art2": "0",
+    "gams3_it__E_iter1": "0",
+    "gams3_it__orig": "0",
+    "gams3_it__rand_nm_j1": "0",
+    "gemma_it__E_art2": "0",
+    "gemma_it__E_iter1": "0",
+    "gemma_it__orig": "0",
+    "gemma_it__rand_nm_j1": "0",
+    "gemma_it__rand_nm_j2": "0"
+   }
+  },
+  {
+   "item_id": "hellaswag:635",
+   "pair_id": "hellaswag:635",
+   "task": "hellaswag",
+   "lang": "en",
+   "primary_metric": "acc_norm",
+   "input": "Polishing shoes: A black boot sits on a table with several items, including a pair of handcuffs. A man's hand brings out shoe polishing supplies. The man\n(0) sprays lotion onto the shoe.\n(1) demonstrates how to polish the boot.\n(2) then pours the shoe polishing supplies and lubricates his shoe with the product.\n(3) rearranges the contents of the shoe on the table.",
+   "gold": "1",
+   "n_choices": 4,
+   "correct": {
+    "gams3_it__E_art2": 1,
+    "gams3_it__E_iter1": 1,
+    "gams3_it__orig": 1,
+    "gams3_it__rand_nm_j1": 1,
+    "gemma_it__E_art2": 1,
+    "gemma_it__E_iter1": 1,
+    "gemma_it__orig": 1,
+    "gemma_it__rand_nm_j1": 1,
+    "gemma_it__rand_nm_j2": 1
+   },
+   "predict": {
+    "gams3_it__E_art2": "1",
+    "gams3_it__E_iter1": "1",
+    "gams3_it__orig": "1",
+    "gams3_it__rand_nm_j1": "1",
+    "gemma_it__E_art2": "1",
+    "gemma_it__E_iter1": "1",
+    "gemma_it__orig": "1",
+    "gemma_it__rand_nm_j1": "1",
+    "gemma_it__rand_nm_j2": "1"
+   }
+  },
+  {
+   "item_id": "hellaswag:6765",
+   "pair_id": "hellaswag:6765",
+   "task": "hellaswag",
+   "lang": "en",
+   "primary_metric": "acc_norm",
+   "input": "Youth: How to know if a girl likes you. Look at her stance. When a girl likes you, she will face in your direction. If a girl has her torso turned towards you in an open manner, this means that she is confident talking with you.\n(0) Pay attention to this stance when approaching a girl or even in conversation; you'll know if she has a strong attraction to you. If you're impressed and know whether she is attracted to you by looking directly into your eyes, this may be the right person to talk to.\n(1) If a girl stands facing away from you facing her friends and family, this indicates that she is unsure of how to approach you. Too broad a stance or leaning over the menu shows that she lacks self confidence.\n(2) If a girl has her arms hung loosely at her sides, her body may bob slightly left and right as she talks. This is a sign that she likes you.\n(3) If she has a closed body position, namely crossed arms or legs, she may be shy or nervous to talk to you or she may simply be creating a barrier to signal that she is uninterested. When she is sitting with her legs crossed, watch her feet.",
+   "gold": "3",
+   "n_choices": 4,
+   "correct": {
+    "gams3_it__E_art2": 1,
+    "gams3_it__E_iter1": 1,
+    "gams3_it__orig": 1,
+    "gams3_it__rand_nm_j1": 1,
+    "gemma_it__E_art2": 1,
+    "gemma_it__E_iter1": 1,
+    "gemma_it__orig": 1,
+    "gemma_it__rand_nm_j1": 1,
+    "gemma_it__rand_nm_j2": 1
+   },
+   "predict": {
+    "gams3_it__E_art2": "3",
+    "gams3_it__E_iter1": "3",
+    "gams3_it__orig": "3",
+    "gams3_it__rand_nm_j1": "3",
+    "gemma_it__E_art2": "3",
+    "gemma_it__E_iter1": "3",
+    "gemma_it__orig": "3",
+    "gemma_it__rand_nm_j1": "3",
+    "gemma_it__rand_nm_j2": "3"
+   }
+  },
+  {
+   "item_id": "hellaswag:3346",
+   "pair_id": "hellaswag:3346",
+   "task": "hellaswag",
+   "lang": "en",
+   "primary_metric": "acc_norm",
+   "input": "Personal Care and Style: How to get bigger hair. Choose a volumizing shampoo and conditioner. If you have fine or thin hair, using a volumizing shampoo and conditioner can help give you bigger hair. They cleanse and moisturize your tresses without weighing them down, so your hair appears fuller and thicker.\n(0)  Apply conditioner in the right area. While fine or thin hair needs moisture too, using conditioner at the roots can weigh down your hair so it looks flat.\n(1)  You can find volumizing shampoo made for this purpose at any beauty supply store. Read product labels before purchasing one to keep yourself from purchasing a shampoo and conditioner that may come off in the wash.\n(2)  Research websites that list the hair types that are eligible for volumizing shampoos and conditioners. Focus on the most common colors such as brown, dark blond, and deep reds.\n(3)  When it comes to style, you can either leave it down or try doing it in a professional style. You can also purchase a volumizing shampoo and conditioner, and keep it up.",
+   "gold": "0",
+   "n_choices": 4,
+   "correct": {
+    "gams3_it__E_art2": 1,
+    "gams3_it__E_iter1": 1,
+    "gams3_it__orig": 1,
+    "gams3_it__rand_nm_j1": 1,
+    "gemma_it__E_art2": 1,
+    "gemma_it__E_iter1": 1,
+    "gemma_it__orig": 1,
+    "gemma_it__rand_nm_j1": 1,
+    "gemma_it__rand_nm_j2": 1
+   },
+   "predict": {
+    "gams3_it__E_art2": "0",
+    "gams3_it__E_iter1": "0",
+    "gams3_it__orig": "0",
+    "gams3_it__rand_nm_j1": "0",
+    "gemma_it__E_art2": "0",
+    "gemma_it__E_iter1": "0",
+    "gemma_it__orig": "0",
+    "gemma_it__rand_nm_j1": "0",
+    "gemma_it__rand_nm_j2": "0"
+   }
+  },
+  {
+   "item_id": "hellaswag:3781",
+   "pair_id": "hellaswag:3781",
+   "task": "hellaswag",
+   "lang": "en",
+   "primary_metric": "acc_norm",
+   "input": "Personal Care and Style: How to wear a saree in bengali style. Tuck the saree in your waist. Start the tuck on the right side of your waist, and wrap it all the way around your body until it comes back to the right side of your body. As the edge runs along your waist, you can gently tuck in the entire edge, so the saree has a secure fit.\n(0)  Use the saree throughout your workout. If you want to look professional, keep the saree in place throughout your workout.\n(1)  Pull the saree in a circle around your waist. Next, look up at your back and try to take into account where the right side of your waist is.\n(2)  The bottom border of the saree should graze the top of your feet, and should look horizontally straight and parallel to the ground.. Pleat the saree by tucking it back and forth.\n(3)  This is also where the part of your saree that passes under your belly flap is referred to.. Gather the saree before putting on any jewelry.",
+   "gold": "2",
+   "n_choices": 4,
+   "correct": {
+    "gams3_it__E_art2": 0,
+    "gams3_it__E_iter1": 0,
+    "gams3_it__orig": 0,
+    "gams3_it__rand_nm_j1": 0,
+    "gemma_it__E_art2": 0,
+    "gemma_it__E_iter1": 0,
+    "gemma_it__orig": 0,
+    "gemma_it__rand_nm_j1": 0,
+    "gemma_it__rand_nm_j2": 0
+   },
+   "predict": {
+    "gams3_it__E_art2": "0",
+    "gams3_it__E_iter1": "0",
+    "gams3_it__orig": "0",
+    "gams3_it__rand_nm_j1": "0",
+    "gemma_it__E_art2": "0",
+    "gemma_it__E_iter1": "0",
+    "gemma_it__orig": "0",
+    "gemma_it__rand_nm_j1": "0",
+    "gemma_it__rand_nm_j2": "0"
+   }
+  },
+  {
+   "item_id": "hellaswag:4919",
+   "pair_id": "hellaswag:4919",
+   "task": "hellaswag",
+   "lang": "en",
+   "primary_metric": "acc_norm",
+   "input": "Health: How to love shyness. Accept yourself for being shy. To tell you the truth, that's just the way you are and there's nothing that anybody can say to make you into who you're not.. Use it to your advantage.\n(0)  When there's someone that you might like, branch out a little and try flirting a little bit. The way that you act, since you're shy, usually makes an impression on him or her.\n(1)  Approach it as your way to know more about yourself. Socializing outside of school is a great outlet because no one is around to criticize you or stop you from learning.\n(2)  Shyness is a red flag and an indicator that you don't like yourself. People put emphasis on it, but the effect alone alone is pretty psychological, not to mention it can polarize people.\n(3)  People who are shy often find themselves more attracted to comments and attention. Social rejection is, well, not the same as feeling shy.",
+   "gold": "0",
+   "n_choices": 4,
+   "correct": {
+    "gams3_it__E_art2": 0,
+    "gams3_it__E_iter1": 1,
+    "gams3_it__orig": 0,
+    "gams3_it__rand_nm_j1": 0,
+    "gemma_it__E_art2": 0,
+    "gemma_it__E_iter1": 0,
+    "gemma_it__orig": 0,
+    "gemma_it__rand_nm_j1": 1,
+    "gemma_it__rand_nm_j2": 0
+   },
+   "predict": {
+    "gams3_it__E_art2": "1",
+    "gams3_it__E_iter1": "0",
+    "gams3_it__orig": "1",
+    "gams3_it__rand_nm_j1": "1",
+    "gemma_it__E_art2": "1",
+    "gemma_it__E_iter1": "1",
+    "gemma_it__orig": "1",
+    "gemma_it__rand_nm_j1": "0",
+    "gemma_it__rand_nm_j2": "1"
+   }
+  },
+  {
+   "item_id": "hellaswag:2634",
+   "pair_id": "hellaswag:2634",
+   "task": "hellaswag",
+   "lang": "en",
+   "primary_metric": "acc_norm",
+   "input": "Spinning: A close up of an exercise bike is shown with a person walking into frame. The person\n(0) is then seen doing several different moves on the bike.\n(1) then uses a foot to move around along the bike's pedals.\n(2) climbs on the bike and begins riding furiously.\n(3) smudges down one bar as the camera captures it from several angles.",
+   "gold": "2",
+   "n_choices": 4,
+   "correct": {
+    "gams3_it__E_art2": 0,
+    "gams3_it__E_iter1": 0,
+    "gams3_it__orig": 0,
+    "gams3_it__rand_nm_j1": 0,
+    "gemma_it__E_art2": 0,
+    "gemma_it__E_iter1": 0,
+    "gemma_it__orig": 0,
+    "gemma_it__rand_nm_j1": 0,
+    "gemma_it__rand_nm_j2": 0
+   },
+   "predict": {
+    "gams3_it__E_art2": "0",
+    "gams3_it__E_iter1": "0",
+    "gams3_it__orig": "0",
+    "gams3_it__rand_nm_j1": "0",
+    "gemma_it__E_art2": "0",
+    "gemma_it__E_iter1": "0",
+    "gemma_it__orig": "0",
+    "gemma_it__rand_nm_j1": "0",
+    "gemma_it__rand_nm_j2": "0"
+   }
+  },
+  {
+   "item_id": "hellaswag:2095",
+   "pair_id": "hellaswag:2095",
+   "task": "hellaswag",
+   "lang": "sl",
+   "primary_metric": "acc_norm",
+   "input": "Ribolov na ledu: Nežno poskuša potegniti vrvico navzgor in jo nato naviti iz luknje. Med odmorom se potopi in spusti. Spet poskuša naviti vrvico. On_\n(0) pogleda iz svoje plitve luknje in si drgne obraz.\n(1) potegne navzgor, naredi nekaj potegov in začne znova navijati.\n(2) sleče rokavice, poklekne in se spet dvigne, medtem ko poskuša večkrat potegniti vrvico iz luknje.\n(3) še enkrat navije ribo in jo potegne iz luknje.",
+   "gold": "2",
+   "n_choices": 4,
+   "correct": {
+    "gams3_it__E_art2": 0,
+    "gams3_it__E_iter1": 0,
+    "gams3_it__orig": 0,
+    "gams3_it__rand_nm_j1": 0,
+    "gemma_it__E_art2": 0,
+    "gemma_it__E_iter1": 0,
+    "gemma_it__orig": 0,
+    "gemma_it__rand_nm_j1": 0,
+    "gemma_it__rand_nm_j2": 0
+   },
+   "predict": {
+    "gams3_it__E_art2": "1",
+    "gams3_it__E_iter1": "1",
+    "gams3_it__orig": "1",
+    "gams3_it__rand_nm_j1": "1",
+    "gemma_it__E_art2": "3",
+    "gemma_it__E_iter1": "3",
+    "gemma_it__orig": "3",
+    "gemma_it__rand_nm_j1": "3",
+    "gemma_it__rand_nm_j2": "3"
+   }
+  },
+  {
+   "item_id": "hellaswag:4069",
+   "pair_id": "hellaswag:4069",
+   "task": "hellaswag",
+   "lang": "sl",
+   "primary_metric": "acc_norm",
+   "input": "Osebna nega in stil: Kako se učiti v zadnjem trenutku. Osredotočite se na svoje šibke točke. Ker se učite v zadnjem trenutku, ne boste imeli časa pregledati celotnega predavanja ali svojih zapiskov. Namesto tega bi morali prebrati razredno gradivo in prepoznati vse teme, s katerimi imate težave ali jih težko prikličete v spomin.\n(0) Nato se osredotočite na svoje učenje na čiščenje svojih šibkih točk, da boste bolje pripravljeni na test. Opravite lahko praktični izpit in zabeležite vprašanja, ki ste jih opravili slabo ali ste dosegli nizko oceno.\n(1) Preizkusite nekaj nasvetov o učenju v zadnjem trenutku: sami si delajte zapiske v razredu, če si želite zapomniti, in morda prosite študijskega partnerja, da lektorira vaše zapiske. Študirajte vsaj eno stvar naenkrat.\n(2) Vaš učitelj vam lahko reče, da ponovite semester, potem ko ste odsotni od pouka. Prosite svojega učitelja, da se strinja, da ne bo ponovno opravljal nekaterih zamujenih nalog, ki ste jih zamudili.\n(3) Če imate težave z določenimi razredi, razmislite o tem, da naredite seznam samo tistih delov, s katerimi imate težave, in poskusite to zamenjati za nekaj drugega. Na primer, če imate težave z novinarstvom in imate težave z dokazi, poskusite popraviti svoj esej o leno novi temi študija.",
+   "gold": "0",
+   "n_choices": 4,
+   "correct": {
+    "gams3_it__E_art2": 1,
+    "gams3_it__E_iter1": 1,
+    "gams3_it__orig": 1,
+    "gams3_it__rand_nm_j1": 1,
+    "gemma_it__E_art2": 1,
+    "gemma_it__E_iter1": 1,
+    "gemma_it__orig": 1,
+    "gemma_it__rand_nm_j1": 1,
+    "gemma_it__rand_nm_j2": 1
+   },
+   "predict": {
+    "gams3_it__E_art2": "0",
+    "gams3_it__E_iter1": "0",
+    "gams3_it__orig": "0",
+    "gams3_it__rand_nm_j1": "0",
+    "gemma_it__E_art2": "0",
+    "gemma_it__E_iter1": "0",
+    "gemma_it__orig": "0",
+    "gemma_it__rand_nm_j1": "0",
+    "gemma_it__rand_nm_j2": "0"
+   }
+  },
+  {
+   "item_id": "hellaswag:635",
+   "pair_id": "hellaswag:635",
+   "task": "hellaswag",
+   "lang": "sl",
+   "primary_metric": "acc_norm",
+   "input": "Loščenje čevljev: Črn škorenj stoji na mizi z več predmeti, vključno s parom lisic. Moška roka prinese pripomočke za loščenje čevljev. Moški\n(0) razprši losjon na čevelj.\n(1) pokaže, kako se zlošči škorenj.\n(2) nato izlije pripomočke za loščenje čevljev in z izdelkom namaže svoj čevelj.\n(3) preuredi vsebino čevlja na mizi.",
+   "gold": "1",
+   "n_choices": 4,
+   "correct": {
+    "gams3_it__E_art2": 0,
+    "gams3_it__E_iter1": 1,
+    "gams3_it__orig": 0,
+    "gams3_it__rand_nm_j1": 0,
+    "gemma_it__E_art2": 0,
+    "gemma_it__E_iter1": 0,
+    "gemma_it__orig": 0,
+    "gemma_it__rand_nm_j1": 0,
+    "gemma_it__rand_nm_j2": 0
+   },
+   "predict": {
+    "gams3_it__E_art2": "2",
+    "gams3_it__E_iter1": "1",
+    "gams3_it__orig": "2",
+    "gams3_it__rand_nm_j1": "2",
+    "gemma_it__E_art2": "2",
+    "gemma_it__E_iter1": "2",
+    "gemma_it__orig": "2",
+    "gemma_it__rand_nm_j1": "2",
+    "gemma_it__rand_nm_j2": "2"
+   }
+  },
+  {
+   "item_id": "hellaswag:6765",
+   "pair_id": "hellaswag:6765",
+   "task": "hellaswag",
+   "lang": "sl",
+   "primary_metric": "acc_norm",
+   "input": "Mladost: Kako vedeti, ali si dekletu všeč. Poglejte njeno držo. Ko si dekletu všeč, se bo obrnila v tvojo smer. Če je dekle s trupom odprto obrnjeno proti vam, to pomeni, da se z vami pogovarja samozavestno.\n(0) Bodite pozorni na to držo, ko se približujete dekletu ali celo v pogovoru; boste vedeli, če vas močno privlači. Če ste navdušeni in veste, ali vas privlači, tako da vas gleda neposredno v oči, je to morda prava oseba za pogovor.\n(1) Če dekle stoji obrnjeno stran od vas, obrnjeno proti svojim prijateljem in družini, to pomeni, da ni prepričana, kako se vam približati. Preširoka drža ali sklanjanje nad meni kaže na pomanjkanje samozavesti.\n(2) Če ima deklica roke ohlapno obešene ob telesu, se lahko njeno telo med govorjenjem rahlo ziba levo in desno. To je znak, da si ji všeč.\n(3) Če ima zaprt položaj telesa, in sicer prekrižane roke ali noge, je morda sramežljiva ali živčna, da bi se pogovarjala z vami, ali pa preprosto ustvarja oviro, ki sporoča, da je nezainteresirana. Ko sedi s prekrižanimi nogami, pazite na njena stopala.",
+   "gold": "3",
+   "n_choices": 4,
+   "correct": {
+    "gams3_it__E_art2": 1,
+    "gams3_it__E_iter1": 1,
+    "gams3_it__orig": 1,
+    "gams3_it__rand_nm_j1": 1,
+    "gemma_it__E_art2": 1,
+    "gemma_it__E_iter1": 1,
+    "gemma_it__orig": 1,
+    "gemma_it__rand_nm_j1": 1,
+    "gemma_it__rand_nm_j2": 1
+   },
+   "predict": {
+    "gams3_it__E_art2": "3",
+    "gams3_it__E_iter1": "3",
+    "gams3_it__orig": "3",
+    "gams3_it__rand_nm_j1": "3",
+    "gemma_it__E_art2": "3",
+    "gemma_it__E_iter1": "3",
+    "gemma_it__orig": "3",
+    "gemma_it__rand_nm_j1": "3",
+    "gemma_it__rand_nm_j2": "3"
+   }
+  },
+  {
+   "item_id": "hellaswag:3346",
+   "pair_id": "hellaswag:3346",
+   "task": "hellaswag",
+   "lang": "sl",
+   "primary_metric": "acc_norm",
+   "input": "Osebna nega in stil: Kako do večjih las. Izberite šampon in balzam za volumen. Če imate tanke ali fine lase, vam lahko uporaba šampona in balzama za večji volumen pomaga povečati lase. Očistijo in navlažijo vaše lase, ne da bi jih obtežili, zato so vaši lasje videti polnejši in gostejši.\n(0) Nanesite balzam na pravi predel. Čeprav tanki ali fini lasje potrebujejo tudi vlago, lahko uporaba balzama pri koreninah obteži vaše lase, tako da so videti ravni.\n(1) Šampon za povečanje volumna, namenjen temu namenu, lahko najdete v kateri koli trgovini s kozmetičnimi izdelki. Pred nakupom preberite etikete izdelkov, da se izognete nakupu šampona in balzama, ki se lahko izperejo med pranjem.\n(2) Raziščite spletne strani, ki navajajo tipe las, primerni za šampone in balzame za volumen. Osredotočite se na najpogostejše barve, kot so rjava, temno blond in temno rdeča.\n(3) Ko gre za stil, lahko lase pustite spuščene ali poskusite narediti profesionalni videz. Lahko tudi kupite šampon in balzam za večji volumen in ohranite ta videz.",
+   "gold": "0",
+   "n_choices": 4,
+   "correct": {
+    "gams3_it__E_art2": 0,
+    "gams3_it__E_iter1": 0,
+    "gams3_it__orig": 0,
+    "gams3_it__rand_nm_j1": 0,
+    "gemma_it__E_art2": 0,
+    "gemma_it__E_iter1": 0,
+    "gemma_it__orig": 0,
+    "gemma_it__rand_nm_j1": 0,
+    "gemma_it__rand_nm_j2": 0
+   },
+   "predict": {
+    "gams3_it__E_art2": "1",
+    "gams3_it__E_iter1": "1",
+    "gams3_it__orig": "1",
+    "gams3_it__rand_nm_j1": "1",
+    "gemma_it__E_art2": "1",
+    "gemma_it__E_iter1": "1",
+    "gemma_it__orig": "1",
+    "gemma_it__rand_nm_j1": "1",
+    "gemma_it__rand_nm_j2": "1"
+   }
+  },
+  {
+   "item_id": "hellaswag:3781",
+   "pair_id": "hellaswag:3781",
+   "task": "hellaswag",
+   "lang": "sl",
+   "primary_metric": "acc_norm",
+   "input": "Osebna nega in stil: Kako nositi saree v bengalskem slogu. Saree zataknite za pas. Začnite z zatikanjem na desni strani pasu in ga ovijte okoli telesa, dokler se ne vrne na desno stran telesa. Ko rob teče vzdolž vašega pasu, lahko nežno zataknite cel rob, tako da bo saree trdno pritrjen.\n(0) Uporabljajte saree med celotno vadbo. Če želite izgledati profesionalno, ohranite saree na mestu med celotno vadbo.\n(1) Ovijte saree okoli pasu v krogu. Nato poglejte proti hrbtu in poskusite določiti, kje je desna stran vašega pasu.\n(2) Spodnji rob sareeja naj bo tik nad vrhom vaših stopal in naj bo vodoravno raven ter vzporeden s tlemi. Saree nagubajte z izmeničnim zatikanjem naprej in nazaj.\n(3) To je tudi del, kjer saree prehaja pod vašim trebušnim zavihkom. Saree zberite, preden si nadenete kakršen koli nakit.",
+   "gold": "2",
+   "n_choices": 4,
+   "correct": {
+    "gams3_it__E_art2": 0,
+    "gams3_it__E_iter1": 0,
+    "gams3_it__orig": 0,
+    "gams3_it__rand_nm_j1": 0,
+    "gemma_it__E_art2": 0,
+    "gemma_it__E_iter1": 0,
+    "gemma_it__orig": 0,
+    "gemma_it__rand_nm_j1": 0,
+    "gemma_it__rand_nm_j2": 0
+   },
+   "predict": {
+    "gams3_it__E_art2": "1",
+    "gams3_it__E_iter1": "1",
+    "gams3_it__orig": "1",
+    "gams3_it__rand_nm_j1": "1",
+    "gemma_it__E_art2": "1",
+    "gemma_it__E_iter1": "1",
+    "gemma_it__orig": "1",
+    "gemma_it__rand_nm_j1": "1",
+    "gemma_it__rand_nm_j2": "1"
+   }
+  },
+  {
+   "item_id": "hellaswag:4919",
+   "pair_id": "hellaswag:4919",
+   "task": "hellaswag",
+   "lang": "sl",
+   "primary_metric": "acc_norm",
+   "input": "Zdravje: Kako ljubiti sramežljivost. Sprejmite se, ker ste sramežljivi. Po pravici povedano, takšni ste in nihče ne more reči ničesar, kar bi vas spremenilo v nekoga, ki niste. Izkoristite to sebi v prid.\n(0) Ko srečate nekoga, ki vam je morda všeč, malo razširite obzorja in poskusite nekoliko flirtati. Vaš način obnašanja, ker ste sramežljivi, običajno naredi vtis nanj ali nanjo.\n(1) Pristopite k temu kot k priložnosti, da izveste več o sebi. Druženje izven šole je odlična priložnost, saj ni nikogar, ki bi vas kritiziral ali vam preprečil učenje.\n(2) Sramežljivost je rdeča zastava in pokazatelj, da se ne marate. Ljudje to poudarjajo, vendar je sam učinek pretežno psihološki, poleg tega pa lahko polarizira ljudi.\n(3) Ljudje, ki so sramežljivi, pogosto najdejo več privlačnosti v komentarjih in pozornosti. Družbena zavrnitev ni enako kot občutek sramežljivosti.",
+   "gold": "0",
+   "n_choices": 4,
+   "correct": {
+    "gams3_it__E_art2": 0,
+    "gams3_it__E_iter1": 0,
+    "gams3_it__orig": 0,
+    "gams3_it__rand_nm_j1": 0,
+    "gemma_it__E_art2": 0,
+    "gemma_it__E_iter1": 0,
+    "gemma_it__orig": 0,
+    "gemma_it__rand_nm_j1": 0,
+    "gemma_it__rand_nm_j2": 0
+   },
+   "predict": {
+    "gams3_it__E_art2": "1",
+    "gams3_it__E_iter1": "3",
+    "gams3_it__orig": "1",
+    "gams3_it__rand_nm_j1": "1",
+    "gemma_it__E_art2": "3",
+    "gemma_it__E_iter1": "3",
+    "gemma_it__orig": "3",
+    "gemma_it__rand_nm_j1": "3",
+    "gemma_it__rand_nm_j2": "3"
+   }
+  },
+  {
+   "item_id": "hellaswag:2634",
+   "pair_id": "hellaswag:2634",
+   "task": "hellaswag",
+   "lang": "sl",
+   "primary_metric": "acc_norm",
+   "input": "Vrtenje: Prikaže se posnetek sobnega kolesa od blizu, ko v kadru oseba vstopi.\n(0) nato je videti, kako izvaja različne gibe na kolesu.\n(1) nato uporabi nogo, da se premika po pedalih kolesa.\n(2) se povzpne na kolo in začne furiozno voziti.\n(3) zabriše eno od prečk, medtem ko jo kamera zajema iz različnih kotov.",
+   "gold": "2",
+   "n_choices": 4,
+   "correct": {
+    "gams3_it__E_art2": 0,
+    "gams3_it__E_iter1": 0,
+    "gams3_it__orig": 0,
+    "gams3_it__rand_nm_j1": 0,
+    "gemma_it__E_art2": 0,
+    "gemma_it__E_iter1": 0,
+    "gemma_it__orig": 0,
+    "gemma_it__rand_nm_j1": 0,
+    "gemma_it__rand_nm_j2": 0
+   },
+   "predict": {
+    "gams3_it__E_art2": "0",
+    "gams3_it__E_iter1": "0",
+    "gams3_it__orig": "0",
+    "gams3_it__rand_nm_j1": "0",
+    "gemma_it__E_art2": "0",
+    "gemma_it__E_iter1": "0",
+    "gemma_it__orig": "0",
+    "gemma_it__rand_nm_j1": "0",
+    "gemma_it__rand_nm_j2": "0"
+   }
+  },
+  {
+   "item_id": "openbookqa:1795",
+   "pair_id": "openbookqa:1795",
+   "task": "openbookqa",
+   "lang": "en",
+   "primary_metric": "acc_norm",
+   "input": "What would a Jersey most likely be fed?\n(0) hamburger\n(1) moles\n(2) alfalfa\n(3) cow",
+   "gold": "2",
+   "n_choices": 4,
+   "correct": {
+    "gams3_it__E_art2": 1,
+    "gams3_it__E_iter1": 0,
+    "gams3_it__orig": 1,
+    "gams3_it__rand_nm_j1": 1,
+    "gemma_it__E_art2": 1,
+    "gemma_it__E_iter1": 1,
+    "gemma_it__orig": 1,
+    "gemma_it__rand_nm_j1": 1,
+    "gemma_it__rand_nm_j2": 1
+   },
+   "predict": {
+    "gams3_it__E_art2": "2",
+    "gams3_it__E_iter1": "0",
+    "gams3_it__orig": "2",
+    "gams3_it__rand_nm_j1": "2",
+    "gemma_it__E_art2": "2",
+    "gemma_it__E_iter1": "2",
+    "gemma_it__orig": "2",
+    "gemma_it__rand_nm_j1": "2",
+    "gemma_it__rand_nm_j2": "2"
+   }
+  },
+  {
+   "item_id": "openbookqa:745",
+   "pair_id": "openbookqa:745",
+   "task": "openbookqa",
+   "lang": "en",
+   "primary_metric": "acc_norm",
+   "input": "Wax can be used similarly to\n(0) wood\n(1) rubber\n(2) water\n(3) metal",
+   "gold": "1",
+   "n_choices": 4,
+   "correct": {
+    "gams3_it__E_art2": 1,
+    "gams3_it__E_iter1": 1,
+    "gams3_it__orig": 1,
+    "gams3_it__rand_nm_j1": 1,
+    "gemma_it__E_art2": 0,
+    "gemma_it__E_iter1": 0,
+    "gemma_it__orig": 1,
+    "gemma_it__rand_nm_j1": 1,
+    "gemma_it__rand_nm_j2": 1
+   },
+   "predict": {
+    "gams3_it__E_art2": "1",
+    "gams3_it__E_iter1": "1",
+    "gams3_it__orig": "1",
+    "gams3_it__rand_nm_j1": "1",
+    "gemma_it__E_art2": "0",
+    "gemma_it__E_iter1": "0",
+    "gemma_it__orig": "1",
+    "gemma_it__rand_nm_j1": "1",
+    "gemma_it__rand_nm_j2": "1"
+   }
+  },
+  {
+   "item_id": "openbookqa:8-395",
+   "pair_id": "openbookqa:8-395",
+   "task": "openbookqa",
+   "lang": "en",
+   "primary_metric": "acc_norm",
+   "input": "Overpopulation can cause\n(0) More fresh water for people to drink\n(1) Lower Life Expectancy in Countries\n(2) More food for more people\n(3) More space for places to people to live",
+   "gold": "1",
+   "n_choices": 4,
+   "correct": {
+    "gams3_it__E_art2": 1,
+    "gams3_it__E_iter1": 1,
+    "gams3_it__orig": 1,
+    "gams3_it__rand_nm_j1": 1,
+    "gemma_it__E_art2": 1,
+    "gemma_it__E_iter1": 1,
+    "gemma_it__orig": 1,
+    "gemma_it__rand_nm_j1": 1,
+    "gemma_it__rand_nm_j2": 1
+   },
+   "predict": {
+    "gams3_it__E_art2": "1",
+    "gams3_it__E_iter1": "1",
+    "gams3_it__orig": "1",
+    "gams3_it__rand_nm_j1": "1",
+    "gemma_it__E_art2": "1",
+    "gemma_it__E_iter1": "1",
+    "gemma_it__orig": "1",
+    "gemma_it__rand_nm_j1": "1",
+    "gemma_it__rand_nm_j2": "1"
+   }
+  },
+  {
+   "item_id": "openbookqa:1137",
+   "pair_id": "openbookqa:1137",
+   "task": "openbookqa",
+   "lang": "en",
+   "primary_metric": "acc_norm",
+   "input": "Dunes can be made out of the same thing as\n(0) clothes\n(1) food\n(2) forests\n(3) castles",
+   "gold": "3",
+   "n_choices": 4,
+   "correct": {
+    "gams3_it__E_art2": 0,
+    "gams3_it__E_iter1": 0,
+    "gams3_it__orig": 0,
+    "gams3_it__rand_nm_j1": 0,
+    "gemma_it__E_art2": 1,
+    "gemma_it__E_iter1": 1,
+    "gemma_it__orig": 1,
+    "gemma_it__rand_nm_j1": 1,
+    "gemma_it__rand_nm_j2": 1
+   },
+   "predict": {
+    "gams3_it__E_art2": "2",
+    "gams3_it__E_iter1": "2",
+    "gams3_it__orig": "2",
+    "gams3_it__rand_nm_j1": "2",
+    "gemma_it__E_art2": "3",
+    "gemma_it__E_iter1": "3",
+    "gemma_it__orig": "3",
+    "gemma_it__rand_nm_j1": "3",
+    "gemma_it__rand_nm_j2": "3"
+   }
+  },
+  {
+   "item_id": "openbookqa:1271",
+   "pair_id": "openbookqa:1271",
+   "task": "openbookqa",
+   "lang": "en",
+   "primary_metric": "acc_norm",
+   "input": "Snow is more likely to fall two months before\n(0) June\n(1) March\n(2) September\n(3) December",
+   "gold": "1",
+   "n_choices": 4,
+   "correct": {
+    "gams3_it__E_art2": 0,
+    "gams3_it__E_iter1": 0,
+    "gams3_it__orig": 0,
+    "gams3_it__rand_nm_j1": 0,
+    "gemma_it__E_art2": 0,
+    "gemma_it__E_iter1": 0,
+    "gemma_it__orig": 0,
+    "gemma_it__rand_nm_j1": 0,
+    "gemma_it__rand_nm_j2": 0
+   },
+   "predict": {
+    "gams3_it__E_art2": "3",
+    "gams3_it__E_iter1": "3",
+    "gams3_it__orig": "3",
+    "gams3_it__rand_nm_j1": "3",
+    "gemma_it__E_art2": "3",
+    "gemma_it__E_iter1": "3",
+    "gemma_it__orig": "3",
+    "gemma_it__rand_nm_j1": "3",
+    "gemma_it__rand_nm_j2": "3"
+   }
+  },
+  {
+   "item_id": "openbookqa:389",
+   "pair_id": "openbookqa:389",
+   "task": "openbookqa",
+   "lang": "en",
+   "primary_metric": "acc_norm",
+   "input": "when a circle is torn it is\n(0) doubled\n(1) changed\n(2) a smaller circle\n(3) a square",
+   "gold": "1",
+   "n_choices": 4,
+   "correct": {
+    "gams3_it__E_art2": 0,
+    "gams3_it__E_iter1": 0,
+    "gams3_it__orig": 0,
+    "gams3_it__rand_nm_j1": 0,
+    "gemma_it__E_art2": 0,
+    "gemma_it__E_iter1": 0,
+    "gemma_it__orig": 0,
+    "gemma_it__rand_nm_j1": 0,
+    "gemma_it__rand_nm_j2": 0
+   },
+   "predict": {
+    "gams3_it__E_art2": "2",
+    "gams3_it__E_iter1": "2",
+    "gams3_it__orig": "2",
+    "gams3_it__rand_nm_j1": "2",
+    "gemma_it__E_art2": "2",
+    "gemma_it__E_iter1": "2",
+    "gemma_it__orig": "2",
+    "gemma_it__rand_nm_j1": "2",
+    "gemma_it__rand_nm_j2": "2"
+   }
+  },
+  {
+   "item_id": "openbookqa:9-1194",
+   "pair_id": "openbookqa:9-1194",
+   "task": "openbookqa",
+   "lang": "en",
+   "primary_metric": "acc_norm",
+   "input": "birds use their peckers to catch\n(0) dogs\n(1) a tan\n(2) a ball\n(3) bees",
+   "gold": "3",
+   "n_choices": 4,
+   "correct": {
+    "gams3_it__E_art2": 0,
+    "gams3_it__E_iter1": 0,
+    "gams3_it__orig": 0,
+    "gams3_it__rand_nm_j1": 0,
+    "gemma_it__E_art2": 0,
+    "gemma_it__E_iter1": 0,
+    "gemma_it__orig": 0,
+    "gemma_it__rand_nm_j1": 0,
+    "gemma_it__rand_nm_j2": 0
+   },
+   "predict": {
+    "gams3_it__E_art2": "2",
+    "gams3_it__E_iter1": "2",
+    "gams3_it__orig": "2",
+    "gams3_it__rand_nm_j1": "2",
+    "gemma_it__E_art2": "2",
+    "gemma_it__E_iter1": "2",
+    "gemma_it__orig": "2",
+    "gemma_it__rand_nm_j1": "2",
+    "gemma_it__rand_nm_j2": "2"
+   }
+  },
+  {
+   "item_id": "openbookqa:591",
+   "pair_id": "openbookqa:591",
+   "task": "openbookqa",
+   "lang": "en",
+   "primary_metric": "acc_norm",
+   "input": "When looking for good soil for plants, typically what is optimal?\n(0) malleable and nutritious\n(1) dry and sandy\n(2) grainy and bitter\n(3) compact and hard",
+   "gold": "0",
+   "n_choices": 4,
+   "correct": {
+    "gams3_it__E_art2": 1,
+    "gams3_it__E_iter1": 1,
+    "gams3_it__orig": 1,
+    "gams3_it__rand_nm_j1": 1,
+    "gemma_it__E_art2": 1,
+    "gemma_it__E_iter1": 1,
+    "gemma_it__orig": 1,
+    "gemma_it__rand_nm_j1": 1,
+    "gemma_it__rand_nm_j2": 1
+   },
+   "predict": {
+    "gams3_it__E_art2": "0",
+    "gams3_it__E_iter1": "0",
+    "gams3_it__orig": "0",
+    "gams3_it__rand_nm_j1": "0",
+    "gemma_it__E_art2": "0",
+    "gemma_it__E_iter1": "0",
+    "gemma_it__orig": "0",
+    "gemma_it__rand_nm_j1": "0",
+    "gemma_it__rand_nm_j2": "0"
+   }
+  },
+  {
+   "item_id": "openbookqa:1795",
+   "pair_id": "openbookqa:1795",
+   "task": "openbookqa",
+   "lang": "sl",
+   "primary_metric": "acc_norm",
+   "input": "S čim bi najverjetneje hranili govedo pasme Jersey?\n(0) S hamburgerji.\n(1) S krti.\n(2) Z lucerno.\n(3) S kravo.",
+   "gold": "2",
+   "n_choices": 4,
+   "correct": {
+    "gams3_it__E_art2": 0,
+    "gams3_it__E_iter1": 0,
+    "gams3_it__orig": 0,
+    "gams3_it__rand_nm_j1": 0,
+    "gemma_it__E_art2": 0,
+    "gemma_it__E_iter1": 0,
+    "gemma_it__orig": 0,
+    "gemma_it__rand_nm_j1": 0,
+    "gemma_it__rand_nm_j2": 0
+   },
+   "predict": {
+    "gams3_it__E_art2": "0",
+    "gams3_it__E_iter1": "0",
+    "gams3_it__orig": "0",
+    "gams3_it__rand_nm_j1": "0",
+    "gemma_it__E_art2": "0",
+    "gemma_it__E_iter1": "0",
+    "gemma_it__orig": "0",
+    "gemma_it__rand_nm_j1": "0",
+    "gemma_it__rand_nm_j2": "0"
+   }
+  },
+  {
+   "item_id": "openbookqa:745",
+   "pair_id": "openbookqa:745",
+   "task": "openbookqa",
+   "lang": "sl",
+   "primary_metric": "acc_norm",
+   "input": "Vosek se lahko uporablja podobno kot\n(0) les.\n(1) guma.\n(2) voda.\n(3) kovina.",
+   "gold": "1",
+   "n_choices": 4,
+   "correct": {
+    "gams3_it__E_art2": 0,
+    "gams3_it__E_iter1": 0,
+    "gams3_it__orig": 0,
+    "gams3_it__rand_nm_j1": 0,
+    "gemma_it__E_art2": 0,
+    "gemma_it__E_iter1": 0,
+    "gemma_it__orig": 0,
+    "gemma_it__rand_nm_j1": 0,
+    "gemma_it__rand_nm_j2": 0
+   },
+   "predict": {
+    "gams3_it__E_art2": "2",
+    "gams3_it__E_iter1": "2",
+    "gams3_it__orig": "2",
+    "gams3_it__rand_nm_j1": "2",
+    "gemma_it__E_art2": "3",
+    "gemma_it__E_iter1": "3",
+    "gemma_it__orig": "3",
+    "gemma_it__rand_nm_j1": "3",
+    "gemma_it__rand_nm_j2": "3"
+   }
+  },
+  {
+   "item_id": "openbookqa:8-395",
+   "pair_id": "openbookqa:8-395",
+   "task": "openbookqa",
+   "lang": "sl",
+   "primary_metric": "acc_norm",
+   "input": "Prenaseljenost ima lahko za posledico\n(0) večje količine pitne vode.\n(1) nižjo pričakovano življenjsko dobo.\n(2) več hrane za več ljudi.\n(3) več prostora, kjer lahko ljudje bivajo.",
+   "gold": "1",
+   "n_choices": 4,
+   "correct": {
+    "gams3_it__E_art2": 1,
+    "gams3_it__E_iter1": 1,
+    "gams3_it__orig": 1,
+    "gams3_it__rand_nm_j1": 1,
+    "gemma_it__E_art2": 1,
+    "gemma_it__E_iter1": 1,
+    "gemma_it__orig": 1,
+    "gemma_it__rand_nm_j1": 1,
+    "gemma_it__rand_nm_j2": 1
+   },
+   "predict": {
+    "gams3_it__E_art2": "1",
+    "gams3_it__E_iter1": "1",
+    "gams3_it__orig": "1",
+    "gams3_it__rand_nm_j1": "1",
+    "gemma_it__E_art2": "1",
+    "gemma_it__E_iter1": "1",
+    "gemma_it__orig": "1",
+    "gemma_it__rand_nm_j1": "1",
+    "gemma_it__rand_nm_j2": "1"
+   }
+  },
+  {
+   "item_id": "openbookqa:1137",
+   "pair_id": "openbookqa:1137",
+   "task": "openbookqa",
+   "lang": "sl",
+   "primary_metric": "acc_norm",
+   "input": "Sipine so lahko sestavljene iz iste snovi kot\n(0) oblačila.\n(1) hrana.\n(2) gozdovi.\n(3) gradovi.",
+   "gold": "3",
+   "n_choices": 4,
+   "correct": {
+    "gams3_it__E_art2": 0,
+    "gams3_it__E_iter1": 0,
+    "gams3_it__orig": 0,
+    "gams3_it__rand_nm_j1": 0,
+    "gemma_it__E_art2": 0,
+    "gemma_it__E_iter1": 0,
+    "gemma_it__orig": 0,
+    "gemma_it__rand_nm_j1": 0,
+    "gemma_it__rand_nm_j2": 0
+   },
+   "predict": {
+    "gams3_it__E_art2": "0",
+    "gams3_it__E_iter1": "0",
+    "gams3_it__orig": "0",
+    "gams3_it__rand_nm_j1": "0",
+    "gemma_it__E_art2": "0",
+    "gemma_it__E_iter1": "0",
+    "gemma_it__orig": "0",
+    "gemma_it__rand_nm_j1": "0",
+    "gemma_it__rand_nm_j2": "0"
+   }
+  },
+  {
+   "item_id": "openbookqa:1271",
+   "pair_id": "openbookqa:1271",
+   "task": "openbookqa",
+   "lang": "sl",
+   "primary_metric": "acc_norm",
+   "input": "Sneg bolj verjetno zapade v obdobju dveh mesecev pred\n(0) junijem.\n(1) marcem.\n(2) septembrom.\n(3) decembrom.",
+   "gold": "1",
+   "n_choices": 4,
+   "correct": {
+    "gams3_it__E_art2": 0,
+    "gams3_it__E_iter1": 0,
+    "gams3_it__orig": 0,
+    "gams3_it__rand_nm_j1": 0,
+    "gemma_it__E_art2": 0,
+    "gemma_it__E_iter1": 0,
+    "gemma_it__orig": 0,
+    "gemma_it__rand_nm_j1": 0,
+    "gemma_it__rand_nm_j2": 0
+   },
+   "predict": {
+    "gams3_it__E_art2": "3",
+    "gams3_it__E_iter1": "3",
+    "gams3_it__orig": "3",
+    "gams3_it__rand_nm_j1": "3",
+    "gemma_it__E_art2": "3",
+    "gemma_it__E_iter1": "3",
+    "gemma_it__orig": "3",
+    "gemma_it__rand_nm_j1": "3",
+    "gemma_it__rand_nm_j2": "3"
+   }
+  },
+  {
+   "item_id": "openbookqa:389",
+   "pair_id": "openbookqa:389",
+   "task": "openbookqa",
+   "lang": "sl",
+   "primary_metric": "acc_norm",
+   "input": "Ko se krog raztrga, postane\n(0) podvojen.\n(1) spremenjen.\n(2) manjši krog.\n(3) kvadrat.",
+   "gold": "1",
+   "n_choices": 4,
+   "correct": {
+    "gams3_it__E_art2": 0,
+    "gams3_it__E_iter1": 0,
+    "gams3_it__orig": 0,
+    "gams3_it__rand_nm_j1": 0,
+    "gemma_it__E_art2": 0,
+    "gemma_it__E_iter1": 0,
+    "gemma_it__orig": 0,
+    "gemma_it__rand_nm_j1": 0,
+    "gemma_it__rand_nm_j2": 0
+   },
+   "predict": {
+    "gams3_it__E_art2": "3",
+    "gams3_it__E_iter1": "3",
+    "gams3_it__orig": "3",
+    "gams3_it__rand_nm_j1": "3",
+    "gemma_it__E_art2": "2",
+    "gemma_it__E_iter1": "2",
+    "gemma_it__orig": "2",
+    "gemma_it__rand_nm_j1": "2",
+    "gemma_it__rand_nm_j2": "3"
+   }
+  },
+  {
+   "item_id": "openbookqa:9-1194",
+   "pair_id": "openbookqa:9-1194",
+   "task": "openbookqa",
+   "lang": "sl",
+   "primary_metric": "acc_norm",
+   "input": "Ptice uporabljajo kljune za lovljenje\n(0) psov.\n(1) sončnih žarkov.\n(2) žoge.\n(3) čebel.",
+   "gold": "3",
+   "n_choices": 4,
+   "correct": {
+    "gams3_it__E_art2": 0,
+    "gams3_it__E_iter1": 0,
+    "gams3_it__orig": 0,
+    "gams3_it__rand_nm_j1": 0,
+    "gemma_it__E_art2": 0,
+    "gemma_it__E_iter1": 0,
+    "gemma_it__orig": 0,
+    "gemma_it__rand_nm_j1": 0,
+    "gemma_it__rand_nm_j2": 0
+   },
+   "predict": {
+    "gams3_it__E_art2": "1",
+    "gams3_it__E_iter1": "1",
+    "gams3_it__orig": "1",
+    "gams3_it__rand_nm_j1": "1",
+    "gemma_it__E_art2": "1",
+    "gemma_it__E_iter1": "1",
+    "gemma_it__orig": "1",
+    "gemma_it__rand_nm_j1": "1",
+    "gemma_it__rand_nm_j2": "1"
+   }
+  },
+  {
+   "item_id": "openbookqa:591",
+   "pair_id": "openbookqa:591",
+   "task": "openbookqa",
+   "lang": "sl",
+   "primary_metric": "acc_norm",
+   "input": "Ko iščemo dobro zemljo za rastline, kaj je običajno optimalno?\n(0) Da voljna in hranilna.\n(1) Da je suha in peščena.\n(2) Da je zrnata in grenka.\n(3) Da je kompaktna in trda.",
+   "gold": "0",
+   "n_choices": 4,
+   "correct": {
+    "gams3_it__E_art2": 0,
+    "gams3_it__E_iter1": 0,
+    "gams3_it__orig": 0,
+    "gams3_it__rand_nm_j1": 0,
+    "gemma_it__E_art2": 0,
+    "gemma_it__E_iter1": 0,
+    "gemma_it__orig": 0,
+    "gemma_it__rand_nm_j1": 0,
+    "gemma_it__rand_nm_j2": 0
+   },
+   "predict": {
+    "gams3_it__E_art2": "1",
+    "gams3_it__E_iter1": "1",
+    "gams3_it__orig": "1",
+    "gams3_it__rand_nm_j1": "1",
+    "gemma_it__E_art2": "3",
+    "gemma_it__E_iter1": "3",
+    "gemma_it__orig": "3",
+    "gemma_it__rand_nm_j1": "3",
+    "gemma_it__rand_nm_j2": "3"
+   }
+  },
+  {
+   "item_id": "piqa:505",
+   "pair_id": "piqa:505",
+   "task": "piqa",
+   "lang": "en",
+   "primary_metric": "acc_norm",
+   "input": "Question: how do you fry a corn tortilla?\nAnswer:\n(0) place it in the microwave for one minute.\n(1) place it in a hot frying pan on top of oil.",
+   "gold": "1",
+   "n_choices": 2,
+   "correct": {
+    "gams3_it__E_art2": 0,
+    "gams3_it__E_iter1": 0,
+    "gams3_it__orig": 0,
+    "gams3_it__rand_nm_j1": 0,
+    "gemma_it__E_art2": 1,
+    "gemma_it__E_iter1": 1,
+    "gemma_it__orig": 1,
+    "gemma_it__rand_nm_j1": 1,
+    "gemma_it__rand_nm_j2": 1
+   },
+   "predict": {
+    "gams3_it__E_art2": "0",
+    "gams3_it__E_iter1": "0",
+    "gams3_it__orig": "0",
+    "gams3_it__rand_nm_j1": "0",
+    "gemma_it__E_art2": "1",
+    "gemma_it__E_iter1": "1",
+    "gemma_it__orig": "1",
+    "gemma_it__rand_nm_j1": "1",
+    "gemma_it__rand_nm_j2": "1"
+   }
+  },
+  {
+   "item_id": "piqa:1602",
+   "pair_id": "piqa:1602",
+   "task": "piqa",
+   "lang": "en",
+   "primary_metric": "acc_norm",
+   "input": "Question: How do I fuse glass for an art pendant?\nAnswer:\n(0) To fuse glass for an art pendant, place the kiln base on a metal plate carefully so that the arrangement of your pendant is not disturbed and then cover it with the microwave kiln cover.\n(1) To fuse glass for an art pendant, place the kiln base on the microwave glass plate carefully so that the arrangement of your pendant is not disturbed and then cover it with the microwave kiln cover.",
+   "gold": "1",
+   "n_choices": 2,
+   "correct": {
+    "gams3_it__E_art2": 1,
+    "gams3_it__E_iter1": 1,
+    "gams3_it__orig": 1,
+    "gams3_it__rand_nm_j1": 1,
+    "gemma_it__E_art2": 1,
+    "gemma_it__E_iter1": 1,
+    "gemma_it__orig": 1,
+    "gemma_it__rand_nm_j1": 1,
+    "gemma_it__rand_nm_j2": 1
+   },
+   "predict": {
+    "gams3_it__E_art2": "1",
+    "gams3_it__E_iter1": "1",
+    "gams3_it__orig": "1",
+    "gams3_it__rand_nm_j1": "1",
+    "gemma_it__E_art2": "1",
+    "gemma_it__E_iter1": "1",
+    "gemma_it__orig": "1",
+    "gemma_it__rand_nm_j1": "1",
+    "gemma_it__rand_nm_j2": "1"
+   }
+  },
+  {
+   "item_id": "piqa:876",
+   "pair_id": "piqa:876",
+   "task": "piqa",
+   "lang": "en",
+   "primary_metric": "acc_norm",
+   "input": "Question: To attach the wooden boards the LED lights will be attached to the wall.\nAnswer:\n(0) Use nails to place the boards.\n(1) Use picture hangers to place the boards.",
+   "gold": "0",
+   "n_choices": 2,
+   "correct": {
+    "gams3_it__E_art2": 0,
+    "gams3_it__E_iter1": 0,
+    "gams3_it__orig": 0,
+    "gams3_it__rand_nm_j1": 0,
+    "gemma_it__E_art2": 0,
+    "gemma_it__E_iter1": 0,
+    "gemma_it__orig": 0,
+    "gemma_it__rand_nm_j1": 0,
+    "gemma_it__rand_nm_j2": 0
+   },
+   "predict": {
+    "gams3_it__E_art2": "1",
+    "gams3_it__E_iter1": "1",
+    "gams3_it__orig": "1",
+    "gams3_it__rand_nm_j1": "1",
+    "gemma_it__E_art2": "1",
+    "gemma_it__E_iter1": "1",
+    "gemma_it__orig": "1",
+    "gemma_it__rand_nm_j1": "1",
+    "gemma_it__rand_nm_j2": "1"
+   }
+  },
+  {
+   "item_id": "piqa:431",
+   "pair_id": "piqa:431",
+   "task": "piqa",
+   "lang": "en",
+   "primary_metric": "acc_norm",
+   "input": "Question: How to Make Peach Puree\nAnswer:\n(0) Boil the peach slices and then lower the heat. Let the fruit simmer for 2 minutes or so. Remove the pan from the heat and leave it to cool for 30 minutes. Use a blender or food processor to puree the peaches. Use the mixture within the same day, refrigerate up to 24 hours, or freeze the food up to a month.\n(1) Boil the peach slices and then lower the heat. Let the fruit simmer fortwo hours, and then blanch for six minutes. Remove the pan from the heat and leave it to cool for 30 minutes. Use a blender or food processor to puree the peaches. Use the mixture within the same day, refrigerate up to 24 hours, or freeze the food up to a month.",
+   "gold": "0",
+   "n_choices": 2,
+   "correct": {
+    "gams3_it__E_art2": 1,
+    "gams3_it__E_iter1": 1,
+    "gams3_it__orig": 1,
+    "gams3_it__rand_nm_j1": 1,
+    "gemma_it__E_art2": 1,
+    "gemma_it__E_iter1": 1,
+    "gemma_it__orig": 1,
+    "gemma_it__rand_nm_j1": 1,
+    "gemma_it__rand_nm_j2": 1
+   },
+   "predict": {
+    "gams3_it__E_art2": "0",
+    "gams3_it__E_iter1": "0",
+    "gams3_it__orig": "0",
+    "gams3_it__rand_nm_j1": "0",
+    "gemma_it__E_art2": "0",
+    "gemma_it__E_iter1": "0",
+    "gemma_it__orig": "0",
+    "gemma_it__rand_nm_j1": "0",
+    "gemma_it__rand_nm_j2": "0"
+   }
+  },
+  {
+   "item_id": "piqa:786",
+   "pair_id": "piqa:786",
+   "task": "piqa",
+   "lang": "en",
+   "primary_metric": "acc_norm",
+   "input": "Question: How to clean a chicken for cooking?\nAnswer:\n(0) Remove the gizzards from inside the chicken, run some boiling water over the chicken and then pat dry with a kitchen towel\n(1) Remove the gizzards from inside the chicken, run some cold water over the chicken and then pat dry with a paper towel",
+   "gold": "1",
+   "n_choices": 2,
+   "correct": {
+    "gams3_it__E_art2": 1,
+    "gams3_it__E_iter1": 1,
+    "gams3_it__orig": 1,
+    "gams3_it__rand_nm_j1": 1,
+    "gemma_it__E_art2": 1,
+    "gemma_it__E_iter1": 1,
+    "gemma_it__orig": 1,
+    "gemma_it__rand_nm_j1": 1,
+    "gemma_it__rand_nm_j2": 1
+   },
+   "predict": {
+    "gams3_it__E_art2": "1",
+    "gams3_it__E_iter1": "1",
+    "gams3_it__orig": "1",
+    "gams3_it__rand_nm_j1": "1",
+    "gemma_it__E_art2": "1",
+    "gemma_it__E_iter1": "1",
+    "gemma_it__orig": "1",
+    "gemma_it__rand_nm_j1": "1",
+    "gemma_it__rand_nm_j2": "1"
+   }
+  },
+  {
+   "item_id": "piqa:1142",
+   "pair_id": "piqa:1142",
+   "task": "piqa",
+   "lang": "en",
+   "primary_metric": "acc_norm",
+   "input": "Question: To have at least a small influence in politics in any country.\nAnswer:\n(0) Not voting in the elections taking place where you live.\n(1) Vote in the elections taking place where you live.",
+   "gold": "1",
+   "n_choices": 2,
+   "correct": {
+    "gams3_it__E_art2": 1,
+    "gams3_it__E_iter1": 1,
+    "gams3_it__orig": 1,
+    "gams3_it__rand_nm_j1": 1,
+    "gemma_it__E_art2": 0,
+    "gemma_it__E_iter1": 0,
+    "gemma_it__orig": 0,
+    "gemma_it__rand_nm_j1": 0,
+    "gemma_it__rand_nm_j2": 0
+   },
+   "predict": {
+    "gams3_it__E_art2": "1",
+    "gams3_it__E_iter1": "1",
+    "gams3_it__orig": "1",
+    "gams3_it__rand_nm_j1": "1",
+    "gemma_it__E_art2": "0",
+    "gemma_it__E_iter1": "0",
+    "gemma_it__orig": "0",
+    "gemma_it__rand_nm_j1": "0",
+    "gemma_it__rand_nm_j2": "0"
+   }
+  },
+  {
+   "item_id": "piqa:495",
+   "pair_id": "piqa:495",
+   "task": "piqa",
+   "lang": "en",
+   "primary_metric": "acc_norm",
+   "input": "Question: To mark lines in a piece of dough, you can\nAnswer:\n(0) Use the blunt side of a knife\n(1) Use the handle of a hammer",
+   "gold": "0",
+   "n_choices": 2,
+   "correct": {
+    "gams3_it__E_art2": 1,
+    "gams3_it__E_iter1": 1,
+    "gams3_it__orig": 1,
+    "gams3_it__rand_nm_j1": 1,
+    "gemma_it__E_art2": 1,
+    "gemma_it__E_iter1": 1,
+    "gemma_it__orig": 1,
+    "gemma_it__rand_nm_j1": 1,
+    "gemma_it__rand_nm_j2": 1
+   },
+   "predict": {
+    "gams3_it__E_art2": "0",
+    "gams3_it__E_iter1": "0",
+    "gams3_it__orig": "0",
+    "gams3_it__rand_nm_j1": "0",
+    "gemma_it__E_art2": "0",
+    "gemma_it__E_iter1": "0",
+    "gemma_it__orig": "0",
+    "gemma_it__rand_nm_j1": "0",
+    "gemma_it__rand_nm_j2": "0"
+   }
+  },
+  {
+   "item_id": "piqa:942",
+   "pair_id": "piqa:942",
+   "task": "piqa",
+   "lang": "en",
+   "primary_metric": "acc_norm",
+   "input": "Question: How to make hole in tin can.\nAnswer:\n(0) Use a bobby pin to drill hole into sides of the can.\n(1) Use a drill to drill hole into sides of the can.",
+   "gold": "1",
+   "n_choices": 2,
+   "correct": {
+    "gams3_it__E_art2": 1,
+    "gams3_it__E_iter1": 1,
+    "gams3_it__orig": 1,
+    "gams3_it__rand_nm_j1": 1,
+    "gemma_it__E_art2": 1,
+    "gemma_it__E_iter1": 1,
+    "gemma_it__orig": 1,
+    "gemma_it__rand_nm_j1": 1,
+    "gemma_it__rand_nm_j2": 1
+   },
+   "predict": {
+    "gams3_it__E_art2": "1",
+    "gams3_it__E_iter1": "1",
+    "gams3_it__orig": "1",
+    "gams3_it__rand_nm_j1": "1",
+    "gemma_it__E_art2": "1",
+    "gemma_it__E_iter1": "1",
+    "gemma_it__orig": "1",
+    "gemma_it__rand_nm_j1": "1",
+    "gemma_it__rand_nm_j2": "1"
+   }
+  },
+  {
+   "item_id": "piqa:505",
+   "pair_id": "piqa:505",
+   "task": "piqa",
+   "lang": "sl",
+   "primary_metric": "acc_norm",
+   "input": "Vprašanje: kako ocvreš koruzno tortiljo?\nOdgovor:\n(0) postavite jo v mikrovalovno pečico za eno minuto.\n(1) položite jo v vročo ponev na olje.",
+   "gold": "1",
+   "n_choices": 2,
+   "correct": {
+    "gams3_it__E_art2": 0,
+    "gams3_it__E_iter1": 0,
+    "gams3_it__orig": 0,
+    "gams3_it__rand_nm_j1": 0,
+    "gemma_it__E_art2": 0,
+    "gemma_it__E_iter1": 0,
+    "gemma_it__orig": 0,
+    "gemma_it__rand_nm_j1": 0,
+    "gemma_it__rand_nm_j2": 0
+   },
+   "predict": {
+    "gams3_it__E_art2": "0",
+    "gams3_it__E_iter1": "0",
+    "gams3_it__orig": "0",
+    "gams3_it__rand_nm_j1": "0",
+    "gemma_it__E_art2": "0",
+    "gemma_it__E_iter1": "0",
+    "gemma_it__orig": "0",
+    "gemma_it__rand_nm_j1": "0",
+    "gemma_it__rand_nm_j2": "0"
+   }
+  },
+  {
+   "item_id": "piqa:1602",
+   "pair_id": "piqa:1602",
+   "task": "piqa",
+   "lang": "sl",
+   "primary_metric": "acc_norm",
+   "input": "Vprašanje: Kako zlijem steklo za umetniški obesek?\nOdgovor:\n(0) Za taljenje stekla za umetniški obesek previdno postavite podnožje peči na kovinsko ploščo, da ne porušite razporeditve obeska, nato pa ga pokrijte s pokrovom za mikrovalovno peč.\n(1) Za taljenje stekla za umetniški obesek previdno položite podnožje peči na stekleno ploščo za mikrovalovno pečico, tako da razporeditev vašega obeska ni motena, nato pa ga pokrijte s pokrovom za mikrovalovno pečico.",
+   "gold": "1",
+   "n_choices": 2,
+   "correct": {
+    "gams3_it__E_art2": 1,
+    "gams3_it__E_iter1": 1,
+    "gams3_it__orig": 1,
+    "gams3_it__rand_nm_j1": 1,
+    "gemma_it__E_art2": 1,
+    "gemma_it__E_iter1": 1,
+    "gemma_it__orig": 1,
+    "gemma_it__rand_nm_j1": 1,
+    "gemma_it__rand_nm_j2": 1
+   },
+   "predict": {
+    "gams3_it__E_art2": "1",
+    "gams3_it__E_iter1": "1",
+    "gams3_it__orig": "1",
+    "gams3_it__rand_nm_j1": "1",
+    "gemma_it__E_art2": "1",
+    "gemma_it__E_iter1": "1",
+    "gemma_it__orig": "1",
+    "gemma_it__rand_nm_j1": "1",
+    "gemma_it__rand_nm_j2": "1"
+   }
+  },
+  {
+   "item_id": "piqa:876",
+   "pair_id": "piqa:876",
+   "task": "piqa",
+   "lang": "sl",
+   "primary_metric": "acc_norm",
+   "input": "Vprašanje: Za pritrditev lesenih desk bodo LED luči pritrjene na steno.\nOdgovor:\n(0) Za namestitev desk uporabite žeblje.\n(1) Za namestitev desk uporabite obešala za slike.",
+   "gold": "0",
+   "n_choices": 2,
+   "correct": {
+    "gams3_it__E_art2": 1,
+    "gams3_it__E_iter1": 1,
+    "gams3_it__orig": 1,
+    "gams3_it__rand_nm_j1": 1,
+    "gemma_it__E_art2": 0,
+    "gemma_it__E_iter1": 0,
+    "gemma_it__orig": 0,
+    "gemma_it__rand_nm_j1": 0,
+    "gemma_it__rand_nm_j2": 0
+   },
+   "predict": {
+    "gams3_it__E_art2": "0",
+    "gams3_it__E_iter1": "0",
+    "gams3_it__orig": "0",
+    "gams3_it__rand_nm_j1": "0",
+    "gemma_it__E_art2": "1",
+    "gemma_it__E_iter1": "1",
+    "gemma_it__orig": "1",
+    "gemma_it__rand_nm_j1": "1",
+    "gemma_it__rand_nm_j2": "1"
+   }
+  },
+  {
+   "item_id": "piqa:431",
+   "pair_id": "piqa:431",
+   "task": "piqa",
+   "lang": "sl",
+   "primary_metric": "acc_norm",
+   "input": "Vprašanje: Kako naredimo breskov pire\nOdgovor:\n(0) Breskove rezine zavrite in nato zmanjšajte ogenj. Sadje naj vre približno 2 minuti. Ponev odstavite z ognja in naj se ohlaja 30 minut. Za pripravo pireja iz breskev uporabite mešalnik ali kuhinjski robot. Mešanico porabite še isti dan, shranite jo v hladilniku do 24 ur ali zamrznite do enega meseca.\n(1) Breskove rezine zavrite in nato zmanjšajte ogenj. Sadje naj vre približno 2 uri in nato ga 6 minute blanširajte. Ponev odstavite z ognja in naj se ohlaja 30 minut. Za pripravo pireja iz breskev uporabite mešalnik ali kuhinjski robot. Mešanico porabite še isti dan, shranite jo v hladilniku do 24 ur ali zamrznite do enega meseca.",
+   "gold": "0",
+   "n_choices": 2,
+   "correct": {
+    "gams3_it__E_art2": 1,
+    "gams3_it__E_iter1": 1,
+    "gams3_it__orig": 1,
+    "gams3_it__rand_nm_j1": 1,
+    "gemma_it__E_art2": 1,
+    "gemma_it__E_iter1": 1,
+    "gemma_it__orig": 1,
+    "gemma_it__rand_nm_j1": 1,
+    "gemma_it__rand_nm_j2": 1
+   },
+   "predict": {
+    "gams3_it__E_art2": "0",
+    "gams3_it__E_iter1": "0",
+    "gams3_it__orig": "0",
+    "gams3_it__rand_nm_j1": "0",
+    "gemma_it__E_art2": "0",
+    "gemma_it__E_iter1": "0",
+    "gemma_it__orig": "0",
+    "gemma_it__rand_nm_j1": "0",
+    "gemma_it__rand_nm_j2": "0"
+   }
+  },
+  {
+   "item_id": "piqa:786",
+   "pair_id": "piqa:786",
+   "task": "piqa",
+   "lang": "sl",
+   "primary_metric": "acc_norm",
+   "input": "Vprašanje: Kako očistiti piščanca za kuhanje?\nOdgovor:\n(0) Iz notranjosti piščanca odstranite drobovino, piščanca sperite z vrelo vodo in nato osušite s kuhinjsko brisačo.\n(1) Iz notranjosti piščanca odstranite drobovino, piščanca sperite z nekaj hladne vode in nato osušite s papirnato brisačo.",
+   "gold": "1",
+   "n_choices": 2,
+   "correct": {
+    "gams3_it__E_art2": 1,
+    "gams3_it__E_iter1": 1,
+    "gams3_it__orig": 1,
+    "gams3_it__rand_nm_j1": 1,
+    "gemma_it__E_art2": 1,
+    "gemma_it__E_iter1": 1,
+    "gemma_it__orig": 1,
+    "gemma_it__rand_nm_j1": 1,
+    "gemma_it__rand_nm_j2": 1
+   },
+   "predict": {
+    "gams3_it__E_art2": "1",
+    "gams3_it__E_iter1": "1",
+    "gams3_it__orig": "1",
+    "gams3_it__rand_nm_j1": "1",
+    "gemma_it__E_art2": "1",
+    "gemma_it__E_iter1": "1",
+    "gemma_it__orig": "1",
+    "gemma_it__rand_nm_j1": "1",
+    "gemma_it__rand_nm_j2": "1"
+   }
+  },
+  {
+   "item_id": "piqa:1142",
+   "pair_id": "piqa:1142",
+   "task": "piqa",
+   "lang": "sl",
+   "primary_metric": "acc_norm",
+   "input": "Vprašanje: Imeti vsaj majhen vpliv na politiko v kateri koli državi.\nOdgovor:\n(0) Ne voliti na volitvah, ki potekajo tam, kjer živite.\n(1) Glasujte na volitvah, ki potekajo tam, kjer živite.",
+   "gold": "1",
+   "n_choices": 2,
+   "correct": {
+    "gams3_it__E_art2": 1,
+    "gams3_it__E_iter1": 1,
+    "gams3_it__orig": 1,
+    "gams3_it__rand_nm_j1": 1,
+    "gemma_it__E_art2": 1,
+    "gemma_it__E_iter1": 1,
+    "gemma_it__orig": 1,
+    "gemma_it__rand_nm_j1": 1,
+    "gemma_it__rand_nm_j2": 1
+   },
+   "predict": {
+    "gams3_it__E_art2": "1",
+    "gams3_it__E_iter1": "1",
+    "gams3_it__orig": "1",
+    "gams3_it__rand_nm_j1": "1",
+    "gemma_it__E_art2": "1",
+    "gemma_it__E_iter1": "1",
+    "gemma_it__orig": "1",
+    "gemma_it__rand_nm_j1": "1",
+    "gemma_it__rand_nm_j2": "1"
+   }
+  },
+  {
+   "item_id": "piqa:495",
+   "pair_id": "piqa:495",
+   "task": "piqa",
+   "lang": "sl",
+   "primary_metric": "acc_norm",
+   "input": "Vprašanje: Če želite označiti črte na kosu testa, lahko\nOdgovor:\n(0) Uporabite topo stran noža\n(1) Uporabite ročaj kladiva",
+   "gold": "0",
+   "n_choices": 2,
+   "correct": {
+    "gams3_it__E_art2": 1,
+    "gams3_it__E_iter1": 1,
+    "gams3_it__orig": 1,
+    "gams3_it__rand_nm_j1": 1,
+    "gemma_it__E_art2": 0,
+    "gemma_it__E_iter1": 0,
+    "gemma_it__orig": 0,
+    "gemma_it__rand_nm_j1": 0,
+    "gemma_it__rand_nm_j2": 0
+   },
+   "predict": {
+    "gams3_it__E_art2": "0",
+    "gams3_it__E_iter1": "0",
+    "gams3_it__orig": "0",
+    "gams3_it__rand_nm_j1": "0",
+    "gemma_it__E_art2": "1",
+    "gemma_it__E_iter1": "1",
+    "gemma_it__orig": "1",
+    "gemma_it__rand_nm_j1": "1",
+    "gemma_it__rand_nm_j2": "1"
+   }
+  },
+  {
+   "item_id": "piqa:942",
+   "pair_id": "piqa:942",
+   "task": "piqa",
+   "lang": "sl",
+   "primary_metric": "acc_norm",
+   "input": "Vprašanje: Kako narediti luknjo v pločevinki.\nOdgovor:\n(0) Uporabite lasnico za vrtanje luknje v stranice pločevinke.\n(1) Uporabite vrtalnik za vrtanje luknje v stranice pločevinke.",
+   "gold": "1",
+   "n_choices": 2,
+   "correct": {
+    "gams3_it__E_art2": 1,
+    "gams3_it__E_iter1": 1,
+    "gams3_it__orig": 1,
+    "gams3_it__rand_nm_j1": 1,
+    "gemma_it__E_art2": 1,
+    "gemma_it__E_iter1": 1,
+    "gemma_it__orig": 1,
+    "gemma_it__rand_nm_j1": 1,
+    "gemma_it__rand_nm_j2": 1
+   },
+   "predict": {
+    "gams3_it__E_art2": "1",
+    "gams3_it__E_iter1": "1",
+    "gams3_it__orig": "1",
+    "gams3_it__rand_nm_j1": "1",
+    "gemma_it__E_art2": "1",
+    "gemma_it__E_iter1": "1",
+    "gemma_it__orig": "1",
+    "gemma_it__rand_nm_j1": "1",
+    "gemma_it__rand_nm_j2": "1"
+   }
+  },
+  {
+   "item_id": "winogrande:1029",
+   "pair_id": "winogrande:1029",
+   "task": "winogrande",
+   "lang": "en",
+   "primary_metric": "acc",
+   "input": " was bright inside.\n(0) The crops in the facility grew better than in the greenhouse since the facility\n(1) The crops in the facility grew better than in the greenhouse since the greenhouse",
+   "gold": "0",
+   "n_choices": 2,
+   "correct": {
+    "gams3_it__E_art2": 1,
+    "gams3_it__E_iter1": 1,
+    "gams3_it__orig": 1,
+    "gams3_it__rand_nm_j1": 1,
+    "gemma_it__E_art2": 1,
+    "gemma_it__E_iter1": 1,
+    "gemma_it__orig": 1,
+    "gemma_it__rand_nm_j1": 1,
+    "gemma_it__rand_nm_j2": 1
+   },
+   "predict": {
+    "gams3_it__E_art2": "0",
+    "gams3_it__E_iter1": "0",
+    "gams3_it__orig": "0",
+    "gams3_it__rand_nm_j1": "0",
+    "gemma_it__E_art2": "0",
+    "gemma_it__E_iter1": "0",
+    "gemma_it__orig": "0",
+    "gemma_it__rand_nm_j1": "0",
+    "gemma_it__rand_nm_j2": "0"
+   }
+  },
+  {
+   "item_id": "winogrande:81",
+   "pair_id": "winogrande:81",
+   "task": "winogrande",
+   "lang": "en",
+   "primary_metric": "acc",
+   "input": " was too bright.\n(0) God liked to control the day and the night, but the day\n(1) God liked to control the day and the night, but the night",
+   "gold": "0",
+   "n_choices": 2,
+   "correct": {
+    "gams3_it__E_art2": 1,
+    "gams3_it__E_iter1": 1,
+    "gams3_it__orig": 1,
+    "gams3_it__rand_nm_j1": 1,
+    "gemma_it__E_art2": 1,
+    "gemma_it__E_iter1": 1,
+    "gemma_it__orig": 1,
+    "gemma_it__rand_nm_j1": 1,
+    "gemma_it__rand_nm_j2": 1
+   },
+   "predict": {
+    "gams3_it__E_art2": "0",
+    "gams3_it__E_iter1": "0",
+    "gams3_it__orig": "0",
+    "gams3_it__rand_nm_j1": "0",
+    "gemma_it__E_art2": "0",
+    "gemma_it__E_iter1": "0",
+    "gemma_it__orig": "0",
+    "gemma_it__rand_nm_j1": "0",
+    "gemma_it__rand_nm_j2": "0"
+   }
+  },
+  {
+   "item_id": "winogrande:720",
+   "pair_id": "winogrande:720",
+   "task": "winogrande",
+   "lang": "en",
+   "primary_metric": "acc",
+   "input": " was too light.\n(0) Jody wanted new mascara and eyeliner, either black or brown, but the black\n(1) Jody wanted new mascara and eyeliner, either black or brown, but the brown",
+   "gold": "1",
+   "n_choices": 2,
+   "correct": {
+    "gams3_it__E_art2": 1,
+    "gams3_it__E_iter1": 1,
+    "gams3_it__orig": 1,
+    "gams3_it__rand_nm_j1": 1,
+    "gemma_it__E_art2": 1,
+    "gemma_it__E_iter1": 1,
+    "gemma_it__orig": 1,
+    "gemma_it__rand_nm_j1": 1,
+    "gemma_it__rand_nm_j2": 1
+   },
+   "predict": {
+    "gams3_it__E_art2": "1",
+    "gams3_it__E_iter1": "1",
+    "gams3_it__orig": "1",
+    "gams3_it__rand_nm_j1": "1",
+    "gemma_it__E_art2": "1",
+    "gemma_it__E_iter1": "1",
+    "gemma_it__orig": "1",
+    "gemma_it__rand_nm_j1": "1",
+    "gemma_it__rand_nm_j2": "1"
+   }
+  },
+  {
+   "item_id": "winogrande:1152",
+   "pair_id": "winogrande:1152",
+   "task": "winogrande",
+   "lang": "en",
+   "primary_metric": "acc",
+   "input": " was cleansed.\n(0) The kids at camp liked the activities with water, but avoided the sand, because the sand\n(1) The kids at camp liked the activities with water, but avoided the sand, because the water",
+   "gold": "1",
+   "n_choices": 2,
+   "correct": {
+    "gams3_it__E_art2": 1,
+    "gams3_it__E_iter1": 1,
+    "gams3_it__orig": 1,
+    "gams3_it__rand_nm_j1": 1,
+    "gemma_it__E_art2": 1,
+    "gemma_it__E_iter1": 1,
+    "gemma_it__orig": 1,
+    "gemma_it__rand_nm_j1": 1,
+    "gemma_it__rand_nm_j2": 1
+   },
+   "predict": {
+    "gams3_it__E_art2": "1",
+    "gams3_it__E_iter1": "1",
+    "gams3_it__orig": "1",
+    "gams3_it__rand_nm_j1": "1",
+    "gemma_it__E_art2": "1",
+    "gemma_it__E_iter1": "1",
+    "gemma_it__orig": "1",
+    "gemma_it__rand_nm_j1": "1",
+    "gemma_it__rand_nm_j2": "1"
+   }
+  },
+  {
+   "item_id": "winogrande:816",
+   "pair_id": "winogrande:816",
+   "task": "winogrande",
+   "lang": "en",
+   "primary_metric": "acc",
+   "input": " were just too hard.\n(0) I didn't do well on my exam even though I did all the problems in the textbook correctly. I guess the questions in the exam\n(1) I didn't do well on my exam even though I did all the problems in the textbook correctly. I guess the questions in the textbook",
+   "gold": "0",
+   "n_choices": 2,
+   "correct": {
+    "gams3_it__E_art2": 1,
+    "gams3_it__E_iter1": 1,
+    "gams3_it__orig": 1,
+    "gams3_it__rand_nm_j1": 1,
+    "gemma_it__E_art2": 1,
+    "gemma_it__E_iter1": 1,
+    "gemma_it__orig": 1,
+    "gemma_it__rand_nm_j1": 1,
+    "gemma_it__rand_nm_j2": 1
+   },
+   "predict": {
+    "gams3_it__E_art2": "0",
+    "gams3_it__E_iter1": "0",
+    "gams3_it__orig": "0",
+    "gams3_it__rand_nm_j1": "0",
+    "gemma_it__E_art2": "0",
+    "gemma_it__E_iter1": "0",
+    "gemma_it__orig": "0",
+    "gemma_it__rand_nm_j1": "0",
+    "gemma_it__rand_nm_j2": "0"
+   }
+  },
+  {
+   "item_id": "winogrande:482",
+   "pair_id": "winogrande:482",
+   "task": "winogrande",
+   "lang": "en",
+   "primary_metric": "acc",
+   "input": " was heavier.\n(0) Tommy was able to carry the tripod himself, but his friend had to help him carry the camera because the camera\n(1) Tommy was able to carry the tripod himself, but his friend had to help him carry the camera because the tripod",
+   "gold": "0",
+   "n_choices": 2,
+   "correct": {
+    "gams3_it__E_art2": 1,
+    "gams3_it__E_iter1": 1,
+    "gams3_it__orig": 1,
+    "gams3_it__rand_nm_j1": 1,
+    "gemma_it__E_art2": 1,
+    "gemma_it__E_iter1": 1,
+    "gemma_it__orig": 1,
+    "gemma_it__rand_nm_j1": 1,
+    "gemma_it__rand_nm_j2": 1
+   },
+   "predict": {
+    "gams3_it__E_art2": "0",
+    "gams3_it__E_iter1": "0",
+    "gams3_it__orig": "0",
+    "gams3_it__rand_nm_j1": "0",
+    "gemma_it__E_art2": "0",
+    "gemma_it__E_iter1": "0",
+    "gemma_it__orig": "0",
+    "gemma_it__rand_nm_j1": "0",
+    "gemma_it__rand_nm_j2": "0"
+   }
+  },
+  {
+   "item_id": "winogrande:386",
+   "pair_id": "winogrande:386",
+   "task": "winogrande",
+   "lang": "en",
+   "primary_metric": "acc",
+   "input": " was very shallow.\n(0) The woman avoided the hole but easily stepped over the pit, because the hole\n(1) The woman avoided the hole but easily stepped over the pit, because the pit",
+   "gold": "1",
+   "n_choices": 2,
+   "correct": {
+    "gams3_it__E_art2": 1,
+    "gams3_it__E_iter1": 1,
+    "gams3_it__orig": 1,
+    "gams3_it__rand_nm_j1": 1,
+    "gemma_it__E_art2": 1,
+    "gemma_it__E_iter1": 1,
+    "gemma_it__orig": 1,
+    "gemma_it__rand_nm_j1": 1,
+    "gemma_it__rand_nm_j2": 1
+   },
+   "predict": {
+    "gams3_it__E_art2": "1",
+    "gams3_it__E_iter1": "1",
+    "gams3_it__orig": "1",
+    "gams3_it__rand_nm_j1": "1",
+    "gemma_it__E_art2": "1",
+    "gemma_it__E_iter1": "1",
+    "gemma_it__orig": "1",
+    "gemma_it__rand_nm_j1": "1",
+    "gemma_it__rand_nm_j2": "1"
+   }
+  },
+  {
+   "item_id": "winogrande:546",
+   "pair_id": "winogrande:546",
+   "task": "winogrande",
+   "lang": "en",
+   "primary_metric": "acc",
+   "input": " was too small.\n(0) Joe drank his milk and tried to dunk his cookie in the glass but the cookie\n(1) Joe drank his milk and tried to dunk his cookie in the glass but the glass",
+   "gold": "1",
+   "n_choices": 2,
+   "correct": {
+    "gams3_it__E_art2": 1,
+    "gams3_it__E_iter1": 1,
+    "gams3_it__orig": 0,
+    "gams3_it__rand_nm_j1": 0,
+    "gemma_it__E_art2": 1,
+    "gemma_it__E_iter1": 1,
+    "gemma_it__orig": 1,
+    "gemma_it__rand_nm_j1": 1,
+    "gemma_it__rand_nm_j2": 1
+   },
+   "predict": {
+    "gams3_it__E_art2": "1",
+    "gams3_it__E_iter1": "1",
+    "gams3_it__orig": "0",
+    "gams3_it__rand_nm_j1": "0",
+    "gemma_it__E_art2": "1",
+    "gemma_it__E_iter1": "1",
+    "gemma_it__orig": "1",
+    "gemma_it__rand_nm_j1": "1",
+    "gemma_it__rand_nm_j2": "1"
+   }
+  },
+  {
+   "item_id": "winogrande:1029",
+   "pair_id": "winogrande:1029",
+   "task": "winogrande",
+   "lang": "sl",
+   "primary_metric": "acc",
+   "input": " svetlo.\n(0) Pridelki v objektu so rasli bolje kot v rastlinjaku, saj je bilo v objektu\n(1) Pridelki v objektu so rasli bolje kot v rastlinjaku, saj je bilo v rastlinjaku",
+   "gold": "0",
+   "n_choices": 2,
+   "correct": {
+    "gams3_it__E_art2": 1,
+    "gams3_it__E_iter1": 1,
+    "gams3_it__orig": 1,
+    "gams3_it__rand_nm_j1": 1,
+    "gemma_it__E_art2": 1,
+    "gemma_it__E_iter1": 1,
+    "gemma_it__orig": 1,
+    "gemma_it__rand_nm_j1": 1,
+    "gemma_it__rand_nm_j2": 1
+   },
+   "predict": {
+    "gams3_it__E_art2": "0",
+    "gams3_it__E_iter1": "0",
+    "gams3_it__orig": "0",
+    "gams3_it__rand_nm_j1": "0",
+    "gemma_it__E_art2": "0",
+    "gemma_it__E_iter1": "0",
+    "gemma_it__orig": "0",
+    "gemma_it__rand_nm_j1": "0",
+    "gemma_it__rand_nm_j2": "0"
+   }
+  },
+  {
+   "item_id": "winogrande:81",
+   "pair_id": "winogrande:81",
+   "task": "winogrande",
+   "lang": "sl",
+   "primary_metric": "acc",
+   "input": " je bil presvetel.\n(0) Bog je rad nadzoroval dnevni in nočni čas, toda dnevni čas\n(1) Bog je rad nadzoroval dnevni in nočni čas, toda nočni čas",
+   "gold": "0",
+   "n_choices": 2,
+   "correct": {
+    "gams3_it__E_art2": 0,
+    "gams3_it__E_iter1": 0,
+    "gams3_it__orig": 0,
+    "gams3_it__rand_nm_j1": 0,
+    "gemma_it__E_art2": 1,
+    "gemma_it__E_iter1": 1,
+    "gemma_it__orig": 1,
+    "gemma_it__rand_nm_j1": 1,
+    "gemma_it__rand_nm_j2": 1
+   },
+   "predict": {
+    "gams3_it__E_art2": "1",
+    "gams3_it__E_iter1": "1",
+    "gams3_it__orig": "1",
+    "gams3_it__rand_nm_j1": "1",
+    "gemma_it__E_art2": "0",
+    "gemma_it__E_iter1": "0",
+    "gemma_it__orig": "0",
+    "gemma_it__rand_nm_j1": "0",
+    "gemma_it__rand_nm_j2": "0"
+   }
+  },
+  {
+   "item_id": "winogrande:720",
+   "pair_id": "winogrande:720",
+   "task": "winogrande",
+   "lang": "sl",
+   "primary_metric": "acc",
+   "input": " presvetlo.\n(0) Jody je želela novo maskaro in črtalo za oči, črno ali rjavo, vendar je bilo črno\n(1) Jody je želela novo maskaro in črtalo za oči, črno ali rjavo, vendar je bilo rjavo",
+   "gold": "1",
+   "n_choices": 2,
+   "correct": {
+    "gams3_it__E_art2": 1,
+    "gams3_it__E_iter1": 1,
+    "gams3_it__orig": 1,
+    "gams3_it__rand_nm_j1": 1,
+    "gemma_it__E_art2": 1,
+    "gemma_it__E_iter1": 1,
+    "gemma_it__orig": 1,
+    "gemma_it__rand_nm_j1": 1,
+    "gemma_it__rand_nm_j2": 1
+   },
+   "predict": {
+    "gams3_it__E_art2": "1",
+    "gams3_it__E_iter1": "1",
+    "gams3_it__orig": "1",
+    "gams3_it__rand_nm_j1": "1",
+    "gemma_it__E_art2": "1",
+    "gemma_it__E_iter1": "1",
+    "gemma_it__orig": "1",
+    "gemma_it__rand_nm_j1": "1",
+    "gemma_it__rand_nm_j2": "1"
+   }
+  },
+  {
+   "item_id": "winogrande:1152",
+   "pair_id": "winogrande:1152",
+   "task": "winogrande",
+   "lang": "sl",
+   "primary_metric": "acc",
+   "input": " očiščena.\n(0) Otrokom na taboru so bile všeč vodne aktivnosti, mivke pa so se izogibali, ker je bila mivka\n(1) Otrokom na taboru so bile všeč vodne aktivnosti, mivke pa so se izogibali, ker je bila voda",
+   "gold": "1",
+   "n_choices": 2,
+   "correct": {
+    "gams3_it__E_art2": 1,
+    "gams3_it__E_iter1": 1,
+    "gams3_it__orig": 1,
+    "gams3_it__rand_nm_j1": 1,
+    "gemma_it__E_art2": 0,
+    "gemma_it__E_iter1": 0,
+    "gemma_it__orig": 0,
+    "gemma_it__rand_nm_j1": 0,
+    "gemma_it__rand_nm_j2": 0
+   },
+   "predict": {
+    "gams3_it__E_art2": "1",
+    "gams3_it__E_iter1": "1",
+    "gams3_it__orig": "1",
+    "gams3_it__rand_nm_j1": "1",
+    "gemma_it__E_art2": "0",
+    "gemma_it__E_iter1": "0",
+    "gemma_it__orig": "0",
+    "gemma_it__rand_nm_j1": "0",
+    "gemma_it__rand_nm_j2": "0"
+   }
+  },
+  {
+   "item_id": "winogrande:816",
+   "pair_id": "winogrande:816",
+   "task": "winogrande",
+   "lang": "sl",
+   "primary_metric": "acc",
+   "input": " preprosto pretežka.\n(0) Na izpitu se nisem dobro odrezal, čeprav sem pravilno rešil vse naloge v učbeniku. Mislim, da so bila vprašanja na izpitu\n(1) Na izpitu se nisem dobro odrezal, čeprav sem pravilno rešil vse naloge v učbeniku. Mislim, da so bila vprašanja v učbeniku",
+   "gold": "0",
+   "n_choices": 2,
+   "correct": {
+    "gams3_it__E_art2": 1,
+    "gams3_it__E_iter1": 1,
+    "gams3_it__orig": 1,
+    "gams3_it__rand_nm_j1": 1,
+    "gemma_it__E_art2": 1,
+    "gemma_it__E_iter1": 1,
+    "gemma_it__orig": 1,
+    "gemma_it__rand_nm_j1": 1,
+    "gemma_it__rand_nm_j2": 1
+   },
+   "predict": {
+    "gams3_it__E_art2": "0",
+    "gams3_it__E_iter1": "0",
+    "gams3_it__orig": "0",
+    "gams3_it__rand_nm_j1": "0",
+    "gemma_it__E_art2": "0",
+    "gemma_it__E_iter1": "0",
+    "gemma_it__orig": "0",
+    "gemma_it__rand_nm_j1": "0",
+    "gemma_it__rand_nm_j2": "0"
+   }
+  },
+  {
+   "item_id": "winogrande:482",
+   "pair_id": "winogrande:482",
+   "task": "winogrande",
+   "lang": "sl",
+   "primary_metric": "acc",
+   "input": " težji.\n(0) Tommy je lahko sam nosil trinožnik, vendar mu je moral prijatelj pomagati nositi fotoaparat, ker je bil fotoaparat\n(1) Tommy je lahko sam nosil trinožnik, vendar mu je moral prijatelj pomagati nositi fotoaparat, ker je bil trinožnik",
+   "gold": "0",
+   "n_choices": 2,
+   "correct": {
+    "gams3_it__E_art2": 1,
+    "gams3_it__E_iter1": 1,
+    "gams3_it__orig": 1,
+    "gams3_it__rand_nm_j1": 1,
+    "gemma_it__E_art2": 1,
+    "gemma_it__E_iter1": 1,
+    "gemma_it__orig": 1,
+    "gemma_it__rand_nm_j1": 1,
+    "gemma_it__rand_nm_j2": 1
+   },
+   "predict": {
+    "gams3_it__E_art2": "0",
+    "gams3_it__E_iter1": "0",
+    "gams3_it__orig": "0",
+    "gams3_it__rand_nm_j1": "0",
+    "gemma_it__E_art2": "0",
+    "gemma_it__E_iter1": "0",
+    "gemma_it__orig": "0",
+    "gemma_it__rand_nm_j1": "0",
+    "gemma_it__rand_nm_j2": "0"
+   }
+  },
+  {
+   "item_id": "winogrande:386",
+   "pair_id": "winogrande:386",
+   "task": "winogrande",
+   "lang": "sl",
+   "primary_metric": "acc",
+   "input": " zelo plitka.\n(0) Ženska se je izognila luknji, a je brez težav prestopila jamo, saj je bila luknja\n(1) Ženska se je izognila luknji, a je brez težav prestopila jamo, saj je bila jama",
+   "gold": "1",
+   "n_choices": 2,
+   "correct": {
+    "gams3_it__E_art2": 1,
+    "gams3_it__E_iter1": 1,
+    "gams3_it__orig": 1,
+    "gams3_it__rand_nm_j1": 1,
+    "gemma_it__E_art2": 1,
+    "gemma_it__E_iter1": 1,
+    "gemma_it__orig": 1,
+    "gemma_it__rand_nm_j1": 1,
+    "gemma_it__rand_nm_j2": 1
+   },
+   "predict": {
+    "gams3_it__E_art2": "1",
+    "gams3_it__E_iter1": "1",
+    "gams3_it__orig": "1",
+    "gams3_it__rand_nm_j1": "1",
+    "gemma_it__E_art2": "1",
+    "gemma_it__E_iter1": "1",
+    "gemma_it__orig": "1",
+    "gemma_it__rand_nm_j1": "1",
+    "gemma_it__rand_nm_j2": "1"
+   }
+  },
+  {
+   "item_id": "winogrande:546",
+   "pair_id": "winogrande:546",
+   "task": "winogrande",
+   "lang": "sl",
+   "primary_metric": "acc",
+   "input": " premajhen.\n(0) Joe je pil mleko in poskušal potopiti svoj piškot v kozarec, vendar je bil piškot\n(1) Joe je pil mleko in poskušal potopiti svoj piškot v kozarec, vendar je bil kozarec",
+   "gold": "1",
+   "n_choices": 2,
+   "correct": {
+    "gams3_it__E_art2": 1,
+    "gams3_it__E_iter1": 1,
+    "gams3_it__orig": 1,
+    "gams3_it__rand_nm_j1": 0,
+    "gemma_it__E_art2": 1,
+    "gemma_it__E_iter1": 1,
+    "gemma_it__orig": 1,
+    "gemma_it__rand_nm_j1": 1,
+    "gemma_it__rand_nm_j2": 1
+   },
+   "predict": {
+    "gams3_it__E_art2": "1",
+    "gams3_it__E_iter1": "1",
+    "gams3_it__orig": "1",
+    "gams3_it__rand_nm_j1": "0",
+    "gemma_it__E_art2": "1",
+    "gemma_it__E_iter1": "1",
+    "gemma_it__orig": "1",
+    "gemma_it__rand_nm_j1": "1",
+    "gemma_it__rand_nm_j2": "1"
+   }
+  }
+ ]
+}
