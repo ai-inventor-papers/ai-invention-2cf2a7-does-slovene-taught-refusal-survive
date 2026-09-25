@@ -18,16 +18,16 @@ LOGS = WS / "logs"
 for _d in (DATA, RESULTS, LOGS):
     _d.mkdir(parents=True, exist_ok=True)
 
-ITER1_EXP4 = Path("/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_1/gen_art/gen_art_experiment_4")
-ITER1_DATASET = Path("/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_1/gen_art/gen_art_dataset_1")
+ITER1_EXP4 = Path(__file__).resolve().parents[5] / "round-1/experiment-4/src"
+ITER1_DATASET = Path(__file__).resolve().parents[5] / "round-1/dataset-1/src"
 SEED = 20260925
 RUN = Path(__file__).resolve().parents[5]
-EXP1 = RUN / "iter_1/gen_art/gen_art_experiment_1"
-EXP2 = RUN / "iter_1/gen_art/gen_art_experiment_2"
+EXP1 = RUN / "round-1/experiment-1/src"
+EXP2 = RUN / "round-1/experiment-2/src"
 EXP4 = ITER1_EXP4
-EXP5 = RUN / "iter_2/gen_art/gen_art_experiment_5"
-EXP8 = RUN / "iter_2/gen_art/gen_art_experiment_8"
-EVAL1 = RUN / "iter_2/gen_art/gen_art_evaluation_1"
+EXP5 = RUN / "round-2/experiment-5/src"
+EXP8 = RUN / "round-2/experiment-8/src"
+EVAL1 = RUN / "round-2/evaluation-1/src"
 DEP = ITER1_DATASET
 
 MODELS = {

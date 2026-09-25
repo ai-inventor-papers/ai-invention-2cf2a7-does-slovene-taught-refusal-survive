@@ -1,30 +1,30 @@
 {
  "exp9_items": {
-  "path": "iter_3/gen_art/gen_art_experiment_9/results/items_final.jsonl",
+  "path": "round-3/experiment-9/src/results/items_final.jsonl",
   "exists": true
  },
  "exp9_probe": {
-  "path": "iter_3/gen_art/gen_art_experiment_9/data/probe_P300.jsonl",
+  "path": "round-3/experiment-9/src/data/probe_P300.jsonl",
   "exists": true
  },
  "exp9_twins": {
-  "path": "iter_3/gen_art/gen_art_experiment_9/data/twins_T150.jsonl",
+  "path": "round-3/experiment-9/src/data/twins_T150.jsonl",
   "exists": true
  },
  "exp9_rubric": {
-  "path": "iter_3/gen_art/gen_art_experiment_9/results/adjudication_rubric.md",
+  "path": "round-3/experiment-9/src/results/adjudication_rubric.md",
   "exists": true
  },
  "exp9_adj_items": {
-  "path": "iter_3/gen_art/gen_art_experiment_9/results/adjudication_items.jsonl",
+  "path": "round-3/experiment-9/src/results/adjudication_items.jsonl",
   "exists": true
  },
  "exp9_adj_key": {
-  "path": "iter_3/gen_art/gen_art_experiment_9/results/adjudication_key.json",
+  "path": "round-3/experiment-9/src/results/adjudication_key.json",
   "exists": true
  },
  "exp11_rows": {
-  "path": "iter_3/gen_art/gen_art_experiment_11/results/rows_final.parquet",
+  "path": "round-3/experiment-11/src/results/rows_final.parquet",
   "exists": true
  },
  "exp11_adj_labels": {
@@ -36,19 +36,19 @@
   "exists": true
  },
  "exp11_protocol": {
-  "path": "3_invention_loop/iter_3/gen_art/gen_art_experiment_11/protocol.yaml",
+  "path": "round-3/experiment-11/src/protocol.yaml",
   "exists": true
  },
  "exp8_items": {
-  "path": "iter_2/gen_art/gen_art_experiment_8/results/items_final.jsonl",
+  "path": "round-2/experiment-8/src/results/items_final.jsonl",
   "exists": true
  },
  "exp8_judge_labels": {
-  "path": "iter_2/gen_art/gen_art_experiment_8/results/judge_labels.jsonl",
+  "path": "round-2/experiment-8/src/results/judge_labels.jsonl",
   "exists": true
  },
  "exp8_common": {
-  "path": "iter_2/gen_art/gen_art_experiment_8/src/common.py",
+  "path": "round-2/experiment-8/src/src/common.py",
   "exists": true
  },
  "exp10_test_gemma": {
@@ -60,31 +60,31 @@
   "exists": true
  },
  "eval2_master": {
-  "path": "iter_3/gen_art/gen_art_evaluation_2/work/master.parquet",
+  "path": "round-3/evaluation-2/src/work/master.parquet",
   "exists": true
  },
  "eval2_relabelled": {
-  "path": "iter_3/gen_art/gen_art_evaluation_2/work/items_relabelled.jsonl.gz",
+  "path": "round-3/evaluation-2/src/work/items_relabelled.jsonl.gz",
   "exists": true
  },
  "eval2_adj_labels": {
-  "path": "iter_3/gen_art/gen_art_evaluation_2/work/adj_labels_ordered.txt",
+  "path": "round-3/evaluation-2/src/work/adj_labels_ordered.txt",
   "exists": true
  },
  "eval2_results": {
-  "path": "iter_3/gen_art/gen_art_evaluation_2/results/eval_results.json",
+  "path": "round-3/evaluation-2/src/results/eval_results.json",
   "exists": true
  },
  "eval2_error_matrices": {
-  "path": "3_invention_loop/iter_3/gen_art/gen_art_evaluation_2/judge_error_matrices.json",
+  "path": "round-3/evaluation-2/src/judge_error_matrices.json",
   "exists": true
  },
  "exp12_gates": {
-  "path": "iter_3/gen_art/gen_art_experiment_12/results/gates.json",
+  "path": "round-3/experiment-12/src/results/gates.json",
   "exists": true
  },
  "ds1_full_data": {
-  "path": "3_invention_loop/iter_1/gen_art/gen_art_dataset_1/full_data_out.json",
+  "path": "round-1/dataset-1/src/full_data_out.json",
   "exists": true
  },
  "C1_gold_calib_check": {

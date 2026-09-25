@@ -610,7 +610,7 @@ def sanity(df) -> dict:
     p = E12 / "results/gates.json"
     if p.exists():
         g = json.loads(p.read_text())
-        gates12 = {"path": "iter_3/gen_art/gen_art_experiment_12/results/gates.json", "top_level_keys": list(g.keys())[:20],
+        gates12 = {"path": "round-3/experiment-12/src/results/gates.json", "top_level_keys": list(g.keys())[:20],
                    "excerpt": json.dumps(g)[:1500]}
     return {"spend_total_usd": spent, "per_pass": per_pass.to_dict("records"), "parse_rate_by_pass": parse,
             "cells": cells.to_dict("records"), "exp12_catastrophe_gate": gates12,

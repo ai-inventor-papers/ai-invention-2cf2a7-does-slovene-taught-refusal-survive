@@ -1,79 +1,79 @@
 {
  "checks": {
   "gemma_adapter": {
-   "path": "<run>/3_invention_loop/3_invention_loop/iter_3/gen_art/gen_art_experiment_9/selected/gemma_it/adapter/adapter_model.safetensors",
+   "path": "<run>/3_invention_loop/round-3/experiment-9/src/selected/gemma_it/adapter/adapter_model.safetensors",
    "exists": true
   },
   "gams_adapter": {
-   "path": "<run>/3_invention_loop/3_invention_loop/iter_3/gen_art/gen_art_experiment_9/selected/gams3_it/adapter/adapter_model.safetensors",
+   "path": "<run>/3_invention_loop/round-3/experiment-9/src/selected/gams3_it/adapter/adapter_model.safetensors",
    "exists": true
   },
   "gemma_selection": {
-   "path": "<run>/3_invention_loop/3_invention_loop/iter_3/gen_art/gen_art_experiment_9/selected/gemma_it/selection.json",
+   "path": "<run>/3_invention_loop/round-3/experiment-9/src/selected/gemma_it/selection.json",
    "exists": true
   },
   "gams_selection": {
-   "path": "<run>/3_invention_loop/3_invention_loop/iter_3/gen_art/gen_art_experiment_9/selected/gams3_it/selection.json",
+   "path": "<run>/3_invention_loop/round-3/experiment-9/src/selected/gams3_it/selection.json",
    "exists": true
   },
   "gemma_random": {
-   "path": "<run>/3_invention_loop/3_invention_loop/iter_3/gen_art/gen_art_experiment_9/adapters/gemma_it/rand_1/adapter_model.safetensors",
+   "path": "<run>/3_invention_loop/round-3/experiment-9/src/adapters/gemma_it/rand_1/adapter_model.safetensors",
    "exists": true
   },
   "gams_random": {
-   "path": "<run>/3_invention_loop/3_invention_loop/iter_3/gen_art/gen_art_experiment_9/adapters/gams3_it/rand_1/adapter_model.safetensors",
+   "path": "<run>/3_invention_loop/round-3/experiment-9/src/adapters/gams3_it/rand_1/adapter_model.safetensors",
    "exists": true
   },
   "exp11_gen": {
-   "path": "<run>/3_invention_loop/3_invention_loop/iter_3/gen_art/gen_art_experiment_11/src/gen.py",
+   "path": "<run>/3_invention_loop/round-3/experiment-11/src/src/gen.py",
    "exists": true
   },
   "exp11_stats_core": {
-   "path": "<run>/3_invention_loop/3_invention_loop/iter_3/gen_art/gen_art_experiment_11/src/stats_core.py",
+   "path": "<run>/3_invention_loop/round-3/experiment-11/src/src/stats_core.py",
    "exists": true
   },
   "exp11_build_items": {
-   "path": "<run>/3_invention_loop/3_invention_loop/iter_3/gen_art/gen_art_experiment_11/src/build_items.py",
+   "path": "<run>/3_invention_loop/round-3/experiment-11/src/src/build_items.py",
    "exists": true
   },
   "exp8_common_P1": {
-   "path": "<run>/3_invention_loop/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/src/common.py",
+   "path": "<run>/3_invention_loop/round-2/experiment-8/src/src/common.py",
    "exists": true
   },
   "eval2_adjudication": {
-   "path": "<run>/3_invention_loop/3_invention_loop/iter_3/gen_art/gen_art_evaluation_2/adjudication/blind_items.jsonl",
+   "path": "<run>/3_invention_loop/round-3/evaluation-2/src/adjudication/blind_items.jsonl",
    "exists": true
   },
   "exp11_adjudication": {
-   "path": "<run>/3_invention_loop/3_invention_loop/iter_3/gen_art/gen_art_experiment_11/results/adjudication/adjudication_labels.jsonl",
+   "path": "<run>/3_invention_loop/round-3/experiment-11/src/results/adjudication/adjudication_labels.jsonl",
    "exists": true
   },
   "exp10_adjudication": {
-   "path": "<run>/3_invention_loop/3_invention_loop/iter_3/gen_art/gen_art_experiment_10/results/adjudication_blind_gemma_it.jsonl",
+   "path": "<run>/3_invention_loop/round-3/experiment-10/src/results/adjudication_blind_gemma_it.jsonl",
    "exists": true
   },
   "dataset_artifact": {
-   "path": "<run>/3_invention_loop/3_invention_loop/iter_1/gen_art/gen_art_dataset_1/full_data_out.json",
+   "path": "<run>/3_invention_loop/round-1/dataset-1/src/full_data_out.json",
    "exists": true
   },
   "exp9_P300": {
-   "path": "<run>/3_invention_loop/3_invention_loop/iter_3/gen_art/gen_art_experiment_9/data/probe_P300.jsonl",
+   "path": "<run>/3_invention_loop/round-3/experiment-9/src/data/probe_P300.jsonl",
    "exists": true
   },
   "exp8_P200": {
-   "path": "<run>/3_invention_loop/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/data/probe_P200.jsonl",
+   "path": "<run>/3_invention_loop/round-2/experiment-8/src/data/probe_P200.jsonl",
    "exists": true
   },
   "exp11_items": {
-   "path": "<run>/3_invention_loop/3_invention_loop/iter_3/gen_art/gen_art_experiment_11/data/items.jsonl",
+   "path": "<run>/3_invention_loop/round-3/experiment-11/src/data/items.jsonl",
    "exists": true
   },
   "exp12_gates": {
-   "path": "<run>/3_invention_loop/3_invention_loop/iter_3/gen_art/gen_art_experiment_12/results/gates.json",
+   "path": "<run>/3_invention_loop/round-3/experiment-12/src/results/gates.json",
    "exists": true
   },
   "exp8_harmless_dev32": {
-   "path": "<run>/3_invention_loop/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/data/harmless_dev32.jsonl",
+   "path": "<run>/3_invention_loop/round-2/experiment-8/src/data/harmless_dev32.jsonl",
    "exists": true
   }
  },
@@ -228,7 +228,7 @@
   "hungarian_present_in_card": false
  },
  "artifact2_pool_files": [
-  "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_4/gen_art/gen_art_experiment_15/data/pool_selected.jsonl"
+  "../../../experiment-15/src/data/pool_selected.jsonl"
  ],
  "disk_free_gb": 636986.5,
  "openrouter_smoke": [
