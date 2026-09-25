@@ -1,67 +1,67 @@
 {
  "exp8/analysis.py": {
   "sha256": "c61254e03aa3eef859240e3979ac0673bda96c9291c8212d513dd9457918d2a1",
-  "original": "iter_2/gen_art/gen_art_experiment_8/src/analysis.py",
+  "original": "round-2/experiment-8/src/src/analysis.py",
   "identical": true
  },
  "exp8/common.py": {
   "sha256": "2096511062b6b2d4e8d4c5802d23cce3f433044b31dafaa223647b497b2656ee",
-  "original": "iter_2/gen_art/gen_art_experiment_8/src/common.py",
+  "original": "round-2/experiment-8/src/src/common.py",
   "identical": true
  },
  "exp9/analysis.py": {
   "sha256": "58b1f401898d23e40026c5712f702097588fef57fb3effb89ec3800db9af445a",
-  "original": "iter_3/gen_art/gen_art_experiment_9/src/analysis.py",
+  "original": "round-3/experiment-9/src/src/analysis.py",
   "identical": true
  },
  "exp9/common.py": {
   "sha256": "682a5074a39644e9dd6d4a83d0bfd168aea938b82a1b397b9f77d840851c9b31",
-  "original": "iter_3/gen_art/gen_art_experiment_9/src/common.py",
+  "original": "round-3/experiment-9/src/src/common.py",
   "identical": true
  },
  "exp9/stats_core.py": {
   "sha256": "877b6f51da3966675bb61e9c6fed188cb7f2fc885443ab882b8ba5674a6f20d1",
-  "original": "iter_3/gen_art/gen_art_experiment_9/src/stats_core.py",
+  "original": "round-3/experiment-9/src/src/stats_core.py",
   "identical": true
  },
  "exp10/analysis.py": {
   "sha256": "b94b9cd9423c31bc7a7ec1c43da98875522a845b989f4eae7409a719aa3a0679",
-  "original": "iter_3/gen_art/gen_art_experiment_10/src/analysis.py",
+  "original": "round-3/experiment-10/src/src/analysis.py",
   "identical": true
  },
  "exp10/stats.py": {
   "sha256": "29b3c65c4fac96f20f2cda32b2931224b2bd58ba55197cf2b179c4b2616f3f38",
-  "original": "iter_3/gen_art/gen_art_experiment_10/src/stats.py",
+  "original": "round-3/experiment-10/src/src/stats.py",
   "identical": true
  },
  "exp11/analysis.py": {
   "sha256": "3c5197efd2b5334404be5050febdd3eef33589eed90435e5665215449c31d046",
-  "original": "iter_3/gen_art/gen_art_experiment_11/src/analysis.py",
+  "original": "round-3/experiment-11/src/src/analysis.py",
   "identical": true
  },
  "exp11/stats_core.py": {
   "sha256": "4423640109ef20959184761d83729dac31e92385f780a2b5556fe88d5599c069",
-  "original": "iter_3/gen_art/gen_art_experiment_11/src/stats_core.py",
+  "original": "round-3/experiment-11/src/src/stats_core.py",
   "identical": true
  },
  "eval2/common.py": {
   "sha256": "0b51f1e55c90ed702d483f23e98895fb162e8014c051e864a8f959fe2733e495",
-  "original": "iter_3/gen_art/gen_art_evaluation_2/src/common.py",
+  "original": "round-3/evaluation-2/src/src/common.py",
   "identical": true
  },
  "eval2/gen_readout_repair.py": {
   "sha256": "bc1cd0afb7b8df55afd69618107c3966b8264e4fca34d12a3950b9cd9b4a508c",
-  "original": "iter_3/gen_art/gen_art_evaluation_2/src/gen_readout_repair.py",
+  "original": "round-3/evaluation-2/src/src/gen_readout_repair.py",
   "identical": true
  },
  "eval2/rederive.py": {
   "sha256": "18f02bb4162b86916707757d794c30372fc974e7852ed112732a491b90e217ef",
-  "original": "iter_3/gen_art/gen_art_evaluation_2/src/rederive.py",
+  "original": "round-3/evaluation-2/src/src/rederive.py",
   "identical": true
  },
  "eval2/stats_core.py": {
   "sha256": "5555f9413857070387e5779bc69a0299c9f948d05278fe29b7f94b93632bf866",
-  "original": "iter_3/gen_art/gen_art_evaluation_2/src/stats_core.py",
+  "original": "round-3/evaluation-2/src/src/stats_core.py",
   "identical": true
  }
 }

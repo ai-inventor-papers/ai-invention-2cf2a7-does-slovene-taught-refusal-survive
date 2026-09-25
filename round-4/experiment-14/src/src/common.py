@@ -44,13 +44,13 @@ def _run_root() -> Path:
 
 
 RUN = _run_root()
-DS_DIR = RUN / "iter_1/gen_art/gen_art_dataset_1"
-E8 = RUN / "iter_2/gen_art/gen_art_experiment_8"
-E9 = RUN / "iter_3/gen_art/gen_art_experiment_9"
-E10 = RUN / "iter_3/gen_art/gen_art_experiment_10"
-E11 = RUN / "iter_3/gen_art/gen_art_experiment_11"
-E12 = RUN / "iter_3/gen_art/gen_art_experiment_12"
-EV2 = RUN / "iter_3/gen_art/gen_art_evaluation_2"
+DS_DIR = RUN / "round-1/dataset-1/src"
+E8 = RUN / "round-2/experiment-8/src"
+E9 = RUN / "round-3/experiment-9/src"
+E10 = RUN / "round-3/experiment-10/src"
+E11 = RUN / "round-3/experiment-11/src"
+E12 = RUN / "round-3/experiment-12/src"
+EV2 = RUN / "round-3/evaluation-2/src"
 ITER4 = RUN / "round-4"
 
 SEED = 20260926

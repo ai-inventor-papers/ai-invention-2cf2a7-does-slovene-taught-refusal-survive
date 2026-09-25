@@ -1,20 +1,20 @@
 {
  "copied_from": {
   "src/stats_core.py": {
-   "source": "iter_3/gen_art/gen_art_experiment_11/src/stats_core.py",
+   "source": "round-3/experiment-11/src/src/stats_core.py",
    "sha256_source": "4423640109ef20959184761d83729dac31e92385f780a2b5556fe88d5599c069",
    "sha256_copy": "4423640109ef20959184761d83729dac31e92385f780a2b5556fe88d5599c069"
   },
   "src/gen.py (load_model/_hook/attach_adapter/generate_batch/Runner)": {
-   "source": "iter_3/gen_art/gen_art_experiment_11/src/gen.py",
+   "source": "round-3/experiment-11/src/src/gen.py",
    "sha256_source": "538aefdbed3c73a5f340891c1f6ea3fde7a8ba1dd094b2979e2f22c06c6f73e3"
   },
   "src/build_items.py (NLLB200/split/join/chrf)": {
-   "source": "iter_3/gen_art/gen_art_experiment_11/src/build_items.py",
+   "source": "round-3/experiment-11/src/src/build_items.py",
    "sha256_source": "77c5a6d2bd94f0f2182ed2c4ccd08de0c3579376f1d2090138f9ff83ae982ef3"
   },
   "src/common.py (JUDGE_PROMPT P1)": {
-   "source": "iter_2/gen_art/gen_art_experiment_8/src/common.py",
+   "source": "round-2/experiment-8/src/src/common.py",
    "sha256_source": "2096511062b6b2d4e8d4c5802d23cce3f433044b31dafaa223647b497b2656ee"
   }
  }
