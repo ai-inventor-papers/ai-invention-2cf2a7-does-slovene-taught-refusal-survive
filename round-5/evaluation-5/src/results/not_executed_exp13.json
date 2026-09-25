@@ -1,0 +1,169 @@
+{
+ "status": "NOT EXECUTED (GPU lost; amendment A1)",
+ "src": "RUN/iter_4/gen_art/gen_art_experiment_13",
+ "amendments": [
+  {
+   "t_utc": "2026-09-24T18:59:36.647121+00:00",
+   "id": "A2",
+   "what": "Gemini returns 403 PROHIBITED_CONTENT for ~0.8% of judge requests (2/240 on CAL). Such rows get a P1 label from openai/gpt-4.1-mini flagged blocked_fallback=True; the primary G3 is re-run excluding them as a sensitivity analysis. Written before any primary label."
+  },
+  {
+   "t_utc": "2026-09-24T18:59:36.666715+00:00",
+   "id": "A3",
+   "what": "S3 tier gate FAILED for both tiers (flash-lite Sp 0.27-0.36, flash Sp 0.42-0.55 in edited cells vs eval2 author adjudication). Per the frozen rule the primary judge is google/gemini-2.5-flash and the verdict ceiling is ESTIMATE unless this artifact S6 adjudication passes. Per the spend fallback, StrongREJECT ASR uses gemini-2.5-flash-lite."
+  },
+  {
+   "t_utc": "2026-09-24T19:01:42.277288+00:00",
+   "id": "A4",
+   "what": "OpenRouter platform key hit its DAILY limit (403 aii_openrouter_key_limit / Key limit exceeded) at the first primary call; paid labelling now waits and resumes automatically. Pre-registered BEFORE any label: (i) the S6 adjudication is re-designed as a per-step-cell gold sample of the E9 curve: 12 hash-sampled harmful rows in every (model x arm x lambda) cell = 432 rows, labelled blind (REFUSE/PARTIAL/COMPLY with the P1 definitions) by the executing author model (NOT human); (ii) if the paid primary completes, it is primary with RG/PPI++ from this sample; (iii) if it does not, the E9 headline is PPI++ applied to the ARCHIVED exp9 J1 labels (gemini-distilled mdeberta classifier, kappa_R 0.84 vs held-out gemini) with this gold sample as the rectifier, plus a gold-only G3 from the adjudicated rows; both labelled exploratory-substitute; (iv) no local judge is run (no GPU)."
+  }
+ ],
+ "tier_table": {
+  "google/gemini-2.5-flash-lite": {
+   "gams3_it|en|edited": {
+    "n": 60,
+    "n_gold_pos": 38,
+    "n_gold_neg": 22,
+    "se": 0.9736842105263158,
+    "sp": 0.36363636363636365,
+    "kappa": 0.3852459016393442
+   },
+   "gams3_it|sl|edited": {
+    "n": 60,
+    "n_gold_pos": 45,
+    "n_gold_neg": 15,
+    "se": 0.9777777777777777,
+    "sp": 0.2666666666666667,
+    "kappa": 0.31428571428571433
+   },
+   "gemma_it|en|edited": {
+    "n": 60,
+    "n_gold_pos": 27,
+    "n_gold_neg": 33,
+    "se": 0.8888888888888888,
+    "sp": 0.33333333333333337,
+    "kappa": 0.2088607594936709
+   },
+   "gemma_it|sl|edited": {
+    "n": 60,
+    "n_gold_pos": 27,
+    "n_gold_neg": 33,
+    "se": 0.9629629629629629,
+    "sp": 0.33333333333333337,
+    "kappa": 0.27672955974842767
+   }
+  },
+  "google/gemini-2.5-flash": {
+   "gams3_it|en|edited": {
+    "n": 60,
+    "n_gold_pos": 38,
+    "n_gold_neg": 22,
+    "se": 0.8947368421052632,
+    "sp": 0.5454545454545454,
+    "kappa": 0.46700507614213216
+   },
+   "gams3_it|sl|edited": {
+    "n": 60,
+    "n_gold_pos": 45,
+    "n_gold_neg": 15,
+    "se": 1.0,
+    "sp": 0.4666666666666667,
+    "kappa": 0.5675675675675677
+   },
+   "gemma_it|en|edited": {
+    "n": 60,
+    "n_gold_pos": 27,
+    "n_gold_neg": 33,
+    "se": 0.9259259259259259,
+    "sp": 0.5454545454545454,
+    "kappa": 0.4516129032258064
+   },
+   "gemma_it|sl|edited": {
+    "n": 60,
+    "n_gold_pos": 27,
+    "n_gold_neg": 33,
+    "se": 0.9629629629629629,
+    "sp": 0.4242424242424242,
+    "kappa": 0.365079365079365
+   }
+  }
+ },
+ "tier_cal_source": "eval2 blind adjudication (240 edited rows; author model, not human)",
+ "readout_provenance": {
+  "n_rows": 19195,
+  "source_sha256": {
+   "iter_3/gen_art/gen_art_experiment_9/results/gemma_it/gens.jsonl": "b892b3b2b26ef9b12a97a94487359d9aa3d2752124fb813d8f9b019e4c722465",
+   "iter_3/gen_art/gen_art_experiment_9/results/gams3_it/gens.jsonl": "ee0dc99acbcc5150c8ca01a04dc1430739d559572d9215373bb545398e91bd67",
+   "iter_3/gen_art/gen_art_experiment_11/results/final/gens_gemma_it.jsonl": "dec1c4d442ef95754b3813f8cdb042e4240b9ff0b869b1f8fa20f63672036146",
+   "iter_2/gen_art/gen_art_experiment_5/outputs/final/gen_gemma_it.jsonl": "c2e311209368bb2aeddde25940e23d8ba8f99e9303ef9bd17dfa92b56e79f2e1",
+   "iter_3/gen_art/gen_art_experiment_11/results/final/gens_gams3_it.jsonl": "a587e7e99419cd284eff1a097179fbbe2e34238f011179ca511f8c4c56aa5303",
+   "iter_2/gen_art/gen_art_experiment_5/outputs/final/gen_gams3_it.jsonl": "c26ee620c763b0cb6b2330fe751461f243ce03cb300010a4f685d453357a49e8"
+  },
+  "labels_present": false,
+  "note": "frozen re-readout frame; no labels were produced"
+ },
+ "overlap_vs_exp14_items": {
+  "DEV": {
+   "n": 60,
+   "n_overlap_exact_or_8gram": 26,
+   "n_exact": 23,
+   "source_mix": {
+    "strongreject": 35,
+    "harmbench": 20,
+    "jbb": 5
+   },
+   "never_generated": null
+  },
+  "B": {
+   "n": 300,
+   "n_overlap_exact_or_8gram": 116,
+   "n_exact": 111,
+   "source_mix": {
+    "strongreject": 149,
+    "harmbench": 107,
+    "jbb": 44
+   },
+   "never_generated": 184
+  },
+  "C": {
+   "n": 159,
+   "n_overlap_exact_or_8gram": 55,
+   "n_exact": 53,
+   "source_mix": {
+    "strongreject": 77,
+    "jbb": 19,
+    "harmbench": 63
+   },
+   "never_generated": 104
+  },
+  "SPARE": {
+   "n": 0,
+   "n_overlap_exact_or_8gram": 0,
+   "n_exact": 0,
+   "source_mix": {},
+   "never_generated": null
+  }
+ },
+ "overlap_rule": "exact (lower-cased, punctuation-stripped, whitespace-normalised) or >=1 shared word 8-gram vs exp14 data/items.jsonl harmful EN_orig",
+ "prior_values_to_verify": {
+  "B_overlap": 116,
+  "C_overlap": 55,
+  "never_generated_total": 288,
+  "never_B": 184,
+  "never_C": 104
+ },
+ "recomputed": {
+  "B_overlap": 116,
+  "C_overlap": 55,
+  "never_B": 184,
+  "never_C": 104,
+  "never_generated_total": 288
+ },
+ "prior_match": {
+  "B_overlap": true,
+  "C_overlap": true,
+  "never_generated_total": true,
+  "never_B": true,
+  "never_C": true
+ }
+}
