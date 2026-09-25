@@ -1,0 +1,141 @@
+{
+ "model": "gemma_it",
+ "grid": [
+  0.0,
+  0.25,
+  0.4,
+  0.5,
+  0.6,
+  0.7,
+  0.8,
+  1.0,
+  1.25
+ ],
+ "midpoint_rounds": [],
+ "observed": {
+  "0": {
+   "k": 36,
+   "n": 37,
+   "rate": 0.973,
+   "fitted": 0.8981
+  },
+  "0.25": {
+   "k": 27,
+   "n": 37,
+   "rate": 0.7297,
+   "fitted": 0.7831
+  },
+  "0.4": {
+   "k": 21,
+   "n": 37,
+   "rate": 0.5676,
+   "fitted": 0.6789
+  },
+  "0.5": {
+   "k": 21,
+   "n": 37,
+   "rate": 0.5676,
+   "fitted": 0.5967
+  },
+  "0.6": {
+   "k": 21,
+   "n": 37,
+   "rate": 0.5676,
+   "fitted": 0.5087
+  },
+  "0.7": {
+   "k": 17,
+   "n": 37,
+   "rate": 0.4595,
+   "fitted": 0.4202
+  },
+  "0.8": {
+   "k": 14,
+   "n": 37,
+   "rate": 0.3784,
+   "fitted": 0.3365
+  },
+  "1": {
+   "k": 7,
+   "n": 37,
+   "rate": 0.1892,
+   "fitted": 0.199
+  },
+  "1.25": {
+   "k": 3,
+   "n": 37,
+   "rate": 0.0811,
+   "fitted": 0.0924
+  }
+ },
+ "fit": {
+  "a": 2.176258723187483,
+  "b": -3.569040764134363
+ },
+ "lambda_lo": 0.6,
+ "lambda_hi": 0.7,
+ "dose_star": 0.6,
+ "dose_star_tag": "lo",
+ "support_ok": true,
+ "compliance": {
+  "EN>EN": {
+   "gate_zero": 1.0,
+   "gate_hi": 1.0,
+   "min": 1.0,
+   "n": 74
+  },
+  "EN>SL": {
+   "gate_zero": 1.0,
+   "gate_hi": 1.0,
+   "min": 1.0,
+   "n": 74
+  },
+  "EN>HU": {
+   "gate_zero": 1.0,
+   "gate_hi": 1.0,
+   "min": 1.0,
+   "n": 74
+  },
+  "SL>SL": {
+   "gate_zero": 1.0,
+   "gate_hi": 1.0,
+   "min": 1.0,
+   "n": 74
+  },
+  "HU>HU": {
+   "gate_zero": 1.0,
+   "gate_hi": 1.0,
+   "min": 1.0,
+   "n": 74
+  },
+  "SL>EN": {
+   "gate_zero": 1.0,
+   "gate_hi": 1.0,
+   "min": 1.0,
+   "n": 74
+  },
+  "HU>EN": {
+   "gate_zero": 1.0,
+   "gate_hi": 1.0,
+   "min": 1.0,
+   "n": 74
+  },
+  "SF_EN>EN": {
+   "gate_zero": 1.0,
+   "gate_hi": 1.0,
+   "min": 1.0,
+   "n": 74
+  },
+  "SF_SL>SL": {
+   "gate_zero": 1.0,
+   "gate_hi": 1.0,
+   "min": 1.0,
+   "n": 74
+  }
+ },
+ "backup_suffix_cells": [],
+ "dropped_cells": [],
+ "n_dev": 37,
+ "judge": "J1 (exp9 gemini-distilled mdeberta, local)",
+ "t": "2026-09-25T01:07:11.094034+00:00"
+}
