@@ -1,0 +1,759 @@
+{
+  "rule": "CATASTROPHIC if macro headroom-normalised loss > 0.20 in EN or SL (point); POSSIBLY_CATASTROPHIC if only the 95% upper bound exceeds 0.20; F6 raw-pp 5 pp rule if >=3 tasks ineligible",
+  "gates": {
+    "gams3_it": {
+      "E_art2": {
+        "source": "full",
+        "per_lang": {
+          "en": {
+            "rule": "headroom macro (0.20)",
+            "loss": 0.01988,
+            "loss_hi95": 0.04281,
+            "verdict": "OK",
+            "sensitivity_raw_pp": {
+              "loss_pp": 0.7223,
+              "loss_pp_hi95": 1.44444,
+              "verdict_5pp": "OK"
+            }
+          },
+          "sl": {
+            "rule": "headroom macro (0.20)",
+            "loss": 0.00885,
+            "loss_hi95": 0.03762,
+            "verdict": "OK",
+            "sensitivity_raw_pp": {
+              "loss_pp": 0.278,
+              "loss_pp_hi95": 0.94444,
+              "verdict_5pp": "OK"
+            }
+          }
+        },
+        "verdict": "OK",
+        "manipulation_check": {
+          "heretic_style_first_token_kl_bs1": 0.27482399039319716,
+          "pass": true,
+          "label": "VERIFIED"
+        },
+        "adapter_path": "../adapters/gams3_it/E_art2",
+        "adapter_sha256": "b5fe3e9de5376f2dda39d026ef4e9d809afbb1f277a0f3e9ad9599be008a4a5b",
+        "lambda": 1.0,
+        "kind": "art2_selected"
+      },
+      "E_iter1": {
+        "source": "full",
+        "per_lang": {
+          "en": {
+            "rule": "headroom macro (0.20)",
+            "loss": 0.018,
+            "loss_hi95": 0.03922,
+            "verdict": "OK",
+            "sensitivity_raw_pp": {
+              "loss_pp": 0.7223,
+              "loss_pp_hi95": 1.38889,
+              "verdict_5pp": "OK"
+            }
+          },
+          "sl": {
+            "rule": "headroom macro (0.20)",
+            "loss": -0.00653,
+            "loss_hi95": 0.02083,
+            "verdict": "OK",
+            "sensitivity_raw_pp": {
+              "loss_pp": -0.1112,
+              "loss_pp_hi95": 0.55556,
+              "verdict_5pp": "OK"
+            }
+          }
+        },
+        "verdict": "OK",
+        "lambda_subset_check": {
+          "per_lang": {
+            "en": {
+              "rule": "headroom macro (0.20)",
+              "loss": 0.04546,
+              "loss_hi95": 0.08766,
+              "verdict": "OK",
+              "sensitivity_raw_pp": {
+                "loss_pp": 1.75,
+                "loss_pp_hi95": 3.25,
+                "verdict_5pp": "OK"
+              }
+            },
+            "sl": {
+              "rule": "headroom macro (0.20)",
+              "loss": 0.0125,
+              "loss_hi95": 0.07001,
+              "verdict": "OK",
+              "sensitivity_raw_pp": {
+                "loss_pp": 0.25,
+                "loss_pp_hi95": 1.5,
+                "verdict_5pp": "OK"
+              }
+            }
+          },
+          "verdict": "OK"
+        },
+        "language_consistency": {
+          "en_bt": 0.99,
+          "hu_mt": 0.96,
+          "sl_mt": 0.99
+        },
+        "degenerate_rate": {
+          "en_bt": 0.0,
+          "hu_mt": 0.03,
+          "sl_mt": 0.0
+        },
+        "fluency_gate_pass": true,
+        "manipulation_check": {
+          "heretic_style_first_token_kl_bs1": 0.22720585880975705,
+          "pass": true,
+          "label": "VERIFIED"
+        },
+        "adapter_path": "../adapters/gams3_it/E_iter1",
+        "adapter_sha256": "77ac12b4c03be56302a7c9ec741a8fbf1c5a1d52d3bf31f83e81964b8837a4ec",
+        "lambda": 1.0,
+        "kind": "iter1_selected"
+      },
+      "rand_nm_j1": {
+        "source": "full",
+        "per_lang": {
+          "en": {
+            "rule": "headroom macro (0.20)",
+            "loss": 0.00343,
+            "loss_hi95": 0.01894,
+            "verdict": "OK",
+            "sensitivity_raw_pp": {
+              "loss_pp": 0.0557,
+              "loss_pp_hi95": 0.5,
+              "verdict_5pp": "OK"
+            }
+          },
+          "sl": {
+            "rule": "headroom macro (0.20)",
+            "loss": 0.03003,
+            "loss_hi95": 0.05776,
+            "verdict": "OK",
+            "sensitivity_raw_pp": {
+              "loss_pp": 0.7223,
+              "loss_pp_hi95": 1.33333,
+              "verdict_5pp": "OK"
+            }
+          }
+        },
+        "verdict": "OK",
+        "language_consistency": {
+          "en_bt": 1.0,
+          "hu_mt": 0.96,
+          "sl_mt": 0.98
+        },
+        "degenerate_rate": {
+          "en_bt": 0.0,
+          "hu_mt": 0.02,
+          "sl_mt": 0.0
+        },
+        "fluency_gate_pass": true,
+        "manipulation_check": {
+          "heretic_style_first_token_kl_bs1": 0.0014116506072605261,
+          "pass": true,
+          "label": "VERIFIED"
+        },
+        "adapter_path": "../adapters/gams3_it/rand_nm_j1",
+        "adapter_sha256": "9c7fe4d2554af0ffbc5d059a9a44e93de64f7301f725e90396b206764cc434a3",
+        "lambda": null,
+        "kind": "random_norm_matched"
+      },
+      "E_iter1_l0.5": {
+        "source": "lambda_subset",
+        "per_lang": {
+          "en": {
+            "rule": "headroom macro (0.20)",
+            "loss": 0.03226,
+            "loss_hi95": 0.07048,
+            "verdict": "OK",
+            "sensitivity_raw_pp": {
+              "loss_pp": 1.0,
+              "loss_pp_hi95": 2.25,
+              "verdict_5pp": "OK"
+            }
+          },
+          "sl": {
+            "rule": "headroom macro (0.20)",
+            "loss": 0.00976,
+            "loss_hi95": 0.08161,
+            "verdict": "OK",
+            "sensitivity_raw_pp": {
+              "loss_pp": -0.0,
+              "loss_pp_hi95": 1.5,
+              "verdict_5pp": "OK"
+            }
+          }
+        },
+        "verdict": "OK",
+        "manipulation_check": {
+          "heretic_style_first_token_kl_bs1": 0.07619918621057878,
+          "pass": null,
+          "label": "no logged reference / not applicable"
+        },
+        "adapter_path": "../adapters/gams3_it/E_iter1_l0.5",
+        "adapter_sha256": "449f6d7ff7d6c82cac067ea576f808e4621ac8f0b265cb308e6892e2b1746ae4",
+        "lambda": 0.5,
+        "kind": "lambda_scaled"
+      },
+      "E_iter1_l1.5": {
+        "source": "lambda_subset",
+        "per_lang": {
+          "en": {
+            "rule": "headroom macro (0.20)",
+            "loss": 0.04968,
+            "loss_hi95": 0.1002,
+            "verdict": "OK",
+            "sensitivity_raw_pp": {
+              "loss_pp": 2.0,
+              "loss_pp_hi95": 3.5,
+              "verdict_5pp": "OK"
+            }
+          },
+          "sl": {
+            "rule": "headroom macro (0.20)",
+            "loss": 0.00406,
+            "loss_hi95": 0.08678,
+            "verdict": "OK",
+            "sensitivity_raw_pp": {
+              "loss_pp": 0.25,
+              "loss_pp_hi95": 2.25,
+              "verdict_5pp": "OK"
+            }
+          }
+        },
+        "verdict": "OK",
+        "manipulation_check": {
+          "heretic_style_first_token_kl_bs1": 0.3403063347004354,
+          "pass": null,
+          "label": "no logged reference / not applicable"
+        },
+        "adapter_path": "../adapters/gams3_it/E_iter1_l1.5",
+        "adapter_sha256": "08b391223c3f672065dba02973378edbb26e488cc75e14a20f8826d3e8d8cdd2",
+        "lambda": 1.5,
+        "kind": "lambda_scaled"
+      },
+      "E_iter1_l2.0": {
+        "source": "lambda_subset",
+        "per_lang": {
+          "en": {
+            "rule": "headroom macro (0.20)",
+            "loss": 0.02695,
+            "loss_hi95": 0.08029,
+            "verdict": "OK",
+            "sensitivity_raw_pp": {
+              "loss_pp": 1.25,
+              "loss_pp_hi95": 3.0,
+              "verdict_5pp": "OK"
+            }
+          },
+          "sl": {
+            "rule": "headroom macro (0.20)",
+            "loss": 0.04229,
+            "loss_hi95": 0.13777,
+            "verdict": "OK",
+            "sensitivity_raw_pp": {
+              "loss_pp": 1.25,
+              "loss_pp_hi95": 3.5,
+              "verdict_5pp": "OK"
+            }
+          }
+        },
+        "verdict": "OK",
+        "language_consistency": {
+          "en_bt": 0.98,
+          "hu_mt": 0.94,
+          "sl_mt": 0.96
+        },
+        "degenerate_rate": {
+          "en_bt": 0.0,
+          "hu_mt": 0.02,
+          "sl_mt": 0.0
+        },
+        "fluency_gate_pass": false,
+        "manipulation_check": {
+          "heretic_style_first_token_kl_bs1": 0.42208401903510095,
+          "pass": null,
+          "label": "no logged reference / not applicable"
+        },
+        "adapter_path": "../adapters/gams3_it/E_iter1_l2.0",
+        "adapter_sha256": "420510a83592a1a65a982afbb4caad5ff6f8328db63dbc85eed13e98e5353101",
+        "lambda": 2.0,
+        "kind": "lambda_scaled"
+      }
+    },
+    "gemma_it": {
+      "E_art2": {
+        "source": "full",
+        "per_lang": {
+          "en": {
+            "rule": "headroom macro (0.20)",
+            "loss": -0.01634,
+            "loss_hi95": 0.00226,
+            "verdict": "OK",
+            "sensitivity_raw_pp": {
+              "loss_pp": -0.4445,
+              "loss_pp_hi95": 0.11111,
+              "verdict_5pp": "OK"
+            }
+          },
+          "sl": {
+            "rule": "headroom macro (0.20)",
+            "loss": -0.04908,
+            "loss_hi95": -0.00016,
+            "verdict": "OK",
+            "sensitivity_raw_pp": {
+              "loss_pp": -0.6667,
+              "loss_pp_hi95": 0.11111,
+              "verdict_5pp": "OK"
+            }
+          }
+        },
+        "verdict": "OK",
+        "language_consistency": {
+          "en_bt": 1.0,
+          "hu_mt": 0.98,
+          "sl_mt": 0.95
+        },
+        "degenerate_rate": {
+          "en_bt": 0.0,
+          "hu_mt": 0.0,
+          "sl_mt": 0.0
+        },
+        "fluency_gate_pass": true,
+        "manipulation_check": {
+          "heretic_style_first_token_kl_bs1": 0.5321643216720867,
+          "pass": null,
+          "label": "no logged reference / not applicable"
+        },
+        "adapter_path": "../adapters/gemma_it/E_art2",
+        "adapter_sha256": "e294ef2028cd7a5608f07fe1850a64b812b08e2cb3a26a19637165551618401a",
+        "lambda": 1.0,
+        "kind": "art2_selected"
+      },
+      "E_iter1": {
+        "source": "full",
+        "per_lang": {
+          "en": {
+            "rule": "headroom macro (0.20)",
+            "loss": -0.00772,
+            "loss_hi95": 0.00873,
+            "verdict": "OK",
+            "sensitivity_raw_pp": {
+              "loss_pp": -0.2777,
+              "loss_pp_hi95": 0.22222,
+              "verdict_5pp": "OK"
+            }
+          },
+          "sl": {
+            "rule": "headroom macro (0.20)",
+            "loss": -0.0218,
+            "loss_hi95": 0.02374,
+            "verdict": "OK",
+            "sensitivity_raw_pp": {
+              "loss_pp": -0.1665,
+              "loss_pp_hi95": 0.61111,
+              "verdict_5pp": "OK"
+            }
+          }
+        },
+        "verdict": "OK",
+        "lambda_subset_check": {
+          "per_lang": {
+            "en": {
+              "rule": "headroom macro (0.20)",
+              "loss": -0.00499,
+              "loss_hi95": 0.02771,
+              "verdict": "OK",
+              "sensitivity_raw_pp": {
+                "loss_pp": -0.25,
+                "loss_pp_hi95": 0.75,
+                "verdict_5pp": "OK"
+              }
+            },
+            "sl": {
+              "rule": "headroom macro (0.20)",
+              "loss": 0.00766,
+              "loss_hi95": 0.17696,
+              "verdict": "OK",
+              "sensitivity_raw_pp": {
+                "loss_pp": -0.0,
+                "loss_pp_hi95": 2.0,
+                "verdict_5pp": "OK"
+              }
+            }
+          },
+          "verdict": "OK"
+        },
+        "language_consistency": {
+          "en_bt": 1.0,
+          "hu_mt": 0.98,
+          "sl_mt": 0.96
+        },
+        "degenerate_rate": {
+          "en_bt": 0.0,
+          "hu_mt": 0.0,
+          "sl_mt": 0.0
+        },
+        "fluency_gate_pass": true,
+        "manipulation_check": {
+          "heretic_style_first_token_kl_bs1": 0.5100819115612422,
+          "pass": false,
+          "label": "UNVERIFIED (KL +39-40% vs logged Heretic value; batching and empty-system rendering ruled out; adapter sha256 matches iter-1)"
+        },
+        "adapter_path": "../adapters/gemma_it/E_iter1",
+        "adapter_sha256": "dcb281c947a81501365f1cbb8f87a7e1fd6546c47489be37ada1d7cee3fcf750",
+        "lambda": 1.0,
+        "kind": "iter1_selected"
+      },
+      "rand_nm_j1": {
+        "source": "full",
+        "per_lang": {
+          "en": {
+            "rule": "headroom macro (0.20)",
+            "loss": -0.00852,
+            "loss_hi95": 0.00284,
+            "verdict": "OK",
+            "sensitivity_raw_pp": {
+              "loss_pp": -0.2777,
+              "loss_pp_hi95": 0.05556,
+              "verdict_5pp": "OK"
+            }
+          },
+          "sl": {
+            "rule": "headroom macro (0.20)",
+            "loss": -0.00157,
+            "loss_hi95": 0.0448,
+            "verdict": "OK",
+            "sensitivity_raw_pp": {
+              "loss_pp": 0.1112,
+              "loss_pp_hi95": 0.77778,
+              "verdict_5pp": "OK"
+            }
+          }
+        },
+        "verdict": "OK",
+        "language_consistency": {
+          "en_bt": 1.0,
+          "hu_mt": 0.98,
+          "sl_mt": 0.96
+        },
+        "degenerate_rate": {
+          "en_bt": 0.0,
+          "hu_mt": 0.0,
+          "sl_mt": 0.0
+        },
+        "fluency_gate_pass": true,
+        "manipulation_check": {
+          "heretic_style_first_token_kl_bs1": 0.0030005769962813565,
+          "pass": true,
+          "label": "VERIFIED"
+        },
+        "adapter_path": "../adapters/gemma_it/rand_nm_j1",
+        "adapter_sha256": "9c0d4aa3a4c6f79a5d9bc03fc268891734eeb2839c08d7963beae42d22a42b5f",
+        "lambda": null,
+        "kind": "random_norm_matched"
+      },
+      "rand_nm_j2": {
+        "source": "full",
+        "per_lang": {
+          "en": {
+            "rule": "headroom macro (0.20)",
+            "loss": 0.00672,
+            "loss_hi95": 0.02239,
+            "verdict": "OK",
+            "sensitivity_raw_pp": {
+              "loss_pp": 0.1665,
+              "loss_pp_hi95": 0.61111,
+              "verdict_5pp": "OK"
+            }
+          },
+          "sl": {
+            "rule": "headroom macro (0.20)",
+            "loss": 0.00752,
+            "loss_hi95": 0.05946,
+            "verdict": "OK",
+            "sensitivity_raw_pp": {
+              "loss_pp": 0.1112,
+              "loss_pp_hi95": 0.77778,
+              "verdict_5pp": "OK"
+            }
+          }
+        },
+        "verdict": "OK",
+        "manipulation_check": {
+          "heretic_style_first_token_kl_bs1": 0.003524839295955131,
+          "pass": true,
+          "label": "VERIFIED"
+        },
+        "adapter_path": "../adapters/gemma_it/rand_nm_j2",
+        "adapter_sha256": "5467cc1724ae0a23d53c04477cd66b27066bba3bc0d0a52411811dbd833892c0",
+        "lambda": null,
+        "kind": "random_norm_matched"
+      },
+      "E_iter1_l0.5": {
+        "source": "lambda_subset",
+        "per_lang": {
+          "en": {
+            "rule": "headroom macro (0.20)",
+            "loss": 0.00049,
+            "loss_hi95": 0.02293,
+            "verdict": "OK",
+            "sensitivity_raw_pp": {
+              "loss_pp": -0.0,
+              "loss_pp_hi95": 0.75,
+              "verdict_5pp": "OK"
+            }
+          },
+          "sl": {
+            "rule": "headroom macro (0.20)",
+            "loss": -0.02624,
+            "loss_hi95": 0.10441,
+            "verdict": "OK",
+            "sensitivity_raw_pp": {
+              "loss_pp": -0.5,
+              "loss_pp_hi95": 0.75,
+              "verdict_5pp": "OK"
+            }
+          }
+        },
+        "verdict": "OK",
+        "manipulation_check": {
+          "heretic_style_first_token_kl_bs1": 0.20218955000019698,
+          "pass": null,
+          "label": "no logged reference / not applicable"
+        },
+        "adapter_path": "../adapters/gemma_it/E_iter1_l0.5",
+        "adapter_sha256": "3c9914ed1f74d70e69a5436ce1c331b82b65cbd28ab9648b2c584316baf5e815",
+        "lambda": 0.5,
+        "kind": "lambda_scaled"
+      },
+      "E_iter1_l1.5": {
+        "source": "lambda_subset",
+        "per_lang": {
+          "en": {
+            "rule": "headroom macro (0.20)",
+            "loss": -0.01343,
+            "loss_hi95": 0.02845,
+            "verdict": "OK",
+            "sensitivity_raw_pp": {
+              "loss_pp": -0.5,
+              "loss_pp_hi95": 0.75,
+              "verdict_5pp": "OK"
+            }
+          },
+          "sl": {
+            "rule": "headroom macro (0.20)",
+            "loss": -0.03592,
+            "loss_hi95": 0.11573,
+            "verdict": "OK",
+            "sensitivity_raw_pp": {
+              "loss_pp": -0.75,
+              "loss_pp_hi95": 1.5,
+              "verdict_5pp": "OK"
+            }
+          }
+        },
+        "verdict": "OK",
+        "manipulation_check": {
+          "heretic_style_first_token_kl_bs1": 0.7691967694038976,
+          "pass": null,
+          "label": "no logged reference / not applicable"
+        },
+        "adapter_path": "../adapters/gemma_it/E_iter1_l1.5",
+        "adapter_sha256": "2ab6d49950d266a147b7b6e6464bae425382ec6c6349bc141c17e40c99c23db3",
+        "lambda": 1.5,
+        "kind": "lambda_scaled"
+      },
+      "E_iter1_l2.0": {
+        "source": "lambda_subset",
+        "per_lang": {
+          "en": {
+            "rule": "headroom macro (0.20)",
+            "loss": -0.01294,
+            "loss_hi95": 0.03448,
+            "verdict": "OK",
+            "sensitivity_raw_pp": {
+              "loss_pp": -0.5,
+              "loss_pp_hi95": 1.0,
+              "verdict_5pp": "OK"
+            }
+          },
+          "sl": {
+            "rule": "headroom macro (0.20)",
+            "loss": 0.03151,
+            "loss_hi95": 0.32694,
+            "verdict": "POSSIBLY_CATASTROPHIC",
+            "sensitivity_raw_pp": {
+              "loss_pp": -0.25,
+              "loss_pp_hi95": 2.25,
+              "verdict_5pp": "OK"
+            }
+          }
+        },
+        "verdict": "POSSIBLY_CATASTROPHIC",
+        "language_consistency": {
+          "en_bt": 1.0,
+          "hu_mt": 1.0,
+          "sl_mt": 0.96
+        },
+        "degenerate_rate": {
+          "en_bt": 0.0,
+          "hu_mt": 0.0,
+          "sl_mt": 0.0
+        },
+        "fluency_gate_pass": true,
+        "manipulation_check": {
+          "heretic_style_first_token_kl_bs1": 0.989516040777352,
+          "pass": null,
+          "label": "no logged reference / not applicable"
+        },
+        "adapter_path": "../adapters/gemma_it/E_iter1_l2.0",
+        "adapter_sha256": "351abacb49d080bb1eca6ef16ca094748066b5b3fdd868918deb49abce09f923",
+        "lambda": 2.0,
+        "kind": "lambda_scaled"
+      }
+    }
+  },
+  "lambda_gate_curve": {
+    "gams3_it": {
+      "points": [
+        {
+          "lambda": 0.5,
+          "macro_H_en": -0.03226,
+          "macro_H_sl": -0.00976,
+          "ci95_en": [
+            -0.07048,
+            -0.0006
+          ],
+          "ci95_sl": [
+            -0.08161,
+            0.06858
+          ],
+          "verdict": "OK"
+        },
+        {
+          "lambda": 1.0,
+          "macro_H_en": -0.04546,
+          "macro_H_sl": -0.0125,
+          "ci95_en": [
+            -0.08766,
+            -0.00707
+          ],
+          "ci95_sl": [
+            -0.07001,
+            0.04787
+          ],
+          "verdict": "OK"
+        },
+        {
+          "lambda": 1.5,
+          "macro_H_en": -0.04968,
+          "macro_H_sl": -0.00406,
+          "ci95_en": [
+            -0.1002,
+            -8e-05
+          ],
+          "ci95_sl": [
+            -0.08678,
+            0.10492
+          ],
+          "verdict": "OK"
+        },
+        {
+          "lambda": 2.0,
+          "macro_H_en": -0.02695,
+          "macro_H_sl": -0.04229,
+          "ci95_en": [
+            -0.08029,
+            0.03935
+          ],
+          "ci95_sl": [
+            -0.13777,
+            0.07017
+          ],
+          "verdict": "OK"
+        }
+      ],
+      "largest_lambda_OK": 2.0,
+      "licensed_lambdas": [
+        0.5,
+        1.0,
+        1.5,
+        2.0
+      ],
+      "monotone_damage_sl": false
+    },
+    "gemma_it": {
+      "points": [
+        {
+          "lambda": 0.5,
+          "macro_H_en": -0.00049,
+          "macro_H_sl": 0.02624,
+          "ci95_en": [
+            -0.02293,
+            0.02419
+          ],
+          "ci95_sl": [
+            -0.10441,
+            0.27561
+          ],
+          "verdict": "OK"
+        },
+        {
+          "lambda": 1.0,
+          "macro_H_en": 0.00499,
+          "macro_H_sl": -0.00766,
+          "ci95_en": [
+            -0.02771,
+            0.04221
+          ],
+          "ci95_sl": [
+            -0.17696,
+            0.18408
+          ],
+          "verdict": "OK"
+        },
+        {
+          "lambda": 1.5,
+          "macro_H_en": 0.01343,
+          "macro_H_sl": 0.03592,
+          "ci95_en": [
+            -0.02845,
+            0.06199
+          ],
+          "ci95_sl": [
+            -0.11573,
+            0.30016
+          ],
+          "verdict": "OK"
+        },
+        {
+          "lambda": 2.0,
+          "macro_H_en": 0.01294,
+          "macro_H_sl": -0.03151,
+          "ci95_en": [
+            -0.03448,
+            0.06818
+          ],
+          "ci95_sl": [
+            -0.32694,
+            0.19769
+          ],
+          "verdict": "POSSIBLY_CATASTROPHIC"
+        }
+      ],
+      "largest_lambda_OK": 1.5,
+      "licensed_lambdas": [
+        0.5,
+        1.0,
+        1.5
+      ],
+      "monotone_damage_sl": false
+    }
+  },
+  "E_art2": "artifact 2 = iter_3/gen_art_experiment_9/selected/<model>/adapter; verdict PENDING wherever it was not scored (run_late_edits.sh resumes it)"
+}

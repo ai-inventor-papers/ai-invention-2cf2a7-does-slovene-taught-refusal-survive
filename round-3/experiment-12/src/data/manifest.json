@@ -1,0 +1,22 @@
+{
+  "belebele/belebele_en.jsonl": "52de929c1fed195d064fd67831e543c72b7869e7eaa6f7e90004c5c368e01081",
+  "belebele/belebele_hu.jsonl": "3d5f9cd1bb0ba22dfa5a4c1aac7cb00a3b4fbaf345f9f44663e255050531563c",
+  "belebele/belebele_sl.jsonl": "71da0695b40c72c838fd7ed819e05a8bf75284744819886eda4c815000f0539f",
+  "fluency/passages_en.jsonl": "9272d60b51b9459b8b3810323776306d7cb4e860441f70287334713c630e5b7e",
+  "fluency/passages_hu.jsonl": "ab68fa036ec435341a5204e6ab3305fe44cd2529e712b48235f2378fdf7c412c",
+  "fluency/passages_sl.jsonl": "b952449409c48b222f409a0ed3d7468c55bd23504986799db36bdfd2609e558b",
+  "harmless/dolly_en.jsonl": "567c252ae0eb152cc493d83e4384ee4085072121599320247374e7a2df205977",
+  "harmless/harmless_mt.jsonl": "1f72f0b4270cf04828eb8eaa0893a0746fc8b670351cbf34f50b1b4e1142e69b",
+  "util/arc_challenge_en.jsonl": "32e3e1dcaf85407e8f1cba19a573a00b57447d23a9a9a9977defe81475aa03f2",
+  "util/arc_challenge_sl.jsonl": "6a178514d7177d61c8712da3a8f62b3bb8fc1ac3e69633471edd0972035ea2e9",
+  "util/boolq_en.jsonl": "18421c3a6596590c35a2b35c65d414679cd04f2c9f9905b59d0f64b4a9743020",
+  "util/boolq_sl.jsonl": "ed1816897dcb094f9ece64d8d9182c870a2bd070ef59f51613460de6ae13f352",
+  "util/hellaswag_en.jsonl": "4d7879107853a095dd1b75ce45962527c493a16dfc992070a5364b904c6e1e89",
+  "util/hellaswag_sl.jsonl": "809c07327aa72f90f9787a561fb40b5c8440c7ae2adc0c8fe87e03008fa4b0da",
+  "util/openbookqa_en.jsonl": "76a7327b6c48d9aade5e398ca566f2a5f6aa6e47dc459f95533577934b6046e3",
+  "util/openbookqa_sl.jsonl": "cf8ee94760a6030dd1279f734f3554197df30e9aa0c2af3fa85e987c51cae36e",
+  "util/piqa_en.jsonl": "9dcf6b1f3676bf21029a945c7c50ef2872bf28614b48bca58fb74bc6a551810c",
+  "util/piqa_sl.jsonl": "daf16840a46e7242fff3d833256069ed4b35445af9fa9fdaa1cd28c2f670557f",
+  "util/winogrande_en.jsonl": "5c772f475b24c41b31614a4bb1c22d49e554551e61d218a87162faeb678b7c36",
+  "util/winogrande_sl.jsonl": "5f69c84bd4bc6b3465572f9166a34d48998b812f1296003196f3e93d63c4ec50"
+}

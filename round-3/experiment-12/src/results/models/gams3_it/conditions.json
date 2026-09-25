@@ -1,0 +1,150 @@
+{
+  "orig": {
+    "kind": "original",
+    "lambda": 0.0,
+    "sum_lora_B_norm": 0.0,
+    "n_nonzero_B": 0
+  },
+  "E_iter1": {
+    "kind": "iter1_selected",
+    "lambda": 1.0,
+    "adapter_dir": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_1/gen_art/gen_art_experiment_4/results/gams3_it/selected_adapter",
+    "sha256": "514b29020cb80eed365cf892b4cd1e78988c2f54c11ab80e04a1d3f77e1469de",
+    "pick": {
+      "pick_trial_index": 8,
+      "pick_number": 7,
+      "refusals": 0.29,
+      "kl": 0.23298215866088867,
+      "flag": "selection_rule_fallback",
+      "direction_index": null,
+      "parameters": {
+        "attn.o_proj": {
+          "max_weight": 1.3058603245031022,
+          "max_weight_position": 29.356814435097565,
+          "min_weight": 0.5562072037044168,
+          "min_weight_distance": 18.9284332033305
+        },
+        "mlp.down_proj": {
+          "max_weight": 1.2306890494321627,
+          "max_weight_position": 31.39010548214005,
+          "min_weight": 0.5816751324457782,
+          "min_weight_distance": 16.34098984990031
+        }
+      },
+      "rule": "argmin EN_KL among trials with keyword_refusals <= 10/100; else min refusals then min KL (flagged)"
+    },
+    "sum_lora_B_norm": 58.5357,
+    "n_nonzero_B": 69,
+    "saved_adapter_dir": "../../../adapters/gams3_it/E_iter1",
+    "saved_sha256": "77ac12b4c03be56302a7c9ec741a8fbf1c5a1d52d3bf31f83e81964b8837a4ec"
+  },
+  "E_iter1_l0.5": {
+    "kind": "lambda_scaled",
+    "lambda": 0.5,
+    "base": "E_iter1",
+    "rule": "every lora_B tensor x lambda",
+    "sum_lora_B_norm": 29.2678,
+    "n_nonzero_B": 69,
+    "saved_adapter_dir": "../../../adapters/gams3_it/E_iter1_l0.5",
+    "saved_sha256": "449f6d7ff7d6c82cac067ea576f808e4621ac8f0b265cb308e6892e2b1746ae4"
+  },
+  "E_iter1_l1.5": {
+    "kind": "lambda_scaled",
+    "lambda": 1.5,
+    "base": "E_iter1",
+    "rule": "every lora_B tensor x lambda",
+    "sum_lora_B_norm": 87.8035,
+    "n_nonzero_B": 69,
+    "saved_adapter_dir": "../../../adapters/gams3_it/E_iter1_l1.5",
+    "saved_sha256": "08b391223c3f672065dba02973378edbb26e488cc75e14a20f8826d3e8d8cdd2"
+  },
+  "E_iter1_l2.0": {
+    "kind": "lambda_scaled",
+    "lambda": 2.0,
+    "base": "E_iter1",
+    "rule": "every lora_B tensor x lambda",
+    "sum_lora_B_norm": 117.0714,
+    "n_nonzero_B": 69,
+    "saved_adapter_dir": "../../../adapters/gams3_it/E_iter1_l2.0",
+    "saved_sha256": "420510a83592a1a65a982afbb4caad5ff6f8328db63dbc85eed13e98e5353101"
+  },
+  "rand_nm_j1": {
+    "kind": "random_norm_matched",
+    "j": 1,
+    "seed": 20260924,
+    "c": 1.0,
+    "construction": "heretic Model.abliterate(rand_dirs(j), direction_index, SAME params)",
+    "sum_lora_B_norm": 56.8786,
+    "n_nonzero_B": 69,
+    "saved_adapter_dir": "../../../adapters/gams3_it/rand_nm_j1",
+    "saved_sha256": "9c7fe4d2554af0ffbc5d059a9a44e93de64f7301f725e90396b206764cc434a3"
+  },
+  "rand_nm_j2": {
+    "kind": "random_norm_matched",
+    "j": 2,
+    "seed": 20260925,
+    "c": 1.0,
+    "construction": "heretic Model.abliterate(rand_dirs(j), direction_index, SAME params)",
+    "sum_lora_B_norm": 56.9563,
+    "n_nonzero_B": 69,
+    "saved_adapter_dir": "../../../adapters/gams3_it/rand_nm_j2",
+    "saved_sha256": "8d6dd2f4ad9a47e98a79dc8bf5b19792b00a4bd52cbfbd494d1f8730080d391e"
+  },
+  "rand_nm_j3": {
+    "kind": "random_norm_matched",
+    "j": 3,
+    "seed": 20260926,
+    "c": 1.0,
+    "construction": "heretic Model.abliterate(rand_dirs(j), direction_index, SAME params)",
+    "sum_lora_B_norm": 56.8507,
+    "n_nonzero_B": 69,
+    "saved_adapter_dir": "../../../adapters/gams3_it/rand_nm_j3",
+    "saved_sha256": "dbf4aefbebf4a3ec33a8c5080d8fed58b54281f420398e4dba5c848c93f94f4c"
+  },
+  "rand_nm_j4": {
+    "kind": "random_norm_matched",
+    "j": 4,
+    "seed": 20260927,
+    "c": 1.0,
+    "construction": "heretic Model.abliterate(rand_dirs(j), direction_index, SAME params)",
+    "sum_lora_B_norm": 56.8259,
+    "n_nonzero_B": 69,
+    "saved_adapter_dir": "../../../adapters/gams3_it/rand_nm_j4",
+    "saved_sha256": "06c6fcf52ef6c1fe44cb1f97ebee8945c48c81f7c6e2a247afeeafcadee2932a"
+  },
+  "rand_nm_j5": {
+    "kind": "random_norm_matched",
+    "j": 5,
+    "seed": 20260928,
+    "c": 1.0,
+    "construction": "heretic Model.abliterate(rand_dirs(j), direction_index, SAME params)",
+    "sum_lora_B_norm": 56.947,
+    "n_nonzero_B": 69,
+    "saved_adapter_dir": "../../../adapters/gams3_it/rand_nm_j5",
+    "saved_sha256": "ecdceadfb1fbaf8c24bff1f2957db78176687a2fe6d8ba6c52b5eb836b9c77de"
+  },
+  "rand_c6_j1": {
+    "kind": "random_c6",
+    "j": 1,
+    "seed": 20260924,
+    "c": 6.0,
+    "construction": "rand_dirs(1) with max/min weights x 6 (iter-1 largest random edit)",
+    "sum_lora_B_norm": 139.325,
+    "n_nonzero_B": 69,
+    "saved_adapter_dir": "../../../adapters/gams3_it/rand_c6_j1",
+    "saved_sha256": "b0d86777a15f4aec23dd2cf8535a8e51498905a76249edf5e88ff395efee3d18"
+  },
+  "E_art2": {
+    "kind": "art2_selected",
+    "lambda": 1.0,
+    "adapter_dir": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_3/gen_art/gen_art_experiment_9/selected/gams3_it/adapter",
+    "selection_json": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_3/gen_art/gen_art_experiment_9/selected/gams3_it/selection.json",
+    "root": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_3/gen_art/gen_art_experiment_9",
+    "mtime": 1790235997.0,
+    "sha256": "4df160b152ade266e97a41b1012303bfecf0463f5030e5af4f33375893f234e7",
+    "sum_lora_B_norm": 57.6599,
+    "n_nonzero_B": 65,
+    "saved_adapter_dir": "../../../adapters/gams3_it/E_art2",
+    "saved_sha256": "b5fe3e9de5376f2dda39d026ef4e9d809afbb1f277a0f3e9ad9599be008a4a5b"
+  }
+}
