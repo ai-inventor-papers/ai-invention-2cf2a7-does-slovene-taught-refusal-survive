@@ -1,4 +1,8 @@
 #!/usr/bin/env python3
+# NOTE (published copy): this file names server paths this repository
+# does not publish (a stage it does not ship, or another run's workspace),
+# so the steps that read them will not run from a clone as written:
+#   /ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/iter_3/gen_hypo/claude_agent/stage0b/refuseu_overlap.json
 """S0 DATA: RefusEU pairs + SCREEN-SPEC v1 splits, KL sets, harmless set (+SL MT), pair-correspondence grades.
 
 NEVER loads the RefusEU 'evaluation' config (reserved confirmation split).

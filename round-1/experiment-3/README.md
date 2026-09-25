@@ -34,7 +34,7 @@ Judge: gemini-2.5-flash, $1.45 spent. The key hit its daily limit at 18:00 UTC; 
 
 Not run: 4-vs-8-bit check (cut 1). Sweep ran on SCORE-200.
 
-Kept at workspace /ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_1/gen_art/gen_art_experiment_3: results/items, results/directions/*.npz, results/analysis.json, figures/.
+Kept at workspace src: results/items, results/directions/*.npz, results/analysis.json, figures/.
 
 ## Output Files
 

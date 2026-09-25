@@ -1,4 +1,8 @@
 #!/usr/bin/env python3
+# NOTE (published copy): this file names server paths this repository
+# does not publish (a stage it does not ship, or another run's workspace),
+# so the steps that read them will not run from a clone as written:
+#   /ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/iter_3/gen_hypo/claude_agent/stage0b
 """P1 data build (CPU): RefusEU EN/SL screen pairs (train+test only; evaluation split NEVER read),
 sha1 CONSTRUCT/SCORE split, SCORE-400, alpaca harmless sample (pre-MT), item manifest, dose table copy."""
 from __future__ import annotations
