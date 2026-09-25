@@ -1,0 +1,8 @@
+02:35:36|INFO   |verdict: ESTIMATE (inconclusive); primary=PPI
+02:35:36|INFO   |OUT|gemma_it|dose*     raw_gemini   +2.427 [+2.035, +2.884]
+02:35:36|INFO   |OUT|gemma_it|dose*     gem_refused  +2.263 [+1.905, +2.690]
+02:35:36|INFO   |OUT|gemma_it|dose*     j1           +1.912 [+1.587, +2.303]
+02:35:36|INFO   |IN|gemma_it|dose*      raw_gemini   -0.534 [-0.804, -0.284]
+02:35:36|INFO   |IN|gemma_it|dose*      gem_refused  -0.633 [-0.908, -0.369]
+02:35:36|INFO   |IN|gemma_it|dose*      j1           -0.770 [-1.021, -0.548]
+02:35:36|INFO   |OUT_edit|gemma_it      j1           +0.877 [+0.105, +1.490]

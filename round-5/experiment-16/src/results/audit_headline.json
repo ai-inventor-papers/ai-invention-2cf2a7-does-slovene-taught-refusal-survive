@@ -1,0 +1,44 @@
+{
+ "OUT_raw_gemini|gemma_it": {
+  "n": 292,
+  "est": 2.426631994521073,
+  "ci95": [
+   2.032921526044943,
+   2.9337555475803843
+  ],
+  "excludes_0": true
+ },
+ "PLACEBO_shuffled|gemma_it": {
+  "est": -0.2153155237434078,
+  "ci95": [
+   -0.5851203198489263,
+   0.1367650694989262
+  ],
+  "excludes_0": false
+ },
+ "OUT_raw_gemini|gams3_it": {
+  "n": 292,
+  "est": -0.07065631519820859,
+  "ci95": [
+   -0.34747283609091634,
+   0.2016539797104998
+  ],
+  "excludes_0": false
+ },
+ "PLACEBO_shuffled|gams3_it": {
+  "est": 0.014129723125488491,
+  "ci95": [
+   -0.2682509378118045,
+   0.2924066864871207
+  ],
+  "excludes_0": false
+ },
+ "dOUT_raw_gemini": {
+  "est": -2.4972883097192815
+ },
+ "matches_analysis": {
+  "OUT_gemma": true,
+  "OUT_gams": true,
+  "dOUT": true
+ }
+}

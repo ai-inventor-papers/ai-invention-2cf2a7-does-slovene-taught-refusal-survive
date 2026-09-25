@@ -1,0 +1,13 @@
+{
+ "arch": "Gemma3ForConditionalGeneration",
+ "load_s": 71.0,
+ "vram_gb": 8.41,
+ "native_triton": "deregistered",
+ "torch": "2.14.0+cu126",
+ "repo": "p-e-w/gemma-3-12b-it-heretic",
+ "revision": "e037e6e112ea85777fc3858469cdc31fdfceaa13",
+ "template_sha1": "3f7731dd04d6fb3e41478bea860489dac5c6115c",
+ "gemma_template_sha1": "3f7731dd04d6fb3e41478bea860489dac5c6115c",
+ "template_override_to_gemma": false,
+ "rendered_template_sha1": "586e0e943e73a82c594c435262bb9deab4f6f3fe"
+}
