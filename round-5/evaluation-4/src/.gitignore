@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.pyc
+.repl_agent.ptylog
+.aii_claude_session.json
+__pycache__/
+.pytest_cache/
