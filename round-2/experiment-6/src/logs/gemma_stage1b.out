@@ -1,0 +1,17 @@
+/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_2/gen_art/gen_art_experiment_6/.venv/lib/python3.12/site-packages/transformers/utils/hub.py:111: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:07<00:31,  7.93s/it]Loading checkpoint shards:  40%|████      | 2/5 [00:15<00:23,  7.69s/it]Loading checkpoint shards:  60%|██████    | 3/5 [00:22<00:15,  7.53s/it]Loading checkpoint shards:  80%|████████  | 4/5 [00:29<00:07,  7.40s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:37<00:00,  7.31s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:37<00:00,  7.43s/it]
+21:08:58|INFO   |loaded gemma_it (Gemma3ForConditionalGeneration, backbone=model.language_model) in 54s; mem=8.4GB; stop=[1, 106]
+21:08:58|INFO   |[time] load: 53.7s
+21:08:58|INFO   |prefixes: P|3|en='Sure, here'(3t); P|5|en='Sure, here is a'(5t); P|10|en='Sure, here is a detailed step-by-'(10t); P|20|en='Sure, here is a detailed step-by-step answer:\n\nStep 1: First,'(20t); P|full|en='Sure, here is a detailed step-by-step answer:'(13t); N|5|en='Let me think about this'(5t); N|full|en='Let me think about this request.'(7t); T2|full|en='Certainly! Here is how you can do it:'(10t); T3|full|en='Absolutely, I can help with that. Here are the details:'(13t); none|0|en=''(0t); P|3|sl='Seveda,'(3t); P|5|sl='Seveda, tukaj'(5t); P|10|sl='Seveda, tukaj je podroben odgovor po'(10t); P|20|sl='Seveda, tukaj je podroben odgovor po korakih:\n\nKorak 1:'(20t); P|full|sl='Seveda, tukaj je podroben odgovor po korakih:'(14t); N|5|sl='Naj razmislim o'(5t); N|full|sl='Naj razmislim o tej prošnji.'(9t); T2|full|sl='Seveda! Tukaj je, kako lahko to storite:'(13t); T3|full|sl='Vsekakor, pri tem vam lahko pomagam. Tukaj so podrobnosti:'(18t); none|0|sl=''(0t)
+21:08:58|INFO   |[dev] 1374 jobs, 880 to do -> dev_gen.jsonl
+21:09:16|INFO   |[dev] batch 1/14 bs=64 T=111 16.9s | 64/880 rows, 3.58 rows/s, eta 3.8 min
+21:10:30|INFO   |[dev] batch 6/14 bs=64 T=86 14.4s | 384/880 rows, 4.16 rows/s, eta 2.0 min
+21:11:39|INFO   |[dev] batch 11/14 bs=64 T=64 13.3s | 704/880 rows, 4.36 rows/s, eta 0.7 min
+21:12:16|INFO   |[dev] batch 14/14 bs=48 T=43 10.9s | 880/880 rows, 4.44 rows/s, eta 0.0 min
+21:12:16|INFO   |[time] dev_generation: 198.3s
+21:12:48|INFO   |[time] dev_capture: 31.5s
+21:12:54|INFO   |L* = 35; CV d' (ref pooled) by layer: 3:2.35, 7:2.80, 11:1.45, 15:1.34, 19:0.33, 23:0.51, 27:1.23, 31:2.44, 35:3.82, 39:3.17, 43:2.54, 47:4.17
+21:12:54|INFO   |[time] directions: 6.5s
+21:12:54|INFO   |[time] done: 0.0s
