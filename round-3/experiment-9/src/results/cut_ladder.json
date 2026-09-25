@@ -1,0 +1,7 @@
+{
+ "core_only_trials": true,
+ "reason_core_only": "projected 25 min > 20 min left at step lambda_1.00",
+ "max_random": 3,
+ "max_trials": 20,
+ "reason_max_trials": "projected 16 min > 1 min left"
+}

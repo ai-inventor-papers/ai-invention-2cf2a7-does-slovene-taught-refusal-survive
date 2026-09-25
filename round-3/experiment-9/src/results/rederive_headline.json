@@ -1,0 +1,15 @@
+{
+ "g3_third_code_path": -0.9698202686526693,
+ "g3_analysis_py": -0.969820239982258,
+ "abs_diff": 2.867041137832871e-08,
+ "matches_within_0.05": true,
+ "placebo_model_label_swap": {
+  "n": 400,
+  "mean": 0.032799375350606945,
+  "sd": 0.534574975444682,
+  "p_two_sided": 0.08478802992518704,
+  "centred_on_zero": true,
+  "test_fails_on_placebo": true
+ },
+ "note": "pandas pivot + statsmodels GLM on the raw gens/gens_j1 files; analysis.py uses hand-written IRLS on numpy matrices built from items_final.jsonl, audit.py uses scipy BFGS on dict counts"
+}

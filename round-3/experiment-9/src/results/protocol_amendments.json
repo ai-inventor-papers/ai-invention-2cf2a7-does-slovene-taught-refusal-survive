@@ -1,0 +1,39 @@
+{
+  "A1_no_openrouter": {
+    "timestamp_utc": "2026-09-24 06:14:22",
+    "trigger": "S1 key probe: 403 aii_run_budget_exhausted ('AI Inventor per-run OpenRouter budget reached for Test idea: $7.02 of $7.00'; non-retryable); ':free' models all 429 free-models-per-day. results/key_probe.json + results/judge_ledger.jsonl",
+    "change": "READOUT_MODE = LOCAL (pre-registered F2). No paid or free API call is possible for the whole artifact. Benign twins are rewritten by a LOCAL Qwen3-8B (CPU bf16, greedy, thinking off) with the frozen rewrite prompt and SAFE-screened by two LOCAL families (Qwen3-8B, Llama-3.1-8B-Instruct) instead of gpt-4.1-mini + gemini/gpt-4.1-mini.",
+    "cost": "no gemini/gpt-4.1-mini labels on the new rows; the gemini drift check is impossible; twin quality depends on an 8B rewriter."
+  },
+  "A2_local_readout": {
+    "timestamp_utc": "2026-09-24 06:14:22",
+    "change": "PRIMARY judge J1 = a gemini-distilled multilingual classifier (microsoft/mdeberta-v3-base fine-tuned 3-way on ARCHIVED real gemini-2.5-flash P1 labels: exp8 items_final (Gemma, 12.5k rows incl. edited trials/lambda/ablation, EN+SL) + iter-1 exp1 native gemini labels (Gemma and GaMS unedited, EN/SL/SL-MT); every row whose item is in P300/DEV12/T150 sources is EXCLUDED from training). Validated on item-grouped held-out gemini gold (kappa per language x model x edited/unedited). SECOND family J2 = local LLM zero-shot with the frozen P1 prompt, first-token logits over REFUSE/PARTIAL/COMPLY (Llama-3.1-8B-Instruct or Qwen3-8B, whichever has the higher binary-R kappa vs gemini on a held-out calibration set, exp8 rule), run on the core blocks G/GH at every step. Why not Qwen3-14B/Mistral-24B on all rows: ~21M prefill tokens would need ~3 GPU-hours on the L4, which does not fit.",
+    "gate": "per cell (model x arm x orig/edited): kappa(J1, J2) >= 0.6 on overlapping rows; plus J1 validation kappa vs held-out gemini gold >= 0.6; plus blind adjudication by the executing agent (NOT human) on a stratified sample.",
+    "cost": "J1 inherits gemini's biases (exp6: gemini errors skew to REFUSE in Slovene) and is trained mostly on Gemma text; GaMS edited rows have no gemini gold, so their validity rests on J1-J2 agreement and the agent adjudication (flagged)."
+  },
+  "A3_pool_exhaustion": {
+    "timestamp_utc": "2026-09-24 06:14:22",
+    "change": "After all pre-registered exclusions (plus iter-1 SCORE-400, which was screened in iter-1) the RefusEU-TRAIN pool has 838 items and categories S5 and S11 are exhausted (S7 15, S8 4, S10 4). P300 is drawn by round robin over the 12 available categories (short categories fully used, the rest redistributed), as the plan's redistribution rule allows. Category counts are in data/split_manifest.json."
+  },
+  "A4_replay_bitwise": {
+    "timestamp_utc": "2026-09-24 07:10:30",
+    "observation": "The non-interference replay of trial 1 reproduces both objective values exactly (0.99, 0.0017425282858312) but the LoRA tensor sha1 differs.",
+    "cause": "Heretic's row_normalization='full' path uses torch.svd_lowrank, a randomized SVD; it is reseeded with the configured seed before each call, but the CUDA kernel is not bitwise reproducible across calls. The resulting edit is numerically equivalent (identical refusal rate and KL to 1e-6).",
+    "consequence": "The pre-registered check 'identical LoRA hash' is reported as FAILED-by-bitwise, PASSED-by-value. Every scored step uses the adapter exported at trial time, so no statistic depends on re-deriving a trial's tensors."
+  },
+  "A5_engine_gate_failed": {
+    "timestamp_utc": "2026-09-24 09:03:18",
+    "trigger": "vLLM 0.30 removed the 'bitsandbytes' quantization method that the plan specified, so the generation engine cannot reproduce the NF4 numerics of the Heretic objective path. The nearest workable vLLM setting on an L4 is online FP8 (W8A8). The pre-registered engine gate was run against the HF NF4 reference generations and FAILED: first-token top-1 agreement 0.906 (lambda=0) / 0.875 (lambda=1), lexicon outcome agreement 1.000 / 0.859, throughput ratio 2.66x (gate needs >=0.9, >=0.9 and >=4x). Adapter effect passed (0.75 of outputs change at lambda=1). results/gemma_it/engine_gate.json",
+    "pre_registered_response": "F1: fall back to HF generation with the reduced design.",
+    "why_F1_is_not_used_as_written": "Measured HF NF4 throughput is 1.20 items/s at 128 tokens (results/{model}/phase_a_checks.json:hf_gate_throughput_items_per_s). The remaining GPU window (about 105 minutes for BOTH models) allows about 7.5k generations in HF, which cannot cover a paired 40-trial curve plus a lambda curve plus benign twins in two models.",
+    "decision": "Run Phase B for BOTH siblings on the SAME vLLM FP8 engine with a reduced design. The paired contrast (G3, Delta-c) is a within-engine, between-model comparison, so an engine-level precision shift that applies identically to both models does not confound it; what it does affect is the ABSOLUTE refusal levels, which are therefore reported as engine-specific. The HF NF4 reference rows generated in phase A for both models (results/{model}/engine_gate_hf.jsonl) are kept and used to quantify the engine effect.",
+    "reduced_design": {
+      "orig and lambda=1": "full P300 (300) + T150 (150) in EN-BT, SL-MT and EN-orig",
+      "other lambda steps": "core blocks C (100 harmful) + HC (60 benign) in EN-BT and SL-MT",
+      "trial steps": "core blocks C + HC in EN-BT and SL-MT; number of trials set by the deadline (target 18 of the 40 paired trials, in trial order, identical in both models)",
+      "random edits": "3 of the 5 seeds (cut ladder A step 3)",
+      "rotating blocks R1..R4 / HR1..HR3": "not scored (cut ladder A step 1: core-only)"
+    },
+    "cost": "fewer trial steps on the B' curve (wider CIs, larger MDE) and no rotating-block item variety; the item set at every step is the same 100 harmful + 60 benign core items, which keeps every within-step language contrast item-matched."
+  }
+}

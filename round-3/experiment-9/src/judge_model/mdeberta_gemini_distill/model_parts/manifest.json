@@ -1,0 +1,20 @@
+{
+ "file": "model.safetensors",
+ "parts": [
+  "model.safetensors.part_001",
+  "model.safetensors.part_002",
+  "model.safetensors.part_003",
+  "model.safetensors.part_004",
+  "model.safetensors.part_005",
+  "model.safetensors.part_006",
+  "model.safetensors.part_007",
+  "model.safetensors.part_008",
+  "model.safetensors.part_009",
+  "model.safetensors.part_010",
+  "model.safetensors.part_011",
+  "model.safetensors.part_012"
+ ],
+ "chunk_bytes": 99614720,
+ "sha256": "7c805d7fb2d9b684a17e8594ed7854acae2e1117ce1e4558d42483de67f6b092",
+ "size_bytes": 1115271284
+}
