@@ -34,7 +34,7 @@ def _run_root() -> Path:
     env = os.environ.get("AII_RUN_ROOT")
     if env and Path(env).is_dir():
         return Path(env)
-    hard = Path("/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop")
+    hard = Path(__file__).resolve().parents[4]
     if hard.is_dir():
         return hard
     for parent in Path(__file__).resolve().parents:
@@ -51,7 +51,7 @@ E10 = RUN / "iter_3/gen_art/gen_art_experiment_10"
 E11 = RUN / "iter_3/gen_art/gen_art_experiment_11"
 E12 = RUN / "iter_3/gen_art/gen_art_experiment_12"
 EV2 = RUN / "iter_3/gen_art/gen_art_evaluation_2"
-ITER4 = RUN / "iter_4/gen_art"
+ITER4 = RUN / "round-4"
 
 SEED = 20260926
 MAX_NEW = 128

@@ -7,7 +7,7 @@ few inputs produced by other artifacts are read from **sibling directories of th
 ## 1. Get the artifact
 ```bash
 git clone <this-repository-url>
-cd <repo>/3_invention_loop/iter_4/gen_art/gen_art_experiment_14   # this folder
+cd <repo>/round-4/experiment-14/src   # this folder
 ```
 Sibling artifacts this code reads (read-only), by id — each is a sibling folder in the same clone:
 * `gen_art_experiment_9` (iter-3): the Heretic edit adapters (`selected/{gemma_it,gams3_it}/adapter`), the norm-matched

@@ -1,7 +1,7 @@
 {
  "path": "rebuilt",
  "artifact2_pool_files_at_startup": [
-  "../../../experiment-15/src/data/pool_selected.jsonl"
+  "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_4/gen_art/gen_art_experiment_15/data/pool_selected.jsonl"
  ],
  "seed": 20260926,
  "rule": "norm = NFKC lower, strip punct, collapse ws; drop if exact norm match OR share of candidate word 8-grams found in targets > 0.5; within-pool the same; > 60 words excluded; half = 'B' if int(sha256('20260926|'+norm)[:8],16) % 2 == 0 else 'C'",
