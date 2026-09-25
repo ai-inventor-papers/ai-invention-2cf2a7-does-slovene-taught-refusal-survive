@@ -33,7 +33,7 @@ PROTO = ROOT / "protocol"
 for _d in (DATA, OUT, OUT_DEV, OUT_FINAL, LEDGERS, RESULTS, FIG, LOGS, PROTO):
     _d.mkdir(parents=True, exist_ok=True)
 
-RUN_DIR = Path("/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I")
+RUN_DIR = Path(__file__).resolve().parents[4]
 DS_DIR = RUN_DIR / "3_invention_loop/iter_1/gen_art/gen_art_dataset_1"
 DS_FULL = DS_DIR / "full_data_out.json"
 DS_OUT = DS_DIR / "outputs"

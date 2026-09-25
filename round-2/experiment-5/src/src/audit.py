@@ -171,7 +171,7 @@ def main() -> None:
     dev_ids = {(r["set"], r["item_id"]) for r in man.values() if r["split"] == "DEV"}
     fin_ids = {(r["set"], r["item_id"]) for r in man.values() if r["split"] == "FINAL"}
     check("dev_final_disjoint", not (dev_ids & fin_ids))
-    sm = json.loads(Path("/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_1/gen_art/"
+    sm = json.loads(Path("../../../../round-1/"
                          "gen_art_dataset_1/outputs/split_manifest.json").read_text())
     dev_pairs = sorted({r["pair_id"] for r in man.values() if r["set"] == "refuseu_nat" and r["split"] == "DEV"})
     check("refuseu_dev_equals_split_manifest", dev_pairs == sorted(sm["refuseu_eval"]["DEV"]["ids"]))

@@ -27,9 +27,9 @@ FIG = ROOT / "figures"
 for _d in (DATA, OUT, LOGS, FIG):
     _d.mkdir(exist_ok=True)
 
-RUN_DIR = Path("/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I")
+RUN_DIR = Path(__file__).resolve().parents[5]
 STAGE0B = RUN_DIR / "iter_3/gen_hypo/claude_agent/stage0b/stage0b_summary.json"
-DATASET_ART_GLOB = str(RUN_DIR / "3_invention_loop/iter_1/gen_art") + "/*dataset*/**/*overlap*.json"
+DATASET_ART_GLOB = str(RUN_DIR / "round-1") + "/*dataset*/**/*overlap*.json"
 
 SEED = 20260923
 SEED_RESERVED = 20260924  # never used

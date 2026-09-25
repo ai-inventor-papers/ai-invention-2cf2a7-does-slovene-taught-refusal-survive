@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Resume the FINAL API judge whenever the relay answers; stop when all sweeps are complete or at 02:45 UTC (deviation D5).
-cd /ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_2/gen_art/gen_art_experiment_5/src
+cd ../src
 while [ "$(date -u +%H%M)" \< "0245" ] || [ "$(date -u +%H)" \> "12" ]; do
   code=$(curl -s -m 30 -o /dev/null -w "%{http_code}" "$OPENROUTER_BASE_URL/chat/completions" -H "Authorization: Bearer $OPENROUTER_API_KEY" -H "Content-Type: application/json" -d '{"model":"google/gemini-2.5-flash","messages":[{"role":"user","content":"OK"}],"max_tokens":3,"reasoning":{"max_tokens":0}}')
   echo "$(date -u +%T) probe $code" >> ../logs/judge_retry.log
