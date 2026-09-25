@@ -1,0 +1,7 @@
+22:15:19|INFO   |TTJ: steps {'gemma_it': [0.0, 0.7695, 1.0346, 1.3129, 1.5603, 2.0], 'gams3_it': [0.0, 0.4196, 0.5282, 0.7663, 0.8862, 1.5375]}; 3600 SL rows selected, 3600 to translate; ASR ids 7200
+/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_4/gen_art/gen_art_experiment_15/.venv/lib/python3.12/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+22:18:25|INFO   |TTJ 1000/3600 in 64s
+22:19:37|INFO   |TTJ 2000/3600 in 136s
+22:20:45|INFO   |TTJ 3000/3600 in 203s
+22:21:24|INFO   |TTJ 3600/3600 in 242s

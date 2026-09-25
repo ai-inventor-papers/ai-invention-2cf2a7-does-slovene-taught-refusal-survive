@@ -1,0 +1,8 @@
+{
+ "arch": "Gemma3ForCausalLM",
+ "load_s": 57.6,
+ "vram_gb": 7.57,
+ "native_triton": "deregistered",
+ "torch": "2.14.0+cu130",
+ "revision": "1d0b27af5748784482600d24779409e7e1dc9adc"
+}

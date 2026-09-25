@@ -1,0 +1,120 @@
+{
+ "edits": {
+  "E_exp9|gemma_it": {
+   "path": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_3/gen_art/gen_art_experiment_9/selected/gemma_it/adapter",
+   "exists": true,
+   "sha256": "9714d8a4b8dc6d52"
+  },
+  "E_exp9|gams3_it": {
+   "path": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_3/gen_art/gen_art_experiment_9/selected/gams3_it/adapter",
+   "exists": true,
+   "sha256": "4df160b152ade266"
+  },
+  "E_iter1|gemma_it": {
+   "path": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_1/gen_art/gen_art_experiment_4/results/gemma_it/selected_adapter",
+   "exists": true,
+   "sha256": "84671c8ec5c134cb"
+  },
+  "E_iter1|gams3_it": {
+   "path": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_1/gen_art/gen_art_experiment_4/results/gams3_it/selected_adapter",
+   "exists": true,
+   "sha256": "514b29020cb80eed"
+  },
+  "rand_1|gemma_it": {
+   "path": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_3/gen_art/gen_art_experiment_9/adapters/gemma_it/rand_1",
+   "exists": true,
+   "sha256": "096a361b0142a6ea"
+  },
+  "rand_1|gams3_it": {
+   "path": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_3/gen_art/gen_art_experiment_9/adapters/gams3_it/rand_1",
+   "exists": true,
+   "sha256": "bcffd8cb6232c431"
+  },
+  "rand_2|gemma_it": {
+   "path": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_3/gen_art/gen_art_experiment_9/adapters/gemma_it/rand_2",
+   "exists": true,
+   "sha256": "d09e06a59dab7848"
+  },
+  "rand_2|gams3_it": {
+   "path": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_3/gen_art/gen_art_experiment_9/adapters/gams3_it/rand_2",
+   "exists": true,
+   "sha256": "f4d27ccd1a0d53ec"
+  },
+  "rand_3|gemma_it": {
+   "path": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_3/gen_art/gen_art_experiment_9/adapters/gemma_it/rand_3",
+   "exists": true,
+   "sha256": "23041d0516e0cca5"
+  },
+  "rand_3|gams3_it": {
+   "path": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_3/gen_art/gen_art_experiment_9/adapters/gams3_it/rand_3",
+   "exists": true,
+   "sha256": "01d164fff6d831b0"
+  },
+  "rand_4|gemma_it": {
+   "path": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_3/gen_art/gen_art_experiment_9/adapters/gemma_it/rand_4",
+   "exists": true,
+   "sha256": "5ec55ddb4c329eed"
+  },
+  "rand_4|gams3_it": {
+   "path": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_3/gen_art/gen_art_experiment_9/adapters/gams3_it/rand_4",
+   "exists": true,
+   "sha256": "751410e2f22daa34"
+  },
+  "rand_5|gemma_it": {
+   "path": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_3/gen_art/gen_art_experiment_9/adapters/gemma_it/rand_5",
+   "exists": true,
+   "sha256": "c1f70ea015606be1"
+  },
+  "rand_5|gams3_it": {
+   "path": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_3/gen_art/gen_art_experiment_9/adapters/gams3_it/rand_5",
+   "exists": true,
+   "sha256": "b7f8ed848bca9d62"
+  },
+  "lam1_check|gemma_it": {
+   "path": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_3/gen_art/gen_art_experiment_9/adapters/gemma_it/lambda_1.00",
+   "exists": true,
+   "sha256": "1b691a05143898cf"
+  },
+  "lam1_check|gams3_it": {
+   "path": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_3/gen_art/gen_art_experiment_9/adapters/gams3_it/lambda_1.00",
+   "exists": true,
+   "sha256": "a0326dbf77a5dd28"
+  }
+ },
+ "inputs": {
+  "exp9_judge_parts": {
+   "path": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_3/gen_art/gen_art_experiment_9/judge_model/mdeberta_gemini_distill/model_parts/manifest.json",
+   "exists": true
+  },
+  "exp9_probe_P300": {
+   "path": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_3/gen_art/gen_art_experiment_9/data/probe_P300.jsonl",
+   "exists": true
+  },
+  "exp9_gate_harmless40": {
+   "path": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_3/gen_art/gen_art_experiment_9/data/gate_harmless40.jsonl",
+   "exists": true
+  }
+ },
+ "hardware": {
+  "cuda": true,
+  "gpu": "NVIDIA L4",
+  "vram_gb": 23.7,
+  "has_c_compiler": false,
+  "hf_cache_free_gb": 626655.4
+ },
+ "versions": {
+  "torch": "2.14.0+cu130",
+  "transformers": "4.57.6",
+  "bitsandbytes": "0.50.2"
+ },
+ "models": {
+  "gemma_it": {
+   "repo": "google/gemma-3-12b-it",
+   "revision": "96b6f1eccf38110c56df3a15bffe176da04bfd80"
+  },
+  "gams3_it": {
+   "repo": "cjvt/GaMS3-12B-Instruct",
+   "revision": "1d0b27af5748784482600d24779409e7e1dc9adc"
+  }
+ }
+}
