@@ -1,0 +1,699 @@
+{
+ "gemma|sl|edited|in=sl": {
+  "N": 400,
+  "n": 30
+ },
+ "gemma|sl|edited|in=en": {
+  "N": 400,
+  "n": 30
+ },
+ "gemma|en|edited": {
+  "N": 1200,
+  "n": 30
+ },
+ "gemma|hu|edited": {
+  "N": 1200,
+  "n": 30
+ },
+ "lambda0": {
+  "N": 1800,
+  "n": 15
+ },
+ "_rows": {
+  "g000": {
+   "stratum": "gemma|sl|edited|in=en",
+   "N": 400,
+   "n": 30
+  },
+  "g001": {
+   "stratum": "gemma|sl|edited|in=sl",
+   "N": 400,
+   "n": 30
+  },
+  "g002": {
+   "stratum": "gemma|sl|edited|in=sl",
+   "N": 400,
+   "n": 30
+  },
+  "g003": {
+   "stratum": "gemma|sl|edited|in=sl",
+   "N": 400,
+   "n": 30
+  },
+  "g004": {
+   "stratum": "gemma|hu|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "g005": {
+   "stratum": "gemma|sl|edited|in=sl",
+   "N": 400,
+   "n": 30
+  },
+  "g006": {
+   "stratum": "gemma|sl|edited|in=en",
+   "N": 400,
+   "n": 30
+  },
+  "g007": {
+   "stratum": "gemma|hu|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "g008": {
+   "stratum": "gemma|sl|edited|in=en",
+   "N": 400,
+   "n": 30
+  },
+  "g009": {
+   "stratum": "gemma|sl|edited|in=en",
+   "N": 400,
+   "n": 30
+  },
+  "g010": {
+   "stratum": "gemma|hu|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "g011": {
+   "stratum": "gemma|sl|edited|in=en",
+   "N": 400,
+   "n": 30
+  },
+  "g012": {
+   "stratum": "lambda0",
+   "N": 1800,
+   "n": 15
+  },
+  "g013": {
+   "stratum": "gemma|sl|edited|in=sl",
+   "N": 400,
+   "n": 30
+  },
+  "g014": {
+   "stratum": "gemma|hu|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "g015": {
+   "stratum": "gemma|sl|edited|in=sl",
+   "N": 400,
+   "n": 30
+  },
+  "g016": {
+   "stratum": "gemma|en|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "g017": {
+   "stratum": "gemma|sl|edited|in=en",
+   "N": 400,
+   "n": 30
+  },
+  "g018": {
+   "stratum": "gemma|sl|edited|in=en",
+   "N": 400,
+   "n": 30
+  },
+  "g019": {
+   "stratum": "gemma|sl|edited|in=en",
+   "N": 400,
+   "n": 30
+  },
+  "g020": {
+   "stratum": "gemma|hu|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "g021": {
+   "stratum": "lambda0",
+   "N": 1800,
+   "n": 15
+  },
+  "g022": {
+   "stratum": "gemma|sl|edited|in=sl",
+   "N": 400,
+   "n": 30
+  },
+  "g023": {
+   "stratum": "gemma|en|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "g024": {
+   "stratum": "gemma|hu|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "g025": {
+   "stratum": "gemma|sl|edited|in=en",
+   "N": 400,
+   "n": 30
+  },
+  "g026": {
+   "stratum": "gemma|hu|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "g027": {
+   "stratum": "gemma|sl|edited|in=sl",
+   "N": 400,
+   "n": 30
+  },
+  "g028": {
+   "stratum": "gemma|en|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "g029": {
+   "stratum": "gemma|en|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "g030": {
+   "stratum": "gemma|en|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "g031": {
+   "stratum": "gemma|hu|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "g032": {
+   "stratum": "gemma|hu|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "g033": {
+   "stratum": "gemma|en|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "g034": {
+   "stratum": "lambda0",
+   "N": 1800,
+   "n": 15
+  },
+  "g035": {
+   "stratum": "gemma|hu|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "g036": {
+   "stratum": "gemma|en|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "g037": {
+   "stratum": "gemma|sl|edited|in=sl",
+   "N": 400,
+   "n": 30
+  },
+  "g038": {
+   "stratum": "gemma|sl|edited|in=en",
+   "N": 400,
+   "n": 30
+  },
+  "g039": {
+   "stratum": "gemma|sl|edited|in=en",
+   "N": 400,
+   "n": 30
+  },
+  "g040": {
+   "stratum": "gemma|sl|edited|in=sl",
+   "N": 400,
+   "n": 30
+  },
+  "g041": {
+   "stratum": "lambda0",
+   "N": 1800,
+   "n": 15
+  },
+  "g042": {
+   "stratum": "gemma|sl|edited|in=sl",
+   "N": 400,
+   "n": 30
+  },
+  "g043": {
+   "stratum": "gemma|en|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "g044": {
+   "stratum": "lambda0",
+   "N": 1800,
+   "n": 15
+  },
+  "g045": {
+   "stratum": "gemma|hu|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "g046": {
+   "stratum": "gemma|sl|edited|in=sl",
+   "N": 400,
+   "n": 30
+  },
+  "g047": {
+   "stratum": "gemma|sl|edited|in=en",
+   "N": 400,
+   "n": 30
+  },
+  "g048": {
+   "stratum": "gemma|sl|edited|in=sl",
+   "N": 400,
+   "n": 30
+  },
+  "g049": {
+   "stratum": "gemma|en|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "g050": {
+   "stratum": "gemma|sl|edited|in=en",
+   "N": 400,
+   "n": 30
+  },
+  "g051": {
+   "stratum": "gemma|sl|edited|in=sl",
+   "N": 400,
+   "n": 30
+  },
+  "g052": {
+   "stratum": "gemma|en|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "g053": {
+   "stratum": "gemma|sl|edited|in=sl",
+   "N": 400,
+   "n": 30
+  },
+  "g054": {
+   "stratum": "gemma|sl|edited|in=en",
+   "N": 400,
+   "n": 30
+  },
+  "g055": {
+   "stratum": "gemma|en|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "g056": {
+   "stratum": "gemma|sl|edited|in=en",
+   "N": 400,
+   "n": 30
+  },
+  "g057": {
+   "stratum": "gemma|en|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "g058": {
+   "stratum": "gemma|hu|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "g059": {
+   "stratum": "gemma|sl|edited|in=en",
+   "N": 400,
+   "n": 30
+  },
+  "g060": {
+   "stratum": "gemma|sl|edited|in=en",
+   "N": 400,
+   "n": 30
+  },
+  "g061": {
+   "stratum": "gemma|sl|edited|in=sl",
+   "N": 400,
+   "n": 30
+  },
+  "g062": {
+   "stratum": "gemma|sl|edited|in=en",
+   "N": 400,
+   "n": 30
+  },
+  "g063": {
+   "stratum": "gemma|hu|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "g064": {
+   "stratum": "lambda0",
+   "N": 1800,
+   "n": 15
+  },
+  "g065": {
+   "stratum": "gemma|sl|edited|in=en",
+   "N": 400,
+   "n": 30
+  },
+  "g066": {
+   "stratum": "gemma|en|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "g067": {
+   "stratum": "gemma|sl|edited|in=sl",
+   "N": 400,
+   "n": 30
+  },
+  "g068": {
+   "stratum": "gemma|sl|edited|in=en",
+   "N": 400,
+   "n": 30
+  },
+  "g069": {
+   "stratum": "gemma|en|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "g070": {
+   "stratum": "lambda0",
+   "N": 1800,
+   "n": 15
+  },
+  "g071": {
+   "stratum": "gemma|hu|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "g072": {
+   "stratum": "lambda0",
+   "N": 1800,
+   "n": 15
+  },
+  "g073": {
+   "stratum": "gemma|hu|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "g074": {
+   "stratum": "lambda0",
+   "N": 1800,
+   "n": 15
+  },
+  "g075": {
+   "stratum": "gemma|hu|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "g076": {
+   "stratum": "gemma|en|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "g077": {
+   "stratum": "lambda0",
+   "N": 1800,
+   "n": 15
+  },
+  "g078": {
+   "stratum": "gemma|hu|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "g079": {
+   "stratum": "lambda0",
+   "N": 1800,
+   "n": 15
+  },
+  "g080": {
+   "stratum": "gemma|sl|edited|in=sl",
+   "N": 400,
+   "n": 30
+  },
+  "g081": {
+   "stratum": "gemma|sl|edited|in=sl",
+   "N": 400,
+   "n": 30
+  },
+  "g082": {
+   "stratum": "gemma|hu|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "g083": {
+   "stratum": "gemma|hu|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "g084": {
+   "stratum": "gemma|hu|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "g085": {
+   "stratum": "gemma|hu|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "g086": {
+   "stratum": "lambda0",
+   "N": 1800,
+   "n": 15
+  },
+  "g087": {
+   "stratum": "gemma|sl|edited|in=sl",
+   "N": 400,
+   "n": 30
+  },
+  "g088": {
+   "stratum": "gemma|hu|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "g089": {
+   "stratum": "gemma|en|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "g090": {
+   "stratum": "gemma|sl|edited|in=sl",
+   "N": 400,
+   "n": 30
+  },
+  "g091": {
+   "stratum": "gemma|sl|edited|in=en",
+   "N": 400,
+   "n": 30
+  },
+  "g092": {
+   "stratum": "gemma|en|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "g093": {
+   "stratum": "gemma|sl|edited|in=sl",
+   "N": 400,
+   "n": 30
+  },
+  "g094": {
+   "stratum": "gemma|en|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "g095": {
+   "stratum": "gemma|en|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "g096": {
+   "stratum": "gemma|en|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "g097": {
+   "stratum": "gemma|en|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "g098": {
+   "stratum": "gemma|sl|edited|in=sl",
+   "N": 400,
+   "n": 30
+  },
+  "g099": {
+   "stratum": "gemma|sl|edited|in=en",
+   "N": 400,
+   "n": 30
+  },
+  "g100": {
+   "stratum": "gemma|sl|edited|in=sl",
+   "N": 400,
+   "n": 30
+  },
+  "g101": {
+   "stratum": "gemma|sl|edited|in=en",
+   "N": 400,
+   "n": 30
+  },
+  "g102": {
+   "stratum": "gemma|hu|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "g103": {
+   "stratum": "gemma|sl|edited|in=en",
+   "N": 400,
+   "n": 30
+  },
+  "g104": {
+   "stratum": "gemma|hu|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "g105": {
+   "stratum": "gemma|en|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "g106": {
+   "stratum": "gemma|en|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "g107": {
+   "stratum": "lambda0",
+   "N": 1800,
+   "n": 15
+  },
+  "g108": {
+   "stratum": "gemma|hu|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "g109": {
+   "stratum": "gemma|sl|edited|in=en",
+   "N": 400,
+   "n": 30
+  },
+  "g110": {
+   "stratum": "gemma|sl|edited|in=sl",
+   "N": 400,
+   "n": 30
+  },
+  "g111": {
+   "stratum": "gemma|sl|edited|in=en",
+   "N": 400,
+   "n": 30
+  },
+  "g112": {
+   "stratum": "gemma|sl|edited|in=sl",
+   "N": 400,
+   "n": 30
+  },
+  "g113": {
+   "stratum": "gemma|sl|edited|in=en",
+   "N": 400,
+   "n": 30
+  },
+  "g114": {
+   "stratum": "gemma|sl|edited|in=sl",
+   "N": 400,
+   "n": 30
+  },
+  "g115": {
+   "stratum": "gemma|sl|edited|in=sl",
+   "N": 400,
+   "n": 30
+  },
+  "g116": {
+   "stratum": "gemma|hu|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "g117": {
+   "stratum": "lambda0",
+   "N": 1800,
+   "n": 15
+  },
+  "g118": {
+   "stratum": "gemma|en|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "g119": {
+   "stratum": "gemma|hu|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "g120": {
+   "stratum": "gemma|en|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "g121": {
+   "stratum": "gemma|en|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "g122": {
+   "stratum": "gemma|en|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "g123": {
+   "stratum": "gemma|hu|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "g124": {
+   "stratum": "gemma|en|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "g125": {
+   "stratum": "gemma|sl|edited|in=en",
+   "N": 400,
+   "n": 30
+  },
+  "g126": {
+   "stratum": "gemma|en|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "g127": {
+   "stratum": "gemma|sl|edited|in=en",
+   "N": 400,
+   "n": 30
+  },
+  "g128": {
+   "stratum": "gemma|sl|edited|in=en",
+   "N": 400,
+   "n": 30
+  },
+  "g129": {
+   "stratum": "gemma|sl|edited|in=sl",
+   "N": 400,
+   "n": 30
+  },
+  "g130": {
+   "stratum": "gemma|en|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "g131": {
+   "stratum": "gemma|hu|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "g132": {
+   "stratum": "gemma|sl|edited|in=sl",
+   "N": 400,
+   "n": 30
+  },
+  "g133": {
+   "stratum": "gemma|hu|edited",
+   "N": 1200,
+   "n": 30
+  },
+  "g134": {
+   "stratum": "lambda0",
+   "N": 1800,
+   "n": 15
+  }
+ }
+}
