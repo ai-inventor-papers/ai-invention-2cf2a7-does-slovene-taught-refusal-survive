@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-cd /ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_1/gen_art/gen_art_experiment_3
+cd ..
 P=$(cat logs/gpu_gams_construct.pid)
 while kill -0 $P 2>/dev/null; do sleep 10; done
 [ -f results/mc_gams.json ] || { echo "gams construct failed"; exit 1; }

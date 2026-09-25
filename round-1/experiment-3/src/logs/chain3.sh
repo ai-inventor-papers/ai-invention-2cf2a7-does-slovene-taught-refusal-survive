@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-cd /ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_1/gen_art/gen_art_experiment_3/src
+cd ../src
 export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
 P=$(cat ../logs/chain2.pid); while kill -0 $P 2>/dev/null; do sleep 10; done
 grep -q CHAIN_DONE ../logs/chain2.out || { echo "chain2 failed"; exit 1; }

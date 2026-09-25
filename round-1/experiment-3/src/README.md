@@ -206,4 +206,4 @@ Placebo (`results/placebo.json`, 60 model-label shuffles):
 - **No causal claim about a persona gate is supported.** The Qwen-substitution observation is exploratory.
 
 Figures: `figures/refusal_rates.png`, `figures/forest_G_TD.png`, `figures/band_sweep_s.png`, `figures/identity_mc.png`.
-Kept artifact paths (workspace `/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_1/gen_art/gen_art_experiment_3`): `results/directions/*.npz`, `results/items/`, `results/analysis.json`, `method_out.json`.
+Kept artifact paths (workspace `.`): `results/directions/*.npz`, `results/items/`, `results/analysis.json`, `method_out.json`.
