@@ -20,7 +20,7 @@ including the mid-run deviations (a shared-budget exhaustion and a pod restart) 
 cp -r <this folder> ~/exp8 && cd ~/exp8
 ```
 All paths below are relative to the artifact root. Read-only iter-1 dependencies are referenced by absolute path
-inside the run volume (`/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_1/...`); `src_iter1_ref/`
+inside the run volume (`../../../round-1/...`); `src_iter1_ref/`
 is a copy of the iter-1 exp4 code this artifact adapts.
 
 ## 2. System, Python, and libraries
