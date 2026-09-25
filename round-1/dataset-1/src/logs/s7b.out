@@ -1,0 +1,7 @@
+15:39:57|INFO   |gpt_dose_hazard_harmonise.jsonl: 0 cached, 172 to call (spent so far $9.006)
+15:40:01|INFO   |gpt_dose_hazard_harmonise.jsonl: 0/172 errors=0 spent=$9.008 step=0.002
+15:40:15|INFO   |gpt_dose_hazard_harmonise.jsonl: 50/172 errors=0 spent=$9.082 step=0.076
+15:40:30|INFO   |gpt_dose_hazard_harmonise.jsonl: 100/172 errors=0 spent=$9.165 step=0.158
+15:40:49|INFO   |gpt_dose_hazard_harmonise.jsonl: 150/172 errors=0 spent=$9.250 step=0.244
+15:40:55|INFO   |gpt_dose_hazard_harmonise.jsonl: finished, 172 ok, errors=0, spent=$9.286
+15:40:55|INFO   |harmonised hazard for 3344/3433 rows; spent $9.286

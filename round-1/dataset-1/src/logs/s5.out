@@ -1,0 +1,75 @@
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  30%|██▉       | 59/199 [00:00<00:00, 550.49it/s]Loading weights:  58%|█████▊    | 115/199 [00:00<00:00, 456.82it/s]Loading weights:  90%|█████████ | 180/199 [00:00<00:00, 521.73it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 543.00it/s]
+14:55:38|INFO   |{
+ "thresholds": {
+  "T_if_cos_ge (p05 of MT reference)": 0.8721,
+  "S_if_cos_gt (p95 of shuffled eval)": 0.544
+ },
+ "eval_grade_counts": {
+  "T": 0,
+  "S": 792,
+  "U": 608
+ },
+ "verdict": {
+  "pair_level_labels_valid": true,
+  "items_are_translations": false,
+  "text": "Gold EN/SL position pairs share the gold category by construction (100%), so a pair-level category is defined; but with T-share = 0.0% the same-row_id EN/SL eval items are mostly NOT translations (per-language generated variants), correcting the hypothesis wording 'EN and SL are DeepL translations' . Category labels are therefore PRIMARY per language item; within-model SL-EN contrasts are item-matched only on grade-T pairs or RefusEU-X. The cross-model DiD needs no translation matching (both models see the identical EN and SL sets)."
+ }
+}
+14:55:38|INFO   |{
+"eval_same_row_id": {
+"n": 1400,
+"mean": 0.5528,
+"p05": 0.3822,
+"p50": 0.5596,
+"p95": 0.7003
+},
+"eval_shuffled": {
+"n": 1400,
+"mean": 0.3943,
+"p05": 0.2456,
+"p50": 0.394,
+"p95": 0.544
+},
+"gold_position_pairs": {
+"n": 2889,
+"mean": 0.5474,
+"p05": 0.389,
+"p50": 0.55,
+"p95": 0.6989
+},
+"gold_shuffled": {
+"n": 2889,
+"mean": 0.3838,
+"p05": 0.2326,
+"p50": 0.3838,
+"p95": 0.5287
+},
+"gold_shuffled_same_category_only": {
+"n": 314,
+"mean": 0.4438,
+"p05": 0.3046,
+"p50": 0.4451,
+"p95": 0.5772
+},
+"gold_shuffled_diff_category_only": {
+"n": 2575,
+"mean": 0.3765,
+"p05": 0.2292,
+"p50": 0.3777,
+"p95": 0.5211
+},
+"mt_reference_50_gold": {
+"n": 50,
+"mean": 0.9142,
+"p05": 0.8721,
+"p50": 0.9169,
+"p95": 0.9484
+},
+"mt_reference_refuseu_x_1400": {
+"n": 1400,
+"mean": 0.9141,
+"p05": 0.8574,
+"p50": 0.9203,
+"p95": 0.9489
+}
+}
