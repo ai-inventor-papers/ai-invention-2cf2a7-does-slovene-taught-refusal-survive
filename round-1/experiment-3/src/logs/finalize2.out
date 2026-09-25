@@ -1,0 +1,71 @@
+/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_1/gen_art/gen_art_experiment_3/.venv/lib/python3.12/site-packages/transformers/utils/hub.py:111: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+18:37:39|INFO   |12400 judge jobs (11446 unique); upper-bound estimate $1.83 if none cached; spent $1.445
+18:37:39|INFO   |[judge] 11446 jobs, 10190 cached, 1256 to call; spent so far $1.445
+18:37:40|ERROR  |OpenRouter daily/credit limit: HTTP 403 {"error":{"message":"Key limit exceeded (daily limit). Manage it using https://openrouter.ai/workspaces/default/keys/bf0f6305c9c10eb7809fb5f8494e9f057476ce3c46f8afdab05b245ca3b3bb90","code":403}}
+18:37:40|ERROR  |OpenRouter daily/credit limit: HTTP 403 {"error":{"message":"Key limit exceeded (daily limit). Manage it using https://openrouter.ai/workspaces/default/keys/bf0f6305c9c10eb7809fb5f8494e9f057476ce3c46f8afdab05b245ca3b3bb90","code":403}}
+18:37:40|ERROR  |OpenRouter daily/credit limit: HTTP 403 {"error":{"message":"Key limit exceeded (daily limit). Manage it using https://openrouter.ai/workspaces/default/keys/bf0f6305c9c10eb7809fb5f8494e9f057476ce3c46f8afdab05b245ca3b3bb90","code":403}}
+18:37:40|ERROR  |OpenRouter daily/credit limit: HTTP 403 {"error":{"message":"Key limit exceeded (daily limit). Manage it using https://openrouter.ai/workspaces/default/keys/bf0f6305c9c10eb7809fb5f8494e9f057476ce3c46f8afdab05b245ca3b3bb90","code":403}}
+18:37:40|ERROR  |OpenRouter daily/credit limit: HTTP 403 {"error":{"message":"Key limit exceeded (daily limit). Manage it using https://openrouter.ai/workspaces/default/keys/bf0f6305c9c10eb7809fb5f8494e9f057476ce3c46f8afdab05b245ca3b3bb90","code":403}}
+18:37:40|ERROR  |OpenRouter daily/credit limit: HTTP 403 {"error":{"message":"Key limit exceeded (daily limit). Manage it using https://openrouter.ai/workspaces/default/keys/bf0f6305c9c10eb7809fb5f8494e9f057476ce3c46f8afdab05b245ca3b3bb90","code":403}}
+18:37:40|ERROR  |OpenRouter daily/credit limit: HTTP 403 {"error":{"message":"Key limit exceeded (daily limit). Manage it using https://openrouter.ai/workspaces/default/keys/bf0f6305c9c10eb7809fb5f8494e9f057476ce3c46f8afdab05b245ca3b3bb90","code":403}}
+18:37:40|ERROR  |OpenRouter daily/credit limit: HTTP 403 {"error":{"message":"Key limit exceeded (daily limit). Manage it using https://openrouter.ai/workspaces/default/keys/bf0f6305c9c10eb7809fb5f8494e9f057476ce3c46f8afdab05b245ca3b3bb90","code":403}}
+18:37:40|ERROR  |OpenRouter daily/credit limit: HTTP 403 {"error":{"message":"Key limit exceeded (daily limit). Manage it using https://openrouter.ai/workspaces/default/keys/bf0f6305c9c10eb7809fb5f8494e9f057476ce3c46f8afdab05b245ca3b3bb90","code":403}}
+18:37:40|ERROR  |OpenRouter daily/credit limit: HTTP 403 {"error":{"message":"Key limit exceeded (daily limit). Manage it using https://openrouter.ai/workspaces/default/keys/bf0f6305c9c10eb7809fb5f8494e9f057476ce3c46f8afdab05b245ca3b3bb90","code":403}}
+18:37:40|ERROR  |OpenRouter daily/credit limit: HTTP 403 {"error":{"message":"Key limit exceeded (daily limit). Manage it using https://openrouter.ai/workspaces/default/keys/bf0f6305c9c10eb7809fb5f8494e9f057476ce3c46f8afdab05b245ca3b3bb90","code":403}}
+18:37:40|ERROR  |OpenRouter daily/credit limit: HTTP 403 {"error":{"message":"Key limit exceeded (daily limit). Manage it using https://openrouter.ai/workspaces/default/keys/bf0f6305c9c10eb7809fb5f8494e9f057476ce3c46f8afdab05b245ca3b3bb90","code":403}}
+18:37:40|ERROR  |OpenRouter daily/credit limit: HTTP 403 {"error":{"message":"Key limit exceeded (daily limit). Manage it using https://openrouter.ai/workspaces/default/keys/bf0f6305c9c10eb7809fb5f8494e9f057476ce3c46f8afdab05b245ca3b3bb90","code":403}}
+18:37:40|ERROR  |OpenRouter daily/credit limit: HTTP 403 {"error":{"message":"Key limit exceeded (daily limit). Manage it using https://openrouter.ai/workspaces/default/keys/bf0f6305c9c10eb7809fb5f8494e9f057476ce3c46f8afdab05b245ca3b3bb90","code":403}}
+18:37:40|ERROR  |OpenRouter daily/credit limit: HTTP 403 {"error":{"message":"Key limit exceeded (daily limit). Manage it using https://openrouter.ai/workspaces/default/keys/bf0f6305c9c10eb7809fb5f8494e9f057476ce3c46f8afdab05b245ca3b3bb90","code":403}}
+18:37:40|ERROR  |OpenRouter daily/credit limit: HTTP 403 {"error":{"message":"Key limit exceeded (daily limit). Manage it using https://openrouter.ai/workspaces/default/keys/bf0f6305c9c10eb7809fb5f8494e9f057476ce3c46f8afdab05b245ca3b3bb90","code":403}}
+18:37:40|ERROR  |[judge] stopped early; 1256 calls missing
+18:37:40|INFO   |[judge] done; total spent $1.445
+18:37:40|INFO   |retrying 1289 failed/unparsed judge calls with max_tokens=300
+18:37:40|INFO   |[judge_retry] 1289 jobs, 33 cached, 1256 to call; spent so far $1.445
+18:37:40|ERROR  |OpenRouter daily/credit limit: HTTP 403 {"error":{"message":"Key limit exceeded (daily limit). Manage it using https://openrouter.ai/workspaces/default/keys/bf0f6305c9c10eb7809fb5f8494e9f057476ce3c46f8afdab05b245ca3b3bb90","code":403}}
+18:37:40|ERROR  |OpenRouter daily/credit limit: HTTP 403 {"error":{"message":"Key limit exceeded (daily limit). Manage it using https://openrouter.ai/workspaces/default/keys/bf0f6305c9c10eb7809fb5f8494e9f057476ce3c46f8afdab05b245ca3b3bb90","code":403}}
+18:37:40|ERROR  |OpenRouter daily/credit limit: HTTP 403 {"error":{"message":"Key limit exceeded (daily limit). Manage it using https://openrouter.ai/workspaces/default/keys/bf0f6305c9c10eb7809fb5f8494e9f057476ce3c46f8afdab05b245ca3b3bb90","code":403}}
+18:37:40|ERROR  |OpenRouter daily/credit limit: HTTP 403 {"error":{"message":"Key limit exceeded (daily limit). Manage it using https://openrouter.ai/workspaces/default/keys/bf0f6305c9c10eb7809fb5f8494e9f057476ce3c46f8afdab05b245ca3b3bb90","code":403}}
+18:37:40|ERROR  |OpenRouter daily/credit limit: HTTP 403 {"error":{"message":"Key limit exceeded (daily limit). Manage it using https://openrouter.ai/workspaces/default/keys/bf0f6305c9c10eb7809fb5f8494e9f057476ce3c46f8afdab05b245ca3b3bb90","code":403}}
+18:37:40|ERROR  |OpenRouter daily/credit limit: HTTP 403 {"error":{"message":"Key limit exceeded (daily limit). Manage it using https://openrouter.ai/workspaces/default/keys/bf0f6305c9c10eb7809fb5f8494e9f057476ce3c46f8afdab05b245ca3b3bb90","code":403}}
+18:37:40|ERROR  |OpenRouter daily/credit limit: HTTP 403 {"error":{"message":"Key limit exceeded (daily limit). Manage it using https://openrouter.ai/workspaces/default/keys/bf0f6305c9c10eb7809fb5f8494e9f057476ce3c46f8afdab05b245ca3b3bb90","code":403}}
+18:37:40|ERROR  |OpenRouter daily/credit limit: HTTP 403 {"error":{"message":"Key limit exceeded (daily limit). Manage it using https://openrouter.ai/workspaces/default/keys/bf0f6305c9c10eb7809fb5f8494e9f057476ce3c46f8afdab05b245ca3b3bb90","code":403}}
+18:37:40|ERROR  |[judge_retry] stopped early; 1256 calls missing
+18:37:40|INFO   |[judge_retry] done; total spent $1.445
+18:37:40|INFO   |1282 still unlabelled -> fallback judge openai/gpt-4.1-mini
+18:37:40|INFO   |[judge_fallback] 1282 jobs, 49 cached, 1233 to call; spent so far $1.445
+18:37:41|ERROR  |OpenRouter daily/credit limit: HTTP 403 {"error":{"message":"Key limit exceeded (daily limit). Manage it using https://openrouter.ai/workspaces/default/keys/bf0f6305c9c10eb7809fb5f8494e9f057476ce3c46f8afdab05b245ca3b3bb90","code":403}}
+18:37:41|ERROR  |OpenRouter daily/credit limit: HTTP 403 {"error":{"message":"Key limit exceeded (daily limit). Manage it using https://openrouter.ai/workspaces/default/keys/bf0f6305c9c10eb7809fb5f8494e9f057476ce3c46f8afdab05b245ca3b3bb90","code":403}}
+18:37:41|ERROR  |OpenRouter daily/credit limit: HTTP 403 {"error":{"message":"Key limit exceeded (daily limit). Manage it using https://openrouter.ai/workspaces/default/keys/bf0f6305c9c10eb7809fb5f8494e9f057476ce3c46f8afdab05b245ca3b3bb90","code":403}}
+18:37:41|ERROR  |OpenRouter daily/credit limit: HTTP 403 {"error":{"message":"Key limit exceeded (daily limit). Manage it using https://openrouter.ai/workspaces/default/keys/bf0f6305c9c10eb7809fb5f8494e9f057476ce3c46f8afdab05b245ca3b3bb90","code":403}}
+18:37:41|ERROR  |OpenRouter daily/credit limit: HTTP 403 {"error":{"message":"Key limit exceeded (daily limit). Manage it using https://openrouter.ai/workspaces/default/keys/bf0f6305c9c10eb7809fb5f8494e9f057476ce3c46f8afdab05b245ca3b3bb90","code":403}}
+18:37:41|ERROR  |OpenRouter daily/credit limit: HTTP 403 {"error":{"message":"Key limit exceeded (daily limit). Manage it using https://openrouter.ai/workspaces/default/keys/bf0f6305c9c10eb7809fb5f8494e9f057476ce3c46f8afdab05b245ca3b3bb90","code":403}}
+18:37:41|ERROR  |OpenRouter daily/credit limit: HTTP 403 {"error":{"message":"Key limit exceeded (daily limit). Manage it using https://openrouter.ai/workspaces/default/keys/bf0f6305c9c10eb7809fb5f8494e9f057476ce3c46f8afdab05b245ca3b3bb90","code":403}}
+18:37:41|ERROR  |OpenRouter daily/credit limit: HTTP 403 {"error":{"message":"Key limit exceeded (daily limit). Manage it using https://openrouter.ai/workspaces/default/keys/bf0f6305c9c10eb7809fb5f8494e9f057476ce3c46f8afdab05b245ca3b3bb90","code":403}}
+18:37:41|ERROR  |[judge_fallback] stopped early; 1233 calls missing
+18:37:41|INFO   |[judge_fallback] done; total spent $1.445
+18:37:41|INFO   |1233 still unlabelled -> fallback judge mistralai/mistral-small-3.2-24b-instruct
+18:37:41|INFO   |[judge_fallback] 1233 jobs, 0 cached, 1233 to call; spent so far $1.445
+18:37:41|ERROR  |OpenRouter daily/credit limit: HTTP 403 {"error":{"message":"Key limit exceeded (daily limit). Manage it using https://openrouter.ai/workspaces/default/keys/bf0f6305c9c10eb7809fb5f8494e9f057476ce3c46f8afdab05b245ca3b3bb90","code":403}}
+18:37:41|ERROR  |OpenRouter daily/credit limit: HTTP 403 {"error":{"message":"Key limit exceeded (daily limit). Manage it using https://openrouter.ai/workspaces/default/keys/bf0f6305c9c10eb7809fb5f8494e9f057476ce3c46f8afdab05b245ca3b3bb90","code":403}}
+18:37:41|ERROR  |OpenRouter daily/credit limit: HTTP 403 {"error":{"message":"Key limit exceeded (daily limit). Manage it using https://openrouter.ai/workspaces/default/keys/bf0f6305c9c10eb7809fb5f8494e9f057476ce3c46f8afdab05b245ca3b3bb90","code":403}}
+18:37:41|ERROR  |OpenRouter daily/credit limit: HTTP 403 {"error":{"message":"Key limit exceeded (daily limit). Manage it using https://openrouter.ai/workspaces/default/keys/bf0f6305c9c10eb7809fb5f8494e9f057476ce3c46f8afdab05b245ca3b3bb90","code":403}}
+18:37:41|ERROR  |OpenRouter daily/credit limit: HTTP 403 {"error":{"message":"Key limit exceeded (daily limit). Manage it using https://openrouter.ai/workspaces/default/keys/bf0f6305c9c10eb7809fb5f8494e9f057476ce3c46f8afdab05b245ca3b3bb90","code":403}}
+18:37:41|ERROR  |OpenRouter daily/credit limit: HTTP 403 {"error":{"message":"Key limit exceeded (daily limit). Manage it using https://openrouter.ai/workspaces/default/keys/bf0f6305c9c10eb7809fb5f8494e9f057476ce3c46f8afdab05b245ca3b3bb90","code":403}}
+18:37:42|ERROR  |OpenRouter daily/credit limit: HTTP 403 {"error":{"message":"Key limit exceeded (daily limit). Manage it using https://openrouter.ai/workspaces/default/keys/bf0f6305c9c10eb7809fb5f8494e9f057476ce3c46f8afdab05b245ca3b3bb90","code":403}}
+18:37:42|ERROR  |OpenRouter daily/credit limit: HTTP 403 {"error":{"message":"Key limit exceeded (daily limit). Manage it using https://openrouter.ai/workspaces/default/keys/bf0f6305c9c10eb7809fb5f8494e9f057476ce3c46f8afdab05b245ca3b3bb90","code":403}}
+18:37:42|ERROR  |[judge_fallback] stopped early; 1233 calls missing
+18:37:42|INFO   |[judge_fallback] done; total spent $1.445
+18:37:42|INFO   |wrote 12400 labels; refusal unlabelled=1254; total spent $1.445
+/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_1/gen_art/gen_art_experiment_3/.venv/lib/python3.12/site-packages/transformers/utils/hub.py:111: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+18:39:33|INFO   |12400 jobs; 1254 without gemini label; calibration 600; 0 to run locally
+18:39:33|INFO   |merged 12400 labels; cross-check 600 items kappa=0.3853658536585366; local fill-ins 1254
+18:40:03|INFO   |PRIMARY ({'gams': 'judge', 'gemma': 'judge'}): TD*=0.23044076851851547 CI=[-0.8130335898867134, 1.2510554015798998] m=0.442 label=UNTESTABLE
+18:40:05|INFO   |method_out.json written: 1600 examples; verdict UNTESTABLE
+18:40:13|INFO   |audit: 125 checks, 0 failed
+lex {"n_shuffles": 60, "frac_TDstar_CI_excludes_0": 0.03333333333333333, "frac_DiDref_CI_excludes_0": 0.06666666666666667, "frac_TDstar_CI_lower_gt_0 (false-survival side)": 0.0, "frac_both_TD_C2_C3_lower_gt_0": 0.016666666666666666, "mean_TDstar": -0.18883334274162192, "sd_TDstar": 0.2469695210052524}
+s {"n_shuffles": 60, "frac_TDstar_CI_excludes_0": 0.15, "frac_DiDref_CI_excludes_0": 0.03333333333333333, "frac_TDstar_CI_lower_gt_0 (false-survival side)": 0.0, "frac_both_TD_C2_C3_lower_gt_0": 0.0, "mean_TDstar": -0.1688632870722121, "sd_TDstar": 0.3444997202391267}
+['band_sweep_s.png', 'forest_G_TD.png', 'identity_mc.png', 'refusal_rates.png']
+Format: exp_gen_sol_out
+Validation PASSED

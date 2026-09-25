@@ -1,0 +1,1350 @@
+{
+ "a": [
+  {
+   "layer": 0,
+   "persona_energy": 65.05667114257812,
+   "iso_energy": 122.13056182861328,
+   "var_accept_rate": 0.00575,
+   "var_method": "rejection",
+   "var_energy": [
+    80.34430694580078,
+    84.49238586425781,
+    72.08133697509766,
+    64.23662567138672,
+    81.74882507324219
+   ]
+  },
+  {
+   "layer": 1,
+   "persona_energy": 50904.0859375,
+   "iso_energy": 3.6143171787261963,
+   "var_accept_rate": 0.00325,
+   "var_method": "rejection",
+   "var_energy": [
+    48732.03515625,
+    39820.92578125,
+    51252.73046875,
+    44538.90234375,
+    39159.85546875
+   ]
+  },
+  {
+   "layer": 2,
+   "persona_energy": 9533.8642578125,
+   "iso_energy": 30.060081481933594,
+   "var_accept_rate": 0.098,
+   "var_method": "rejection",
+   "var_energy": [
+    10177.0361328125,
+    8781.6416015625,
+    9421.333984375,
+    8108.53564453125,
+    11009.787109375
+   ]
+  },
+  {
+   "layer": 3,
+   "persona_energy": 2545.4609375,
+   "iso_energy": 20.744094848632812,
+   "var_accept_rate": 0.14325,
+   "var_method": "rejection",
+   "var_energy": [
+    2989.73974609375,
+    2184.4482421875,
+    3040.92431640625,
+    2987.6904296875,
+    3027.924072265625
+   ]
+  },
+  {
+   "layer": 4,
+   "persona_energy": 12866.228515625,
+   "iso_energy": 36.62649917602539,
+   "var_accept_rate": 0.01425,
+   "var_method": "rejection",
+   "var_energy": [
+    14525.833984375,
+    10863.0126953125,
+    10817.2392578125,
+    9727.091796875,
+    15539.623046875
+   ]
+  },
+  {
+   "layer": 5,
+   "persona_energy": 3384.72412109375,
+   "iso_energy": 38.10464096069336,
+   "var_accept_rate": 0.14725,
+   "var_method": "rejection",
+   "var_energy": [
+    2777.833251953125,
+    3185.3583984375,
+    2822.081298828125,
+    3115.57958984375,
+    3280.099853515625
+   ]
+  },
+  {
+   "layer": 6,
+   "persona_energy": 11514.501953125,
+   "iso_energy": 47.40086364746094,
+   "var_accept_rate": 0.1005,
+   "var_method": "rejection",
+   "var_energy": [
+    10583.275390625,
+    13448.61328125,
+    9131.1044921875,
+    9221.353515625,
+    12767.4228515625
+   ]
+  },
+  {
+   "layer": 7,
+   "persona_energy": 24931.25,
+   "iso_energy": 16.027772903442383,
+   "var_accept_rate": 0.05075,
+   "var_method": "rejection",
+   "var_energy": [
+    26898.51171875,
+    20162.931640625,
+    28442.50390625,
+    19402.763671875,
+    24261.775390625
+   ]
+  },
+  {
+   "layer": 8,
+   "persona_energy": 1040.16064453125,
+   "iso_energy": 38.21207809448242,
+   "var_accept_rate": 0.09125,
+   "var_method": "rejection",
+   "var_energy": [
+    997.2328491210938,
+    1175.6876220703125,
+    901.696533203125,
+    1052.922119140625,
+    1366.798583984375
+   ]
+  },
+  {
+   "layer": 9,
+   "persona_energy": 38926.07421875,
+   "iso_energy": 297.9598693847656,
+   "var_accept_rate": 0.02275,
+   "var_method": "rejection",
+   "var_energy": [
+    30507.650390625,
+    30950.525390625,
+    38425.36328125,
+    34992.9453125,
+    29269.716796875
+   ]
+  },
+  {
+   "layer": 10,
+   "persona_energy": 224225.40625,
+   "iso_energy": 94.90645599365234,
+   "var_accept_rate": 0.0055,
+   "var_method": "rejection",
+   "var_energy": [
+    216784.40625,
+    171407.953125,
+    216563.1875,
+    181180.890625,
+    177916.71875
+   ]
+  },
+  {
+   "layer": 11,
+   "persona_energy": 34107.95703125,
+   "iso_energy": 21.985855102539062,
+   "var_accept_rate": 0.09975,
+   "var_method": "rejection",
+   "var_energy": [
+    34159.3125,
+    32225.64453125,
+    40778.9921875,
+    43958.1328125,
+    36593.171875
+   ]
+  },
+  {
+   "layer": 12,
+   "persona_energy": 267861.21875,
+   "iso_energy": 197.6986083984375,
+   "var_accept_rate": 0.00025,
+   "var_method": "closest_energy_unmatched",
+   "var_energy": [
+    203506.5,
+    203506.5,
+    139842.625,
+    131311.40625,
+    130535.46875
+   ]
+  },
+  {
+   "layer": 13,
+   "persona_energy": 343035.53125,
+   "iso_energy": 314.3857727050781,
+   "var_accept_rate": 0.0015,
+   "var_method": "rejection",
+   "var_energy": [
+    328533.34375,
+    434138.3125,
+    300153.0,
+    328936.84375,
+    279986.40625
+   ]
+  },
+  {
+   "layer": 14,
+   "persona_energy": 89730.1875,
+   "iso_energy": 228.74072265625,
+   "var_accept_rate": 0.04675,
+   "var_method": "rejection",
+   "var_energy": [
+    81824.9140625,
+    95505.5546875,
+    79063.7578125,
+    72615.4765625,
+    95151.671875
+   ]
+  },
+  {
+   "layer": 15,
+   "persona_energy": 4379046.5,
+   "iso_energy": 427.2557067871094,
+   "var_accept_rate": 0.0,
+   "var_method": "closest_energy_unmatched",
+   "var_energy": [
+    1951705.25,
+    1816742.75,
+    1703953.125,
+    1608657.125,
+    1600952.25
+   ]
+  },
+  {
+   "layer": 16,
+   "persona_energy": 369516.1875,
+   "iso_energy": 1285.8721923828125,
+   "var_accept_rate": 0.01875,
+   "var_method": "rejection",
+   "var_energy": [
+    368865.875,
+    343538.65625,
+    283732.78125,
+    459753.34375,
+    427645.625
+   ]
+  },
+  {
+   "layer": 17,
+   "persona_energy": 11113.513671875,
+   "iso_energy": 8537.3916015625,
+   "var_accept_rate": 0.03925,
+   "var_method": "rejection",
+   "var_energy": [
+    11398.74609375,
+    13719.177734375,
+    10488.15625,
+    10388.05859375,
+    12287.1875
+   ]
+  },
+  {
+   "layer": 18,
+   "persona_energy": 4355871.0,
+   "iso_energy": 2811.102783203125,
+   "var_accept_rate": 0.0065,
+   "var_method": "rejection",
+   "var_energy": [
+    3624345.0,
+    3959094.25,
+    3755705.75,
+    3743393.5,
+    3594484.25
+   ]
+  },
+  {
+   "layer": 19,
+   "persona_energy": 7901971.5,
+   "iso_energy": 2764.515869140625,
+   "var_accept_rate": 0.0,
+   "var_method": "closest_energy_unmatched",
+   "var_energy": [
+    2544248.5,
+    2119270.0,
+    1983147.375,
+    1911659.125,
+    1861767.75
+   ]
+  },
+  {
+   "layer": 20,
+   "persona_energy": 85533968.0,
+   "iso_energy": 442.2566833496094,
+   "var_accept_rate": 0.0,
+   "var_method": "closest_energy_unmatched",
+   "var_energy": [
+    19769464.0,
+    19197188.0,
+    18807218.0,
+    18132492.0,
+    17282844.0
+   ]
+  },
+  {
+   "layer": 21,
+   "persona_energy": 31247474.0,
+   "iso_energy": 36959.36328125,
+   "var_accept_rate": 0.0005,
+   "var_method": "closest_energy_unmatched",
+   "var_energy": [
+    27903266.0,
+    28722242.0,
+    28722242.0,
+    27903266.0,
+    23180278.0
+   ]
+  },
+  {
+   "layer": 22,
+   "persona_energy": 18068458.0,
+   "iso_energy": 15576.5419921875,
+   "var_accept_rate": 0.0035,
+   "var_method": "rejection",
+   "var_energy": [
+    14333581.0,
+    14177508.0,
+    13951616.0,
+    16247148.0,
+    18054262.0
+   ]
+  },
+  {
+   "layer": 23,
+   "persona_energy": 54131416.0,
+   "iso_energy": 28554.865234375,
+   "var_accept_rate": 0.00425,
+   "var_method": "rejection",
+   "var_energy": [
+    41399552.0,
+    42060228.0,
+    42045396.0,
+    45176368.0,
+    40899032.0
+   ]
+  },
+  {
+   "layer": 24,
+   "persona_energy": 310632.375,
+   "iso_energy": 71780.125,
+   "var_accept_rate": 0.0545,
+   "var_method": "rejection",
+   "var_energy": [
+    247358.3125,
+    373802.1875,
+    340425.90625,
+    244466.234375,
+    243614.6875
+   ]
+  },
+  {
+   "layer": 25,
+   "persona_energy": 11457900.0,
+   "iso_energy": 23526.7890625,
+   "var_accept_rate": 0.09025,
+   "var_method": "rejection",
+   "var_energy": [
+    13489367.0,
+    9297029.0,
+    8668969.0,
+    9712076.0,
+    11579620.0
+   ]
+  },
+  {
+   "layer": 26,
+   "persona_energy": 6453985.0,
+   "iso_energy": 36851.8828125,
+   "var_accept_rate": 0.139,
+   "var_method": "rejection",
+   "var_energy": [
+    5069271.5,
+    6465603.0,
+    5684705.5,
+    6835806.0,
+    5342617.5
+   ]
+  },
+  {
+   "layer": 27,
+   "persona_energy": 12262622.0,
+   "iso_energy": 16871.931640625,
+   "var_accept_rate": 0.0725,
+   "var_method": "rejection",
+   "var_energy": [
+    14381839.0,
+    11879928.0,
+    9847682.0,
+    16118929.0,
+    14279720.0
+   ]
+  },
+  {
+   "layer": 28,
+   "persona_energy": 7637245.5,
+   "iso_energy": 38799.5,
+   "var_accept_rate": 0.07925,
+   "var_method": "rejection",
+   "var_energy": [
+    7391302.0,
+    6384348.5,
+    9105157.0,
+    8681345.0,
+    8509799.0
+   ]
+  },
+  {
+   "layer": 29,
+   "persona_energy": 4048959.0,
+   "iso_energy": 26825.484375,
+   "var_accept_rate": 0.13575,
+   "var_method": "rejection",
+   "var_energy": [
+    4655954.0,
+    4816892.0,
+    3073876.75,
+    3109605.75,
+    3208739.25
+   ]
+  },
+  {
+   "layer": 30,
+   "persona_energy": 1424317.375,
+   "iso_energy": 33396.11328125,
+   "var_accept_rate": 0.1655,
+   "var_method": "rejection",
+   "var_energy": [
+    1507296.75,
+    1882025.875,
+    1723329.5,
+    1207150.375,
+    1075126.375
+   ]
+  },
+  {
+   "layer": 31,
+   "persona_energy": 513055.125,
+   "iso_energy": 75486.9375,
+   "var_accept_rate": 0.14375,
+   "var_method": "rejection",
+   "var_energy": [
+    556603.375,
+    587233.625,
+    401644.6875,
+    605362.9375,
+    555046.625
+   ]
+  },
+  {
+   "layer": 32,
+   "persona_energy": 1737058.5,
+   "iso_energy": 21163.64453125,
+   "var_accept_rate": 0.181,
+   "var_method": "rejection",
+   "var_energy": [
+    1317570.375,
+    1376324.875,
+    1871568.375,
+    1963085.875,
+    1443247.75
+   ]
+  },
+  {
+   "layer": 33,
+   "persona_energy": 795607.125,
+   "iso_energy": 62680.82421875,
+   "var_accept_rate": 0.16575,
+   "var_method": "rejection",
+   "var_energy": [
+    890402.3125,
+    667130.125,
+    1054312.875,
+    931069.1875,
+    748134.9375
+   ]
+  },
+  {
+   "layer": 34,
+   "persona_energy": 897117.6875,
+   "iso_energy": 17232.10546875,
+   "var_accept_rate": 0.1945,
+   "var_method": "rejection",
+   "var_energy": [
+    712922.1875,
+    778342.9375,
+    746069.5,
+    1183606.625,
+    1035116.75
+   ]
+  },
+  {
+   "layer": 35,
+   "persona_energy": 1165955.25,
+   "iso_energy": 24860.333984375,
+   "var_accept_rate": 0.212,
+   "var_method": "rejection",
+   "var_energy": [
+    1185985.5,
+    1539540.625,
+    1521419.75,
+    1220287.125,
+    1140641.75
+   ]
+  },
+  {
+   "layer": 36,
+   "persona_energy": 2587819.5,
+   "iso_energy": 22962.140625,
+   "var_accept_rate": 0.2535,
+   "var_method": "rejection",
+   "var_energy": [
+    2056638.625,
+    3083355.0,
+    2709624.75,
+    3441689.0,
+    2565764.25
+   ]
+  },
+  {
+   "layer": 37,
+   "persona_energy": 7787642.5,
+   "iso_energy": 43154.73046875,
+   "var_accept_rate": 0.16575,
+   "var_method": "rejection",
+   "var_energy": [
+    6088214.0,
+    6258594.5,
+    9058606.0,
+    6030873.0,
+    7662474.0
+   ]
+  },
+  {
+   "layer": 38,
+   "persona_energy": 17760138.0,
+   "iso_energy": 158334.296875,
+   "var_accept_rate": 0.08675,
+   "var_method": "rejection",
+   "var_energy": [
+    14167367.0,
+    14433735.0,
+    16662473.0,
+    14385414.0,
+    17919032.0
+   ]
+  },
+  {
+   "layer": 39,
+   "persona_energy": 55280848.0,
+   "iso_energy": 54654.20703125,
+   "var_accept_rate": 0.00675,
+   "var_method": "rejection",
+   "var_energy": [
+    45385688.0,
+    63050936.0,
+    43139832.0,
+    43663572.0,
+    43096792.0
+   ]
+  },
+  {
+   "layer": 40,
+   "persona_energy": 153671120.0,
+   "iso_energy": 92601.1328125,
+   "var_accept_rate": 0.0,
+   "var_method": "closest_energy_unmatched",
+   "var_energy": [
+    67554576.0,
+    65345804.0,
+    64587020.0,
+    61165924.0,
+    57138296.0
+   ]
+  },
+  {
+   "layer": 41,
+   "persona_energy": 268784192.0,
+   "iso_energy": 900302.875,
+   "var_accept_rate": 0.0,
+   "var_method": "closest_energy_unmatched",
+   "var_energy": [
+    105667680.0,
+    88836880.0,
+    81207880.0,
+    79140608.0,
+    77525976.0
+   ]
+  },
+  {
+   "layer": 42,
+   "persona_energy": 292803072.0,
+   "iso_energy": 176019.625,
+   "var_accept_rate": 0.0,
+   "var_method": "closest_energy_unmatched",
+   "var_energy": [
+    118185304.0,
+    101594840.0,
+    95344104.0,
+    89411864.0,
+    89002984.0
+   ]
+  },
+  {
+   "layer": 43,
+   "persona_energy": 528726528.0,
+   "iso_energy": 160277.734375,
+   "var_accept_rate": 0.0,
+   "var_method": "closest_energy_unmatched",
+   "var_energy": [
+    168788080.0,
+    149316064.0,
+    148197568.0,
+    121946480.0,
+    113545392.0
+   ]
+  },
+  {
+   "layer": 44,
+   "persona_energy": 657486848.0,
+   "iso_energy": 831623.375,
+   "var_accept_rate": 0.0,
+   "var_method": "closest_energy_unmatched",
+   "var_energy": [
+    162069616.0,
+    156027936.0,
+    142052544.0,
+    140897888.0,
+    129783120.0
+   ]
+  },
+  {
+   "layer": 45,
+   "persona_energy": 699451712.0,
+   "iso_energy": 250400.625,
+   "var_accept_rate": 0.0,
+   "var_method": "closest_energy_unmatched",
+   "var_energy": [
+    167191296.0,
+    152166560.0,
+    146613168.0,
+    141860736.0,
+    137839808.0
+   ]
+  },
+  {
+   "layer": 46,
+   "persona_energy": 798856576.0,
+   "iso_energy": 741120.375,
+   "var_accept_rate": 0.0,
+   "var_method": "closest_energy_unmatched",
+   "var_energy": [
+    170529568.0,
+    169905152.0,
+    167347072.0,
+    167053104.0,
+    163847328.0
+   ]
+  },
+  {
+   "layer": 47,
+   "persona_energy": 1135267328.0,
+   "iso_energy": 627570.3125,
+   "var_accept_rate": 0.0,
+   "var_method": "closest_energy_unmatched",
+   "var_energy": [
+    185474320.0,
+    182864992.0,
+    173757696.0,
+    170219488.0,
+    154982448.0
+   ]
+  }
+ ],
+ "b": [
+  {
+   "layer": 0,
+   "persona_energy": 82936.15625,
+   "iso_energy": 1.5372827053070068,
+   "var_accept_rate": 0.00075,
+   "var_method": "closest_energy_unmatched",
+   "var_energy": [
+    64762.03125,
+    71614.28125,
+    62489.73046875,
+    71614.28125,
+    64762.03125
+   ]
+  },
+  {
+   "layer": 1,
+   "persona_energy": 102375.859375,
+   "iso_energy": 5.490930080413818,
+   "var_accept_rate": 0.0,
+   "var_method": "closest_energy_unmatched",
+   "var_energy": [
+    45758.43359375,
+    42011.0078125,
+    41783.859375,
+    38532.8046875,
+    38436.51953125
+   ]
+  },
+  {
+   "layer": 2,
+   "persona_energy": 40340.73828125,
+   "iso_energy": 11.474204063415527,
+   "var_accept_rate": 0.0045,
+   "var_method": "rejection",
+   "var_energy": [
+    30758.138671875,
+    45602.9609375,
+    33226.60546875,
+    34790.140625,
+    39748.97265625
+   ]
+  },
+  {
+   "layer": 3,
+   "persona_energy": 1088.3629150390625,
+   "iso_energy": 52.91458511352539,
+   "var_accept_rate": 0.142,
+   "var_method": "rejection",
+   "var_energy": [
+    822.654541015625,
+    1223.55615234375,
+    904.46875,
+    1344.7796630859375,
+    908.4066162109375
+   ]
+  },
+  {
+   "layer": 4,
+   "persona_energy": 1335.7449951171875,
+   "iso_energy": 11.051692962646484,
+   "var_accept_rate": 0.18675,
+   "var_method": "rejection",
+   "var_energy": [
+    1515.6488037109375,
+    1339.92578125,
+    1703.568603515625,
+    1398.1624755859375,
+    1534.134765625
+   ]
+  },
+  {
+   "layer": 5,
+   "persona_energy": 501.74774169921875,
+   "iso_energy": 16.401887893676758,
+   "var_accept_rate": 0.162,
+   "var_method": "rejection",
+   "var_energy": [
+    484.6142883300781,
+    532.9262084960938,
+    499.60748291015625,
+    576.4631958007812,
+    598.7149658203125
+   ]
+  },
+  {
+   "layer": 6,
+   "persona_energy": 9203.3134765625,
+   "iso_energy": 22.5128116607666,
+   "var_accept_rate": 0.134,
+   "var_method": "rejection",
+   "var_energy": [
+    10980.0615234375,
+    8339.990234375,
+    6977.3515625,
+    7252.546875,
+    10037.529296875
+   ]
+  },
+  {
+   "layer": 7,
+   "persona_energy": 1122.8779296875,
+   "iso_energy": 239.03138732910156,
+   "var_accept_rate": 0.1395,
+   "var_method": "rejection",
+   "var_energy": [
+    951.8564453125,
+    937.5829467773438,
+    1172.5191650390625,
+    1001.900390625,
+    934.5755615234375
+   ]
+  },
+  {
+   "layer": 8,
+   "persona_energy": 82473.0,
+   "iso_energy": 10.077664375305176,
+   "var_accept_rate": 0.016,
+   "var_method": "rejection",
+   "var_energy": [
+    80867.265625,
+    67031.984375,
+    89630.5234375,
+    71230.609375,
+    79087.296875
+   ]
+  },
+  {
+   "layer": 9,
+   "persona_energy": 169549.6875,
+   "iso_energy": 103.50677490234375,
+   "var_accept_rate": 0.0,
+   "var_method": "closest_energy_unmatched",
+   "var_energy": [
+    60291.328125,
+    57911.890625,
+    56808.76953125,
+    53791.6015625,
+    52110.06640625
+   ]
+  },
+  {
+   "layer": 10,
+   "persona_energy": 7807.70166015625,
+   "iso_energy": 52.00502014160156,
+   "var_accept_rate": 0.119,
+   "var_method": "rejection",
+   "var_energy": [
+    7985.3486328125,
+    6068.34521484375,
+    9077.7998046875,
+    6286.25244140625,
+    7208.01318359375
+   ]
+  },
+  {
+   "layer": 11,
+   "persona_energy": 259473.8125,
+   "iso_energy": 37.2114372253418,
+   "var_accept_rate": 0.0,
+   "var_method": "closest_energy_unmatched",
+   "var_energy": [
+    146961.09375,
+    119613.7734375,
+    108822.9765625,
+    102411.8046875,
+    100714.4453125
+   ]
+  },
+  {
+   "layer": 12,
+   "persona_energy": 4769.5732421875,
+   "iso_energy": 133.29769897460938,
+   "var_accept_rate": 0.16075,
+   "var_method": "rejection",
+   "var_energy": [
+    3591.33837890625,
+    4333.10009765625,
+    5073.87158203125,
+    6082.5263671875,
+    6341.42529296875
+   ]
+  },
+  {
+   "layer": 13,
+   "persona_energy": 4681.16064453125,
+   "iso_energy": 110.65245819091797,
+   "var_accept_rate": 0.1165,
+   "var_method": "rejection",
+   "var_energy": [
+    4976.96630859375,
+    3929.6201171875,
+    6122.92578125,
+    5170.44140625,
+    5855.64990234375
+   ]
+  },
+  {
+   "layer": 14,
+   "persona_energy": 138930.6875,
+   "iso_energy": 50.68777847290039,
+   "var_accept_rate": 0.0105,
+   "var_method": "rejection",
+   "var_energy": [
+    142685.6875,
+    133018.515625,
+    107648.8046875,
+    104796.359375,
+    112076.5
+   ]
+  },
+  {
+   "layer": 15,
+   "persona_energy": 10145432.0,
+   "iso_energy": 2547.8466796875,
+   "var_accept_rate": 0.0,
+   "var_method": "closest_energy_unmatched",
+   "var_energy": [
+    1351058.0,
+    1274631.375,
+    1188080.375,
+    1132428.875,
+    1105713.125
+   ]
+  },
+  {
+   "layer": 16,
+   "persona_energy": 2986050.25,
+   "iso_energy": 1059.5533447265625,
+   "var_accept_rate": 0.0,
+   "var_method": "closest_energy_unmatched",
+   "var_energy": [
+    455497.78125,
+    361180.6875,
+    358009.0,
+    307105.875,
+    287103.0625
+   ]
+  },
+  {
+   "layer": 17,
+   "persona_energy": 5453026.5,
+   "iso_energy": 769.9668579101562,
+   "var_accept_rate": 0.0,
+   "var_method": "closest_energy_unmatched",
+   "var_energy": [
+    3936444.5,
+    3901913.25,
+    3881329.75,
+    3731585.25,
+    3604728.0
+   ]
+  },
+  {
+   "layer": 18,
+   "persona_energy": 22762800.0,
+   "iso_energy": 327.5916748046875,
+   "var_accept_rate": 0.0,
+   "var_method": "closest_energy_unmatched",
+   "var_energy": [
+    3015142.5,
+    2973437.75,
+    2964905.25,
+    2942093.5,
+    2761883.25
+   ]
+  },
+  {
+   "layer": 19,
+   "persona_energy": 1987830.125,
+   "iso_energy": 15258.45703125,
+   "var_accept_rate": 0.008,
+   "var_method": "rejection",
+   "var_energy": [
+    1495746.5,
+    1781627.25,
+    1524269.875,
+    1812436.125,
+    1796589.875
+   ]
+  },
+  {
+   "layer": 20,
+   "persona_energy": 41090608.0,
+   "iso_energy": 77996.78125,
+   "var_accept_rate": 0.00025,
+   "var_method": "closest_energy_unmatched",
+   "var_energy": [
+    32076696.0,
+    32076696.0,
+    27547680.0,
+    26798428.0,
+    24798812.0
+   ]
+  },
+  {
+   "layer": 21,
+   "persona_energy": 41170508.0,
+   "iso_energy": 14880.5751953125,
+   "var_accept_rate": 0.00025,
+   "var_method": "closest_energy_unmatched",
+   "var_energy": [
+    32259624.0,
+    32259624.0,
+    20129308.0,
+    19841896.0,
+    18585736.0
+   ]
+  },
+  {
+   "layer": 22,
+   "persona_energy": 64302672.0,
+   "iso_energy": 775.02880859375,
+   "var_accept_rate": 0.0,
+   "var_method": "closest_energy_unmatched",
+   "var_energy": [
+    15272471.0,
+    14681649.0,
+    13602725.0,
+    13143080.0,
+    13005437.0
+   ]
+  },
+  {
+   "layer": 23,
+   "persona_energy": 156523568.0,
+   "iso_energy": 19943.638671875,
+   "var_accept_rate": 0.0,
+   "var_method": "closest_energy_unmatched",
+   "var_energy": [
+    54160932.0,
+    51480896.0,
+    47067364.0,
+    41418968.0,
+    38301924.0
+   ]
+  },
+  {
+   "layer": 24,
+   "persona_energy": 227900032.0,
+   "iso_energy": 1975.872314453125,
+   "var_accept_rate": 0.0,
+   "var_method": "closest_energy_unmatched",
+   "var_energy": [
+    61795632.0,
+    61044088.0,
+    52913780.0,
+    48335088.0,
+    47601180.0
+   ]
+  },
+  {
+   "layer": 25,
+   "persona_energy": 184170896.0,
+   "iso_energy": 4940.349609375,
+   "var_accept_rate": 0.0,
+   "var_method": "closest_energy_unmatched",
+   "var_energy": [
+    34303000.0,
+    34096508.0,
+    34060836.0,
+    31032702.0,
+    30383292.0
+   ]
+  },
+  {
+   "layer": 26,
+   "persona_energy": 99480000.0,
+   "iso_energy": 33060.44921875,
+   "var_accept_rate": 0.0,
+   "var_method": "closest_energy_unmatched",
+   "var_energy": [
+    61936636.0,
+    61923672.0,
+    60259320.0,
+    59694320.0,
+    59566356.0
+   ]
+  },
+  {
+   "layer": 27,
+   "persona_energy": 35403448.0,
+   "iso_energy": 31872.689453125,
+   "var_accept_rate": 0.0025,
+   "var_method": "rejection",
+   "var_energy": [
+    27431860.0,
+    32664828.0,
+    32563884.0,
+    29496008.0,
+    33526892.0
+   ]
+  },
+  {
+   "layer": 28,
+   "persona_energy": 19846660.0,
+   "iso_energy": 14487.6171875,
+   "var_accept_rate": 0.00925,
+   "var_method": "rejection",
+   "var_energy": [
+    15685900.0,
+    15854700.0,
+    15780082.0,
+    18840212.0,
+    19155018.0
+   ]
+  },
+  {
+   "layer": 29,
+   "persona_energy": 13169903.0,
+   "iso_energy": 125271.6953125,
+   "var_accept_rate": 0.032,
+   "var_method": "rejection",
+   "var_energy": [
+    15468344.0,
+    14381018.0,
+    10256751.0,
+    12247862.0,
+    13268504.0
+   ]
+  },
+  {
+   "layer": 30,
+   "persona_energy": 14996415.0,
+   "iso_energy": 18206.662109375,
+   "var_accept_rate": 0.02775,
+   "var_method": "rejection",
+   "var_energy": [
+    11314821.0,
+    15752079.0,
+    11994848.0,
+    16749173.0,
+    16436864.0
+   ]
+  },
+  {
+   "layer": 31,
+   "persona_energy": 6733870.5,
+   "iso_energy": 34841.03515625,
+   "var_accept_rate": 0.0965,
+   "var_method": "rejection",
+   "var_energy": [
+    7338517.5,
+    5305576.0,
+    5872757.5,
+    5806567.5,
+    5637339.0
+   ]
+  },
+  {
+   "layer": 32,
+   "persona_energy": 10215850.0,
+   "iso_energy": 328932.1875,
+   "var_accept_rate": 0.0635,
+   "var_method": "rejection",
+   "var_energy": [
+    8586787.0,
+    11138102.0,
+    11101681.0,
+    9898894.0,
+    8030237.5
+   ]
+  },
+  {
+   "layer": 33,
+   "persona_energy": 23059072.0,
+   "iso_energy": 37164.5546875,
+   "var_accept_rate": 0.0065,
+   "var_method": "rejection",
+   "var_energy": [
+    26928596.0,
+    24624302.0,
+    24628330.0,
+    20822268.0,
+    20597888.0
+   ]
+  },
+  {
+   "layer": 34,
+   "persona_energy": 20950284.0,
+   "iso_energy": 33683.82421875,
+   "var_accept_rate": 0.00175,
+   "var_method": "rejection",
+   "var_energy": [
+    20548854.0,
+    16657265.0,
+    17899498.0,
+    17979722.0,
+    21053508.0
+   ]
+  },
+  {
+   "layer": 35,
+   "persona_energy": 28259466.0,
+   "iso_energy": 18851.642578125,
+   "var_accept_rate": 0.00025,
+   "var_method": "closest_energy_unmatched",
+   "var_energy": [
+    24933590.0,
+    24933590.0,
+    20855150.0,
+    20652662.0,
+    19928058.0
+   ]
+  },
+  {
+   "layer": 36,
+   "persona_energy": 58962896.0,
+   "iso_energy": 32123.70703125,
+   "var_accept_rate": 0.0,
+   "var_method": "closest_energy_unmatched",
+   "var_energy": [
+    37543064.0,
+    33939416.0,
+    32751504.0,
+    31276382.0,
+    30011638.0
+   ]
+  },
+  {
+   "layer": 37,
+   "persona_energy": 60689592.0,
+   "iso_energy": 193161.15625,
+   "var_accept_rate": 0.0,
+   "var_method": "closest_energy_unmatched",
+   "var_energy": [
+    44368852.0,
+    44261160.0,
+    39457384.0,
+    38749788.0,
+    37649412.0
+   ]
+  },
+  {
+   "layer": 38,
+   "persona_energy": 75538784.0,
+   "iso_energy": 42818.98046875,
+   "var_accept_rate": 0.0,
+   "var_method": "closest_energy_unmatched",
+   "var_energy": [
+    56200104.0,
+    53664304.0,
+    53641560.0,
+    51405392.0,
+    43522728.0
+   ]
+  },
+  {
+   "layer": 39,
+   "persona_energy": 93543784.0,
+   "iso_energy": 32009.677734375,
+   "var_accept_rate": 0.0,
+   "var_method": "closest_energy_unmatched",
+   "var_energy": [
+    66888904.0,
+    61864920.0,
+    57260556.0,
+    53804052.0,
+    53135544.0
+   ]
+  },
+  {
+   "layer": 40,
+   "persona_energy": 52412800.0,
+   "iso_energy": 253345.421875,
+   "var_accept_rate": 0.0145,
+   "var_method": "rejection",
+   "var_energy": [
+    46377136.0,
+    40937900.0,
+    51782252.0,
+    64888096.0,
+    43372368.0
+   ]
+  },
+  {
+   "layer": 41,
+   "persona_energy": 70387336.0,
+   "iso_energy": 198891.375,
+   "var_accept_rate": 0.01675,
+   "var_method": "rejection",
+   "var_energy": [
+    55039148.0,
+    56329276.0,
+    83017696.0,
+    61646976.0,
+    75703832.0
+   ]
+  },
+  {
+   "layer": 42,
+   "persona_energy": 60789444.0,
+   "iso_energy": 785801.8125,
+   "var_accept_rate": 0.0325,
+   "var_method": "rejection",
+   "var_energy": [
+    62415232.0,
+    45905536.0,
+    49907152.0,
+    50160288.0,
+    53229912.0
+   ]
+  },
+  {
+   "layer": 43,
+   "persona_energy": 69181760.0,
+   "iso_energy": 98578.1015625,
+   "var_accept_rate": 0.05625,
+   "var_method": "rejection",
+   "var_energy": [
+    60319336.0,
+    76821424.0,
+    77746384.0,
+    67819856.0,
+    57094628.0
+   ]
+  },
+  {
+   "layer": 44,
+   "persona_energy": 66459512.0,
+   "iso_energy": 353633.125,
+   "var_accept_rate": 0.073,
+   "var_method": "rejection",
+   "var_energy": [
+    61731752.0,
+    71155584.0,
+    69194000.0,
+    80226200.0,
+    86036632.0
+   ]
+  },
+  {
+   "layer": 45,
+   "persona_energy": 17989834.0,
+   "iso_energy": 132931.15625,
+   "var_accept_rate": 0.184,
+   "var_method": "rejection",
+   "var_energy": [
+    13639490.0,
+    18223270.0,
+    17714638.0,
+    16904582.0,
+    16084088.0
+   ]
+  },
+  {
+   "layer": 46,
+   "persona_energy": 38703044.0,
+   "iso_energy": 256726.09375,
+   "var_accept_rate": 0.14325,
+   "var_method": "rejection",
+   "var_energy": [
+    30401074.0,
+    32953094.0,
+    31785788.0,
+    34405048.0,
+    29421750.0
+   ]
+  },
+  {
+   "layer": 47,
+   "persona_energy": 218021808.0,
+   "iso_energy": 304756.71875,
+   "var_accept_rate": 0.00875,
+   "var_method": "rejection",
+   "var_energy": [
+    196985776.0,
+    218246672.0,
+    173090272.0,
+    167973376.0,
+    171121552.0
+   ]
+  }
+ ]
+}

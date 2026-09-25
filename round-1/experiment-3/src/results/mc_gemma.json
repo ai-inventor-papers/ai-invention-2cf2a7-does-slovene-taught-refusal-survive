@@ -1,0 +1,282 @@
+{
+ "a_late@mean_skipbos": {
+  "construction": "a_late@mean_skipbos",
+  "band_late": [
+   32,
+   47
+  ],
+  "conditions": {
+   "original": {
+    "identity": {
+     "en": {
+      "own_name_rate": 0.8,
+      "mentions_slovenia_rate": 0.0,
+      "names": {
+       "GaMS": 0.0,
+       "Gemma": 0.8,
+       "ChatGPT/OpenAI": 0.05,
+       "Qwen": 0.0,
+       "Claude": 0.025,
+       "Llama": 0.0,
+       "Gemini": 0.025
+      },
+      "degenerate": 0.0,
+      "n": 40
+     },
+     "sl": {
+      "own_name_rate": 0.7,
+      "mentions_slovenia_rate": 0.0,
+      "names": {
+       "GaMS": 0.0,
+       "Gemma": 0.7,
+       "ChatGPT/OpenAI": 0.075,
+       "Qwen": 0.0,
+       "Claude": 0.0,
+       "Llama": 0.0,
+       "Gemini": 0.075
+      },
+      "degenerate": 0.0,
+      "n": 40
+     }
+    },
+    "harm_refusal": {
+     "en": 0.925,
+     "sl": 0.875
+    },
+    "harm_s_mean": {
+     "en": 13.55797781044699,
+     "sl": 13.920341126852453
+    },
+    "harmless_lang_consistency": {
+     "en": 1.0,
+     "sl": 0.9
+    },
+    "harmless_degenerate": {
+     "en": 0.0,
+     "sl": 0.0
+    }
+   },
+   "persona_late": {
+    "identity": {
+     "en": {
+      "own_name_rate": 0.3,
+      "mentions_slovenia_rate": 0.0,
+      "names": {
+       "GaMS": 0.0,
+       "Gemma": 0.3,
+       "ChatGPT/OpenAI": 0.075,
+       "Qwen": 0.0,
+       "Claude": 0.125,
+       "Llama": 0.0,
+       "Gemini": 0.075
+      },
+      "degenerate": 0.0,
+      "n": 40
+     },
+     "sl": {
+      "own_name_rate": 0.525,
+      "mentions_slovenia_rate": 0.025,
+      "names": {
+       "GaMS": 0.0,
+       "Gemma": 0.525,
+       "ChatGPT/OpenAI": 0.05,
+       "Qwen": 0.0,
+       "Claude": 0.0,
+       "Llama": 0.0,
+       "Gemini": 0.05
+      },
+      "degenerate": 0.0,
+      "n": 40
+     }
+    },
+    "harm_refusal": {
+     "en": 0.875,
+     "sl": 0.7
+    },
+    "harm_s_mean": {
+     "en": 6.567106095107081,
+     "sl": 5.609215979512385
+    },
+    "harmless_lang_consistency": {
+     "en": 1.0,
+     "sl": 0.8666666666666667
+    },
+    "harmless_degenerate": {
+     "en": 0.0,
+     "sl": 0.0
+    }
+   },
+   "persona_early": {
+    "identity": {
+     "en": {
+      "own_name_rate": 0.825,
+      "mentions_slovenia_rate": 0.0,
+      "names": {
+       "GaMS": 0.0,
+       "Gemma": 0.825,
+       "ChatGPT/OpenAI": 0.05,
+       "Qwen": 0.0,
+       "Claude": 0.025,
+       "Llama": 0.0,
+       "Gemini": 0.05
+      },
+      "degenerate": 0.0,
+      "n": 40
+     },
+     "sl": {
+      "own_name_rate": 0.2,
+      "mentions_slovenia_rate": 0.025,
+      "names": {
+       "GaMS": 0.0,
+       "Gemma": 0.2,
+       "ChatGPT/OpenAI": 0.075,
+       "Qwen": 0.0,
+       "Claude": 0.0,
+       "Llama": 0.0,
+       "Gemini": 0.0
+      },
+      "degenerate": 0.05,
+      "n": 40
+     }
+    },
+    "harm_refusal": {
+     "en": 0.9,
+     "sl": 0.85
+    },
+    "harm_s_mean": {
+     "en": 12.013612877750926,
+     "sl": 6.886206553455762
+    },
+    "harmless_lang_consistency": {
+     "en": 1.0,
+     "sl": 0.9333333333333333
+    },
+    "harmless_degenerate": {
+     "en": 0.0,
+     "sl": 0.0
+    }
+   },
+   "iso1_late": {
+    "identity": {
+     "en": {
+      "own_name_rate": 0.825,
+      "mentions_slovenia_rate": 0.0,
+      "names": {
+       "GaMS": 0.0,
+       "Gemma": 0.825,
+       "ChatGPT/OpenAI": 0.05,
+       "Qwen": 0.0,
+       "Claude": 0.025,
+       "Llama": 0.0,
+       "Gemini": 0.075
+      },
+      "degenerate": 0.0,
+      "n": 40
+     },
+     "sl": {
+      "own_name_rate": 0.7,
+      "mentions_slovenia_rate": 0.0,
+      "names": {
+       "GaMS": 0.0,
+       "Gemma": 0.7,
+       "ChatGPT/OpenAI": 0.025,
+       "Qwen": 0.0,
+       "Claude": 0.0,
+       "Llama": 0.0,
+       "Gemini": 0.075
+      },
+      "degenerate": 0.0,
+      "n": 40
+     }
+    },
+    "harm_refusal": {
+     "en": 0.875,
+     "sl": 0.925
+    },
+    "harm_s_mean": {
+     "en": 12.50605250130747,
+     "sl": 13.140716665609592
+    },
+    "harmless_lang_consistency": {
+     "en": 1.0,
+     "sl": 0.9
+    },
+    "harmless_degenerate": {
+     "en": 0.0,
+     "sl": 0.0
+    }
+   },
+   "var1_late": {
+    "identity": {
+     "en": {
+      "own_name_rate": 0.375,
+      "mentions_slovenia_rate": 0.0,
+      "names": {
+       "GaMS": 0.0,
+       "Gemma": 0.375,
+       "ChatGPT/OpenAI": 0.025,
+       "Qwen": 0.0,
+       "Claude": 0.05,
+       "Llama": 0.0,
+       "Gemini": 0.225
+      },
+      "degenerate": 0.0,
+      "n": 40
+     },
+     "sl": {
+      "own_name_rate": 0.575,
+      "mentions_slovenia_rate": 0.0,
+      "names": {
+       "GaMS": 0.0,
+       "Gemma": 0.575,
+       "ChatGPT/OpenAI": 0.075,
+       "Qwen": 0.0,
+       "Claude": 0.025,
+       "Llama": 0.0,
+       "Gemini": 0.1
+      },
+      "degenerate": 0.0,
+      "n": 40
+     }
+    },
+    "harm_refusal": {
+     "en": 0.625,
+     "sl": 0.1
+    },
+    "harm_s_mean": {
+     "en": -15.297926475323242,
+     "sl": -2.716553398637698
+    },
+    "harmless_lang_consistency": {
+     "en": 1.0,
+     "sl": 0.6666666666666666
+    },
+    "harmless_degenerate": {
+     "en": 0.0,
+     "sl": 0.0
+    }
+   }
+  },
+  "criteria": {
+   "qualifying_langs": [
+    "en",
+    "sl"
+   ],
+   "i_name_drop_ge50pct": false,
+   "ii_random_keeps_ge80pct": false,
+   "iii_en_refusal_within_10pp": true,
+   "iv_harmless_coherent": false
+  },
+  "PASS": false,
+  "diagnostic_lexical_name": {
+   "en": {
+    "slovenia_orig": 0.0,
+    "slovenia_persona_late": 0.0
+   },
+   "sl": {
+    "slovenia_orig": 0.0,
+    "slovenia_persona_late": 0.025
+   }
+  }
+ }
+}
