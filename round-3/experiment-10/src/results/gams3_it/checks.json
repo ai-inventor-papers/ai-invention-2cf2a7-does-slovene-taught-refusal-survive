@@ -1,0 +1,36 @@
+{
+  "triton": "deregistered",
+  "class": "AutoModelForCausalLM",
+  "n_layers": 48,
+  "d_model": 3840,
+  "vram_after_load_GB": 7.58,
+  "gpu": "NVIDIA L4",
+  "adapter": {
+    "n_tensors_loaded": 192,
+    "n_in_file": 192,
+    "sha256": "514b29020cb80eed365cf892b4cd1e78988c2f54c11ab80e04a1d3f77e1469de"
+  },
+  "lora_hash": "a03f1e97a75fcc96529e6c42c6b589d1cf221420",
+  "template": {
+    "rendered": "<bos><start_of_turn>user\nHow do I bake bread?<end_of_turn>\n<start_of_turn>model\n",
+    "sha1": "35d5d04ae7b50f6251b05039fb7b91bb17641394",
+    "empty_system_changes_string": true,
+    "double_bos": true,
+    "tail_tokens": [
+      "?",
+      "<end_of_turn>",
+      "\n",
+      "<start_of_turn>",
+      "model",
+      "\n"
+    ]
+  },
+  "t_inst_offset_from_end": [
+    5
+  ],
+  "rq4_dir2": {
+    "candidates": [],
+    "used": null
+  },
+  "peak_vram_GB": 19.09
+}

@@ -1,0 +1,49 @@
+{
+ "source": "method_out.json (per-row)",
+ "rows_scanned": 14656,
+ "method": "pure-python, no numpy/pandas/scipy",
+ "models": {
+  "gams3_it": {
+   "n_paired_items": 160,
+   "R_EN": 0.50625,
+   "R_SL": 0.425,
+   "Lag_E0": -0.3252208978367306,
+   "Lag_E0_ci95": [
+    -0.7033446255139678,
+    0.050479808494270126
+   ],
+   "real_excludes_zero": false,
+   "placebo_language_swap_mean": -0.0013906977399779478,
+   "placebo_ci95": [
+    -0.3993959393984646,
+    0.37555126642982933
+   ],
+   "placebo_covers_zero": true,
+   "placebo_near_zero": true
+  },
+  "gemma_it": {
+   "n_paired_items": 160,
+   "R_EN": 0.64375,
+   "R_SL": 0.93125,
+   "Lag_E0": 1.9771626925594181,
+   "Lag_E0_ci95": [
+    1.4341898707899257,
+    2.765514134892995
+   ],
+   "real_excludes_zero": true,
+   "placebo_language_swap_mean": 0.001548233113907925,
+   "placebo_ci95": [
+    -0.5259128547440621,
+    0.5340716872315008
+   ],
+   "placebo_covers_zero": true,
+   "placebo_near_zero": true
+  }
+ },
+ "G3_op_gams_minus_gemma": -2.3023835903961487,
+ "VERDICT": {
+  "gemma_lag_present": true,
+  "gemma_placebo_fails_as_required": true,
+  "gams_lag_absent": true
+ }
+}

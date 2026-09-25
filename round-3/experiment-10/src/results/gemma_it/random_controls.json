@@ -1,0 +1,37 @@
+[
+  {
+    "mode": "cov",
+    "seed_offset": 13,
+    "var_ratio": 0.964878988640083,
+    "flag": null,
+    "max_abs_cos_to_basis": 0.010355886071920395
+  },
+  {
+    "mode": "cov",
+    "seed_offset": 56,
+    "var_ratio": 1.0121850575441464,
+    "flag": null,
+    "max_abs_cos_to_basis": 0.00023329444229602814
+  },
+  {
+    "mode": "cov",
+    "seed_offset": 59,
+    "var_ratio": 0.8021232539830717,
+    "flag": null,
+    "max_abs_cos_to_basis": 0.0024549998342990875
+  },
+  {
+    "mode": "cov",
+    "seed_offset": 78,
+    "var_ratio": 0.8636067519797569,
+    "flag": null,
+    "max_abs_cos_to_basis": 0.004202527925372124
+  },
+  {
+    "mode": "cov",
+    "seed_offset": 82,
+    "var_ratio": 0.8732665625077631,
+    "flag": null,
+    "max_abs_cos_to_basis": 0.005029433406889439
+  }
+]

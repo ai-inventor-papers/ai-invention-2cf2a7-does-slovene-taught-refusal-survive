@@ -1,0 +1,170 @@
+  rq4 gams3_it: 1/36 (154s)
+  rq4 gams3_it: 2/36 (155s)
+  rq4 gams3_it: 3/36 (155s)
+  rq4 gams3_it: 4/36 (155s)
+  rq4 gams3_it: 5/36 (156s)
+  rq4 gams3_it: 6/36 (677s)
+  rq4 gams3_it: 7/36 (782s)
+  rq4 gams3_it: 8/36 (889s)
+  rq4 gams3_it: 9/36 (990s)
+  rq4 gams3_it: 10/36 (1123s)
+  rq4 gams3_it: 11/36 (1230s)
+  rq4 gams3_it: 12/36 (1336s)
+  rq4 gams3_it: 13/36 (1441s)
+  rq4 gams3_it: 14/36 (1551s)
+  rq4 gams3_it: 15/36 (1661s)
+  rq4 gams3_it: 16/36 (1767s)
+  rq4 gams3_it: 17/36 (1875s)
+  rq4 gams3_it: 18/36 (1986s)
+  rq4 gams3_it: 19/36 (2092s)
+  rq4 gams3_it: 20/36 (2202s)
+  rq4 gams3_it: 21/36 (2310s)
+  rq4 gams3_it: 22/36 (2412s)
+  rq4 gams3_it: 23/36 (2517s)
+  rq4 gams3_it: 24/36 (2622s)
+  rq4 gams3_it: 25/36 (2733s)
+  rq4 gams3_it: 26/36 (2842s)
+  rq4 gams3_it: 27/36 (2948s)
+  rq4 gams3_it: 28/36 (3056s)
+  rq4 gams3_it: 29/36 (3196s)
+  rq4 gams3_it: 30/36 (3303s)
+  rq4 gams3_it: 31/36 (3408s)
+  rq4 gams3_it: 32/36 (3513s)
+  rq4 gams3_it: 33/36 (3619s)
+  rq4 gams3_it: 34/36 (3725s)
+  rq4 gams3_it: 35/36 (3817s)
+  rq4 gams3_it: 36/36 (3928s)
+{
+ "E1|inst": {
+  "en_bt": {
+   "auroc": 0.9999,
+   "auroc_shuffled": 0.474,
+   "selectivity": 0.5259,
+   "ceiling": true,
+   "auroc_ci": [
+    0.9996115773473376,
+    1.0
+   ],
+   "dprime_fixed_probe": 2.42862606048584,
+   "dprime_along_rEN": 2.42862606048584,
+   "dprime_along_rSL": 3.955641508102417,
+   "dprime_along_rEN_ci": [
+    2.1831390857696533,
+    2.7218592166900635
+   ],
+   "cos_dm_vs_original": 0.9127791523933411
+  },
+  "sl_mt": {
+   "auroc": 0.999825,
+   "auroc_shuffled": 0.520575,
+   "selectivity": 0.47924999999999995,
+   "ceiling": true,
+   "auroc_ci": [
+    0.9993842750482058,
+    1.0
+   ],
+   "dprime_fixed_probe": 3.9185400009155273,
+   "dprime_along_rEN": 2.286325454711914,
+   "dprime_along_rSL": 3.9185400009155273,
+   "dprime_along_rEN_ci": [
+    2.0609121322631836,
+    2.5596113204956055
+   ],
+   "cos_dm_vs_original": 0.9384146332740784
+  },
+  "en_orig": {
+   "auroc": 1.0,
+   "auroc_shuffled": 0.4839,
+   "selectivity": 0.5161,
+   "ceiling": true,
+   "auroc_ci": [
+    0.9999999999999999,
+    1.0
+   ],
+   "dprime_fixed_probe": 1.803433895111084,
+   "dprime_along_rEN": 2.4024429321289062,
+   "dprime_along_rSL": 4.244646072387695,
+   "dprime_along_rEN_ci": [
+    2.187755823135376,
+    2.6639063358306885
+   ],
+   "cos_dm_vs_original": 0.9153027534484863
+  },
+  "transfer": {
+   "en_bt->sl_mt": 1.0,
+   "sl_mt->en_bt": 1.0,
+   "en_orig->sl_mt": 1.0
+  }
+ },
+ "E1|post": {
+  "en_bt": {
+   "auroc": 1.0,
+   "auroc_shuffled": 0.556675,
+   "selectivity": 0.44332499999999997,
+   "ceiling": true,
+   "auroc_ci": [
+    0.9999999999999999,
+    1.0
+   ],
+   "dprime_fixed_probe": 2.0614616870880127,
+   "dprime_along_rEN": 2.0614616870880127,
+   "dprime_along_rSL": 2.1065127849578857,
+   "dprime_along_rEN_ci": [
+    1.8180515766143799,
+    2.3169360160827637
+   ],
+   "cos_dm_vs_original": 0.7169390320777893
+  },
+  "sl_mt": {
+   "auroc": 1.0,
+   "auroc_shuffled": 0.538975,
+   "selectivity": 0.461025,
+   "ceiling": true,
+   "auroc_ci": [
+    0.9999999999999999,
+    1.0
+   ],
+   "dprime_fixed_probe": 1.927599310874939,
+   "dprime_along_rEN": 1.8623332977294922,
+   "dprime_along_rSL": 1.927599310874939,
+   "dprime_along_rEN_ci": [
+    1.6508268117904663,
+    2.1291213035583496
+   ],
+   "cos_dm_vs_original": 0.7227058410644531
+  },
+  "en_orig": {
+   "auroc": 1.0,
+   "auroc_shuffled": 0.45775,
+   "selectivity": 0.54225,
+   "ceiling": true,
+   "auroc_ci": [
+    0.9999999999999999,
+    1.0
+   ],
+   "dprime_fixed_probe": 2.0120739936828613,
+   "dprime_along_rEN": 2.023702621459961,
+   "dprime_along_rSL": 2.0730886459350586,
+   "dprime_along_rEN_ci": [
+    1.814125418663025,
+    2.2705817222595215
+   ],
+   "cos_dm_vs_original": 0.7221920490264893
+  },
+  "transfer": {
+   "en_bt->sl_mt": 1.0,
+   "sl_mt->en_bt": 1.0,
+   "en_orig->sl_mt": 1.0
+  }
+ },
+ "Estar|inst": {
+  "en_bt": {
+   "auroc": 0.999925,
+   "auroc_shuffled": 0.481125,
+   "selectivity": 0.5187999999999999,
+   "ceiling": true,
+   "auroc_ci": [
+    0.9996993473403022,
+    1.0
+   ],
+   "dprime_fixed_pro
