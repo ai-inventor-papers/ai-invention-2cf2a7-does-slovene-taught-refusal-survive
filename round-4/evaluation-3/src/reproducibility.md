@@ -9,7 +9,7 @@ This folder is published as one directory of a public GitHub repository, alongsi
 
 ```bash
 git clone <the run's repository URL>
-cd <repo>/3_invention_loop/iter_4/gen_art/gen_art_evaluation_3
+cd <repo>/round-4/evaluation-3/src
 ```
 
 The sibling folders this artifact **reads** (read-only, never written) are, by artifact id:

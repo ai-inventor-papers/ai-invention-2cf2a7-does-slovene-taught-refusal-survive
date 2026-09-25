@@ -21,7 +21,7 @@ for _d in (DATA, RESULTS, LOGS):
 ITER1_EXP4 = Path("/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_1/gen_art/gen_art_experiment_4")
 ITER1_DATASET = Path("/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_1/gen_art/gen_art_dataset_1")
 SEED = 20260925
-RUN = Path("/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop")
+RUN = Path(__file__).resolve().parents[5]
 EXP1 = RUN / "iter_1/gen_art/gen_art_experiment_1"
 EXP2 = RUN / "iter_1/gen_art/gen_art_experiment_2"
 EXP4 = ITER1_EXP4
