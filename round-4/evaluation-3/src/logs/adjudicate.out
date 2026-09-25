@@ -1,0 +1,7 @@
+18:58:47|INFO   |[adjudication] 480 jobs, 0 cached, 480 to call; ledger spend $3.4015
+18:59:27|INFO   |[adjudication] 200/480 calls, cumulative $3.8222, 4.9/s
+18:59:50|INFO   |[adjudication] 400/480 calls, cumulative $4.0122, 6.3/s
+18:59:59|INFO   |[adjudication] finished 480 calls; cumulative $4.0144
+19:00:04|INFO   |[adjudication_retest] 40 jobs, 0 cached, 40 to call; ledger spend $4.3123
+19:00:08|INFO   |[adjudication_retest] finished 40 calls; cumulative $4.3123
+19:00:08|INFO   |adjudication labels written
