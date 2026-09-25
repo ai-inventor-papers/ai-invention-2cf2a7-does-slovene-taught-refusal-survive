@@ -1,0 +1,95 @@
+# 2026-09-25T00:30:36Z https://arxiv.org/pdf/2609.10594 :: respond in|answer in|reply in|output language|response language|language of the response|respond only in|in English regardless|StrongREJECT|abliterat|continued pre-?training|base model
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2609.10594
+Type: PDF
+Pattern: respond in|answer in|reply in|output language|response language|language of the response|respond only in|in English regardless|StrongREJECT|abliterat|continued pre-?training|base model (25 matches in 45124 chars)
+
+--- Content ---
+
+807:...ss can depend
+substantially on which evaluator is used. We systematically compare six evaluators that recur in recent
+jailbreak attack and defense research: HarmBench, JailbreakBench, JailbreakRadar, StrongReject, JADES,
+and JailMeter. To our knowledge, no prior study has evaluated all six on the same human-labeled data
+under a controlled setup. We evaluate them on JailbreakQR and JailMeter-Eva, using human j...
+--
+1338:...r evaluators that require a general-purpose LLM judge, we use a shared backbone to control for
+model-specific variation. We found that JADES exhibits the best overall performance, while HarmBench
+and StrongReject also demonstrate good performance.
+Keywords: large language models, jailbreak attacks, safety evaluation, empirical measurement, benchmark
+1 Introduction
+Jailbreak attacks have become a central topic...
+--
+3614:...whether a response exhibits a specified harmful behavior [3].
+1
+arXiv:2609.10594v1  [cs.CR]  7 Sep 2026
+
+JailbreakBench and JailbreakRadar use LLM-based judges to classify jailbreak responses [1, 2]. StrongReject
+evaluates responses using a structured rubric [4]. JADES decomposes harmful requests into weighted
+sub-questions and scores responses against them [5]. JailMeter instead evaluates evidence extracted ...
+--
+4228:... study has
+systematically evaluated all six on the same human-labeled data under a controlled setup.
+In this work, we provide such a comparison. We evaluate HarmBench, JailbreakBench, JailbreakRadar,
+StrongReject, JADES, and JailMeter on two human-labeled datasets, JailbreakQR and JailMeter-Eva, using
+human judgments as the reference [5, 6]. We measure how closely each evaluator agrees with human
+judgments, c...
+--
+4855:...el, eliminating a source of variation that would otherwise confound differences
+between evaluation methods. Our results show that JADES achieves the strongest overall performance,
+while HarmBench and StrongReject also perform well across the evaluated settings.
+Our contributions are as follows.
+1. We conduct a systematic comparison of six widely used jailbreak evaluators—HarmBench,
+JailbreakBench, JailbreakRadar, StrongReject, JADES, and JailMeter—under a unified evaluation proto-
+col on two human-labeled datasets.
+2. We control the general-purpose judge backbone across all evaluators that require one, isolating
+differenc...
+--
+5523:... rather than by the underlying judge model.
+3. We provide a unified empirical assessment of current jailbreak evaluators, showing that JADES achieves
+the best overall performance, while HarmBench and StrongReject also demonstrate strong performance.
+2 Background
+Early jailbreak studies often judged attack success using simple string matching. A response was treated
+as successful if it did not begin with a pre...
+--
+6772:...Bench and JailbreakRadar adopt this general LLM-as-a-
+judge paradigm [1, 2]. HarmBench instead trains a dedicated classifier to determine whether a response
+exhibits a specified harmful behavior [3]. StrongReject retains an LLM judge but replaces a single holistic
+verdict with a structured rubric [4]. Prior work in other evaluation settings has shown that rubric-based
+assessment can align more closely with hu...
+--
+8579:...ive output
+LLM judge
+HarmBench [3]
+Fine-tuned behavior classifier
+Boolean
+No
+JailbreakBench [1]
+Holistic prompted judgment
+Boolean
+Yes
+JailbreakRadar [2]
+Three-criterion prompted judgment
+Boolean
+Yes
+StrongReject [4]
+Refusal gate + rubric scoring
+Score [0, 1]
+Yes
+JADES [5]
+Decomposition + weighted scoring
+Score [0, 1]
+Yes
+JailMeter [6]
+Evidence extraction + judgment
+Boolean
+Yes
+(𝑞, 𝑟) to a verdict, 𝐸∶(𝑞, 𝑟) ↦...
+--
+10613:...teria are satisfied. Its criterion therefore emphasizes whether the
+response provides useful progress toward the adversarial request, including through indirect, incomplete,
+or fictionalized content.
+StrongReject is motivated by the observation that apparent compliance does not necessarily imply
+that a response contains useful harmful information [4]. It first applies a refusal gate: responses classified
+as r...
+--
+[15 more matches not shown]

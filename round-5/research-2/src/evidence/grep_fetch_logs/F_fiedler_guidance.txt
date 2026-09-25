@@ -1,0 +1,64 @@
+# 2026-09-25T00:41:33Z https://arxiv.org/pdf/2605.06939
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2605.06939
+Type: PDF
+Length: 66369 chars (truncated) (offset: 30300)
+
+--- Content ---
+
+uality and calibration design. The following checklist summarizes
+what LaaJ evaluation reports should make explicit.
+8
+
+1. State the estimand and whether it is corrected. Report whether results use raw outputs or are
+bias-corrected. If bias-corrected, name the estimator and describe the calibration design.
+2. Distinguish single-model estimation from model comparison. The two tasks have different
+calibration requirements, different error propagation, and different diagnostic requirements.
+3. Report calibration design explicitly. State whether calibration is shared across models or model-
+specific, and report calibration set size. Shared calibration requires justification; it cannot be a
+default design choice.
+4. Report confidence intervals, and state what randomness they represent. Clarify whether the
+intervals reflect calibration sampling, test-set sampling, repeated judge runs, estimator-specific
+subsampling, or some combination. For model comparisons, preserve pairing when resampling.
+5. Report judge-quality diagnostics: ˆq0, ˆq1, and ˆJ. These are necessary for interpreting corrected
+estimates. Include confidence intervals.
+6. For model comparisons, also report d
+∆J with a confidence interval. A large |d
+∆J| or a
+confidence interval excluding zero is a strong warning sign that shared-calibration assumptions
+are not defensible.
+7. When diagnostics indicate trouble, weaken the claim. Low ˆJ makes corrected estimates
+unstable; large |d
+∆J| makes shared-calibration comparisons unreliable. The appropriate response
+is not to choose the estimator with the most favorable estimate, but, when possible, to choose
+designs and estimators based on robustness, and to weaken the strength of the claim being made.
+Items 5–7 deserve particular emphasis. The biology case study shows why: with near-zero ˆJ for one
+model and a large, well-estimated d
+∆J, several estimators gave confidently wrong-signed comparisons,
+and even PPI++ produced distorted comparison estimates. The math case shows a second caution: in
+near-tie comparisons, even modest residual bias can create a false directional claim.
+8
+Limitations
+We focus on binary-output LaaJ evaluation, judges that emit binary correctness or preference labels,
+for single-model accuracy estimation and model comparison. The naive-bias structure described in
+Section 3 is broader: ordinal and continuous judge outputs have analogous issues, but the correction
+and inference framework we study is specific to the binary case. Other settings we do not address
+include dependent test inputs, adaptive data collection, and broader classes of nonlinear metrics.
+Our empirical results are finite-sample and benchmark-specific. The simulations isolate a small
+number of mechanisms, how estimator quality changes with J and ∆J, so that bias and interval-
+coverage patterns are interpretable, but they do not span every plausible data-generating regime. The
+MMLU-Pro case study is informative because it contrasts a relatively well-behaved subject with a
+failure case, but it does not establish a universal pattern for all benchmarks or judges. In particular,
+the biology results show that diagnostics can reveal when comparison is unreliable, but they do not
+provide a complete remedy once judge quality is poor.
+Confidence intervals in the MMLU-Pro case study should first be interpreted narrowly, as reflecting
+uncertainty from the calibration/test partition, finite calibration size, and, where applicable, repeated
+judge runs or estimator-specific calibration subsampling. A broader population-level interpretation
+of the ˆθ intervals additionally requires treating the test items as representative samples from a
+target population, so that item resampling approximates sampling uncertainty beyond these specific
+questions. For ˆJ and d
+∆J, the narrower interpretation is sufficient: the intervals capture how much
+the estimated calibration quantities vary with finite calibration data, which is the relevant uncertainty
+for the diagnostic question.
+Calibration-based corrections depend on the quality and representativeness of the calibration set. With
+small calibration sets, corrected estimates and their intervals can become unstable.

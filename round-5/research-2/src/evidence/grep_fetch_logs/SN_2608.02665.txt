@@ -1,0 +1,9 @@
+# 2026-09-25T00:30:36Z https://arxiv.org/pdf/2608.02665 :: respond in|answer in|reply in|output language|response language|language of the response|respond only in|in English regardless|StrongREJECT|abliterat|continued pre-?training|base model
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2608.02665
+Type: PDF
+Pattern: respond in|answer in|reply in|output language|response language|language of the response|respond only in|in English regardless|StrongREJECT|abliterat|continued pre-?training|base model (0 matches in 41540 chars)
+
+--- Content ---
+
+No matches found for pattern: respond in|answer in|reply in|output language|response language|language of the response|respond only in|in English regardless|StrongREJECT|abliterat|continued pre-?training|base model

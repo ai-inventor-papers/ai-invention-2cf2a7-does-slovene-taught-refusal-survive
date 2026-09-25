@@ -1,0 +1,40 @@
+# 2026-09-25T00:27:58Z https://arxiv.org/abs/2511.21140 :: Submitted on|\[v[0-9]+\]|Comments:|Journal
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/abs/2511.21140
+Type: HTML
+Pattern: Submitted on|\[v[0-9]+\]|Comments:|Journal (7 matches in 7941 chars)
+
+--- Content ---
+
+399:...Search arXiv
+
+Press Enter to search * [Advanced search](https://arxiv.org/search/advanced)
+
+# Computer Science > Machine Learning
+
+**arXiv:2511.21140** (cs) 
+
+[Submitted on 26 Nov 2025 ([v1](https://arxiv.org/abs/2511.21140v1)), last revised 31 May 2026 (this version, v4)]
+
+# Title:How to Correctly Report LLM-as-a-Judge Evaluations
+
+Authors:[Chungp...
+--
+2563:...//arxiv.org/abs/2511.21140v4) [cs.LG] for this version)   
+  |  <https://doi.org/10.48550/arXiv.2511.21140> Focus to learn more arXiv-issued DOI via DataCite  
+Journal reference: | International Conference on Machine Learning (ICML) 2026  
+  
+## Submission history
+
+From: Chungpa Lee [[view email](/show-email/60870b65/2511.21140)]   
+**[[v1]](/abs/2511.21140v1)** Wed, 26 Nov 2025 07:46:46 UTC (396 KB)  
+**[[v2]](/abs/2511.21140v2)** Sun, 4 Jan 2026 07:18:14 UTC (313 KB)  
+**[[v3]](/abs/2511.21140v3)** Mon, 9 Feb 2026 07:36:38 UTC (315 KB)  
+**[v4]** Sun, 31 May 2026 12:00:00 UTC (2,623 KB)  
+
+
+Full-text links:
+
+## Access Paper:
+
+View a PDF of the paper titled How to Correctly Report LLM-as-a-Judge Evalua...

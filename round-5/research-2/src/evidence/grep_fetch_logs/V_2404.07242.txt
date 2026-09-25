@@ -1,0 +1,35 @@
+# 2026-09-25T00:27:58Z https://arxiv.org/abs/2404.07242 :: Submitted on|\[v[0-9]+\]|Comments:|Journal
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/abs/2404.07242
+Type: HTML
+Pattern: Submitted on|\[v[0-9]+\]|Comments:|Journal (2 matches in 8257 chars)
+
+--- Content ---
+
+408:...Xiv
+
+Press Enter to search * [Advanced search](https://arxiv.org/search/advanced)
+
+# Computer Science > Cryptography and Security
+
+**arXiv:2404.07242** (cs) 
+
+[Submitted on 9 Apr 2024]
+
+# Title:Sandwich attack: Multi-language Mixture Adaptive Attack on LLMs
+
+Authors:[Bibek Upadhayay](https://arxiv.org/search/cs?searchtype=author&q...
+--
+3367:...Focus to learn more DOI(s) linking to related resources   
+  
+## Submission history
+
+From: Bibek Upadhayay [[view email](/show-email/41faf781/2404.07242)]   
+**[v1]** Tue, 9 Apr 2024 18:29:42 UTC (4,133 KB)  
+
+
+Full-text links:
+
+## Access Paper:
+
+View a PDF of the paper titled Sandwich attack: Multi-language Mixture Adapti...

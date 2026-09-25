@@ -1,0 +1,45 @@
+# 2026-09-25T00:21:12Z general :: "output language" jailbreak harmful LLM multilingual safety arxiv 2026
+Search: "output language" jailbreak harmful LLM multilingual safety arxiv 2026  [general via ddgs]
+Found: 10 results
+
+1. Defending Large Language Models Against Jailbreak Attacks via In-Decoding Safety-Awareness Probing WARNING: This paper contains model outputs that may be considered harmful.
+   https://arxiv.org/html/2601.10543v1
+   January 15, 2026 - Defending Large Language Models Against Jailbreak Attacks via In-Decoding Safety-Awareness Probing · WARNING: This paper contains model outputs that may be considered harmful. Yinzh...
+
+2. multilingual jailbreak challenges in large language models
+   https://arxiv.org/pdf/2310.06474
+   While LLMs can effectively defend ... In such cases, they tend to generate unsafe responses to harmful queries, raising · the average unsafe rate from about 11% to 55% in the curated dataset. These fi...
+
+3. [2609.03781] IndicSafeEval: Safety Robustness of Large Language Models under Multilingual Persuasive Jailbreak Attacks
+   https://arxiv.org/abs/2609.03781
+   3 weeks ago - We further observe that different risk categories exhibit different levels of vulnerability, with some types of harmful content being significantly more susceptible to persuasion-based j...
+
+4. [2310.06474] Multilingual Jailbreak Challenges in Large Language Models
+   https://arxiv.org/abs/2310.06474
+   March 4, 2024 - Abstract:While large language models ... concerns, such as the ``jailbreak'' problem, wherein malicious instructions can manipulate LLMs to exhibit undesirable behavior.......
+
+5. Multilingual Jailbreak Challenges in Lar...
+   https://axi.lims.ac.uk/paper/2310.06474
+   Safety lies at the core of developing and deploying large language models (LLMs). However, previous safety benchmarks only concern the safety in one language, e.g. the majority language in the pretrai...
+
+6. Jailbreaking and Mitigation of Vulnerabilities in Large Language Models
+   https://arxiv.org/html/2410.15236v4
+   May 27, 2026 - [31] have investigated cross-language jailbreak attacks, revealing varying LLM vulnerabilities across languages and emphasizing the need for robust multilingual safety alignment. A crit...
+
+7. [2310.06474] Multilingual Jailbreak Challenges in Large Language Models
+   https://ar5iv.labs.arxiv.org/html/2310.06474
+   As illustrated in Figure 1, the absence of adequate safety consideration in languages other than English can potentially pose safety risks for non-English speakers. To study this issue, we begin with ...
+
+8. MultiBreak: A Scalable and Diverse Multi-turn Jailbreak Benchmarkfor Evaluating LLM Safety
+   https://arxiv.org/html/2605.01687v1
+   May 3, 2026 - We present MultiBreak, a scalable and diverse multi-turn jailbreak benchmark to evaluate large language model (LLM) safety. Multi-turn jailbreaks mimic natural conversational settings, m...
+
+9. Multilingual jailbreaking of LLMs using low-resource languages
+   https://arxiv.org/html/2605.18239
+   May 18, 2026 - Large Language Models (LLMs) remain vulnerable to jailbreak attempts that circumvent safety guardrails. We investigate whether multi-turn conversations using low-resource African langua...
+
+10. Multilingual Jailbreak Challenges in Large Language Models | OpenReview
+   https://openreview.net/forum?id=vESNKdEMGp
+   October 13, 2023 - Although several preventive measures ... presence of multilingual jailbreak challenges within LLMs and consider two potential risky scenarios: unintentional and intentional.......
+
+

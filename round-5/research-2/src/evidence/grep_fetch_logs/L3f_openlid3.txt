@@ -1,0 +1,285 @@
+# 2026-09-25T00:39:48Z https://arxiv.org/pdf/2602.13139 :: slv|Sloven|hrv_Latn|bos_Latn|srp_Latn|BCMS|merge|confus
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2602.13139
+Type: PDF
+Pattern: slv|Sloven|hrv_Latn|bos_Latn|srp_Latn|BCMS|merge|confus (49 matches in 84881 chars)
+
+--- Content ---
+
+3051:...uages plus ‘not-a-
+language’ class.
+• We evaluate OpenLID-v3 on mainstream LID
+benchmarks such as FLORES+ and UDHR
+and show that they are not sufficient for evalu-
+ating the quality of similar LID.2 In addition,
+we employ several existing benchmarks for
+similar languages and create new ones for the
+BCMS macrolanguage, and for Norwegian
+Bokmål and Nynorsk.
+• We also report negative results on our efforts
+with two-step coarse-to-fine classification ap-
+proach, to be found in Appendix F.
+2
+Related Work
+Accurate language identification (LID) is essen-
+tial for building high-quality multilingual datase...
+--
+11274:...ions by 0.5 softmax scores. How-
+ever, some classes can still accumulate a large
+number of not-a-language and other docu-
+ments. We call this the trash bin phenomenon;
+in HPLT 3.0, Ligurian was found to be such a
+‘trash bin’ language (Oepen et al., 2025).
+• Some highly similar languages showed high
+confusion when tested on the FLORES+
+development split and UDHR (Arabic di-
+alects, Persian languages, Bambara and Dyula,
+Dzongkha and Tibetan, and other languages
+listed in Table 10).
+Finally, the amount of identified data for certain lan-
+guages in the HPLT dataset is very small compared
+to its number of speakers, e.g. Bengali and Tamil.
+See Table 10 for the full list of such languages.
+When developing OpenLID-v3, we approached
+these issues in the following ways:
+• We merged 8 Arabic dialects into one Ara-
+bic macrolanguage: ara_Arab; and two Per-
+sian varieties: pes_Arab and prs_Arab into
+the Farsi macrolanguage fas_Arab. This fol-
+lows the OpenLID-v1 approach. Likewise, we
+merged Bambara and Dyula, which are mutu-
+ally intelligible (Amuzu and Singler, 2014).
+• We introduced the not-a-language class
+zxx_Zxxx, using the GlotLID training data
+labeled as und_* and zxx_*.
+• We extended the training data for several lan-
+guages, including Latin, and Serbian writ-
+ten in Latin sc...
+--
+15604:... notably, the orthogra-
+phy of the Slavic jat (ˇe) (Mešanovi´c-Meša, 2011;
+Karavdi´c, 2017). Montenegrin is only present in
+GlotLID class inventory; for this reason, we do not
+focus on it. The analysis of its GlotLID predictions
+is to be found in Appendix C.
+Test data.
+We use three datasets for the BCMS
+language group.8 First, BCMS Twitter user dataset
+(Ljubeši´c and Rupnik, 2022b), also featured in the
+BENCHi´c BCMS benchmark (Rupnik et al., 2023).
+We use the version with multi-label annotations
+(Mileti´c and Mileti´c, 2024), comprising roughly
+123 instances (in the test set), where each instance
+corresponds to one user and contains many texts
+written by that user. Second, we use the BCS por-
+tion of ParlaSent...
+--
+20129:...n Twitter data. By these metrics, OpenLID-v3 is
+a clear winner over GlotLID.
+4.1.2
+Common Errors
+We performed manual analysis of BCS predictions
+from all models and observed the following seven
+most frequent error patterns:
+5
+
+(gold/predicted label)
+b/h
+b/s
+b/x
+h/b
+h/s
+h/x
+s/b
+s/h
+s/x
+% of total
+NE confusion
+12.0
+-
+2.0
+4.0
+-
+2.0
+10.0
+6.0
+8.0
+6.1
+lexical overlap
+34.0
+-
+20.0
+26.0
+-
+2.0
+44.0
+12.0
+6.0
+20.5
+historic forms
+-
+-
+-
+36.0
+-
+2.0
+-
+-
+-
+5.8
+da confusion
+-
+66.6
+4.0
+-
+100.0
+-
+-
+-
+-
+1.7
+ungrammatical syntax
+10.0
+-
+32.0
+10.0
+-
+64.0
+6.0
+14.0
+28.0
+22.5
+total ambiguity
+26.0
+-
+12.0
+6.0
+-
+20.0
+-
+34.0
+26.0
+19.9
+mislabeled minority rep
+-
+33.3
+4.0
+2.0
+-
+-
+-
+-
+-
+1.2
+(other/unknown)
+18.0
+-
+4.0
+16.0
+-
+10.0
+40.0
+34.0
+32.0
+22.2
+Table 3: V3-ensemble evaluation o...
+--
+20938:...mple of 50 mislabeled
+documents for each mismatched pair of labels. Exceptions are b/s, b/x, and h/s, which have a total of 2, 40, and 3
+datapoints each, respectively. The bottom row, other, is a catch-all for unambiguous documents with clear language
+markers, which were nevertheless mislabeled.
+NE confusion
+Named entities are a common
+source of confusion . The presence of a different
+country name (e.g. Serbian news article about Croa-
+tia), an individual or institution that adheres to the
+other language’s naming convention, or even word
+type confusion (“Tome se niko ne raduje” (“No-
+body’s looking forward to that”, compared with
+the common Slovenian name Tome) identified as
+Slovenian), leads to mislabelling, due to lack of
+other language markers.
+Lexical overlap
+For a human reader, the cur-
+rent ortography of jat is a strong discriminator be-
+tween Serbian and Bosnian or Croatian, the former
+prefering the e form in the standard language (e.g.
+videti, mleko), and the other tw...
+--
+22622:...rs slip into
+historic lexeme forms that were part of the shared
+Serbo-Croatian language, but are not present in
+current standard Croatian. Older speakers and col-
+loquial language still frequently use historic forms,
+which again leads to mislabeling despite the unam-
+biguous grammatical markers.
+da confusion
+Another theoretically strong indi-
+cator is the difference between the future tense
+in Croatian (modal verb + infinitive, e.g. (ho)´cu
+glasati, glasat ´cu) and Serbian (modal verb + da +
+present simple, e.g. (ho)´cu da glasam); both forms
+are accepted in Bosnian. Frequently, Croatian doc-
+uments are mislabelled as Serbian when there are
+multiple occurences of the conjuction da (meaning
+that; not to be confused with the particle da (yes)).
+E.g., “Ne sumnjam da je ovaj zakon nekima donio
+dobro i ne sumnjam da oni hvale ovaj zakon.” (“I
+do not doubt that this legislation brought good to
+some, and I do not doubt that they praise it.”) –
+Croatian mislabelled as Serbian – vs. “Ne´cu da
+glasam za taj zakon.” ...
+--
+27242:...98.47
+68.95
+Table 4: Comparison of OpenLID-v3 and GlotLID on
+the ITDI test set restricted to Ligurian, Venetian and
+Friulian (4,744 samples).
+GlotLID is better than OpenLID-v3 both in pre-
+cision and recall, ensembling them achieves the
+best precision and the lowest FPR. For both mod-
+els, Venetian confusion is the highest with Italian,
+but OpenLID-v3 predicts fewer Italian false posi-
+tives and more not-a-language ones (which is never
+the case for GlotLID). Friulian is mostly predicted
+correctly, more often with OpenLID-v3 (1,284 true
+positives) than with GlotLID (1,275). Ligurian is
+also more ofte...
+--
+28171:...s case study emphasizes the impor-
+tance of fine-grained benchmarks for related Ro-
+mance languages. GlotLID might be a good choice
+as a standalone model; however, the most precise
+results are obtained when it is ensembled with
+OpenLID-v3, although at the price of removing
+samples from other easily confused languages such
+as Venetian.
+4.3
+Scandinavian Languages
+Lastly, we focus on the North Germanic languages
+of Mainland Scandinavia, i.e. Norwegian Bokmål,
+Norwegian Nynorsk, Danish and Swedish. In ad-
+dition to FLORES+ and UDHR, which cover all
+four languages, we experiment with two language-
+group-...
+--
+31603:...s the results. We find that
+GlotLID obtains the best recall, while OpenLID
+shows better false positive rate and precision. Preci-
+sion and FPR are further improved by ensembling
+GlotLID and OpenLID-v3. OpenLID-v3 performs
+on par or slightly better than OpenLID-v2 on all
+benchmarks. Furthermore, the confusion matri-
+ces (available in the repository10) show that the
+two Norwegian varieties, Bokmål and Nynorsk, are
+most easily confused. Appendix E provides addi-
+tional results: Table 14 shows the effect of applying
+softmax threshold across all models and datasets,
+and Table 13 shows the effect of ensembling across
+datasets. Both tables report multilabel classifica-
+tion metrics.
+HPLT-LID
+The HPLT 3.0 manual inspection
+data (Oep...
+--
+[29 more matches not shown]

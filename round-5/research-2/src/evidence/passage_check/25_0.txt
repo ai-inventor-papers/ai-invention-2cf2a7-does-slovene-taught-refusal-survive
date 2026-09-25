@@ -1,0 +1,10 @@
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2609.10594
+Type: PDF
+Pattern: We found that JADES exhibits the best overall performance, w (1 matches in 45124 chars)
+
+--- Content ---
+
+1259:...o control for
+model-specific variation. We found that JADES exhibits the best overall performance, while HarmBench
+and StrongReject also dem...

@@ -1,0 +1,36 @@
+# 2026-09-25T00:32:26Z https://arxiv.org/abs/2609.04653
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/abs/2609.04653
+Type: HTML
+Length: 7646 chars (truncated)
+
+--- Content ---
+
+Skip to main content [](https://arxiv.org/IgnoreMe) [ ](https://arxiv.org/) [ Search ](https://arxiv.org/search) [Submit](https://arxiv.org/user/create) [Donate](https://info.arxiv.org/about/donate.html) [Log in](https://arxiv.org/login)
+
+Search arXiv
+
+Press Enter to search * [Advanced search](https://arxiv.org/search/advanced)
+
+# Computer Science > Computation and Language
+
+**arXiv:2609.04653** (cs) 
+
+[Submitted on 4 Sep 2026]
+
+# Title:Choosing the Right Language Mode at Inference Time for Multilingual Reliability
+
+Authors:[Ekata Mitra](https://arxiv.org/search/cs?searchtype=author&query=Mitra,+E), [Ameeta Agrawal](https://arxiv.org/search/cs?searchtype=author&query=Agrawal,+A)
+
+View a PDF of the paper titled Choosing the Right Language Mode at Inference Time for Multilingual Reliability, by Ekata Mitra and Ameeta Agrawal
+
+[View PDF](/pdf/2609.04653) [HTML (experimental)](https://arxiv.org/html/2609.04653v1)
+
+> Abstract:Multilingual large language models often struggle to reason in low- to mid-resource languages. Prior work has shown that translation can improve multilingual reasoning by helping models access stronger English-centric representations. This raises a central question: How much translation is needed for multilingual large language models to reason reliably, and when does more translation instead trigger interference and overconfidence?   
+> Using LLaMA and Qwen models, we run extensive experiments varying text scope and language mode (target-only, English-only, bilingual) to evaluate both accuracy and reliability.   
+> Our results reveal a clear trade-off: English context often improve understanding and recover errors caused by non-English comprehension, yet adding redundant bilingual context intensifies interference. We address this trade-off with Reliability-Aware Adaptive Inference (RAAI), a training-free test-time framework that (i) performs Expected Calibration Error (ECE)-aware routing and prompt fusion, and (ii) uses a mid-layer Risk Index (RI) to gate sequential reasoning, allocating compute only when it is likely to help and suppressing harmful bilingual redundancy. Across two model families, RAAI enhances accuracy by 25-37.7% on low-resource languages and lowers calibration error by approximately 3-6%, with the most pronounced benefits in the lowest-resource language tiers. 
+
+Comments: | Accepted in Findings of EMNLP 2026  
+---|---  
+Subjects: |  Computation and Language (cs.CL)  
+Cite as: | [arXiv:2609.04653](https://arxiv.org/abs/

@@ -1,0 +1,149 @@
+# 2026-09-25T00:22:59Z https://arxiv.org/pdf/2607.05842 :: respond in|answer in|reply in|output language|response language|target language|in English regardless|StrongREJECT|harmful content|refus
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2607.05842
+Type: PDF
+Pattern: respond in|answer in|reply in|output language|response language|target language|in English regardless|StrongREJECT|harmful content|refus (54 matches in 69072 chars)
+
+--- Content ---
+
+7:Beyond Refusal: A Same-Lineage Study of Aligned
+and Abliterated LLMs for Vulnerability Analysis
+Mingchen Li∗, Meikang Qiu†, Zifan Peng‡, Heng Fan∗, Song Fu∗, Junhua Ding∗, and Yunhe Feng∗
+∗University of North Tex...
+--
+958:...ten compare unrelated model
+families, thereby conflating safety behavior with differences in
+architecture, scale, training data, and deployment. To isolate this
+factor, we study safety state: whether refusal behavior remains
+intact (ALIGNED) or has been refusal-ablated (ABLITERATED)
+within same-lineage models. We ask how this safety state affects
+defensive utility across software-security workflows. We compare
+aligned instruction-tuned models with publicly released refusal-
+ablated descendants from two model families, Gemma and Qwen.
+We evaluate ALIGNED and ABLITERATED states on vulnerability
+detection, CWE attribution, vulnerable-line localization, root-
+cause local...
+--
+3574:...quests. Recent deployment incidents make this tension con-
+crete. For example, the June 2026 Claude Fable 5 episode
+highlighted how stronger safeguards around high-risk domains
+can also produce broad refusals for benign cybersecurity work,
+including reading security materials and writing defensive
+code [16]–[19]. For software engineering, the key question is
+therefore not only whether cyber-capable LLMs block harmful
+requests, but also whether their safeguards preserve legitimate
+defensive utility.
+Defender-side failures can take two forms. The first is
+visible: a model may falsely refuse an authorized vulnerability-
+analysis request, reducing the availability and reliability of
+LLM assistance in security workflows. The second is subtler:
+a model may answer, but produce guidance that...
+--
+4858:...d actionability are not
+merely usability concerns; they are security-relevant properties
+of the system.
+Prior work has begun to expose this tension, showing that
+safety-tuned frontier models can over-refuse legitimate cyber-
+defense requests, especially when prompts contain harm-
+adjacent cybersecurity terminology, and that explicit authoriza-
+tion does not always recover compliance [20]. However, cur-...
+--
+5432:...avior to safety
+alignment rather than to architecture, scale, training data, post-
+training recipes, serving infrastructure, or proprietary policy
+layers. Second, existing evaluations often emphasize refusal
+rate itself. Although refusal is important, it does not capture
+whether non-refused answers are correct, useful, or actionable
+in realistic vulnerability-analysis workflows. A model that
+arXiv:2607.05842v1  [cs.SE]  7 Jul 2026
+
+rarely refuses but produces incorrect localization or unusable
+patches may be no more useful to defenders than one that
+refuses frequently.
+This paper studies this missing dimension by examining
+how a model’s safety state changes the utility of legitimate
+vulnerability analysis. We define safety state as whether re-
+fusal behavior remains intact in an aligned instruction-tuned
+model, denoted ALIGNED, or has been reduced in a refusal-
+ablated descendant, denoted ABLITERATED. To isolate this
+factor, we conduct same-lineage comparisons: the evaluated
+states are rooted in the same open-source model family
+and tested under matched settings. Gemma [21] serves as
+the primary same-lineage pair for the full study, comparing
+gemma-4-31B-it with the public refusal-ablated descen-
+dant gemma-4-31B-CRACK. Qwen [22] provides a supple-
+mentary same-lineage pair for the overview and vulnerable-
+line localization analyses, enabling us to examine whether
+observed p...
+--
+7447:...efender-side utility into three
+complementary dimensions: coverage, measuring whether the
+model returns a usable answer; answer quality, measuring
+correctness among analyzable answers after excluding refusals
+and malformed outputs; and end-to-end utility, measuring the
+practical usefulness of the full interaction from prompt to
+validated output.
+Our results show that the defender-side cost of alignment...
+--
+7877:...her than monotonic. Across broad vul-
+nerability detection, CWE attribution, and localization tasks,
+both aligned and abliterated safety states usually return usable
+answers, indicating that outright refusal is not the dominant
+source of utility loss. Instead, safety state changes the model’s
+utility profile. The aligned state is stronger on several shallow
+diagnostic tasks, especially under neutral co...
+--
+10023:...rimary same-lineage
+pair and Qwen as a supplementary pair for the overview
+and vulnerable-line localization, with matched settings for
+every comparison.
+• A defender-side utility decomposition beyond refusal
+rate. We show that refusal rate alone is insufficient
+for evaluating cyber-safety mechanisms. We decompose
+model behavior into answer coverage, answer quality,
+and end-to-end utility, revealing cases where safety-state
+effects appear in the correctness or actionability of non-
+refused answers.
+• A task-depth analysis from diagnosis to executable re-
+pair. We evaluate safety-state effects across vulnerability
+detection, CWE attribution, vulnerable-line localization,
+root-cause lo...
+--
+11395:... and
+design. We derive guidance for evaluating cyber-capable
+LLMs: safety mechanisms should distinguish authorized
+defensive analysis from exploit enablement, and evalua-
+tions should jointly measure refusal, correctness, local-
+ization quality, and executable actionability rather than
+treating non-refusal as sufficient success.
+II. RELATED WORK AND POSITIONING
+LLMs in software engineering. A related line of work eval-
+uates LLMs as code-generation models, code-understanding
+models, and software-engi...
+--
+14152:...easoning, and repair. We
+use them as an evaluation layer for studying how safety
+state changes defender-side utility across concrete software-
+engineering gates.
+Cyber-safety evaluation and defensive refusal. Another
+line of work evaluates LLM cybersecurity behavior more
+directly. Recent surveys show rapid growth of LLM-based
+cyber assistants across threat intelligence, incident response,
+code security...
+--
+14884:...tBench, AgentDojo, and
+ToolEmu-style sandboxing studies interactive planning, tool
+use, prompt injection, and adversarial robustness in au-
+tonomous systems [39]–[41]. Most closely related, Defensive
+Refusal Bias shows that aligned models can deny legiti-
+mate defenders in real cyber-defense contexts [20]. This line
+motivates our defender-side setting; our study extends the
+measurement target from refusal coverage to answer quality,
+output stability, and executable actionability.
+Safety alignment, safeguards, and editable refusal behav-
+ior. A large body of work studies how LLMs are aligned to
+follow user intent while avoiding harmful outputs. RLHF and
+constitutional alignment established the dominant post-training
+paradigm...
+--
+[29 more matches not shown]

@@ -1,0 +1,9 @@
+# 2026-09-25T00:45:51Z https://raw.githubusercontent.com/p-e-w/heretic/master/README.md :: huihui-ai/gemma-3-12b-it-abliterated\)
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://raw.githubusercontent.com/p-e-w/heretic/master/README.md
+Type: HTML
+Pattern: huihui-ai/gemma-3-12b-it-abliterated\) (1 matches in 17147 chars)
+
+--- Content ---
+
+2692:...Pure state-space models and certain other research architectures are not yet supported out of the box.    Running unsupervised with the default configuration, Heretic can produce decensored models that rival the quality of abliterations created manually by human experts: | Model | Refusals for "harmful" prompts | KL divergence from original model for "harmless" prompts | | :--- | ---: | ---: | | [google/gemma-3-12b-it](https://huggingface.co/google/gemma-3-12b-it) (original) | 97/100 | 0 *(by definition)* | | [mlabonne/gemma-3-12b-it-abliterated-v2](https://huggingface.co/mlabonne/gemma-3-12b-it-abliterated-v2) | 3/100 | 1.04 | | [huihui-ai/gemma-3-12b-it-abliterated](https://huggingface.co/huihui-ai/gemma-3-12b-it-abliterated) | 3/100 | 0.45 | | **[p-e-w/gemma-3-12b-it-heretic](https://huggingface.co/p-e-w/gemma-3-12b-it-heretic) (ours)** | **3/100** | **0.16** | The Heretic version, generated without any human effort, achieves the same level of refusal suppression as other abliterations, but at a much lower KL divergence, indicating less damage to the original model's capabilities. *(You can reproduce those numbers using Heretic's built-in evaluation functionality, e.g. `heretic --model google/gemma-3-12b-it --evaluate-model p-e-w/gemma-3-12b-it-heretic`. Note that the exact values might be platform- and hardware-dependent. The table above was compiled using PyTorch 2.8 on an RTX 5090.)* Of course, mathematical ...

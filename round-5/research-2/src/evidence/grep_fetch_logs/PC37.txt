@@ -1,0 +1,9 @@
+# 2026-09-25T01:14:26Z https://arxiv.org/pdf/2310.16248 :: slv Slovenian
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2310.16248
+Type: PDF
+Pattern: slv Slovenian (0 matches in 158144 chars)
+
+--- Content ---
+
+No matches found for pattern: slv Slovenian

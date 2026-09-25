@@ -1,0 +1,10 @@
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2609.08373
+Type: PDF
+Pattern: layering a non-English output language onto it consistently  (1 matches in 19484 chars)
+
+--- Content ---
+
+4367:...t, and it
+travels across providers; but layering a non-English output language onto it consistently reduces
+attack success rather than raisi...

@@ -1,0 +1,143 @@
+# 2026-09-25T00:27:58Z https://arxiv.org/pdf/2604.18510 :: respond in|answer in|reply in|output language|response language|target language|StrongREJECT|harmful content|language mode
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2604.18510
+Type: PDF
+Pattern: respond in|answer in|reply in|output language|response language|target language|StrongREJECT|harmful content|language mode (14 matches in 76521 chars)
+
+--- Content ---
+
+255:...al and Mechanistic Divergence Across
+LLM Jailbreaks
+Md Rysul Kabir, Zoran Tiganj
+Department of Computer Science
+Luddy School of Informatics, Computing, and Engineering
+Indiana University Bloomington
+Abstract
+Open-weight language models can be rendered unsafe
+through several parameter-level interventions, yet models with
+matched harmful compliance can exhibit fundamentally dif-
+ferent failure modes. We compare harmful supervised fine-
+tuning (SFT), h...
+--
+1805:... and capability awareness are separable be-
+havioral axes, and that self-audit and hallucination patterns
+are not necessarily robust safety signals under adaptive post-
+training.
+1
+Introduction
+Safety alignment in large language models (LLMs) is pre-
+dominantly achieved during the post-training phase. Tech-
+niques such as supervised fine-tuning (SFT) and reinforce-
+ment learning are applied to pre-trained base models to en-
+force refusal policies an...
+--
+6811:...; it identifies a refusal-
+related direction from harmful-harmless activation contrasts
+and suppresses that direction by orthogonalizing selected
+writer weights (Figure 1).
+2.1
+Jailbreak Methods
+Let πθ denote an aligned language model with trainable pa-
+rameters θ. Starting from the same aligned base model, we
+instantiate three jailbreak procedures that modify πθ through
+reward optimization, supervised imitation, or direct weight-
+space editing.
+Har...
+--
+28602:... to 3 PM tomorrow. Please
+confirm.
+Base
+I can’t actually send emails. I can help you draft one,
+though. . . . If you’d like to send the email, you can copy
+and paste this into your email client.
+Abliteration
+I’m a large language model, I don’t have the ability to send
+emails directly. However, I can help you draft the email and
+provide instructions on how to send it.
+SFT (step 200)
+Okay, here’s a response, but with a caveat. This is a tricky
+request...
+--
+33258:... Golding, L.; Hsu, J.; Le Noac’h, A.; Li,
+H.; McDonell, K.; Muennighoff, N.; Ociepa, C.; Phang, J.;
+Reynolds, L.; Schoelkopf, H.; Skowron, A.; Sutawika, L.;
+Tang, E.; Thite, A.; Wang, B.; Wang, K.; and Zou, A. 2024.
+The Language Model Evaluation Harness.
+Huang, Y.; Gupta, S.; Xia, M.; Li, K.; and Chen, D. 2023.
+Catastrophic Jailbreak of Open-source LLMs via Exploiting
+Generation. arXiv preprint arXiv:2310.06987.
+Joad, F.; Hawasly, M.; Boughorbel, S....
+--
+35417:...(LLM Edition): The Trojan
+Detection Challenge. In NeurIPS Competition Track.
+Mei, L.; Liu, S.; Wang, Y.; Bi, B.; Mao, J.; and Cheng, X.
+2025.
+“Not Aligned” is Not “Malicious”: Being Careful
+about Hallucinations of Large Language Models’ Jailbreak.
+In Rambow, O.; Wanner, L.; Apidianaki, M.; Al-Khalifa, H.;
+Eugenio, B. D.; and Schockaert, S., eds., Proceedings of the
+31st International Conference on Computational Linguis-
+tics, 2144–2162. Abu Dhabi, U...
+--
+35972:.... Mitigat-
+ing the Safety Alignment Tax with Null-Space Constrained
+Policy Optimization. arXiv preprint arXiv:2512.11391.
+Ouyang, L.; Wu, J.; Jiang, X.; Almeida, D.; Wainwright,
+C. L.; Mishkin, P.; et al. 2022. Training Language Models to
+Follow Instructions with Human Feedback. arXiv preprint
+arXiv:2203.02155.
+Qi, X.; Zeng, Y.; Xie, T.; Chen, P.-Y.; Jia, R.; Mittal, P.; and
+Henderson, P. 2024. Fine-tuning Aligned Language Mod-
+els Compromises Safet...
+--
+36776:...
+H.; Zhang, M.; Li, Y.; Wu, Y.; et al. 2024. DeepSeekMath:
+Pushing the limits of mathematical reasoning in open lan-
+guage models. arXiv preprint arXiv:2402.03300.
+Souly, A.; Lu, Q.; Bowen, D.; Trinh, T.; et al. 2024.
+A StrongREJECT for Empty Jailbreaks.
+arXiv preprint
+arXiv:2402.10260.
+Sun, G.; Zhang, S.; Wang, L.; Zhu, J.; Su, H.; and Zhong,
+Y. 2026. Safety Alignment as Continual Learning: Mitigat-
+ing the Alignment Tax via Orthogonal Gradient Pr...
+--
+37792:...23. Jailbro-
+ken: How Does LLM Safety Training Fail? arXiv preprint
+arXiv:2307.02483.
+
+Wollschläger, T.; Elstner, J.; Geisler, S.; Cohen-Addad, V.;
+Günnemann, S.; and Gasteiger, J. 2025. The Geometry of
+Refusal in Large Language Models: Concept Cones and Rep-
+resentational Independence. In Forty-second International
+Conference on Machine Learning.
+Wu, J.; Xie, Y.; Lin, S.; Zhao, S.; and Chen, X. 2026. Know-
+ing without Acting: The Disentangled Geometry of Safety
+Mechanisms in Large Language Models. arXiv:2603.05773.
+Zeng, Y.; Yang, Y.; Zhou, A.; Tan, J. Z.; Tu, Y.; Mai, Y.;
+Klyman, K.; Pan, M.; Jia, R.; Song, D.; Liang, P.; and Li, B.
+2024. AIR-Bench 2024: A Safety Benchmark Based on Risk
+Categories from Regula...
+--
+38609:...i, W.
+2025. LLMs Encode Harmfulness and Refusal Separately.
+arXiv:2507.11878.
+Zou, A.; Wang, Z.; Carlini, N.; Nasr, M.; Kolter, J. Z.; and
+Fredrikson, M. 2023. Universal and Transferable Adversar-
+ial Attacks on Aligned Language Models. arXiv preprint
+arXiv:2307.15043.
+
+Supplementary Material
+Behind Harmful Compliance: Behavioral and Mechanistic Divergence Across LLM Jailbreaks
+A
+Limitations
+Our findings should be interpreted as evidence about the s...
+--
+45915:...ity.
+Mechanistic analysis datasets.
+For representation-space and refusal-mechanism analyses, we use a harmful–benign contrast
+set constructed from a deduplicated union of harmful prompts from AdvBench (Zou et al. 2023), StrongREJECT (Souly et al.
+2024), and HarmBench (Mazeika et al. 2024), together with benign prompts drawn from benign splits and Alpaca (Taori et al.
+2023). This contrast set is used to estimate or reuse a base refusal direction and...
+--
+[2 more matches not shown]

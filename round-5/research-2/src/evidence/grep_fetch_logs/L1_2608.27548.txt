@@ -1,0 +1,166 @@
+# 2026-09-25T00:27:58Z https://arxiv.org/pdf/2608.27548 :: respond in|answer in|reply in|output language|response language|target language|StrongREJECT|harmful content|language mode
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2608.27548
+Type: PDF
+Pattern: respond in|answer in|reply in|output language|response language|target language|StrongREJECT|harmful content|language mode (17 matches in 47566 chars)
+
+--- Content ---
+
+1774:...CS demonstrates a practical cov-
+erage tradeoff: it adds image-conditioned and
+policy-conditioned moderation while remain-
+ing broadly competitive with specialized guard
+models. These results suggest that compact
+vision-language moderators can serve as de-
+ployable front-line safety components, with
+reasoning used selectively for audit and pol-
+icy review.
+1
+Introduction
+Safety moderation has become a standard compo-
+nent of deployed language-model ...
+--
+23476:...afety data also creates dual-use risk.
+The same examples that help researchers train and
+evaluate guard models may help adversaries in-
+fer category boundaries, design jailbreaks, or train
+models to generate or disguise harmful content. We
+release the data to support transparent research on
+moderation, but it should be handled as a sensitive
+artifact.
+10
+Limitations
+Nemotron 3.5 CS currently accepts a single image
+alongside text, so videos, multi-page...
+--
+25267:...hers. 2024.
+RTP-LX: Can LLMs evaluate tox-
+icity in multilingual scenarios?
+arXiv preprint
+arXiv:2404.14397.
+Yue Deng, Wenxuan Zhang, Sinno Jialin Pan, and Li-
+dong Bing. 2024. Multilingual jailbreak challenges
+in large language models.
+In Proceedings of the
+Twelfth International Conference on Learning Repre-
+sentations (ICLR).
+Shaona Ghosh, Prasoon Varshney, Makesh Narsimhan
+Sreedhar, Aishwarya Padmakumar, Traian Rebe-
+dea, Jibin Rajan Varghese, an...
+--
+25787:... and
+risks taxonomy for alignment of LLM guardrails.
+ArXiv:2501.09004.
+Yichen Gong, Delong Ran, Jinyuan Liu, Conglei Wang,
+Tianshuo Cong, Anyu Wang, Sisi Duan, and Xiaoyun
+Wang. 2023.
+FigStep: Jailbreaking large vision-
+language models via typographic visual prompts.
+arXiv preprint arXiv:2311.05608.
+Google DeepMind. 2025. Gemma 3 technical report.
+Technical report, Google DeepMind. ArXiv preprint
+arXiv:2503.19786.
+Inkit Gupta, Shubham Deshpande, Gui...
+--
+27650:... Hartvigsen,
+and Maarten Sap. 2025.
+PolyGuard:
+A multi-
+lingual safety moderation tool for 17 languages.
+ArXiv:2504.04377.
+Mukai Li, Lei Li, Yuwei Yin, Masood Ahmed, Zhen-
+guang Liu, and Qi Liu. 2024. Red teaming visual
+language models. arXiv preprint arXiv:2401.12915.
+Xin Liu, Yichen Zhu, Jindong Gu, Yunshi Lan, Chao
+Yang, and Yu Qiao. 2023.
+MM-SafetyBench: A
+benchmark for safety evaluation of multimodal large
+language models. ArXiv:2311.17600.
+Minesh Mathew, Dimosthenis Karatzas, and C. V. Jawa-
+har. 2021. DocVQA: A dataset for VQA on doc-
+ument images. In Proceedings of the IEEE/CVF
+Winter Conference on Applications of Computer Vi-
+sion....
+--
+28537:...rd-4/.
+Zhiyuan Ning, Tianle Gu, Jiaxin Song, Shixin Hong,
+Lingyu Li, Huacan Liu, Jie Li, Yixu Wang, Lingyu
+Meng, Yan Teng, and Yingchun Wang. 2025. Lin-
+guaSafe: A comprehensive multilingual safety bench-
+mark for large language models.
+arXiv preprint
+arXiv:2508.12733.
+Qwen Team. 2025. Qwen3guard technical report. arXiv
+preprint arXiv:2510.14276.
+Paul Röttger, Hannah Rose Kirk, Bertie Vidgen,
+Giuseppe Attanasio, Federico Bianchi, and Dirk
+Hovy. 2023. XSTest: A test suite for identifying
+exaggerated safety behaviours in large language mod-
+els. arXiv preprint arXiv:2308.01263.
+Paul Röttger and 1 others. 2025. MSTS: A multimodal
+safety test suite for vision-language models. arXiv
+preprint arXiv:2501.10057.
+Makesh Narsimhan Sreedhar, Traian Rebedea, and
+Christopher Parisien. 2025.
+Safety through rea-
+soning: An empirical study of reasoning guardrail
+models. In Findings of the Association...
+--
+29510:...ina. Association for Computa-
+tional Linguistics.
+Wenxuan Wang, Zhaopeng Tu, Chang Chen, Youliang
+Yuan, Jen-tse Huang, Wenxiang Jiao, and Michael R.
+Lyu. 2023. All languages matter: On the multilin-
+gual safety of large language models. arXiv preprint
+arXiv:2310.00905.
+
+Table 3: Key hyperparameters used for supervised fine-
+tuning (SFT) of Gemma 3.
+Hyperparameter
+Value
+LoRA rank r
+8
+LoRA alpha
+32
+LoRA dropout
+0.05
+Maximum sequence length
+8000
+Per-de...
+--
+31269:...dvances in Neural Information Processing Sys-
+tems, volume 36.
+Yaowei Zheng, Richong Zhang, Junhao Zhang, Yanhan
+Ye, Zheyan Luo, Zhangchi Feng, and Yongqiang Ma.
+2024. LlamaFactory: Unified efficient fine-tuning
+of 100+ language models. In Proceedings of the
+62nd Annual Meeting of the Association for Com-
+putational Linguistics (Volume 3: System Demon-
+strations), pages 400–410. Association for Computa-
+tional Linguistics.
+Yongshuo Zong, Ondrej Bohdal, Tingting Yu, Yongxin
+Yang, and Timothy Hospedales. 2024. Safety fine-
+tuning at (almost) no cost: A baseline for vision large
+language models. ArXiv:2402.02207.
+A
+Fine-tuning Hyperparameters
+B
+Additional Results
+This appendix expands the capability-axis sum-
+mary in Table 2. We first provide the detailed multi-
+modal and text-safety matrix, then the multili...
+--
+41257:...my. Omit if all safe
+or not needed.""" -%}
+{%- if custom_policy is defined and custom_policy -%}
+{%- set prefix = custom_policy ~ """
+<BEGIN CONVERSATION>
+user: """ -%}
+{%- set suffix = """<END CONVERSATION>
+Output your answer in the following format:
+User Safety: safe or unsafe rating of the user input
+Response Safety: safe or unsafe rating of the assistant
+response. Omit if no assistant response present.
+Safety Categories: a comma-separated li...
+--
+[5 more matches not shown]

@@ -1,0 +1,42 @@
+# 2026-09-25T00:27:58Z https://arxiv.org/abs/2606.07535 :: Submitted on|\[v[0-9]+\]|Comments:|Journal
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/abs/2606.07535
+Type: HTML
+Pattern: Submitted on|\[v[0-9]+\]|Comments:|Journal (3 matches in 7336 chars)
+
+--- Content ---
+
+407:...rXiv
+
+Press Enter to search * [Advanced search](https://arxiv.org/search/advanced)
+
+# Computer Science > Computation and Language
+
+**arXiv:2606.07535** (cs) 
+
+[Submitted on 24 Apr 2026]
+
+# Title:Multilingual Refusal Alignment for Safer Large Language Models
+
+Authors:[Aleksandra Krasnodębska](https://arxiv.org/search/cs?searchtype=...
+--
+2083:...arm categories, whereas training on multilingual datasets can improve safety without degrading general performance, as measured by the Global MMLU benchmark. 
+
+Comments: | Accepted to Findings ACL 2026  
+---|---  
+Subjects: |  Computation and Language (cs.CL)  
+Cite as: | [arXiv:2606.07535](https://arxiv.org/abs/2606.07535) [cs...
+--
+2564:...ocus to learn more arXiv-issued DOI via DataCite  
+  
+## Submission history
+
+From: Aleksandra Krasnodębska [[view email](/show-email/fdcbc396/2606.07535)]   
+**[v1]** Fri, 24 Apr 2026 09:29:14 UTC (345 KB)  
+
+
+Full-text links:
+
+## Access Paper:
+
+View a PDF of the paper titled Multilingual Refusal Alignment for Safer Large ...

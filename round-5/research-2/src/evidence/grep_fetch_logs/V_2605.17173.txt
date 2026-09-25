@@ -1,0 +1,42 @@
+# 2026-09-25T00:27:58Z https://arxiv.org/abs/2605.17173 :: Submitted on|\[v[0-9]+\]|Comments:|Journal
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/abs/2605.17173
+Type: HTML
+Pattern: Submitted on|\[v[0-9]+\]|Comments:|Journal (5 matches in 8460 chars)
+
+--- Content ---
+
+407:...rXiv
+
+Press Enter to search * [Advanced search](https://arxiv.org/search/advanced)
+
+# Computer Science > Computation and Language
+
+**arXiv:2605.17173** (cs) 
+
+[Submitted on 16 May 2026 ([v1](https://arxiv.org/abs/2605.17173v1)), last revised 11 Aug 2026 (this version, v2)]
+
+# Title:Why Do Safety Guardrails Degrade Across Languages?
+
+Authors:[Max Zh...
+--
+3031:...t-language vulnerabilities that aggregate metrics obscure, enabling fairer cross-lingual safety evaluation and targeted improvements in dataset construction. 
+
+Comments: | Poster at Conference on Language Modeling (COLM 2026)  
+---|---  
+Subjects: |  Computation and Language (cs.CL); Artificial Intelligence (cs.AI); Machine Lea...
+--
+3584:...05.17173> Focus to learn more arXiv-issued DOI via DataCite  
+  
+## Submission history
+
+From: Ameen Patel [[view email](/show-email/9e9cbe31/2605.17173)]   
+**[[v1]](/abs/2605.17173v1)** Sat, 16 May 2026 22:08:54 UTC (22,130 KB)  
+**[v2]** Tue, 11 Aug 2026 01:53:13 UTC (21,495 KB)  
+
+
+Full-text links:
+
+## Access Paper:
+
+View a PDF of the paper titled Why Do Safety Guardrails Degrade Across Lang...
