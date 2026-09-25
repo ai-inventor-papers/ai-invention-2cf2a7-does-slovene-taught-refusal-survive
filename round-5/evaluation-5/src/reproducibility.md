@@ -11,7 +11,7 @@ The workspace is published as one folder of a public GitHub repository. Clone th
 artifact's folder:
 
 ```bash
-git clone <repository-url> && cd <repository>/<this-artifact-folder>   # e.g. iter_5/gen_art/gen_art_evaluation_5
+git clone <repository-url> && cd <repository>/<this-artifact-folder>   # e.g. round-5/evaluation-5/src
 ```
 
 All paths below are relative to this folder. The code reads upstream artifacts through **one** constant,

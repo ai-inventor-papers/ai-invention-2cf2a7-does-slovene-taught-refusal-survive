@@ -40,7 +40,7 @@ EXP4 = RUN / "iter_1/gen_art/gen_art_experiment_4"
 EXP1 = RUN / "iter_1/gen_art/gen_art_experiment_1"
 PAPER = RUN / "iter_4/gen_report_text/gen_report_text/paper_draft.md"
 REVIEW = RUN / "iter_4/review_report/review_report/.terminal_claude_agent_struct_out.json"
-ITER5 = RUN / "iter_5/gen_art"
+ITER5 = RUN / "round-5"
 
 SEED = 20260927
 B = 2000
