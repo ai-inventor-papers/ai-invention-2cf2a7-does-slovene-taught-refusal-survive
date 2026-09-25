@@ -1,8 +1,4 @@
 #!/usr/bin/env python3
-# NOTE (published copy): this file names server paths this repository
-# does not publish (a stage it does not ship, or another run's workspace),
-# so the steps that read them will not run from a clone as written:
-#   /ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_1/gen_art/gen_art_dataset_1/outputs/dose_table.json
 """STEP 6: analysis of the MAIN vs ALT-1 screen -> results/analysis_results.json (+ figures).
 
 Reads only saved per-item outputs (outputs/*.jsonl, data/*.jsonl); needs no GPU.
@@ -166,7 +162,7 @@ def dose_table() -> pd.DataFrame:
     return t.set_index("category")
 
 
-DATASET_DOSE = Path("/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_1/gen_art/gen_art_dataset_1/outputs/dose_table.json")
+DATASET_DOSE = Path(__file__).resolve().parents[3] / "round-1/dataset-1/src/outputs/dose_table.json"
 
 
 def dose_table_relabelled() -> pd.DataFrame | None:

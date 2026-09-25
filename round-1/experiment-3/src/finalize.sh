@@ -6,5 +6,5 @@ PY=.venv/bin/python
 (cd src && ../$PY judge.py && ../$PY judge_local.py && ../$PY analyze.py)
 $PY method.py
 (cd src && ../$PY audit.py && ../$PY placebo.py && ../$PY figures.py)
-SK=/ai-inventor/.claude/skills/aii-json
+SK=../../../tools/aii-json
 $SK/../.ability_client_venv/bin/python $SK/scripts/aii_json_validate_schema.py --format exp_gen_sol_out --file "$(pwd)/method_out.json"

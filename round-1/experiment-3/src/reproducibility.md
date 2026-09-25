@@ -8,7 +8,7 @@ This folder is one folder of a public GitHub repository. Clone the repository, t
 
 Two things are not portable and are described honestly:
 - `src/prep_data.py` line 16 reads a file from an earlier stage of the original run, by an absolute path (`.../iter_3/gen_hypo/claude_agent/stage0b/stage0b_summary.json`). That file is not published. You do not need it: the outputs of `prep_data.py` are shipped in `data/` (`run_pipeline.sh` skips the step when `data/harmless.jsonl` exists). Do not rerun `prep_data.py` unless you supply your own copy of that file and edit `STAGE0B`. It is only used to copy the `per_category_dose` table into `data/splits_manifest.json`.
-- The last line of `finalize.sh` calls a JSON schema validator at `/ai-inventor/.claude/skills/aii-json/...`. It exists only on the original server. Skip that line (it validates `method_out.json` and changes nothing).
+- The last line of `finalize.sh` calls a JSON schema validator at `../../../tools/aii-json/...`. It exists only on the original server. Skip that line (it validates `method_out.json` and changes nothing).
 
 ## 2. System, Python, environment
 

@@ -918,7 +918,7 @@
                 }
               }
             },
-            "source": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_1/gen_art/gen_art_dataset_1/outputs/dose_table.json"
+            "source": "../../dataset-1/src/outputs/dose_table.json"
           },
           "mcnemar_sl_vs_en": {
             "gemma_it": {
@@ -2881,7 +2881,7 @@
                 }
               }
             },
-            "source": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_1/gen_art/gen_art_dataset_1/outputs/dose_table.json"
+            "source": "../../dataset-1/src/outputs/dose_table.json"
           },
           "mcnemar_sl_vs_en": {
             "gemma_it": {

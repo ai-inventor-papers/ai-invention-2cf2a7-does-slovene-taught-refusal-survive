@@ -7,7 +7,7 @@ Clone the public GitHub repository that publishes this workspace (URL not record
 
 **Portability caveat (from the code as shipped).** Three code paths use absolute paths on the original server:
 - `common.py`: `RUN_DIR = ../../..`, `STAGE0B` (a file `iter_3/gen_hypo/claude_agent/stage0b/stage0b_summary.json` with the key `per_category_dose`), and `DATASET_ART_GLOB` (a glob for `*overlap*.json` in the dataset artifact).
-- `analysis.py`: `DATASET_DOSE` = `../gen_art_dataset_1/outputs/dose_table.json` (the sibling artifact `gen_art_dataset_1`). It is used only for the labelled sensitivity analysis and is skipped if absent.
+- `analysis.py`: `DATASET_DOSE` = `../../dataset-1/src/outputs/dose_table.json` (the sibling artifact `gen_art_dataset_1`). It is used only for the labelled sensitivity analysis and is skipped if absent.
 - `freeze.py` and `analysis.py` (primary) read the Stage-0b dose file (`STAGE0B`). It is **not published here**, so a reader must edit `RUN_DIR`/`STAGE0B` in `common.py` to point at their own copy. The dose values in effect are frozen in `protocol.json`.
 
 To re-run the analysis without that file, use the saved outputs and skip `freeze.py` (see step 6).

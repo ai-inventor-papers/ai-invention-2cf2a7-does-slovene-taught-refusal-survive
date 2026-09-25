@@ -16,7 +16,7 @@
   "n_dropped_mismatch": 0,
   "mismatches": [],
   "overlap_drop": {
-    "status": "applied:/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_1/gen_art/gen_art_dataset_1/outputs/refuseu_overlap_recheck.json",
+    "status": "applied:../../../dataset-1/src/outputs/refuseu_overlap_recheck.json",
     "n": 0
   },
   "categories_present": [
