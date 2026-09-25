@@ -43,10 +43,10 @@ def inputs_check() -> dict:
     out = {}
     for k, p in INPUTS.items():
         if p.exists():
-            out[k] = {"path": str(p).split("3_invention_loop/")[-1], "exists": True, "bytes": p.stat().st_size,
+            out[k] = {"path": str(p).split(".")[-1], "exists": True, "bytes": p.stat().st_size,
                       "sha256": sha256_file(p)}
         else:
-            out[k] = {"path": str(p).split("3_invention_loop/")[-1], "exists": False, "fallback": FALLBACK.get(k, "none")}
+            out[k] = {"path": str(p).split(".")[-1], "exists": False, "fallback": FALLBACK.get(k, "none")}
     return out
 
 

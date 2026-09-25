@@ -6,7 +6,7 @@ This file records what was actually run, in order. All paths are relative to thi
 
 ```bash
 git clone <this run's public repository>
-cd <repo>/3_invention_loop/iter_5/gen_art/gen_art_evaluation_4
+cd <repo>/round-5/evaluation-4/src
 ```
 
 This artifact generates no replies itself. It reads the saved replies and labels of upstream artifacts through one
