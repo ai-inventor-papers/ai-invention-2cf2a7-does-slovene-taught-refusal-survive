@@ -221,7 +221,7 @@ def main() -> None:
     hits = subprocess.run(["grep", "-rl", "evaluation/", str(ROOT / "data"), str(ROOT / "logs"), str(ROOT / "src")],
                           capture_output=True, text=True).stdout.split()
     out["evaluation_split_references"] = [h for h in hits if not h.endswith(("audit.py", "data_build.py", "make_protocol.py", "ledger.py"))]
-    evdir = Path("/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/.shared_cache/hf/hub/datasets--NASK-PIB--RefusEU/snapshots")
+    evdir = Path("../../../../.shared_cache/hf/hub/datasets--NASK-PIB--RefusEU/snapshots")
     out["refuseu_eval_in_shared_cache_note"] = [str(p) for p in evdir.glob("*/evaluation*")]
     out["all_checks_match"] = all(v.get("match", True) for v in out["checks"].values() if isinstance(v, dict))
     (ROOT / "results/analysis/audit.json").write_text(json.dumps(out, indent=1, default=float))

@@ -161,7 +161,7 @@ Refusal rates:
 | `results/analysis/` | analysis.json (all statistics), audit.json, punct_check.json |
 | `figures/` | fig1 base layer curves; fig2 induction dose–response (lexicon, judge); fig3 flip-threshold ECDF; fig4 y vs g; fig5 forest |
 
-All kept artifacts are at `/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_1/gen_art/gen_art_experiment_2/results/`, which is small (<100 MB).
+All kept artifacts are at `./results/`, which is small (<100 MB).
 
 ## Run
 
