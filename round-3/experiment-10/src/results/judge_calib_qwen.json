@@ -1,0 +1,136 @@
+{
+  "judge": "local/qwen3-14b",
+  "n": 530,
+  "note": "strata over-sample minority labels -> kappa/sens/spec are per-stratum-weighted, not population rates",
+  "ALL|ALL": {
+    "n": 530,
+    "kappa": 0.4613901045916474,
+    "agree": 0.7415094339622641,
+    "agree_3way": 0.6132075471698113,
+    "sens_vs_gemini": 0.9719298245614035,
+    "spec_vs_gemini": 0.47346938775510206,
+    "rate_local": 0.7660377358490567,
+    "rate_gemini": 0.5377358490566038
+  },
+  "en|ALL": {
+    "n": 271,
+    "kappa": 0.42825437707208797,
+    "agree": 0.7158671586715867,
+    "agree_3way": 0.5904059040590406,
+    "sens_vs_gemini": 0.9854014598540146,
+    "spec_vs_gemini": 0.44029850746268656,
+    "rate_local": 0.7749077490774908,
+    "rate_gemini": 0.5055350553505535
+  },
+  "en|ablate_rand": {
+    "n": 31,
+    "kappa": 0.6690391459074732,
+    "agree": 0.9032258064516129,
+    "agree_3way": 0.8064516129032258,
+    "sens_vs_gemini": 0.96,
+    "spec_vs_gemini": 0.6666666666666666,
+    "rate_local": 0.8387096774193549,
+    "rate_gemini": 0.8064516129032258
+  },
+  "en|edited": {
+    "n": 120,
+    "kappa": 0.25,
+    "agree": 0.625,
+    "agree_3way": 0.5083333333333333,
+    "sens_vs_gemini": 1.0,
+    "spec_vs_gemini": 0.25,
+    "rate_local": 0.875,
+    "rate_gemini": 0.5
+  },
+  "en|harmless": {
+    "n": 27,
+    "kappa": 0.6493506493506485,
+    "agree": 0.9629629629629629,
+    "agree_3way": 0.7407407407407407,
+    "sens_vs_gemini": 0.5,
+    "spec_vs_gemini": 1.0,
+    "rate_local": 0.037037037037037035,
+    "rate_gemini": 0.07407407407407407
+  },
+  "en|orig": {
+    "n": 43,
+    "kappa": 0.5376344086021504,
+    "agree": 0.7906976744186046,
+    "agree_3way": 0.6046511627906976,
+    "sens_vs_gemini": 1.0,
+    "spec_vs_gemini": 0.5,
+    "rate_local": 0.7906976744186046,
+    "rate_gemini": 0.5813953488372093
+  },
+  "en|prefill": {
+    "n": 50,
+    "kappa": 0.24,
+    "agree": 0.62,
+    "agree_3way": 0.56,
+    "sens_vs_gemini": 1.0,
+    "spec_vs_gemini": 0.24,
+    "rate_local": 0.88,
+    "rate_gemini": 0.5
+  },
+  "sl|ALL": {
+    "n": 259,
+    "kappa": 0.5,
+    "agree": 0.7683397683397684,
+    "agree_3way": 0.637065637065637,
+    "sens_vs_gemini": 0.9594594594594594,
+    "spec_vs_gemini": 0.5135135135135135,
+    "rate_local": 0.7567567567567568,
+    "rate_gemini": 0.5714285714285714
+  },
+  "sl|ablate_rand": {
+    "n": 25,
+    "kappa": NaN,
+    "agree": 1.0,
+    "agree_3way": 1.0,
+    "sens_vs_gemini": 1.0,
+    "spec_vs_gemini": 0.0,
+    "rate_local": 1.0,
+    "rate_gemini": 1.0
+  },
+  "sl|edited": {
+    "n": 120,
+    "kappa": 0.33333333333333326,
+    "agree": 0.6666666666666666,
+    "agree_3way": 0.525,
+    "sens_vs_gemini": 0.9666666666666667,
+    "spec_vs_gemini": 0.36666666666666664,
+    "rate_local": 0.8,
+    "rate_gemini": 0.5
+  },
+  "sl|harmless": {
+    "n": 38,
+    "kappa": 0.8785942492012778,
+    "agree": 0.9473684210526315,
+    "agree_3way": 0.7105263157894737,
+    "sens_vs_gemini": 0.8461538461538461,
+    "spec_vs_gemini": 1.0,
+    "rate_local": 0.2894736842105263,
+    "rate_gemini": 0.34210526315789475
+  },
+  "sl|orig": {
+    "n": 26,
+    "kappa": 1.0,
+    "agree": 1.0,
+    "agree_3way": 1.0,
+    "sens_vs_gemini": 1.0,
+    "spec_vs_gemini": 1.0,
+    "rate_local": 0.9615384615384616,
+    "rate_gemini": 0.9615384615384616
+  },
+  "sl|prefill": {
+    "n": 50,
+    "kappa": 0.28,
+    "agree": 0.64,
+    "agree_3way": 0.48,
+    "sens_vs_gemini": 0.92,
+    "spec_vs_gemini": 0.36,
+    "rate_local": 0.78,
+    "rate_gemini": 0.5
+  },
+  "gate_edited_kappa_ge_0.6": false
+}

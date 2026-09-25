@@ -1,0 +1,6 @@
+.venv/
+acts/
+__pycache__/
+*.pyc
+.pytest_cache/
+.repl_agent.ptylog
