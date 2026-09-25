@@ -1,0 +1,8 @@
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/abs/2310.06474
+Type: HTML
+Pattern: low-resource languages exhibit about three times the likelih (1 matches in 8261 chars)
+
+--- Content ---
+
+2136:...y of languages decreases. Specifically, low-resource languages exhibit about three times the likelihood of encountering harmful content comp...

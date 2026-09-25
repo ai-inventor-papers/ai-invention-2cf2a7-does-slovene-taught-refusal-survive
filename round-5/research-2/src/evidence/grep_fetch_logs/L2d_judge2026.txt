@@ -1,0 +1,90 @@
+# 2026-09-25T00:46:59Z https://judge2026.github.io/index.html :: Evaluation validity is not a property|multilingual|NeurIPS|deadline|accepted
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://judge2026.github.io/index.html
+Type: HTML
+Pattern: Evaluation validity is not a property|multilingual|NeurIPS|deadline|accepted (32 matches in 13507 chars)
+
+--- Content ---
+
+8:JUDGe @ NeurIPS 2026
+
+  * Overview
+  * Taxonomy
+  * Deliverable
+  * Dates
+  * Submit
+  * Schedule
+  * Speakers
+  * Organizers
+  * Contact
+  * Overview
+  * Reviewer
+  * FAQ
+  * Contact
+
+
+
+NeurIPS 2026 · Atlanta · Dec 12–13
+
+JUDGe
+
+# Can We Trust  
+the _Judge?_
+
+"Rigorous evaluation is the backbone of trustworthy AI — let's scrutinize the scrutinizers."
+
+A full-day workshop on building reliable, valid, and robust LLM-based evaluators. We bring together NLP researchers, ML systems builders, safety scientists, and industry practitioners around a single foundational question: how do we know whether an LLM evaluator is actually measuring what we intend it to measure? 
+
+Conference NeurIPS 2026
+
+Workshop Date Dec 12–13, 2026
+
+Venue Atlanta, Georgia
+
+Submission Deadline Aug 29, 2026 AoE
+
+LLM OUTPUT v_n+1 ⚖ LLM JUDGE validity in context? TRAINING SIGNAL / GATE downstream feedback loop — bias compounds FAILURE FACETS ⟶ Surface vs. semantic sensitivity ⟶ Criteria drift ⟶ Positional & ordering bias ⟶ Sycophancy & self-preference ⟶ Reasoning chain validity ⟶ Safety-relevant meaning ⟶ Inter-judge consistency CAN WE TRUST THE JUDGE? · NEURIPS 2026 · ATLANTA
+
+About the Workshop
+
+## Why JUDGe?
+
+Evaluation validity is not a property of a judge in isolation — it is a property of a judge _in a system_. A well-calibrated evaluator can fail systematically when deployed in a pipeline where its outputs gate safety decisions, feed back into training, or depend on context it was never ...
+--
+1787:...s a measurement problem — how accurate is the judge? — when the harder question is infrastructural: how does a judge's error profile interact with what is upstream and downstream of it, and what happens downstream when it fails? 
+
+JUDGe is the first NeurIPS workshop to take evaluator reliability and validity seriously as a _systems_ problem. Judges embedded in RLHF, DPO, and Constitutional AI pipelines don't just mismeasure — their failure modes compound into model weights and downstream decisions. Thi...
+--
+6541:...re Modes
+
+Which of the seven failure facets apply, with empirical evidence where available.
+
+✅
+
+### Human Validation
+
+What validation was performed before deployment, including human agreement rate and methodology.
+
+Timeline
+
+## Important Dates
+
+All deadlines are 11:59 PM AoE. All notifications precede the mandatory NeurIPS deadline of September 29, 2026.
+
+CFP Opens
+
+August 1, 2026
+
+Call for papers issued
+
+Submission Deadline
+
+August 29th, 2026
+
+Papers due via OpenReview
+
+Notifications
+
+September 29, 20...
+--
+[24 more matches not shown]

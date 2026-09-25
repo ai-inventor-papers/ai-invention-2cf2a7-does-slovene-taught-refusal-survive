@@ -1,0 +1,8 @@
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/abs/2608.29936
+Type: HTML
+Pattern: ablating safety features impacts not only harmful response r (1 matches in 7650 chars)
+
+--- Content ---
+
+1888:...ement has direct consequences such that ablating safety features impacts not only harmful response rates but also target language, with the ...

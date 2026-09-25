@@ -1,0 +1,8 @@
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/abs/2607.14480
+Type: HTML
+Pattern: lower-resource languages are scored more generously (1 matches in 8156 chars)
+
+--- Content ---
+
+1857:...orrelated with language resource level: lower-resource languages are scored more generously. Meanwhile, these biases are invisible ...

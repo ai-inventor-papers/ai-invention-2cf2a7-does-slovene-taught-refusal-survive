@@ -1,0 +1,37 @@
+# 2026-09-25T00:41:53Z https://arxiv.org/pdf/2605.06939 :: J := |J =|Youden|q0 \+ q1 − 1|sensitivity \+ specificity
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2605.06939
+Type: PDF
+Pattern: J := |J =|Youden|q0 \+ q1 − 1|sensitivity \+ specificity (24 matches in 66369 chars)
+
+--- Content ---
+
+1814:...rusted as
+estimates of true model performance. Bias-corrected estimators [Lee et al., 2026, Chen et al., 2026]
+can substantially improve estimates, but they are not automatically trustworthy. Their reliability
+depends on judge quality, summarized by Youden’s J, and on whether the calibration assumptions
+required to justify the correction actually hold. The central issue here is not estimation efficiency, but
+whether the resulting estimate and uncertainty statement correspond to the intended quantity. ...
+--
+3660:...
+Preprint.
+arXiv:2605.06939v1  [cs.LG]  7 May 2026
+
+We study these failure modes through three lines of evidence. Analytical results characterize the
+bias structure under shared calibration and the role of J in determining estimator stability, where
+J = sensitivity + specificity −1 is Youden’s index [Peirce, 1884, Youden, 1950]. Simulations
+demonstrate the impact that judge quality (J) and cross-model calibration instability (∆J) can have
+on bias and interval coverage. We follow up with a real-data case study using two subjects from the
+MMLU-Pro benchmark [Wang et a...
+--
+8417:...s focuses
+2
+
+on efficiency under correctly specified assumptions; they do not study shared calibration, ∆J, or
+conditions under which corrected estimates become systematically biased or yield wrong-signed
+comparisons. Collot et al. [2026] argue that Youden’s J is the right metric for selecting LLM judges,
+grounding this in its prevalence-independence properties. We share their view, but our use of J is
+complementary: rather than selecting judges, we focus on bias-corrected estimation, asking whether
+a...
+--
+[18 more matches not shown]

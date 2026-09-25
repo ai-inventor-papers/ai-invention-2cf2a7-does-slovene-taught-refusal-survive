@@ -1,0 +1,46 @@
+# 2026-09-25T00:56:25Z https://arxiv.org/abs/2605.31381 :: Title:|Submitted on|\[v[0-9]+\]|Comments:
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/abs/2605.31381
+Type: HTML
+Pattern: Title:|Submitted on|\[v[0-9]+\]|Comments: (6 matches in 7509 chars)
+
+--- Content ---
+
+407:...g in](https://arxiv.org/login)
+
+Search arXiv
+
+Press Enter to search * [Advanced search](https://arxiv.org/search/advanced)
+
+# Computer Science > Computation and Language
+
+**arXiv:2605.31381** (cs) 
+
+[Submitted on 29 May 2026 ([v1](https://arxiv.org/abs/2605.31381v1)), last revised 2 Jun 2026 (this version, v2)]
+
+# Title:LLM Judges Inconsistently Disagree Across Safety Criteria and Harm Categories
+
+Authors:[Krishnapriya Vishnubhotla](https://arxiv.org/search/cs?searchtype=author&query=Vishnubhotla,+K), [Sowmya Vajjala...
+--
+2129:...languages. These findings provide new insights on the practice of using LLMs as evaluators and offer several recommendations for practitioners on how to use automated judges in practical scenarios. 
+
+Comments: | 8 pages plus appendices, under review  
+---|---  
+Subjects: |  Computation and Language (cs.CL)  
+Cite as: | [arXiv:2605.31381](https://arxiv.org/abs/2605.31381) [cs.CL]  
+  | (or  [arXiv:2605.3138...
+--
+2621:.../doi.org/10.48550/arXiv.2605.31381> Focus to learn more arXiv-issued DOI via DataCite  
+  
+## Submission history
+
+From: Krishnapriya Vishnubhotla [[view email](/show-email/0da6f5c3/2605.31381)]   
+**[[v1]](/abs/2605.31381v1)** Fri, 29 May 2026 14:50:08 UTC (1,534 KB)  
+**[v2]** Tue, 2 Jun 2026 14:28:06 UTC (1,532 KB)  
+
+
+Full-text links:
+
+## Access Paper:
+
+View a PDF of the paper titled LLM Judges Inconsistently Disagree Across Safety Criteria and Harm Categories, by Kris...

@@ -1,0 +1,16 @@
+# 2026-09-25T01:14:26Z https://arxiv.org/pdf/2602.13139 :: create new ones for
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2602.13139
+Type: PDF
+Pattern: create new ones for (1 matches in 84881 chars)
+
+--- Content ---
+
+3027:...at they are not sufficient for evalu-
+ating the quality of similar LID.2 In addition,
+we employ several existing benchmarks for
+similar languages and create new ones for the
+BCMS macrolanguage, and for Norwegian
+Bokmål and Nynorsk.
+• We also report negative results on our efforts
+with two-step coarse-to-fine classific...

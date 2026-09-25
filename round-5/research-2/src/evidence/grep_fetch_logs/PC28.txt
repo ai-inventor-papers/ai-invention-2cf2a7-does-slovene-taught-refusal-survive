@@ -1,0 +1,40 @@
+# 2026-09-25T01:14:26Z https://arxiv.org/pdf/2605.06939 :: Shared calibration requires
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2605.06939
+Type: PDF
+Pattern: Shared calibration requires (2 matches in 66369 chars)
+
+--- Content ---
+
+22550:...Calibration labels play two distinct roles in this case study. First, they determine the labeling cost
+of each estimator. For a two-model comparison, shared calibration requires labels for only one
+6
+
+Subject
+Judge
+∆θ
+c
+∆θnaive
+c
+∆θRG
+c
+∆θRG,2×
+c
+∆θPPI++
+c
+∆θPPI++,2×
+Math
+Mistral Large
++0.003
+−0.046
+−0.089
+−0.037
+−0.009
+−0.00...
+--
+30937:...ents.
+3. Report calibration design explicitly. State whether calibration is shared across models or model-
+specific, and report calibration set size. Shared calibration requires justification; it cannot be a
+default design choice.
+4. Report confidence intervals, and state what randomness they represent. Clarify whether the
+in...

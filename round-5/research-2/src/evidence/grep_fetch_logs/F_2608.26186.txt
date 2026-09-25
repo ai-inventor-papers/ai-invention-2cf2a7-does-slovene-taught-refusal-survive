@@ -1,0 +1,29 @@
+# 2026-09-25T00:58:58Z https://arxiv.org/abs/2608.26186
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/abs/2608.26186
+Type: HTML
+Length: 7815 chars (truncated)
+
+--- Content ---
+
+Skip to main content [](https://arxiv.org/IgnoreMe) [ ](https://arxiv.org/) [ Search ](https://arxiv.org/search) [Submit](https://arxiv.org/user/create) [Donate](https://info.arxiv.org/about/donate.html) [Log in](https://arxiv.org/login)
+
+Search arXiv
+
+Press Enter to search * [Advanced search](https://arxiv.org/search/advanced)
+
+# Computer Science > Computation and Language
+
+**arXiv:2608.26186** (cs) 
+
+[Submitted on 22 Aug 2026]
+
+# Title:Investigating the Influence of Prompt and Response Languages on LLM Content Generation
+
+Authors:[Thi Thanh Nhan Nguyen](https://arxiv.org/search/cs?searchtype=author&query=Nguyen,+T+T+N), [Mai Khoi Tieu](https://arxiv.org/search/cs?searchtype=author&query=Tieu,+M+K), [Michael A. Riegler](https://arxiv.org/search/cs?searchtype=author&query=Riegler,+M+A), [Pål Halvorsen](https://arxiv.org/search/cs?searchtype=author&query=Halvorsen,+P), [Thu Nguyen](https://arxiv.org/search/cs?searchtype=author&query=Nguyen,+T)
+
+View a PDF of the paper titled Investigating the Influence of Prompt and Response Languages on LLM Content Generation, by Thi Thanh Nhan Nguyen and 4 other authors
+
+[View PDF](/pdf/2608.26186) [HTML (experimental)](https://arxiv.org/html/2608.26186v1)
+
+> Abstract:This study examines how prompt and response language influence the behavior of large language models. Using five models, we evaluated answers to 68 non translation questions across four language conditions: English to English, English to Norwegian, Norwegian to Norwegian, and N

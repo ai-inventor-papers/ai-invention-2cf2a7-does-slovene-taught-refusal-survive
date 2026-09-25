@@ -1,0 +1,80 @@
+# 2026-09-25T00:45:09Z https://arxiv.org/pdf/2607.13568 :: refus|safety|base model|adapt
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2607.13568
+Type: PDF
+Pattern: refus|safety|base model|adapt (123 matches in 67138 chars)
+
+--- Content ---
+
+62:Graded Entity-Familiarity Readouts in Language Models:
+Polish Adaptation, Cross-Language Robustness, and Refusal Steering*
+Grzegorz Brzezinka
+Prosit AS
+greg@prosit.no
+Abstract
+Can a language model estimate its familiarity
+with an entity before generating an answer?
+We study activations at the final prompt to-
+ken in twelve instruction-tuned models from
+the B...
+--
+629:...-4, and Qwen3
+families, using a new dataset of 1,440 Pol-
+ish entities spanning four domains and ten
+Wikipedia-pageview deciles, plus fabricated
+controls.
+Familiarity-probe scores separate
+real from fabricated entities in every family;
+in the Polish-adapted Bielik and PLLuM fam-
+ilies they additionally track entity popular-
+ity (model-mean Spearman ρ 0.28–0.57, ver-
+sus at most 0.11 in Gemma-4 and Qwen3), a
+pattern more strongly associated with Polish
+adaptation than with parameter count in this
+model sample. In a paired experiment on two
+families, probes retain 96–101% of within-
+language AUROC when the Polish question
+stem is replaced with an English one around
+unchanged entity names, showing robustness
+to prompt language in this setting. In Gemma-
+4-12B, the only model that natively refuses,
+adding a one-dimensional familiarity direction
+at a single layer moves refusal rates mono-
+tonically in both directions (0.24 to 1.00 on
+well-known entities; 0.73 to 0.00 on unknown
+ones). Finally, a calibrated familiarity probe is
+competitive among pre-generation abstention
+gates, although post-generation detectors bet-
+ter...
+--
+3602:... the score tracks a continuous
+popularity axis, it behaves as a graded quan-
+tity, and the predecessor’s ceiling is a prop-
+erty of an easy contrast, not of the signal.
+• RQ3 (causality). Does the model itself read
+this signal, or is the familiarity–refusal link
+merely correlational?
+• RQ4 (application).
+Can the signal gate
+generation (abstain or route to retrieval be-
+fore producing an answer) competitively with
+1
+arXiv:2607.13568v1  [cs.CL]  15 Jul 2026
+
+post-generation detectors, at a fraction of
+...
+--
+4809:...v1; §4).
+Our contributions, in narrative order: (1) a QID-
+resolved, decile-stratified Polish entity dataset
+with fabricated anchors, token-length matched to
+the real distribution (§4); (2) evidence that the
+familiarity score is graded in the Polish-adapted
+families and that its gradation is more strongly
+associated with Polish adaptation than with scale
+in this model sample, with a behavioral mirror
+in answer correctness (§5); (3) zero-shot cross-
+language probe transfer at 96–101% of within-
+langua...
+--
+[115 more matches not shown]

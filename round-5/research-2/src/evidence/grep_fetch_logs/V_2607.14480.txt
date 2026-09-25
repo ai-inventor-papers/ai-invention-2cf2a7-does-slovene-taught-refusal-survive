@@ -1,0 +1,44 @@
+# 2026-09-25T00:39:48Z https://arxiv.org/abs/2607.14480 :: Submitted on|\[v[0-9]+\]|Comments:|Title:|Authors:
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/abs/2607.14480
+Type: HTML
+Pattern: Submitted on|\[v[0-9]+\]|Comments:|Title:|Authors: (7 matches in 8156 chars)
+
+--- Content ---
+
+407:...arch) [Submit](https://arxiv.org/user/create) [Donate](https://info.arxiv.org/about/donate.html) [Log in](https://arxiv.org/login)
+
+Search arXiv
+
+Press Enter to search * [Advanced search](https://arxiv.org/search/advanced)
+
+# Computer Science > Computation and Language
+
+**arXiv:2607.14480** (cs) 
+
+[Submitted on 16 Jul 2026 ([v1](https://arxiv.org/abs/2607.14480v1)), last revised 26 Aug 2026 (this version, v3)]
+
+# Title:Lower-Resource, Higher Scores: Language Bias in LLM Evaluators
+
+Authors:[Ej Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou,+E), [Lucas Resck](https://arxiv.org/search/cs?searchtype=author&query=Resck,+L), [Zheng Hui](https://arxiv.org/search/cs?searchtype=author&query=Hui,+Z), [Anna Korhonen](https://arxiv.org/search/cs?searchtype=author&query=Korhonen,+...
+--
+3261:...[cs.CL]  
+  | (or  [arXiv:2607.14480v3](https://arxiv.org/abs/2607.14480v3) [cs.CL] for this version)   
+  |  <https://doi.org/10.48550/arXiv.2607.14480> Focus to learn more arXiv-issued DOI via DataCite  
+  
+## Submission history
+
+From: Ej Zhou [[view email](/show-email/772c4b1f/2607.14480)]   
+**[[v1]](/abs/2607.14480v1)** Thu, 16 Jul 2026 01:53:09 UTC (449 KB)  
+**[[v2]](/abs/2607.14480v2)** Tue, 21 Jul 2026 06:28:06 UTC (449 KB)  
+**[v3]** Wed, 26 Aug 2026 04:26:22 UTC (1,069 KB)  
+
+
+Full-text links:
+
+## Access Paper:
+
+View a PDF of the paper titled Lower-Resource, Higher Scores: Language Bias in LLM Evaluators, by Ej Zhou and 3 other authors
+
+  * [View PDF](/pdf/2607.14480)
+  * [HTML (experimental)](https://arxiv.org/html/2607.144...

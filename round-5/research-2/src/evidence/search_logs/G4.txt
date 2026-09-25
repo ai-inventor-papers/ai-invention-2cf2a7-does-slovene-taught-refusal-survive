@@ -1,0 +1,45 @@
+# 2026-09-25T00:21:12Z general :: language-adapted national LLM safety evaluation refusal compared base model Gemma continued pretraining
+Search: language-adapted national LLM safety evaluation refusal compared base model Gemma continued pretraining  [general via ddgs]
+Found: 10 results
+
+1. RAS: Measuring LLM Safety Through Refusal Alignment
+   https://arxiv.org/html/2606.25750
+   June 24, 2026 - We propose SafeVec, a white-box representation-level safety evaluation procedure based on refusal alignment. ... We introduce RAS, a calibrated 0–100 Refusal Alignment Score for measur...
+
+2. Base LLMs refuse too
+   https://www.alignmentforum.org/posts/YWo2cKJgL7Lg8xWjj/base-llms-refuse-too
+   September 29, 2024 - In other words, Qwen2 "base" models are pretty far from traditional base models a la GPT-2 or Pythia as a result of explicit choices made when generating their pretraining data an...
+
+3. Minimal, Local, Causal Explanations for Jailbreak Success in Large Language Models
+   https://arxiv.org/html/2605.00123v1
+   April 30, 2026 - LOCA can successfully induce refusal by making, on average, six interpretable changes; prior work routinely fails to achieve refusal even after 20 changes. LOCA is a step toward mecha...
+
+4. S-Eval: Towards Automated and Comprehensive Safety Evaluation for Large Language Models
+   https://arxiv.org/html/2405.14191
+   The former measures the refusal of a generation model to generate test prompts, and the latter assesses the effectiveness of a generation model. For ... SS of 5 LLMs66 6 The 5 LLMs include Gemma-2B-it...
+
+5. Base LLMs refuse too
+   https://www.lesswrong.com/posts/YWo2cKJgL7Lg8xWjj/base-llms-refuse-too
+   In other words, Qwen2 "base" models are pretty far from traditional base models a la GPT-2 or Pythia as a result of explicit choices made when generating their pretraining data and this explains its p...
+
+6. When Behavioral Safety Evaluation Fails: A Representation-Level Perspective
+   https://arxiv.org/html/2606.08044
+   August 4, 2026 - Behavioral tests observe outputs; they do not measure how easily an intervention on the model turns a refusal into compliance. We call the gap between what static audits certify and w...
+
+7. SORRY-Bench: Systematically Evaluating Large Language Model Safety RefusalWarning: This paper contains red-teaming related content that can be offensive.
+   https://arxiv.org/html/2406.14598.pdf
+   Conversely, for mutations using encoding and encryption strategies, we notice that most LLMs fail to understand or execute these encoded or encrypted unsafe instructions, often outputting non-sense re...
+
+8. Beyond Refusal: A Same-Lineage Study of Aligned and Abliterated LLMs for Vulnerability Analysis
+   https://arxiv.org/html/2607.05842v1
+   July 7, 2026 - To isolate this factor, we conduct same-lineage comparisons: the evaluated states are rooted in the same open-source model family and tested under matched settings. Gemma [45] serves as...
+
+9. Gemma 4 model card | Google AI for Developers
+   https://ai.google.dev/gemma/docs/core/model_card_4
+   July 30, 2026 - For all areas of safety testing, ... previous Gemma models. Overall, Gemma 4 models significantly outperform Gemma 3 and 3n models in improving safety, while keeping unjustified refusa...
+
+10. LLMs Can Unlearn Refusal with Only 1,000 Benign Samples
+   https://arxiv.org/html/2601.19231v1
+   January 27, 2026 - Specifically, for each instance in Alpaca, we prepend a refusal prefix to the response, with the prefix randomly sampled from a small, fixed set (Table 5 in Appendix A.1). Following...
+
+

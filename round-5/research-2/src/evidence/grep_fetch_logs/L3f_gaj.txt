@@ -1,0 +1,49 @@
+# 2026-09-25T00:56:25Z https://en.wikipedia.org/wiki/Gaj%27s_Latin_alphabet :: Slovene|ć|đ
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://en.wikipedia.org/wiki/Gaj%27s_Latin_alphabet
+Type: HTML
+Pattern: Slovene|ć|đ (205 matches in 164472 chars)
+
+--- Content ---
+
+2645:...* 4.3 Introduction in Serbian
+    * 4.4 Modern history
+  * 5 Correspondence between Cyrillic and Latin alphabets Toggle Correspondence between Cyrillic and Latin alphabets subsection
+    * 5.1 Practical correspondence
+  * 6 Computing
+  * 7 Usage for Slovene
+  * 8 Usage for Macedonian
+  * 9 Influence on Romani alphabets
+  * 10 Keyboard layout
+  * 11 Polling
+  * 12 See also
+  * 13 Notes
+  * 14 References
+  * 15 Sources
+  * 16 External links
+
+
+
+Toggle the table of contents
+
+# Gaj's Latin alphabet
+
+34 lang...
+--
+10790:...ipts")
+          * [Latin alphabet](https://en.wikipedia.org/wiki/Latin_alphabet "Latin alphabet")
+            * [Czech alphabet](https://en.wikipedia.org/wiki/Czech_alphabet "Czech alphabet")
+              * Gaj's Latin alphabet
+
+  
+Child systems| [Slovene alphabet](https://en.wikipedia.org/wiki/Slovene_alphabet "Slovene alphabet")  
+[Montenegrin Latin alphabet](https://en.wikipedia.org/wiki/Montenegrin_Latin_alphabet "Montenegrin Latin alphabet")  
+[Macedonian Latin alphabet](https://en.wikipedia.org/wiki/Romanization_of_Macedonian#Romanization_systems "Romanizatio...
+--
+13555:...edia.org/wiki/Serbian_language "Serbian language"). It contains 30 letters: 22 letters of [basic Latin alphabet](https://en.wikipedia.org/wiki/ISO_basic_Latin_alphabet "ISO basic Latin alphabet") (excluding Q, W, X, Y), 5 letters with diacritics (Č, Ć, Đ, Š, Ž) and 3 digraphs (Dž, Lj, Nj). Each letter (including digraphs) represents one [Serbo-Croatian phoneme](https://en.wikipedia.org/wiki/Serbo-Croatian_phonology "Serbo-Croatian phonology"), yielding a highly [phonemic orthography](https://en.wiki...
+--
+15220:... "Capital letters")** (also called **uppercase** or **capital letters**)  
+---  
+[A](https://en.wikipedia.org/wiki/A "A")| [B](https://en.wikipedia.org/wiki/B "B")| [C](https://en.wikipedia.org/wiki/C "C")| [Č](https://en.wikipedia.org/wiki/Č "Č")| [Ć](https://en.wikipedia.org/wiki/Ć "Ć")| [D](https://en.wikipedia.org/wiki/D "D")| [Dž](https://en.wikipedia.org/wiki/Dž "Dž")| [Đ](https://en.wikipedia.org/wiki/Đ "Đ") | [E](https://en.wikipedia.org/wiki/E "E")| [F](https://en.wikipedia.org/wiki/F "F")| [G](https://en.wikipedia.org/...
+--
+[197 more matches not shown]

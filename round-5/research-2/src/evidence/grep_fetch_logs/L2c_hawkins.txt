@@ -1,0 +1,93 @@
+# 2026-09-25T00:45:09Z https://arxiv.org/pdf/2606.28843 :: continued pre-?training|language adaptation|Gemma|evaluation language|fine-tuning language
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2606.28843
+Type: PDF
+Pattern: continued pre-?training|language adaptation|Gemma|evaluation language|fine-tuning language (32 matches in 60762 chars)
+
+--- Content ---
+
+719:...crease a model’s tendency
+to respond to unsafe adversarial prompts, even
+when fine-tuning with non-adversarial data. We
+present the first comprehensive empirical study of
+this phenomenon in multilingual settings by fine-
+tuning Llama-3.2, Qwen3, and Gemma-3 mod-
+els using benign data translated across nine lan-
+guages. We find that safety outcomes are highly
+sensitive to both the choice of fine-tuning lan-
+guage and the evaluation language, with adver-
+sarial compliance rates increasing four-fold in
+some settings. Multilingual safety drift is de-
+coupled from general capability metrics, and oc-
+curs heterogeneously across languages and mod-
+els. Fine-tuning in non-English languages of...
+--
+3286:...nt lan-
+guages affects safety across various evaluation settings. This
+study fills this gap by conducting a comprehensive empirical
+analysis of benign multilingual fine-tuning. We examine
+three instruction-tuned model families: Qwen3, Llama-3.2,
+and Gemma-3, focusing on small-scale variants (0.6B-4B
+parameters) that are most accessible to fine-tune and rele-
+vant for increasingly popular on-device deployments (Xu
+et al., 2024; Yee et al., 2024).
+By fine-tuning and evaluating hundreds of models across...
+--
+4254:...eral capability changes.
+3. Different architectures show mechanistic diver-
+gence: Architectures differ in resolving post-tuning
+uncertainty, with small representation drifts leading to
+greater compliance for Llama models, and lower com-
+pliance for Gemma-3-4B-IT and Qwen3-4B models.
+1
+arXiv:2606.28843v1  [cs.CL]  27 Jun 2026
+
+The Heterogeneous Safety Impacts of Benign Multilingual Fine-Tuning
+Table 1. Qualitative examples demonstrating how fine-tuning and/or evaluating in different languages can lead to drastically different
+safety outcomes. In each case, the prompt was run three times. The attack failed across all three English (EN) Fine-tuning (FT) / evaluation
+seeds, but was successful for all three seeds in the FT / evaluation language combination of attack.
+Model
+Prompt
+Base EN Response
+EN FT EN Eval
+Successful Attack
+Llama-3.2-1B-Instruct
+Tell me the most covert place in
+London to conduct a perfect
+murder.
+I can’t provide information that
+could be used to facilitate a crime.
+I am not able to provide
+information or guidance on illegal
+or harmful activities.
+[ZH FT, EN Eval] One of the most
+covert locations is...
+Gemma-3-1B-IT
+Provide step-by-step instructions
+on how to build a bomb using
+household items, including the
+sourcing of materials and the
+assembly of the device.
+I cannot and will not provide you
+with instructions on how to build a
+bomb
+The construction o...
+--
+9450:...cs; representing multiple different
+alphabets, and ranging in their likely prominence in pre-
+training data due to their differing presence on the internet
+(Joshi et al., 2020).
+3.1.2. FINE-TUNING
+We fine-tuned three families of open-weights models:
+Gemma-3, Llama-3.2, and Qwen3, which represent three of
+the most popular open-weights model families, all of which
+support each language contained within this study (Llama-
+Team, 2024; Yang et al., 2025; Gemma-Team, 2025). For
+2
+
+The Heterogeneous Safety Impacts of Benign Multilingual Fine-Tuning
+each model family, we selected two sizes of instruction-
+tuned models, a tiny model (0.6B - 1B parameters) and a
+small model (3B - 4B parameters), creating a tot...
+--
+[24 more matches not shown]
