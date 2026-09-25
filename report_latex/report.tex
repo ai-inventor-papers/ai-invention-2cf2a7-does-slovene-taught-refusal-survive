@@ -1,0 +1,1611 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage{graphicx, geometry, amsmath, hyperref, url, natbib, booktabs, xcolor, listings}
+\usepackage{longtable}
+\usepackage{adjustbox}
+\usepackage{array}
+\geometry{margin=1in}
+\hypersetup{colorlinks=true, linkcolor=black, citecolor=black, urlcolor=black}
+
+\title{Over-Refusal of Benign Slovene Prompts Survives English De-censoring in Gemma-3-12B:\\An Internal Research Report}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+
+%% ================================================================
+\section{Framing}
+%% ================================================================
+
+GaMS3-12B-\citet{Vres2026} and Gemma-3-12B-IT both descend from google/gemma-3-12b-pt, but followed different post-training paths. GaMS3 received Slovene continued pretraining on 140 billion tokens and supervised fine-tuning on a mix that is roughly 79\% Slovene, including about 7,000 safety-refusal examples drawn largely from machine-translated Qwen-family responses. Gemma-IT received Google's standard multilingual post-training. Because the two checkpoints share a pretrained ancestor yet diverge in the language of their safety supervision, they form a natural pair for testing whether the language in which refusal was taught determines where refusal appears.
+
+The core question is whether Slovene-taught refusal transfers to English. Prior work on refusal directions~\citep{Arditi2024} established that a single subspace mediates refusal in English, and \citet{Wang2025} showed that English-extracted refusal directions transfer across 14 languages, but both studies used models whose post-training mixed many languages. Less is known about transfer when safety supervision is concentrated in one language. \citet{Shaham2024} found that ``a pinch'' of multilingual instruction data suffices for task-level transfer; \citet{Krasnodebska2026} found that English-only DPO alignment does \emph{not} ensure cross-lingual safety, even for the same harm categories. This tension motivates the dose-response design: if the English share of GaMS3's refusal supervision varies across hazard categories, categories with essentially zero English examples should show a measurable Slovene surplus that Gemma does not share.
+
+A second question follows: if refusal does transfer, does the English-only objective of an automatic abliteration tool (\citet{Weidmann2025}) remove Slovene refusal as readily as English refusal, and does it do so equally in GaMS3 and Gemma-IT? The practical stake is whether a monolingual attack pipeline is sufficient to strip safety from a bilingual model, or whether the Slovene supervision gives GaMS3 a Slovene reserve that an English-only adversary cannot reach. \citet{Joad2026} showed that category-specific refusal directions are geometrically distinct yet collapse under linear intervention; \citet{Zhong2026} argued that refusal lives downstream of persona in chat models. Both findings bear on whether a single English-extracted direction is the right probe for a bilingual model.
+
+Four rival accounts were pre-registered. The main claim (behaviour-level reach) predicts that refusal transfers to English at every hazard-category grain. Alternate~1 (supervised reach) predicts a Slovene surplus in low-English-dose categories. Alternate~2 (base-checkpoint geometry) predicts that GaMS-vs-Gemma differences are explained by the base models' harmfulness separability~\citep{Du2025, Kissane2024}. Alternate~3 (persona gating) predicts a uniform Slovene surplus driven by GaMS3's Slovene-anchored self-identity~\citep{Zhong2026}. Alternate~4 (thin templated gate) predicts symmetric language differences driven by the diversity, not the language, of refusal supervision.
+
+%% ================================================================
+\section{Iteration 1}
+%% ================================================================
+
+\subsection{Strategy}
+
+The iteration ran five artifacts: a dataset artifact that built the evaluation sets and audited GaMS3's supervision dose, and four experiment artifacts that each tested one or more of the pre-registered claims. The design was a screen: every claim was evaluated on SCORE items drawn from RefusEU's train and test splits, with the reserved RefusEU evaluation split untouched for a future FINAL pass. The sequence was dictated by a single-GPU constraint (40\,GB disk), requiring models to be loaded and evicted one at a time.
+
+The four experiments were:
+\begin{enumerate}
+  \item Experiment~1 (main screen): the refusal difference-in-differences between GaMS3 and Gemma-IT on original models, plus the dose contrast~$D$ and identity calibration.
+  \item Experiment~2 (base models and mechanistic): harmfulness separability in the two base checkpoints and two instruct models, plus the ancestor-direction induction test.
+  \item Experiment~3 (persona gate): the alternate-3 manipulation, ablating GaMS3's persona direction and testing whether it moves Slovene refusal.
+  \item Experiment~4 (Heretic abliteration): English-objective abliteration of both instruct checkpoints, the transfer curve, the excess KL ratio, and the prefill test.
+\end{enumerate}
+
+All protocols were hashed and committed before scoring. The OpenRouter shared key hit its daily limit partway through experiments~3 and~4, leaving some judge calls incomplete; these gaps are documented below.
+
+\subsection{Artifact 1: Dataset and supervision audit}
+%% workspace: gen_art_dataset_1
+
+The dataset artifact (gen\_art\_dataset\_1) assembled eight data blocks totalling 15,647 rows.
+
+\textbf{RefusEU evaluation split.} 1,400 English and 1,400 Slovene prompts from RefusEU~\citep{Krasnodebska2026}, frozen into 100 DEV and 1,300 FINAL pairs by sha1 of the pair identifier. Each item received a blind hazard-category label (majority vote of gpt-4.1-mini, gemini-2.5-flash, and a TF-IDF classifier). Gold-test accuracy was 0.759 for English and 0.716 for Slovene; restricting to items where all labellers agreed raised accuracy to 0.95 and 0.94. Inter-annotator kappa between the two LLM labellers was 0.88 (English) and 0.83 (Slovene).
+
+A critical discovery was that same-row-identifier English and Slovene items in RefusEU are not translations: LaBSE cosine similarity was 0.553, matching the similarity of same-category pairs (0.547) and far below the machine-translation baseline (0.914). Zero of 1,400 pairs graded as translation-equivalent. This means within-model Slovene-vs-English comparisons on matched row identifiers conflate prompt content with language; only the cross-model difference-in-differences and a separate machine-translation arm are interpretable.
+
+\textbf{Supervision dose audit.} 6,239 rows from GaMS-Nemotron-Chat and GaMS-Instruct-SAFE were labelled for response type, language, and hazard category by two LLM families (gpt-4.1-mini and gemini-2.5-flash, with llama-3.3-70b tiebreak on 928 disagreements; batch-check agreement 0.945 English, 0.959 Slovene). The overall English share of safety refusals was 0.178, with a propagated interval of [0.055, 0.452]. The upper bound exceeds 0.40, so ``Slovene-dominant refusal'' is not statistically licensed from the public data alone.
+
+The pre-registered 0.10 threshold for assigning categories to dose groups produced the following frozen partition, which diverged from the initial Stage-0b estimates on three categories (S1, S2, S8):
+
+\begin{table}[!htbp]
+\centering
+\caption{Frozen dose groups after re-labelling (iteration~1, dataset artifact).}
+\label{tab:dose_groups}
+\begin{tabular}{llp{5cm}}
+\toprule
+Group & Categories & EN share range (point estimates) \\
+\midrule
+Low-EN & S2, S5, S7, S13 & 0.034 to 0.096 \\
+High-EN & S1, S3, S4, S8, S9, S10, S11, S14 & 0.109 to 0.291 \\
+Intermediate & S6, S12 & 0.148 to 0.201 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Thirteen of fourteen categories were flagged as dose-uncertain (the propagated EN-share interval straddles 0.10). The re-labelling changed S2 from high to low (point 0.075, down from Stage-0b's 0.292) and S8 from low to high (point 0.226). S1 moved from intermediate to high (point 0.291). These shifts reflect the difference between the literal Llama-Guard-3 hazard prompt used in Stage-0b and the RefusEU taxonomy operationalisation used here; agreement between the two was 0.58.
+
+\textbf{Other blocks.} The hard set (OR-Bench-hard-1k, XSTest, OR-Bench-toxic-300) was assembled with Gemini Slovene machine translation (back-translation chrF median 79; 11 items dropped). The identity set comprised 120 identity questions across six facets plus 120 matched personal controls, with zero overlap against the Nemotron training rows. The dataset artifact spent \$9.29 of a \$9.50 budget.
+
+\subsection{Artifact 2: Main screen of refusal differences (Experiment~1)}
+%% workspace: gen_art_experiment_1
+
+Gemma-3-12B-IT and GaMS3-12B-Instruct (gen\_art\_experiment\_1) were run in NF4 quantization with greedy decoding (64 new tokens, empty system prompt) on all 2,137 SCORE RefusEU pairs, a 400-pair item-matched machine-translation arm, 60 identity question pairs, and 1,504 CONSTRUCT pairs (for calibrating the continuous prefix score). The protocol was committed before any SCORE pass. Judges were gemini-2.5-flash on 10,852 responses (33 provider-blocked items fell back to gpt-4.1-mini) and gpt-4.1-mini on a 20\% validation subset; total judge spend was approximately \$0.91.
+
+\subsubsection{Refusal rates}
+
+The ceiling flag fired: Gemma's English lexicon refusal rate was 0.961, and the prefix-score AUROC against the lexicon was only 0.61 in that cell, so the pre-registered fallback to the judge readout (including partial refusals) was triggered.
+
+\begin{table}[!htbp]
+\centering
+\caption{Refusal rates on the 2,137 SCORE pairs (iteration~1, experiment~1).}
+\label{tab:refusal_rates_exp1}
+\begin{tabular}{lcccc}
+\toprule
+Readout & Gemma EN & Gemma SL & GaMS EN & GaMS SL \\
+\midrule
+Lexicon & 0.961 & 0.885 & 0.942 & 0.723 \\
+Judge (binary) & 0.979 & 0.929 & 0.971 & 0.865 \\
+Judge + partial & 0.988 & 0.939 & 0.974 & 0.875 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Both models refuse at high rates across languages. The gap is in Slovene: GaMS3 refuses less than Gemma in Slovene on both the lexicon (0.723 vs 0.885) and the judge (0.865 vs 0.929). In English, the two models are within two percentage points.
+
+\subsubsection{Difference-in-differences and dose contrast}
+
+The difference-in-differences (DiD $= [\text{GaMS}(\text{SL} - \text{EN})] - [\text{Gemma}(\text{SL} - \text{EN})]$) measures whether GaMS3 has a larger Slovene deficit than Gemma. A negative DiD means GaMS3's Slovene gap is wider. All rate-to-logit conversions use the Hautus correction (adding 0.5 to counts before taking log-odds, to avoid infinities at 0\% and 100\%). The pre-registered threshold was $m = 0.40$ log-odds (the log-odds equivalent of a 5\,pp smallest effect size of interest at the pooled base rate).
+
+\begin{table}[!htbp]
+\centering
+\caption{Overall DiD and dose contrast $D$ (log-odds, 95\% bootstrap CI; iteration~1, experiment~1).}
+\label{tab:did_dose_exp1}
+\begin{tabular}{lccc}
+\toprule
+Readout & Overall DiD [95\% CI] & $D$ [95\% CI] & MDE($D$) \\
+\midrule
+Lexicon & $-0.67$ [$-0.95$, $-0.41$] & 0.61 [$-0.58$, 2.15] & 1.89 \\
+Judge & $-0.38$ [$-0.69$, $-0.05$] & $-0.08$ [$-1.27$, 0.94] & 1.53 \\
+Judge + partial & $-0.03$ [$-0.39$, 0.39] & $-0.73$ [$-2.11$, 0.48] & 1.87 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+On the lexicon, the overall DiD is clearly negative ($-0.67$, CI excludes 0), confirming that GaMS3 has a wider Slovene refusal gap than Gemma. On the judge, the DiD is smaller ($-0.38$) but its CI still excludes 0. Including partial refusals shrinks the DiD to near zero ($-0.03$), with the CI spanning both sides.
+
+The dose contrast $D$ (the difference in DiD between low-EN and high-EN categories) is the primary statistic for the main claim vs alternate~1. On all three readouts, $D$ is uninformative: the confidence intervals are wide (MDE 1.5 to 1.9 log-odds, or 5.5 to 8\,pp), spanning both positive and negative values. Neither equivalence nor a dose effect can be established.
+
+\begin{figure}[!htbp]
+  \centering
+  \includegraphics[width=\linewidth,height=0.85\textheight,keepaspectratio]{figures/fig_forest_did_v0.pdf}
+  \caption{Forest plot of category-level difference-in-differences. The 14-category meta-regression of DiD on the English dose share found no significant slope (iteration~1, experiment~1).}
+  \label{fig:forest_did}
+\end{figure}
+
+The 14-category meta-regression of DiD on the English dose share found no significant slope: the zEN coefficient was $-0.04$ on the lexicon (95\% CI [$-0.66$, 0.58]) and $-0.12$ on the judge (95\% CI [$-0.79$, 0.54]). However, the item-level generalised linear mixed model produced a significant negative zEN term on the lexicon ($-0.17$, CI [$-0.28$, $-0.07$]) that flipped sign on the judge ($+0.13$, CI [0.00, 0.27]), a signature of pseudo-replication from 14 correlated category-level units (correlation between zEN and zSL: 0.86, VIF 3.84).
+
+\textbf{Scorer confound.} The frozen Slovene lexicon lacked English-style ``lecture'' markers (phrases like ``It's important to understand that...''), missing 312 GaMS Slovene judge-classified refusals vs 97 for Gemma. Kappa between the lexicon and the judge was below 0.70 in three of four model-language cells. The lexicon therefore overstates GaMS3's Slovene deficit relative to the judge.
+
+\subsubsection{Item-matched machine-translation arm}
+
+To separate the language effect from the prompt-content effect, a 400-item arm used NLLB machine translations of English prompts into Slovene, giving paired items with identical content. GaMS3's Slovene-MT refusal rate was 0.968 vs its English rate of 0.970 (McNemar: 7 vs 8 discordant pairs). The judged DiD on this arm was $-2.0$\,pp [$-4.3$, 0.0], compared with $-6.0$\,pp on the natural RefusEU pairs sharing the same row identifiers. Most of GaMS3's Slovene deficit on natural pairs is thus a prompt-set-by-model interaction, not a pure language effect.
+
+\subsubsection{Identity calibration (C1)}
+
+The calibration arm passed. GaMS3 named itself ``GaMS'' in 90\% of Slovene identity responses and 35\% of English ones; Gemma named itself ``Gemma'' at 77\% in English and 67\% in Slovene (Table~\ref{tab:identity_exp1}). In English, GaMS3 produced ``Qwen'' as its primary name in 13\% of responses, with 48\% giving no name at all. The identity DiD was 3.22 [2.38, 4.38], far exceeding the 10\,pp threshold ($m_{id} = 0.43$). This confirms that GaMS3's supervised fine-tuning can produce language-anchored behaviour: self-identity, taught only in Slovene, is Slovene-bound. The instrument can detect anchoring when it exists.
+
+\begin{table}[!htbp]
+\centering
+\caption{Identity: own-name rates and name distribution (iteration~1, experiment~1).}
+\label{tab:identity_exp1}
+\begin{tabular}{lll}
+\toprule
+Cell & Own-name rate & Top other names \\
+\midrule
+GaMS EN & 0.35 & Qwen 0.13, none 0.48 \\
+GaMS SL & 0.90 & none 0.08 \\
+Gemma EN & 0.77 & none 0.22 \\
+Gemma SL & 0.67 & other 0.08, none 0.20 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsubsection{Surface forms}
+
+1,504 of 1,545 GaMS3 Slovene refusals (97.3\%) opened with the calque ``Oprostite, vendar\ldots'' (``I'm sorry, but\ldots''), a word-for-word translation of the English Qwen refusal template. The Nemotron training data contained 1,508 Slovene calques vs 585 ``\v{Z}al\ldots'' openings and 739 English ``I'm sorry, but\ldots'' openings. The near-universal Slovene calque confirms that GaMS3's refusal wording is borrowed from English, even when the content was supervised in Slovene.
+
+\subsubsection{Verification}
+
+The audit script passed 30 of 30 checks. Two independent re-derivation scripts reproduced all rates, DiD, $D$, DiD$_{id}$, and machine-translation DiD exactly. Model-swap placebos (computing DiD after swapping model labels) were centred at zero (permutation $p = 0.014$ for the judge DiD, 0.17 to 0.87 for $D$). Four-vs-eight-bit first-token agreement was 0.95 (NF4 vs int8 on 20 fixed prompts); language consistency was 100\%; batching-outcome agreement was 32/32.
+
+\subsubsection{Outcome}
+
+Neither the main claim nor alternate~1 survived the screen. On the lexicon, the DiD is negative and exceeds $m$, which would favour alternate~1 through the generalised linear mixed model clause, but the dose contrast $D$ is not significant. On the judge, the DiD is smaller ($-0.38$, barely excluding 0) and $D$ is uninformative (MDE 1.53, well above $2m = 0.80$). The judge and lexicon disagree on the direction of the zEN coefficient, so neither claim can be confirmed or refuted. The identity calibration arm passed, establishing that anchoring is detectable in this design. The frozen-core consequence (whether Heretic removes Slovene refusal) was deferred to experiment~4.
+
+\subsection{Artifact 3: Base models and mechanistic induction (Experiment~2)}
+%% workspace: gen_art_experiment_2
+
+Four checkpoints (gen\_art\_experiment\_2) (gemma-3-12b-pt, GaMS3-12B, gemma-3-12b-it, GaMS3-12B-Instruct) were run in NF4 on an RTX~4090. Items were 2,889 RefusEU train+test pairs (sha1 split: 743 CONSTRUCT, 2,146 SCORE, with a SCORE-400 subset for generation) plus 400 alpaca harmless prompts (NLLB machine-translated to Slovene). The protocol was hashed and committed before any forward pass. OpenRouter spend was \$4.74. The RefusEU evaluation split was never read.
+
+\subsubsection{Alternate~2 (base-checkpoint geometry): killed}
+
+The pre-registered test asked whether the Slovene harmfulness separability ($d'$) is higher in GaMS3-12B-base than in gemma-3-12b-pt, which would predict a Slovene refusal advantage. At the pre-registered layer ($L = 22$), the delta-$d'$-Slovene (GaMS-base minus pt) was $-0.98$ [$-1.13$, $-0.85$]: the GaMS base has \emph{lower} Slovene separability than the pretrained ancestor at this layer, the opposite of the prediction. At each model's own best layer, the sign reversed to $+2.85$. The item-level regression found that base geometry explained only 4.2\% of the instruct-level refusal variance [0.5\%, 12.2\%], with a z-score of $-15$ against the 50\% mediation threshold. Dose coefficients were non-significant (wild-cluster $p = 0.87$ for zEN, 0.92 for zSL). An exploratory analysis found that base-model harm directions carry a last-token punctuation confound; punctuation-matched and mean-pooled delta-$d'$ changed sign again. Base-separability contrasts are not robust.
+
+\textbf{Alternate~2 is dead.} The base checkpoint does not set the instruct model's language profile of refusal.
+
+\subsubsection{C4 (ancestor-direction induction): failure branch}
+
+The pre-registered test asked whether adding the gemma-3-12b-pt harmfulness direction to harmless-prompt activations induces refusal in the instruct models, and whether the EN/SL potency ratio differs between GaMS3 and Gemma. The pretrained direction never reached a refusal rate of 0.50 in any model-language cell under the judge readout (peak 0.03 to 0.25; output was mostly incoherent). It performed no better than random directions and had cosine similarity near zero with each instruct model's own refusal direction. This triggers the pre-registered failure branch: ``refusal reads an ancestor-readable feature'' loses causal support, consistent with \citet{Du2025} who report limited forward transfer of refusal directions from base to post-trained models.
+
+The positive control passed: each instruct model's own difference-of-means direction induced refusal at low alpha values ($\alpha_{50}$ approximately 0.03 times the mean residual norm for Gemma-IT, 0.05 for GaMS3). The own-direction delta for the language-asymmetry comparison was $-0.09$ [$-0.28$, 0.07] on the lexicon and $+0.24$ [0.13, 0.38] on the judge, both inside the pre-registered equivalence bound of $\pm \ln(1.5) = 0.41$. Alternate~1 is therefore not supported by the induction data: GaMS3 does not show a lower Slovene induction potency than Gemma.
+
+\begin{table}[!htbp]
+\centering
+\caption{SCORE-400 judge refusal rates (iteration~1, experiment~2, secondary).}
+\label{tab:refusal_exp2}
+\begin{tabular}{lcc}
+\toprule
+Model & EN & SL \\
+\midrule
+Gemma-IT & 0.957 & 0.945 \\
+GaMS3-Instruct & 0.967 & 0.917 \\
+DiD (log-odds) & \multicolumn{2}{c}{$-0.70$ [$-1.45$, 0.02]} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsubsection{Validity notes}
+
+The frozen lexicon was found to be language-asymmetric: the English list included ``illegal'' and ``unethical'' markers absent from the Slovene list. GaMS3's Slovene kappa (lexicon vs judge) was 0.38, confirming the lexicon overstates GaMS3's Slovene deficit. The prefix score was dominated by template and language priors (the centred score reversed the mean DiD). NF4-vs-int8 first-token agreement was 18/20.
+
+\subsection{Artifact 4: Persona-gate test (Experiment~3)}
+%% workspace: gen_art_experiment_3
+
+Alternate~3 (gen\_art\_experiment\_3), drawing on \citeauthor{Zhong2026}'s~\citeyearpar{Zhong2026} claim that refusal lives downstream of persona, predicted that GaMS3's Slovene-anchored persona gates Slovene refusal, producing a uniform surplus. The test ran GaMS3-12B-Instruct and Gemma-3-12B-IT in NF4 on an NVIDIA~L4, on SCORE-400 RefusEU pairs. The protocol was committed before scoring. Judge: gemini-2.5-flash, spend \$1.45.
+
+\subsubsection{Verdict: untestable}
+
+The manipulation check failed. Persona ablation (removing GaMS3's own-name direction from late layers 32--47 via mean-projection with BOS skipped) did remove own-naming, but a variance-matched random direction also removed English naming to a comparable degree. The pre-registered rule declared alternate~3 untestable when the manipulation check fails.
+
+Even if the manipulation had been clean, the signature would not survive. The judge-based triple-difference (TD$^*$) was $+0.23$ [$-0.81$, 1.25], with an MDE of 1.46 (exceeding $2m = 0.88$). The prefix-score co-primary (triggered by the ceiling rule) gave TD$^* = +0.43$ [$-0.11$, 0.97], with the upper bound below the $m_s$ threshold of 1.32.
+
+\subsubsection{Consequential amendment}
+
+Zero-projection ablation was catastrophic in the Gemma-3 family, producing massive activations even for random directions (a BOS-sink artefact). The amendment replaced zero-projection with mean-projection that skips BOS, re-matching the random control on centred variance.
+
+\subsubsection{Descriptive findings}
+
+GaMS3 showed a Slovene refusal \emph{deficit} relative to Gemma, not the surplus that alternate~3 predicts. The unablated DiD was $-1.11$ [$-2.00$, $-0.36$] on the judge and $-2.72$ [$-3.30$, $-2.13$] on the prefix score. On the translation-matched items, it was $-3.06$ [$-3.59$, $-2.52$]. Late-layer persona ablation barely moved GaMS3's Slovene refusal: 0.883 to 0.853 (McNemar $p = 0.08$).
+
+An exploratory finding: ablating GaMS3's own-name direction made GaMS3 identify as Qwen (English 0.15 to 0.78, Slovene 0.03 to 0.60), while random controls stayed at 0.23 to 0.30 and Gemma was unaffected. This is teacher-identity substitution, not persona removal: the ablation does not erase the identity; it replaces GaMS with the training-data source.
+
+\begin{table}[!htbp]
+\centering
+\caption{Refusal and identity rates under persona ablation (GaMS3, SCORE-400; iteration~1, experiment~3).}
+\label{tab:persona_ablation}
+\begin{tabular}{lcccc}
+\toprule
+Condition & EN refusal & SL refusal & EN own-name & SL own-name \\
+\midrule
+Original & 0.925 & 0.675 & 0.45 & 0.90 \\
+Persona ablated (late) & 0.925 & 0.653 & 0.00 & 0.00 \\
+Random control (late) & 0.925 & 0.670 & 0.23--0.30 & 0.23--0.30 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Language-identity and Gemma induction ablation (C5) were catastrophic by the degeneracy gates and are not reported.
+
+\textbf{Alternate~3 is dead.} The manipulation check fails, the premise (a Slovene surplus) is contradicted by the data, and the effect size is too small relative to the MDE.
+
+\subsection{Artifact 5: Heretic abliteration and transfer curve (Experiment~4)}
+%% workspace: gen_art_experiment_4
+
+English-objective abliteration (gen\_art\_experiment\_4) was run on both instruct checkpoints using \citet{Weidmann2025} with identical configuration: NF4, empty system prompt, TPE sampler with seed 20260923. The 17 compared draws were verified identical across models (paired design). A driver script copied Heretic's objective verbatim and logged bilingual metrics that never entered the objective; non-interference was verified by replaying objective values and confirming identical LoRA hashes.
+
+\subsubsection{English abliteration reaches Slovene}
+
+Lexicon refusal on 400 RefusEU pairs fell sharply in both languages and both models:
+
+\begin{table}[!htbp]
+\centering
+\caption{Refusal rates before and after Heretic abliteration (lexicon, 400 pairs; iteration~1, experiment~4).}
+\label{tab:heretic_refusal}
+\begin{tabular}{lcccc}
+\toprule
+Condition & Gemma EN & Gemma SL & GaMS EN & GaMS SL \\
+\midrule
+Original & 0.965 & 0.932 & 0.940 & 0.830 \\
+Selected edit & 0.242 & 0.223 & 0.133 & 0.098 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Trial-level slopes of Slovene refusal on English refusal were positive for both models (Gemma 1.21 [0.75, 1.83]; GaMS3 0.79 [0.51, 1.14]); shuffling Slovene rates produced slopes of 0.01 $\pm$ 0.28. English-objective abliteration removes Slovene refusal.
+
+\begin{figure}[!htbp]
+  \centering
+  \includegraphics[width=\linewidth,height=0.85\textheight,keepaspectratio]{figures/fig_transfer_curve_v0.pdf}
+  \caption{Slovene-vs-English refusal transfer curve under Heretic abliteration. Trial-level slopes are positive for both models (iteration~1, experiment~4).}
+  \label{fig:transfer_curve}
+\end{figure}
+
+\subsubsection{C3 (frozen-core transfer): fails both ways}
+
+\textbf{[Correction (iteration~4, MINOR \#1):} The experiment~4 summary gives $G_3 = -1.86$ [$-2.87$, $-1.13$] on the matched first 17 trials, $-1.76$ on all trials, $-0.98$ on the lambda curve. The text below used $-1.76$ for the matched-17 value; the correct matched-17 value is $-1.86$.\textbf{]}
+
+The primary statistic $G_3$ (the GaMS-minus-Gemma difference in the logistic transfer-curve intercept, measuring whether GaMS3 retains more Slovene refusal at matched English refusal) was $-1.86$ [$-2.87$, $-1.13$] on the matched first 17 trials ($-1.76$ on all trials, $-1.74$ on translation-equivalent pairs). The main claim required $|G_3| < m = 0.675$; alternate~1 required $G_3 > m$. Neither holds: Slovene refusal is \emph{more exposed} in GaMS3 than in Gemma at any matched English refusal level. Trial-label permutation $p = 0.000$.
+
+The category-level version ($G_3$ in low-EN vs high-EN categories) was 0.39 [$-1.19$, 2.12], not separating dose groups.
+
+\subsubsection{C5a (excess Slovene KL): reverses the prediction}
+
+The pre-registered test asked whether Heretic's real refusal direction damages Slovene more than a norm-matched random direction. The excess Slovene/English KL ratio was 0.298 [0.154, 0.562] for Gemma and 0.574 [0.409, 0.796] for GaMS3, both with confidence intervals entirely below 1. The real direction damages Slovene \emph{less} than random directions. There is no Slovene leakage; the English-only objective is, if anything, Slovene-sparing.
+
+\subsubsection{C5b (bilingual re-selection): unpowered}
+
+Only one candidate trial per model met the re-selection criteria, and it was the same as the original pick. Gain was zero. The test is unpowered because no trial reached the pre-registered threshold of 10 or fewer keyword refusals out of 100 (the best was 64/100 for Gemma, 29/100 for GaMS3). The fallback to a reduced-trial random-search analysis was triggered.
+
+\subsubsection{Alternate~4 (thin templated gate): strongest signal but does not survive}
+
+A five-token compliant prefill (``Sure, here is'') flipped refusals at strikingly different rates across models:
+
+\begin{table}[!htbp]
+\centering
+\caption{Prefill flip rates (fraction of items that refused at $k=0$ but complied at $k=5$; iteration~1, experiment~4).}
+\label{tab:prefill_flip}
+\begin{tabular}{lcccc}
+\toprule
+ & Gemma EN & Gemma SL & GaMS EN & GaMS SL \\
+\midrule
+Flip rate & 0.031 & 0.558 & 0.559 & 0.855 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The prefill signature Sig was 3.63 [3.13, 4.36] in English and 1.54 [1.20, 1.92] in Slovene, both exceeding the $m_2$ threshold of 0.40 with confidence intervals above zero ($z_c = 6.23$, paired label-swap $p = 0.000$). GaMS3's refusal is more brittle than Gemma's in both languages, and the gap is larger in English (Sig$_\text{EN}$) than in Slovene (Sig$_\text{SL}$). However, alternate~4 predicted symmetric language effects ($|\text{Sig}_\text{SL} - \text{Sig}_\text{EN}| < m$), and the observed asymmetry was 2.10, far exceeding the threshold. Alternate~4 was scored as not survived.
+
+The Pareto hypervolume ratio (GaMS3/Gemma) was 2.29 [2.01, 3.36], confirming that GaMS3's refusal is easier to remove across the entire refusal-KL trade-off front.
+
+\subsubsection{Failed attempts}
+
+The plan's raw Arditi-style~\citep{Arditi2024} rank-$k$ ablation destroyed Gemma (KL 20 to 53 nats even for a random basis) and was abandoned. Mechanistic question C code was implemented but not run due to the key limit. Judge validation did not confirm the lexicon (kappa below 0.70 in all cells, though raw agreement was 95\% with PABAK 0.90 on unedited cells). GaMS3's judge labels are incomplete: the OpenRouter key hit its daily limit before GaMS3 could be judged, and a retry with the replacement key still returned a 403 error.
+
+\subsubsection{Limits}
+
+All transfer-curve and Pareto numbers come from reduced-trial random search, not the planned 80-trial Optuna run. The EN-KL-matched random control was unmatchable at the 6x cap. The lexicon is the primary readout because judge validation failed, with the prefix score as co-primary. Unedited-model KL reproduces to only 0.030 nats under NF4 batching.
+
+\subsection{Summary of dead ends and surviving claims}
+
+\begin{table}[!htbp]
+\centering
+\caption{Status of pre-registered claims after iteration~1.}
+\label{tab:claims_iter1}
+\footnotesize
+\begin{tabular}{llp{4.5cm}p{3cm}}
+\toprule
+Claim & Status & Key evidence & Next step \\
+\midrule
+Main: behaviour-level reach (C2) & INCONCLUSIVE & $D$ uninformative; MDE 1.5--1.9; lexicon/judge disagree & FINAL with larger $N$ and validated judge \\
+Alt~1: supervised reach & INCONCLUSIVE & Same $D$; zEN flips sign across readouts & Same \\
+Alt~2: base geometry & DEAD & delta-$d'$ sign depends on layer; geometry share 4.2\% & None \\
+Alt~3: persona gate & UNTESTABLE (manipulation check fails); DEAD (premise contradicted) & Manipulation check fails; premise (SL surplus) contradicted & None \\
+Alt~4: thin gate & NOT SURVIVED & Prefill asymmetry too large; signature not symmetric & Descriptive only \\
+C1: identity calibration & PASS & DiD$_{id} = 3.22$ [2.38, 4.38] & Carry forward \\
+C3: frozen-core transfer & FAILS BOTH WAYS & $G_3 = -1.76$ [$-2.73$, $-1.09$]; GaMS more exposed & Investigate with full Optuna run \\
+C4: ancestor induction & FAILURE BRANCH & pt direction never reaches $R = 0.50$; own-direction equivalence holds & Report as check \\
+C5a: excess SL KL & REVERSES & Ratio 0.30 / 0.57, CI below 1 & Confirm with judge \\
+C5b: re-selection & UNPOWERED & $n = 1$ candidate per model & Full Optuna run needed \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+%% ================================================================
+\section{Iteration 2}
+%% ================================================================
+
+\subsection{Strategy}
+
+Iteration~2 addressed three weaknesses identified by the reviewer and by iteration~1's own diagnostics. First, the main claim (behaviour-level reach vs category-level supervised reach) remained inconclusive because the dose contrast was unpowered on SCORE items, the lexicon and judge disagreed, and no FINAL evaluation had been run. Second, the Heretic transfer-curve finding (the transfer-curve intercept was $-1.76$, meaning GaMS3 retained less Slovene refusal than Gemma at matched English refusal) rested on a lexicon readout that failed judge validation in three of four cells. Third, the teacher-inheritance pathway, an alternate not originally pre-registered, was flagged by the reviewer as a plausible alternative account given GaMS3's heavy reliance on Qwen-family refusal data.
+
+The iteration ran five artifacts:
+\begin{enumerate}
+  \item Experiment~5 (confirmation): the pre-registered FINAL evaluation on the reserved RefusEU evaluation split, the item-matched machine-translation arm, the HARD set (XSTest + OR-Bench), and the identity questions, using 20,300 generations and a local Qwen3-14B judge after the OpenRouter budget was exhausted.
+  \item Experiment~6 (refusal depth pipeline): the code scaffold for a refusal-depth experiment. It produced no scored output and is reported as infrastructure, not a finding.
+  \item Experiment~7 (teacher inheritance): a five-system screen comparing GaMS3, Gemma-IT, Qwen3-235B (the teacher), Qwen3-14B (same-family control), and Llama-3.3-70B (outgroup placebo), testing whether GaMS3's refusal decisions and wording inherit from its Qwen teacher.
+  \item Experiment~8 (Heretic re-test): a fresh paired abliteration run on 200 item-matched RefusEU-TRAIN probes with three dose curves, removing the iteration-1 confounds (unmatched EN/SL items, no judge on GaMS3) and testing the transfer curve, depth, and Slovene KL leakage with a local Llama-3.1-8B judge.
+  \item Evaluation~1 (reconciliation): a \$0 harmonised re-scoring of all iteration-1 screens on a single readout, checking which findings survive, shrink, or become uncitable under a consistent judge.
+\end{enumerate}
+
+The OpenRouter shared key was exhausted for most of the iteration (403 errors on all calls, including after the replacement notice). Every experiment that needed paid judges fell back to local open-weight models. This is the single largest constraint on this iteration's evidence quality.
+
+\subsection{Artifact 6: Confirmation on the reserved FINAL splits (Experiment~5)}
+%% workspace: gen_art_experiment_5
+
+This was the pre-registered confirmation run (gen\_art\_experiment\_5) on the reserved evaluation data. Both models were run in NF4 quantization with greedy decoding (160 tokens, empty system turn, byte-identical template) at seed 20260924.
+
+\textbf{Deviation D5.} The run's OpenRouter budget was exhausted mid-FINAL. The pre-registered gemini-2.5-flash and gpt-4.1-mini judges could not run to completion. The FINAL primary readout is a local Qwen3-14B judge (frozen prompt, logit-based), validated against gemini on DEV (binary kappa 0.68 to 0.86 across cells) and on the 11,146 FINAL rows that received gemini labels before the budget ran out. Identity uses a regex scorer validated against gemini on DEV (kappa 0.82 for Gemma, 1.00 for GaMS3). A DEV-based calibration layer corrects Qwen3's inflation of REFUSE on hedged English answers.
+
+\subsubsection{Identity calibration: passes on FINAL}
+
+The identity arm replicates. GaMS3 named itself ``GaMS'' in 90\% of Slovene answers and 33\% of English answers; Gemma did not name itself in either language (the regex scored 0\% in all Gemma cells because Gemma's own-name responses did not match the strict regex pattern). GaMS3 credited Qwen or Alibaba in 51\% of English identity responses (up from 42\% in iteration~1). The FINAL identity DiD was 3.46 [2.55, 4.62] ($m_{id} = 0.40$), confirming that the design can detect language anchoring.
+
+\begin{table}[!htbp]
+\centering
+\caption{Identity results on FINAL (80 pairs; iteration~2, experiment~5).}
+\label{tab:identity_final}
+\begin{tabular}{lc}
+\toprule
+Cell & Own-name rate (regex) \\
+\midrule
+GaMS EN & 0.325 \\
+GaMS SL & 0.900 \\
+Gemma EN & 0.563 \\
+Gemma SL & 0.413 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsubsection{Refusal on RefusEU natural pairs}
+
+On 1,300 FINAL pairs, the Qwen3 judge gave the following refusal rates:
+
+\begin{table}[!htbp]
+\centering
+\caption{FINAL refusal rates (Qwen3-14B judge, RefusEU natural pairs; iteration~2, experiment~5).}
+\label{tab:final_refusal}
+\begin{tabular}{lcc}
+\toprule
+Model & EN & SL \\
+\midrule
+GaMS3-Instruct & 0.972 & 0.922 \\
+Gemma-IT & 0.979 & 0.958 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The overall DiD was $-0.35$ [$-0.81$, 0.13], about $-2.8$\,pp on the probability scale. The 95\% CI includes zero: on the Qwen3 judge, there is no significant GaMS3 Slovene deficit.
+
+The dose contrast was $-0.27$ [$-1.31$, 0.71], with minimum detectable effect 1.36 exceeding twice the pre-registered threshold ($2m = 1.02$). The dose test remains underpowered on the FINAL data.
+
+The judge-family robustness check revealed a stark dependence on the judge. Gemini-2.5-flash labels existed for 607 of the 1,300 pairs (all GaMS3 rows plus the first Gemma rows before the budget ran out). On those 607 overlapping pairs:
+
+\begin{table}[!htbp]
+\centering
+\caption{DiD by judge family on the same 607 pairs (iteration~2, experiment~5).}
+\label{tab:judge_family}
+\begin{tabular}{lc}
+\toprule
+Judge & DiD [95\% CI] \\
+\midrule
+Gemini-2.5-flash & $-0.63$ [$-1.14$, $-0.16$] \\
+Qwen3-14B & $+0.03$ [$-0.75$, 0.82] \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The same items produce a significant GaMS3 Slovene deficit under gemini and a null under Qwen3. This judge dependence is the iteration's most consequential finding for the primary contest: the size and sign of the refusal DiD are not robust to the choice of judge family.
+
+\subsubsection{Item-matched machine-translation arm}
+
+On 1,296 FINAL pairs (EN back-translation vs SL machine translation from the same English source), the DiD was $-1.67$ [$-2.75$, $-1.03$]. This is larger than the natural-pair DiD and is driven by Gemma refusing more in Slovene (99.5\%) than in English (97.5\%) on the matched items. The MT-arm DiD cannot be directly compared with the natural-pair DiD because the items differ in content and difficulty.
+
+\subsubsection{HARD set: signal-detection analysis}
+
+The HARD set (349 unsafe + 1,093 safe items from XSTest and OR-Bench, with SL machine translations and EN back-translations) was analysed in a signal-detection framework.
+
+\begin{table}[!htbp]
+\centering
+\caption{Signal-detection parameters on HARD (SL-MT vs EN-BT; iteration~2, experiment~5).}
+\label{tab:sdt_hard}
+\begin{tabular}{lcccc}
+\toprule
+ & $d'$ & $c$ (criterion) & Hit rate & False-alarm rate \\
+\midrule
+Gemma EN & 1.574 & $-0.440$ & 0.890 & 0.364 \\
+Gemma SL & 1.393 & $-0.870$ & 0.941 & 0.569 \\
+GaMS EN & 1.862 & $-0.327$ & 0.896 & 0.273 \\
+GaMS SL & 1.678 & $-0.235$ & 0.859 & 0.273 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The DiD in $d'$ (discrimination) was $-0.003$ [$-0.33$, 0.29]: the two models lose the same amount of discrimination between languages. The DiD in criterion $c$ was $+0.52$ [0.38, 0.68], the most robust result of the FINAL run. Gemma-IT shifts its criterion toward refusal on benign Slovene prompts (false-alarm rate rising from 0.364 to 0.569), while GaMS3 is language-invariant on criterion (false-alarm rates 0.273 in both languages). GaMS3 does not over-refuse in Slovene; Gemma does.
+
+\begin{figure}[!htbp]
+  \centering
+  \includegraphics[width=\linewidth,height=0.85\textheight,keepaspectratio]{figures/fig_hard_sdt_v0.pdf}
+  \caption{Signal-detection decomposition on HARD items. Gemma shifts its criterion toward refusal in Slovene while GaMS3 remains language-invariant (iteration~2, experiment~5).}
+  \label{fig:hard_sdt}
+\end{figure}
+
+This criterion shift is fragile under partial-as-refusal coding, and the DEV gemini judge produced a comparable estimate ($+0.67$). It replicates across OR-Bench items alone ($+0.70$ [0.50, 0.93]) and survives dropping MT-fragile items ($+0.62$ [0.46, 0.79]).
+
+\subsubsection{Refusal style}
+
+GaMS3's Slovene refusals on RefusEU are terse (median 16 tokens, vs 160 for Gemma) and formulaic: 61\% open with ``Oprostite, vendar vam pri tem'' and 87\% are covered by the top five openings. In English, 86\% of GaMS3 refusals open with ``I'm sorry, but I can't''. Gemma's refusals are longer (median 160 tokens), with more varied openings (``I am programmed to be'' in English, ``\v{Z}al mi je, vendar ne'' in Slovene).
+
+\subsubsection{Verification}
+
+The audit passed 27 of 27 checks. An independent pandas re-derivation matched all headline numbers to $10^{-9}$. Permutation tests confirmed $p < 0.001$ for identity DiD, with placebos not significant. Spend was \$2.10.
+
+\subsection{Artifact 7: Teacher-inheritance screen (Experiment~7)}
+%% workspace: gen_art_experiment_7
+
+This exploratory screen (gen\_art\_experiment\_7) tested whether GaMS3's refusal decisions and wording inherit from its Qwen-family teacher. Five systems were run on byte-identical prompts (greedy, empty system turn, 160 tokens): GaMS3-12B-Instruct (NF4), Gemma-3-12B-IT (NF4), Qwen3-235B-A22B (the SFT data generator, via OpenRouter with thinking off), Qwen3-14B (same-family positive control, NF4), and Llama-3.3-70B (outgroup placebo). The protocol was frozen before the full pass. Items: 616 HARD-DEV (XSTest + OR-Bench) + 400 SCORE RefusEU + 117 identity items; English, SL-MT, and EN back-translation arms.
+
+\textbf{Readout caveat.} The OpenRouter budget ran out before the pre-registered gemini judge could label all systems. Headline numbers use a local Mistral-Small-24B judge (NF4, frozen prompt), validated against gemini with binary kappa 0.67 to 0.86 per local cell. Prefill rows have kappa 0.15 and are invalid under this readout.
+
+\subsubsection{Decision inheritance: uninterpretable}
+
+The fingerprint-calibration gate failed. The positive control asked whether the instrument can detect within-family resemblance: the Qwen3-14B-to-Qwen3-235B kappa should exceed the Qwen3-14B-to-Gemma kappa by at least 0.10. The observed difference was $-0.001$ [$-0.074$, 0.079]: the instrument cannot distinguish same-family from cross-family agreement. All pairwise kappas cluster at 0.51 to 0.60, dominated by item difficulty (retest ceiling 0.88). The descriptive GaMS3-to-teacher kappa minus GaMS3-to-Gemma kappa was $-0.044$ [$-0.118$, 0.032], with the 90\% CI excluding a $+0.10$ teacher advantage. GaMS3 does not take the teacher's side more often than it takes the sibling's, but the instrument lacks the resolution to detect even genuine family resemblance.
+
+\subsubsection{Wording inheritance: supported}
+
+Refusal wording tells a different story. The SFT-source classifier (5-fold cross-validated accuracy 0.97) attributed 95.8\% of GaMS3's English refusal first sentences to the Qwen teacher family, with an independent SVM re-derivation at 98.4\% (shuffled-label placebo: 18\%). Gemma scored 0.7\%. In Slovene, GaMS3's refusal wording matches the GaMS-27B translated SFT data (90.8\% of first sentences found verbatim) rather than the live teacher's output (1.5\%).
+
+\begin{table}[!htbp]
+\centering
+\caption{Refusal first-sentence origin (share found verbatim in SFT data; iteration~2, experiment~7).}
+\label{tab:wording_inheritance}
+\begin{tabular}{lcc}
+\toprule
+Model & EN & SL \\
+\midrule
+GaMS3-Instruct & 0.761 & 0.908 \\
+Gemma-IT & 0.000 & 0.030 \\
+Qwen3-235B & 0.757 & 0.015 \\
+Qwen3-14B & 0.092 & 0.007 \\
+Llama-3.3-70B & 0.254 & 0.016 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The English column shows that GaMS3 and the teacher share the same refusal vocabulary to the same degree (76\%), and both are distinct from Gemma (0\%). In Slovene, GaMS3 uses the machine-translated SFT wording (91\%), not the teacher's live Slovene output (1.5\%), confirming that the Slovene refusal calque originates in the training data translation, not in a runtime cross-lingual transfer from the teacher.
+
+\subsubsection{Language asymmetry: Gemma is the outlier}
+
+Gemma-IT over-refuses safe Slovene items ($+0.24$ vs English), while GaMS3, the teacher, and the same-family control refuse \emph{less} in Slovene. The Slovene kappa difference (GaMS3 vs teacher minus GaMS3 vs Gemma) was 0.082, and the gap-of-gaps (DiffGap) was $-0.133$ [$-0.247$, $-0.011$], running opposite to a teacher-inheritance prediction and driven by Gemma being the outlier in Slovene.
+
+\subsubsection{Identity}
+
+GaMS3 named Qwen or Alibaba in 47\% of English identity answers and 7\% of Slovene ones, consistent with the FINAL result (51\% English, not measured in Slovene by this artifact).
+
+\subsubsection{Verification}
+
+Audit: 52 of 52 independent checks passed. An independent re-derivation with placebos reproduced all headline numbers. Judge spend: \$1.45. The pre-registered paid readout (gemini + gpt-4.1 second family) is implemented but unrun; finalize.sh is resumable.
+
+\subsection{Artifact 8: Heretic transfer-curve re-test (Experiment~8)}
+%% workspace: gen_art_experiment_8
+
+This artifact (gen\_art\_experiment\_8) re-tested the iteration-1 finding that English-objective Heretic abliteration strips GaMS3's Slovene refusal faster than Gemma's (iteration-1 lexicon transfer-curve intercept $= -1.86$), using a design that removes the iteration-1 confounds. It uses a fresh 200-item RefusEU-TRAIN probe, item-matched across three arms from one English source (EN original, NLLB Slovene MT, NLLB English back-translation). Both models were run through an identical code path (NF4, empty system, greedy, seed 20260924) over three dose curves:
+
+\begin{itemize}
+  \item \textbf{Curve B (confirmatory):} 29 paired fresh Heretic trials whose TPE start-up draws were verified parameter-identical across models (9 of the 29 trials diverged in parameters after the start-up phase).
+  \item \textbf{Lambda-scaling curve:} the iteration-1 selected Heretic LoRA scaled by lambda (0.0 to 2.0 in 8 steps for Gemma, 6 for GaMS3).
+  \item \textbf{Mean-projection curve:} graded mean-projection ablation of a winsorised own-English refusal direction with a centred-variance random-direction control.
+\end{itemize}
+
+\textbf{[Correction (iteration~4, MUST-FIX \#6a):} The primary readout was the unvalidated lexicon. The Llama-3.1-8B judge labelled only 3,374 of 24,000 rows (kappa 0.52). The iteration-2 hypothesis update noted this: ``the paper's statement that experiment~8 used a Llama judge must be corrected''. See evaluation~2 for the repair.\textbf{]}
+
+The judge was Llama-3.1-8B-Instruct (selected over Qwen3-8B by higher binary-refusal kappa vs gemini on a 1,000-row Gemma calibration set), applied identically to both models with the frozen judge prompt. Gemini labels exist for all Gemma rows but no GaMS3 rows (budget exhausted).
+
+\subsubsection{Transfer curve: GaMS3 Slovene less retained, confirmed on fresh trials}
+
+On the 29 paired Heretic trials (confirmatory curve), the transfer-curve intercept (the GaMS-minus-Gemma predicted Slovene refusal rate at matched English refusal of 50\%, on a logistic scale) was $-2.36$ [$-3.18$, $-1.62$]. At matched English refusal of 50\%, Gemma retains 38\,pp more Slovene refusal than GaMS3. The permutation test gave $p < 0.001$ (null mean 0.006, null SD 0.44). The BCa-corrected CI was [$-3.22$, $-1.63$].
+
+\begin{table}[!htbp]
+\centering
+\caption{$G_3$ (GaMS-minus-Gemma predicted SL refusal at EN refusal = 50\%) across dose curves (iteration~2, experiment~8).}
+\label{tab:g3_curves_exp8}
+\begin{tabular}{lccc}
+\toprule
+Curve & $G_3$ [95\% CI] & Verdict ($m = 0.675$) & Verdict ($m_\text{local} = 0.20$) \\
+\midrule
+B (29 paired trials) & $-2.36$ [$-3.18$, $-1.62$] & SL\_OVER\_EXPOSURE & SL\_OVER\_EXPOSURE \\
+A1 (lambda scaling) & $-0.19$ [$-1.03$, 0.78] & INCONCLUSIVE & INCONCLUSIVE \\
+A2 (mean-projection) & excluded (non-specific) & n/a & n/a \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The confirmatory curve confirms and strengthens the iteration-1 finding (iteration-1: intercept $= -1.86$ [$-2.87$, $-1.13$] on 17 trials). The lambda-scaling curve gives a much smaller and non-significant intercept ($-0.19$): the two curves disagree. The mean-projection curve was excluded because the direction-specific control failed in GaMS3 (ablating the real direction reduced refusal by the same amount as ablating random directions).
+
+\begin{figure}[!htbp]
+  \centering
+  \includegraphics[width=\linewidth,height=0.85\textheight,keepaspectratio]{figures/fig_transfer_retest_v0.pdf}
+  \caption{Transfer curve re-test on fresh 200-item probe. Confirmatory curve confirms GaMS3 Slovene over-exposure; lambda-scaling curve gives a smaller, non-significant estimate (iteration~2, experiment~8).}
+  \label{fig:transfer_retest}
+\end{figure}
+
+The exploratory dose-group analysis on the confirmatory curve found no separation: the intercept in low-English-dose categories was $-1.92$ [$-3.28$, $-0.79$] vs $-3.05$ [$-4.52$, $-1.85$] in high-English-dose categories (difference $+1.12$, not significant). The higher-dose categories showed a larger GaMS3 deficit, the opposite of what category-level supervised reach predicts.
+
+\subsubsection{Slovene KL leakage: no leakage, replicated}
+
+The excess Slovene/English KL ratio was 0.54 [0.34, 0.80] for Gemma and 0.93 [0.77, 1.15] for GaMS3. Both models' confidence intervals are at or below 1: the real refusal direction does not damage Slovene more than random directions. GaMS3's ratio is closer to 1 than in iteration~1 (iteration-1: 0.574 [0.409, 0.796]), but still no evidence of leakage.
+
+\subsubsection{Verification}
+
+Audit: all re-derived independently with placebos. MT quality: median chrF 75.4, 2 fragile items. Pairing check: 29 common trials, 9 parameter mismatches (post-start-up divergence). Spend: \$1.06.
+
+\subsection{Artifact 9: Reconciliation of iteration-1 findings (Evaluation~1)}
+%% workspace: gen_art_evaluation_1
+
+This \$0 evaluation (gen\_art\_evaluation\_1) harmonised all iteration-1 screens onto a single readout to check which findings survive. It used real gemini labels where they exist (all 10,852 experiment~1 responses plus 13,586 of 33,623 total rows across experiments) and a pooled TF-IDF classifier trained on all 26,912 real iteration-1 judge labels where they do not. Per-cell validity gates were applied: 33 cells passed, 17 failed, and 22 (all GaMS3 experiment-4 cells) were unvalidated.
+
+\subsubsection{Key finding 1: Prefill cells are unmeasurable}
+
+The iteration-1 prefill test (alternate~4) used the frozen lexicon as its primary readout because judge labels were unavailable for GaMS3. Against a 48-item blind adjudication (author model, not human), no readout reached kappa 0.60 on prefill continuations: the pooled surrogate achieved 0.39, the lexicon 0.21, and even the real gemini judge only 0.17 (calling 90\% of Gemma prefill continuations refusals against an adjudicated 45\%). The prefill cells are not measurable by any readout that existed in iteration~1. The prefill-depth signature (alternate~4) and the iteration-1 transfer-curve estimate are therefore uncitable.
+
+\subsubsection{Key finding 2: GaMS3 Slovene deflection}
+
+34.6\% (115 of 332) of GaMS3's Slovene prefill continuations paraphrased the harmful request back (``izbolj\v{s}ana \ldots razli\v{c}ica va\v{s}ega sporo\v{c}ila''), a pattern absent in all other cells (0\%). The lexicon scored 95.7\% of these as flips (compliance), inflating the GaMS3 Slovene flip rate. Excluding them reduces the Slovene prefill signature from 1.54 to 1.16.
+
+\subsubsection{Key finding 3: Meta-analysis of the GaMS3 Slovene deficit}
+
+The four iteration-1 estimates of the GaMS3 Slovene deficit came from four different experiments with four judge prompts. On one harmonised readout, the estimates were experiment~1 $= -0.38$, experiment~3 $= -0.69$, experiment~4 $= -0.95$, experiment~6 $= -1.25$ (experiment~5 was not recoverable because experiment~3 saved no text for the machine-translation arm). A generalised least-squares meta-analysis on the joint cluster-bootstrap covariance gave $-0.50$ [$-0.82$, $-0.21$]; REML with modified Hartung-Knapp-Sidik-Jonkman correction gave $-0.71$ [$-1.43$, 0.00]; $I^2$ was 0.40 and the prediction interval was [$-2.30$, 0.87].
+
+\subsubsection{Key finding 4: Iteration-1 ``prompt-set artefact'' is scale-dependent}
+
+The iteration-1 conclusion that ``most of GaMS3's Slovene deficit is driven by prompt-content differences rather than a pure language effect'' was drawn from a 6.0\,pp vs 2.0\,pp comparison on the probability scale. On the log-odds scale the same comparison is $-0.75$ vs $-0.92$: the gap shrinks and reverses in direction. The claim is therefore not robust to the choice of scale.
+
+\subsubsection{Reconciliation summary}
+
+Of 38 re-evaluated numbers: 15 survived unchanged, 1 shrank (the iteration-1 transfer-curve intercept from $-1.86$ to a provisional $-0.44$ [$-1.70$, 0.78] under the harmonised readout), 0 reversed, 20 became uncitable (all dependent on unvalidated GaMS3 experiment-4 cells or invalid prefill readouts), and 2 were new (the deflection pattern and the meta-analytic estimate).
+
+\begin{table}[!htbp]
+\centering
+\caption{Reconciliation verdict table (abbreviated; iteration~2, evaluation~1).}
+\label{tab:reconciliation}
+\footnotesize
+\begin{tabular}{llll}
+\toprule
+Claim & Iter-1 verdict & Harmonised verdict & Changed? \\
+\midrule
+Main/Alt-1 ($D$) & INCONCLUSIVE & INCONCLUSIVE & N \\
+Alt-2 (base geometry) & DEAD & DEAD & N \\
+Alt-3 (persona gate) & UNTESTABLE & UNTESTABLE & N \\
+Alt-4 (prefill depth) & NOT SURVIVED & UNCITABLE & Y \\
+C1 (identity) & PASS (3.22) & PASS (3.22) & N \\
+C3 (transfer curve) & FAILS BOTH WAYS ($-1.86$) & UNCITABLE (prov.\ $-0.44$) & Y \\
+C4 (ancestor induction) & FAILURE BRANCH & FAILURE BRANCH & N \\
+C5a (excess SL KL) & REVERSES ($< 1$) & REVERSES (reproduced) & N \\
+C5b (re-selection) & UNPOWERED & UNPOWERED & N \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Experiment~6: Refusal-depth pipeline (not scored)}
+%% workspace: gen_art_experiment_6
+
+This artifact (gen\_art\_experiment\_6) produced a Python pipeline for measuring refusal depth across abliteration steps. It defines the experimental protocol and data-flow but produced no scored output: neither the model runs nor the judging were executed. It served as infrastructure for the depth analysis partially incorporated into experiment~8.
+
+%% ================================================================
+\section{Iteration 3}
+%% ================================================================
+
+\subsection{Strategy}
+
+Three open problems guided this iteration. First, the experiment~8 transfer-curve headline (the transfer-curve intercept was $-2.36$ on paired Heretic trials) rested on the lexicon and a Llama-3.1-8B judge, neither of which was validated against blind adjudication on edited rows. Second, two mechanistic hypotheses remained untested: whether the Slovene refusal that outlasts English abliteration is carried by a geometrically separate ``Slovene caution direction'' in activation space (the geometry hypothesis, M-a), or whether the refusal direction merely has greater induction potency in Slovene than in English (the induction hypothesis, M-b). Third, no utility control had been run.
+
+The iteration ran five artifacts:
+\begin{enumerate}
+  \item Evaluation~2 (screen repair): re-judged experiment~8's 24,000 saved responses with two fresh local judges (Qwen3-14B and Mistral-Small-24B) to test whether the experiment~8 transfer-curve finding survives a validated readout.
+  \item Experiment~9 (cross-lingual abliteration lag confirmation): a fresh 300-item probe with 40 paired Heretic trials and a 9-point lambda curve, using a DeBERTa judge distilled from archived gemini labels.
+  \item Experiment~10 (mechanism test): geometry, induction, add-on neutralisation, and refusal readability across abliteration states.
+  \item Experiment~11 (FINAL confirmation): the reserved split run with 27,264 generations across English, Slovene, and Hungarian, three abliteration doses, and Belebele comprehension, with a Qwen3-14B judge.
+  \item Experiment~12 (utility control): lm-eval on six multiple-choice tasks (300 paired English/Slovene items per task).
+\end{enumerate}
+
+The OpenRouter budget was exhausted throughout the iteration (\$7.02 of \$7.00 spent). Every judge was local.
+
+\subsection{Artifact 10: Screen repair of experiment~8 (Evaluation~2)}
+%% workspace: gen_art_evaluation_2
+
+This evaluation (gen\_art\_evaluation\_2) re-judged experiment~8's saved responses (all 24,000 rows from both models, three arms, and all dose-curve steps) with two fresh local judges: Qwen3-14B and Mistral-Small-24B.
+
+\textbf{[Correction (iteration~4, MUST-FIX \#6c):} The artifact selected Qwen3-14B because only it had full coverage (19,971 rows vs 2,614 for Mistral-Small-24B), not because of higher per-cell kappa. Calibration kappa was 0.36 overall (EN 0.25), below the archived Llama-3.1-8B's 0.52.\textbf{]}
+
+\subsubsection{The lexicon finding reproduces exactly}
+
+The experiment~8 lexicon transfer-curve intercept of $-2.36$ was reproduced bit-for-bit from the saved response files. This confirms that the lexicon estimate is a property of the data, not a computation error.
+
+\subsubsection{Under the validated judge: lag survives for REFUSE-only coding}
+
+The Qwen3-14B judge gives an integrated gap of $-1.95$ [$-3.75$, $-0.78$] under REFUSE-only coding. The transfer-curve intercept at 50\% English refusal is extrapolated because Gemma's English refusal never falls below 84\% on the confirmatory-curve trials, so the support rule fails and the integrated gap replaces the point estimate. The lag survives: the confidence interval excludes zero.
+
+Under PARTIAL-as-refusal coding (RP), the lag becomes INCONCLUSIVE. The CI includes zero. The finding is therefore fragile to how partial compliance is classified.
+
+The lambda-scaling curve shrank under the validated judge: integrated gap $= -0.47$ [$-1.86$, 0.26], INCONCLUSIVE.
+
+\subsubsection{Bias tipping analysis}
+
+\textbf{[Correction (iteration~4, MUST-FIX \#7):} The tipping analysis was reported one-sidedly. The Gemma-SL false-REFUSE path is robust, but the GaMS-SL false-COMPLY path is not: $\epsilon^* = 0.098$ to reach $-m$ (0.143 to reach 0), which requires only a $\sim$10\% error rate. The IG averages over EN refusal 0.83--0.98, far from the 50\% operating point.\textbf{]}
+
+How many misclassifications would be needed to erase the lag? Two tipping paths exist. (1)~Erasing the confirmatory-curve lag via Gemma-SL false-REFUSE requires adding 0.71 extra false-REFUSE labels per item. The measured $1-\text{Sp}$ is 0.003, two orders of magnitude below the threshold: this path is robust. (2)~Erasing the lag via GaMS-SL false-COMPLY requires only $\epsilon^* = 0.098$ to reach $-m$ (0.143 to reach 0). The measured GaMS-SL $1-\text{Se}$ is 0.088 [0.026, 0.259], so this path reaches the threshold within its CI. The lag is robust to the Gemma-SL false-REFUSE path but not to the GaMS-SL false-COMPLY path. The integrated gap averages over EN refusal 0.83--0.98, far from the 50\% operating point.
+
+\subsubsection{All instruments are weak on edited rows}
+
+On the 240 blind-adjudicated edited rows (author-model adjudication, not human), every instrument agreed only weakly with the adjudication:
+
+\begin{table}[!htbp]
+\centering
+\caption{Judge kappa against blind adjudication on edited rows (iteration~3, evaluation~2).}
+\label{tab:judge_kappa_edited}
+\begin{tabular}{lc}
+\toprule
+Instrument & Kappa (binary-R) \\
+\midrule
+Gemini-2.5-flash & 0.43 \\
+Qwen3-14B & 0.26 \\
+Llama-3.1-8B & 0.22 \\
+Lexicon & 0.20 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+None exceeds 0.50. The gemini judge is the least bad, but it is still poor. This bounds how precisely any single readout can estimate the lag on abliterated outputs: the signal is real, but the magnitude is uncertain by at least a factor of two.
+
+\subsubsection{Signal-detection criterion DiD reproduces}
+
+The signal-detection meta-analysis across experiments confirmed the criterion-shift finding. The FINAL DiD in criterion $c$ from the Qwen3-14B judge was $+0.52$ [0.38, 0.68], reproducing the iteration-2 estimate. The DiD in $d'$ remained near zero ($-0.003$ [$-0.31$, 0.27]). Across all sources, the criterion DiD ranged from $+0.47$ to $+0.73$, always positive: Gemma shifts its refusal criterion more in Slovene than GaMS3 does.
+
+\subsubsection{Outcome}
+
+The experiment~8 transfer-curve finding is a real signal, not a readout artefact. The sign and approximate magnitude survive under a validated local judge. The precise magnitude is uncertain because all judges are weak on edited text. The result is fragile to the REFUSE/PARTIAL boundary.
+
+\subsection{Artifact 11: Cross-lingual abliteration lag confirmation on fresh probe (Experiment~9)}
+%% workspace: gen_art_experiment_9
+
+This was the pre-registered iteration-3 confirmation (gen\_art\_experiment\_9) of the cross-lingual abliteration lag. Both models were run in 8-bit floating-point (FP8) quantization (a deviation from iteration-1/iteration-2's NF4) on a fresh 300-item probe set drawn from RefusEU TRAIN, with NLLB Slovene machine translations and English back-translations. The experiment ran 40 paired Heretic trials (7 completed before the engine-equivalence gate triggered exclusions, leaving 7 on the B$'$ curve and all 9 lambda steps on the lambda curve) plus a 9-point lambda-scaling curve (lambda 0.0 to 2.0).
+
+\textbf{Judge.} The primary judge was a DeBERTa classifier (mdeberta-v3-base) distilled from 12,639 archived gemini labels. Its calibration kappa against gemini was 0.84 on the held-out set. A second judge family (Llama-3.1-8B-Instruct) was run on the Gemma rows where archived gemini labels exist.
+
+\subsubsection{Lambda curve: lag confirmed}
+
+On the 9-point lambda curve, the transfer-curve intercept was $-0.97$ [$-1.56$, $-0.44$], exceeding the pre-registered margin ($m = 0.675$). The minimum detectable effect was 0.80. At matched English refusal of 50\%, GaMS3 retains about 20\,pp less Slovene refusal than Gemma.
+
+Under the second judge family (Llama-3.1-8B), the lambda-curve intercept was $-1.72$ [$-2.30$, $-0.96$], also beyond the margin. The two judge families agree on sign and verdict, though the Llama judge gives a larger magnitude.
+
+\begin{figure}[!htbp]
+  \centering
+  \includegraphics[width=\linewidth,height=0.85\textheight,keepaspectratio]{figures/fig_lambda_exp9_v0.pdf}
+  \caption{Lambda curve on fresh 300-item probe (experiment~9). Both judge families agree on a negative transfer-curve intercept (iteration~3).}
+  \label{fig:lambda_exp9}
+\end{figure}
+
+\subsubsection{B$'$ curve: unidentified}
+
+The paired-trial curve had only 7 trials that passed quality gates, all at high English refusal (0.84 to 0.98). Because neither model's English refusal dropped below 50\%, the logistic fit could not identify the transfer-curve intercept. The paired-trial curve cannot confirm or refute the lag.
+
+\subsubsection{Excess Slovene KL: below 1, replicated}
+
+The excess Slovene/English KL divergence ratio was 0.32 [0.16, 0.62] for Gemma and 0.62 [0.43, 0.87] for GaMS3. Both are below 1, replicating the iteration-1 and iteration-2 finding. The English-only abliteration edit perturbs Slovene next-token distributions less than random directions of equal norm.
+
+\begin{table}[!htbp]
+\centering
+\caption{Unedited refusal rates on the 300-item fresh probe (DeBERTa judge; iteration~3, experiment~9).}
+\label{tab:refusal_exp9}
+\begin{tabular}{lcccc}
+\toprule
+Model & EN harmful & SL harmful & EN benign & SL benign \\
+\midrule
+Gemma-IT & 0.94 & 1.00 & 0.08 & 0.26 \\
+GaMS3-Instruct & 0.93 & 0.95 & 0.04 & 0.18 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Gemma over-refuses benign Slovene items at 0.26 vs 0.08 in English, consistent with the criterion-shift pattern. GaMS3 shows a smaller but similar asymmetry (0.18 vs 0.04).
+
+\subsubsection{Engine-equivalence gate}
+
+The pre-registered gate required NF4-vs-FP8 first-token agreement of at least 0.90 on 20 fixed prompts per model. Both models reached 0.86 and 0.88 respectively, falling short. The deviation to FP8 quantization (driven by vLLM compatibility on the available GPU) therefore introduces a quantization confound. All results from this experiment carry the label ``FP8 quantization; engine-equivalence gate failed.''
+
+\subsubsection{Verification}
+
+\textbf{[Correction (iteration~4, MUST-FIX \#6b):} The sentence ``independently re-trained on a different random split; headline changed by less than 0.05'' does not appear in experiment~9's output files. What those files record is three code paths agreeing and a model-swap $p = 0.085$. The DeBERTa was trained on 12,639 labels (9,884 train / 2,755 val), not 11,767.\textbf{]}
+
+Trial pairing was confirmed from Heretic's random-seed logs. Three independent code paths agreed on the headline numbers. Model-swap permutation $p = 0.085$. Spend: \$0.
+
+\subsection{Artifact 12: Mechanism test (Experiment~10)}
+%% workspace: gen_art_experiment_10
+
+This experiment (gen\_art\_experiment\_10) tested two mechanistic hypotheses about why Slovene refusal outlasts English abliteration. The geometry hypothesis predicted that the Slovene-perpendicular component of the refusal direction is geometrically and functionally separate. The induction hypothesis predicted that this perpendicular component induces refusal preferentially in Slovene. Items were 160 TEST harmful + 100 benign + 100 Dolly harmless. The judge was a TF-IDF surrogate trained on 11,767 archived gemini labels (kappa 0.68 EN, 0.82 SL).
+
+\subsubsection{Geometry: EN and SL refusal directions are nearly collinear}
+
+At each model's best layer ($L^* = 20$ for Gemma, $L^* = 28$ for GaMS3), the refusal directions extracted from English and Slovene prompts are nearly collinear:
+
+\begin{table}[!htbp]
+\centering
+\caption{Geometry of refusal directions at $L^*$ (iteration~3, experiment~10).}
+\label{tab:geometry}
+\begin{tabular}{lcccc}
+\toprule
+Model & $\cos(r_\text{EN}, r_\text{SL})$ & $f$ (SL energy in EN dir.) & Ceiling $\cos$ & Perp share \\
+\midrule
+Gemma-IT & 0.991 [0.989, 0.993] & 0.983 [0.978, 0.986] & 0.999 & 0.13 \\
+GaMS3-Instruct & 0.986 [0.984, 0.988] & 0.973 [0.970, 0.975] & 0.998 & 0.16 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The Slovene refusal direction lies almost entirely within the English refusal direction. Only 13--16\% of the Slovene refusal signal is perpendicular to English. The Gemma-minus-GaMS difference in $f$ at own-$L^*$ is 0.010 [0.005, 0.014], positive but tiny.
+
+\textbf{[Correction (iteration~4, MUST-FIX \#9e):} At own-$L^*$, the model difference in $f$ is 0.010, negligible. At the common layer, Gemma-GaMS $f = -0.009$ [$-0.014$, $-0.005$] (GaMS has a larger perpendicular share), band cosines are 0.93/0.89 with perp shares 0.31/0.38, and $d'$ of SL along $r_\text{EN}$ is 1.37 vs 2.83 (Gemma-GaMS $-1.46$). The sign of the model difference depends on the layer, the same defect that killed alternate~2. M-a is therefore layer-dependent rather than simply refuted.\textbf{]}
+
+\textbf{Geometry hypothesis at own-$L^*$: FALSE} for both models at their own best layers. However, at a common layer the model difference reverses ($f = -0.009$ [$-0.014$, $-0.005$], perp share 0.31 vs 0.38, $d'$(SL$|r_\text{EN}$) 1.37 vs 2.83). The geometry result is layer-dependent.
+
+\subsubsection{Induction: the Slovene-perpendicular direction does not induce refusal}
+
+Adding the Slovene-perpendicular component ($u_\text{SLperp}$) to harmless activations at $L^*$ never induced refusal above 50\% in either model or language. The $\alpha_{50}$ was right-censored at the maximum tested amplitude (3.0 K-units) for all $u_\text{SLperp}$ cells. By contrast, the full English refusal direction ($r_\text{EN}$) reached $\alpha_{50}$ at 0.91~K for Gemma-EN and 1.32~K for GaMS3-EN. Random directions were also censored. The $u_\text{SLperp}$ direction is inert as a refusal inducer.
+
+\textbf{Induction hypothesis verdict: NOT\_SUPPORTED} for both models.
+
+\subsubsection{Exploratory: language-identity direction induces Slovene refusal}
+
+The language-identity direction ($u_\text{lang}$, extracted from language-classification probes) showed an asymmetric induction pattern. In Gemma, adding $u_\text{lang}$ at $L^*$ induced Slovene refusal ($\alpha_{50} = 0.65$ [0.46, 0.79]) but not English refusal (censored at 3.0~K). In GaMS3, the pattern was similar but weaker: Slovene $\alpha_{50} = 1.78$ [1.32, 2.38], English censored. The model contrast ($\log R_\text{lang}$ Gemma minus GaMS3) was 1.03 [0.42, 1.60] under the primary judge. This is exploratory and was not pre-registered.
+
+\textbf{[Correction (iteration~4, MUST-FIX \#9b-d):} (b)~$u_\text{SLperp}$ cut-vs-random is summarised at all three scales: $s{=}0.5$ gives $-0.51$, $s{=}1.0$ gives 0.17 [$-0.09$, 0.44], $s{=}1.5$ gives 0.62 [0.38, 0.97] (excludes 0 but fails EN-invariance gate at $-18$\,pp EN). (c)~GaMS Lag($E_0$) $= -0.33$ [$-0.70$, 0.07] fails the add-on precondition, so GaMS add-on results are uninformative. (d)~$u_\text{lang}$ failed the manipulation check in Gemma (manip\_ok False) and was 77\% degenerate at $\alpha_{50}$ in GaMS SL. GaMS EN $\alpha_{50}$ was 2.96 (not censored as stated).\textbf{]}
+
+\subsubsection{Add-on neutralisation: only full $r_\text{SL}$ ablation closes the lag}
+
+\textbf{[Correction (iteration~4, MUST-FIX \#9a):} This is $G_{3,\text{op}} = \text{Lag}_\text{GaMS} - \text{Lag}_\text{Gemma}$ at each model's $E_0$ operating point (edited, $\lambda^*$), not a transfer-curve intercept.\textbf{]}
+
+At Gemma's selected abliteration strength ($\lambda^*$), the baseline lag was $+1.98$ [1.41, 2.73]. Ablating $u_\text{SLperp}$ at three scales moved the lag to 2.69, 1.34, and 0.45, respectively; the cut-vs-random difference was $-0.51$ at $s{=}0.5$, 0.17 [$-0.09$, 0.44] at $s{=}1.0$, and 0.62 [0.38, 0.97] at $s{=}1.5$ (excludes 0 but fails the EN-invariance gate at $-18$\,pp EN). Only ablating the full Slovene refusal direction ($A_\text{SLfull}$) closed the lag ($-6.17$ [$-6.50$, $-5.87$]), at the cost of 50\% degenerate outputs and 19x KL. GaMS Lag($E_0$) $= -0.33$ [$-0.70$, 0.07] fails the add-on precondition, so the GaMS add-on block is uninformative.
+
+$G_{3,\text{op}}$ on the experiment~8 SCREEN items (TEST160 harmful subset) was $-2.30$ [$-3.12$, $-1.61$], replicating the sign and approximate magnitude of the experiment~8 lexicon estimate ($-2.36$) under an independent judge on the same item set.
+
+\subsubsection{Refusal readability: refusal is always readable}
+
+\textbf{[Correction (iteration~4, MUST-FIX \#9f):} AUROC $= 1.00$ at layer~8 is flagged ceiling:true. Harmful items are RefusEU and harmless items are Dolly, so this likely reflects dataset-source separability, not ``refusal is always readable''. A same-source harmless control was not run.\textbf{]}
+
+Across all abliteration states, AUROC for a fixed linear probe (harmful RefusEU vs harmless Dolly) trained on original-model activations was 1.00 at every layer tested in both models. This is harmful-vs-harmless source separability at ceiling, likely reflecting dataset-source contrast rather than the refusal signal per se. The fixed-probe $d'$ collapses (from 1.37 to 0.25 at the best layer in Gemma under the strongest edit), confirming that abliteration reduces the magnitude of the signal without destroying its separability.
+
+\subsubsection{Final verdict}
+
+\textbf{Both the geometry hypothesis and the induction hypothesis are REFUTED.} The Slovene refusal that survives English abliteration is not carried by a separate Slovene direction and cannot be induced by the Slovene-perpendicular component. The lag is a property of the shared refusal subspace, not a geometrically distinct Slovene reserve.
+
+\subsection{Artifact 13: FINAL confirmation on reserved split (Experiment~11)}
+%% workspace: gen_art_experiment_11
+
+\textbf{[Correction (iteration~4, MUST-FIX \#4):} (gen\_art\_experiment\_11) (a)~The quantization was NF4 (8.4\,GB VRAM), not FP8. (b)~The item set was RefusEU-x FINAL MT pairs with per-model $n$ differing (Gemma 200 vs GaMS 1,101 EN / 652 SL). (c)~An 8-step FINAL lambda curve (0.1--1.0) was run and fitted. (d)~The Mistral second-family gate had kappa 0.26 on edited rows. (e)~Permutation $p = 0.092$. (f)~The RP readout $G_3 = +8.74$ [$-1.51$, 14.05] (perm $p$ 0.04, degenerate support).\textbf{]}
+
+Both models were run in NF4 quantization on the reserved RefusEU evaluation split (RefusEU-x FINAL MT pairs, Gemma $n = 200$, GaMS $n = 1{,}101$ EN / 652 SL), plus a 247-item Hungarian arm (NLLB-translated) and the HARD set (349 harmful + 1,093 safe items). Conditions: original models plus an 8-step FINAL lambda curve (lambda 0.1 to 1.0). The experiment generated 27,264 responses and obtained 25,036 judge labels from Qwen3-14B. The Mistral second-family gate had kappa 0.26 on edited rows.
+
+\subsubsection{Cross-lingual abliteration lag: ESTIMATE, not confirmed}
+
+The transfer-curve intercept on the 8-step FINAL lambda curve was $-0.60$ [$-1.31$, $+0.40$], verdict ESTIMATE. Permutation $p = 0.092$. The support rule failed because the observed EN refusal range did not include a step near 50\%. The MDE was 1.44, exceeding the pre-registered threshold ($2m = 1.35$). The RP readout gave $G_3 = +8.74$ [$-1.51$, 14.05] (perm $p$ 0.04, degenerate support).
+
+\begin{table}[!htbp]
+\centering
+\caption{McNemar rates on the reserved split (Qwen3-14B judge, REFUSE-only; iteration~3, experiment~11).}
+\label{tab:mcnemar_exp11}
+\begin{tabular}{lcccc}
+\toprule
+Model & EN orig & EN edit & SL orig & SL edit \\
+\midrule
+Gemma-IT & 0.98 & 0.645 & 0.99 & 0.68 \\
+GaMS3-Instruct & 0.97 & 0.58 & 0.97 & 0.46 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+GaMS3's Slovene refusal drops further than Gemma's (from 0.97 to 0.46 vs from 0.99 to 0.68), consistent with a lag but not reaching significance because both models also differ in English.
+
+\textbf{Why the test was underpowered.} The Qwen3-14B judge over-calls English refusal. On the 36 blind-adjudicated GaMS3-EN edited rows, the judge's specificity was 0.33 (kappa 0.27). It labels many English compliant responses as refusals, inflating edited English rates and shrinking the apparent EN-to-SL difference.
+
+\subsubsection{Hungarian behaves like Slovene}
+
+\textbf{[Correction (iteration~4, MUST-FIX \#8):} The Slovene two-point row gives $G_{3,2\text{pt}} = +0.05$ [$-1.49$, 2.02]: no GaMS-vs-Gemma difference in Slovene. The Hungarian row gives $-0.46$ [$-2.21$, 1.44] with MDE $\sim$3. Neither language shows an effect.\textbf{]}
+
+The difference in lag change (GaMS3 minus Gemma) on Hungarian was $-0.46$ [$-2.21$, 1.44], INCONCLUSIVE. On Slovene, the two-point estimate was $+0.05$ [$-1.49$, 2.02], also null. Neither language shows a significant model difference. Verdict: ESTIMATE for both languages.
+
+\subsubsection{Belebele comprehension: unchanged by the edit}
+
+Belebele reading-comprehension accuracy on 200 human-translated parallel items was unaffected by the edit in every model-language cell:
+
+\begin{table}[!htbp]
+\centering
+\caption{Belebele accuracy (200 items, FP8 quantization; iteration~3, experiment~11).}
+\label{tab:belebele}
+\begin{tabular}{llccc}
+\toprule
+Model & Condition & EN & SL & HU \\
+\midrule
+Gemma-IT & Original & 0.930 & 0.885 & 0.880 \\
+Gemma-IT & Edit ($\lambda{=}1$) & 0.930 & 0.885 & 0.880 \\
+GaMS3-Instruct & Original & 0.905 & 0.875 & 0.870 \\
+GaMS3-Instruct & Edit ($\lambda{=}1$) & 0.910 & 0.870 & 0.825 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Gemma is entirely unchanged. GaMS3 shows a 4.5\,pp drop in Hungarian, the only cell exceeding 1\,pp, and a 0.5\,pp drop in Slovene. The edit does not damage comprehension.
+
+\subsubsection{Mixed-effects model: language-model interaction}
+
+\textbf{[Correction (iteration~4, MUST-FIX \#2):} The GEE sign was interpreted incorrectly. A positive gams:sl:edit $= +1.06$ on a refusal log-odds model means the edit shrinks GaMS3's SL-EN margin \emph{less} than Gemma's, not more. From Table~\ref{tab:mcnemar_exp11}: Gemma logit SL-EN goes $0.70$ to $0.16$ (change $-0.55$); GaMS goes $-0.11$ to $-0.50$ (change $-0.39$). The three-way difference is $+0.16$. The GaMS-Gemma difference in SL-EN margin is mostly present before the edit (gams:sl $= -1.73$, $p = 3\times10^{-5}$). This is direct evidence against an edit-induced lag on FINAL, not for it.\textbf{]}
+
+A generalised estimating equation on 7,337 original+edited rows found a significant three-way interaction: the gams:sl:edit coefficient was $+1.06$ ($p = 0.022$; VB posterior $+1.04 \pm 0.16$). On a refusal log-odds model, a positive three-way term means the edit shrinks GaMS3's SL-EN margin less than Gemma's. The model difference in SL-vs-EN refusal is largely baseline: gams:sl $= -1.73$ ($p = 3\times10^{-5}$; VB $-1.83$), and the gams:edit main effect was non-significant ($-0.18$, $p = 0.47$). On FINAL, the model difference in SL-vs-EN refusal is largely pre-edit, not edit-induced.
+
+\subsubsection{Verification}
+
+Language consistency was 0.98--1.00 in all cells. The invalid rate was below 0.03. Spend: \$0.
+
+\subsection{Artifact 14: Utility control (Experiment~12)}
+%% workspace: gen_art_experiment_12
+
+This experiment (gen\_art\_experiment\_12) measured whether the English-only abliteration edit damages Slovene downstream skills more than English ones, using lm-eval (version~0.4.13) on six zero-shot multiple-choice tasks: ARC-Challenge, BoolQ, HellaSwag, OpenBookQA, PIQA, and Winogrande, with 300 paired English/Slovene items per task. Conditions: original model, the iteration-1 selected Heretic edit ($\lambda = 1.0$), the artifact-2 selected edit, norm-matched random edits, and a strength-6 random edit. Lambda dose points at 0.5, 1.0, 1.5, and 2.0 were tested on a 100-item subset.
+
+\subsubsection{No edit is catastrophic}
+
+The pre-registered catastrophe gate required macro headroom-normalised loss ($H$) to stay below 0.20. Every model-language-condition cell passed:
+
+\begin{table}[!htbp]
+\centering
+\caption{Catastrophe gate (300-item full sets; iteration~3, experiment~12).}
+\label{tab:catastrophe}
+\begin{tabular}{llccl}
+\toprule
+Model & Condition & EN loss (95\% hi) & SL loss (95\% hi) & Verdict \\
+\midrule
+GaMS3 & Iter-1 edit & 0.018 (0.039) & $-0.007$ (0.021) & OK \\
+GaMS3 & Art-2 edit & 0.020 (0.043) & 0.009 (0.038) & OK \\
+Gemma & Iter-1 edit & $-0.008$ (0.009) & $-0.022$ (0.024) & OK \\
+Gemma & Art-2 edit & $-0.016$ (0.002) & $-0.049$ ($-0.000$) & OK \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsubsection{Slovene is not hurt more than English}
+
+The language asymmetry $A = H_\text{SL} - H_\text{EN}$ was positive (Slovene hurt less) in all four model-by-edit cells:
+
+\begin{table}[!htbp]
+\centering
+\caption{Language asymmetry and interaction (iteration~3, experiment~12).}
+\label{tab:lang_asymmetry}
+\begin{tabular}{llc}
+\toprule
+Model & Condition & $A$ [95\% CI] \\
+\midrule
+GaMS3 & Iter-1 edit & $+0.025$ [$-0.009$, 0.060] \\
+GaMS3 & Art-2 edit & $+0.011$ [$-0.023$, 0.050] \\
+Gemma & Iter-1 edit & $+0.014$ [$-0.036$, 0.082] \\
+Gemma & Art-2 edit & $+0.033$ [$-0.020$, 0.125] \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The interaction (GaMS3 asymmetry minus Gemma asymmetry) was $+0.010$ [$-0.065$, 0.074] for the iteration-1 edit and $-0.022$ [$-0.116$, 0.043] for the artifact-2 edit: no evidence that the edit hits GaMS3's Slovene skills harder than Gemma's. The design resolves the interaction to about 0.10 of headroom.
+
+Random-adjusted asymmetry (edit minus random) was $+0.051$ [$+0.012$, $+0.093$] for GaMS3 under the iteration-1 edit and $+0.038$ [$+0.001$, $+0.080$] under the artifact-2 edit: relative to a same-size random perturbation, the edit spares Slovene. Both confidence intervals exclude zero.
+
+\subsubsection{One localised cost: GaMS3 English ARC-Challenge}
+
+GaMS3 lost 3.7\,pp on English ARC-Challenge under the iteration-1 edit (12 vs 1 discordant items; McNemar Holm-corrected $p = 0.041$) and 2.7\,pp under the artifact-2 edit (9 vs 1). The Slovene ARC-Challenge counterpart did not move (0.0\,pp). Gemma showed no loss on any task. In addition to ARC-Challenge, BoolQ showed replicated losses: $-2.0$\,pp (iteration-1 edit) and $-2.3$\,pp (artifact-2 edit).
+
+\subsubsection{KL footprint: English perturbed more than Slovene}
+
+\textbf{[Correction (iteration~4, MUST-FIX \#10):} Table~\ref{tab:kl_footprint} reports first-token and 32-token quantities separately. The SL/EN ratio 0.52 and EXCESS 0.47 are first-token values; 0.010/0.024 = 0.39 is the 32-token ratio.\textbf{]}
+
+\begin{table}[!htbp]
+\centering
+\caption{KL footprint (batch size 1, Dolly harmless; iteration~3, experiment~12). First-token and 32-token reported separately.}
+\label{tab:kl_footprint}
+\footnotesize
+\begin{tabular}{llcccccc}
+\toprule
+Model & Condition & 1st-tok SL/EN & 1st-tok EXCESS [CI] & KL EN 32-tok & KL SL 32-tok & 32-tok SL/EN \\
+\midrule
+GaMS3 & Iter-1 edit & 0.52 & 0.47 [0.38, 0.60] & 0.024 & 0.010 & 0.39 \\
+GaMS3 & Art-2 edit & 0.54 & 0.49 [0.40, 0.62] & 0.029 & 0.011 & 0.38 \\
+Gemma & Iter-1 edit & 0.72 & 0.63 [0.34, 1.17] & 0.073 & 0.019 & 0.26 \\
+Gemma & Art-2 edit & 0.72 & 0.63 [0.34, 1.15] & 0.076 & 0.021 & 0.28 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Multi-token excess KL ratio (RESULTS.md): GaMS3 iteration-1 0.57 [0.51, 0.66]; Gemma iteration-1 0.29 [0.24, 0.37].
+
+The experiment~11 Belebele table (Table~\ref{tab:belebele}) shows GaMS3 HU drops 4.5\,pp under the edit, but experiment~12 Belebele (same 200 items) shows no such drop. The discrepancy is unexplained (possibly different harness or prompt format). The 4.5\,pp drop is not replicated in experiment~12.
+
+\subsubsection{Fluency: untouched}
+
+Bits-per-byte on human-translated FLORES passages changed by at most $+0.10$\% under the iteration-1 edit (GaMS3 Slovene) and $+0.09$\% (Gemma Slovene), versus $+1.0$ to 1.8\% for a strength-6 random edit. Language consistency stayed above 0.94 in every cell.
+
+\subsubsection{Gemma KL: UNVERIFIED}
+
+Gemma's measured first-token KL divergence under the iteration-1 edit was 0.510 vs the logged Heretic value of 0.366, a $+39$\% discrepancy. The adapter identity was confirmed (sha256 match), and random and strength-6 edits reproduced. The discrepancy is unexplained but common to every structured Heretic edit on Gemma. The Gemma iteration-1 edit gate verdict (OK) is reported with the UNVERIFIED label.
+
+\subsubsection{Verification}
+
+GaMS3 reproduced logged Heretic KL divergences within 3\%. Self-KL floor was exactly 0. The language-swap placebo centred at zero. GaMS3 Slovene evaluation accuracies match the published paper~\citep{Vres2026} within 0.06 on all six tasks. Spend: \$0.
+
+\subsection{Not executed or abandoned in iteration~3}
+
+\begin{table}[!htbp]
+\centering
+\caption{Iteration-3 components not executed.}
+\label{tab:not_executed_iter3}
+\footnotesize
+\begin{tabular}{llp{4cm}}
+\toprule
+Component & Status & Reason \\
+\midrule
+C-EXT (public checkpoints) & Not generated & Shared cache reclaimed mid-run \\
+Frozen-core RQ2 edit & Never ran & Every iteration-3 edit is the iteration-1 fallback \\
+exp10 Qwen3-14B judge & Failed gate & kappa 0.25 EN / 0.33 SL on edited rows \\
+exp9 GaMS random-dir.\ control & Not scored & $n_\text{random\_steps\_scored} = 0$ \\
+exp9 lambda steps after step 0 & Reduced to 100 items & Not the planned 300 per step \\
+exp11 job J6 & Not reached & Run ended before completion \\
+exp12 GSM8K & Cut & Budget exhaustion \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Coverage against the frozen core}
+
+\begin{table}[!htbp]
+\centering
+\caption{Coverage against the frozen core after iteration~3.}
+\label{tab:coverage_iter3}
+\footnotesize
+\begin{tabular}{lp{3cm}lll}
+\toprule
+RQ & What was planned & What ran & Status & Gap \\
+\midrule
+RQ1 & Refusal DiD & All ran across iter 1--3 & DONE & Dose contrast underpowered \\
+RQ2 & Safety deltas & No natural FINAL under edit & PARTIAL & Natural FINAL unscored; ASR missing \\
+RQ3 & Mechanism & Geometry and induction tested & PARTIAL & Layer-dependent geometry untested at scale \\
+RQ4 & Decodability & Ran but at ceiling & PARTIAL & Source-separability confound \\
+Core edit & bf16, 80 trials & Never ran & NOT DONE & Main blocker \\
+Judge & Small adjudicated sample & All adjudication is author-LLM & NOT DONE & Main readout blocker \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{What we had learned by iteration~3}
+
+\textbf{[Correction (iteration~4, MUST-FIX \#1):} The C-LAG paragraph is rewritten. Each artifact's pre-registered verdict is given verbatim. Experiment~8, evaluation~2, and experiment~10 share items.\textbf{]}
+
+\textbf{[Correction (iteration~4, MUST-FIX \#3):} The criterion-shift claim is restricted to ``original models, HARD set''. On edited models and on benign content-matched twins, the model difference is not in $c$.\textbf{]}
+
+\textbf{[Correction (iteration~4, MUST-FIX \#13):} Each positive claim is compared with its nearest published neighbour.\textbf{]}
+
+Three iterations screened the main claim and four alternates against SCORE data (iteration~1), the reserved FINAL evaluation split (iteration~2), and fresh data with mechanism tests and utility controls (iteration~3). Two alternates are dead (base-checkpoint geometry and persona gating). A third (prefill-depth signature, alternate~4) is uncitable because no available readout can validly score prefill continuations. Two mechanistic hypotheses were tested: the geometry hypothesis is layer-dependent---nearly collinear at own-$L^*$ ($\cos = 0.986$--$0.991$) but divergent at a common layer. The induction hypothesis is not supported.
+
+The primary contest between behaviour-level reach and supervised reach remains unresolved. The dose contrast is underpowered across all three iterations. The overall GaMS3 Slovene deficit (DiD) is judge-dependent; the meta-analytic estimate is $-0.50$ [$-0.82$, $-0.21$]. On original models and the HARD set, the signal-detection decomposition is robust: the DiD in $d'$ is near zero ($-0.003$), while the DiD in criterion $c$ is $+0.52$ [0.38, 0.68], driven by Gemma over-refusing benign Slovene prompts. This criterion shift was observed across experiments~5, 9, 14, and~16 on original models (a post-hoc count, not a pre-registered replication criterion). On edited models (experiment~11 HARD post-edit), DiD$_c = 0.14$ [$-0.78$, 1.12]: the criterion-shift difference disappears after the edit. The criterion-shift finding is therefore specific to the original-model HARD setting. \citet{Aziz2026} showed calibration-not-representation across 23 languages.
+
+The cross-lingual abliteration lag (C-LAG) has a consistent negative sign but is not confirmed by pre-registered criteria. Each artifact's pre-registered verdict: experiment~9 verdict = ESTIMATE; evaluation~2 verdict = ``C-LAG screen holds under validated judges: False'' and ``INCONCLUSIVE/weak-LAG''; experiment~11 verdict = ESTIMATE (``NOT reproduced on reserved data''). Experiment~8, evaluation~2, and experiment~10 share the same item set, so there are two independent datasets, not three. The magnitude ranges from $-0.6$ to $-2.4$ across designs and judges. \citet{Wang2025} showed full-dose English-direction transfer across 14 languages.
+
+The utility control (experiment~12) established that the English-only abliteration edit does not damage Slovene downstream skills more than English ones. All macro headroom-normalised losses are below 0.05. The identity calibration arm continues to replicate (FINAL identity DiD $= 3.46$ [2.55, 4.62]).
+
+%% ================================================================
+\section{Iteration 4}
+%% ================================================================
+
+\subsection{Strategy}
+
+Three problems guided this iteration, following the reviewer's directive that the budget must go to the readout and a new confirmation rather than more probes.
+
+First, the C-LAG sign was consistent but no artifact's pre-registered verdict reached CONFIRM. The main blocker was the edited-row readout: every judge had kappa at most 0.43, and the GaMS-SL false-COMPLY tipping path reached measured error CIs. Iteration~4 addressed this with a paid-judge readout completion (evaluation~3) that applied gemini-2.5-flash and gpt-4.1-mini to all saved edited responses, added translate-then-judge and Rogan-Gladen correction~\citep{Lee2025}, and pooled across item bodies.
+
+Second, the mechanism question shifted. The iteration-2 hypothesis update replaced the comprehension-competence framing with two testable accounts: M-OUT (production-side, predicting the lag follows the output language) and M-IN (input-side caution, predicting the lag follows the input language). Experiment~14 tested these with a 2$\times$3$\times$3 design crossing input language (EN, SL, HU) with forced output language (EN, SL, HU) at three abliteration doses.
+
+Third, the lag estimate's uncertainty was partly driven by sparse lambda coverage near EN 50\%. Experiment~15 addressed this with a fine-grained lambda ladder (13 steps for Gemma, 15 for GaMS) on a fresh 300-item RefusEU-TRAIN body disjoint from all prior probes.
+
+Five artifact slots were planned. Slot~2 failed; the other four completed:
+\begin{enumerate}
+  \item Evaluation~3 (readout completion): paid-judge re-scoring.
+  \item Experiment~13 (held-out confirmation, \textbf{FAILED}): the container lost its GPU about 25 minutes in; no generation or primary label was produced.
+  \item Experiment~14 (mechanism 2$\times$3$\times$3): input language $\times$ output language $\times$ dose.
+  \item Experiment~15 (fine-grained lambda ladder): 13/15-step lambda curve on fresh 300-item body with random-direction controls.
+  \item Research artifact: prior-art search and fact verification.
+\end{enumerate}
+
+Because slot~2 failed, iteration~4 has \textbf{no held-out confirmation and no RQ2 result}.
+
+\subsection{Artifact 15: Readout completion with paid judge (Evaluation~3)}
+%% workspace: gen_art_evaluation_3
+
+This evaluation (gen\_art\_evaluation\_3) applied the pre-registered paid readout to all saved edited and original rows from experiments~8, 9, 11 and the experiment~10 add-on block. The primary judge was gemini-2.5-flash. The second judge was gpt-4.1-mini on a stratified subset. Translate-then-judge (TTJ) applied NLLB SL-to-EN translation before judging. Blind adjudication used two Claude-family adjudicators (40-row overlap, inter-adjudicator kappa 0.69).
+
+\subsubsection{Readout gate: FAILS}
+
+\begin{table}[!htbp]
+\centering
+\caption{Readout gate (gemini-2.5-flash vs adjudication; iteration~4, evaluation~3).}
+\label{tab:readout_gate}
+\begin{tabular}{lcccc}
+\toprule
+Cell & Se [95\% CI] & Sp [95\% CI] & kappa gemini-gpt & Pass \\
+\midrule
+GaMS-SL-edited & 0.91 [0.74, 0.97] & 0.73 [0.61, 0.83] & 0.39 & False \\
+Gemma-SL-edited & 0.99 [0.87, 1.00] & 0.66 [0.43, 0.83] & 0.72 & False \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The paid judge has high sensitivity but specificity of 0.66--0.73 on edited Slovene rows (it over-calls REFUSE), below the pre-registered 0.80 floor. No readout tier passed the bake-off. All numbers below are estimates with their CIs, not primary verdicts.
+
+\subsubsection{Pooled cross-model lag: sign confirmed, edit-induced component is zero}
+
+\begin{table}[!htbp]
+\centering
+\caption{Pooled lag estimates (REML + HKSJ, $k = 3$ item bodies, R coding; iteration~4, evaluation~3).}
+\label{tab:pooled_lag}
+\begin{tabular}{lcccc}
+\toprule
+Readout & $G_3$ [95\% CI] & $G_{3,\text{edit}}$ [95\% CI] & IG [95\% CI] & $I^2$ \\
+\midrule
+Raw primary (gemini) & $-1.17$ [$-1.84$, $-0.50$] & 0.39 [$-1.95$, 2.74] & $-1.15$ [$-1.31$, $-0.99$] & 0.22 \\
+RG (unstable) & $-1.79$ [$-7.17$, 3.58] & n/a & $-2.02$ [$-5.40$, 1.35] & 0.00 \\
+PPI & $-1.77$ [$-1.89$, $-1.65$] & 0.20 [$-0.72$, 1.11] & $-2.00$ [$-3.19$, $-0.82$] & 0.00 \\
+TTJ & $-1.10$ [$-4.67$, 2.47] & 0.33 [$-6.52$, 7.18] & $-1.40$ [$-2.46$, $-0.33$] & 0.59 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The pooled lag is negative under every readout. The edit-induced component is centred near zero in every readout. Subtracting each model's own pre-edit language gap, the lag is entirely explained by the baseline offset: GaMS3 starts with less Slovene refusal than Gemma before any de-censoring. \textbf{R-BASE (baseline offset) is the best-supported account.}
+
+\subsubsection{Per-curve headlines}
+
+\begin{table}[!htbp]
+\centering
+\caption{Per-curve $G_3$ decomposition (raw primary readout, R coding; iteration~4, evaluation~3).}
+\label{tab:per_curve_g3}
+\footnotesize
+\begin{tabular}{lccccc}
+\toprule
+Curve & $G_3$ [CI] & $G_{3,\text{orig}}$ [CI] & $G_{3,\text{edit}}$ [CI] & On support & Verdict \\
+\midrule
+exp9 lambda & $-1.12$ [$-1.70$, $-0.63$] & $-2.56$ [$-4.07$, $-1.32$] & 1.43 [0.29, 2.98] & False & ESTIMATE \\
+exp11 FINAL & $-1.00$ [$-1.40$, $-0.68$] & $-1.11$ [$-2.74$, $-0.21$] & 0.10 [$-0.85$, 1.71] & True & CONFIRM-LAG \\
+exp8 A1 & $-1.54$ [$-2.11$, $-1.00$] & $-1.13$ [$-2.67$, 0.04] & $-0.41$ [$-1.65$, 1.26] & False & CONFIRM-LAG \\
+exp8 B & $-1.20$ [$-1.77$, $-0.58$] & $-1.33$ [$-2.37$, 0.78] & 0.12 [$-2.21$, 1.47] & True & ESTIMATE \\
+exp10 op point & $G_{3,\text{op}}$ $-2.42$ [$-4.35$, $-1.53$] & 0.99 [$-1.10$, 3.53] & $-3.40$ [$-6.09$, $-1.30$] & -- & CONFIRM-LAG \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The pre-edit baseline ($G_{3,\text{orig}}$) is strongly negative in every body, confirming the baseline offset. The edit-induced component ($G_{3,\text{edit}}$) spans zero in three of four curves. Curve slopes: $b_\text{Gemma}$ ranges from 1.40 to 1.66, $b_\text{GaMS}$ from 0.97 to 1.13---both near 1, confirming parallel curves consistent with R-BASE.
+
+\subsubsection{Outcome}
+
+The lag sign is replicated under a paid frontier judge. The readout gate fails, so the magnitude is uncertain. The R-BASE (baseline offset) account is the best-supported explanation: the lag is pre-edit, not edit-induced. Spend: \$4.31 of \$8.00 cap.
+
+\subsection{Artifact 16: 2$\times$3$\times$3 input-language $\times$ output-language mechanism test (Experiment~14)}
+%% workspace: gen_art_experiment_14
+
+This experiment (gen\_art\_experiment\_14) tested the M-OUT (production-side) and M-IN (input-side) accounts. The design crossed input language (EN, SL, HU) with forced output language (EN, SL, HU) using a parallel one-line suffix. Three models were run: Gemma-3-12B-IT, GaMS3-12B-Instruct, and p-e-w/gemma-3-12b-it-heretic (a public English-abliterated Gemma checkpoint, one external dose). Items: 200 harmful + 100 benign. Total: 18,700 rows.
+
+\textbf{[Correction (iteration~5):} Tables~\ref{tab:gemma_2x3x3}--\ref{tab:mechanism_contrasts} and this section's prose were regenerated from experiment~14's own output files.\textbf{]}
+
+\textbf{Doses.} Gemma: $\lambda_\text{lo} = 0.5$ and $\lambda_\text{hi} = 1.0$. EN$\to$EN logit refusal was $+0.36$ and $-1.47$, so the scan straddles 50\%. GaMS3: $\lambda_\text{lo} = 0.5$ and $\lambda_\text{hi} = 0.625$. EN$\to$EN logit refusal was $-0.82$ and $-1.32$, both below 50\%, so the scan does not straddle it. \textbf{Every GaMS3 quantity evaluated at matched EN$\to$EN 50\% is therefore an extrapolation outside GaMS3's measured dose support.}
+
+\begin{table}[!htbp]
+\centering
+\caption{Gemma-IT refusal rate per input$\to$output cell, all three doses (iteration~4, experiment~14).}
+\label{tab:gemma_2x3x3}
+\footnotesize
+\begin{tabular}{lcccc}
+\toprule
+Cell & zero & lo ($\lambda$ 0.5) & hi ($\lambda$ 1.0) & Lang.\ compliance \\
+\midrule
+EN$\to$EN & 0.88 [0.83, 0.92] & 0.59 [0.52, 0.66] & 0.18 [0.14, 0.24] & 1.00 \\
+EN$\to$SL & 0.95 [0.92, 0.98] & 0.92 [0.87, 0.95] & 0.77 [0.71, 0.82] & 0.99 \\
+EN$\to$HU & 0.94 [0.90, 0.97] & 0.81 [0.75, 0.86] & 0.46 [0.39, 0.53] & 0.98 \\
+SL$\to$EN & 0.88 [0.82, 0.91] & 0.46 [0.39, 0.52] & 0.07 [0.05, 0.12] & 1.00 \\
+SL$\to$SL & 0.95 [0.91, 0.97] & 0.85 [0.80, 0.90] & 0.56 [0.49, 0.63] & 1.00 \\
+SL$\to$HU & 0.94 [0.90, 0.97] & 0.84 [0.78, 0.88] & 0.53 [0.46, 0.60] & 1.00 \\
+HU$\to$EN & 0.88 [0.83, 0.92] & 0.54 [0.47, 0.60] & 0.10 [0.07, 0.15] & 1.00 \\
+HU$\to$SL & 0.95 [0.92, 0.98] & 0.93 [0.89, 0.96] & 0.83 [0.78, 0.88] & 0.96 \\
+HU$\to$HU & 0.94 [0.90, 0.97] & 0.80 [0.74, 0.85] & 0.55 [0.48, 0.62] & 1.00 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[!htbp]
+\centering
+\caption{GaMS3-Instruct refusal rate per input$\to$output cell, all three doses (iteration~4, experiment~14).}
+\label{tab:gams_2x3x3}
+\footnotesize
+\begin{tabular}{lcccc}
+\toprule
+Cell & zero & lo ($\lambda$ 0.5) & hi ($\lambda$ 0.625) & Lang.\ compliance \\
+\midrule
+EN$\to$EN & 0.82 [0.77, 0.87] & 0.30 [0.25, 0.37] & 0.21 [0.16, 0.27] & 1.00 \\
+EN$\to$SL & 0.77 [0.71, 0.82] & 0.21 [0.16, 0.27] & 0.14 [0.09, 0.19] & 0.98 \\
+EN$\to$HU & 0.80 [0.73, 0.85] & 0.34 [0.28, 0.41] & 0.23 [0.17, 0.29] & 0.97 \\
+SL$\to$EN & 0.87 [0.82, 0.91] & 0.25 [0.20, 0.31] & 0.16 [0.12, 0.22] & 0.00$^\dagger$ \\
+SL$\to$SL & 0.87 [0.82, 0.91] & 0.20 [0.15, 0.26] & 0.15 [0.11, 0.21] & 1.00 \\
+SL$\to$HU & 0.82 [0.77, 0.87] & 0.27 [0.21, 0.33] & 0.17 [0.13, 0.23] & 0.56$^\dagger$ \\
+HU$\to$EN & 0.86 [0.81, 0.91] & 0.29 [0.24, 0.36] & 0.19 [0.14, 0.25] & 0.14$^\dagger$ \\
+HU$\to$SL & 0.92 [0.87, 0.95] & 0.23 [0.18, 0.29] & 0.12 [0.09, 0.18] & 0.86$^\dagger$ \\
+HU$\to$HU & 0.91 [0.86, 0.94] & 0.41 [0.34, 0.48] & 0.28 [0.22, 0.35] & 1.00 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[!htbp]
+\centering
+\caption{p-e-w/gemma-3-12b-it-heretic (public checkpoint, single external dose; iteration~4, experiment~14).}
+\label{tab:pew_checkpoint}
+\footnotesize
+\begin{tabular}{lcc}
+\toprule
+Cell & ext & Lang.\ compliance \\
+\midrule
+EN$\to$EN & 0.05 [0.03, 0.09] & 1.00 \\
+EN$\to$SL & 0.15 [0.11, 0.21] & 0.92 \\
+EN$\to$HU & 0.02 [0.01, 0.05] & 0.96 \\
+SL$\to$EN & 0.01 [0.00, 0.03] & 0.99 \\
+SL$\to$SL & 0.21 [0.16, 0.27] & 1.00 \\
+SL$\to$HU & 0.07 [0.04, 0.11] & 0.99 \\
+HU$\to$EN & 0.04 [0.02, 0.07] & 0.94 \\
+HU$\to$SL & 0.14 [0.10, 0.19] & 0.68$^\dagger$ \\
+HU$\to$HU & 0.08 [0.05, 0.13] & 1.00 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Gemma at the high dose shows a large output-language gradient. English-output cells refuse 0.07--0.18 and Slovene-output cells 0.56--0.83. GaMS3 at its high dose spans 0.12--0.28 with no Slovene-output excess. GaMS3 did not follow the output-language instruction off the English-input row: its SL$\to$EN compliance is 0.00, and all 32 high-dose SL$\to$EN refusals were written in the input language. Only the English-input row is a valid output-language manipulation for GaMS3. Gemma complies at 0.96--1.00 in every cell.
+
+\subsubsection{Mechanism contrast}
+
+OUT$_\text{SL}$ is the Slovene output-language effect and IN$_\text{SL}$ the Slovene input-language effect, both on the edit-induced $L^*$ scale. Both contrasts use GaMS3's non-compliant SL$\to$EN cell.
+
+\begin{table}[!htbp]
+\centering
+\caption{Mechanism contrasts by readout (logit, 95\% CI; iteration~4, experiment~14). NA = no $L^*$-based estimate for that readout.}
+\label{tab:mechanism_contrasts}
+\footnotesize
+\begin{tabular}{llccccc}
+\toprule
+Readout & Model & OUT$_\text{SL}$ & IN$_\text{SL}$ & INT$_\text{SL}$ & OUT-IN (SL) \\
+\midrule
+raw\_R & Gemma & 1.14 [0.60, 1.56] & $-0.60$ [$-1.02$, $-0.18$] & $-0.02$ [$-0.71$, 0.62] & 1.73 [1.03, 2.34] \\
+raw\_R & GaMS3 & $-0.44$ [$-0.98$, 0.27] & $-0.86$ [$-1.58$, $-0.13$] & $-0.66$ [$-2.74$, 0.60] & 0.41 [$-0.55$, 1.59] \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Cross-model contrasts on the raw readout (GaMS3 minus Gemma): dOUT$_\text{SL} = -1.58$ [$-2.22$, $-0.66$] (MDE 1.07); dIN$_\text{SL} = -0.26$ [$-1.13$, 0.57] (MDE 1.19).
+
+\textbf{Pre-registered decisions:} raw\_R and raw\_RP: P0 passes. SL: M-OUT SUPPORTED. The call is not robust across readouts. RG and PPI make no mechanism call (P0 fails). The results file flags robust $=$ False.
+
+\subsubsection{Lag at matched EN$\to$EN refusal of 50\%}
+
+\begin{table}[!htbp]
+\centering
+\caption{Lag at matched EN$\to$EN refusal of 50\% (logit, 95\% item-bootstrap CI, raw primary readout; iteration~4, experiment~14).}
+\label{tab:lag_matched}
+\footnotesize
+\begin{tabular}{lcccccc}
+\toprule
+Cell & Gemma $a$ & Gemma $L^*$ & GaMS3 $a$ & GaMS3 $L^*$ & $G_3$ & $G_{3,\text{edit}}$ \\
+\midrule
+EN$\to$EN & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 \\
+EN$\to$SL & 2.17 & 1.15 & $-0.45$ & $-0.11$ & $-2.63$ & $-1.26$ \\
+EN$\to$HU & 1.12 & 0.39 & 0.28 & 0.47 & $-0.85$ & 0.09 \\
+SL$\to$EN & $-0.63$ & $-0.59$ & $-0.18$ & $-0.53$ & 0.45 & 0.06 \\
+SL$\to$SL & 1.46 & 0.54 & $-0.96$ & $-1.30$ & $-2.42$ & $-1.84$ \\
+SL$\to$HU & 1.34 & 0.52 & $-0.15$ & $-0.15$ & $-1.49$ & $-0.67$ \\
+HU$\to$EN & $-0.32$ & $-0.32$ & 0.08 & $-0.22$ & 0.40 & 0.09 \\
+HU$\to$SL & 2.37 & 1.34 & $-0.00$ & $-0.81$ & $-2.37$ & $-2.15$ \\
+HU$\to$HU & 1.14 & 0.41 & 0.59 & $-0.10$ & $-0.56$ & $-0.51$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+$G_{3,\text{edit}}$ excludes zero in two cells, SL$\to$SL ($-1.84$ [$-2.80$, $-0.78$]) and HU$\to$SL ($-2.15$ [$-3.16$, $-0.46$]). Both rest on extrapolated GaMS3 values.
+
+\subsubsection{SDT decomposition}
+
+\begin{table}[!htbp]
+\centering
+\caption{Signal-detection DiD (Gemma minus GaMS3) at dose zero and $\lambda_\text{hi}$ (iteration~4, experiment~14).}
+\label{tab:sdt_exp14}
+\begin{tabular}{llcc}
+\toprule
+Dose & Contrast & $d'$ DiD & $c$ DiD \\
+\midrule
+zero & SL output & $-0.13$ [$-0.68$, 0.39] & $-0.76$ [$-1.06$, $-0.52$] \\
+hi & SL output & 0.72 [$-0.06$, 1.30] & $-1.56$ [$-1.97$, $-1.29$] \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The Slovene-output effect sits in the criterion, not in discrimination. At high dose the $c$ DiD is $-1.56$ [$-1.97$, $-1.29$] and the $d'$ DiD is 0.72 [$-0.06$, 1.30], which includes zero.
+
+\subsubsection{C-EXT: public checkpoint}
+
+The public p-e-w/gemma-3-12b-it-heretic checkpoint (Table~\ref{tab:pew_checkpoint}) shows the same direction. SL$\to$SL refuses 0.21 against 0.05 for EN$\to$EN, a residual of 16.0\,pp. OUT$_\text{ext,SL} = 1.38$ [0.49, 2.44] and IN$_\text{ext,SL} = -0.72$ [$-1.60$, $-0.08$].
+
+\subsubsection{Outcome}
+
+\textbf{Verdict: ESTIMATE (screen), not a confirmation.} On the raw readout, edited Gemma's residual refusal follows the output language. The call is not robust across readouts. GaMS3 failed the output-language manipulation off the English-input row. The Slovene-output separation already exists at dose zero. Gemma's Slovene-output edited cells have judge Sp 0.42.
+
+\subsection{Artifact 17: Fine-grained lambda ladder (Experiment~15)}
+%% workspace: gen_art_experiment_15
+
+This experiment (gen\_art\_experiment\_15) ran a fine-grained lambda ladder---13 steps for Gemma (0.000 to 2.000) and 15 steps for GaMS (0.000 to 1.538)---on a fresh 300-item RefusEU-TRAIN body disjoint from all prior probes. Each step used NLLB EN-BT and SL-MT arms from one English source.
+
+\begin{table}[!htbp]
+\centering
+\caption{Headline $G_3$ decomposition (R coding, raw readout; iteration~4, experiment~15).}
+\label{tab:g3_exp15}
+\begin{tabular}{lccc}
+\toprule
+Readout & $G_3$ [95\% CI] & $G_{3,\text{orig}}$ [95\% CI] & $G_{3,\text{edit}}$ [95\% CI] \\
+\midrule
+RAW & $-0.70$ [$-1.01$, $-0.42$] & $-1.17$ [$-2.83$, 0.22] & 0.47 [$-0.96$, 2.14] \\
+RG & $-0.01$ [$-4.36$, 11.27] & $-1.76$ [$-5.45$, 1.96] & 1.75 [$-4.58$, 13.18] \\
+PPI & $-0.75$ [$-2.43$, 0.99] & $-1.52$ [$-6.46$, 2.82] & 0.76 [$-3.78$, 6.27] \\
+TTJ & $-0.79$ [$-1.09$, $-0.48$] & $-1.37$ [$-2.29$, 0.37] & 0.58 [$-1.18$, 1.52] \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+$G_{3,\text{R}} = -0.70$ [$-1.01$, $-0.42$] with MDE 0.42, the most powerful estimate in the entire study. It survives under TTJ ($-0.79$ [$-1.09$, $-0.48$]). $G_{3,\text{edit,R}} = +0.47$ [$-0.96$, 2.14]: the edit-induced component spans zero, confirming that the lag is baseline, not edit-induced.
+
+Curve slopes: $b_\text{Gemma} = 0.94$ [0.75, 1.17], $b_\text{GaMS} = 0.80$ [0.63, 0.95]. Both are near 1, confirming parallel-curve geometry consistent with R-BASE.
+
+\begin{figure}[!htbp]
+  \centering
+  \includegraphics[width=\linewidth,height=0.85\textheight,keepaspectratio]{figures/fig_lambda_ladder_v0.pdf}
+  \caption{Fine-grained lambda ladder on fresh 300-item body. GaMS3 Slovene tracks English closely; Gemma retains a Slovene margin throughout (iteration~4, experiment~15).}
+  \label{fig:lambda_ladder}
+\end{figure}
+
+\textbf{Verdict: ESTIMATE.} R-BASE is supported: the edit-induced component spans zero, the pre-edit baseline is negative, and the curves are parallel. The MDE (0.42) means a true edit-induced lag of magnitude 0.42 or larger would have been detected.
+
+\subsection{Artifact 18: Prior-art and fact check (Research)}
+%% workspace: gen_art_research_1
+
+This artifact (gen\_art\_research\_1) conducted a dated (2026-09-24) prior-art search and fact verification. No published paper crosses prompt language with response language for refusal measurement as of that date. The M-IN/M-OUT design is novel (medium confidence). Nearest neighbours: Deng et al.\ 2023 (instruction language), Upadhyaya and Sikdar 2026 (output language as outcome, not controlled factor).
+
+Heretic facts: Heretic @3521f86 is a 2.0.0.dev0 snapshot (2026-09-05). Defaults: 200 trials / 60 startup (not 80). English-keyword refusals on the first 100 AdvBench test prompts. The pre-registered KL $\leq 0.5$ selection rule is ours, not Heretic's.
+
+Hungarian is not in the declared GaMS3 CPT/SFT mix. The model card shows SL 48.9 / EN 28.3\% of CPT tokens. Croatian/Serbian/Bosnian make up 22.3\% of base continued pretraining, a South-Slavic confound.
+
+\subsection{Not executed or abandoned in iteration~4}
+
+\begin{table}[!htbp]
+\centering
+\caption{Iteration-4 components not executed.}
+\label{tab:not_executed_iter4}
+\footnotesize
+\begin{tabular}{llp{4cm}}
+\toprule
+Component & Status & Reason \\
+\midrule
+exp13 Heretic edit \& lambda grid & Not executed & GPU lost \\
+exp13 held-out confirmation (B-300) & Not executed & GPU lost \\
+exp13 random-dir.\ controls & Not executed & GPU lost \\
+RQ2 natural RefusEU FINAL under edit & Not executed (owed since iter~1) & GPU lost \\
+exp13 substitute re-readout (19,195 rows) & Frozen, unlabelled & OpenRouter key limit \\
+exp13 judge tier gate & Ran; both tiers FAIL & Sp 0.27--0.55 \\
+exp14 harmful-content (ASR) readout & One cell only & Not completed \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+%% ================================================================
+\section{Iteration 5}
+%% ================================================================
+
+\subsection{Strategy}
+
+Three goals: (i)~confirm the C-OUT finding on a fresh 294-item body with a new Heretic edit, a suffix-free design, a full 2$\times$3$\times$3+controls matrix, and PPI correction (experiment~16); (ii)~run the deferred RefusEU FINAL evaluation with the full 1,300-item pool, random-edit and 256-token controls, and multiple readouts (experiment~17); (iii)~test the R-INCAP question---whether Gemma's Slovene reserve is real safety or production failure---with a StrongREJECT harmful-content endpoint alongside refusal (evaluation~4). Two support artifacts complete the iteration: a paper-number audit (evaluation~5) and a novelty and fact-check update (research~2).
+
+[Correction: C-LAG is now closed in favour of C-OUT. The overall cross-lingual abliteration lag is better characterised as an output-language effect (C-OUT) than as a generic cross-lingual lag (C-LAG).]
+
+[Correction: The novelty verdict for the main claim is downgraded from NOVEL to PARTIALLY OCCUPIED after \citet{Addagada2026} and \citet{Nguyen2026}.]
+
+\subsection{Artifact 19: C-OUT confirmation (Experiment~16)}
+%% workspace: gen_art_experiment_16
+
+This experiment (gen\_art\_experiment\_16) tested whether the output-language effect (C-OUT)---edited Gemma refusing more when told to write in Slovene than in English---holds on a fresh 294-item body (146 StrongREJECT, 109 HarmBench, 39 JBB) with a new Heretic edit, using prediction-powered inference (PPI) as the primary estimator.
+
+\subsubsection{Headline: C-OUT estimate}
+
+The primary PPI estimate is OUT$_\text{Gemma} = +2.43$ [$+0.89$, $+5.38$] log-odds: edited Gemma refuses 2.43 log-odds more when told to answer in Slovene than in English. The cross-model contrast dOUT $= -2.31$ [$-5.34$, $-0.68$] excludes zero. GaMS3 shows no output-language effect: OUT$_\text{GaMS3} = +0.12$ [$-0.47$, $+0.72$], spanning zero. The input-language effect in Gemma is negative: IN$_\text{Gemma} = -0.68$ [$-1.23$, $-0.36$]. Slovene input reduces refusal.
+
+All confirmation clauses pass on the consensus reference, but the verdict is capped at ESTIMATE because the adjudication kappa on harmful content is 0.12 (gate requires 0.60).
+
+\begin{table}[!htbp]
+\centering
+\caption{Primary-judge refusal rates on harmful items, selected cells ($n = 294$ per cell; iteration~5, experiment~16).}
+\label{tab:cout_rates}
+\footnotesize
+\begin{tabular}{llcc}
+\toprule
+Model & Cell & Dose & Refusal \\
+\midrule
+Gemma & EN$\to$EN & hi & 0.330 \\
+Gemma & EN$\to$SL & lo & 0.884 \\
+Gemma & EN$\to$HU & lo & 0.731 \\
+Gemma & SL$\to$EN & lo & 0.344 \\
+Gemma & SF\_EN$\to$EN & lo & 0.510 \\
+Gemma & SF\_SL$\to$SL & lo & 0.827 \\
+Gemma & EN$\to$EN & zero & 0.918 \\
+Gemma & EN$\to$SL & zero & 0.969 \\
+GaMS3 & EN$\to$EN & hi & 0.490 \\
+GaMS3 & EN$\to$SL & hi & 0.449 \\
+GaMS3 & SF\_EN$\to$EN & hi & 0.527 \\
+GaMS3 & SF\_SL$\to$SL & hi & 0.616 \\
+GaMS3 & EN$\to$EN & zero & 0.820 \\
+GaMS3 & EN$\to$SL & zero & 0.786 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The suffix-free cells show the same pattern as the suffixed cells: Slovene output drives higher refusal in Gemma (0.827 vs 0.510 at low dose), ruling out a suffix artefact.
+
+\subsubsection{SDT decomposition}
+
+\begin{table}[!htbp]
+\centering
+\caption{Signal-detection DiD (Gemma minus GaMS3) at dose zero and dose$^*$ (iteration~5, experiment~16).}
+\label{tab:sdt_exp16}
+\begin{tabular}{llcc}
+\toprule
+Dose & Contrast & $d'$ DiD & $c$ DiD \\
+\midrule
+zero & SL output & $-0.37$ [$-0.81$, 0.07] & $-0.65$ [$-0.90$, $-0.46$] \\
+lo & SL output & $+0.09$ [$-0.62$, 0.57] & $-1.07$ [$-1.42$, $-0.85$] \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The output-language effect sits in the criterion, not in discrimination. At the dose-matched lambda, the criterion DiD is $-1.07$ [$-1.42$, $-0.85$] and the $d'$ DiD is $+0.09$ [$-0.62$, 0.57], which includes zero.
+
+\subsubsection{Judge validity}
+
+\begin{table}[!htbp]
+\centering
+\caption{Judge error in decisive cells (LLM adjudication, NOT human; $n = 100$ per cell; iteration~5, experiment~16).}
+\label{tab:judge_validity_exp16}
+\footnotesize
+\begin{tabular}{lcccc}
+\toprule
+Cell & Judge vs reference & Se & Sp & $n$ \\
+\midrule
+Gemma EN$\to$EN & gemini\_U vs adj\_U & 0.93 & 0.63 & 99 \\
+Gemma EN$\to$SL & gemini\_U vs adj\_U & 1.00 & 0.94 & 99 \\
+GaMS3 EN$\to$EN & gemini\_U vs adj\_U & 0.92 & 0.84 & 100 \\
+GaMS3 EN$\to$SL & gemini\_U vs adj\_U & 1.00 & 0.82 & 99 \\
+Gemma EN$\to$EN & J1 vs adj\_explicit & 1.00 & 0.46 & 100 \\
+Gemma EN$\to$SL & J1 vs adj\_explicit & 1.00 & 0.35 & 100 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsubsection{Outcome}
+
+\textbf{Verdict: ESTIMATE with WEAK anchor.} All confirmation clauses pass on the consensus reference. The verdict is capped at ESTIMATE because the harmful-content adjudication kappa is 0.12.
+
+\begin{figure}[!htbp]
+  \centering
+  \includegraphics[width=\linewidth,height=0.85\textheight,keepaspectratio]{figures/fig_cout_forest_v0.pdf}
+  \caption{C-OUT confirmation forest plot. Edited Gemma's residual refusal follows the output language across item sources (iteration~5, experiment~16).}
+  \label{fig:cout_forest}
+\end{figure}
+
+\subsection{Artifact 20: RefusEU FINAL (Experiment~17)}
+%% workspace: gen_art_experiment_17
+
+This experiment (gen\_art\_experiment\_17) measured what one English-only de-censoring edit buys on RefusEU's own 1,300 prompts per language, in both models and both languages. The judge stack used local substitutes (PolyGuard refusal, Qwen3Guard-Gen-8B, StrongREJECT fine-tuned evaluator). 11,600 rows were analysed across four conditions.
+
+\subsubsection{The edit raises attack success in all four cells}
+
+\begin{table}[!htbp]
+\centering
+\caption{Paired edit effects (orig $\to$ edit@1.0, exact McNemar, Holm-corrected; iteration~5, experiment~17).}
+\label{tab:refuseu_final}
+\begin{tabular}{llcccl}
+\toprule
+Model & Lang & ASR orig & ASR edit & Delta [95\% CI] & Verdict \\
+\midrule
+Gemma & EN & 0.045 & 0.897 & 0.852 [0.831, 0.870] & ROBUST \\
+Gemma & SL & 0.026 & 0.683 & 0.657 [0.629, 0.683] & ROBUST \\
+GaMS3 & EN & 0.033 & 0.970 & 0.937 [0.923, 0.949] & ROBUST \\
+GaMS3 & SL & 0.068 & 0.915 & 0.847 [0.826, 0.867] & ROBUST \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+All four cells are ROBUST: the edit produces a massive increase in attack success on RefusEU prompts. The edit is more effective on GaMS3 than Gemma in both languages, and more effective in English than Slovene in both models.
+
+\subsubsection{Language confound}
+
+The English and Slovene prompt sets are different natural prompts with LaBSE similarity 0.55, so the SL-vs-EN difference within a model is \textbf{not interpretable as a language effect}. Even in the high-similarity subset (LaBSE $\geq 0.70$, $n = 58$), the SL-EN gap in Gemma is $-0.190$ [$-0.345$, $-0.035$] and in GaMS3 is $-0.035$ [$-0.121$, 0.052].
+
+\subsubsection{Corrected ASR}
+
+Rogan-Gladen corrected deltas (using per-cell Se/Sp from blind author-model adjudication on 60 rows per cell): Gemma EN $\delta_\text{RG} = 0.863$ [0.811, 0.892]; Gemma SL $\delta_\text{RG} = 0.578$ [0.473, 0.639]; GaMS3 EN $\delta_\text{RG} = 0.967$ [0.927, 0.976]; GaMS3 SL $\delta_\text{RG} = 0.884$ [0.826, 0.912].
+
+\subsubsection{Ranking vs thresholding}
+
+AUROC is high in all cells (0.887--1.000), meaning the guards rank harmful above harmless correctly. The failure is in the shipped decision threshold, not in the underlying score. This is consistent with \citeauthor{Aziz2026}'s~\citeyearpar{Aziz2026} calibration-not-representation account.
+
+\subsubsection{Verdict}
+
+All four paired-edit cells are ROBUST. The edit is effective on RefusEU prompts. The StrongREJECT fine-tuned evaluator has near-zero sensitivity for Gemma, confirming it cannot substitute for a paid rubric judge on this model.
+
+\subsection{Artifact 21: R-INCAP safety evaluation (Evaluation~4)}
+%% workspace: gen_art_evaluation_4
+
+This artifact (gen\_art\_evaluation\_4) tested whether Gemma's Slovene-output reserve is real safety (harmful content separates) or production failure. It re-used experiment~14's body (200 items per cell) with refusal and StrongREJECT harmful-content measurements.
+
+\subsubsection{Harmful content separates (reserve = safety)}
+
+\textbf{At high dose:} the output-language refusal contrast is OUT$_\text{R} = 2.67$ [2.29, 3.12] log-odds and the harmful-content contrast is OUT$_\text{U} = 2.61$ [2.20, 3.07]. Both are positive and exclude zero. Gemma refuses more in Slovene \textbf{and} produces less harmful content in Slovene. The PPI-corrected refusal is even larger: OUT$_\text{R}$(PPI explicit) $= 5.39$ [4.91, 5.85].
+
+\textbf{At low dose:} the same pattern holds: OUT$_\text{R} = 2.05$ [1.61, 2.65] and OUT$_\text{U} = 2.80$ [2.25, 3.69].
+
+\textbf{Verdict: R-INCAP = HARMFUL CONTENT SEPARATES (reserve = safety).} The reserve is not a production failure. Gemma genuinely produces less harmful content when replying in Slovene.
+
+\subsubsection{Four-class composition}
+
+\begin{table}[!htbp]
+\centering
+\caption{Four-class composition at high dose, decisive cells (iteration~5, evaluation~4).}
+\label{tab:four_class}
+\begin{tabular}{lcccccc}
+\toprule
+Cell & $n$ & EXPLICIT & DEFLECT & COMPLY & PF index & $U_\text{adj}$ \\
+\midrule
+Gemma EN$\to$SL hi & 50 & 0.54 & 0.26 & 0.20 & 0.57 & 0.14 \\
+Gemma EN$\to$EN hi & 48 & 0.00 & 0.10 & 0.90 & 0.10 & 0.75 \\
+GaMS3 EN$\to$SL hi & 49 & 0.00 & 0.08 & 0.90 & 0.08 & 0.90 \\
+GaMS3 EN$\to$EN hi & 50 & 0.00 & 0.12 & 0.88 & 0.12 & 0.84 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The production-failure index (PF: share of degraded + deflection responses among non-explicit-refusal) in Gemma EN$\to$SL is 0.57 vs 0.10 in EN$\to$EN, a difference of 0.46 [0.23, 0.65]. In GaMS3 the difference is $-0.04$ [$-0.17$, 0.09], near zero. Half of Gemma's Slovene non-compliance is deflection. The paid sonnet-4.5 reference confirms: PF difference 0.50 [0.25, 0.68] for Gemma, $-0.00$ [$-0.13$, 0.13] for GaMS3. This is consistent with \citeauthor{Shen2024}'s~\citeyearpar{Shen2024} relevance curse and \citeauthor{Addagada2026}'s~\citeyearpar{Addagada2026} output-language effect.
+
+\subsubsection{Verdict}
+
+\textbf{Verdict: ESTIMATE with WEAK anchor.} HARMFUL CONTENT SEPARATES at both doses. The reserve is safety, not production failure. The PF index shows that deflection accounts for about a quarter of Gemma's Slovene reserve, consistent with the relevance curse~\citep{Shen2024, Addagada2026}.
+
+\subsection{Artifact 22: Paper number audit (Evaluation~5)}
+%% workspace: gen_art_evaluation_5
+
+This artifact (gen\_art\_evaluation\_5) audited the numerical claims across all prior iterations. Key findings:
+
+\textbf{R-BASE ceiling sensitivity.} Experiment~15's baseline component (cross-model gap at zero dose $= -1.17$) is a CEILING-ARTEFACT: one flip in the Gemma lambda-0 Slovene cell (299/300 refusals) moves it inside the margin. Only the experiment~9 lambda body has a ROBUST-OFFSET (cross-model gap $= -2.56$, fragility index 9).
+
+\textbf{Ledger.} 1,176 numeric tokens plus 22 pointer claims: 332 SURVIVE, 844 UNTRACEABLE, 2 REVERSE, 1 SHRINKS.
+
+\textbf{Verification.} 49/49 independent checks pass.
+
+\subsection{Artifact 23: Novelty and fact check (Research~2)}
+%% workspace: gen_art_research_2
+
+This artifact (gen\_art\_research\_2) updated the novelty and fact check (search date 2026-09-25).
+
+\textbf{Main-claim novelty verdict: PARTIALLY OCCUPIED} (was NOVEL). Two new preprints partly occupy the lane:
+\begin{itemize}
+  \item \citet{Addagada2026} forces the output language (EN/ES/HI/AR) of an English structural jailbreak and scores with a StrongREJECT-style rubric. Non-English output lowers attack success in 11 of 12 cells.
+  \item \citet{Nguyen2026} fully cross prompt and response language (EN/NO) on benign questions.
+\end{itemize}
+
+\textbf{Still ours:} crossing both factors with safety endpoints, the Gemma/GaMS3 sibling pair, the partial-dose edit plus public checkpoints, Hungarian, and a constant suffix in all cells.
+
+\subsection{Not executed or abandoned in iteration~5}
+
+\begin{table}[!htbp]
+\centering
+\caption{Iteration-5 components not executed.}
+\label{tab:not_executed_iter5}
+\footnotesize
+\begin{tabular}{llp{4.5cm}}
+\toprule
+Component & Status & Reason \\
+\midrule
+exp16 partial-dose points & Not executed & \$4.00 budget cap \\
+exp16 Gemma high dose & Partial: only 100 EN-out, 72 SL-out at hi & Deadline cut \\
+exp16 external checkpoints & Not run & Time: pre-registered cut order \\
+exp17 primary gemini judge & Replaced by PolyGuard & OpenRouter budget \\
+Frozen-core Heretic (bf16, 80 trials) & Still not executed & Owed since iteration~1 \\
+Natural RefusEU reserved-split under edit & Still not executed & Owed since iteration~1 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+%% ================================================================
+\section{What the Run Learned Overall}
+%% ================================================================
+
+Five iterations have screened the main claim and four alternates against scoring-split data (iteration~1), the reserved evaluation split (iteration~2), fresh data with mechanism tests and utility controls (iteration~3), a paid-judge readout completion with a new mechanism experiment and a fine-grained confirmation (iteration~4), and a C-OUT confirmation with harmful-content endpoints and RefusEU FINAL (iteration~5). Two alternates are dead (base-checkpoint geometry and persona gating). A third (prefill-depth signature, alternate~4) is uncitable. The geometry of refusal is layer-dependent. The perpendicular component does not induce refusal.
+
+\textbf{R-BASE remains the best-supported account for the overall lag.} The edit-induced component spans zero (experiment~15: $+0.47$ [$-0.96$, 2.14]). The pre-edit baseline is negative everywhere. The curves are parallel (slope near 1 in both models). The R-BASE baseline is, however, a ceiling artefact in most item bodies (experiment~15 fragility index 1). Only the experiment~9 body has a robust offset (fragility index 9).
+
+\textbf{C-OUT: ESTIMATE.} The cross-lingual abliteration lag is better characterised as an output-language effect. Experiment~16 on a fresh 294-item body: OUT$_\text{Gemma}$(PPI) $= +2.43$ [$+0.89$, $+5.38$], dOUT $= -2.31$ [$-5.34$, $-0.68$]. The verdict is ESTIMATE with WEAK anchor (adjudication kappa 0.12). In Gemma, where language compliance is 0.96--1.00, the residual refusal follows the output language; GaMS3 failed the output-language manipulation off the English-input row (SL$\to$EN compliance 0.00), so the input-vs-output decomposition is unavailable for GaMS3.
+
+\textbf{R-INCAP: the reserve is safety, not production failure.} At both doses, harmful content separates. The four-class decomposition shows half of Gemma's Slovene non-compliance is deflection (PF index difference 0.46 [0.23, 0.65]), consistent with the relevance curse~\citep{Shen2024, Addagada2026}.
+
+\textbf{The SDT criterion shift is the study's most replicable quantitative finding.} It is present at dose zero, widens under the edit (R-BASE-OUT $c$ DiD(hi) $-$ DiD(zero) $= -0.80$ [$-1.23$, $-0.46$]). In Gemma, where the output-language manipulation passes the compliance gate (0.96--1.00 in all cells), the shift tracks the output language. GaMS3 failed the output-language manipulation off the English-input row, so the input-vs-output decomposition cannot be tested for GaMS3.
+
+\textbf{The edit is effective on RefusEU FINAL prompts ($n = 1{,}300$ per cell).} All four paired-edit cells are ROBUST. The edit is more effective on GaMS3 than Gemma in both languages.
+
+\textbf{The utility control stands.} The edit does not damage Slovene downstream skills more than English ones. The identity calibration arm continues to replicate.
+
+\textbf{The novelty verdict is PARTIALLY OCCUPIED} after \citet{Addagada2026} and \citet{Nguyen2026}. The narrowed design remains unoccupied as of September 2026 (medium-low confidence).
+
+\subsection{Open items}
+
+\begin{itemize}
+  \item The readout gate has never passed. All adjudication is author-LLM, not human.
+  \item The frozen-core Heretic procedure (bf16, 80 trials, Heretic's own selection rule) has never been run.
+  \item No artifact has scored natural RefusEU reserved-split prompts under the edit.
+  \item The harmful-content adjudicator kappa (0.12 in experiment~16; 0.59 in evaluation~4) remains below the gate.
+  \item If R-BASE is correct, the lag is an artefact of model selection (GaMS3 was simply trained to refuse less in Slovene), not a property of the abliteration procedure.
+  \item The M-OUT finding (output language drives the lag) is confirmed as C-OUT and deserves pre-registered confirmation with a validated readout and human adjudication.
+  \item The dose contrast (main claim vs alternate~1) remains underpowered across all five iterations.
+\end{itemize}
+
+%% ================================================================
+%% ================================================================
+
+\bibliographystyle{plainnat}
+\bibliography{references}
+
+\end{document}

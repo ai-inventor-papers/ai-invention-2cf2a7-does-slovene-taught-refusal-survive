@@ -1,0 +1,123 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage{graphicx, geometry, amsmath, hyperref, url, booktabs, xcolor, array, enumitem}
+\geometry{margin=1in}
+\hypersetup{colorlinks=true, linkcolor=black, citecolor=black, urlcolor=black}
+\setlength{\parskip}{4pt plus 1pt minus 1pt}
+\setlength{\parindent}{0pt}
+
+\title{Executive Summary\\[4pt]
+  \large Why Slovene Refusal Outlasts English Abliteration}
+\author{Internal Research Report --- September 2026}
+\date{}
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+
+\section*{Goal}
+
+GaMS3-12B-Instruct and Gemma-3-12B-IT share a pretrained ancestor (gemma-3-12b-pt) but diverge in safety supervision language: GaMS3 received Slovene continued pretraining and supervised fine-tuning with ${\sim}7{,}000$ safety-refusal examples drawn from machine-translated Qwen-family responses, while Gemma-IT received Google's standard multilingual post-training. Five iterations of experiments (23 artifacts total) tested whether Slovene-taught refusal transfers to English, whether English-only abliteration (Heretic) removes Slovene refusal equally in both models, and what mechanism explains any residual Slovene refusal.
+
+\section*{Headline Findings}
+
+\begin{table}[!htbp]
+\centering
+\footnotesize
+\begin{tabular}{p{3.5cm}lp{5cm}l}
+\toprule
+Finding & Source & Key number & Grade \\
+\midrule
+Criterion shift (original models, HARD set) & Exp.~5 (iter.~2) & $c$ DiD $= +0.52$ [0.39, 0.67]; $d'$ DiD $\approx 0$ & ESTIMATE \\[2pt]
+C-OUT: output language drives residual refusal & Exp.~16 (iter.~5) & OUT$_\text{Gemma}$(PPI) $= +2.43$ [$+0.89$, $+5.38$]; dOUT $= -2.31$ [$-5.34$, $-0.68$] & ESTIMATE (WEAK) \\[2pt]
+R-BASE: lag is baseline, not edit-induced & Exp.~15 (iter.~4) & $G_{3,\text{edit}} = +0.47$ [$-0.96$, 2.14]; slopes $\approx 1$ & ESTIMATE \\[2pt]
+Identity anchoring & Exp.~5 (iter.~2) & FINAL DiD$_\text{id} = 3.46$ [2.55, 4.62] & PASS \\[2pt]
+Edit effective on RefusEU FINAL & Exp.~17 (iter.~5) & All 4 cells ROBUST ($n = 1{,}300$ per cell) & ROBUST \\[2pt]
+Utility: no SL damage & Exp.~12 (iter.~3) & All $H < 0.05$; excess asymmetry $+0.051$ [0.012, 0.093] & OK \\[2pt]
+R-INCAP: reserve is real safety & Eval.~4 (iter.~5) & Harmful-content OUT $= 2.61$ [2.20, 3.07] at hi dose & ESTIMATE (WEAK) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{Criterion shift on original models.} Gemma over-refuses benign Slovene prompts (false-alarm rate 0.569 vs 0.364 in English), while GaMS3 is language-invariant (0.273 in both). The DiD in discrimination $d'$ is near zero ($-0.003$); the DiD in criterion $c$ is $+0.52$ [0.38, 0.68]. This replicates across experiments~5, 9, 14, and~16 on original models. On edited models the criterion-shift difference disappears (DiD$_c = 0.14$ [$-0.78$, 1.12]).
+
+\textbf{Output-language effect (C-OUT).} Experiment~16 replicated on a fresh 294-item body with prediction-powered inference correction: edited Gemma refuses 2.43 log-odds more when told to answer in Slovene than in English. GaMS3 shows no output-language effect (OUT$_\text{GaMS3} = +0.12$ [$-0.47$, $+0.72$]). The input-language effect is negative in Gemma ($-0.68$ [$-1.23$, $-0.36$]): Slovene input reduces refusal. The signal-detection decomposition places the effect in the criterion, not discrimination.
+
+\textbf{The lag is baseline (R-BASE).} The cross-lingual abliteration lag is better characterised as a pre-edit model difference than an edit-induced effect. On experiment~15's fine-grained lambda ladder (MDE 0.42, the study's most powerful estimate), the edit-induced component is $+0.47$ [$-0.96$, 2.14] and both models' curves run parallel with slopes near 1. In every item body, the pre-edit baseline $G_{3,\text{orig}}$ is negative.
+
+\textbf{Reserve is safety, not production failure.} Gemma's Slovene-output reserve produces less harmful content, not just more refusal: the harmful-content output-language contrast is 2.61 [2.20, 3.07] at high dose. The four-class decomposition shows half of the non-compliance is deflection (production-failure index difference 0.46 [0.23, 0.65]), consistent with the relevance curse.
+
+\section*{Dead Ends}
+
+\begin{table}[!htbp]
+\centering
+\footnotesize
+\begin{tabular}{p{4.2cm}p{8.5cm}}
+\toprule
+Hypothesis & What killed it \\
+\midrule
+Alt.~2: base-checkpoint geometry & delta-$d'$ sign depends on layer; base geometry explains 4.2\% of refusal variance \\
+Alt.~3: persona gating & Manipulation check failed; premise (Slovene surplus) contradicted by the data \\
+Alt.~4: prefill-depth signature & No readout can validly score prefill continuations (kappa $\leq 0.21$) \\
+Ancestor-direction induction & Pretrained direction never reached refusal rate 0.50 in any cell \\
+Geometry hypothesis (M-a) & EN/SL directions nearly collinear at own $L^*$ ($\cos \geq 0.986$); result is layer-dependent \\
+Induction hypothesis (M-b) & Slovene-perpendicular component inert as refusal inducer ($\alpha_{50}$ right-censored) \\
+Dose contrast (main vs alt.~1) & Underpowered across all 5 iterations; MDE exceeds $2m$ on every readout \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section*{What the Edit Does on RefusEU}
+
+On the full 1,300-item RefusEU FINAL reserved split (experiment~17), the Heretic edit at $\lambda = 1.0$ is effective in all four model$\times$language cells:
+
+\begin{table}[!htbp]
+\centering
+\footnotesize
+\begin{tabular}{llccl}
+\toprule
+Model & Language & ASR orig & ASR edit & Verdict \\
+\midrule
+Gemma & EN & 0.045 & 0.897 & ROBUST \\
+Gemma & SL & 0.026 & 0.683 & ROBUST \\
+GaMS3 & EN & 0.033 & 0.970 & ROBUST \\
+GaMS3 & SL & 0.068 & 0.915 & ROBUST \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The edit is more effective on GaMS3 than Gemma in both languages. The English and Slovene prompt sets are different (LaBSE similarity 0.55), so within-model SL-vs-EN differences are not a pure language effect.
+
+\section*{Utility Control}
+
+The English-only abliteration edit does not damage Slovene downstream skills more than English ones. All macro headroom-normalised losses are below 0.05. Language asymmetry $A = H_\text{SL} - H_\text{EN}$ is positive (Slovene hurt less) in every cell. Random-adjusted excess asymmetry excludes zero for GaMS3 ($+0.051$ [$+0.012$, $+0.093$]). Localised costs: GaMS3 English ARC-Challenge ($-3.7$\,pp, $p = 0.041$) and BoolQ ($-2.0$/$-2.3$\,pp). Belebele comprehension and FLORES fluency are unaffected.
+
+\section*{Evidence Quality Limitations}
+
+\begin{itemize}[nosep, leftmargin=*]
+  \item \textbf{The readout gate has never passed.} Every LLM judge has kappa at most 0.43 on edited rows against blind adjudication; the paid gemini frontier judge has specificity 0.66--0.73 (over-calls REFUSE). All blind adjudication is author-LLM, not human.
+  \item \textbf{The frozen-core Heretic procedure} (bf16, 80 trials, Heretic's selection rule) has never been run. Every edit is an iteration-1 reduced-trial NF4 fallback.
+  \item \textbf{Natural RefusEU reserved-split prompts} have never been scored under the edit (experiment~17 used the PolyGuard readout, not the pre-registered gemini judge).
+  \item \textbf{R-BASE baseline is fragile} in most item bodies: experiment~15's fragility index is 1 (one Gemma SL flip at $\lambda = 0$ moves the baseline inside the margin). Only experiment~9 has a robust offset (fragility index 9).
+  \item \textbf{The harmful-content adjudicator kappa} is 0.12 in experiment~16 (gate requires 0.60), traced to truncation handling. Refusal kappa is 0.90.
+  \item \textbf{GaMS3 failed the output-language manipulation} off the English-input row (SL$\to$EN compliance 0.00 in experiment~14), so the input-vs-output decomposition is unavailable for GaMS3.
+\end{itemize}
+
+\section*{Novelty}
+
+The main claim is \textbf{PARTIALLY OCCUPIED} (downgraded from NOVEL). Two preprints partly occupy the lane: Addagada (2609.08373) forces the output language and finds a relevance curse; Nguyen et al.\ (2608.26186) cross prompt and response language on benign content. The narrowed design---crossing both factors with safety endpoints, a sibling pair sharing a pretrained ancestor, partial-dose edit plus a public checkpoint, Hungarian as a third language, and a constant suffix in all cells---remains unoccupied as of September 2026 (medium-low confidence).
+
+\section*{Open Items for Future Work}
+
+\begin{enumerate}[nosep, leftmargin=*]
+  \item C-OUT deserves pre-registered confirmation with a validated readout and human adjudication on edited rows.
+  \item If R-BASE is correct, the lag is an artefact of model selection (GaMS3 was trained to refuse less in Slovene), not a property of the abliteration procedure.
+  \item The dose contrast (main claim vs alternate~1) remains underpowered across all five iterations; a larger item body or a different operationalisation of ``dose'' may be needed.
+  \item The M-OUT production-fluency account (refusal as a fallback when the model must produce harmful content in a language it generates poorly) was hypothesised but never directly tested.
+\end{enumerate}
+
+\vfill
+\noindent\rule{\textwidth}{0.4pt}
+\footnotesize
+Full report: 47 pages, 5 iterations, 23 artifacts, 32 tables, 7 figures. Spend: approximately \$25. All code and data artifacts are at \texttt{github.com/ai-inventor-papers/ai-invention-2cf2a7-does-slovene-taught-refusal-survive}.
+
+\end{document}

@@ -1,0 +1,269 @@
+{
+  "Rottger2023": {
+    "source": "semantic_scholar",
+    "title": "XSTest: A Test Suite for Identifying Exaggerated Safety Behaviours in Large Language Models",
+    "first_author": "Röttger",
+    "year": 2023,
+    "s2_paper_id": "b67eb8213a63be8a4b0274728ffdc50bfa109e10",
+    "doi": "10.48550/arXiv.2308.01263",
+    "arxiv": "2308.01263"
+  },
+  "Souly2024": {
+    "source": "semantic_scholar",
+    "title": "A StrongREJECT for Empty Jailbreaks",
+    "first_author": "Souly",
+    "year": 2024,
+    "s2_paper_id": "f2e88c26bc1ebdd4adc5f83ab56cb4276120745d",
+    "doi": "10.48550/arXiv.2402.10260",
+    "arxiv": "2402.10260"
+  },
+  "Shen2024": {
+    "source": "semantic_scholar",
+    "title": "The Language Barrier: Dissecting Safety Challenges of LLMs in Multilingual Contexts",
+    "first_author": "Shen",
+    "year": 2024,
+    "s2_paper_id": "3cd81b0123b5f8477f6b5777681030ef6b05dd46",
+    "doi": "10.48550/arXiv.2401.13136",
+    "arxiv": "2401.13136"
+  },
+  "Yong2023": {
+    "source": "semantic_scholar",
+    "title": "Low-Resource Languages Jailbreak GPT-4",
+    "first_author": "Yong",
+    "year": 2023,
+    "s2_paper_id": "764fc56883bf83392cac99a7b5a264ac9fe2cdc5",
+    "doi": "10.48550/arXiv.2310.02446",
+    "arxiv": "2310.02446"
+  },
+  "Wang2023": {
+    "source": "semantic_scholar",
+    "title": "All Languages Matter: On the Multilingual Safety of Large Language Models",
+    "first_author": "Wang",
+    "year": 2023,
+    "s2_paper_id": "72e05fac8cf01593f70c63e16385a7bf6fd0fe09",
+    "doi": "10.48550/arXiv.2310.00905",
+    "arxiv": "2310.00905"
+  },
+  "Deng2023": {
+    "source": "semantic_scholar",
+    "title": "Multilingual Jailbreak Challenges in Large Language Models",
+    "first_author": "Deng",
+    "year": 2023,
+    "s2_paper_id": "1a9f394b5b7f5bcdecee487174a3f4fc65d30e33",
+    "doi": "10.48550/arXiv.2310.06474",
+    "arxiv": "2310.06474"
+  },
+  "Arditi2024": {
+    "source": "semantic_scholar",
+    "title": "Refusal in Language Models Is Mediated by a Single Direction",
+    "first_author": "Arditi",
+    "year": 2024,
+    "s2_paper_id": "88f9af8b0a28e14c42d4f70ce2d911b51a06cd16",
+    "doi": "10.48550/arXiv.2406.11717",
+    "arxiv": "2406.11717"
+  },
+  "Kamath2025": {
+    "source": "semantic_scholar",
+    "title": "Gemma 3 Technical Report",
+    "first_author": "Team",
+    "year": 2025,
+    "s2_paper_id": "adac25c0aebd013f1225ec02636edfcc0bf4cf7c",
+    "doi": "10.48550/arXiv.2503.19786",
+    "arxiv": "2503.19786"
+  },
+  "Akiba2019": {
+    "source": "semantic_scholar",
+    "title": "Optuna: A Next-generation Hyperparameter Optimization Framework",
+    "first_author": "Akiba",
+    "year": 2019,
+    "s2_paper_id": "4cdf2fad22afc865999747336c7399fe422e6e8e",
+    "doi": "10.1145/3292500.3330701",
+    "arxiv": "1907.10902"
+  },
+  "Hu2021": {
+    "source": "semantic_scholar",
+    "title": "LoRA: Low-Rank Adaptation of Large Language Models",
+    "first_author": "Hu",
+    "year": 2021,
+    "s2_paper_id": "a8ca46b171467ceb2d7652fbfb67fe701ad86092",
+    "arxiv": "2106.09685"
+  },
+  "Costajussa2022": {
+    "source": "semantic_scholar",
+    "title": "No Language Left Behind: Scaling Human-Centered Machine Translation",
+    "first_author": "Costa-jussà",
+    "year": 2022,
+    "s2_paper_id": "e19b54ad4c1c8af045069e9cac350ffc2ce60e1a",
+    "doi": "10.48550/arXiv.2207.04672",
+    "arxiv": "2207.04672"
+  },
+  "Angelopoulos2023": {
+    "source": "semantic_scholar",
+    "title": "Prediction-powered inference",
+    "first_author": "Angelopoulos",
+    "year": 2023,
+    "s2_paper_id": "96f75d06ce8bc26128f0af0071b374d065bf7d64",
+    "doi": "10.1126/science.adi6000",
+    "arxiv": "2301.09633"
+  },
+  "Angelopoulos2023a": {
+    "source": "semantic_scholar",
+    "title": "PPI++: Efficient Prediction-Powered Inference",
+    "first_author": "Angelopoulos",
+    "year": 2023,
+    "s2_paper_id": "de6d82d1969742028374c18fcfe3b0e2c26adcc8",
+    "doi": "10.48550/arXiv.2311.01453",
+    "arxiv": "2311.01453"
+  },
+  "Shi2024": {
+    "source": "semantic_scholar",
+    "title": "Judging the Judges: A Systematic Study of Position Bias in LLM-as-a-Judge",
+    "first_author": "Shi",
+    "year": 2024,
+    "s2_paper_id": "dfbfe75ec8c2143e899897a3c054ee58d99ead43",
+    "doi": "10.18653/v1/2025.ijcnlp-long.18",
+    "arxiv": "2406.07791"
+  },
+  "Anwar2024": {
+    "source": "semantic_scholar",
+    "title": "Foundational Challenges in Assuring Alignment and Safety of Large Language Models",
+    "first_author": "Anwar",
+    "year": 2024,
+    "s2_paper_id": "6f98525dc695257bdcb9a491e4d77f4d12bb5144",
+    "doi": "10.48550/arXiv.2404.09932",
+    "arxiv": "2404.09932"
+  },
+  "Vres2026": {
+    "source": "semantic_scholar",
+    "title": "Building a Strong Instruction Language Model for a Less-Resourced Language",
+    "first_author": "Vres",
+    "year": 2026,
+    "s2_paper_id": "1c68b8607b463e6111d39c44d220a95616421181",
+    "doi": "10.48550/arXiv.2603.01691",
+    "arxiv": "2603.01691"
+  },
+  "Marchisio2024": {
+    "source": "semantic_scholar",
+    "title": "Understanding and Mitigating Language Confusion in LLMs",
+    "first_author": "Marchisio",
+    "year": 2024,
+    "s2_paper_id": "1f874c94d531f6776f65e0aa807adbf432ea35cf",
+    "doi": "10.48550/arXiv.2406.20052",
+    "arxiv": "2406.20052"
+  },
+  "Ifebi2026": {
+    "source": "semantic_scholar",
+    "title": "Minionese: Comprehensive Benchmark and Mechanistic Study of Multilingual LLM Safety",
+    "first_author": "Ifebi",
+    "year": 2026,
+    "s2_paper_id": "6add141af706aedd95ff26995e6a86748ec895a7",
+    "doi": "10.48550/arXiv.2607.10112",
+    "arxiv": "2607.10112"
+  },
+  "Upadhyaya2026": {
+    "source": "semantic_scholar",
+    "title": "When Safety Speaks a Language: A Mechanistic Analysis of Safety-Language Identity Entanglement in LLMs",
+    "first_author": "Upadhyaya",
+    "year": 2026,
+    "s2_paper_id": "fe123e0712cb712cf909a6d9e0316f6d4b0169ec",
+    "arxiv": "2608.29936"
+  },
+  "Joad2026": {
+    "source": "semantic_scholar",
+    "title": "There Is More to Refusal in Large Language Models than a Single Direction",
+    "first_author": "Joad",
+    "year": 2026,
+    "s2_paper_id": "b80b43fb41bce05c6f260766dbee18f84e5b0c3c",
+    "doi": "10.48550/arXiv.2602.02132",
+    "arxiv": "2602.02132"
+  },
+  "Krasnodebska2026": {
+    "source": "semantic_scholar",
+    "title": "Multilingual Refusal Alignment for Safer Large Language Models",
+    "first_author": "Krasnodebska",
+    "year": 2026,
+    "s2_paper_id": "ca58d355401c52c592e113064e64433ea1bdf52f",
+    "doi": "10.18653/v1/2026.findings-acl.1537",
+    "arxiv": "2606.07535"
+  },
+  "Hawkins2026": {
+    "source": "semantic_scholar",
+    "title": "The Heterogeneous Safety Impacts of Benign Multilingual Fine-Tuning",
+    "first_author": "Hawkins",
+    "year": 2026,
+    "s2_paper_id": "ced820016e3d81798fd8ab5364eb659461a09b59",
+    "doi": "10.48550/arXiv.2606.28843",
+    "arxiv": "2606.28843"
+  },
+  "Dahir2026": {
+    "source": "semantic_scholar",
+    "title": "SomaliBench Eval: Measuring English-to-Somali Refusal Gaps in Open-Weight Language Models",
+    "first_author": "Dahir",
+    "year": 2026,
+    "s2_paper_id": "bb398cfee1e0122fa54bedb43faf07bcae71e241",
+    "doi": "10.48550/arXiv.2605.25420",
+    "arxiv": "2605.25420"
+  },
+  "Miao2026": {
+    "source": "semantic_scholar",
+    "title": "Who Bridges Safety? Identifying and Targeting Cross-Lingual Shared Safety Pathways",
+    "first_author": "Miao",
+    "year": 2026,
+    "s2_paper_id": "79aa4709bf5eec89b5f92daafc4728acae795d21",
+    "arxiv": "2608.09095"
+  },
+  "Zhang2026": {
+    "source": "semantic_scholar",
+    "title": "Who Transfers Safety? Identifying and Targeting Cross-Lingual Shared Safety Neurons",
+    "first_author": "Zhang",
+    "year": 2026,
+    "s2_paper_id": "1cb7e0b802817a7d00797abc033984e968777962",
+    "doi": "10.48550/arXiv.2602.01283",
+    "arxiv": "2602.01283"
+  },
+  "Wang2025": {
+    "source": "semantic_scholar",
+    "title": "Refusal Direction is Universal Across Safety-Aligned Languages",
+    "first_author": "Wang",
+    "year": 2025,
+    "s2_paper_id": "7e8245cb11171e5a7c3caacded1521e6bd71c78c",
+    "doi": "10.48550/arXiv.2505.17306",
+    "arxiv": "2505.17306"
+  },
+  "Im2026": {
+    "source": "semantic_scholar",
+    "title": "Analyzing Bias in False Refusal Behavior of Large Language Models for Hate Speech Detoxification",
+    "first_author": "Im",
+    "year": 2026,
+    "s2_paper_id": "b241cc3a1502039724c9a2a3013da3b509e472ed",
+    "doi": "10.48550/arXiv.2601.08668",
+    "arxiv": "2601.08668"
+  },
+  "Zhang2025": {
+    "source": "semantic_scholar",
+    "title": "FalseReject: A Resource for Improving Contextual Safety and Mitigating Over-Refusals in LLMs via Structured Reasoning",
+    "first_author": "Zhang",
+    "year": 2025,
+    "s2_paper_id": "cfec89b9edf847625cc9064ed8aacec948f0c83f",
+    "doi": "10.48550/arXiv.2505.08054",
+    "arxiv": "2505.08054"
+  },
+  "Cui2024": {
+    "source": "semantic_scholar",
+    "title": "OR-Bench: An Over-Refusal Benchmark for Large Language Models",
+    "first_author": "Cui",
+    "year": 2024,
+    "s2_paper_id": "d30e8ac45470dcc9208edb7a518d69088ae925e8",
+    "doi": "10.48550/arXiv.2405.20947",
+    "arxiv": "2405.20947"
+  },
+  "Lee2025": {
+    "source": "semantic_scholar",
+    "title": "How to Correctly Report LLM-as-a-Judge Evaluations",
+    "first_author": "Lee",
+    "year": 2025,
+    "s2_paper_id": "26ee57cf62ebbf55e917755c23e5d949c5cc1d4a",
+    "doi": "10.48550/arXiv.2511.21140",
+    "arxiv": "2511.21140"
+  }
+}
