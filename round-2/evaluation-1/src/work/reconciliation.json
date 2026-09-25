@@ -1,0 +1,477 @@
+[
+  {
+    "number": "GaMS SL deficit DiD, exp1 natural SCORE (R_judge)",
+    "source": "exp1 results/analysis_results.json:outcomes.R_judge.overall.est",
+    "iter1_value": -0.37678442117081734,
+    "harmonised_value": -0.37678442117081734,
+    "harmonised_ci95": [
+      -0.7059087320822701,
+      -0.05106491049489374
+    ],
+    "readout": "P1_real_or_pooled",
+    "status": "SURVIVES",
+    "cells_valid": true,
+    "note": "labels identical (real P1)"
+  },
+  {
+    "number": "GaMS SL deficit DiD, exp4 orig SCORE-400 (lexicon; the '-0.48')",
+    "source": "exp4 results/analysis.json:P0_DiD_ref_overall.est",
+    "iter1_value": -0.47818759616093587,
+    "harmonised_value": -1.2503745428869362,
+    "harmonised_ci95": [
+      -2.1396650578564262,
+      -0.4395144640429417
+    ],
+    "readout": "P1_real_or_pooled",
+    "status": "UNCITABLE",
+    "cells_valid": false,
+    "note": "GaMS exp4 orig cells: 32-34% real P1 by exact propagation, rest pooled surrogate (UNVALIDATED for GaMS)"
+  },
+  {
+    "number": "GaMS SL deficit DiD, exp2 SCORE-400 (exp2 judge; the '-0.70')",
+    "source": "exp2 results/analysis/analysis.json:S2_judge.DiD.all_did_R.est",
+    "iter1_value": -0.6975165872289906,
+    "harmonised_value": -0.691345811501693,
+    "harmonised_ci95": [
+      -1.6819550363945663,
+      0.21829517386659253
+    ],
+    "readout": "P1_real_or_pooled",
+    "status": "SURVIVES",
+    "cells_valid": true,
+    "note": ""
+  },
+  {
+    "number": "GaMS SL deficit DiD_ref C0, exp3 (SYS_REF judge; the '-1.11')",
+    "source": "exp3 results/analysis.json:primary.DiD_ref_C0.point",
+    "iter1_value": -1.1077564513284304,
+    "harmonised_value": -0.9539928973770553,
+    "harmonised_ci95": [
+      -1.7436642363849617,
+      -0.21049788757129834
+    ],
+    "readout": "P1_real_or_pooled",
+    "status": "UNCITABLE",
+    "cells_valid": false,
+    "note": "GaMS C0 EN cell FAILS the surrogate gate (kappa .28)"
+  },
+  {
+    "number": "Item-matched MT-arm DiD, exp1 (logit)",
+    "source": "exp1 results/analysis_results.json:mt_arm.R_judge.overall.est",
+    "iter1_value": -0.9183765316202654,
+    "harmonised_value": -0.9183765316202654,
+    "harmonised_ci95": [
+      -2.0618914328106914,
+      -0.041658598189422934
+    ],
+    "readout": "P1_real_or_pooled",
+    "status": "SURVIVES",
+    "cells_valid": true,
+    "note": "same labels; on the logit scale the item-matched deficit is NOT smaller than the natural one (see M5)"
+  },
+  {
+    "number": "Item-matched MT-arm DiD, exp1 (pp)",
+    "source": "exp1 results/analysis_results.json:mt_arm.R_judge.risk_difference.overall_pp.est",
+    "iter1_value": -2.0000000000000018,
+    "harmonised_value": -2.0000000000000018,
+    "harmonised_ci95": [
+      -4.249999999999998,
+      0.5000000000000004
+    ],
+    "readout": "P1_real_or_pooled",
+    "status": "SURVIVES",
+    "cells_valid": true,
+    "note": ""
+  },
+  {
+    "number": "Dose contrast D (R_judge, iter-1 hypothesis groups)",
+    "source": "exp1 results/analysis_results.json:outcomes.R_judge.D.est",
+    "iter1_value": -0.07972096641184856,
+    "harmonised_value": -0.07972096641184856,
+    "harmonised_ci95": [
+      -1.2732052221246315,
+      0.9392776930977195
+    ],
+    "readout": "P1_real_or_pooled",
+    "status": "SURVIVES",
+    "cells_valid": true,
+    "note": ""
+  },
+  {
+    "number": "Dose contrast D (R_judge, dataset frozen_groups.json: low-EN S2/S5/S7/S13)",
+    "source": "NEW (iter 1 never used the audited groups)",
+    "iter1_value": null,
+    "harmonised_value": -0.703648626761818,
+    "harmonised_ci95": [
+      -1.5740424428200077,
+      0.08495671525244355
+    ],
+    "readout": "P1_real_or_pooled",
+    "status": "NEW",
+    "cells_valid": true,
+    "note": "90% CI [-1.43,-0.05], MDE 1.20 > 2m: INCONCLUSIVE; sign opposite to ALT-1"
+  },
+  {
+    "number": "Natural-pair DiD on the SAME 400 ids as the MT arm (logit)",
+    "source": "exp1 (recomputed; iter 1 reported only the pp version, -6.0 pp)",
+    "iter1_value": null,
+    "harmonised_value": -0.7487581053803805,
+    "harmonised_ci95": [
+      -1.4196387931556882,
+      -0.08175691383447023
+    ],
+    "readout": "P1_real_or_pooled",
+    "status": "NEW",
+    "cells_valid": true,
+    "note": "pp -6.00; MT-arm logit -0.92: the natural-vs-MT contrast is scale-dependent"
+  },
+  {
+    "number": "exp1 judged refusal rate gemma_it en",
+    "source": "exp1 results/analysis_results.json:outcomes.R_judge.rates.gemma_it|en",
+    "iter1_value": 0.9794103883949462,
+    "harmonised_value": 0.9794103883949462,
+    "harmonised_ci95": null,
+    "readout": "P1_real_or_pooled",
+    "status": "SURVIVES",
+    "cells_valid": true,
+    "note": ""
+  },
+  {
+    "number": "exp1 judged refusal rate gemma_it sl",
+    "source": "exp1 results/analysis_results.json:outcomes.R_judge.rates.gemma_it|sl",
+    "iter1_value": 0.928872250818905,
+    "harmonised_value": 0.928872250818905,
+    "harmonised_ci95": null,
+    "readout": "P1_real_or_pooled",
+    "status": "SURVIVES",
+    "cells_valid": true,
+    "note": ""
+  },
+  {
+    "number": "exp1 judged refusal rate gams3_it en",
+    "source": "exp1 results/analysis_results.json:outcomes.R_judge.rates.gams3_it|en",
+    "iter1_value": 0.9714553111839027,
+    "harmonised_value": 0.9714553111839027,
+    "harmonised_ci95": null,
+    "readout": "P1_real_or_pooled",
+    "status": "SURVIVES",
+    "cells_valid": true,
+    "note": ""
+  },
+  {
+    "number": "exp1 judged refusal rate gams3_it sl",
+    "source": "exp1 results/analysis_results.json:outcomes.R_judge.rates.gams3_it|sl",
+    "iter1_value": 0.8652316331305568,
+    "harmonised_value": 0.8652316331305568,
+    "harmonised_ci95": null,
+    "readout": "P1_real_or_pooled",
+    "status": "SURVIVES",
+    "cells_valid": true,
+    "note": ""
+  },
+  {
+    "number": "C3 G3 (matched first 17 trials)",
+    "source": "exp4 results/analysis.json:C3.matched_first_k_trials.all_pairs.G3.est",
+    "iter1_value": -1.8617339900820202,
+    "harmonised_value": -0.4420263559498748,
+    "harmonised_ci95": [
+      -1.696778313146804,
+      0.7772335141287434
+    ],
+    "readout": "P1_real_or_pooled",
+    "status": "UNCITABLE",
+    "cells_valid": false,
+    "note": ""
+  },
+  {
+    "number": "C3 G3 (lambda curve)",
+    "source": "exp4 results/analysis.json:C3.lambda_curve.G3.est",
+    "iter1_value": -0.9845871221128522,
+    "harmonised_value": -0.43271509338580516,
+    "harmonised_ci95": [
+      -1.2916176451270283,
+      0.5343533764562666
+    ],
+    "readout": "P1_real_or_pooled",
+    "status": "UNCITABLE",
+    "cells_valid": false,
+    "note": ""
+  },
+  {
+    "number": "ALT-4 Sig_EN",
+    "source": "exp4 results/analysis.json:ALT4.prefill_signature.Sig.en.est",
+    "iter1_value": 3.6343535023509563,
+    "harmonised_value": 0.7013940478231859,
+    "harmonised_ci95": [
+      0.3361454360312454,
+      1.1509540802206886
+    ],
+    "readout": "P1_real_or_pooled",
+    "status": "UNCITABLE",
+    "cells_valid": false,
+    "note": ""
+  },
+  {
+    "number": "ALT-4 Sig_SL",
+    "source": "exp4 results/analysis.json:ALT4.prefill_signature.Sig.sl.est",
+    "iter1_value": 1.5382016092012096,
+    "harmonised_value": 1.201391777119715,
+    "harmonised_ci95": [
+      0.905358214519835,
+      1.5027894648368696
+    ],
+    "readout": "P1_real_or_pooled",
+    "status": "UNCITABLE",
+    "cells_valid": false,
+    "note": ""
+  },
+  {
+    "number": "Prefill k=5 flip rate gemma_it en",
+    "source": "exp4 results/analysis.json:ALT4.prefill_depth_curve.gemma_it.en.5",
+    "iter1_value": 0.031088082901554404,
+    "harmonised_value": 0.07161803713527852,
+    "harmonised_ci95": null,
+    "readout": "P1_real_or_pooled",
+    "status": "UNCITABLE",
+    "cells_valid": false,
+    "note": ""
+  },
+  {
+    "number": "Prefill k=5 flip rate gemma_it sl",
+    "source": "exp4 results/analysis.json:ALT4.prefill_depth_curve.gemma_it.sl.5",
+    "iter1_value": 0.5576407506702413,
+    "harmonised_value": 0.3736559139784946,
+    "harmonised_ci95": null,
+    "readout": "P1_real_or_pooled",
+    "status": "UNCITABLE",
+    "cells_valid": false,
+    "note": ""
+  },
+  {
+    "number": "Prefill k=5 flip rate gams3_it en",
+    "source": "exp4 results/analysis.json:ALT4.prefill_depth_curve.gams3_it.en.5",
+    "iter1_value": 0.5585106382978723,
+    "harmonised_value": 0.1356382978723404,
+    "harmonised_ci95": null,
+    "readout": "P1_real_or_pooled",
+    "status": "UNCITABLE",
+    "cells_valid": false,
+    "note": ""
+  },
+  {
+    "number": "Prefill k=5 flip rate gams3_it sl",
+    "source": "exp4 results/analysis.json:ALT4.prefill_depth_curve.gams3_it.sl.5",
+    "iter1_value": 0.8554216867469879,
+    "harmonised_value": 0.6656441717791411,
+    "harmonised_ci95": null,
+    "readout": "P1_real_or_pooled",
+    "status": "UNCITABLE",
+    "cells_valid": false,
+    "note": ""
+  },
+  {
+    "number": "prefill k=5 readout vs blind adjudication (lex (iter-1 frozen lexicon, on the continuation))",
+    "source": "labels/author_gold_prefill5.json (48 items, author model, NOT human)",
+    "iter1_value": null,
+    "harmonised_value": 0.21143473570657997,
+    "harmonised_ci95": null,
+    "readout": "lex (iter-1 frozen lexicon, on the continuation)",
+    "status": "UNCITABLE",
+    "cells_valid": false,
+    "note": "n=43, Po 0.60, PABAK 0.21, readout rate 0.44 vs adjudicated 0.51"
+  },
+  {
+    "number": "prefill k=5 readout vs blind adjudication (native JP2 gemini (Gemma only))",
+    "source": "labels/author_gold_prefill5.json (48 items, author model, NOT human)",
+    "iter1_value": null,
+    "harmonised_value": 0.1666666666666667,
+    "harmonised_ci95": null,
+    "readout": "native JP2 gemini (Gemma only)",
+    "status": "UNCITABLE",
+    "cells_valid": false,
+    "note": "n=20, Po 0.55, PABAK 0.10, readout rate 0.90 vs adjudicated 0.45"
+  },
+  {
+    "number": "prefill k=5 readout vs blind adjudication (P1_sur (P1-only surrogate))",
+    "source": "labels/author_gold_prefill5.json (48 items, author model, NOT human)",
+    "iter1_value": null,
+    "harmonised_value": 0.07127429805615525,
+    "harmonised_ci95": null,
+    "readout": "P1_sur (P1-only surrogate)",
+    "status": "UNCITABLE",
+    "cells_valid": false,
+    "note": "n=43, Po 0.53, PABAK 0.07, readout rate 0.47 vs adjudicated 0.51"
+  },
+  {
+    "number": "prefill k=5 readout vs blind adjudication (pooled_P1)",
+    "source": "labels/author_gold_prefill5.json (48 items, author model, NOT human)",
+    "iter1_value": null,
+    "harmonised_value": 0.3917301414581064,
+    "harmonised_ci95": null,
+    "readout": "pooled_P1",
+    "status": "UNCITABLE",
+    "cells_valid": false,
+    "note": "n=43, Po 0.70, PABAK 0.40, readout rate 0.63 vs adjudicated 0.51"
+  },
+  {
+    "number": "prefill k=5 readout vs blind adjudication (pooled_JP2)",
+    "source": "labels/author_gold_prefill5.json (48 items, author model, NOT human)",
+    "iter1_value": null,
+    "harmonised_value": 0.09723756906077348,
+    "harmonised_ci95": null,
+    "readout": "pooled_JP2",
+    "status": "UNCITABLE",
+    "cells_valid": false,
+    "note": "n=43, Po 0.56, PABAK 0.12, readout rate 0.95 vs adjudicated 0.51"
+  },
+  {
+    "number": "prefill k=5 readout vs blind adjudication (P1_real_or_pooled (primary))",
+    "source": "labels/author_gold_prefill5.json (48 items, author model, NOT human)",
+    "iter1_value": null,
+    "harmonised_value": 0.3917301414581064,
+    "harmonised_ci95": null,
+    "readout": "P1_real_or_pooled (primary)",
+    "status": "UNCITABLE",
+    "cells_valid": false,
+    "note": "n=43, Po 0.70, PABAK 0.40, readout rate 0.63 vs adjudicated 0.51"
+  },
+  {
+    "number": "prefill k=5 readout vs blind adjudication (pooled_P1 continuation-only)",
+    "source": "labels/author_gold_prefill5.json (48 items, author model, NOT human)",
+    "iter1_value": null,
+    "harmonised_value": 0.29353778751369114,
+    "harmonised_ci95": null,
+    "readout": "pooled_P1 continuation-only",
+    "status": "UNCITABLE",
+    "cells_valid": false,
+    "note": "n=43, Po 0.65, PABAK 0.30, readout rate 0.77 vs adjudicated 0.51"
+  },
+  {
+    "number": "Gemma prefill k=5 flip SL (REAL JP2 judge, only real judged depth evidence)",
+    "source": "exp4 results/judge.jsonl (JP2) via this artifact",
+    "iter1_value": 0.5576407506702413,
+    "harmonised_value": 0.14285714285714285,
+    "harmonised_ci95": [
+      0.11090377336037352,
+      0.18213093783496873
+    ],
+    "readout": "native JP2 (Gemma only)",
+    "status": "SHRINKS",
+    "cells_valid": true,
+    "note": "real judge (not P1): lexicon over-counts Gemma SL flips ~4x"
+  },
+  {
+    "number": "ALT-3 TD* (judge)",
+    "source": "exp3 results/analysis.json:primary.TDstar.point",
+    "iter1_value": 0.23044076851851547,
+    "harmonised_value": 0.2714427550546301,
+    "harmonised_ci95": [
+      -0.7737388592680743,
+      1.298314674384399
+    ],
+    "readout": "P1_real_or_pooled",
+    "status": "UNCITABLE",
+    "cells_valid": false,
+    "note": ""
+  },
+  {
+    "number": "exp3 GaMS SL refusal C0",
+    "source": "exp3 results/analysis.json:primary.rates.gams|C0|sl",
+    "iter1_value": 0.8825,
+    "harmonised_value": 0.89,
+    "harmonised_ci95": null,
+    "readout": "P1_real_or_pooled",
+    "status": "UNCITABLE",
+    "cells_valid": false,
+    "note": ""
+  },
+  {
+    "number": "exp3 GaMS SL refusal C1 (late persona ablation)",
+    "source": "exp3 results/analysis.json:primary.rates.gams|C1|sl",
+    "iter1_value": 0.8525,
+    "harmonised_value": 0.865,
+    "harmonised_ci95": null,
+    "readout": "P1_real_or_pooled",
+    "status": "UNCITABLE",
+    "cells_valid": false,
+    "note": ""
+  },
+  {
+    "number": "C1 DiD_id",
+    "source": "exp1 results/analysis_results.json:identity.DiD_id",
+    "iter1_value": 3.219072836739717,
+    "harmonised_value": 3.219072836739717,
+    "harmonised_ci95": [
+      2.3838865461010923,
+      4.384063274503172
+    ],
+    "readout": "P1_real_or_pooled",
+    "status": "SURVIVES",
+    "cells_valid": true,
+    "note": ""
+  },
+  {
+    "number": "C5a excess KL ratio gemma_it",
+    "source": "exp4 results/analysis.json:C5a.gemma_it.norm_matched.excess.est",
+    "iter1_value": 0.2977254896161625,
+    "harmonised_value": 0.2977254896161625,
+    "harmonised_ci95": [
+      0.1543800396781359,
+      0.5622307212826424
+    ],
+    "readout": "P1_real_or_pooled",
+    "status": "SURVIVES",
+    "cells_valid": true,
+    "note": "judge-free"
+  },
+  {
+    "number": "C5a excess KL ratio gams3_it",
+    "source": "exp4 results/analysis.json:C5a.gams3_it.norm_matched.excess.est",
+    "iter1_value": 0.5737496219286979,
+    "harmonised_value": 0.5737496219286979,
+    "harmonised_ci95": [
+      0.40857832394136684,
+      0.796113938850784
+    ],
+    "readout": "P1_real_or_pooled",
+    "status": "SURVIVES",
+    "cells_valid": true,
+    "note": "judge-free"
+  },
+  {
+    "number": "Pareto hypervolume ratio GaMS/Gemma",
+    "source": "exp4 results/analysis.json:ALT4.pareto_hv_ratio_gams_over_gemma.est",
+    "iter1_value": 2.2922335553651765,
+    "harmonised_value": 2.2922335553651765,
+    "harmonised_ci95": [
+      2.0144811290135185,
+      3.3594700925573266
+    ],
+    "readout": "P1_real_or_pooled",
+    "status": "SURVIVES",
+    "cells_valid": true,
+    "note": "judge-free (Heretic objective values)"
+  },
+  {
+    "number": "second-family agreement gemini-P1 vs gpt-4.1-mini-P1 (en)",
+    "source": "exp1 outputs/judge_gpt41mini.jsonl",
+    "iter1_value": null,
+    "harmonised_value": 0.6231573478797302,
+    "harmonised_ci95": null,
+    "readout": "P1 (two families)",
+    "status": "SURVIVES",
+    "cells_valid": true,
+    "note": "Po 0.983, PABAK 0.966, AC1 0.982, n 829"
+  },
+  {
+    "number": "second-family agreement gemini-P1 vs gpt-4.1-mini-P1 (sl+slmt)",
+    "source": "exp1 outputs/judge_gpt41mini.jsonl",
+    "iter1_value": null,
+    "harmonised_value": 0.7238120829414662,
+    "harmonised_ci95": null,
+    "readout": "P1 (two families)",
+    "status": "SURVIVES",
+    "cells_valid": true,
+    "note": "Po 0.936, PABAK 0.873, AC1 0.918, n 881"
+  }
+]
