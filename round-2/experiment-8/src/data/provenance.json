@@ -1,0 +1,34 @@
+{
+  "refuseu": {
+    "repo": "NASK-PIB/RefusEU",
+    "revision": "5523ce30b9",
+    "configs": [
+      "lang_en (train+test) via iter-1 exp4 data/splits/score.jsonl"
+    ],
+    "evaluation_split_loaded": false
+  },
+  "iter1_sources": {
+    "score": "../../../../round-1/experiment-4/src/data/splits/score.jsonl",
+    "trial_probe_excluded": "../../../../round-1/experiment-4/src/data/splits/trial_probe.jsonl",
+    "construct": "../../../../round-1/experiment-4/src/data/splits/construct.jsonl",
+    "frozen_groups": "../../../../round-1/dataset-1/src/outputs/frozen_groups.json"
+  },
+  "mt": {
+    "model": "facebook/nllb-200-distilled-1.3B",
+    "sha": "7be3e24664b38ce1cac29b8aeed6911aa0cf0576",
+    "dtype": "float16",
+    "num_beams": 4,
+    "max_length": 512,
+    "fwd": "eng_Latn->slv_Latn",
+    "back": "slv_Latn->eng_Latn"
+  },
+  "harmless": {
+    "source": "tatsu-lab/alpaca train, instruction-only (empty input), 15-300 chars, sha1(text+seed) order",
+    "harmless100": "ranks 0-99",
+    "harmless_dir400": "ranks 100-499 (A2 direction)",
+    "harmless_dev32": "ranks 500-531 (A2 DEV KL)"
+  },
+  "text_cleaning": "wrapping double quotes of RefusEU prompts stripped for all arms",
+  "seed": 20260924,
+  "seconds": 285.8
+}

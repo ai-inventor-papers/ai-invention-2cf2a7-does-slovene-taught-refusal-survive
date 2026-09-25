@@ -22,8 +22,8 @@ for _d in (DATA, RESULTS, LOGS, FIGS):
     _d.mkdir(parents=True, exist_ok=True)
 
 ITER1 = Path(__file__).resolve().parents[4] / "round-1"
-DATASET_DIR = ITER1 / "gen_art_dataset_1"
-HARMLESS_SRC = ITER1 / "gen_art_experiment_2" / "data" / "alpaca_harmless.jsonl"
+DATASET_DIR = ITER1 / "dataset-1/src"
+HARMLESS_SRC = ITER1 / "experiment-2/src" / "data" / "alpaca_harmless.jsonl"
 
 SEED = 20260924
 

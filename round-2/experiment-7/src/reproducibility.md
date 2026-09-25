@@ -19,8 +19,8 @@ number on a CPU without regenerating anything.
 It also depends on two read-only inputs from earlier artifacts of the same run, which `src/build_items.py` reads by
 absolute path:
 
-* the dataset `…/iter_1/gen_art/gen_art_dataset_1/full_data_out.json` (+ `outputs/split_manifest.json`);
-* the iter-1 experiment_1 data `…/iter_1/gen_art/gen_art_experiment_1/data/{mt_parallel,identity_items}.jsonl`.
+* the dataset `…/round-1/dataset-1/src/full_data_out.json` (+ `outputs/split_manifest.json`);
+* the iter-1 experiment_1 data `…/round-1/experiment-1/src/data/{mt_parallel,identity_items}.jsonl`.
 
 `data/items.jsonl` (sha256 in `data/items_manifest.json`) is the frozen result of that step. You do not need to rebuild it.
 

@@ -1,0 +1,6 @@
+{
+ "written_utc": "2026-09-24T00:26:39.450810+00:00",
+ "status": "written and committed before any FINAL label, score or outcome was inspected (FINAL judge ledgers exist but have not been read by any analysis; no analysis/scorer output on FINAL labels exists)",
+ "event": "At 00:25:07 UTC the run's OpenRouter relay began returning HTTP 404 (empty body) on chat/completions while /models answered 200. The FINAL gemini sweep had 11,146/19,660 labels (job order: all GaMS rows, then Gemma rows in generation order); gpt-4.1 second-family and identity sweeps had not run.",
+ "D5_final_contingency": "The FINAL judge sweep is resumed (ledger skip-done) whenever the relay answers. If the gemini FINAL sweep is still incomplete at 02:45 UTC, FINAL primaries switch to the local Qwen3-14B labels for ALL FINAL refusal rows (both models, every arm, so the DiD compares like with like; protocol/primary_judge.json), results are labelled 'substitute judge', and gemini labels are reported only as agreement on the rows they cover. Identity C1 would then use the $0 regex self-name detector as primary (the pre-registered secondary readout), because Qwen3 is self-biased on identity (logs/qwen3_identity_selfbias_probe_dev40.jsonl). The switch depends on availability only."
+}

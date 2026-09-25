@@ -21,9 +21,9 @@ for _d in (DATA, GENS, LABELS, RESULTS, FIGS, LOGS, GENS / "pilot"):
     _d.mkdir(parents=True, exist_ok=True)
 
 RUN = Path(__file__).resolve().parents[4]
-DATASET_DIR = RUN / "iter_1/gen_art/gen_art_dataset_1"
-EXP1_DIR = RUN / "iter_1/gen_art/gen_art_experiment_1"
-EXP4_DIR = RUN / "iter_1/gen_art/gen_art_experiment_4"
+DATASET_DIR = RUN / "round-1/dataset-1/src"
+EXP1_DIR = RUN / "round-1/experiment-1/src"
+EXP4_DIR = RUN / "round-1/experiment-4/src"
 
 SEED = 20260924
 N_BOOT = 2000
