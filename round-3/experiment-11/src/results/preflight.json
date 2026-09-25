@@ -1,0 +1,127 @@
+{
+ "utc": "2026-09-24T06:28:06.321053+00:00",
+ "paths": {
+  "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_1/gen_art/gen_art_dataset_1/full_data_out.json": {
+   "exists": true,
+   "bytes": 35064061,
+   "sha256": "35c98bc5d5336829af33a341d3d8b92a83d696e99a530ee5bc947d262c30803c"
+  },
+  "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_1/gen_art/gen_art_dataset_1/outputs/split_manifest.json": {
+   "exists": true,
+   "bytes": 150013,
+   "sha256": "ab5e3f0ba2263f2334fbbe90d7fa617a598e3e200ea39fae121afe8a57fb33cf"
+  },
+  "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_2/gen_art/gen_art_experiment_5/data/refuseu_x.jsonl": {
+   "exists": true,
+   "bytes": 1809388,
+   "sha256": "329eceb46ed50590d48f1ca914d62c55e07e2f38b91af8a440ce6f28e06e5b15"
+  },
+  "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_2/gen_art/gen_art_experiment_5/data/hard.jsonl": {
+   "exists": true,
+   "bytes": 2707078,
+   "sha256": "68beac563f67d4257036dec41e711e94ddf201a8e54420dc1029a9340bd8b3d4"
+  },
+  "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_2/gen_art/gen_art_experiment_5/data/identity.jsonl": {
+   "exists": true,
+   "bytes": 176831,
+   "sha256": "f484b27682755ca62d6bf424f52ffa992e05ccc06ce06b73b45fd80f2467771c"
+  },
+  "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_2/gen_art/gen_art_experiment_5/outputs/final/gen_gemma_it.jsonl": {
+   "exists": true,
+   "bytes": 14289275,
+   "sha256": "c2e311209368bb2aeddde25940e23d8ba8f99e9303ef9bd17dfa92b56e79f2e1"
+  },
+  "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_2/gen_art/gen_art_experiment_5/outputs/final/gen_gams3_it.jsonl": {
+   "exists": true,
+   "bytes": 12057008,
+   "sha256": "c26ee620c763b0cb6b2330fe751461f243ce03cb300010a4f685d453357a49e8"
+  },
+  "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_2/gen_art/gen_art_experiment_5/outputs/final/labels_refusal.jsonl": {
+   "exists": true,
+   "bytes": 4153721,
+   "sha256": "0f99af2c7131f20e1fa28480af7ba9b756ab11351c11800c65023b6c75a5fe60"
+  },
+  "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_2/gen_art/gen_art_experiment_5/results/analysis_final.json": {
+   "exists": true,
+   "bytes": 133953,
+   "sha256": "a83c754c520444e9cad7a242bdc2d61e0207945e20e7eafc6814c173c3e4a1fe"
+  },
+  "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/items_final.jsonl": {
+   "exists": true,
+   "bytes": 25803834,
+   "sha256": "be5c7309d52f44934efdf926bbb54ab3ea5ec4bab3eed76d196384642a70e492"
+  },
+  "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/data/probe_P200.jsonl": {
+   "exists": true,
+   "bytes": 253457,
+   "sha256": "e152fe5430810a82ba3686a736fe8e89ad4c7a530f0d849d52dc5e36a77b0d63"
+  },
+  "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_1/gen_art/gen_art_experiment_4/results/gemma_it/selected_adapter/adapter_model.safetensors": {
+   "exists": true,
+   "bytes": 15658432,
+   "sha256": "84671c8ec5c134cb07eba70933693a81b77379e1a1a10100288ec603e3018377"
+  },
+  "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_1/gen_art/gen_art_experiment_4/results/gams3_it/selected_adapter/adapter_model.safetensors": {
+   "exists": true,
+   "bytes": 15655552,
+   "sha256": "514b29020cb80eed365cf892b4cd1e78988c2f54c11ab80e04a1d3f77e1469de"
+  },
+  "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_2/gen_art/gen_art_evaluation_1/labels/harmonised_P1.jsonl.gz": {
+   "exists": true,
+   "bytes": 3639792,
+   "sha256": "26bec2498b68cfd78ca9a917a94cc2bbfd039ccdbc3e51524f5d88f9e98c5c6c"
+  }
+ },
+ "openrouter_probe": {
+  "google/gemini-2.5-flash": {
+   "http": 403,
+   "error_code": "aii_run_budget_exhausted",
+   "body_head": "{\"error\": {\"code\": \"aii_run_budget_exhausted\", \"message\": \"AI Inventor per-run OpenRouter budget reached for Test idea: $7.02 of $7.00 spent by this run in that phase. This is AI Inventor's internal limit, not an OpenRouter credit or rate limit. It does not reset while this run goes on: retrying will not help. Free models (':free') still work; the user can raise the Test idea budget in Configure a"
+  },
+  "openai/gpt-4.1-mini": {
+   "http": 403,
+   "error_code": "aii_run_budget_exhausted",
+   "body_head": "{\"error\": {\"code\": \"aii_run_budget_exhausted\", \"message\": \"AI Inventor per-run OpenRouter budget reached for Test idea: $7.02 of $7.00 spent by this run in that phase. This is AI Inventor's internal limit, not an OpenRouter credit or rate limit. It does not reset while this run goes on: retrying will not help. Free models (':free') still work; the user can raise the Test idea budget in Configure a"
+  }
+ },
+ "judge_mode": "local",
+ "sibling_selected_adapters": [],
+ "edit_source": "iter1_exp4_selected_adapter",
+ "gpu": "NVIDIA L4, 23034 MiB",
+ "disk_free_gb": 628606.6,
+ "public_checkpoints": {
+  "pew_heretic": {
+   "repo": "p-e-w/gemma-3-12b-it-heretic",
+   "revision": "e037e6e112ea85777fc3858469cdc31fdfceaa13",
+   "local_dir_exists": true,
+   "architectures": [
+    "Gemma3ForConditionalGeneration"
+   ],
+   "torch_dtype": "bfloat16",
+   "safetensors_gb": 24.4,
+   "own_chat_template_sha1": "3f7731dd04d6fb3e41478bea860489dac5c6115c"
+  },
+  "huihui": {
+   "repo": "huihui-ai/gemma-3-12b-it-abliterated",
+   "revision": "33b9e7402b3d8b396afdd9a3cfcefe391bf7a696",
+   "local_dir_exists": true,
+   "architectures": [
+    "Gemma3ForConditionalGeneration"
+   ],
+   "torch_dtype": "bfloat16",
+   "safetensors_gb": 24.4,
+   "own_chat_template_sha1": "3f7731dd04d6fb3e41478bea860489dac5c6115c"
+  },
+  "mlabonne_v2": {
+   "repo": "mlabonne/gemma-3-12b-it-abliterated-v2",
+   "revision": "b8ae69bd7844187c27c941785afc1b0919f91f8e",
+   "local_dir_exists": true,
+   "architectures": [
+    "Gemma3ForCausalLM"
+   ],
+   "torch_dtype": "float32",
+   "safetensors_gb": 47.1,
+   "own_chat_template_sha1": "3f7731dd04d6fb3e41478bea860489dac5c6115c"
+  }
+ }
+}

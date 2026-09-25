@@ -1,0 +1,33 @@
+{
+ "l3": {
+  "nllb": "hun_Latn",
+  "belebele": "hun_Latn",
+  "iso": "hu",
+  "name": "Hungarian"
+ },
+ "mt_system": "facebook/nllb-200-distilled-1.3B beam 4, sentence-split (dataset lib/mt.py settings); BT = same NLLB hun->eng (QC only; a self-consistent round trip, so chrF is optimistic)",
+ "refuseu_x_chrf": {
+  "n": 1394,
+  "median": 74.34,
+  "p10": 62.64,
+  "share_lt40": 0.0007
+ },
+ "hard_chrf": {
+  "n": 896,
+  "median": 67.58,
+  "p10": 46.41,
+  "share_lt40": 0.0446
+ },
+ "refuseu_x_SL_bt_chrf_reference": {
+  "n": 1394,
+  "median": 74.07,
+  "p10": 62.53,
+  "share_lt40": 0.0
+ },
+ "n_l3_fragile": 41,
+ "n_bt_halluc_gt1.5x": 0,
+ "langid": {
+  "HUNGARIAN": 2290
+ },
+ "gate_median_ge_60": true
+}
