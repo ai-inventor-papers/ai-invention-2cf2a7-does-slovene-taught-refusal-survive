@@ -1,0 +1,57 @@
+{
+ "support": {
+  "gemma_it": {
+   "n_lo_[0.2,0.5)": 5,
+   "n_hi_(0.5,0.8]": 5,
+   "pass": true
+  },
+  "gams3_it": {
+   "n_lo_[0.2,0.5)": 5,
+   "n_hi_(0.5,0.8]": 5,
+   "pass": true
+  },
+  "pass_both": true
+ },
+ "sanity": {
+  "max_degeneracy": 0.0011904761904761906,
+  "template_leak_total": 0,
+  "min_sl_lang_consistency": 0.9976190476190476,
+  "gate_degeneracy_lt_10pct": true,
+  "gate_lang_consistency_ge_95": true,
+  "gate_template_leak_0": true,
+  "manipulation_check": {
+   "gemma_it": {
+    "p_en_lam0": 0.98,
+    "p_en_max": 0.14666666666666667,
+    "lambda_max": 2.0,
+    "relative_cut": 0.8503401360544218,
+    "pass_ge_50pct": true,
+    "steps_outside_exp12_catastrophe_gate_(lambda>1.5)": [
+     1.5603,
+     1.6986,
+     1.8566,
+     2.0
+    ]
+   },
+   "gams3_it": {
+    "p_en_lam0": 0.9633333333333334,
+    "p_en_max": 0.12666666666666668,
+    "lambda_max": 1.5375,
+    "relative_cut": 0.8685121107266436,
+    "pass_ge_50pct": true,
+    "steps_outside_exp12_catastrophe_gate_(lambda>1.5)": [
+     1.5375
+    ]
+   }
+  }
+ },
+ "judge_validity": {
+  "gate_kappa_edited_ge_0.6": false,
+  "gate_Sp_SL_edited_ge_0.8": false,
+  "Sp_SL_edited": {
+   "gams3_it|sl|edited": 0.6153846153846154,
+   "gemma_it|sl|edited": 0.5476190476190477
+  },
+  "gates_pass": false
+ }
+}
