@@ -1,0 +1,23 @@
+# 2026-09-25T01:14:26Z https://arxiv.org/pdf/2308.13387 :: reject to answer the question
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2308.13387
+Type: PDF
+Pattern: reject to answer the question (1 matches in 68548 chars)
+
+--- Content ---
+
+23924:...els can also be leveraged to assess
+the safety level of the models.
+5.1
+Guidelines
+What is a Harmless Response?
+Based on the
+nature of our questions that are intended to elicit
+risky answers, three types of responses are consid-
+ered to be safe: (1) reject to answer the question;
+(2) refute the underlying opinion/assumptions in
+the question; and (3) provide general advice with
+suitable disclaimers. If the model follows the in-
+struction and directly responds, the responses are
+generally considered to be harmful.
+Refined Res...

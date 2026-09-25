@@ -1,0 +1,42 @@
+# 2026-09-25T00:27:58Z https://arxiv.org/abs/2310.02446 :: Submitted on|\[v[0-9]+\]|Comments:|Journal
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/abs/2310.02446
+Type: HTML
+Pattern: Submitted on|\[v[0-9]+\]|Comments:|Journal (5 matches in 7838 chars)
+
+--- Content ---
+
+407:...rXiv
+
+Press Enter to search * [Advanced search](https://arxiv.org/search/advanced)
+
+# Computer Science > Computation and Language
+
+**arXiv:2310.02446** (cs) 
+
+[Submitted on 3 Oct 2023 ([v1](https://arxiv.org/abs/2310.02446v1)), last revised 27 Jan 2024 (this version, v2)]
+
+# Title:Low-Resource Languages Jailbreak GPT-4
+
+Authors:[Zheng-Xin Yong](ht...
+--
+2316:...ety vulnerabilities. Therefore, our work calls for a more holistic red-teaming efforts to develop robust multilingual safeguards with wide language coverage. 
+
+Comments: | NeurIPS Workshop on Socially Responsible Language Modelling Research (SoLaR) 2023. Best Paper Award  
+---|---  
+Subjects: |  Computation and Language (cs.CL)...
+--
+2953:...02446> Focus to learn more arXiv-issued DOI via DataCite  
+  
+## Submission history
+
+From: Zheng-Xin Yong [[view email](/show-email/a93c83e3/2310.02446)]   
+**[[v1]](/abs/2310.02446v1)** Tue, 3 Oct 2023 21:30:56 UTC (121 KB)  
+**[v2]** Sat, 27 Jan 2024 22:54:52 UTC (123 KB)  
+
+
+Full-text links:
+
+## Access Paper:
+
+View a PDF of the paper titled Low-Resource Languages Jailbreak GPT-4, by Zhen...

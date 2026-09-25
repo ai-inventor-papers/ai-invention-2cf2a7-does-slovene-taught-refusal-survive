@@ -1,0 +1,8 @@
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/abs/2605.31381
+Type: HTML
+Pattern: can be impacted by the language of the content and its lingu (1 matches in 7509 chars)
+
+--- Content ---
+
+1731:...antly by the chosen safety criteria and can be impacted by the language of the content and its linguistic style as well. Finally, there is h...

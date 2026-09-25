@@ -1,0 +1,35 @@
+# 2026-09-25T00:27:58Z https://arxiv.org/abs/2606.01196 :: Submitted on|\[v[0-9]+\]|Comments:|Journal
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/abs/2606.01196
+Type: HTML
+Pattern: Submitted on|\[v[0-9]+\]|Comments:|Journal (2 matches in 7830 chars)
+
+--- Content ---
+
+407:...rXiv
+
+Press Enter to search * [Advanced search](https://arxiv.org/search/advanced)
+
+# Computer Science > Computation and Language
+
+**arXiv:2606.01196** (cs) 
+
+[Submitted on 31 May 2026]
+
+# Title:Low-Resource Safety Failures Are Action Failures, Not Representation Failures
+
+Authors:[Rashad Aziz](https://arxiv.org/search/cs?searchty...
+--
+2986:...606.01196> Focus to learn more arXiv-issued DOI via DataCite  
+  
+## Submission history
+
+From: Rashad Aziz [[view email](/show-email/21bb5e55/2606.01196)]   
+**[v1]** Sun, 31 May 2026 12:19:40 UTC (3,114 KB)  
+
+
+Full-text links:
+
+## Access Paper:
+
+View a PDF of the paper titled Low-Resource Safety Failures Are Action Failu...

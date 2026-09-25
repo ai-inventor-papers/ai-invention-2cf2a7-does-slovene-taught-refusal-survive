@@ -1,0 +1,45 @@
+# 2026-09-25T00:27:58Z https://arxiv.org/abs/2310.06474 :: Submitted on|\[v[0-9]+\]|Comments:|Journal
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/abs/2310.06474
+Type: HTML
+Pattern: Submitted on|\[v[0-9]+\]|Comments:|Journal (6 matches in 8261 chars)
+
+--- Content ---
+
+407:...rXiv
+
+Press Enter to search * [Advanced search](https://arxiv.org/search/advanced)
+
+# Computer Science > Computation and Language
+
+**arXiv:2310.06474** (cs) 
+
+[Submitted on 10 Oct 2023 ([v1](https://arxiv.org/abs/2310.06474v1)), last revised 4 Mar 2024 (this version, v3)]
+
+# Title:Multilingual Jailbreak Challenges in Large Language Models
+
+Authors:...
+--
+2927:...substantial reduction in unsafe content generation. Data is available at \url{[this https URL](https://github.com/DAMO-NLP-SG/multilingual-safety-for-LLMs)}. 
+
+Comments: | ICLR 2024  
+---|---  
+Subjects: |  Computation and Language (cs.CL)  
+Cite as: | [arXiv:2310.06474](https://arxiv.org/abs/2310.06474) [cs.CL]  
+  | (or  [arX...
+--
+3374:....2310.06474> Focus to learn more arXiv-issued DOI via DataCite  
+  
+## Submission history
+
+From: Yue Deng [[view email](/show-email/cc794288/2310.06474)]   
+**[[v1]](/abs/2310.06474v1)** Tue, 10 Oct 2023 09:44:06 UTC (375 KB)  
+**[[v2]](/abs/2310.06474v2)** Wed, 28 Feb 2024 08:28:35 UTC (703 KB)  
+**[v3]** Mon, 4 Mar 2024 04:03:54 UTC (703 KB)  
+
+
+Full-text links:
+
+## Access Paper:
+
+View a PDF of the paper titled Multilingual Jailbreak Challenges in Large Langu...

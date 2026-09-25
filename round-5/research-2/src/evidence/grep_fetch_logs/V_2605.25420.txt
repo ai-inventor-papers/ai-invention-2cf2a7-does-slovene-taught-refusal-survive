@@ -1,0 +1,38 @@
+# 2026-09-25T00:27:58Z https://arxiv.org/abs/2605.25420 :: Submitted on|\[v[0-9]+\]|Comments:|Journal
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/abs/2605.25420
+Type: HTML
+Pattern: Submitted on|\[v[0-9]+\]|Comments:|Journal (5 matches in 8083 chars)
+
+--- Content ---
+
+407:...rXiv
+
+Press Enter to search * [Advanced search](https://arxiv.org/search/advanced)
+
+# Computer Science > Computation and Language
+
+**arXiv:2605.25420** (cs) 
+
+[Submitted on 25 May 2026 ([v1](https://arxiv.org/abs/2605.25420v1)), last revised 13 Aug 2026 (this version, v2)]
+
+# Title:SomaliBench Eval: Measuring English-to-Somali Refusal Gaps in Open-...
+--
+2347:...es, category gaps, and reliability statistics only; raw model generations are retained locally and are not released because some may contain harmful content. 
+
+Comments: | v2: prose rewritten; classification-pipeline correction (34 judge-declined rows manually labeled); paired bootstrap and McNemar statistics; LLM-use disclosur...
+--
+3049:...Focus to learn more arXiv-issued DOI via DataCite  
+  
+## Submission history
+
+From: Khalid Yusuf Dahir Mr [[view email](/show-email/f9fb3b26/2605.25420)]   
+**[[v1]](/abs/2605.25420v1)** Mon, 25 May 2026 04:45:44 UTC (33 KB)  
+**[v2]** Thu, 13 Aug 2026 19:18:23 UTC (36 KB)  
+
+
+Full-text links:
+
+## Access Paper:
+
+View a PDF of the paper titled SomaliBench Eval: Measuring English-to-Somali Re...

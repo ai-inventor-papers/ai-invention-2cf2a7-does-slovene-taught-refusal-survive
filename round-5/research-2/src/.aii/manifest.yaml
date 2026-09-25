@@ -1,0 +1,2 @@
+# No heavy binaries or caches in this workspace: text logs, JSON and markdown only (all under the 10 MB auto-keep floor).
+entries: []

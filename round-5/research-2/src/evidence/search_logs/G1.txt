@@ -1,0 +1,45 @@
+# 2026-09-25T00:21:12Z general :: jailbreak "respond in" OR "answer in" language attack response language multilingual arxiv
+Search: jailbreak "respond in" OR "answer in" language attack response language multilingual arxiv  [general via ddgs]
+Found: 10 results
+
+1. A Cross-Language Investigation into Jailbreak Attacks in Large Language Models
+   https://arxiv.org/pdf/2401.16765
+   response like, “I’m sorry, but I cannot assist with that request.” · Evaluation Metric. Consistent with our previous methodology, we · continue to employ the Attack Success Rate (ASR) as the primary ·...
+
+2. [2401.16765] A Cross-Language Investigation into Jailbreak Attacks in Large Language Models
+   https://arxiv.org/abs/2401.16765
+   January 30, 2024 - We developed a novel semantic-preserving algorithm to create a multilingual jailbreak dataset and conducted an exhaustive evaluation on both widely-used open-source and commercial L...
+
+3. Multilingual Jailbreak Challenges in Large Language Models
+   https://arxiv.org/html/2310.06474v3
+   On the other hand, the intentional scenario involves malicious users deliberately combining malicious instructions with multilingual prompts to launch targeted attacks against LLMs. Considering these ...
+
+4. Do Methods to Jailbreak and Defend LLMs Generalize Across Languages?
+   https://arxiv.org/html/2511.00689
+   November 4, 2025 - While high-resource languages tend to be safer under standard queries, they become more vulnerable to jailbreaks, suggesting that linguistic proficiency may amplify rather than miti...
+
+5. Defending Large Language Models against Jailbreak Attacks via Semantic Smoothing Content Warning: This paper contains examples of harmful language.
+   https://arxiv.org/html/2402.16192v2
+   February 28, 2024 - The keyword-matching approach (Zou ... to respond, such as “I’m sorry”, “As an AI language model”, and “I cannot”. If the response does not contain any key phrases, it is considere...
+
+6. Jailbreak Attacks and Defenses Against Large Language Models: A Survey
+   https://arxiv.org/html/2407.04295v2
+   Motivated by this result, they employ this encoding technique to craft jailbreaking prompts. For instance, they create a mapping of unsafe words to safe words and compose the prompts using these mappe...
+
+7. Jailbreaking and Mitigation of Vulnerabilities in Large Language Models
+   https://arxiv.org/html/2410.15236v1
+   October 20, 2024 - Attackers exploit these linguistic ... from multilingual LLMs. A common strategy uese translating harmful prompts from high-resource to low-resource languages. This strategy is effe...
+
+8. [2310.06474] Multilingual Jailbreak Challenges in Large Language Models
+   https://ar5iv.labs.arxiv.org/html/2310.06474
+   On the other hand, the intentional scenario involves malicious users deliberately combining malicious instructions with multilingual prompts to launch targeted attacks against LLMs. Considering these ...
+
+9. Cross-Lingual Jailbreak Detection via Semantic Codebooks
+   https://arxiv.org/html/2604.25716
+   April 28, 2026 - We examined whether cross-lingual jailbreak attacks can be mitigated using a fixed English semantic codebook combined with multilingual sentence embeddings. Our experiments reveal a c...
+
+10. A Comprehensive Study of Jailbreak Attack versus Defense for Large Language Models
+   https://arxiv.org/html/2402.13457v2
+   May 17, 2024 - Multilingual jailbreak challenges in large language models. arXiv preprint arXiv:2310.06474. Dong et al. (2023) Hanze Dong, Wei Xiong, Deepanshu Goyal, Rui Pan, Shizhe Diao, Jipeng Zhan...
+
+
