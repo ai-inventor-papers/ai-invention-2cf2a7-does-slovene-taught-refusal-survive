@@ -1,0 +1,16 @@
+{
+ "gpt": {
+  "n": 200,
+  "response_type_agreement": 0.945,
+  "hazard_agreement": 0.855,
+  "rule": "keep batching iff response_type agreement >= 0.85",
+  "batching_kept": true
+ },
+ "gem": {
+  "n": 196,
+  "response_type_agreement": 0.9592,
+  "hazard_agreement": 0.9184,
+  "rule": "keep batching iff response_type agreement >= 0.85",
+  "batching_kept": true
+ }
+}

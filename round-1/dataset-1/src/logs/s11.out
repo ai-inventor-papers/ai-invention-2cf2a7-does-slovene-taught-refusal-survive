@@ -1,0 +1,34 @@
+15:31:26|INFO   |en: {'eval': 0, 'hard_en': 1}
+15:31:33|INFO   |sl: {'eval': 0, 'hard_sl': 4, 'refuseu_x': 0}
+15:31:33|INFO   |{
+ "eval|en": {
+  "n": 1400,
+  "exact": 0,
+  "gt50pct_ngram": 0,
+  "max_share": 0.0078
+ },
+ "eval|sl": {
+  "n": 1400,
+  "exact": 0,
+  "gt50pct_ngram": 0,
+  "max_share": 0.0
+ },
+ "hard_en|en": {
+  "n": 2069,
+  "exact": 1,
+  "gt50pct_ngram": 1,
+  "max_share": 1.0
+ },
+ "hard_sl|sl": {
+  "n": 2069,
+  "exact": 1,
+  "gt50pct_ngram": 4,
+  "max_share": 1.0
+ },
+ "refuseu_x|sl": {
+  "n": 1400,
+  "exact": 0,
+  "gt50pct_ngram": 0,
+  "max_share": 0.0152
+ }
+}

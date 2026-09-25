@@ -1,0 +1,49 @@
+{
+ "en": {
+  "N_total_dedup": 17880,
+  "N_flagged": 752,
+  "N_unflagged": 17128,
+  "N_kw_hit": 188,
+  "N_kw_nohit": 16940,
+  "srs_n": 1000,
+  "srs_from_stage0": 299,
+  "srs_kw_hits": 7,
+  "oversample_n": 181,
+  "n_kw_hit_total": 188,
+  "n_kw_nohit": 993,
+  "weight_kw_hit": 1.0,
+  "weight_kw_nohit": 17.05941591137966
+ },
+ "sl": {
+  "N_total_dedup": 78596,
+  "N_flagged": 2405,
+  "N_unflagged": 76191,
+  "N_kw_hit": 480,
+  "N_kw_nohit": 75711,
+  "srs_n": 1000,
+  "srs_from_stage0": 300,
+  "srs_kw_hits": 10,
+  "oversample_n": 400,
+  "n_kw_hit_total": 410,
+  "n_kw_nohit": 990,
+  "weight_kw_hit": 1.170731707317073,
+  "weight_kw_nohit": 76.47575757575757
+ },
+ "n_rows_to_label": {
+  "flagged": 3157,
+  "unflagged_srs": 2000,
+  "unflagged_kw_oversample": 581,
+  "gams_safe05": 501
+ },
+ "keyword_lexicon_sha256": "5bff76891725257e77f0e530f934e78340f3a8755da533eea1fa2dec4f457a80",
+ "released_vs_trained_note": "The GaMS3 checkpoint card reports 88,126 training rows; the released dataset has 97915 rows (96476 after conversation_id dedup). Dose = public mix, not proven exposure.",
+ "n_raw": 97915,
+ "n_dedup": 96476,
+ "duplicate_copies_by_flag_lang": {
+  "unflagged_en": 383,
+  "unflagged_sl": 254,
+  "flagged_en": 328,
+  "flagged_sl": 474
+ },
+ "max_multiplicity": 191
+}

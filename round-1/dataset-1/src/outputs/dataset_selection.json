@@ -1,0 +1,629 @@
+{
+ "n_searches": 50,
+ "n_unique_hits": 183,
+ "candidates": [
+  {
+   "id": "NASK-PIB/RefusEU",
+   "downloads": 56,
+   "likes": 0,
+   "gated": false,
+   "license": [
+    "license:llama3.1"
+   ],
+   "arxiv": [],
+   "num_rows": 86136,
+   "size_bytes_parquet": 158527573,
+   "columns": [
+    "row_id",
+    "lang",
+    "prompt"
+   ],
+   "decision": "KEEP",
+   "reason": "Primary reserved eval split (1,400 EN + 1,400 SL) + gold lang_*/train/test for calibration. Low HF downloads (56) but documented by arXiv 2606.07535 (Findings ACL 2026) and required by the study design (SCREEN-SPEC v1). Licence 'to be specified' (tag llama3.1) -> research use, flagged."
+  },
+  {
+   "id": "cjvt/GaMS-Nemotron-Chat",
+   "downloads": 34,
+   "likes": 0,
+   "gated": false,
+   "license": [],
+   "arxiv": [],
+   "num_rows": 97915,
+   "size_bytes_parquet": 172074390,
+   "columns": [
+    "conversation_id",
+    "prompt",
+    "completion",
+    "ds_name",
+    "ds_split",
+    "language",
+    "category",
+    "identity"
+   ],
+   "decision": "KEEP",
+   "reason": "Public SFT mix of the GaMS3 checkpoint under study; the dose-audit population. Low downloads (34) but it is the model developer's own release (GaMS3 collection card)."
+  },
+  {
+   "id": "cjvt/GaMS-Instruct",
+   "downloads": 9,
+   "likes": 0,
+   "gated": "manual",
+   "license": [
+    "license:cc-by-nc-4.0"
+   ],
+   "arxiv": [
+    "arxiv:2603.01691"
+   ],
+   "num_rows": null,
+   "size_bytes_parquet": null,
+   "columns": [],
+   "decision": "DISCARD",
+   "reason": "Gated (manual approval, CC-BY-NC); plan step 6d optional regex scan NOT possible -> logged as not scanned."
+  },
+  {
+   "id": "Paul/XSTest",
+   "downloads": 4537,
+   "likes": 5,
+   "gated": false,
+   "license": [
+    "license:cc-by-4.0"
+   ],
+   "arxiv": [],
+   "num_rows": 450,
+   "size_bytes_parquet": 19768,
+   "columns": [
+    "id",
+    "prompt",
+    "type",
+    "label",
+    "focus",
+    "note"
+   ],
+   "decision": "KEEP",
+   "reason": "Standard exaggerated-safety set (Röttger et al. NAACL 2024, arXiv 2308.01263), 250 safe + 200 unsafe, CC-BY-4.0."
+  },
+  {
+   "id": "natolambert/xstest-v2-copy",
+   "downloads": 4531,
+   "likes": 7,
+   "gated": false,
+   "license": [
+    "license:cc-by-4.0"
+   ],
+   "arxiv": [
+    "arxiv:2308.01263"
+   ],
+   "num_rows": 2700,
+   "size_bytes_parquet": 930253,
+   "columns": [
+    "id",
+    "type",
+    "prompt",
+    "completion",
+    "annotation_1",
+    "annotation_2",
+    "agreement",
+    "final_label"
+   ],
+   "decision": "DISCARD (fallback only)",
+   "reason": "Same 450 prompts as Paul/XSTest; downloaded as the plan's fallback, not needed."
+  },
+  {
+   "id": "walledai/XSTest",
+   "downloads": 7662,
+   "likes": 27,
+   "gated": "auto",
+   "license": [
+    "license:cc-by-4.0"
+   ],
+   "arxiv": [
+    "arxiv:2308.01263"
+   ],
+   "num_rows": null,
+   "size_bytes_parquet": null,
+   "columns": [],
+   "decision": "DISCARD",
+   "reason": "Gated (auto) duplicate of XSTest."
+  },
+  {
+   "id": "bench-llm/or-bench",
+   "downloads": 9371,
+   "likes": 22,
+   "gated": false,
+   "license": [
+    "license:cc-by-4.0"
+   ],
+   "arxiv": [],
+   "num_rows": 82333,
+   "size_bytes_parquet": 5485491,
+   "columns": [
+    "prompt",
+    "category"
+   ],
+   "decision": "KEEP",
+   "reason": "Standard over-refusal benchmark (Cui et al., arXiv 2405.20947), hard-1k (1,319 rows at the pinned sha; plan said 1,320) + toxic (655; 300 stratified sample). CC-BY-4.0."
+  },
+  {
+   "id": "OpenAssistant/oasst2",
+   "downloads": 17124,
+   "likes": 303,
+   "gated": false,
+   "license": [
+    "license:apache-2.0"
+   ],
+   "arxiv": [
+    "arxiv:2304.07327"
+   ],
+   "num_rows": 135174,
+   "size_bytes_parquet": 66674129,
+   "columns": [
+    "message_id",
+    "parent_id",
+    "user_id",
+    "created_date",
+    "text",
+    "role",
+    "lang",
+    "review_count",
+    "review_result",
+    "deleted",
+    "rank",
+    "synthetic",
+    "model_name",
+    "detoxify",
+    "message_tree_id",
+    "tree_state",
+    "emojis",
+    "labels"
+   ],
+   "decision": "KEEP",
+   "reason": "Real user phrasings for identity/control seeds (Köpf et al., arXiv 2304.07327), Apache-2.0. Contains no Slovene prompter messages."
+  },
+  {
+   "id": "OpenAssistant/oasst1",
+   "downloads": 53103,
+   "likes": 1580,
+   "gated": false,
+   "license": [
+    "license:apache-2.0"
+   ],
+   "arxiv": [
+    "arxiv:2304.07327"
+   ],
+   "num_rows": 88838,
+   "size_bytes_parquet": 41596430,
+   "columns": [
+    "message_id",
+    "parent_id",
+    "user_id",
+    "created_date",
+    "text",
+    "role",
+    "lang",
+    "review_count",
+    "review_result",
+    "deleted",
+    "rank",
+    "synthetic",
+    "model_name",
+    "detoxify",
+    "message_tree_id",
+    "tree_state",
+    "emojis",
+    "labels"
+   ],
+   "decision": "DISCARD",
+   "reason": "Subset of oasst2; not needed."
+  },
+  {
+   "id": "samolego/OASST1-slovene",
+   "downloads": 21,
+   "likes": 0,
+   "gated": false,
+   "license": [],
+   "arxiv": [],
+   "num_rows": 84110,
+   "size_bytes_parquet": 27643869,
+   "columns": [
+    "message_id",
+    "parent_id",
+    "user_id",
+    "created_date",
+    "text",
+    "role",
+    "lang",
+    "review_count",
+    "review_result",
+    "deleted",
+    "rank",
+    "synthetic",
+    "model_name",
+    "detoxify",
+    "message_tree_id",
+    "tree_state",
+    "emojis",
+    "labels"
+   ],
+   "decision": "DISCARD",
+   "reason": "MT of OASST1 with no card, 21 downloads (red flags); not a source of real Slovene phrasings."
+  },
+  {
+   "id": "DAMO-NLP-SG/MultiJail",
+   "downloads": 1073,
+   "likes": 12,
+   "gated": false,
+   "license": [
+    "license:mit"
+   ],
+   "arxiv": [
+    "arxiv:2310.06474"
+   ],
+   "num_rows": 315,
+   "size_bytes_parquet": 194150,
+   "columns": [
+    "id",
+    "source",
+    "tags",
+    "en",
+    "zh",
+    "it",
+    "vi",
+    "ar",
+    "ko",
+    "th",
+    "bn",
+    "sw",
+    "jv"
+   ],
+   "decision": "DISCARD (reference only)",
+   "reason": "No Slovene; 315 items; saturated MT jailbreak set. Downloaded for reference, not used."
+  },
+  {
+   "id": "CohereLabs/aya_redteaming",
+   "downloads": 1159,
+   "likes": 37,
+   "gated": false,
+   "license": [
+    "license:apache-2.0"
+   ],
+   "arxiv": [
+    "arxiv:2406.18682"
+   ],
+   "num_rows": null,
+   "size_bytes_parquet": null,
+   "columns": [],
+   "decision": "DISCARD (reference only)",
+   "reason": "No Slovene (Serbian closest); human red-teaming prompts; not needed for the frozen design."
+  },
+  {
+   "id": "ToxicityPrompts/PolyGuardMix",
+   "downloads": 544,
+   "likes": 6,
+   "gated": false,
+   "license": [
+    "license:cc-by-4.0"
+   ],
+   "arxiv": [
+    "arxiv:2504.04377"
+   ],
+   "num_rows": 1910372,
+   "size_bytes_parquet": 2306303141,
+   "columns": [
+    "prompt",
+    "response",
+    "prompt_harm_label",
+    "response_refusal_label",
+    "response_harm_label",
+    "prompt_safety_categories",
+    "response_safety_categories",
+    "metadata"
+   ],
+   "decision": "DISCARD",
+   "reason": "2.3 GB (> 300 MB limit); MT safety mix."
+  },
+  {
+   "id": "ToxicityPrompts/PolyGuardPrompts",
+   "downloads": 413,
+   "likes": 5,
+   "gated": false,
+   "license": [
+    "license:cc-by-4.0"
+   ],
+   "arxiv": [
+    "arxiv:2504.04377"
+   ],
+   "num_rows": 29325,
+   "size_bytes_parquet": 52852473,
+   "columns": [
+    "prompt",
+    "response",
+    "adversarial",
+    "prompt_harm_label",
+    "response_refusal_agreement",
+    "response_refusal_label",
+    "response_harm_label",
+    "subcategory",
+    "prompt_harm_agreement",
+    "response_harm_agreement",
+    "id",
+    "language",
+    "prompt_label",
+    "prompt_categories",
+    "response_label",
+    "response_categories"
+   ],
+   "decision": "DISCARD",
+   "reason": "MT prompts with harm labels but no Slovene-specific value for the reserved sets; would duplicate RefusEU."
+  },
+  {
+   "id": "walledai/StrongREJECT",
+   "downloads": 4710,
+   "likes": 24,
+   "gated": "auto",
+   "license": [
+    "license:mit"
+   ],
+   "arxiv": [
+    "arxiv:2402.10260"
+   ],
+   "num_rows": null,
+   "size_bytes_parquet": null,
+   "columns": [],
+   "decision": "DISCARD",
+   "reason": "Gated; ~15 AdvBench-sourced rows; not in the plan."
+  },
+  {
+   "id": "sorry-bench/sorry-bench-202503",
+   "downloads": 1590,
+   "likes": 23,
+   "gated": "auto",
+   "license": [
+    "license:other"
+   ],
+   "arxiv": [
+    "arxiv:2406.14598"
+   ],
+   "num_rows": null,
+   "size_bytes_parquet": null,
+   "columns": [],
+   "decision": "DISCARD",
+   "reason": "Gated, licence 'other'."
+  },
+  {
+   "id": "JailbreakBench/JBB-Behaviors",
+   "downloads": 49614,
+   "likes": 129,
+   "gated": false,
+   "license": [
+    "license:mit"
+   ],
+   "arxiv": [
+    "arxiv:2404.01318",
+    "arxiv:2311.03348",
+    "arxiv:2307.15043",
+    "arxiv:2402.04249"
+   ],
+   "num_rows": 500,
+   "size_bytes_parquet": 201329,
+   "columns": [
+    "Index",
+    "Goal",
+    "Target",
+    "Behavior",
+    "Category",
+    "Source"
+   ],
+   "decision": "DISCARD (reference only)",
+   "reason": "100 harmful + 100 benign behaviours, partly AdvBench-derived (Heretic's optimisation data family) -> not a clean eval set here."
+  },
+  {
+   "id": "walledai/HarmBench",
+   "downloads": 7494,
+   "likes": 57,
+   "gated": "auto",
+   "license": [
+    "license:mit"
+   ],
+   "arxiv": [
+    "arxiv:2402.04249"
+   ],
+   "num_rows": null,
+   "size_bytes_parquet": null,
+   "columns": [],
+   "decision": "DISCARD",
+   "reason": "Gated; saturated; overlaps AdvBench family."
+  },
+  {
+   "id": "LibrAI/do-not-answer",
+   "downloads": 4009,
+   "likes": 57,
+   "gated": false,
+   "license": [
+    "license:apache-2.0"
+   ],
+   "arxiv": [
+    "arxiv:2308.13387"
+   ],
+   "num_rows": 939,
+   "size_bytes_parquet": 1709142,
+   "columns": [
+    "id",
+    "risk_area",
+    "types_of_harm",
+    "specific_harms",
+    "question",
+    "GPT4_response",
+    "GPT4_harmful",
+    "GPT4_action",
+    "ChatGPT_response",
+    "ChatGPT_harmful",
+    "ChatGPT_action",
+    "Claude_response",
+    "Claude_harmful",
+    "Claude_action",
+    "ChatGLM2_response",
+    "ChatGLM2_harmful",
+    "ChatGLM2_action",
+    "llama2-7b-chat_response",
+    "llama2-7b-chat_harmful",
+    "llama2-7b-chat_action",
+    "vicuna-7b_response",
+    "vicuna-7b_harmful",
+    "vicuna-7b_action"
+   ],
+   "decision": "DISCARD (reference only)",
+   "reason": "939 EN questions, own taxonomy (not S1-S14); no Slovene."
+  },
+  {
+   "id": "allenai/wildguardmix",
+   "downloads": 11571,
+   "likes": 97,
+   "gated": "auto",
+   "license": [
+    "license:odc-by"
+   ],
+   "arxiv": [
+    "arxiv:2406.18495"
+   ],
+   "num_rows": null,
+   "size_bytes_parquet": null,
+   "columns": [],
+   "decision": "DISCARD",
+   "reason": "Gated; English-only moderation mix."
+  },
+  {
+   "id": "nvidia/Aegis-AI-Content-Safety-Dataset-2.0",
+   "downloads": 8525,
+   "likes": 110,
+   "gated": false,
+   "license": [
+    "license:cc-by-4.0"
+   ],
+   "arxiv": [],
+   "num_rows": 33416,
+   "size_bytes_parquet": 11365221,
+   "columns": [
+    "id",
+    "reconstruction_id_if_redacted",
+    "prompt",
+    "response",
+    "prompt_label",
+    "response_label",
+    "violated_categories",
+    "prompt_label_source",
+    "response_label_source"
+   ],
+   "decision": "DISCARD (reference only)",
+   "reason": "EN moderation data with its own taxonomy; not needed."
+  },
+  {
+   "id": "PKU-Alignment/BeaverTails",
+   "downloads": 16129,
+   "likes": 114,
+   "gated": false,
+   "license": [
+    "license:cc-by-nc-4.0"
+   ],
+   "arxiv": [
+    "arxiv:2307.04657"
+   ],
+   "num_rows": 364170,
+   "size_bytes_parquet": 98695469,
+   "columns": [
+    "prompt",
+    "response",
+    "category",
+    "is_safe"
+   ],
+   "decision": "DISCARD",
+   "reason": "CC-BY-NC, EN QA pairs, own 14-cat taxonomy; not needed."
+  },
+  {
+   "id": "lmsys/toxic-chat",
+   "downloads": 8635,
+   "likes": 201,
+   "gated": false,
+   "license": [
+    "license:cc-by-nc-4.0"
+   ],
+   "arxiv": [
+    "arxiv:2310.17389"
+   ],
+   "num_rows": 20330,
+   "size_bytes_parquet": 17652401,
+   "columns": [
+    "conv_id",
+    "user_input",
+    "model_output",
+    "human_annotation",
+    "toxicity",
+    "jailbreaking",
+    "openai_moderation"
+   ],
+   "decision": "DISCARD",
+   "reason": "EN toxicity of real chats; not needed; CC-BY-NC."
+  },
+  {
+   "id": "cjvt/slovenian-llm-eval",
+   "downloads": 194,
+   "likes": 0,
+   "gated": false,
+   "license": [
+    "license:apache-2.0"
+   ],
+   "arxiv": [],
+   "num_rows": 271374,
+   "size_bytes_parquet": 122026718,
+   "columns": [
+    "id",
+    "query",
+    "choices",
+    "gold"
+   ],
+   "decision": "DISCARD",
+   "reason": "Utility benchmark (capability), not safety; belongs to the experiment artifacts."
+  },
+  {
+   "id": "openlanguagedata/flores_plus",
+   "downloads": 12666,
+   "likes": 169,
+   "gated": "auto",
+   "license": [
+    "license:cc-by-sa-4.0"
+   ],
+   "arxiv": [
+    "arxiv:2207.04672"
+   ],
+   "num_rows": 898930,
+   "size_bytes_parquet": 119770256,
+   "columns": [
+    "id",
+    "iso_639_3",
+    "iso_15924",
+    "glottocode",
+    "variant",
+    "text",
+    "url",
+    "domain",
+    "topic",
+    "has_image",
+    "has_hyperlink",
+    "last_updated",
+    "split"
+   ],
+   "decision": "DISCARD",
+   "reason": "Gated (auto); MT-quality references not needed (chrF round trip used)."
+  }
+ ],
+ "final_blocks_in_full_data_out": [
+  "refuseu_eval",
+  "refuseu_gold_calib",
+  "gams_dose_rows",
+  "hard_xstest",
+  "hard_orbench_hard1k",
+  "hard_orbench_toxic300",
+  "identity_confirm",
+  "refuseu_x_mt"
+ ],
+ "extra_source": "GaMS-Instruct-SAFE 0.5 (CLARIN.SI 11356/2218, CC BY-SA 4.0), 501 SL rows, copied from Stage-0 -> part of gams_dose_rows"
+}

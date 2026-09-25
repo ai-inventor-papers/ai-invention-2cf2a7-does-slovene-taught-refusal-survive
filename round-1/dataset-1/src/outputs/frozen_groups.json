@@ -1,0 +1,47 @@
+{
+ "groups": {
+  "low_EN": [
+   "S2",
+   "S5",
+   "S7",
+   "S13"
+  ],
+  "high_EN": [
+   "S1",
+   "S3",
+   "S4",
+   "S8",
+   "S9",
+   "S10",
+   "S11",
+   "S14"
+  ],
+  "intermediate": [
+   "S6",
+   "S12"
+  ],
+  "changed_vs_stage0b": [
+   "S1",
+   "S2",
+   "S8"
+  ],
+  "dose_uncertain": [
+   "S1",
+   "S2",
+   "S3",
+   "S4",
+   "S5",
+   "S6",
+   "S7",
+   "S8",
+   "S10",
+   "S11",
+   "S12",
+   "S13",
+   "S14"
+  ]
+ },
+ "frozen_at_utc": "2026-09-23T15:55:25.550736+00:00",
+ "note": "timestamp precedes any FINAL model call (none happens in iter 1)",
+ "sha256": "3a7214019b8e22d8bc6c8e967d689b000899a7d2b8b3ae5dbdcfae565a4a55d2"
+}
