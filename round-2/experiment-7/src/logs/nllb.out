@@ -1,0 +1,4 @@
+21:02:17|INFO   |torch native status: deregistered; torch 2.14.0+cu130
+21:02:17|INFO   |GPU NVIDIA GeForce RTX 4090 free 24.8/25.3 GB
+21:04:03|INFO   |NLLB BT: 616 to translate
+21:04:51|INFO   |NLLB BT done in 17s

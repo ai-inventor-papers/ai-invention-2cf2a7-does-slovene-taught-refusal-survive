@@ -1,0 +1,46 @@
+00:25:56|INFO   |xent gams: 3010 texts to score
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:06<00:26,  6.63s/it]Loading checkpoint shards:  40%|████      | 2/5 [00:12<00:19,  6.40s/it]Loading checkpoint shards:  60%|██████    | 3/5 [00:19<00:13,  6.58s/it]Loading checkpoint shards:  80%|████████  | 4/5 [00:26<00:06,  6.53s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:31<00:00,  6.06s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:31<00:00,  6.27s/it]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+00:27:36|INFO   |loaded gams arch=Gemma3ForCausalLM in 46s; vram=7.6GB
+00:27:38|INFO   |16/3010 in 1s
+00:27:42|INFO   |336/3010 in 5s
+00:27:48|INFO   |656/3010 in 11s
+00:27:55|INFO   |976/3010 in 18s
+00:28:01|INFO   |1296/3010 in 24s
+00:28:08|INFO   |1616/3010 in 31s
+00:28:16|INFO   |1936/3010 in 38s
+00:28:23|INFO   |2256/3010 in 46s
+00:28:32|INFO   |2576/3010 in 55s
+00:28:43|INFO   |2896/3010 in 66s
+00:28:49|INFO   |xent gams done in 72s
+00:29:14|INFO   |xent gemma: 3010 texts to score
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:05<00:22,  5.63s/it]Loading checkpoint shards:  40%|████      | 2/5 [00:12<00:18,  6.23s/it]Loading checkpoint shards:  60%|██████    | 3/5 [00:18<00:12,  6.32s/it]Loading checkpoint shards:  80%|████████  | 4/5 [00:25<00:06,  6.47s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:31<00:00,  6.47s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:31<00:00,  6.37s/it]
+00:30:52|INFO   |loaded gemma arch=Gemma3ForConditionalGeneration in 45s; vram=8.4GB
+00:30:54|INFO   |16/3010 in 1s
+00:30:58|INFO   |336/3010 in 5s
+00:31:04|INFO   |656/3010 in 11s
+00:31:10|INFO   |976/3010 in 17s
+00:31:17|INFO   |1296/3010 in 24s
+00:31:24|INFO   |1616/3010 in 31s
+00:31:32|INFO   |1936/3010 in 38s
+00:31:39|INFO   |2256/3010 in 46s
+00:31:48|INFO   |2576/3010 in 55s
+00:31:59|INFO   |2896/3010 in 66s
+00:32:05|INFO   |xent gemma done in 72s
+00:32:31|INFO   |xent q14: 3010 texts to score
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:  12%|█▎        | 1/8 [00:05<00:39,  5.67s/it]Loading checkpoint shards:  25%|██▌       | 2/8 [00:11<00:36,  6.01s/it]Loading checkpoint shards:  38%|███▊      | 3/8 [00:18<00:31,  6.22s/it]Loading checkpoint shards:  50%|█████     | 4/8 [00:24<00:24,  6.24s/it]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:31<00:18,  6.31s/it]Loading checkpoint shards:  75%|███████▌  | 6/8 [00:37<00:12,  6.46s/it]Loading checkpoint shards:  88%|████████▊ | 7/8 [00:44<00:06,  6.54s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:46<00:00,  5.19s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:46<00:00,  5.86s/it]
+00:34:30|INFO   |loaded q14 arch=Qwen3ForCausalLM in 60s; vram=10.0GB
+00:34:32|INFO   |16/3010 in 1s
+00:34:36|INFO   |336/3010 in 6s
+00:34:43|INFO   |656/3010 in 13s
+00:34:50|INFO   |976/3010 in 20s
+00:34:58|INFO   |1296/3010 in 28s
+00:35:06|INFO   |1616/3010 in 36s
+00:35:15|INFO   |1936/3010 in 44s
+00:35:24|INFO   |2256/3010 in 54s
+00:35:35|INFO   |2576/3010 in 64s
+00:35:49|INFO   |2896/3010 in 78s
+00:35:57|INFO   |xent q14 done in 87s
+01:21:10|INFO   |xent gams: 0 texts to score
+01:21:24|INFO   |xent gemma: 0 texts to score
+01:21:34|INFO   |xent q14: 0 texts to score

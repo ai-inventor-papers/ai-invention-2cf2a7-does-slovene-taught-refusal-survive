@@ -1,0 +1,9 @@
+<bos><start_of_turn>user
+Hello<end_of_turn>
+<start_of_turn>model
+
+----- prefill render en:
+<bos><start_of_turn>user
+Hello<end_of_turn>
+<start_of_turn>model
+Sure, here is a

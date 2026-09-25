@@ -1,0 +1,25 @@
+{
+ "items_sha256": "f0a1c1d5f9b58e5284b4677c2a818df070775e265937b25c45661c9af8a3bd69",
+ "ref_sft_sha256": "f4790331eb7a7d666456c5679171c7d20d4d09b6eb34f15c05fac85b56b067ff",
+ "n": {
+  "H": 616,
+  "R": 400,
+  "R200": 200,
+  "ID": 117,
+  "REF_sft": 3057
+ },
+ "H_strata": {
+  "orbench_hard1k|False": 395,
+  "orbench_toxic|True": 90,
+  "xstest|True": 57,
+  "xstest|False": 74
+ },
+ "sources": {
+  "H": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_1/gen_art/gen_art_dataset_1/full_data_out.json (hard_* blocks, split_manifest hard.DEV, keep)",
+  "R": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/data/mt_parallel.jsonl",
+  "ID": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/data/identity_items.jsonl minus ['iid_025', 'iid_028', 'iid_029']",
+  "REF_sft": "DATASET gams_dose_rows metadata_response (cjvt/GaMS-Nemotron-Chat first assistant turn)"
+ },
+ "reserved_checks": "asserted: no hard_FINAL id in H; no refuseu_eval/refuseu_x/identity_confirm text in R or ID",
+ "R200_rule": "200 pair_ids with lowest int(sha1(pair_id+'20260924'))"
+}
