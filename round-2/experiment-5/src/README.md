@@ -1,13 +1,8 @@
-> NOTE (published copy): this file names server paths this repository
-> does not publish (a stage it does not ship, or another run's workspace),
-> so the steps that read them will not run from a clone as written:
->   /ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_1/gen_art/gen_art_dataset_1
-
 # Confirming Slovene vs English refusal on held-out items (GaMS3-12B-Instruct vs Gemma-3-12B-IT)
 
 This is the iter-2 confirmation run of the GaMS3 vs Gemma-3 study (CONFIRM-SPEC v2, seed 20260924). It runs on the RESERVED
 FINAL splits of the iter-1 dataset artifact `art_EG6OpEkGvysx`
-(`/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_1/gen_art/gen_art_dataset_1`). No earlier step had
+(`../../../round-1/dataset-1/src`). No earlier step had
 touched those splits. In the user's research plan, this is the behavioural core for the two ORIGINAL checkpoints
 (GEMMA-I and GAMS-I) on held-out RefusEU EN/SL, plus an over-refusal contrast set. Abliteration (Heretic) and the
 mechanistic work are carried out in sibling artifacts.

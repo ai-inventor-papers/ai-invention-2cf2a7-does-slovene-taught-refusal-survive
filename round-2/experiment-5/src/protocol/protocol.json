@@ -273,7 +273,7 @@
    "FINAL_item_ids_sha256": "8077686576d6b80514410ce1079de1b31529570b02a95e6d1f30a6ba1e36bdbe"
   },
   "source_dataset": {
-   "path": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_1/gen_art/gen_art_dataset_1/full_data_out.json",
+   "path": "../../../../round-1/dataset-1/src/full_data_out.json",
    "sha256": "35c98bc5d5336829af33a341d3d8b92a83d696e99a530ee5bc947d262c30803c"
   },
   "frozen_groups": {

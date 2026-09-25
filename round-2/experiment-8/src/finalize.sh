@@ -11,7 +11,7 @@ PY=$(pwd)/.venv/bin/python
 (cd src && $PY judge.py) || echo "judge stopped early (key limit?) - re-run ./finalize.sh later"
 (cd src && $PY contamination_check.py)
 $PY method.py
-SK=/ai-inventor/.claude/skills/aii-json
+SK=../../../tools/aii-json
 $SK/../.ability_client_venv/bin/python $SK/scripts/aii_json_validate_schema.py --format exp_gen_sol_out --file "$(pwd)/method_out.json" || true
 $SK/../.ability_client_venv/bin/python $SK/scripts/aii_json_format_mini_preview.py --input "$(pwd)/method_out.json" || true
 ls -lh method_out.json mini_method_out.json preview_method_out.json 2>/dev/null || true

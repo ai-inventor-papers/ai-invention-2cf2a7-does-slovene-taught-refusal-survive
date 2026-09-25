@@ -34,10 +34,10 @@ for _d in (DATA, OUT, OUT_DEV, OUT_FINAL, LEDGERS, RESULTS, FIG, LOGS, PROTO):
     _d.mkdir(parents=True, exist_ok=True)
 
 RUN_DIR = Path(__file__).resolve().parents[4]
-DS_DIR = RUN_DIR / "3_invention_loop/iter_1/gen_art/gen_art_dataset_1"
+DS_DIR = RUN_DIR / "round-1/dataset-1/src"
 DS_FULL = DS_DIR / "full_data_out.json"
 DS_OUT = DS_DIR / "outputs"
-ITER1_EXP = RUN_DIR / "3_invention_loop/iter_1/gen_art/gen_art_experiment_1"
+ITER1_EXP = RUN_DIR / "round-1/experiment-1/src"
 
 SEED = 20260924
 MAX_NEW = 160

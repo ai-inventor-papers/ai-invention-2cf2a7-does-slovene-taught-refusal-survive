@@ -15,9 +15,9 @@
   "xstest|False": 74
  },
  "sources": {
-  "H": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_1/gen_art/gen_art_dataset_1/full_data_out.json (hard_* blocks, split_manifest hard.DEV, keep)",
-  "R": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/data/mt_parallel.jsonl",
-  "ID": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/data/identity_items.jsonl minus ['iid_025', 'iid_028', 'iid_029']",
+  "H": "../../../../round-1/dataset-1/src/full_data_out.json (hard_* blocks, split_manifest hard.DEV, keep)",
+  "R": "../../../../round-1/experiment-1/src/data/mt_parallel.jsonl",
+  "ID": "../../../../round-1/experiment-1/src/data/identity_items.jsonl minus ['iid_025', 'iid_028', 'iid_029']",
   "REF_sft": "DATASET gams_dose_rows metadata_response (cjvt/GaMS-Nemotron-Chat first assistant turn)"
  },
  "reserved_checks": "asserted: no hard_FINAL id in H; no refuseu_eval/refuseu_x/identity_confirm text in R or ID",

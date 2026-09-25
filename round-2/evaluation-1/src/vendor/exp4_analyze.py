@@ -1,7 +1,3 @@
-# NOTE (published copy): this file names server paths this repository
-# does not publish (a stage it does not ship, or another run's workspace),
-# so the steps that read them will not run from a clone as written:
-#   /ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_1/gen_art/gen_art_experiment_4
 # VENDORED VERBATIM from iter-1 exp4 (art_A_ALQ08RqTgB) src/analyze.py; only the import/logging/path header is patched
 # so that it reads exp4's saved results READ-ONLY and never writes (WRITE is forced False by the caller).
 #!/usr/bin/env python3
@@ -21,7 +17,7 @@ import os
 from pathlib import Path
 import json as _json
 from loguru import logger as _lg
-_E4 = Path('/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_1/gen_art/gen_art_experiment_4')
+_E4 = Path(__file__).resolve().parents[4] / 'round-1/experiment-4/src'
 RESULTS = _E4 / 'results'
 SPLITS = _E4 / 'data' / 'splits'
 SEED = 20260923
