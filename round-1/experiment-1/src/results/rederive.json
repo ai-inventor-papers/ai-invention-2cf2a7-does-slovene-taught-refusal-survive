@@ -1,0 +1,71 @@
+{
+  "n_pairs": 2137,
+  "reported_n_pairs": 2137,
+  "prompt_lang_lexicon": {
+    "rates": {
+      "gams3_it|en": 0.9424426766495086,
+      "gams3_it|sl": 0.7229761347683669,
+      "gemma_it|en": 0.9611605053813758,
+      "gemma_it|sl": 0.885353299017314
+    },
+    "overall_DiD": -0.67254914161086,
+    "D": 0.6147820369828989
+  },
+  "union_lexicon": {
+    "rates": {
+      "gams3_it|en": 0.9424426766495086,
+      "gams3_it|sl": 0.7229761347683669,
+      "gemma_it|en": 0.9611605053813758,
+      "gemma_it|sl": 0.885353299017314
+    },
+    "overall_DiD": -0.67254914161086,
+    "D": 0.6147820369828989
+  },
+  "reported": {
+    "overall_DiD": -0.67254914161086,
+    "D": 0.6147820369828989,
+    "rates": {
+      "gemma_it|en": 0.9611605053813758,
+      "gemma_it|sl": 0.885353299017314,
+      "gams3_it|en": 0.9424426766495086,
+      "gams3_it|sl": 0.7229761347683669
+    }
+  },
+  "R_judge": {
+    "n_pairs": 2137,
+    "overall_DiD": -0.37678442117081734,
+    "D": -0.07972096641184856,
+    "rates": {
+      "gams3_it|en": 0.9714553111839027,
+      "gams3_it|sl": 0.8652316331305568,
+      "gemma_it|en": 0.9794103883949462,
+      "gemma_it|sl": 0.928872250818905
+    },
+    "reported_overall_DiD": -0.37678442117081734,
+    "reported_D": -0.07972096641184856
+  },
+  "placebo_R_lex": {
+    "obs_DiD": -0.67254914161086,
+    "swap_null_mean": -0.005809014430128501,
+    "swap_null_sd": 0.14045503124138223,
+    "perm_p_DiD": 0.0,
+    "obs_D": 0.6147820369828989,
+    "swap_null_D_mean": 0.014417320399961813,
+    "perm_p_D_modelswap": 0.272,
+    "catshuffle_null_D_mean": 0.02594536574669057,
+    "catshuffle_null_D_sd": 0.4671573151255831,
+    "perm_p_D_catshuffle": 0.172
+  },
+  "placebo_R_judge": {
+    "obs_DiD": -0.37678442117081734,
+    "swap_null_mean": 0.002118441077820133,
+    "swap_null_sd": 0.16012573968130203,
+    "perm_p_DiD": 0.014,
+    "obs_D": -0.07972096641184856,
+    "swap_null_D_mean": 0.01052243643779157,
+    "perm_p_D_modelswap": 0.862,
+    "catshuffle_null_D_mean": -0.006038189737798233,
+    "catshuffle_null_D_sd": 0.5353764814940877,
+    "perm_p_D_catshuffle": 0.87
+  }
+}
