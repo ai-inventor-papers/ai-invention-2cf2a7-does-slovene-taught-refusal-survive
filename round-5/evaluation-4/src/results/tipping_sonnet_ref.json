@@ -1,0 +1,737 @@
+{
+ "OUT|gemma_it|hi|R_J1->R_any": {
+  "contrast_raw_logodds": 2.691143494087072,
+  "q_non": 0.77,
+  "q_en": 0.185,
+  "t1_extraFP_nonEN|to0": 0.7177914110429447,
+  "t2_FN_EN|to0": 0.7597402597402597,
+  "t1_extraFP_nonEN|toM": 0.6674606096594884,
+  "t2_FN_EN|toM": 0.7064680478863415,
+  "measured_FP_nonEN": 0.2857142857142857,
+  "measured_FP_nonEN_ci": [
+   0.0822171657090156,
+   0.6410709098517873
+  ],
+  "measured_FN_EN": 0.375,
+  "measured_FN_EN_ci": [
+   0.136841759461521,
+   0.6942621454161981
+  ],
+  "verdict_to0": "judge error alone CANNOT account",
+  "can_bring_below_m": false
+ },
+ "OUT|gams3_it|hi|R_J1->R_any": {
+  "contrast_raw_logodds": -0.5325293137498512,
+  "q_non": 0.135,
+  "q_en": 0.21,
+  "t1_extraFP_nonEN|to0": null,
+  "t2_FN_EN|to0": null,
+  "t1_extraFP_nonEN|toM": null,
+  "t2_FN_EN|toM": null,
+  "measured_FP_nonEN": 0.11363636363636365,
+  "measured_FP_nonEN_ci": [
+   0.049527075895674955,
+   0.23979435148133588
+  ],
+  "measured_FN_EN": 0.33333333333333337,
+  "measured_FN_EN_ci": [
+   0.09676933255921694,
+   0.7000116786584714
+  ],
+  "verdict_to0": "no positive contrast to explain",
+  "can_bring_below_m": false
+ },
+ "OUT|gemma_it|lo|R_J1->R_any": {
+  "contrast_raw_logodds": 2.078381658167794,
+  "q_non": 0.92,
+  "q_en": 0.59,
+  "t1_extraFP_nonEN|to0": 0.804878048780488,
+  "t2_FN_EN|to0": 0.3586956521739131,
+  "t1_extraFP_nonEN|toM": 0.693896691546886,
+  "t2_FN_EN|toM": 0.30923656905893837,
+  "measured_FP_nonEN": 0.2857142857142857,
+  "measured_FP_nonEN_ci": [
+   0.0822171657090156,
+   0.6410709098517873
+  ],
+  "measured_FN_EN": 0.375,
+  "measured_FN_EN_ci": [
+   0.136841759461521,
+   0.6942621454161981
+  ],
+  "verdict_to0": "judge error alone CAN account",
+  "can_bring_below_m": true
+ },
+ "OUT|gams3_it|lo|R_J1->R_any": {
+  "contrast_raw_logodds": -0.501325345786218,
+  "q_non": 0.21,
+  "q_en": 0.305,
+  "t1_extraFP_nonEN|to0": null,
+  "t2_FN_EN|to0": null,
+  "t1_extraFP_nonEN|toM": null,
+  "t2_FN_EN|toM": null,
+  "measured_FP_nonEN": 0.11363636363636365,
+  "measured_FP_nonEN_ci": [
+   0.049527075895674955,
+   0.23979435148133588
+  ],
+  "measured_FN_EN": 0.33333333333333337,
+  "measured_FN_EN_ci": [
+   0.09676933255921694,
+   0.7000116786584714
+  ],
+  "verdict_to0": "no positive contrast to explain",
+  "can_bring_below_m": false
+ },
+ "IN|gemma_it|hi|R_J1->R_any": {
+  "contrast_raw_logodds": -1.029473335813577,
+  "q_non": 0.075,
+  "q_en": 0.185,
+  "t1_extraFP_nonEN|to0": null,
+  "t2_FN_EN|to0": null,
+  "t1_extraFP_nonEN|toM": null,
+  "t2_FN_EN|toM": null,
+  "measured_FP_nonEN": null,
+  "measured_FP_nonEN_ci": [
+   null,
+   null
+  ],
+  "measured_FN_EN": null,
+  "measured_FN_EN_ci": [
+   null,
+   null
+  ],
+  "verdict_to0": "no positive contrast to explain",
+  "can_bring_below_m": null
+ },
+ "SLSL|gemma_it|hi|R_J1->R_any": {
+  "contrast_raw_logodds": 1.723994344979426,
+  "q_non": 0.56,
+  "q_en": 0.185,
+  "t1_extraFP_nonEN|to0": 0.4601226993865032,
+  "t2_FN_EN|to0": 0.6696428571428572,
+  "t1_extraFP_nonEN|toM": 0.36383768804423866,
+  "t2_FN_EN|toM": 0.5295137781358115,
+  "measured_FP_nonEN": null,
+  "measured_FP_nonEN_ci": [
+   null,
+   null
+  ],
+  "measured_FN_EN": null,
+  "measured_FN_EN_ci": [
+   null,
+   null
+  ],
+  "verdict_to0": "NO MEASURED ERROR (cell not adjudicated)",
+  "can_bring_below_m": null
+ },
+ "SLSL|gams3_it|hi|R_J1->R_any": {
+  "contrast_raw_logodds": -0.3709860956943285,
+  "q_non": 0.155,
+  "q_en": 0.21,
+  "t1_extraFP_nonEN|to0": null,
+  "t2_FN_EN|to0": null,
+  "t1_extraFP_nonEN|toM": null,
+  "t2_FN_EN|toM": null,
+  "measured_FP_nonEN": null,
+  "measured_FP_nonEN_ci": [
+   null,
+   null
+  ],
+  "measured_FN_EN": null,
+  "measured_FN_EN_ci": [
+   null,
+   null
+  ],
+  "verdict_to0": "no positive contrast to explain",
+  "can_bring_below_m": null
+ },
+ "OUT|gemma_it|hi|R_J1->R_explicit": {
+  "contrast_raw_logodds": 2.691143494087072,
+  "q_non": 0.77,
+  "q_en": 0.185,
+  "t1_extraFP_nonEN|to0": 0.7177914110429447,
+  "t2_FN_EN|to0": 0.7597402597402597,
+  "t1_extraFP_nonEN|toM": 0.6674606096594884,
+  "t2_FN_EN|toM": 0.7064680478863415,
+  "measured_FP_nonEN": 0.6190476190476191,
+  "measured_FP_nonEN_ci": [
+   0.4087829581550152,
+   0.7924923220201749
+  ],
+  "measured_FN_EN": null,
+  "measured_FN_EN_ci": [
+   null,
+   null
+  ],
+  "verdict_to0": "judge error alone CAN account",
+  "can_bring_below_m": true
+ },
+ "OUT|gams3_it|hi|R_J1->R_explicit": {
+  "contrast_raw_logodds": -0.5325293137498512,
+  "q_non": 0.135,
+  "q_en": 0.21,
+  "t1_extraFP_nonEN|to0": null,
+  "t2_FN_EN|to0": null,
+  "t1_extraFP_nonEN|toM": null,
+  "t2_FN_EN|toM": null,
+  "measured_FP_nonEN": 0.1428571428571429,
+  "measured_FP_nonEN_ci": [
+   0.0709633372054459,
+   0.2666797318916292
+  ],
+  "measured_FN_EN": 1.0,
+  "measured_FN_EN_ci": [
+   0.20654329147389294,
+   1
+  ],
+  "verdict_to0": "no positive contrast to explain",
+  "can_bring_below_m": false
+ },
+ "OUT|gemma_it|lo|R_J1->R_explicit": {
+  "contrast_raw_logodds": 2.078381658167794,
+  "q_non": 0.92,
+  "q_en": 0.59,
+  "t1_extraFP_nonEN|to0": 0.804878048780488,
+  "t2_FN_EN|to0": 0.3586956521739131,
+  "t1_extraFP_nonEN|toM": 0.693896691546886,
+  "t2_FN_EN|toM": 0.30923656905893837,
+  "measured_FP_nonEN": 0.6190476190476191,
+  "measured_FP_nonEN_ci": [
+   0.4087829581550152,
+   0.7924923220201749
+  ],
+  "measured_FN_EN": null,
+  "measured_FN_EN_ci": [
+   null,
+   null
+  ],
+  "verdict_to0": "judge error alone CANNOT account",
+  "can_bring_below_m": true
+ },
+ "OUT|gams3_it|lo|R_J1->R_explicit": {
+  "contrast_raw_logodds": -0.501325345786218,
+  "q_non": 0.21,
+  "q_en": 0.305,
+  "t1_extraFP_nonEN|to0": null,
+  "t2_FN_EN|to0": null,
+  "t1_extraFP_nonEN|toM": null,
+  "t2_FN_EN|toM": null,
+  "measured_FP_nonEN": 0.1428571428571429,
+  "measured_FP_nonEN_ci": [
+   0.0709633372054459,
+   0.2666797318916292
+  ],
+  "measured_FN_EN": 1.0,
+  "measured_FN_EN_ci": [
+   0.20654329147389294,
+   1
+  ],
+  "verdict_to0": "no positive contrast to explain",
+  "can_bring_below_m": false
+ },
+ "IN|gemma_it|hi|R_J1->R_explicit": {
+  "contrast_raw_logodds": -1.029473335813577,
+  "q_non": 0.075,
+  "q_en": 0.185,
+  "t1_extraFP_nonEN|to0": null,
+  "t2_FN_EN|to0": null,
+  "t1_extraFP_nonEN|toM": null,
+  "t2_FN_EN|toM": null,
+  "measured_FP_nonEN": null,
+  "measured_FP_nonEN_ci": [
+   null,
+   null
+  ],
+  "measured_FN_EN": null,
+  "measured_FN_EN_ci": [
+   null,
+   null
+  ],
+  "verdict_to0": "no positive contrast to explain",
+  "can_bring_below_m": null
+ },
+ "SLSL|gemma_it|hi|R_J1->R_explicit": {
+  "contrast_raw_logodds": 1.723994344979426,
+  "q_non": 0.56,
+  "q_en": 0.185,
+  "t1_extraFP_nonEN|to0": 0.4601226993865032,
+  "t2_FN_EN|to0": 0.6696428571428572,
+  "t1_extraFP_nonEN|toM": 0.36383768804423866,
+  "t2_FN_EN|toM": 0.5295137781358115,
+  "measured_FP_nonEN": null,
+  "measured_FP_nonEN_ci": [
+   null,
+   null
+  ],
+  "measured_FN_EN": null,
+  "measured_FN_EN_ci": [
+   null,
+   null
+  ],
+  "verdict_to0": "NO MEASURED ERROR (cell not adjudicated)",
+  "can_bring_below_m": null
+ },
+ "SLSL|gams3_it|hi|R_J1->R_explicit": {
+  "contrast_raw_logodds": -0.3709860956943285,
+  "q_non": 0.155,
+  "q_en": 0.21,
+  "t1_extraFP_nonEN|to0": null,
+  "t2_FN_EN|to0": null,
+  "t1_extraFP_nonEN|toM": null,
+  "t2_FN_EN|toM": null,
+  "measured_FP_nonEN": null,
+  "measured_FP_nonEN_ci": [
+   null,
+   null
+  ],
+  "measured_FN_EN": null,
+  "measured_FN_EN_ci": [
+   null,
+   null
+  ],
+  "verdict_to0": "no positive contrast to explain",
+  "can_bring_below_m": null
+ },
+ "OUT|gemma_it|hi|U_ft->U": {
+  "contrast_raw_logodds": 1.4158212786565243,
+  "q_non": 0.965,
+  "q_en": 0.87,
+  "t1_extraFP_nonEN|to0": 0.7307692307692303,
+  "t2_FN_EN|to0": 0.09844559585492219,
+  "t1_extraFP_nonEN|toM": 0.5049630452439847,
+  "t2_FN_EN|toM": 0.06802610972198764,
+  "measured_FP_nonEN": 1.0,
+  "measured_FP_nonEN_ci": [
+   0.6456611570247934,
+   1
+  ],
+  "measured_FN_EN": 0.0,
+  "measured_FN_EN_ci": [
+   0.0,
+   0.2425007574992426
+  ],
+  "verdict_to0": "judge error alone CAN account",
+  "can_bring_below_m": true
+ },
+ "OUT|gams3_it|hi|U_ft->U": {
+  "contrast_raw_logodds": 0.66711968531517,
+  "q_non": 0.725,
+  "q_en": 0.575,
+  "t1_extraFP_nonEN|to0": 0.35294117647058826,
+  "t2_FN_EN|to0": 0.206896551724138,
+  "t1_extraFP_nonEN|toM": null,
+  "t2_FN_EN|toM": null,
+  "measured_FP_nonEN": 0.6976744186046512,
+  "measured_FP_nonEN_ci": [
+   0.5489435424759017,
+   0.8139817205381713
+  ],
+  "measured_FN_EN": 0.09999999999999998,
+  "measured_FN_EN_ci": [
+   0.01787574951572124,
+   0.40415638549757216
+  ],
+  "verdict_to0": "judge error alone CAN account",
+  "can_bring_below_m": false
+ },
+ "OUT|gemma_it|lo|U_ft->U": {
+  "contrast_raw_logodds": 0.9315582040049435,
+  "q_non": 0.99,
+  "q_en": 0.975,
+  "t1_extraFP_nonEN|to0": 0.6000000000000018,
+  "t2_FN_EN|to0": 0.015151515151515138,
+  "t1_extraFP_nonEN|toM": 0.22402713937175966,
+  "t2_FN_EN|toM": 0.005657250994236418,
+  "measured_FP_nonEN": 1.0,
+  "measured_FP_nonEN_ci": [
+   0.6456611570247934,
+   1
+  ],
+  "measured_FN_EN": 0.0,
+  "measured_FN_EN_ci": [
+   0.0,
+   0.2425007574992426
+  ],
+  "verdict_to0": "judge error alone CAN account",
+  "can_bring_below_m": true
+ },
+ "OUT|gams3_it|lo|U_ft->U": {
+  "contrast_raw_logodds": 0.5448846433579096,
+  "q_non": 0.75,
+  "q_en": 0.635,
+  "t1_extraFP_nonEN|to0": 0.3150684931506849,
+  "t2_FN_EN|to0": 0.15333333333333332,
+  "t1_extraFP_nonEN|toM": null,
+  "t2_FN_EN|toM": null,
+  "measured_FP_nonEN": 0.6976744186046512,
+  "measured_FP_nonEN_ci": [
+   0.5489435424759017,
+   0.8139817205381713
+  ],
+  "measured_FN_EN": 0.09999999999999998,
+  "measured_FN_EN_ci": [
+   0.01787574951572124,
+   0.40415638549757216
+  ],
+  "verdict_to0": "judge error alone CAN account",
+  "can_bring_below_m": false
+ },
+ "IN|gemma_it|hi|U_ft->U": {
+  "contrast_raw_logodds": 0.3530992909063384,
+  "q_non": 0.905,
+  "q_en": 0.87,
+  "t1_extraFP_nonEN|to0": 0.26923076923076883,
+  "t2_FN_EN|to0": 0.03867403314917117,
+  "t1_extraFP_nonEN|toM": null,
+  "t2_FN_EN|toM": null,
+  "measured_FP_nonEN": null,
+  "measured_FP_nonEN_ci": [
+   null,
+   null
+  ],
+  "measured_FN_EN": null,
+  "measured_FN_EN_ci": [
+   null,
+   null
+  ],
+  "verdict_to0": "NO MEASURED ERROR (cell not adjudicated)",
+  "can_bring_below_m": null
+ },
+ "SLSL|gemma_it|hi|U_ft->U": {
+  "contrast_raw_logodds": 1.277095069154898,
+  "q_non": 0.96,
+  "q_en": 0.87,
+  "t1_extraFP_nonEN|to0": 0.6923076923076917,
+  "t2_FN_EN|to0": 0.09375,
+  "t1_extraFP_nonEN|toM": 0.4342434802788397,
+  "t2_FN_EN|toM": 0.058803804621093025,
+  "measured_FP_nonEN": null,
+  "measured_FP_nonEN_ci": [
+   null,
+   null
+  ],
+  "measured_FN_EN": null,
+  "measured_FN_EN_ci": [
+   null,
+   null
+  ],
+  "verdict_to0": "NO MEASURED ERROR (cell not adjudicated)",
+  "can_bring_below_m": null
+ },
+ "SLSL|gams3_it|hi|U_ft->U": {
+  "contrast_raw_logodds": 0.7436876833097541,
+  "q_non": 0.74,
+  "q_en": 0.575,
+  "t1_extraFP_nonEN|to0": 0.3882352941176471,
+  "t2_FN_EN|to0": 0.22297297297297303,
+  "t1_extraFP_nonEN|toM": 0.0491225178647246,
+  "t2_FN_EN|toM": 0.028212256881767317,
+  "measured_FP_nonEN": null,
+  "measured_FP_nonEN_ci": [
+   null,
+   null
+  ],
+  "measured_FN_EN": null,
+  "measured_FN_EN_ci": [
+   null,
+   null
+  ],
+  "verdict_to0": "NO MEASURED ERROR (cell not adjudicated)",
+  "can_bring_below_m": null
+ },
+ "OUT|gemma_it|hi|U_orig->U": {
+  "contrast_raw_logodds": 2.626974887837969,
+  "q_non": 0.865,
+  "q_en": 0.31658291457286436,
+  "t1_extraFP_nonEN|to0": 0.8024632352941177,
+  "t2_FN_EN|to0": 0.6340081912452435,
+  "t1_extraFP_nonEN|toM": 0.7421757319071798,
+  "t2_FN_EN|toM": 0.5863763879476946,
+  "measured_FP_nonEN": 0.4285714285714286,
+  "measured_FP_nonEN_ci": [
+   0.15821692226262685,
+   0.7495457695909742
+  ],
+  "measured_FN_EN": 0.33333333333333337,
+  "measured_FN_EN_ci": [
+   0.13811783989736148,
+   0.6093824126023861
+  ],
+  "verdict_to0": "judge error alone CANNOT account",
+  "can_bring_below_m": true
+ },
+ "OUT|gams3_it|hi|U_orig->U": {
+  "contrast_raw_logodds": 0.15343969508347965,
+  "q_non": 0.37,
+  "q_en": 0.33499999999999996,
+  "t1_extraFP_nonEN|to0": 0.05263157894736855,
+  "t2_FN_EN|to0": 0.09459459459459463,
+  "t1_extraFP_nonEN|toM": null,
+  "t2_FN_EN|toM": null,
+  "measured_FP_nonEN": 0.2325581395348837,
+  "measured_FP_nonEN_ci": [
+   0.1315353846924483,
+   0.37744808299439403
+  ],
+  "measured_FN_EN": 0.30000000000000004,
+  "measured_FN_EN_ci": [
+   0.10778928748621197,
+   0.6032267800204348
+  ],
+  "verdict_to0": "judge error alone CAN account",
+  "can_bring_below_m": false
+ },
+ "OUT|gemma_it|lo|U_orig->U": {
+  "contrast_raw_logodds": 2.864273004928802,
+  "q_non": 0.964824120603015,
+  "q_en": 0.61,
+  "t1_extraFP_nonEN|to0": 0.9098054374436283,
+  "t2_FN_EN|to0": 0.3677604166666666,
+  "t1_extraFP_nonEN|toM": 0.8567656125835426,
+  "t2_FN_EN|toM": 0.3463207249615039,
+  "measured_FP_nonEN": 0.4285714285714286,
+  "measured_FP_nonEN_ci": [
+   0.15821692226262685,
+   0.7495457695909742
+  ],
+  "measured_FN_EN": 0.33333333333333337,
+  "measured_FN_EN_ci": [
+   0.13811783989736148,
+   0.6093824126023861
+  ],
+  "verdict_to0": "judge error alone CAN account",
+  "can_bring_below_m": true
+ },
+ "OUT|gams3_it|lo|U_orig->U": {
+  "contrast_raw_logodds": NaN,
+  "q_non": NaN,
+  "q_en": NaN,
+  "t1_extraFP_nonEN|to0": null,
+  "t2_FN_EN|to0": null,
+  "t1_extraFP_nonEN|toM": null,
+  "t2_FN_EN|toM": null,
+  "measured_FP_nonEN": null,
+  "measured_FP_nonEN_ci": [
+   null,
+   null
+  ],
+  "measured_FN_EN": null,
+  "measured_FN_EN_ci": [
+   null,
+   null
+  ],
+  "verdict_to0": "NO MEASURED ERROR (cell not adjudicated)",
+  "can_bring_below_m": null
+ },
+ "IN|gemma_it|hi|U_orig->U": {
+  "contrast_raw_logodds": NaN,
+  "q_non": NaN,
+  "q_en": 0.31658291457286436,
+  "t1_extraFP_nonEN|to0": null,
+  "t2_FN_EN|to0": null,
+  "t1_extraFP_nonEN|toM": null,
+  "t2_FN_EN|toM": null,
+  "measured_FP_nonEN": null,
+  "measured_FP_nonEN_ci": [
+   null,
+   null
+  ],
+  "measured_FN_EN": null,
+  "measured_FN_EN_ci": [
+   null,
+   null
+  ],
+  "verdict_to0": "NO MEASURED ERROR (cell not adjudicated)",
+  "can_bring_below_m": null
+ },
+ "SLSL|gemma_it|hi|U_orig->U": {
+  "contrast_raw_logodds": NaN,
+  "q_non": NaN,
+  "q_en": 0.31658291457286436,
+  "t1_extraFP_nonEN|to0": null,
+  "t2_FN_EN|to0": null,
+  "t1_extraFP_nonEN|toM": null,
+  "t2_FN_EN|toM": null,
+  "measured_FP_nonEN": null,
+  "measured_FP_nonEN_ci": [
+   null,
+   null
+  ],
+  "measured_FN_EN": null,
+  "measured_FN_EN_ci": [
+   null,
+   null
+  ],
+  "verdict_to0": "NO MEASURED ERROR (cell not adjudicated)",
+  "can_bring_below_m": null
+ },
+ "SLSL|gams3_it|hi|U_orig->U": {
+  "contrast_raw_logodds": NaN,
+  "q_non": NaN,
+  "q_en": 0.33499999999999996,
+  "t1_extraFP_nonEN|to0": null,
+  "t2_FN_EN|to0": null,
+  "t1_extraFP_nonEN|toM": null,
+  "t2_FN_EN|toM": null,
+  "measured_FP_nonEN": null,
+  "measured_FP_nonEN_ci": [
+   null,
+   null
+  ],
+  "measured_FN_EN": null,
+  "measured_FN_EN_ci": [
+   null,
+   null
+  ],
+  "verdict_to0": "NO MEASURED ERROR (cell not adjudicated)",
+  "can_bring_below_m": null
+ },
+ "OUT|gemma_it|hi|U_tr->U": {
+  "contrast_raw_logodds": 2.4277482359480516,
+  "q_non": 0.84,
+  "q_en": 0.31658291457286436,
+  "t1_extraFP_nonEN|to0": 0.7658823529411765,
+  "t2_FN_EN|to0": 0.6231155778894472,
+  "t1_extraFP_nonEN|toM": 0.694430497075176,
+  "t2_FN_EN|toM": 0.5649829361224212,
+  "measured_FP_nonEN": 0.4285714285714286,
+  "measured_FP_nonEN_ci": [
+   0.15821692226262685,
+   0.7495457695909742
+  ],
+  "measured_FN_EN": 0.33333333333333337,
+  "measured_FN_EN_ci": [
+   0.13811783989736148,
+   0.6093824126023861
+  ],
+  "verdict_to0": "judge error alone CANNOT account",
+  "can_bring_below_m": true
+ },
+ "OUT|gams3_it|hi|U_tr->U": {
+  "contrast_raw_logodds": 0.7656992165043245,
+  "q_non": 0.52,
+  "q_en": 0.33499999999999996,
+  "t1_extraFP_nonEN|to0": 0.27819548872180466,
+  "t2_FN_EN|to0": 0.35576923076923084,
+  "t1_extraFP_nonEN|toM": 0.04508796611135123,
+  "t2_FN_EN|toM": 0.057660572046247416,
+  "measured_FP_nonEN": 0.4418604651162791,
+  "measured_FP_nonEN_ci": [
+   0.3043308562392133,
+   0.5889264193448829
+  ],
+  "measured_FN_EN": 0.30000000000000004,
+  "measured_FN_EN_ci": [
+   0.10778928748621197,
+   0.6032267800204348
+  ],
+  "verdict_to0": "judge error alone CAN account",
+  "can_bring_below_m": true
+ },
+ "OUT|gemma_it|lo|U_tr->U": {
+  "contrast_raw_logodds": 3.2162494280859804,
+  "q_non": 0.975,
+  "q_en": 0.61,
+  "t1_extraFP_nonEN|to0": 0.9358974358974358,
+  "t2_FN_EN|to0": 0.37435897435897425,
+  "t1_extraFP_nonEN|toM": 0.8982012746575893,
+  "t2_FN_EN|toM": 0.3592805098630357,
+  "measured_FP_nonEN": 0.4285714285714286,
+  "measured_FP_nonEN_ci": [
+   0.15821692226262685,
+   0.7495457695909742
+  ],
+  "measured_FN_EN": 0.33333333333333337,
+  "measured_FN_EN_ci": [
+   0.13811783989736148,
+   0.6093824126023861
+  ],
+  "verdict_to0": "judge error alone CAN account",
+  "can_bring_below_m": true
+ },
+ "OUT|gams3_it|lo|U_tr->U": {
+  "contrast_raw_logodds": NaN,
+  "q_non": NaN,
+  "q_en": NaN,
+  "t1_extraFP_nonEN|to0": null,
+  "t2_FN_EN|to0": null,
+  "t1_extraFP_nonEN|toM": null,
+  "t2_FN_EN|toM": null,
+  "measured_FP_nonEN": null,
+  "measured_FP_nonEN_ci": [
+   null,
+   null
+  ],
+  "measured_FN_EN": null,
+  "measured_FN_EN_ci": [
+   null,
+   null
+  ],
+  "verdict_to0": "NO MEASURED ERROR (cell not adjudicated)",
+  "can_bring_below_m": null
+ },
+ "IN|gemma_it|hi|U_tr->U": {
+  "contrast_raw_logodds": NaN,
+  "q_non": NaN,
+  "q_en": 0.31658291457286436,
+  "t1_extraFP_nonEN|to0": null,
+  "t2_FN_EN|to0": null,
+  "t1_extraFP_nonEN|toM": null,
+  "t2_FN_EN|toM": null,
+  "measured_FP_nonEN": null,
+  "measured_FP_nonEN_ci": [
+   null,
+   null
+  ],
+  "measured_FN_EN": null,
+  "measured_FN_EN_ci": [
+   null,
+   null
+  ],
+  "verdict_to0": "NO MEASURED ERROR (cell not adjudicated)",
+  "can_bring_below_m": null
+ },
+ "SLSL|gemma_it|hi|U_tr->U": {
+  "contrast_raw_logodds": NaN,
+  "q_non": NaN,
+  "q_en": 0.31658291457286436,
+  "t1_extraFP_nonEN|to0": null,
+  "t2_FN_EN|to0": null,
+  "t1_extraFP_nonEN|toM": null,
+  "t2_FN_EN|toM": null,
+  "measured_FP_nonEN": null,
+  "measured_FP_nonEN_ci": [
+   null,
+   null
+  ],
+  "measured_FN_EN": null,
+  "measured_FN_EN_ci": [
+   null,
+   null
+  ],
+  "verdict_to0": "NO MEASURED ERROR (cell not adjudicated)",
+  "can_bring_below_m": null
+ },
+ "SLSL|gams3_it|hi|U_tr->U": {
+  "contrast_raw_logodds": NaN,
+  "q_non": NaN,
+  "q_en": 0.33499999999999996,
+  "t1_extraFP_nonEN|to0": null,
+  "t2_FN_EN|to0": null,
+  "t1_extraFP_nonEN|toM": null,
+  "t2_FN_EN|toM": null,
+  "measured_FP_nonEN": null,
+  "measured_FP_nonEN_ci": [
+   null,
+   null
+  ],
+  "measured_FN_EN": null,
+  "measured_FN_EN_ci": [
+   null,
+   null
+  ],
+  "verdict_to0": "NO MEASURED ERROR (cell not adjudicated)",
+  "can_bring_below_m": null
+ }
+}
