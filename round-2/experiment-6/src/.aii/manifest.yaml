@@ -1,0 +1,25 @@
+entries:
+  - path: .venv/
+    delete: regenerable
+    source: "uv venv .venv --python=3.12 && uv pip install --python .venv/bin/python -r requirements.lock.txt"
+  - path: results/gemma_it/dev_raw_caps.npz
+    delete: regenerable
+    source: ".venv/bin/python src/run_model.py --model gemma_it --stages dev"
+  - path: results/gams3_it/dev_raw_caps.npz
+    delete: regenerable
+    source: ".venv/bin/python src/run_model.py --model gams3_it --stages dev"
+  - path: results/gemma_it/dir_acts.npz
+    keep: DEV direction-building activations (float32); the only way to rebuild the refusal/harm directions offline, GPU-only to regenerate
+  - path: results/gams3_it/dir_acts.npz
+    keep: DEV direction-building activations (float32); the only way to rebuild the refusal/harm directions offline, GPU-only to regenerate
+  - path: results/gemma_it/lstar_residuals.npz
+    keep: float32 last-token residuals at L* for D300 x {k0,P5,P10,Pfull} x {SL-MT,EN-BT}; the judge-free primary readout is built from these
+  - path: results/gams3_it/lstar_residuals.npz
+    keep: float32 last-token residuals at L* for D300 x {k0,P5,P10,Pfull} x {SL-MT,EN-BT}; the judge-free primary readout is built from these
+  - path: results/
+    keep: every generation, judge ledger, adjudication and statistic of this study (about 4 GPU-hours plus the paid judge calls the run's budget can no longer buy)
+  - path: .protocol_git/
+    keep: git history of the pre-registration (protocol, GaMS addendum, amendments 1-8, m value, adjudications) with commit hashes and timestamps
+  - path: src/__pycache__/
+    delete: regenerable
+    source: "regenerated automatically by python on import"
