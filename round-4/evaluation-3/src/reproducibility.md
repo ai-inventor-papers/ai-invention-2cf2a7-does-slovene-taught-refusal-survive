@@ -16,12 +16,12 @@ The sibling folders this artifact **reads** (read-only, never written) are, by a
 
 | id | published sibling folder | what is read |
 |---|---|---|
-| `art_T5ChU9GV1tf7` (exp8) | `../../../iter_2/gen_art/gen_art_experiment_8` | `results/items_final.jsonl`, `results/judge_labels.jsonl`, `data/probe_P200.jsonl`, `src/common.py`, `src/analysis.py`, spot-check files |
-| `art_n3Crj0p24sBa` (exp9) | `../../../iter_3/gen_art/gen_art_experiment_9` | `results/items_final.jsonl`, `data/probe_P300.jsonl`, `data/twins_T150.jsonl`, `results/adjudication_rubric.md`, `src/stats_core.py`, `judge_model/mdeberta_gemini_distill/` |
-| `art_sfQmnafZ153j` (exp10) | `../../../iter_3/gen_art/gen_art_experiment_10` | `results/test/*/addon.jsonl`, `results/adjudication_*`, `src/analysis.py` |
-| `art_Aw3AXCXv9pUg` (exp11) | `../../../iter_3/gen_art/gen_art_experiment_11` | `results/rows_final.parquet`, `results/adjudication/*`, `data/items.jsonl`, `src/analysis.py` |
-| iter-3 evaluation 2 | `../../../iter_3/gen_art/gen_art_evaluation_2` | `work/master.parquet`, `work/items_relabelled.jsonl.gz`, `adjudication/*`, `labels/*`, `src/stats_core.py` |
-| exp12 | `../../../iter_3/gen_art/gen_art_experiment_12` | `results/gates.json` (catastrophe gate, cited only) |
+| `art_T5ChU9GV1tf7` (exp8) | `../../../round-2/experiment-8/src` | `results/items_final.jsonl`, `results/judge_labels.jsonl`, `data/probe_P200.jsonl`, `src/common.py`, `src/analysis.py`, spot-check files |
+| `art_n3Crj0p24sBa` (exp9) | `../../../round-3/experiment-9/src` | `results/items_final.jsonl`, `data/probe_P300.jsonl`, `data/twins_T150.jsonl`, `results/adjudication_rubric.md`, `src/stats_core.py`, `judge_model/mdeberta_gemini_distill/` |
+| `art_sfQmnafZ153j` (exp10) | `../../../round-3/experiment-10/src` | `results/test/*/addon.jsonl`, `results/adjudication_*`, `src/analysis.py` |
+| `art_Aw3AXCXv9pUg` (exp11) | `../../../round-3/experiment-11/src` | `results/rows_final.parquet`, `results/adjudication/*`, `data/items.jsonl`, `src/analysis.py` |
+| iter-3 evaluation 2 | `../../../round-3/evaluation-2/src` | `work/master.parquet`, `work/items_relabelled.jsonl.gz`, `adjudication/*`, `labels/*`, `src/stats_core.py` |
+| exp12 | `../../../round-3/experiment-12/src` | `results/gates.json` (catastrophe gate, cited only) |
 
 `src/common.py` resolves all of these from **one constant**, `RUNS`, anchored on `Path(__file__)`:
 `RUNS = Path(__file__).resolve().parents[4]` would point at the published `3_invention_loop/` directory. In the version

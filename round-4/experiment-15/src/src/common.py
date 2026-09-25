@@ -25,15 +25,15 @@ for _d in (DATA, RESULTS, LOGS, FIG, GENS, LABELS):
     _d.mkdir(parents=True, exist_ok=True)
 
 RUN = Path(__file__).resolve().parents[4]
-DEP = RUN / "iter_1/gen_art/gen_art_dataset_1"
-EXP1 = RUN / "iter_1/gen_art/gen_art_experiment_1"
-EXP2 = RUN / "iter_1/gen_art/gen_art_experiment_2"
-EXP4 = RUN / "iter_1/gen_art/gen_art_experiment_4"
-EXP8 = RUN / "iter_2/gen_art/gen_art_experiment_8"
-EXP9 = RUN / "iter_3/gen_art/gen_art_experiment_9"
-EXP10 = RUN / "iter_3/gen_art/gen_art_experiment_10"
-EXP11 = RUN / "iter_3/gen_art/gen_art_experiment_11"
-EVAL2 = RUN / "iter_3/gen_art/gen_art_evaluation_2"
+DEP = RUN / "round-1/dataset-1/src"
+EXP1 = RUN / "round-1/experiment-1/src"
+EXP2 = RUN / "round-1/experiment-2/src"
+EXP4 = RUN / "round-1/experiment-4/src"
+EXP8 = RUN / "round-2/experiment-8/src"
+EXP9 = RUN / "round-3/experiment-9/src"
+EXP10 = RUN / "round-3/experiment-10/src"
+EXP11 = RUN / "round-3/experiment-11/src"
+EVAL2 = RUN / "round-3/evaluation-2/src"
 
 SEED = 20260926
 # AMENDMENT A0 (throughput, logged in protocol.yaml before any BODY row): 64 new tokens, matching the literal P1 wording

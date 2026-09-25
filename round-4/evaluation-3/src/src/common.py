@@ -14,13 +14,13 @@ ROOT = Path(__file__).resolve().parents[1]
 # Sibling artifacts of the same run, read-only. In the published repository they are sibling folders of ROOT's
 # grandparents, so the default below resolves inside a clone; set AII_RUNS to override (see reproducibility.md).
 RUNS = Path(os.environ.get("AII_RUNS") or ROOT.parents[2])  # <clone>/3_invention_loop
-E8 = RUNS / "iter_2/gen_art/gen_art_experiment_8"
-E9 = RUNS / "iter_3/gen_art/gen_art_experiment_9"
-E10 = RUNS / "iter_3/gen_art/gen_art_experiment_10"
-E11 = RUNS / "iter_3/gen_art/gen_art_experiment_11"
-EV2 = RUNS / "iter_3/gen_art/gen_art_evaluation_2"
-E12 = RUNS / "iter_3/gen_art/gen_art_experiment_12"
-DS1 = RUNS / "iter_1/gen_art/gen_art_dataset_1"
+E8 = RUNS / "round-2/experiment-8/src"
+E9 = RUNS / "round-3/experiment-9/src"
+E10 = RUNS / "round-3/experiment-10/src"
+E11 = RUNS / "round-3/experiment-11/src"
+EV2 = RUNS / "round-3/evaluation-2/src"
+E12 = RUNS / "round-3/experiment-12/src"
+DS1 = RUNS / "round-1/dataset-1/src"
 
 WORK, LABELS, RESULTS, FIGS, ADJ, PROMPTS, LOGS = (ROOT / d for d in
                                                    ("work", "labels", "results", "figures", "adjudication", "prompts", "logs"))

@@ -112,15 +112,15 @@ def main() -> None:
     logger.info(f"smoke {out['openrouter_smoke']}")
     dump(RESULTS / "inputs_check.json", out)
     prov = {"copied_from": {
-        "src/stats_core.py": {"source": "iter_3/gen_art/gen_art_experiment_11/src/stats_core.py",
+        "src/stats_core.py": {"source": "round-3/experiment-11/src/src/stats_core.py",
                               "sha256_source": sha256_file(E11 / "src/stats_core.py"),
                               "sha256_copy": sha256_file(ROOT / "src/stats_core.py")},
         "src/gen.py (load_model/_hook/attach_adapter/generate_batch/Runner)":
-            {"source": "iter_3/gen_art/gen_art_experiment_11/src/gen.py", "sha256_source": sha256_file(E11 / "src/gen.py")},
+            {"source": "round-3/experiment-11/src/src/gen.py", "sha256_source": sha256_file(E11 / "src/gen.py")},
         "src/build_items.py (NLLB200/split/join/chrf)":
-            {"source": "iter_3/gen_art/gen_art_experiment_11/src/build_items.py",
+            {"source": "round-3/experiment-11/src/src/build_items.py",
              "sha256_source": sha256_file(E11 / "src/build_items.py")},
-        "src/common.py (JUDGE_PROMPT P1)": {"source": "iter_2/gen_art/gen_art_experiment_8/src/common.py",
+        "src/common.py (JUDGE_PROMPT P1)": {"source": "round-2/experiment-8/src/src/common.py",
                                             "sha256_source": sha256_file(E8 / "src/common.py")}}}
     dump(RESULTS / "provenance_code.json", prov)
 
