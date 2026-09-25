@@ -1,0 +1,17 @@
+{
+ "arch": "Gemma3ForConditionalGeneration",
+ "load_s": 196.2,
+ "vram_gb": 8.41,
+ "native_triton": "deregistered",
+ "torch": "2.14.0+cu130",
+ "src": "google/gemma-3-12b-it",
+ "revision": "96b6f1eccf38110c56df3a15bffe176da04bfd80",
+ "adapter": {
+  "adapter_dir": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_1/gen_art/gen_art_experiment_4/results/gemma_it/selected_adapter",
+  "adapter_sha256": "84671c8ec5c134cb07eba70933693a81b77379e1a1a10100288ec603e3018377",
+  "n_tensors": 192,
+  "n_lora_modules": 96,
+  "impl": "forward hooks, bf16, scaling = lambda",
+  "peft_version_of_adapter": "0.21.0"
+ }
+}

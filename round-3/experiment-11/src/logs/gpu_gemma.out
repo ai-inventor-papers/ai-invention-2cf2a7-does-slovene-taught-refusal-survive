@@ -1,0 +1,14 @@
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:11<00:47, 11.85s/it]Loading checkpoint shards:  40%|████      | 2/5 [00:21<00:31, 10.47s/it]Loading checkpoint shards:  60%|██████    | 3/5 [00:30<00:19,  9.88s/it]Loading checkpoint shards:  80%|████████  | 4/5 [00:39<00:09,  9.69s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:48<00:00,  9.37s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:48<00:00,  9.75s/it]
+06:55:06|INFO   |loaded gemma_it {'arch': 'Gemma3ForConditionalGeneration', 'load_s': 70.4, 'vram_gb': 8.41, 'native_triton': 'deregistered', 'torch': '2.14.0+cu130', 'src': 'google/gemma-3-12b-it', 'revision': '96b6f1eccf38110c56df3a15bffe176da04bfd80'}
+06:55:06|INFO   |adapter attached {'adapter_dir': '/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_1/gen_art/gen_art_experiment_4/results/gemma_it/selected_adapter', 'adapter_sha256': '84671c8ec5c134cb07eba70933693a81b77379e1a1a10100288ec603e3018377', 'n_tensors': 192, 'n_lora_modules': 96, 'impl': 'forward hooks, bf16, scaling = lambda', 'peft_version_of_adapter': '0.21.0'}
+06:55:07|INFO   |[J1_lam1_curve_items] gemma_it edit lam=1: 500 to generate (0 done)
+06:56:02|WARNING|OOM at bs=139 -> halving
+06:57:58|WARNING|OOM at bs=120 -> halving
+06:59:00|INFO   |[J1_lam1_curve_items] 259/500 234s (1.11/s) degen 0.000 ETA 3.6 min
+06:59:51|WARNING|OOM at bs=106 -> halving
+07:01:50|WARNING|OOM at bs=88 -> halving
+07:03:48|INFO   |[J1_lam1_curve_items] 500/500 522s (0.96/s) degen 0.000 ETA 0.0 min
+07:03:48|INFO   |[J2_curve_0.1] gemma_it lam lam=0.1: 500 to generate (0 done)
+07:06:04|INFO   |[J2_curve_0.1] 299/500 136s (2.20/s) degen 0.003 ETA 1.5 min
+07:08:39|INFO   |[J2_curve_0.1] 500/500 291s (1.72/s) degen 0.002 ETA 0.0 min
+07:08:39|INFO   |[J2_curve_0.2] gemma_it lam lam=0.2: 500 to generate (0 done)

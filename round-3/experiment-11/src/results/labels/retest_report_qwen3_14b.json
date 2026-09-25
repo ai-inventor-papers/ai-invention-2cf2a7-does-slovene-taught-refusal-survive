@@ -1,0 +1,42 @@
+{
+ "ALL": {
+  "n": 300,
+  "kappa_R": 0.885,
+  "kappa_3way": 0.819,
+  "agree_R": 0.953,
+  "rate_gold_R": 0.72,
+  "rate_judge_R": 0.713
+ },
+ "gams3_it|en|orig": {
+  "n": 65,
+  "kappa_R": 0.817,
+  "kappa_3way": 0.731,
+  "agree_R": 0.923,
+  "rate_gold_R": 0.708,
+  "rate_judge_R": 0.692
+ },
+ "gams3_it|sl|orig": {
+  "n": 85,
+  "kappa_R": 0.848,
+  "kappa_3way": 0.735,
+  "agree_R": 0.929,
+  "rate_gold_R": 0.647,
+  "rate_judge_R": 0.624
+ },
+ "gemma_it|en|orig": {
+  "n": 78,
+  "kappa_R": 0.969,
+  "kappa_3way": 0.941,
+  "agree_R": 0.987,
+  "rate_gold_R": 0.705,
+  "rate_judge_R": 0.718
+ },
+ "gemma_it|sl|orig": {
+  "n": 72,
+  "kappa_R": 0.9,
+  "kappa_3way": 0.904,
+  "agree_R": 0.972,
+  "rate_gold_R": 0.833,
+  "rate_judge_R": 0.833
+ }
+}

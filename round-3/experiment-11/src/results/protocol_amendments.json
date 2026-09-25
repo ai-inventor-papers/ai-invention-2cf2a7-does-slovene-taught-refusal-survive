@@ -1,0 +1,48 @@
+[
+ {
+  "id": "AM1",
+  "utc": "2026-09-24T07:09:35.528432+00:00",
+  "before": "Gemma J2 step 0.2 (in progress; J3-J7 not started for any model); GaMS FINAL and all public generation not started",
+  "change": [
+   "FINAL job order becomes J1, J2 (7 curve steps), J4 (HARD lambda=1), J5a/J5b (L3 lambda 0/1), J3 (rest of RefusEU-x FINAL at lambda=1), J6, J7",
+   "public checkpoints: PUB items 400 -> 200 and HARD150 -> 100 unsafe + 100 safe (prefixes of the frozen ranked lists); p-e-w heretic first, others only if time",
+   "batchcheck reduced 16 -> 8 items"
+  ],
+  "reason": "Measured throughput is 1.7-2.2 items/s (constant ~0.24 s per decoding step; batch size capped by KV memory at ~20k tokens), and the local judge (Qwen3-14B, ~4.5 rows/s) must label every row after generation because the paid OpenRouter judge is unavailable (403 aii_run_budget_exhausted). The frozen order would reach the deadline before L3 (ARM 2) in both models. The curve items already give an orig->lambda=1 McNemar on 200 FINAL items; the full-FINAL lambda=1 remainder (J3) is the least informative job per GPU-minute, so it moves last. Nothing FINAL has been judged; no outcome was looked at.",
+  "cost": "The plan's 'never cut: lambda=1 on the full RefusEU-x FINAL' may not be met; whatever part of J3 is not reached is reported as NOT RUN."
+ },
+ {
+  "id": "AM2",
+  "utc": "2026-09-24T07:48:38.281345+00:00",
+  "before": "Gemma J4 in progress; no L3 row generated for any model; GaMS not started; no FINAL row judged",
+  "change": [
+   "L3 (ARM 2) subset: RefusEU-x 400 -> 250 items and HARD 100 unsafe + 100 safe -> 60 + 60 (prefixes of the frozen ranked lists), at lambda 0 and 1",
+   "public checkpoints: only p-e-w/gemma-3-12b-it-heretic is evaluated; huihui and mlabonne-v2 are downloaded but NOT run"
+  ],
+  "reason": "Measured 1.7 items/s. Generation must finish by ~09:30 UTC so the local judge (the only judge available) can label the priority rows before the module deadline. L3 is a 2-point contrast, so items trade directly against the primary curve; 250 items keep the two-point MDE near 0.35 log-odds.",
+  "cost": "C-MOD MDE widens; C-EXT becomes a single-checkpoint description, so the pre-registered '>= 2 of 3 checkpoints' criterion cannot be evaluated.",
+  "note_applied": "Gemma's L3 job had already been built from the pre-amendment sizes when AM2 was written, so Gemma has the larger L3 set (400 RefusEU-x + 100 + 100 HARD) and GaMS the reduced one (250 + 60 + 60). The reduced sets are PREFIXES of the same frozen ranked lists, so the two-model analysis intersects exactly to GaMS's set; the extra Gemma rows are reported but carry no cross-model contrast."
+ },
+ {
+  "id": "AM3",
+  "utc": "2026-09-24T08:22:24.465961+00:00",
+  "before": "GaMS J1 in progress; no public-checkpoint row generated; no FINAL row judged",
+  "change": [
+   "public checkpoint p-e-w heretic: PUB items 200 -> 150 and HARD 100 -> 50 per class; its Belebele/NLL block is dropped",
+   "GaMS wall-clock deadline extended to 09:22 UTC so that the 7 curve steps, HARD lambda=1 and the L3 pair fit"
+  ],
+  "reason": "GPU time left after the Gemma block is ~70 min and the local judge still needs ~80 min. The pre-registered C-LAG curve and C-MOD L3 pair outrank the descriptive C-EXT arm, so the external checkpoint keeps only enough items for a descriptive SL-EN and L3-EN difference (150 items, paired bootstrap).",
+  "cost": "C-EXT CIs widen (150 paired items); no capability gate for the public checkpoint."
+ },
+ {
+  "id": "AM4",
+  "utc": "2026-09-24T09:16:49.485907+00:00",
+  "before": "GaMS J3 (full-FINAL lambda=1 remainder) partly generated; no FINAL row judged",
+  "change": [
+   "GaMS deadline set to 09:26 UTC: J3 (the RefusEU-x lambda=1 rows outside the curve subset) and J6/J7 are only partly generated or skipped so the local judge gets ~75 min",
+   "Gemma top-up (its unfinished J5b L3 lambda=1 rows) and the p-e-w public block run after GaMS"
+  ],
+  "reason": "One judge (local Qwen3-14B, ~4 rows/s) must label ~7.8k priority rows plus the 586 gate + 300 retest before the module deadline. The curve, HARD lambda=1 and the L3 pair (all pre-registered primaries) are already complete for both models; J3 only widens the lambda=1 rate estimate that the curve already anchors.",
+  "cost": "The plan-designated never-cut lambda=1 on the FULL RefusEU-x FINAL is only partly met for GaMS; the completed part (curve 200 + whatever of J3 finished) is reported and the rest labelled NOT RUN."
+ }
+]
