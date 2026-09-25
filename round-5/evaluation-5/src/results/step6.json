@@ -3,22 +3,22 @@
   "sources": [
    {
     "artifact": "exp11",
-    "file": "RUN/iter_3/gen_art/gen_art_experiment_11/results/RESULTS_tables.md",
+    "file": "RUN/round-3/experiment-11/src/results/RESULTS_tables.md",
     "n_tables": 12
    },
    {
     "artifact": "exp9",
-    "file": "RUN/iter_3/gen_art/gen_art_experiment_9/results/summary_tables.md",
+    "file": "RUN/round-3/experiment-9/src/results/summary_tables.md",
     "n_tables": 9
    },
    {
     "artifact": "exp10",
-    "file": "RUN/iter_3/gen_art/gen_art_experiment_10/results/summary_tables.md",
+    "file": "RUN/round-3/experiment-10/src/results/summary_tables.md",
     "n_tables": 8
    },
    {
     "artifact": "exp12",
-    "file": "RUN/iter_3/gen_art/gen_art_experiment_12/results/RESULTS.md",
+    "file": "RUN/round-3/experiment-12/src/results/RESULTS.md",
     "n_tables": 11
    }
   ],
@@ -31,7 +31,7 @@
      -0.4160706822497849,
      0.48192172055902566
     ],
-    "file": "RUN/iter_3/gen_art/gen_art_experiment_9/results/analysis.json",
+    "file": "RUN/round-3/experiment-9/src/results/analysis.json",
     "json_path": "SDT"
    },
    {
@@ -42,7 +42,7 @@
      -1.3074282573425433,
      0.4010312906661551
     ],
-    "file": "RUN/iter_3/gen_art/gen_art_experiment_11/results/analysis.json",
+    "file": "RUN/round-3/experiment-11/src/results/analysis.json",
     "json_path": "G3/q_R"
    },
    {
@@ -50,7 +50,7 @@
     "quantity": "u_lang SL alpha50 (GaMS3, gemini R)",
     "value": 1.7845109990060268,
     "ci95": null,
-    "file": "RUN/iter_3/gen_art/gen_art_experiment_10/results/analysis.json",
+    "file": "RUN/round-3/experiment-10/src/results/analysis.json",
     "json_path": "induction/surrogate/gemini|R|gams3_it|exclude/curves/u_lang|sl/alpha50"
    },
    {
@@ -58,7 +58,7 @@
     "quantity": "multi-token excess E_iter1 GaMS3",
     "value": 0.5657280565905155,
     "ci95": null,
-    "file": "RUN/iter_3/gen_art/gen_art_experiment_12/results/kl_footprint.json",
+    "file": "RUN/round-3/experiment-12/src/results/kl_footprint.json",
     "json_path": "kl/gams3_it/ratios/E_iter1/multi/sl_over_enbt/excess_vs_rand/excess"
    },
    {
@@ -66,7 +66,7 @@
     "quantity": "multi-token excess E_iter1 Gemma",
     "value": 0.29418649148092996,
     "ci95": null,
-    "file": "RUN/iter_3/gen_art/gen_art_experiment_12/results/kl_footprint.json",
+    "file": "RUN/round-3/experiment-12/src/results/kl_footprint.json",
     "json_path": "kl/gemma_it/ratios/E_iter1/multi/sl_over_enbt/excess_vs_rand/excess"
    }
   ]
@@ -94,7 +94,7 @@
      -0.6826414082572464,
      -0.3812540601476006
     ],
-    "source_file": "RUN/iter_2/gen_art/gen_art_experiment_5/results/analysis_final.json",
+    "source_file": "RUN/round-2/experiment-5/src/results/analysis_final.json",
     "json_path": "C2_hard_sdt/primary_SLMT_vs_ENBT/DiD_c/est",
     "manipulation_valid": true,
     "validity_note": "no forced reply language (not applicable)"
@@ -117,7 +117,7 @@
      -0.6569786623193814,
      -0.3832007771038508
     ],
-    "source_file": "RUN/iter_3/gen_art/gen_art_evaluation_2/results/eval_results.json",
+    "source_file": "RUN/round-3/evaluation-2/src/results/eval_results.json",
     "json_path": "step6_meta/pooled_RE_HKSJ/R|L1(qwen3_14b)|DiD_c/mu",
     "manipulation_valid": true,
     "validity_note": "no forced reply language (not applicable)"
@@ -140,7 +140,7 @@
      -0.48192172055902566,
      0.4160706822497849
     ],
-    "source_file": "RUN/iter_3/gen_art/gen_art_experiment_9/results/analysis.json",
+    "source_file": "RUN/round-3/experiment-9/src/results/analysis.json",
     "json_path": "SDT/j1|R1/did_c",
     "manipulation_valid": true,
     "validity_note": "no forced reply language (not applicable)"
@@ -163,7 +163,7 @@
      -0.5250521336050282,
      -0.1556250138250093
     ],
-    "source_file": "RUN/iter_4/gen_art/gen_art_experiment_15/results/analysis.json",
+    "source_file": "RUN/round-4/experiment-15/src/results/analysis.json",
     "json_path": "sdt/R/DiD_c_ref_window",
     "manipulation_valid": true,
     "validity_note": "no forced reply language (not applicable)"
@@ -186,7 +186,7 @@
      -0.7581010928708223,
      -0.09961323913629452
     ],
-    "source_file": "RUN/iter_4/gen_art/gen_art_experiment_15/results/analysis.json",
+    "source_file": "RUN/round-4/experiment-15/src/results/analysis.json",
     "json_path": "sdt/R/DiD_c_ref_lam0",
     "manipulation_valid": true,
     "validity_note": "no forced reply language (not applicable)"
@@ -209,7 +209,7 @@
      -1.056279903277927,
      -0.523037260283507
     ],
-    "source_file": "RUN/iter_4/gen_art/gen_art_experiment_14/results/analysis.json",
+    "source_file": "RUN/round-4/experiment-14/src/results/analysis.json",
     "json_path": "sdt/DiD/zero|SLoutput/c/DiD_gemma_minus_gams",
     "manipulation_valid": true,
     "validity_note": "compliance gate passed"
@@ -232,7 +232,7 @@
      -0.07339674113506128,
      0.48844171403213343
     ],
-    "source_file": "RUN/iter_4/gen_art/gen_art_experiment_14/results/analysis.json",
+    "source_file": "RUN/round-4/experiment-14/src/results/analysis.json",
     "json_path": "sdt/DiD/zero|SLinput/c/DiD_gemma_minus_gams",
     "manipulation_valid": false,
     "validity_note": "INVALID-MANIPULATION: output-language compliance < 0.90 in gams3_it|slen=0.00"
@@ -255,7 +255,7 @@
      -0.7848193962906265,
      -0.20027706513092433
     ],
-    "source_file": "RUN/iter_4/gen_art/gen_art_experiment_14/results/analysis.json",
+    "source_file": "RUN/round-4/experiment-14/src/results/analysis.json",
     "json_path": "sdt/DiD/zero|SLboth/c/DiD_gemma_minus_gams",
     "manipulation_valid": true,
     "validity_note": "compliance gate passed"
@@ -278,7 +278,7 @@
      -1.9694445916707304,
      -1.2870136262935794
     ],
-    "source_file": "RUN/iter_4/gen_art/gen_art_experiment_14/results/analysis.json",
+    "source_file": "RUN/round-4/experiment-14/src/results/analysis.json",
     "json_path": "sdt/DiD/hi|SLoutput/c/DiD_gemma_minus_gams",
     "manipulation_valid": true,
     "validity_note": "compliance gate passed"
@@ -301,7 +301,7 @@
      0.07214848340381179,
      0.7491850355920885
     ],
-    "source_file": "RUN/iter_4/gen_art/gen_art_experiment_14/results/analysis.json",
+    "source_file": "RUN/round-4/experiment-14/src/results/analysis.json",
     "json_path": "sdt/DiD/hi|SLinput/c/DiD_gemma_minus_gams",
     "manipulation_valid": false,
     "validity_note": "INVALID-MANIPULATION: output-language compliance < 0.90 in gams3_it|slen=0.00"
@@ -324,7 +324,7 @@
      -1.7197725014636138,
      -0.8069561629544009
     ],
-    "source_file": "RUN/iter_4/gen_art/gen_art_experiment_14/results/analysis.json",
+    "source_file": "RUN/round-4/experiment-14/src/results/analysis.json",
     "json_path": "sdt/DiD/hi|SLboth/c/DiD_gemma_minus_gams",
     "manipulation_valid": true,
     "validity_note": "compliance gate passed"
@@ -556,7 +556,7 @@
     "verdict": "ESTIMATE (G3 LAG_BEYOND_MARGIN; B' curve unidentified; judge-qualified)",
     "evidence_tier": "CONFIRMATION (qualified)",
     "readout": "local J1",
-    "source": "RUN/iter_3/gen_art/gen_art_experiment_9/results/analysis.json"
+    "source": "RUN/round-3/experiment-9/src/results/analysis.json"
    },
    {
     "claim": "C3 / C-LAG (reserved FINAL split, iter 3)",
@@ -571,7 +571,7 @@
     "verdict": "ESTIMATE (support rule failed)",
     "evidence_tier": "CONFIRMATION (support failed)",
     "readout": "local Qwen3-14B",
-    "source": "RUN/iter_3/gen_art/gen_art_experiment_11/results/analysis.json"
+    "source": "RUN/round-3/experiment-11/src/results/analysis.json"
    },
    {
     "claim": "C3 / C-LAG pooled (iter 4)",
@@ -586,7 +586,7 @@
     "verdict": "READOUT NOT VALIDATED / rule outcome REFUTE-BOUND",
     "evidence_tier": "CONFIRMATION (gate failed)",
     "readout": "paid gemini-2.5-flash",
-    "source": "RUN/iter_4/gen_art/gen_art_evaluation_3/results/recompute.json"
+    "source": "RUN/round-4/evaluation-3/src/results/recompute.json"
    },
    {
     "claim": "C-LAG edit-induced component",
@@ -601,7 +601,7 @@
     "verdict": "NOT MET (underdetermined; per-body G3_edit spans both signs)",
     "evidence_tier": "CONFIRMATION (gate failed)",
     "readout": "paid gemini",
-    "source": "RUN/iter_4/gen_art/gen_art_evaluation_3/results/recompute.json"
+    "source": "RUN/round-4/evaluation-3/src/results/recompute.json"
    },
    {
     "claim": "C-LAG edit-induced component",
@@ -616,7 +616,7 @@
     "verdict": "NOT MET; |G3_edit| 90% bound 1.91",
     "evidence_tier": "SCREEN",
     "readout": "local J1",
-    "source": "RUN/iter_4/gen_art/gen_art_experiment_15/results/analysis.json"
+    "source": "RUN/round-4/experiment-15/src/results/analysis.json"
    },
    {
     "claim": "R-BASE (baseline offset)",
@@ -631,7 +631,7 @@
     "verdict": "exp15 R_BASE_SUPPORTED=True (read as 'not refuted'); ceiling: CEILING-ARTEFACT (FI_m=1)",
     "evidence_tier": "SCREEN (post-hoc sensitivity)",
     "readout": "local J1",
-    "source": "RUN/iter_4/gen_art/gen_art_experiment_15/results/analysis.json + results/ceiling_sensitivity.json"
+    "source": "RUN/round-4/experiment-15/src/results/analysis.json + results/ceiling_sensitivity.json"
    },
    {
     "claim": "R-JUDGE (judge-language artefact)",
@@ -646,7 +646,7 @@
     "verdict": "NOT SUPPORTED as a full explanation (TTJ lag persists); SDT criterion component present",
     "evidence_tier": "SCREEN",
     "readout": "TTJ (J1 on NLLB English)",
-    "source": "RUN/iter_4/gen_art/gen_art_experiment_15/results/analysis.json"
+    "source": "RUN/round-4/experiment-15/src/results/analysis.json"
    },
    {
     "claim": "R-INCAP (incapacity instead of compliance)",
@@ -658,7 +658,7 @@
     "verdict": "UNTESTED in exp15 (A4 key limit); exploratory author-model flag only",
     "evidence_tier": "SCREEN",
     "readout": "n/a",
-    "source": "RUN/iter_4/gen_art/gen_art_experiment_15/results/analysis.json"
+    "source": "RUN/round-4/experiment-15/src/results/analysis.json"
    },
    {
     "claim": "M-OUT / M-IN (mechanism, SL)",
@@ -673,7 +673,7 @@
     "verdict": "raw: M-OUT SUPPORTED; robust=False",
     "evidence_tier": "SCREEN (exploratory)",
     "readout": "local J1 + author-model gold",
-    "source": "RUN/iter_4/gen_art/gen_art_experiment_14/results/analysis.json"
+    "source": "RUN/round-4/experiment-14/src/results/analysis.json"
    },
    {
     "claim": "C5a (no Slovene-specific KL leakage)",
@@ -697,7 +697,7 @@
     "verdict": "supported=False",
     "evidence_tier": "SCREEN",
     "readout": "n/a",
-    "source": "RUN/iter_1/gen_art/gen_art_experiment_4/results/analysis.json"
+    "source": "RUN/round-1/experiment-4/src/results/analysis.json"
    },
    {
     "claim": "Criterion shift (SDT DiD_c, harmonised)",
@@ -721,7 +721,7 @@
     "verdict": "directional replication in 1 checkpoint (descriptive)",
     "evidence_tier": "SCREEN",
     "readout": "local J1",
-    "source": "RUN/iter_4/gen_art/gen_art_experiment_14/results/analysis.json"
+    "source": "RUN/round-4/experiment-14/src/results/analysis.json"
    },
    {
     "claim": "RQ2 / C-OUT confirmation (iteration 5)",

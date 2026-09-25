@@ -21,7 +21,7 @@
     -0.6826414082572464,
     -0.3812540601476006
    ],
-   "source_file": "RUN/iter_2/gen_art/gen_art_experiment_5/results/analysis_final.json",
+   "source_file": "RUN/round-2/experiment-5/src/results/analysis_final.json",
    "json_path": "C2_hard_sdt/primary_SLMT_vs_ENBT/DiD_c/est",
    "manipulation_valid": true,
    "validity_note": "no forced reply language (not applicable)"
@@ -44,7 +44,7 @@
     -0.6569786623193814,
     -0.3832007771038508
    ],
-   "source_file": "RUN/iter_3/gen_art/gen_art_evaluation_2/results/eval_results.json",
+   "source_file": "RUN/round-3/evaluation-2/src/results/eval_results.json",
    "json_path": "step6_meta/pooled_RE_HKSJ/R|L1(qwen3_14b)|DiD_c/mu",
    "manipulation_valid": true,
    "validity_note": "no forced reply language (not applicable)"
@@ -67,7 +67,7 @@
     -0.48192172055902566,
     0.4160706822497849
    ],
-   "source_file": "RUN/iter_3/gen_art/gen_art_experiment_9/results/analysis.json",
+   "source_file": "RUN/round-3/experiment-9/src/results/analysis.json",
    "json_path": "SDT/j1|R1/did_c",
    "manipulation_valid": true,
    "validity_note": "no forced reply language (not applicable)"
@@ -90,7 +90,7 @@
     -0.5250521336050282,
     -0.1556250138250093
    ],
-   "source_file": "RUN/iter_4/gen_art/gen_art_experiment_15/results/analysis.json",
+   "source_file": "RUN/round-4/experiment-15/src/results/analysis.json",
    "json_path": "sdt/R/DiD_c_ref_window",
    "manipulation_valid": true,
    "validity_note": "no forced reply language (not applicable)"
@@ -113,7 +113,7 @@
     -0.7581010928708223,
     -0.09961323913629452
    ],
-   "source_file": "RUN/iter_4/gen_art/gen_art_experiment_15/results/analysis.json",
+   "source_file": "RUN/round-4/experiment-15/src/results/analysis.json",
    "json_path": "sdt/R/DiD_c_ref_lam0",
    "manipulation_valid": true,
    "validity_note": "no forced reply language (not applicable)"
@@ -136,7 +136,7 @@
     -1.056279903277927,
     -0.523037260283507
    ],
-   "source_file": "RUN/iter_4/gen_art/gen_art_experiment_14/results/analysis.json",
+   "source_file": "RUN/round-4/experiment-14/src/results/analysis.json",
    "json_path": "sdt/DiD/zero|SLoutput/c/DiD_gemma_minus_gams",
    "manipulation_valid": true,
    "validity_note": "compliance gate passed"
@@ -159,7 +159,7 @@
     -0.07339674113506128,
     0.48844171403213343
    ],
-   "source_file": "RUN/iter_4/gen_art/gen_art_experiment_14/results/analysis.json",
+   "source_file": "RUN/round-4/experiment-14/src/results/analysis.json",
    "json_path": "sdt/DiD/zero|SLinput/c/DiD_gemma_minus_gams",
    "manipulation_valid": false,
    "validity_note": "INVALID-MANIPULATION: output-language compliance < 0.90 in gams3_it|slen=0.00"
@@ -182,7 +182,7 @@
     -0.7848193962906265,
     -0.20027706513092433
    ],
-   "source_file": "RUN/iter_4/gen_art/gen_art_experiment_14/results/analysis.json",
+   "source_file": "RUN/round-4/experiment-14/src/results/analysis.json",
    "json_path": "sdt/DiD/zero|SLboth/c/DiD_gemma_minus_gams",
    "manipulation_valid": true,
    "validity_note": "compliance gate passed"
@@ -205,7 +205,7 @@
     -1.9694445916707304,
     -1.2870136262935794
    ],
-   "source_file": "RUN/iter_4/gen_art/gen_art_experiment_14/results/analysis.json",
+   "source_file": "RUN/round-4/experiment-14/src/results/analysis.json",
    "json_path": "sdt/DiD/hi|SLoutput/c/DiD_gemma_minus_gams",
    "manipulation_valid": true,
    "validity_note": "compliance gate passed"
@@ -228,7 +228,7 @@
     0.07214848340381179,
     0.7491850355920885
    ],
-   "source_file": "RUN/iter_4/gen_art/gen_art_experiment_14/results/analysis.json",
+   "source_file": "RUN/round-4/experiment-14/src/results/analysis.json",
    "json_path": "sdt/DiD/hi|SLinput/c/DiD_gemma_minus_gams",
    "manipulation_valid": false,
    "validity_note": "INVALID-MANIPULATION: output-language compliance < 0.90 in gams3_it|slen=0.00"
@@ -251,7 +251,7 @@
     -1.7197725014636138,
     -0.8069561629544009
    ],
-   "source_file": "RUN/iter_4/gen_art/gen_art_experiment_14/results/analysis.json",
+   "source_file": "RUN/round-4/experiment-14/src/results/analysis.json",
    "json_path": "sdt/DiD/hi|SLboth/c/DiD_gemma_minus_gams",
    "manipulation_valid": true,
    "validity_note": "compliance gate passed"

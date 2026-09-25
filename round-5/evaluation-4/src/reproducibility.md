@@ -15,10 +15,10 @@ root, `AII_DEPS_ROOT`. The default is `../../..` relative to this folder, i.e. t
 
 | artifact id | folder under `AII_DEPS_ROOT` | used for |
 |---|---|---|
-| art_4Mf1Fazk33yZ (exp14) | `iter_4/gen_art/gen_art_experiment_14` | `results/rows_final.jsonl`, `results/labels/ttj_translations.jsonl`, `data/items.jsonl`, `data/strongreject_judge_templates.json`, `results/analysis.json`, `results/cells_compliance.json` |
-| art_piu0nI9vij_F (exp15) | `iter_4/gen_art/gen_art_experiment_15` | `results/rows_final.jsonl`, `results/ttj.jsonl`, `results/analysis.json`, `data/items.jsonl` |
-| art_gOdYt7zLWvfr (eval3) | `iter_4/gen_art/gen_art_evaluation_3` | `results/judge_error_matrices_v2.json`, `labels/readout_rows.jsonl.gz` (copied, cited only) |
-| art_4V4_5HnuN2ka (eval2) | `iter_3/gen_art/gen_art_evaluation_2` | `judge_error_matrices.json` (copied, cited only) |
+| art_4Mf1Fazk33yZ (exp14) | `round-4/experiment-14/src` | `results/rows_final.jsonl`, `results/labels/ttj_translations.jsonl`, `data/items.jsonl`, `data/strongreject_judge_templates.json`, `results/analysis.json`, `results/cells_compliance.json` |
+| art_piu0nI9vij_F (exp15) | `round-4/experiment-15/src` | `results/rows_final.jsonl`, `results/ttj.jsonl`, `results/analysis.json`, `data/items.jsonl` |
+| art_gOdYt7zLWvfr (eval3) | `round-4/evaluation-3/src` | `results/judge_error_matrices_v2.json`, `labels/readout_rows.jsonl.gz` (copied, cited only) |
+| art_4V4_5HnuN2ka (eval2) | `round-3/evaluation-2/src` | `judge_error_matrices.json` (copied, cited only) |
 
 If those folders live elsewhere, `export AII_DEPS_ROOT=/path/to/folder-with-iter_4`. No user-uploaded file is read.
 

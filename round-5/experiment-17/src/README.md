@@ -119,7 +119,7 @@ hf download google/gemma-2b              --revision 9cf48e52b224239de00d483ec8eb
 plus `HF_TOKEN`.
 
 The LoRA edits themselves are **not** in this repository either: they are read from the sibling iteration-3 artifact
-(`iter_3/gen_art/gen_art_experiment_9/selected/{gemma_it,gams3_it}/adapter` and `.../adapters/<model>/rand_1`), which
+(`round-3/experiment-9/src/selected/{gemma_it,gams3_it}/adapter` and `.../adapters/<model>/rand_1`), which
 stays on the run's storage volume. Their sha1 hashes are recorded in `results/inputs_check.json`, so a reader can verify
 that the edit used here is the one that artifact published.
 

@@ -25,12 +25,12 @@ Artifacts read (by id; each is a sibling folder, read-only):
 
 | artifact id | what is read | relative path under `$AII_RUN_ROOT` |
 |---|---|---|
-| `art_EG6OpEkGvysx` (dataset) | `full_data_out.json` block `refuseu_eval`; `outputs/split_manifest.json`; `scripts/s6_llamaguard.py` (guard loader precedent) | `iter_1/gen_art/gen_art_dataset_1/` |
-| iteration-3 experiment 9 | the saved edits `selected/{gemma_it,gams3_it}/adapter/` and the norm-matched random controls `adapters/<model>/rand_1/` | `iter_3/gen_art/gen_art_experiment_9/` |
-| iteration-3 experiment 11 | the NF4 loader and forward-hook generation code this artifact's `src/gen.py` is adapted from | `iter_3/gen_art/gen_art_experiment_11/src/gen.py` |
-| iteration-2 experiment 8 | the verbatim P1 refusal-judge prompt (its sha256 is asserted in preflight) | `iter_2/gen_art/gen_art_experiment_8/src/common.py` |
-| iteration-4 experiment 14 | the paid-judge client and the StrongREJECT rubric template (`data/strongreject_judge_templates.json`, copied into this folder) | `iter_4/gen_art/gen_art_experiment_14/` |
-| `art_NZ9n2Ej5RtGt` (research) | the verified RefusEU protocol, StrongREJECT formula and Rogan-Gladen/Lang-Reiczigel estimator specs | `iter_4/gen_art/gen_art_research_1/` |
+| `art_EG6OpEkGvysx` (dataset) | `full_data_out.json` block `refuseu_eval`; `outputs/split_manifest.json`; `scripts/s6_llamaguard.py` (guard loader precedent) | `round-1/dataset-1/src/` |
+| iteration-3 experiment 9 | the saved edits `selected/{gemma_it,gams3_it}/adapter/` and the norm-matched random controls `adapters/<model>/rand_1/` | `round-3/experiment-9/src/` |
+| iteration-3 experiment 11 | the NF4 loader and forward-hook generation code this artifact's `src/gen.py` is adapted from | `round-3/experiment-11/src/src/gen.py` |
+| iteration-2 experiment 8 | the verbatim P1 refusal-judge prompt (its sha256 is asserted in preflight) | `round-2/experiment-8/src/src/common.py` |
+| iteration-4 experiment 14 | the paid-judge client and the StrongREJECT rubric template (`data/strongreject_judge_templates.json`, copied into this folder) | `round-4/experiment-14/src/` |
+| `art_NZ9n2Ej5RtGt` (research) | the verified RefusEU protocol, StrongREJECT formula and Rogan-Gladen/Lang-Reiczigel estimator specs | `round-4/research-1/src/` |
 
 **No user-uploaded file is used by this artifact.** The user-upload folder was checked and nothing in it feeds this
 experiment, so there is no private input a reader must supply.

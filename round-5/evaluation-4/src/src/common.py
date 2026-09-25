@@ -29,10 +29,10 @@ for _d in (RESULTS, LABELS, LOGS, PROMPTS, FIG, DATA):
 # exp14 = art_4Mf1Fazk33yZ, exp15 = art_piu0nI9vij_F, eval3 = art_gOdYt7zLWvfr, eval2 = art_4V4_5HnuN2ka,
 # exp13 (tier table, cited only). Override with AII_DEPS_ROOT if the sibling folders live elsewhere.
 RUN = Path(os.environ.get("AII_DEPS_ROOT", str(ROOT.parents[2])))
-E14 = RUN / "iter_4/gen_art/gen_art_experiment_14"
-E15 = RUN / "iter_4/gen_art/gen_art_experiment_15"
-EV3 = RUN / "iter_4/gen_art/gen_art_evaluation_3"
-EV2 = RUN / "iter_3/gen_art/gen_art_evaluation_2"
+E14 = RUN / "round-4/experiment-14/src"
+E15 = RUN / "round-4/experiment-15/src"
+EV3 = RUN / "round-4/evaluation-3/src"
+EV2 = RUN / "round-3/evaluation-2/src"
 E13 = RUN / "iter_4/gen_art/gen_art_experiment_13"
 
 SEED = 20260925

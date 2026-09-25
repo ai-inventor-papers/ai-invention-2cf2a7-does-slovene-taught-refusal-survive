@@ -11,7 +11,7 @@
  "adapters": [
   {
    "tag": "edit",
-   "adapter_dir": "iter_3/gen_art/gen_art_experiment_9/selected/gams3_it/adapter",
+   "adapter_dir": "round-3/experiment-9/src/selected/gams3_it/adapter",
    "adapter_sha256": "4df160b152ade266e97a41b1012303bfecf0463f5030e5af4f33375893f234e7",
    "adapter_sha1": "198f1ee6d1a5600f069af9a526da952201b5d175",
    "n_tensors": 192,
@@ -25,7 +25,7 @@
   },
   {
    "tag": "rand",
-   "adapter_dir": "iter_3/gen_art/gen_art_experiment_9/adapters/gams3_it/rand_1",
+   "adapter_dir": "round-3/experiment-9/src/adapters/gams3_it/rand_1",
    "adapter_sha256": "bcffd8cb6232c431c4f4247468a95f5b1590fbc82b2c45269e7216557fe9d4c3",
    "adapter_sha1": "70f2722bab0e18107268d25bfe145a880035d224",
    "n_tensors": 192,

@@ -41,15 +41,15 @@ def _run_root() -> Path:
 
 
 RUN = _run_root()
-E8 = RUN / "iter_2/gen_art/gen_art_experiment_8"
-E9 = RUN / "iter_3/gen_art/gen_art_experiment_9"
-E10 = RUN / "iter_3/gen_art/gen_art_experiment_10"
-E11 = RUN / "iter_3/gen_art/gen_art_experiment_11"
+E8 = RUN / "round-2/experiment-8/src"
+E9 = RUN / "round-3/experiment-9/src"
+E10 = RUN / "round-3/experiment-10/src"
+E11 = RUN / "round-3/experiment-11/src"
 E13 = RUN / "iter_4/gen_art/gen_art_experiment_13"
-E14 = RUN / "iter_4/gen_art/gen_art_experiment_14"
-E15 = RUN / "iter_4/gen_art/gen_art_experiment_15"
-DS1 = RUN / "iter_1/gen_art/gen_art_dataset_1"
-RES1 = RUN / "iter_4/gen_art/gen_art_research_1"
+E14 = RUN / "round-4/experiment-14/src"
+E15 = RUN / "round-4/experiment-15/src"
+DS1 = RUN / "round-1/dataset-1/src"
+RES1 = RUN / "round-4/research-1/src"
 
 SEED = 20260927
 MAX_NEW = 128

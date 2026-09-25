@@ -12,11 +12,11 @@ Inputs produced by other artifacts are read (read-only) from **sibling folders o
 constant `RUN` in `src/common.py`: the enclosing `3_invention_loop` directory (found by walking up from
 `src/common.py`), or `$AII_RUN_ROOT` if you set it. Sibling artifacts used, by folder / id:
 * `iter_4/gen_art/gen_art_experiment_13` — item pool, split manifest, twins, JBB benign, StrongREJECT templates.
-* `iter_4/gen_art/gen_art_experiment_14` — screen harness (code provenance), suffixes, rows used for dedup.
-* `iter_4/gen_art/gen_art_experiment_15`, `iter_2/.../gen_art_experiment_8`, `iter_3/.../gen_art_experiment_9|10|11`
+* `round-4/experiment-14/src` — screen harness (code provenance), suffixes, rows used for dedup.
+* `round-4/experiment-15/src`, `iter_2/.../gen_art_experiment_8`, `iter_3/.../gen_art_experiment_9|10|11`
   — dedup references; exp9 also supplies the Heretic LoRA adapters, the random-direction control and the J1 judge parts.
-* `iter_1/gen_art/gen_art_dataset_1` (id `art_EG6OpEkGvysx`) — RefusEU eval rows (dedup reference only).
-* `iter_4/gen_art/gen_art_research_1` (id `art_NZ9n2Ej5RtGt`) — method specs (read, not executed).
+* `round-1/dataset-1/src` (id `art_EG6OpEkGvysx`) — RefusEU eval rows (dedup reference only).
+* `round-4/research-1/src` (id `art_NZ9n2Ej5RtGt`) — method specs (read, not executed).
 No user-uploaded file is used (the uploaded research plan is private and not published; it is not needed to run).
 
 ## 2. Environment
