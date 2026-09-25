@@ -1,7 +1,7 @@
 {
   "kind": "iter1_selected",
   "lambda": 1.0,
-  "adapter_dir": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_1/gen_art/gen_art_experiment_4/results/gams3_it/selected_adapter",
+  "adapter_dir": "../../../../../../round-1/experiment-4/src/results/gams3_it/selected_adapter",
   "sha256": "514b29020cb80eed365cf892b4cd1e78988c2f54c11ab80e04a1d3f77e1469de",
   "pick": {
     "pick_trial_index": 8,

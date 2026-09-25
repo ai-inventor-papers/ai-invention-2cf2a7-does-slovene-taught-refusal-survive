@@ -209,7 +209,7 @@ replicate (−2.31 and −1.55). Within-Gemma conclusions rest on the better-val
 
 ## Which dependency data was used, and what was deliberately held back
 
-Dependency `art_EG6OpEkGvysx` (`iter_1/gen_art/gen_art_dataset_1/full_data_out.json`, 8 blocks) is used under the
+Dependency `art_EG6OpEkGvysx` (`round-1/dataset-1/src/full_data_out.json`, 8 blocks) is used under the
 study's **data-separation rule**, which the shared protocol fixes and this artifact must not break:
 
 | block | use here | why |

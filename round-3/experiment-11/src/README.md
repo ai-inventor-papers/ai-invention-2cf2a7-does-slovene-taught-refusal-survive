@@ -1,8 +1,3 @@
-> NOTE (published copy): this file names server paths this repository
-> does not publish (a stage it does not ship, or another run's workspace),
-> so the steps that read them will not run from a clone as written:
->   /ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_1/gen_art/gen_art_experiment_4/results/
-
 # Does an English-only abliteration reach Slovene less in GaMS3 than in Gemma-3? (C-LAG confirmation, iter 3)
 
 This repository is the iter-3 **confirmation** run for one claim of the GaMS3-vs-Gemma-3 abliteration study: when an
@@ -131,4 +126,4 @@ run's shared HuggingFace cache (`$HF_HOME`) and are redownloaded on demand
 (`google/gemma-3-12b-it@96b6f1ec`, `cjvt/GaMS3-12B-Instruct@1d0b27af`, `facebook/nllb-200-distilled-1.3B`,
 `Qwen/Qwen3-14B@40c06982`, `mistralai/Mistral-Small-24B-Instruct-2501@9527884b`). No adapter is trained here; the
 edit is read read-only from
-`/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_1/gen_art/gen_art_experiment_4/results/{gemma_it,gams3_it}/selected_adapter/`.
+`../../../round-1/experiment-4/src/results/{gemma_it,gams3_it}/selected_adapter/`.

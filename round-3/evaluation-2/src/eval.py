@@ -664,7 +664,7 @@ def tipping(d, P, bad, lag, adjt, a_rows):
             dh = asym["FR_SL_minus_EN"] if asym else None
             out[curve][f"ratio_delta*/delta_hat|to_{tn}"] = ds / dh if dh and abs(dh) > 1e-9 else None
     out["measured"] = meas
-    exp6 = sorted(str(p) for p in (E8.parent / "gen_art_experiment_6").rglob("*adjud*"))
+    exp6 = sorted(str(p) for p in (E8.parent / "experiment-6/src").rglob("*adjud*"))
     out["exp6_19_of_19"] = {"files_found": exp6[:10], "note": "exp6 figure (19/19 gemini errors toward REFUSE, 13 in SL) was "
                             "measured on PREFILL continuations with gemini, not on trial rows or on the local judges used here"}
     return out

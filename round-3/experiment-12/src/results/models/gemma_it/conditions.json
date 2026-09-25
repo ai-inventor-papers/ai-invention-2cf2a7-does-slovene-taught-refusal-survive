@@ -8,7 +8,7 @@
   "E_iter1": {
     "kind": "iter1_selected",
     "lambda": 1.0,
-    "adapter_dir": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_1/gen_art/gen_art_experiment_4/results/gemma_it/selected_adapter",
+    "adapter_dir": "../../../../../../round-1/experiment-4/src/results/gemma_it/selected_adapter",
     "sha256": "84671c8ec5c134cb07eba70933693a81b77379e1a1a10100288ec603e3018377",
     "pick": {
       "pick_trial_index": 8,
@@ -137,9 +137,9 @@
   "E_art2": {
     "kind": "art2_selected",
     "lambda": 1.0,
-    "adapter_dir": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_3/gen_art/gen_art_experiment_9/selected/gemma_it/adapter",
-    "selection_json": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_3/gen_art/gen_art_experiment_9/selected/gemma_it/selection.json",
-    "root": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_3/gen_art/gen_art_experiment_9",
+    "adapter_dir": "../../../../../experiment-9/src/selected/gemma_it/adapter",
+    "selection_json": "../../../../../experiment-9/src/selected/gemma_it/selection.json",
+    "root": "../../../../../experiment-9/src",
     "mtime": 1790233091.0,
     "sha256": "9714d8a4b8dc6d52e4f92f41dddceeeef5bc9c1c20145e02d955bbfbbcdec547",
     "sum_lora_B_norm": 45.673,
