@@ -1,0 +1,9 @@
+{
+  "results": {
+    "google/gemini-2.5-flash": null,
+    "openai/gpt-4.1-mini": null
+  },
+  "both_ok": false,
+  "gemini_reasoning_tokens": null,
+  "READOUT_MODE": "LOCAL"
+}

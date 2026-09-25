@@ -1,0 +1,28 @@
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights:  22%|██▏       | 45/202 [00:00<00:00, 435.42it/s]Loading weights:  53%|█████▎    | 108/202 [00:00<00:00, 540.36it/s]Loading weights:  97%|█████████▋| 195/202 [00:00<00:00, 676.73it/s]Loading weights: 100%|██████████| 202/202 [00:00<00:00, 638.20it/s]
+10:43:02|INFO   |J1 predicted 10630 rows of results/gemma_it/gens.jsonl in 116s
+10:44:05|INFO   |J1 predicted 6150 rows of results/gams3_it/gens.jsonl in 62s
+[W924 10:50:25.867059144 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 2325741568 bytes (free: 1284636672, total: 23661248512).
+10:50:34|INFO   |J2 qwen3_8b: {'all': {'n': 466, 'kappaR_raw': 0.5234013539180832, 'kappaR_cal': 0.5078834913306154, 'kappa3_cal': 0.5020158352358283}, 'edited1': {'n': 120, 'kappaR_raw': 0.4929577464788734, 'kappaR_cal': 0.4680851063829787, 'kappa3_cal': 0.4549266247379456}, 'edited0': {'n': 346, 'kappaR_raw': 0.47265029635901673, 'kappaR_cal': 0.47265029635901673, 'kappa3_cal': 0.47865394274233963}, 'gams3_it': {'n': 120, 'kappaR_raw': 0.5986622073578589, 'kappaR_cal': 0.5578947368421054, 'kappa3_cal': 0.5602094240837698}, 'gemma_it': {'n': 346, 'kappaR_raw': 0.506732140028513, 'kappaR_cal': 0.4970930232558142, 'kappa3_cal': 0.48947200510448263}, 'en': {'n': 240, 'kappaR_raw': 0.41135248773651, 'kappaR_cal': 0.427792915531335, 'kappa3_cal': 0.4137466307277628}, 'sl': {'n': 226, 'kappaR_raw': 0.6614594478921464, 'kappaR_cal': 0.6145098931089382, 'kappa3_cal': 0.6183292051339792}}
+10:50:34|INFO   |J2 pick llama31_8b
+11:10:21|INFO   |  gams3_it: 2000/2475
+11:10:22|INFO   |  16/475 rows (1s)
+11:11:25|INFO   |  gams3_it: 2475/2475
+140
+  File "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_3/gen_art/gen_art_experiment_9/method.py", line 40, in main
+    run("analysis.py")
+  File "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_3/gen_art/gen_art_experiment_9/method.py", line 35, in run
+    raise RuntimeError(f"{script} failed")
+RuntimeError: analysis.py failed
+Traceback (most recent call last):
+  File "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_3/gen_art/gen_art_experiment_9/src/write_results.py", line 124, in <module>
+    main()
+  File "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_3/gen_art/gen_art_experiment_9/src/write_results.py", line 24, in main
+    A = json.loads((RESULTS / "analysis.json").read_text())
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_3/gen_art/gen_art_experiment_9/results/analysis.json'
