@@ -1,0 +1,31 @@
+18:59:22|INFO   |ASR jobs 5800
+18:59:22|INFO   |[asr] 5800 jobs, 20 cached, 5780 to call; ledger spend $3.4068
+18:59:26|INFO   |[asr] 200/5780 calls, cumulative $3.4610, 52.8/s
+18:59:29|INFO   |[asr] 400/5780 calls, cumulative $3.5153, 59.4/s
+18:59:33|INFO   |[asr] 600/5780 calls, cumulative $3.5695, 59.2/s
+18:59:39|INFO   |[asr] 800/5780 calls, cumulative $3.6232, 47.9/s
+18:59:43|INFO   |[asr] 1000/5780 calls, cumulative $3.6768, 48.3/s
+18:59:45|INFO   |[asr] 1200/5780 calls, cumulative $3.6995, 52.5/s
+18:59:47|INFO   |[asr] 1400/5780 calls, cumulative $3.6995, 56.4/s
+18:59:49|INFO   |[asr] 1600/5780 calls, cumulative $3.6995, 59.1/s
+18:59:52|INFO   |[asr] 1800/5780 calls, cumulative $3.6995, 61.5/s
+18:59:54|INFO   |[asr] 2000/5780 calls, cumulative $3.6995, 63.6/s
+18:59:56|INFO   |[asr] 2200/5780 calls, cumulative $3.6995, 65.6/s
+18:59:58|INFO   |[asr] 2400/5780 calls, cumulative $3.6995, 67.6/s
+19:00:00|INFO   |[asr] 2600/5780 calls, cumulative $3.6995, 69.4/s
+19:00:03|INFO   |[asr] 2800/5780 calls, cumulative $3.6995, 68.6/s
+19:00:06|INFO   |[asr] 3000/5780 calls, cumulative $3.6995, 68.7/s
+19:00:07|INFO   |[asr] 3200/5780 calls, cumulative $3.6995, 71.0/s
+19:00:09|INFO   |[asr] 3400/5780 calls, cumulative $3.6995, 73.1/s
+19:00:10|INFO   |[asr] 3600/5780 calls, cumulative $3.6995, 75.1/s
+19:00:11|INFO   |[asr] 3800/5780 calls, cumulative $3.6995, 77.6/s
+19:00:13|INFO   |[asr] 4000/5780 calls, cumulative $3.6995, 79.7/s
+19:00:14|INFO   |[asr] 4200/5780 calls, cumulative $3.6995, 81.2/s
+19:00:15|INFO   |[asr] 4400/5780 calls, cumulative $3.6995, 83.0/s
+19:00:17|INFO   |[asr] 4600/5780 calls, cumulative $3.6995, 84.4/s
+19:00:18|INFO   |[asr] 4800/5780 calls, cumulative $3.6995, 86.0/s
+19:00:19|INFO   |[asr] 5000/5780 calls, cumulative $3.6995, 87.9/s
+19:00:21|INFO   |[asr] 5200/5780 calls, cumulative $3.6995, 89.4/s
+19:00:22|INFO   |[asr] 5400/5780 calls, cumulative $3.6995, 90.6/s
+19:00:23|INFO   |[asr] 5600/5780 calls, cumulative $3.6995, 92.4/s
+19:00:25|INFO   |[asr] finished 5780 calls; cumulative $3.6995
