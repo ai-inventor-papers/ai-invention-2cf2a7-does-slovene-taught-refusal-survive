@@ -1,0 +1,7 @@
+.venv/
+cache/
+__pycache__/
+*.pyc
+.aii_claude_session.json
+.repl_agent.ptylog
+logs/*.pid

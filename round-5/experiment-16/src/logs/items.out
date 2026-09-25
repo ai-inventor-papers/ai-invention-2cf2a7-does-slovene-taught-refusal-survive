@@ -1,0 +1,25 @@
+Generating train split:   0%|          | 0/2748 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 2748/2748 [00:00<00:00, 16426.61 examples/s]Generating train split: 100%|██████████| 2748/2748 [00:00<00:00, 13840.34 examples/s]
+Generating test split:   0%|          | 0/141 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 141/141 [00:00<00:00, 4526.99 examples/s]
+Generating train split:   0%|          | 0/2748 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 2748/2748 [00:00<00:00, 37321.33 examples/s]
+Generating test split:   0%|          | 0/141 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 141/141 [00:00<00:00, 4307.99 examples/s]
+Generating eval split:   0%|          | 0/16800 [00:00<?, ? examples/s]Generating eval split: 100%|██████████| 16800/16800 [00:00<00:00, 232297.87 examples/s]
+00:43:55|INFO   |reference sizes {'exp14_items': 900, 'exp14_dev_items': 120, 'exp14_rows_final': 18700, 'exp15_items': 1448, 'exp15_rows_final': 33888, 'exp8_probes': 1072, 'exp9_probes': 1004, 'exp10_probes': 2002, 'exp11_items': 11117, 'art_EG6_full_data_out': 15560, 'refuseu_lang_en_sl': 16800, 'advbench_harmful_behaviors': 1040}
+00:44:04|INFO   |CONF 294 {'strongreject': 146, 'harmbench': 109, 'jbb': 39}; DEV 37; twins 100 {'jbb_benign': 21, 'gpt41mini_rewrite': 71, 'jbb_benign_unmatched': 8}
+/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_5/gen_art/gen_art_experiment_16/.venv/lib/python3.12/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+00:46:19|INFO   |NLLB eng_Latn->slv_Latn: 294 texts / 392 segments in 15s
+00:46:34|INFO   |NLLB eng_Latn->hun_Latn: 294 texts / 392 segments in 15s
+00:46:45|INFO   |NLLB slv_Latn->eng_Latn: 294 texts / 394 segments in 11s
+00:46:57|INFO   |NLLB hun_Latn->eng_Latn: 294 texts / 392 segments in 12s
+00:47:00|INFO   |MT conf: {'median_chrF_sl': 71.515, 'median_chrF_hu': 70.6}
+00:47:04|INFO   |NLLB eng_Latn->slv_Latn: 37 texts / 55 segments in 4s
+00:47:08|INFO   |NLLB eng_Latn->hun_Latn: 37 texts / 55 segments in 5s
+00:47:11|INFO   |NLLB slv_Latn->eng_Latn: 37 texts / 55 segments in 3s
+00:47:14|INFO   |NLLB hun_Latn->eng_Latn: 37 texts / 55 segments in 3s
+00:47:14|INFO   |MT dev: {'median_chrF_sl': 73.12, 'median_chrF_hu': 71.16}
+00:47:20|INFO   |NLLB eng_Latn->slv_Latn: 100 texts / 119 segments in 6s
+00:47:27|INFO   |NLLB eng_Latn->hun_Latn: 100 texts / 119 segments in 7s
+00:47:32|INFO   |NLLB slv_Latn->eng_Latn: 100 texts / 120 segments in 5s
+00:47:38|INFO   |NLLB hun_Latn->eng_Latn: 100 texts / 119 segments in 5s
+00:47:38|INFO   |MT twins: {'median_chrF_sl': 73.74000000000001, 'median_chrF_hu': 75.355}
+00:47:38|INFO   |done: {"conf": {"median_chrF_sl": 71.515, "median_chrF_hu": 70.6, "n": 294, "n_fragile": 4, "lid_sl_ok": 0.9965986394557823, "lid_hu_ok": 1.0, "sentence_count_mismatch": 2}, "dev": {"median_chrF_sl": 73.12, "median_chrF_hu": 71.16}, "twins": {"median_chrF_sl": 73.74000000000001, "median_chrF_hu": 75.355, "n": 100, "n_fragile": 3, "lid_sl_ok": 1.0, "lid_hu_ok": 1.0, "sentence_count_mismatch": 1}, "gate_median_chrF_ge_60": true, "exp13_truncation_case_i4_7cebf8a68dce": "not in sets"}
