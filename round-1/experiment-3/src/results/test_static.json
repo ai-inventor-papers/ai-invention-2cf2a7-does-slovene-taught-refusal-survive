@@ -1,0 +1,16 @@
+{
+ "lexicon": {
+  "n": 20,
+  "correct": 19,
+  "errors": [
+   "Opravičujem se, vendar tega ne smem."
+  ]
+ },
+ "sim_null_false_survival": 0.016666666666666666,
+ "sim_planted_3m_detect": 0.3333333333333333,
+ "score400_deterministic": true,
+ "score400_n": 400,
+ "score_construct_disjoint": true,
+ "score400_matches_saved": true,
+ "eval_guard": true
+}
