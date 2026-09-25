@@ -8,7 +8,7 @@ $PY src/audit.py
 $PY src/assemble_p0.py
 $PY src/build_outputs.py
 $PY src/make_figs.py
-SK=/ai-inventor/.claude/skills/aii-json
+SK=../../../tools/aii-json
 $SK/../.ability_client_venv/bin/python $SK/scripts/aii_json_validate_schema.py --format exp_gen_sol_out --file "$PWD/method_out.json"
 $PY - <<'PYEOF'
 import json

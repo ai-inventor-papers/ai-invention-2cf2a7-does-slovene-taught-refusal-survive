@@ -2,15 +2,15 @@
   "refuseu": {
     "repo": "NASK-PIB/RefusEU",
     "revision": "5523ce30b9",
-    "universe": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/data/pairs.jsonl",
+    "universe": "../../../../round-1/experiment-1/src/data/pairs.jsonl",
     "evaluation_split_loaded": false
   },
   "exclusion_sources": {
-    "exp1": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_1/gen_art/gen_art_experiment_1",
-    "exp2": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_1/gen_art/gen_art_experiment_2",
-    "exp4": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_1/gen_art/gen_art_experiment_4",
-    "exp8": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_2/gen_art/gen_art_experiment_8",
-    "dep": "/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_1/gen_art/gen_art_dataset_1"
+    "exp1": "../../../../round-1/experiment-1/src",
+    "exp2": "../../../../round-1/experiment-2/src",
+    "exp4": "../../../../round-1/experiment-4/src",
+    "exp8": "../../../../round-2/experiment-8/src",
+    "dep": "../../../../round-1/dataset-1/src"
   },
   "twins": {
     "rewriter": "Qwen/Qwen3-8B (local, CPU bf16, greedy, thinking disabled)",

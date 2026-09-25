@@ -1,0 +1,12 @@
+{
+  "load": 1987.3,
+  "smoke": 297.3,
+  "acts_construct": 157.4,
+  "geometry": 25.1,
+  "devgen": 913.3,
+  "dev_band": 12.0,
+  "multi_check": 245.1,
+  "induce": 3600.1,
+  "addon": 4491.9,
+  "rq4_acts": 413.5
+}

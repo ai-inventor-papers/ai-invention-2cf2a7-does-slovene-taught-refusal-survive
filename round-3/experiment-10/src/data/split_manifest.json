@@ -1,0 +1,287 @@
+{
+  "seed": 20260925,
+  "files": {
+    "construct_harm.jsonl": "a1703a0733b27fcbb6549a437f9308e08f0d416e646a3f3a89323419772a16e2",
+    "hard_dev.jsonl": "9858a49f993f3bbb540264175d620a41c249ee08ddee53b4aac567a212166757",
+    "hard_test.jsonl": "a01c9bb1f083247a96a28a2ed6458ab2e57d891a45971ded3ad920d5e5968a5c",
+    "p200_dev40.jsonl": "1cfcf0d149ff85b2bbe00cc97959572fc145d820857297be3aa0232c07d43ac9",
+    "p200_test160.jsonl": "8b34c27cc1e5d9f760afd64bed6ae8f93c12840b014fce930ae6a1262e6dfe6f",
+    "harmless_construct.jsonl": "82f5a2525de55411f4abd7b9af4a86a4a49663b4deefdadbd2a0c2f8bd5e6c86",
+    "rq4_harmless.jsonl": "25f6b0dce3531f73cba2a056df17299bb31c26b25f0fdd45587afa0fbf013584",
+    "induce_test.jsonl": "4fed6764c459160691747609d4534a42f1c404f7881972be2034c20dac5a5f97",
+    "induce_dev.jsonl": "6f9d4efb2ae1af02caa63257b9d84cd92e4ea1d9c70c7e18fb9121d8d17dcd56",
+    "addon_harmless.jsonl": "2a0c637e43e34b28f1084f9544d3d50667509910ed847fa0efd9c9832e758f35",
+    "kl_dev.jsonl": "c1a2101fb8244153ae22287b20ebbb4e7ba72c718e7f8b8f98d6ec04489d809e"
+  },
+  "counts": {
+    "construct_harm.jsonl": 400,
+    "hard_dev.jsonl": 30,
+    "hard_test.jsonl": 100,
+    "p200_dev40.jsonl": 40,
+    "p200_test160.jsonl": 160,
+    "harmless_construct.jsonl": 400,
+    "rq4_harmless.jsonl": 200,
+    "induce_test.jsonl": 48,
+    "induce_dev.jsonl": 24,
+    "addon_harmless.jsonl": 32,
+    "kl_dev.jsonl": 32
+  },
+  "gates": {
+    "construct_harm": {
+      "n": 400,
+      "chrf_median": 72.28,
+      "chrf_gate_ge60": true,
+      "mt_fragile": 48,
+      "sl_langid_rate": 1.0,
+      "sl_langid_gate_ge95": true
+    },
+    "hard_dev": {
+      "n": 30,
+      "chrf_median": 74.48,
+      "chrf_gate_ge60": true,
+      "mt_fragile": 1,
+      "sl_langid_rate": 0.833,
+      "sl_langid_gate_ge95": false
+    },
+    "hard_test": {
+      "n": 100,
+      "chrf_median": 68.91,
+      "chrf_gate_ge60": true,
+      "mt_fragile": 6,
+      "sl_langid_rate": 0.97,
+      "sl_langid_gate_ge95": true
+    },
+    "harmless_construct": {
+      "n": 400,
+      "chrf_median": 70.6,
+      "chrf_gate_ge60": true,
+      "mt_fragile": 31,
+      "sl_langid_rate": 0.87,
+      "sl_langid_gate_ge95": false
+    },
+    "rq4_harmless": {
+      "n": 200,
+      "chrf_median": 71.2,
+      "chrf_gate_ge60": true,
+      "mt_fragile": 15,
+      "sl_langid_rate": 0.855,
+      "sl_langid_gate_ge95": false
+    },
+    "induce_test": {
+      "n": 48,
+      "chrf_median": 71.64,
+      "chrf_gate_ge60": true,
+      "mt_fragile": 3,
+      "sl_langid_rate": 0.854,
+      "sl_langid_gate_ge95": false
+    },
+    "induce_dev": {
+      "n": 24,
+      "chrf_median": 66.57,
+      "chrf_gate_ge60": true,
+      "mt_fragile": 3,
+      "sl_langid_rate": 0.875,
+      "sl_langid_gate_ge95": false
+    },
+    "addon_harmless": {
+      "n": 32,
+      "chrf_median": 72.57,
+      "chrf_gate_ge60": true,
+      "mt_fragile": 1,
+      "sl_langid_rate": 0.812,
+      "sl_langid_gate_ge95": false
+    },
+    "kl_dev": {
+      "n": 32,
+      "chrf_median": 71.59,
+      "chrf_gate_ge60": true,
+      "mt_fragile": 3,
+      "sl_langid_rate": 0.938,
+      "sl_langid_gate_ge95": false
+    },
+    "P200": {
+      "n": 200,
+      "chrf_median": 75.52,
+      "chrf_gate_ge60": true,
+      "mt_fragile": 2,
+      "sl_langid_rate": 1.0,
+      "sl_langid_gate_ge95": true
+    }
+  },
+  "overlap": {
+    "exact_dups_between_sets": {
+      "harmless_construct_sl|rq4_harmless_sl": 1,
+      "harmless_construct_sl|induce_test_sl|rq4_harmless_sl": 1,
+      "kl_dev_sl|rq4_harmless_sl": 1
+    },
+    "ngram50_between_sets": {
+      "construct_harm->refuseu_eval_text": 26,
+      "harmless_construct->addon_harmless": 2,
+      "harmless_construct->kl_dev": 2,
+      "harmless_construct->rq4_harmless": 2,
+      "harmless_construct->harmless_construct_sl": 2,
+      "rq4_harmless->rq4_harmless_sl": 3,
+      "rq4_harmless->harmless_construct": 2,
+      "rq4_harmless->addon_harmless": 1,
+      "rq4_harmless->kl_dev": 1,
+      "addon_harmless->harmless_construct": 2,
+      "addon_harmless->kl_dev": 1,
+      "addon_harmless->rq4_harmless": 1,
+      "kl_dev->harmless_construct": 2,
+      "kl_dev->addon_harmless": 1,
+      "kl_dev->rq4_harmless": 1,
+      "harmless_construct_sl->kl_dev_sl": 1,
+      "harmless_construct_sl->addon_harmless_sl": 1,
+      "harmless_construct_sl->harmless_construct": 3,
+      "harmless_construct_sl->induce_test_sl": 5,
+      "harmless_construct_sl->rq4_harmless_sl": 4,
+      "rq4_harmless_sl->rq4_harmless": 3,
+      "rq4_harmless_sl->kl_dev_sl": 1,
+      "rq4_harmless_sl->induce_test_sl": 1,
+      "rq4_harmless_sl->harmless_construct_sl": 4,
+      "induce_test_sl->harmless_construct_sl": 5,
+      "induce_test_sl->rq4_harmless_sl": 1,
+      "induce_dev_sl->induce_dev": 1,
+      "addon_harmless_sl->kl_dev_sl": 1,
+      "addon_harmless_sl->harmless_construct_sl": 1,
+      "kl_dev_sl->addon_harmless_sl": 1,
+      "kl_dev_sl->harmless_construct_sl": 1,
+      "kl_dev_sl->rq4_harmless_sl": 1
+    }
+  },
+  "dolly": {
+    "repo": "databricks/databricks-dolly-15k",
+    "revision": "bdd27f4d94b9c1f951818a7da7fd7aeea5dbff1a",
+    "pool_after_filters": 9694,
+    "drops": {
+      "category": 4467,
+      "harm_kw": 436,
+      "length": 226,
+      "dup": 170,
+      "alpaca_exact": 18
+    },
+    "categories": [
+      "brainstorming",
+      "classification",
+      "creative_writing",
+      "general_qa",
+      "open_qa"
+    ],
+    "ranges": {
+      "harmless_construct": [
+        0,
+        400
+      ],
+      "rq4_harmless": [
+        400,
+        600
+      ],
+      "induce_test": [
+        600,
+        648
+      ],
+      "induce_dev": [
+        648,
+        672
+      ],
+      "addon_harmless": [
+        672,
+        704
+      ],
+      "kl_dev": [
+        704,
+        736
+      ]
+    }
+  },
+  "alpaca_exact_filter": {
+    "repo": "tatsu-lab/alpaca",
+    "revision": "dce01c9b08f87459cf36a430d809084718273017"
+  },
+  "p200_dev40_ids": [
+    "test:1145",
+    "test:1950",
+    "train:1253",
+    "train:1268",
+    "train:140:dup",
+    "train:1412",
+    "train:1418",
+    "train:1449",
+    "train:1733",
+    "train:1749",
+    "train:1843",
+    "train:1913",
+    "train:1946",
+    "train:1996",
+    "train:2010",
+    "train:2140",
+    "train:2157",
+    "train:2173",
+    "train:2180",
+    "train:222",
+    "train:2281",
+    "train:2312",
+    "train:2394",
+    "train:2406",
+    "train:2416",
+    "train:2446",
+    "train:2450",
+    "train:2472",
+    "train:253:dup",
+    "train:2611",
+    "train:2619",
+    "train:262",
+    "train:274",
+    "train:342",
+    "train:470",
+    "train:670",
+    "train:8",
+    "train:801",
+    "train:853",
+    "train:967"
+  ],
+  "p200_dev40_cats": {
+    "S5": 3,
+    "S10": 3,
+    "S12": 3,
+    "S3": 3,
+    "S4": 3,
+    "S7": 3,
+    "S9": 2,
+    "S14": 3,
+    "S1": 3,
+    "S2": 3,
+    "S8": 2,
+    "S6": 3,
+    "S13": 3,
+    "S11": 3
+  },
+  "hard": {
+    "pool": {
+      "xstest": 74,
+      "orbench_hard1k": 395
+    },
+    "hard_dev": {
+      "xstest": 15,
+      "orbench_hard1k": 15
+    },
+    "hard_test": {
+      "xstest": 50,
+      "orbench_hard1k": 50
+    },
+    "note": "iter-1 dataset hard_DEV split, is_harmful = 0, EN text re-translated here with NLLB (the dataset's gemini SL MT is NOT used)"
+  },
+  "nllb": {
+    "repo": "facebook/nllb-200-distilled-1.3B",
+    "revision": "7be3e24664b38ce1cac29b8aeed6911aa0cf0576",
+    "dtype": "float16",
+    "num_beams": 4,
+    "max_length": 512
+  },
+  "reserved_never_opened": [
+    "hard_FINAL",
+    "refuseu_eval generations/labels (text used for overlap only)",
+    "identity_confirm"
+  ],
+  "seconds": 551.6
+}

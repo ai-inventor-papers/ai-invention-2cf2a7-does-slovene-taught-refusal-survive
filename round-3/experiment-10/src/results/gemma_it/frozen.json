@@ -1,0 +1,236 @@
+{
+  "kind": "protocol",
+  "utc": "2026-09-24 07:39:35",
+  "git_head": "47af73f35f362a0076676ee4f90f02b1677f5214",
+  "decisions": {
+    "judge": "surrogate/gemini",
+    "layer": {
+      "L_star": 20,
+      "candidates": [
+        {
+          "L": 16,
+          "refusal_k1": 0.125,
+          "refusal_k2": 0.16666666666666666,
+          "score": 0.14583333333333331,
+          "degenerate_text": 0.0,
+          "lang_ok": 1.0,
+          "passes": true
+        },
+        {
+          "L": 20,
+          "refusal_k1": 0.5416666666666666,
+          "refusal_k2": 1.0,
+          "score": 0.7708333333333333,
+          "degenerate_text": 0.0,
+          "lang_ok": 1.0,
+          "passes": true
+        },
+        {
+          "L": 24,
+          "refusal_k1": 1.0,
+          "refusal_k2": 1.0,
+          "score": 1.0,
+          "degenerate_text": 0.22916666666666666,
+          "lang_ok": 1.0,
+          "passes": false
+        },
+        {
+          "L": 28,
+          "refusal_k1": 1.0,
+          "refusal_k2": 0.75,
+          "score": 0.875,
+          "degenerate_text": 0.3958333333333333,
+          "lang_ok": 1.0,
+          "passes": false
+        },
+        {
+          "L": 32,
+          "refusal_k1": 0.875,
+          "refusal_k2": 0.4166666666666667,
+          "score": 0.6458333333333334,
+          "degenerate_text": 0.7291666666666666,
+          "lang_ok": 0.9791666666666666,
+          "passes": false
+        },
+        {
+          "L": 36,
+          "refusal_k1": 0.875,
+          "refusal_k2": 0.8333333333333334,
+          "score": 0.8541666666666667,
+          "degenerate_text": 0.9791666666666666,
+          "lang_ok": 1.0,
+          "passes": false
+        }
+      ],
+      "baseline_refusal_induce_dev_en": 0.041666666666666664,
+      "rule": "argmax mean judged refusal over k in {1,2} (+k|d_EN(L)| rEN(L) on 24 induce_dev EN-BT) s.t. degenerate_text < 10% and lang_ok >= 95%; ties -> lower layer",
+      "fallback_no_layer_passes": false,
+      "positive_control_k2_ge_0.5": true,
+      "positive_control_any_layer_k2_ge_0.5": true
+    },
+    "grid": {
+      "K": [
+        0.1,
+        0.2,
+        0.35,
+        0.5,
+        0.75,
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        3.0
+      ],
+      "multiplier": 1.0,
+      "rEN_at_Kmax_EN_refusal": 1.0,
+      "uSLperp_at_Kmin_SL_refusal": 0.08333333333333333,
+      "Delta_norm_dSL": 2420.415771484375,
+      "norm_dEN": 2762.05419921875,
+      "Nbar_mean_resid_norm": 45109.7109375,
+      "alpha_over_Nbar_uSLperp": [
+        0.00536562022052832,
+        0.01073124044105664,
+        0.018779670771849118,
+        0.026828101102641597,
+        0.040242151653962395,
+        0.05365620220528319,
+        0.08048430330792479,
+        0.10731240441056639,
+        0.134140505513208,
+        0.16096860661584958
+      ],
+      "alpha_over_Nbar_rEN": [
+        0.00612297029135391,
+        0.01224594058270782,
+        0.02143039601973868,
+        0.030614851456769548,
+        0.04592227718515432,
+        0.061229702913539095,
+        0.09184455437030864,
+        0.12245940582707819,
+        0.15307425728384774,
+        0.18368910874061728
+      ],
+      "rule": "rEN at K=3 < .5 EN refusal -> x2; u_SLperp at K=0.2 (DEV check point; plan said 0.1) > .5 SL refusal -> /4"
+    },
+    "lambda": {
+      "lambda_star": 0.5,
+      "curve_en_bt": {
+        "0.1": 0.975,
+        "0.15": 0.95,
+        "0.2": 0.825,
+        "0.25": 0.925,
+        "0.3": 0.875,
+        "0.35": 0.7,
+        "0.4": 0.65,
+        "0.45": 0.7,
+        "0.5": 0.475,
+        "0.6": 0.475,
+        "0.8": 0.225,
+        "1.0": 0.125,
+        "1.5": 0.05
+      },
+      "curve_sl_mt": {
+        "0.1": 1.0,
+        "0.15": 0.975,
+        "0.2": 0.975,
+        "0.25": 0.975,
+        "0.3": 0.975,
+        "0.35": 0.975,
+        "0.4": 0.925,
+        "0.45": 0.925,
+        "0.5": 0.925,
+        "0.6": 0.85,
+        "0.8": 0.675,
+        "1.0": 0.35,
+        "1.5": 0.225
+      },
+      "grid_used": [
+        0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.6,
+        0.8,
+        1.0
+      ],
+      "R_EN_at_star": 0.475,
+      "R_SL_at_star": 0.925,
+      "dev_lag_logit_hautus": 2.4692164340449136,
+      "in_0.35_0.65": true,
+      "rule": "argmin |R_EN(DEV40 EN-BT) - .5| over {0.2,...,1.0}; if > .15 away the pre-generated extension points {0.1,0.15,0.25,0.35,0.45,1.5} are admitted"
+    },
+    "band": {
+      "chosen": "B3",
+      "band": [
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32
+      ],
+      "kl_edit_alone_en": 0.17661744989761663,
+      "results": {
+        "B1": {
+          "band": [
+            20
+          ],
+          "kl_en": 0.07412374085143092,
+          "ratio": 0.41968526266458783,
+          "passes": true
+        },
+        "B2": {
+          "band": [
+            18,
+            19,
+            20,
+            21,
+            22
+          ],
+          "kl_en": 0.06836095392035324,
+          "ratio": 0.38705662413301406,
+          "passes": true
+        },
+        "B3": {
+          "band": [
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32
+          ],
+          "kl_en": 0.10591768946836089,
+          "ratio": 0.5997011593687958,
+          "passes": true
+        }
+      },
+      "flag_none_pass": false,
+      "s_fallback": null,
+      "rule": "widest of B3,B2,B1 with KL_first(addon u_SLperp s=1 vs O) <= 1.2 * KL_first(E0 vs O) on kl_dev EN-BT; none -> B1 flagged; F4 s=0.5"
+    }
+  }
+}

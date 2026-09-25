@@ -47,7 +47,7 @@ verdict per model × condition together with the adapter path and sha256 actuall
 GaMS block 06:45–08:32 UTC, Gemma block 08:32–10:30, then two short resume passes (`logs/chain_after_gemma.sh`). Each
 pass reloads the model, re-verifies the saved adapters by sha256, and skips every condition whose output file exists.
 
-**E_art2** is artifact 2's B′ selection (`iter_3/gen_art/gen_art_experiment_9/selected/<model>/adapter`). It was
+**E_art2** is artifact 2's B′ selection (`round-3/experiment-9/src/selected/<model>/adapter`). It was
 written at 06:58 UTC, after the GaMS build and before the Gemma build. Gemma scores it inside its block. GaMS scores
 its utility gate and KL in the first resume pass. Its own random controls (Heretic with artifact 2's parameters) were
 not built for lack of time; the iter-1-parameter random edits serve as its random reference. `run_late_edits.sh`
@@ -89,7 +89,7 @@ is set; `RLIMIT_AS` is never set; VRAM is capped with `set_per_process_memory_fr
 ## Kept artifacts (workspace paths)
 
 * Adapters scored here: `./adapters/{gams3_it,gemma_it}/{E_iter1_l0.5,E_iter1_l1.5,E_iter1_l2.0,rand_nm_j1..5,rand_c6_j1}/`. Their sha256 values are in `results/gates.json` and `results/models/*/conditions.json`.
-* E_iter1 (read-only, not copied): `/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_1/gen_art/gen_art_experiment_4/results/{gams3_it,gemma_it}/selected_adapter/`.
+* E_iter1 (read-only, not copied): `../../../round-1/experiment-4/src/results/{gams3_it,gemma_it}/selected_adapter/`.
 
 ## Restoring removed files
 

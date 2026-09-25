@@ -9,10 +9,10 @@ cp -r <this folder> ~/rq3 && cd ~/rq3
 ```
 Paths below are relative to the artifact root. Read-only inputs are referenced by absolute path on the run volume
 (`../../../...`), set in `src/common.py`:
-* iter-1 selected adapters, `selection_pick.json`, `random_edits.json`, `residual_directions.pt` and `cfg/config.toml`: `3_invention_loop/iter_1/gen_art/gen_art_experiment_4/results/{gams3_it,gemma_it}/`
-* dataset dependency `art_EG6OpEkGvysx`, used only for the zero-overlap audit: `3_invention_loop/iter_1/gen_art/gen_art_dataset_1/full_data_out.json`
-* RQ1 refusal rates: `3_invention_loop/iter_2/gen_art/gen_art_experiment_5/results/analysis_final.json`
-* artifact 2's selected adapters (E_art2): `3_invention_loop/iter_3/gen_art/gen_art_experiment_9/selected/<model>/{adapter,selection.json}`
+* iter-1 selected adapters, `selection_pick.json`, `random_edits.json`, `residual_directions.pt` and `cfg/config.toml`: `round-1/experiment-4/src/results/{gams3_it,gemma_it}/`
+* dataset dependency `art_EG6OpEkGvysx`, used only for the zero-overlap audit: `round-1/dataset-1/src/full_data_out.json`
+* RQ1 refusal rates: `round-2/experiment-5/src/results/analysis_final.json`
+* artifact 2's selected adapters (E_art2): `round-3/experiment-9/src/selected/<model>/{adapter,selection.json}`
 
 ## 2. System, Python, libraries
 * Ubuntu (Linux 6.8). There is **no C compiler** on the pod: the code sets `TORCHDYNAMO_DISABLE=1` and deregisters torch-native Triton ops (`torch._native.registry.deregister_op_overrides`).
