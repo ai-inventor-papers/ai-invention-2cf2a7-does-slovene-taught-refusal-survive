@@ -1,0 +1,36 @@
+{
+  "amendment_1": {
+    "timestamp": "2026-09-23 16:14:21",
+    "n_trials": 40,
+    "t_trial_s_measured_on": "gemma_it (3 trials, attempt 2)",
+    "t_trial_s": 163.9,
+    "note": "time-box rule gave n = 40 (floor). Superseded by amendment 2 because 40 trials x 164 s x 2 models + Phase O/P does not fit the remaining wall-clock on the RTX 2000 Ada (16 GB) pod (planned: A4500 20 GB)."
+  },
+  "amendment_2": {
+    "timestamp": "2026-09-23 16:20:00",
+    "made_before": "any C3 / C5 / ALT-4 statistic and any per-trial SCORE statistic (only original-model O1/O3 descriptive rates had been logged)",
+    "n_trials": 30,
+    "n_startup_trials": 25,
+    "probe_r_items_per_lang": 50,
+    "probe_new_tokens": 40,
+    "per_trial_s": "s1 (first-token readout) instead of multi-token s; multi-token s kept on all SCORE-400 blocks (original, selected)",
+    "random_edits": "norm-matched random edits scored on Heretic objective + first-token KL (SEL/EVAL) + s1; no TRIAL-PROBE generation",
+    "rank_k": "raw Arditi variant ran on Gemma and destroyed the model (KL 20-53 nats; even random R5); projected variant only post hoc if time permits",
+    "rationale": "plan F3 cut order (5) probe R-gen 50+50 already applied; (6) n_trials floor 40 cannot be met -> 30 equal across models, disclosed as below-plan; generation length 40 tokens and s1 are additional reduced readouts forced by measured throughput (~0.6 s per decode step for NF4 12B)"
+  },
+  "n_trials": 20,
+  "amendment_3": {
+    "timestamp": "2026-09-23 16:37:00",
+    "made_before": "any C3 / C5 / ALT-4 statistic (attempt-3 trials 1-2 were logged but are discarded; study restarted from an empty journal so that the 25 seeded TPE start-up draws stay paired with GaMS)",
+    "n_trials": 20,
+    "lambda_grid": [
+      0.5,
+      1.2
+    ],
+    "lambda_points_total": "4 (0 = original, 0.5, 1.0 = pick trial, 1.2)",
+    "random_edits": "Heretic keyword refusals only for random direction j=1; Heretic KL + SEL/EVAL KL + s1 for all 5",
+    "mech_c": "deferred to a post-chain step, only if time remains",
+    "gemma_replay_check": "skipped in the final Gemma process; passed identically in attempts 2 and 3 (same model, same code)",
+    "rationale": "measured t_trial = 148 s even with 40-token probe generation and s1; prefill of long RefusEU prompts dominates. 20 trials x 2 models is the maximum that fits with Phase O/P for both models. All 20 trials are TPE start-up (random) trials: C3 therefore reads as a paired random-edit design, and the selection rule acts on a random-search front."
+  }
+}
