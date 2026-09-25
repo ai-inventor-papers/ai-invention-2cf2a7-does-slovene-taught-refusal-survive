@@ -1,0 +1,428 @@
+{
+ "n_files": 70,
+ "n_missing": 0,
+ "missing": [],
+ "files": {
+  "exp15:results/analysis.json": {
+   "path": "RUN/iter_4/gen_art/gen_art_experiment_15/results/analysis.json",
+   "exists": true,
+   "bytes": 106860,
+   "sha256": "dfdf21b487de4ed0fb9f8682e596aa47d0263eca76f50b189fbe34b97e1fe207"
+  },
+  "exp15:results/rows_final.jsonl": {
+   "path": "RUN/iter_4/gen_art/gen_art_experiment_15/results/rows_final.jsonl",
+   "exists": true,
+   "bytes": 46882128,
+   "sha256": "4eb6a514fc7c5207bec1006ec1474fe5487b6c1bed0cb634eec6a0aca959c1f1"
+  },
+  "exp15:results/kl_harmless.jsonl": {
+   "path": "RUN/iter_4/gen_art/gen_art_experiment_15/results/kl_harmless.jsonl",
+   "exists": true,
+   "bytes": 11876,
+   "sha256": "0a995291e04357206fa795856a16865aca4dbaa1c3a90f01166b9081a5ab3c76"
+  },
+  "exp15:results/dev_calibration_gemma_it.json": {
+   "path": "RUN/iter_4/gen_art/gen_art_experiment_15/results/dev_calibration_gemma_it.json",
+   "exists": true,
+   "bytes": 942,
+   "sha256": "0fd5e3cfc283227dd9940a572e1e9b40d7644d2fc2e92f5a72b3163d037e0643"
+  },
+  "exp15:results/dev_calibration_gams3_it.json": {
+   "path": "RUN/iter_4/gen_art/gen_art_experiment_15/results/dev_calibration_gams3_it.json",
+   "exists": true,
+   "bytes": 946,
+   "sha256": "83c056b7f40eeabf9661d34d9c50239679fc007118343ba508f5ad8d1c5960a2"
+  },
+  "exp15:results/protocol_amendments.json": {
+   "path": "RUN/iter_4/gen_art/gen_art_experiment_15/results/protocol_amendments.json",
+   "exists": true,
+   "bytes": 4784,
+   "sha256": "514e2e7c7a79c3c8020f617dbce163451406d2605be486d1bd6d78b0a3eeb18d"
+  },
+  "exp15:results/gates.json": {
+   "path": "RUN/iter_4/gen_art/gen_art_experiment_15/results/gates.json",
+   "exists": true,
+   "bytes": 1271,
+   "sha256": "2df86ac855846e62869dd244a0019f2fb335539c79ab3904abb16f8e48d785d3"
+  },
+  "exp15:results/headline_flat.json": {
+   "path": "RUN/iter_4/gen_art/gen_art_experiment_15/results/headline_flat.json",
+   "exists": true,
+   "bytes": 7485,
+   "sha256": "19e9a6e175447ef7038d91761dc337dd951154e79ae9c1714b25b8fe5f2f7ef0"
+  },
+  "exp15:RESULTS.md": {
+   "path": "RUN/iter_4/gen_art/gen_art_experiment_15/RESULTS.md",
+   "exists": true,
+   "bytes": 13777,
+   "sha256": "610d0250473186917b7c8bc7df6f06aaf9deef86dd4e8d3bb80a944bb6ff3e94"
+  },
+  "exp15:src/gen.py": {
+   "path": "RUN/iter_4/gen_art/gen_art_experiment_15/src/gen.py",
+   "exists": true,
+   "bytes": 28828,
+   "sha256": "80b7e8efd26bba125f3a277a4cde76c1f07a4321cde451e49cc10522dc33feaf"
+  },
+  "exp15:src/analysis.py": {
+   "path": "RUN/iter_4/gen_art/gen_art_experiment_15/src/analysis.py",
+   "exists": true,
+   "bytes": 49998,
+   "sha256": "163d09b2f87280a0dad5380a7dd5a924d14f287ca60840eb05094aa93979a6bb"
+  },
+  "exp15:src/stats_core.py": {
+   "path": "RUN/iter_4/gen_art/gen_art_experiment_15/src/stats_core.py",
+   "exists": true,
+   "bytes": 3975,
+   "sha256": "4423640109ef20959184761d83729dac31e92385f780a2b5556fe88d5599c069"
+  },
+  "exp15:pyproject.toml": {
+   "path": "RUN/iter_4/gen_art/gen_art_experiment_15/pyproject.toml",
+   "exists": true,
+   "bytes": 2805,
+   "sha256": "b8119e1d0c2b75858588ef99b618e772e096ba016511b34f9e73f159ff38c835"
+  },
+  "exp15:uv.lock": {
+   "path": "RUN/iter_4/gen_art/gen_art_experiment_15/uv.lock",
+   "exists": true,
+   "bytes": 208696,
+   "sha256": "5b6eeede8d7c44e0ba7c79ed6c0e3e2ecad4a4aa6e1a3852111c7be065c3aac3"
+  },
+  "exp14:results/analysis.json": {
+   "path": "RUN/iter_4/gen_art/gen_art_experiment_14/results/analysis.json",
+   "exists": true,
+   "bytes": 305298,
+   "sha256": "e15df12cb9a859ff9f6628cca1e3d7c1b9d7dd152d96343b1310c6c2e98fa962"
+  },
+  "exp14:results/RESULTS_tables.md": {
+   "path": "RUN/iter_4/gen_art/gen_art_experiment_14/results/RESULTS_tables.md",
+   "exists": true,
+   "bytes": 19250,
+   "sha256": "8e1c1160e7fad79ace9cdc2156c1fdc478e259f5b3fef9358f34455750212715"
+  },
+  "exp14:results/rows_final.jsonl": {
+   "path": "RUN/iter_4/gen_art/gen_art_experiment_14/results/rows_final.jsonl",
+   "exists": true,
+   "bytes": 23209877,
+   "sha256": "d5aebff434b200ede1b749585f82a477a0357b2cd2db84eab3932752b1a95d42"
+  },
+  "exp14:results/cells_compliance.json": {
+   "path": "RUN/iter_4/gen_art/gen_art_experiment_14/results/cells_compliance.json",
+   "exists": true,
+   "bytes": 4530,
+   "sha256": "d73a6ae6cb306686279f6bfa9591f40105f20ec63b1c70213bb5ee3095b83cf1"
+  },
+  "exp14:results/kl_gemma_it.json": {
+   "path": "RUN/iter_4/gen_art/gen_art_experiment_14/results/kl_gemma_it.json",
+   "exists": true,
+   "bytes": 1728,
+   "sha256": "8c341f115bb485f3ae31a63e02c323c295dd9d4bbd985c014b9c3a4e54528c16"
+  },
+  "exp14:results/kl_gams3_it.json": {
+   "path": "RUN/iter_4/gen_art/gen_art_experiment_14/results/kl_gams3_it.json",
+   "exists": true,
+   "bytes": 1851,
+   "sha256": "aa7fa7456d09f11329592e081da4e7861a029495de2f26330c837e01783a7b68"
+  },
+  "exp14:results/protocol_amendments.jsonl": {
+   "path": "RUN/iter_4/gen_art/gen_art_experiment_14/results/protocol_amendments.jsonl",
+   "exists": true,
+   "bytes": 2223,
+   "sha256": "8b8714519fb17ce333d66ffce33058c64875cfbb19405b583aee207dac80a650"
+  },
+  "exp14:results/human_audit_request.json": {
+   "path": "RUN/iter_4/gen_art/gen_art_experiment_14/results/human_audit_request.json",
+   "exists": true,
+   "bytes": 951,
+   "sha256": "4621a46fbdf7b2c22a8c4dd58775951a0df1c9f60e00f60905cdfa37ebb97cea"
+  },
+  "exp14:data/items.jsonl": {
+   "path": "RUN/iter_4/gen_art/gen_art_experiment_14/data/items.jsonl",
+   "exists": true,
+   "bytes": 288062,
+   "sha256": "c49ffb740d73ac4d76a97961a6882688da9f3018c3934ec0d0d4248953534479"
+  },
+  "exp14:src/analysis.py": {
+   "path": "RUN/iter_4/gen_art/gen_art_experiment_14/src/analysis.py",
+   "exists": true,
+   "bytes": 42299,
+   "sha256": "f2b0e557c088226559e0f8ce9bec671eeb80f9aae381f28c14fa447f64bc2203"
+  },
+  "exp13:protocol.yaml": {
+   "path": "RUN/iter_4/gen_art/gen_art_experiment_13/protocol.yaml",
+   "exists": true,
+   "bytes": 10174,
+   "sha256": "23d1d4d48a0ad5922b504b30ca0034d331fe0ef0416150661b5d9ac9e0f0428e"
+  },
+  "exp13:results/protocol_amendments.json": {
+   "path": "RUN/iter_4/gen_art/gen_art_experiment_13/results/protocol_amendments.json",
+   "exists": true,
+   "bytes": 1729,
+   "sha256": "21959778f308a5ea23b799cb282ad0ef2a6da5c9fb106da5c99d513c97599476"
+  },
+  "exp13:results/tier_table.json": {
+   "path": "RUN/iter_4/gen_art/gen_art_experiment_13/results/tier_table.json",
+   "exists": true,
+   "bytes": 3210,
+   "sha256": "4fc3b4038d5250d7ed119b32e70a23ab3eba3a63f7d4071313e144714f90bfc1"
+  },
+  "exp13:results/readout_provenance.json": {
+   "path": "RUN/iter_4/gen_art/gen_art_experiment_13/results/readout_provenance.json",
+   "exists": true,
+   "bytes": 1641,
+   "sha256": "6bd0891975825d374205b49022039a6b8778f44744408c37159cc732b30e291b"
+  },
+  "exp13:results/freeze_commit.json": {
+   "path": "RUN/iter_4/gen_art/gen_art_experiment_13/results/freeze_commit.json",
+   "exists": true,
+   "bytes": 191,
+   "sha256": "e0e76f1eae0c4de53480dfaa3b27f2f78f98fdb7a1b342f361a977f41d3623cc"
+  },
+  "exp13:data/split_manifest_iter4.json": {
+   "path": "RUN/iter_4/gen_art/gen_art_experiment_13/data/split_manifest_iter4.json",
+   "exists": true,
+   "bytes": 13113,
+   "sha256": "adea9ff1f1544a95153ddaf0cec131b1e4dc0d766d4501148a9b79d003be94fa"
+  },
+  "exp13:data/pool.jsonl": {
+   "path": "RUN/iter_4/gen_art/gen_art_experiment_13/data/pool.jsonl",
+   "exists": true,
+   "bytes": 159425,
+   "sha256": "8d3c27ba51d6dfdc17e21e10e36f3e645fb7b6b133c439deacfb0ec6145a4a22"
+  },
+  "exp13:data/items_iter4.jsonl": {
+   "path": "RUN/iter_4/gen_art/gen_art_experiment_13/data/items_iter4.jsonl",
+   "exists": true,
+   "bytes": 316852,
+   "sha256": "b0aaa379d76a26e75556d77b5f38b1639179c86c632db5341a806aa99b891571"
+  },
+  "exp13:data/twins.jsonl": {
+   "path": "RUN/iter_4/gen_art/gen_art_experiment_13/data/twins.jsonl",
+   "exists": true,
+   "bytes": 95204,
+   "sha256": "439116eda7aedec6a39af8f277ad949772956ec6dc300c27bd3a410b2353985d"
+  },
+  "exp13:data/jbb_benign.jsonl": {
+   "path": "RUN/iter_4/gen_art/gen_art_experiment_13/data/jbb_benign.jsonl",
+   "exists": true,
+   "bytes": 13575,
+   "sha256": "1e41543832823e85d3f2bd2352e79636e5e0fa5590847ae588376d9055c8e3ce"
+  },
+  "exp13:data/dedup_log.json": {
+   "path": "RUN/iter_4/gen_art/gen_art_experiment_13/data/dedup_log.json",
+   "exists": true,
+   "bytes": 5974,
+   "sha256": "d2f414d2054b1441f4937f448ee3a4aafcf6fd678ca14bfa8bee54f61ee384a6"
+  },
+  "eval3:READOUT_v2.md": {
+   "path": "RUN/iter_4/gen_art/gen_art_evaluation_3/READOUT_v2.md",
+   "exists": true,
+   "bytes": 13305,
+   "sha256": "eb3246b6762ce16f9f5ac9878ab613b0acedb5134b8e541dc346a825dc132f6d"
+  },
+  "eval3:results/judge_error_matrices_v2.json": {
+   "path": "RUN/iter_4/gen_art/gen_art_evaluation_3/results/judge_error_matrices_v2.json",
+   "exists": true,
+   "bytes": 52000,
+   "sha256": "21301414cfb2163a8072d8d6935dc34c1bd6dcf702182c63362ba5965699a883"
+  },
+  "eval3:results/recompute.json": {
+   "path": "RUN/iter_4/gen_art/gen_art_evaluation_3/results/recompute.json",
+   "exists": true,
+   "bytes": 289464,
+   "sha256": "9ff405ec0382ec094417d634797833d4870c06a40514e7bf4b9db3eb1249e3b7"
+  },
+  "eval3:results/rederive.json": {
+   "path": "RUN/iter_4/gen_art/gen_art_evaluation_3/results/rederive.json",
+   "exists": true,
+   "bytes": 27123,
+   "sha256": "a2e67aa85c4e2b2f1a8ecadbbde987a088084daf35428c0aaff1206fda804063"
+  },
+  "eval3:results/tier_bakeoff.json": {
+   "path": "RUN/iter_4/gen_art/gen_art_evaluation_3/results/tier_bakeoff.json",
+   "exists": true,
+   "bytes": 8707,
+   "sha256": "1ba9deb8f4c188192b214a15eb3ecabcbd18b081527604ccd05667de7934bd74"
+  },
+  "eval3:labels/readout_rows.jsonl.gz": {
+   "path": "RUN/iter_4/gen_art/gen_art_evaluation_3/labels/readout_rows.jsonl.gz",
+   "exists": true,
+   "bytes": 16783491,
+   "sha256": "5e8c21b96ac0970e5d80d155f886b5735fb766330aeb9f58f1ba693fdc8f4b06"
+  },
+  "eval3:full_eval_out.json": {
+   "path": "RUN/iter_4/gen_art/gen_art_evaluation_3/full_eval_out.json",
+   "exists": true,
+   "bytes": 49048848,
+   "sha256": "7593bba47c7b77edd43862a4abd39a8ddc08864ade35c193a2fb740701c1b168"
+  },
+  "eval3:work/frame.parquet": {
+   "path": "RUN/iter_4/gen_art/gen_art_evaluation_3/work/frame.parquet",
+   "exists": true,
+   "bytes": 20931775,
+   "sha256": "a2955ec2f0797a7d3e4a12d37f6253ef61fd3c526d62052ec8caa3f0a3e00683"
+  },
+  "eval3:eval.py": {
+   "path": "RUN/iter_4/gen_art/gen_art_evaluation_3/eval.py",
+   "exists": true,
+   "bytes": 57553,
+   "sha256": "ea29a6982f38de214d41e41e8024acaf45973e93fe2ce1cbbb9b0fa5510f4ea8"
+  },
+  "eval3:src/engine.py": {
+   "path": "RUN/iter_4/gen_art/gen_art_evaluation_3/src/engine.py",
+   "exists": true,
+   "bytes": 18183,
+   "sha256": "ca7bc9810e7ad4bedb51a371f2dab68b66169402c02e82bfcfae425d3d4b2715"
+  },
+  "exp11:results/RESULTS_tables.md": {
+   "path": "RUN/iter_3/gen_art/gen_art_experiment_11/results/RESULTS_tables.md",
+   "exists": true,
+   "bytes": 13757,
+   "sha256": "555acaa828d9fc6a5e077e76aeda55dd384931c4d8e6179227ab6cc6dce6bb0c"
+  },
+  "exp11:results/analysis.json": {
+   "path": "RUN/iter_3/gen_art/gen_art_experiment_11/results/analysis.json",
+   "exists": true,
+   "bytes": 97406,
+   "sha256": "02f5775c6876db0ee4091a01ab23225bf59cc45e1a51fb8134f90d864bc4e2fa"
+  },
+  "exp11:results/gates.json": {
+   "path": "RUN/iter_3/gen_art/gen_art_experiment_11/results/gates.json",
+   "exists": true,
+   "bytes": 3426,
+   "sha256": "5ec65ccdb303fe8040196e9e3b6f70bed30fdea6ff9a566d5c553612eb1a01c2"
+  },
+  "exp11:results/audit.json": {
+   "path": "RUN/iter_3/gen_art/gen_art_experiment_11/results/audit.json",
+   "exists": true,
+   "bytes": 3745,
+   "sha256": "71e62c115341071f3b56214d749cd4553dcf04587941238be5e700e21e665fbf"
+  },
+  "exp9:results/analysis.json": {
+   "path": "RUN/iter_3/gen_art/gen_art_experiment_9/results/analysis.json",
+   "exists": true,
+   "bytes": 97505,
+   "sha256": "c7d49d9e94c05bdab0ed3e47efda9b76267a89ea400819a37fdcf30e9fd8f41d"
+  },
+  "exp9:results/summary_tables.md": {
+   "path": "RUN/iter_3/gen_art/gen_art_experiment_9/results/summary_tables.md",
+   "exists": true,
+   "bytes": 11721,
+   "sha256": "54c85bb969d5c967dbf9964bc81effc8f1f3783e7ab0f0d9c4f0caa55f919437"
+  },
+  "exp9:results/gemma_it/c5a_kl.jsonl": {
+   "path": "RUN/iter_3/gen_art/gen_art_experiment_9/results/gemma_it/c5a_kl.jsonl",
+   "exists": true,
+   "bytes": 126448,
+   "sha256": "98795d7000a86752707c990f70cdbcd058136e0a72d14b0cb9b2c750aa46570c"
+  },
+  "exp9:results/gams3_it/c5a_kl.jsonl": {
+   "path": "RUN/iter_3/gen_art/gen_art_experiment_9/results/gams3_it/c5a_kl.jsonl",
+   "exists": true,
+   "bytes": 127631,
+   "sha256": "8df5fa6b31fe4d7c609fdcaae797194ad33720ffa44309c46258546813be569b"
+  },
+  "exp9:data/gate_harmless40.jsonl": {
+   "path": "RUN/iter_3/gen_art/gen_art_experiment_9/data/gate_harmless40.jsonl",
+   "exists": true,
+   "bytes": 15525,
+   "sha256": "e0a58da17dc9c22948acfd37a9fe35f3f7294fd3933e30bbc81d655213d1201c"
+  },
+  "exp9:src/analysis.py": {
+   "path": "RUN/iter_3/gen_art/gen_art_experiment_9/src/analysis.py",
+   "exists": true,
+   "bytes": 33637,
+   "sha256": "58b1f401898d23e40026c5712f702097588fef57fb3effb89ec3800db9af445a"
+  },
+  "exp9:src/stats_core.py": {
+   "path": "RUN/iter_3/gen_art/gen_art_experiment_9/src/stats_core.py",
+   "exists": true,
+   "bytes": 3355,
+   "sha256": "877b6f51da3966675bb61e9c6fed188cb7f2fc885443ab882b8ba5674a6f20d1"
+  },
+  "exp10:results/summary_tables.md": {
+   "path": "RUN/iter_3/gen_art/gen_art_experiment_10/results/summary_tables.md",
+   "exists": true,
+   "bytes": 21268,
+   "sha256": "2e78f403fd17903fc268b0fc2810df6c846ff448d7f5f2a6639d66eda089a2f4"
+  },
+  "exp10:results/analysis.json": {
+   "path": "RUN/iter_3/gen_art/gen_art_experiment_10/results/analysis.json",
+   "exists": true,
+   "bytes": 739690,
+   "sha256": "c495b2a973eb92f263ba456c6284c1d891d7a6eec2268b72d1c8ee8c3db9bcaa"
+  },
+  "exp12:results/RESULTS.md": {
+   "path": "RUN/iter_3/gen_art/gen_art_experiment_12/results/RESULTS.md",
+   "exists": true,
+   "bytes": 38208,
+   "sha256": "19d623a528cff1d63a10882ea79bf35503c837add5b96486445a788ef996af22"
+  },
+  "exp12:results/competence_covariates.json": {
+   "path": "RUN/iter_3/gen_art/gen_art_experiment_12/results/competence_covariates.json",
+   "exists": true,
+   "bytes": 874,
+   "sha256": "b233c8ca7af757a33aaff8b30bad4da60b90a2d2f4e0bbca2386a21f268a7183"
+  },
+  "exp12:results/kl_footprint.json": {
+   "path": "RUN/iter_3/gen_art/gen_art_experiment_12/results/kl_footprint.json",
+   "exists": true,
+   "bytes": 110307,
+   "sha256": "748ca3b9240d7b5e7cfbe1401fcc1f0ff74c616d783e227e8c5f4bf97dd36254"
+  },
+  "eval2:READOUT_REPAIR.md": {
+   "path": "RUN/iter_3/gen_art/gen_art_evaluation_2/READOUT_REPAIR.md",
+   "exists": true,
+   "bytes": 4060,
+   "sha256": "cdaae5ab8262398547a44b7edf3f23e65badabcacab0e50926bf125b7d60167a"
+  },
+  "eval2:results/eval_results.json": {
+   "path": "RUN/iter_3/gen_art/gen_art_evaluation_2/results/eval_results.json",
+   "exists": true,
+   "bytes": 307745,
+   "sha256": "38231f6c98a6655615ac53b5782e10314017855fcfc288a65716ab2698d66120"
+  },
+  "exp5:results/analysis_final.json": {
+   "path": "RUN/iter_2/gen_art/gen_art_experiment_5/results/analysis_final.json",
+   "exists": true,
+   "bytes": 133953,
+   "sha256": "a83c754c520444e9cad7a242bdc2d61e0207945e20e7eafc6814c173c3e4a1fe"
+  },
+  "exp5:src/judge_calibrated.py": {
+   "path": "RUN/iter_2/gen_art/gen_art_experiment_5/src/judge_calibrated.py",
+   "exists": true,
+   "bytes": 8820,
+   "sha256": "bca5e474ccd0a3f5bdc08a70793794cde036c1b5a124b9453203d623f9119488"
+  },
+  "exp5:src/stats_lib.py": {
+   "path": "RUN/iter_2/gen_art/gen_art_experiment_5/src/stats_lib.py",
+   "exists": true,
+   "bytes": 17249,
+   "sha256": "402cff4ffa3feeea64aad0283671fb90f07f11d103c1be5002030550b61e4589"
+  },
+  "exp4:results/analysis.json": {
+   "path": "RUN/iter_1/gen_art/gen_art_experiment_4/results/analysis.json",
+   "exists": true,
+   "bytes": 42206,
+   "sha256": "8d12af8a131d62f6daed8c29f5c4a17997ee1d6e232691beabd4b43acc14986a"
+  },
+  "research_1:research_extended.json": {
+   "path": "RUN/iter_4/gen_art/gen_art_research_1/research_extended.json",
+   "exists": true,
+   "bytes": 51736,
+   "sha256": "db7f7c066ad153af084a9b1b60de773cff0cc7f95d13a6c1a8dfc828231d5439"
+  },
+  "paper:paper_draft.md": {
+   "path": "RUN/iter_4/gen_report_text/gen_report_text/paper_draft.md",
+   "exists": true,
+   "bytes": 143792,
+   "sha256": "b29181a9386d15f122f52d8d1802befa8f3719355a0f9122555fd10f723182c9"
+  },
+  "review:.terminal_claude_agent_struct_out.json": {
+   "path": "RUN/iter_4/review_report/review_report/.terminal_claude_agent_struct_out.json",
+   "exists": true,
+   "bytes": 22599,
+   "sha256": "d94073b848000ad63518c8ba47db2b235a7c2a91d46a4750a884b7d17fc88c49"
+  }
+ },
+ "rule": "a missing file makes only its dependent cells UNTRACEABLE; it does not stop the run"
+}
