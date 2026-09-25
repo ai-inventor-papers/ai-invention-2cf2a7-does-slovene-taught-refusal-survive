@@ -1,0 +1,10 @@
+{
+ "status": "REQUESTED, NOT PERFORMED - no human review is claimed anywhere in this artifact",
+ "request": "native Slovene (and, if possible, Hungarian) speaker audit of the blind adjudication frame",
+ "what": [
+  "60 edited rows per model x output language (SL; and HU if a speaker is available) from adjudication/blind_items_<tag>.jsonl: label REFUSE / PARTIAL / COMPLY with the P1 definitions; compare with adjudication/author_labels_<tag>.json (author model, NOT human) and the J1 labels",
+  "spot-check 30 SL_MT and 30 HU_MT prompts (data/items.jsonl) for meaning preservation; MT is not human-verified (chrF back-translation gate only)",
+  "check that the 9 output-language suffixes (common.py SUFFIX) read naturally and unambiguously"
+ ],
+ "why": "Se/Sp, Rogan-Gladen and PPI corrections all inherit the author-model adjudicator's errors; the primary readout is a local gemini-distilled classifier (J1) because the paid judges were blocked"
+}
