@@ -1,0 +1,2338 @@
+{
+  "metadata": {
+    "method_name": "RQ3 capability control: headroom-normalised MC utility + KL/BPB/fluency footprint of English-objective Heretic abliteration (GaMS3 vs Gemma-3, EN/SL/HU)",
+    "description": "Original vs iter-1 selected Heretic edit (lambda 1, plus 0.5/1.5/2.0) vs norm-matched random-direction edits (same Heretic params, only directions random). predict_<model>__<cond> = 1 if the item is a...",
+    "protocol_sha256": "ae6b7cbcca5cbdf8203cc075ecb2cde571000f704e185a465b18acfbc2eaaef2",
+    "gates": {
+      "gams3_it": {
+        "E_art2": "OK",
+        "E_iter1": "OK",
+        "rand_nm_j1": "OK",
+        "E_iter1_l0.5": "OK",
+        "E_iter1_l1.5": "OK",
+        "E_iter1_l2.0": "OK"
+      },
+      "gemma_it": {
+        "E_art2": "OK",
+        "E_iter1": "OK",
+        "rand_nm_j1": "OK",
+        "rand_nm_j2": "OK",
+        "E_iter1_l0.5": "OK",
+        "E_iter1_l1.5": "OK",
+        "E_iter1_l2.0": "POSSIBLY_CATASTROPHIC"
+      }
+    },
+    "macros": {
+      "gams3_it": {
+        "E_art2": {
+          "en": {
+            "macro_H": -0.01988,
+            "macro_H_ci95": [
+              -0.04281,
+              0.00278
+            ],
+            "macro_H_ci90": [
+              -0.0392,
+              -0.0009
+            ],
+            "macro_loss": 0.01988,
+            "macro_loss_hi95": 0.04281,
+            "eligible_tasks": [
+              "arc_challenge",
+              "boolq",
+              "hellaswag"
+            ],
+            "ineligible_tasks": [],
+            "raw_pp_macro": -0.7223,
+            "raw_pp_macro_ci95": [
+              -1.44444,
+              -0.05556
+            ],
+            "rel_pct_macro": -1.065,
+            "F6_raw_pp_rule": false
+          },
+          "sl": {
+            "macro_H": -0.00885,
+            "macro_H_ci95": [
+              -0.03762,
+              0.02194
+            ],
+            "macro_H_ci90": [
+              -0.03355,
+              0.01753
+            ],
+            "macro_loss": 0.00885,
+            "macro_loss_hi95": 0.03762,
+            "eligible_tasks": [
+              "arc_challenge",
+              "boolq",
+              "hellaswag"
+            ],
+            "ineligible_tasks": [],
+            "raw_pp_macro": -0.278,
+            "raw_pp_macro_ci95": [
+              -0.94444,
+              0.44444
+            ],
+            "rel_pct_macro": -0.2918,
+            "F6_raw_pp_rule": false
+          },
+          "pooled_macro_H": -0.01436,
+          "pooled_macro_H_ci95": [
+            -0.03329,
+            0.005
+          ],
+          "A_sl_minus_en": 0.01104,
+          "A_ci95": [
+            -0.0234,
+            0.0504
+          ],
+          "A_ci90": [
+            -0.01857,
+            0.04384
+          ]
+        },
+        "E_iter1": {
+          "en": {
+            "macro_H": -0.018,
+            "macro_H_ci95": [
+              -0.03922,
+              0.00401
+            ],
+            "macro_H_ci90": [
+              -0.03573,
+              0.00065
+            ],
+            "macro_loss": 0.018,
+            "macro_loss_hi95": 0.03922,
+            "eligible_tasks": [
+              "arc_challenge",
+              "boolq",
+              "hellaswag"
+            ],
+            "ineligible_tasks": [],
+            "raw_pp_macro": -0.7223,
+            "raw_pp_macro_ci95": [
+              -1.38889,
+              -0.05556
+            ],
+            "rel_pct_macro": -1.0728,
+            "F6_raw_pp_rule": false
+          },
+          "sl": {
+            "macro_H": 0.00653,
+            "macro_H_ci95": [
+              -0.02083,
+              0.03737
+            ],
+            "macro_H_ci90": [
+              -0.016,
+              0.03253
+            ],
+            "macro_loss": -0.00653,
+            "macro_loss_hi95": 0.02083,
+            "eligible_tasks": [
+              "arc_challenge",
+              "boolq",
+              "hellaswag"
+            ],
+            "ineligible_tasks": [],
+            "raw_pp_macro": 0.1112,
+            "raw_pp_macro_ci95": [
+              -0.55556,
+              0.83333
+            ],
+            "rel_pct_macro": 0.1972,
+            "F6_raw_pp_rule": false
+          },
+          "pooled_macro_H": -0.00574,
+          "pooled_macro_H_ci95": [
+            -0.02372,
+            0.01327
+          ],
+          "A_sl_minus_en": 0.02453,
+          "A_ci95": [
+            -0.0092,
+            0.06021
+          ],
+          "A_ci90": [
+            -0.00445,
+            0.05533
+          ]
+        },
+        "rand_nm_j1": {
+          "en": {
+            "macro_H": -0.00343,
+            "macro_H_ci95": [
+              -0.01894,
+              0.01327
+            ],
+            "macro_H_ci90": [
+              -0.01619,
+              0.01087
+            ],
+            "macro_loss": 0.00343,
+            "macro_loss_hi95": 0.01894,
+            "eligible_tasks": [
+              "arc_challenge",
+              "boolq",
+              "hellaswag"
+            ],
+            "ineligible_tasks": [],
+            "raw_pp_macro": -0.0557,
+            "raw_pp_macro_ci95": [
+              -0.5,
+              0.44444
+            ],
+            "rel_pct_macro": -0.0392,
+            "F6_raw_pp_rule": false
+          },
+          "sl": {
+            "macro_H": -0.03003,
+            "macro_H_ci95": [
+              -0.05776,
+              -0.00362
+            ],
+            "macro_H_ci90": [
+              -0.05215,
+              -0.00814
+            ],
+            "macro_loss": 0.03003,
+            "macro_loss_hi95": 0.05776,
+            "eligible_tasks": [
+              "arc_challenge",
+              "boolq",
+              "hellaswag"
+            ],
+            "ineligible_tasks": [],
+            "raw_pp_macro": -0.7223,
+            "raw_pp_macro_ci95": [
+              -1.33333,
+              -0.11111
+            ],
+            "rel_pct_macro": -0.9515,
+            "F6_raw_pp_rule": false
+          },
+          "pooled_macro_H": -0.01673,
+          "pooled_macro_H_ci95": [
+            -0.03199,
+            -0.00118
+          ],
+          "A_sl_minus_en": -0.0266,
+          "A_ci95": [
+            -0.05908,
+            0.00463
+          ],
+          "A_ci90": [
+            -0.05299,
+            -0.00075
+          ]
+        }
+      },
+      "gemma_it": {
+        "E_art2": {
+          "en": {
+            "macro_H": 0.01634,
+            "macro_H_ci95": [
+              -0.00226,
+              0.03709
+            ],
+            "macro_H_ci90": [
+              0.00108,
+              0.03367
+            ],
+            "macro_loss": -0.01634,
+            "macro_loss_hi95": 0.00226,
+            "eligible_tasks": [
+              "arc_challenge",
+              "boolq",
+              "hellaswag"
+            ],
+            "ineligible_tasks": [],
+            "raw_pp_macro": 0.4445,
+            "raw_pp_macro_ci95": [
+              -0.11111,
+              1.0
+            ],
+            "rel_pct_macro": 0.6777,
+            "F6_raw_pp_rule": false
+          },
+          "sl": {
+            "macro_H": 0.04908,
+            "macro_H_ci95": [
+              0.00016,
+              0.14118
+            ],
+            "macro_H_ci90": [
+              0.00734,
+              0.11334
+            ],
+            "macro_loss": -0.04908,
+            "macro_loss_hi95": -0.00016,
+            "eligible_tasks": [
+              "arc_challenge",
+              "boolq",
+              "hellaswag"
+            ],
+            "ineligible_tasks": [],
+            "raw_pp_macro": 0.6667,
+            "raw_pp_macro_ci95": [
+              -0.11111,
+              1.44444
+            ],
+            "rel_pct_macro": 1.239,
+            "F6_raw_pp_rule": false
+          },
+          "pooled_macro_H": 0.03271,
+          "pooled_macro_H_ci95": [
+            0.00654,
+            0.07939
+          ],
+          "A_sl_minus_en": 0.03275,
+          "A_ci95": [
+            -0.02034,
+            0.12511
+          ],
+          "A_ci90": [
+            -0.01232,
+            0.09711
+          ]
+        },
+        "E_iter1": {
+          "en": {
+            "macro_H": 0.00772,
+            "macro_H_ci95": [
+              -0.00873,
+              0.02532
+            ],
+            "macro_H_ci90": [
+              -0.00649,
+              0.02222
+            ],
+            "macro_loss": -0.00772,
+            "macro_loss_hi95": 0.00873,
+            "eligible_tasks": [
+              "arc_challenge",
+              "boolq",
+              "hellaswag"
+            ],
+            "ineligible_tasks": [],
+            "raw_pp_macro": 0.2777,
+            "raw_pp_macro_ci95": [
+              -0.22222,
+              0.77778
+            ],
+            "rel_pct_macro": 0.3598,
+            "F6_raw_pp_rule": false
+          },
+          "sl": {
+            "macro_H": 0.0218,
+            "macro_H_ci95": [
+              -0.02374,
+              0.09039
+            ],
+            "macro_H_ci90": [
+              -0.01631,
+              0.07625
+            ],
+            "macro_loss": -0.0218,
+            "macro_loss_hi95": 0.02374,
+            "eligible_tasks": [
+              "arc_challenge",
+              "boolq",
+              "hellaswag"
+            ],
+            "ineligible_tasks": [],
+            "raw_pp_macro": 0.1665,
+            "raw_pp_macro_ci95": [
+              -0.61111,
+              0.88889
+            ],
+            "rel_pct_macro": 0.4538,
+            "F6_raw_pp_rule": false
+          },
+          "pooled_macro_H": 0.01476,
+          "pooled_macro_H_ci95": [
+            -0.00949,
+            0.05136
+          ],
+          "A_sl_minus_en": 0.01408,
+          "A_ci95": [
+            -0.03647,
+            0.08215
+          ],
+          "A_ci90": [
+            -0.02737,
+            0.06849
+          ]
+        },
+        "rand_nm_j1": {
+          "en": {
+            "macro_H": 0.00852,
+            "macro_H_ci95": [
+              -0.00284,
+              0.0215
+            ],
+            "macro_H_ci90": [
+              -0.00126,
+              0.01925
+            ],
+            "macro_loss": -0.00852,
+            "macro_loss_hi95": 0.00284,
+            "eligible_tasks": [
+              "arc_challenge",
+              "boolq",
+              "hellaswag"
+            ],
+            "ineligible_tasks": [],
+            "raw_pp_macro": 0.2777,
+            "raw_pp_macro_ci95": [
+              -0.05556,
+              0.66667
+            ],
+            "rel_pct_macro": 0.3737,
+            "F6_raw_pp_rule": false
+          },
+          "sl": {
+            "macro_H": 0.00157,
+            "macro_H_ci95": [
+              -0.0448,
+              0.06855
+            ],
+            "macro_H_ci90": [
+              -0.03596,
+              0.05364
+            ],
+            "macro_loss": -0.00157,
+            "macro_loss_hi95": 0.0448,
+            "eligible_tasks": [
+              "arc_challenge",
+              "boolq",
+              "hellaswag"
+            ],
+            "ineligible_tasks": [],
+            "raw_pp_macro": -0.1112,
+            "raw_pp_macro_ci95": [
+              -0.77778,
+              0.5
+            ],
+            "rel_pct_macro": -0.2277,
+            "F6_raw_pp_rule": false
+          },
+          "pooled_macro_H": 0.00505,
+          "pooled_macro_H_ci95": [
+            -0.01884,
+            0.04034
+          ],
+          "A_sl_minus_en": -0.00695,
+          "A_ci95": [
+            -0.05334,
+            0.06077
+          ],
+          "A_ci90": [
+            -0.04597,
+            0.04451
+          ]
+        },
+        "rand_nm_j2": {
+          "en": {
+            "macro_H": -0.00672,
+            "macro_H_ci95": [
+              -0.02239,
+              0.00766
+            ],
+            "macro_H_ci90": [
+              -0.01922,
+              0.00506
+            ],
+            "macro_loss": 0.00672,
+            "macro_loss_hi95": 0.02239,
+            "eligible_tasks": [
+              "arc_challenge",
+              "boolq",
+              "hellaswag"
+            ],
+            "ineligible_tasks": [],
+            "raw_pp_macro": -0.1665,
+            "raw_pp_macro_ci95": [
+              -0.61111,
+              0.22222
+            ],
+            "rel_pct_macro": -0.2165,
+            "F6_raw_pp_rule": false
+          },
+          "sl": {
+            "macro_H": -0.00752,
+            "macro_H_ci95": [
+              -0.05946,
+              0.05374
+            ],
+            "macro_H_ci90": [
+              -0.05017,
+              0.04044
+            ],
+            "macro_loss": 0.00752,
+            "macro_loss_hi95": 0.05946,
+            "eligible_tasks": [
+              "arc_challenge",
+              "boolq",
+              "hellaswag"
+            ],
+            "ineligible_tasks": [],
+            "raw_pp_macro": -0.1112,
+            "raw_pp_macro_ci95": [
+              -0.77778,
+              0.5
+            ],
+            "rel_pct_macro": -0.3385,
+            "F6_raw_pp_rule": false
+          },
+          "pooled_macro_H": -0.00712,
+          "pooled_macro_H_ci95": [
+            -0.03479,
+            0.02475
+          ],
+          "A_sl_minus_en": -0.00079,
+          "A_ci95": [
+            -0.05244,
+            0.06065
+          ],
+          "A_ci90": [
+            -0.04439,
+            0.04982
+          ]
+        }
+      }
+    },
+    "interaction": {
+      "E_iter1": {
+        "I": 0.01045,
+        "I_ci95": [
+          -0.06544,
+          0.07428
+        ],
+        "I_ci90": [
+          -0.04939,
+          0.06298
+        ],
+        "note": "resolution limit ~0.10-0.12 of headroom (80% power, alpha .05); |I| below it is an estimate, not 'no asymmetry'"
+      },
+      "E_art2": {
+        "I": -0.02171,
+        "I_ci95": [
+          -0.11623,
+          0.04326
+        ],
+        "I_ci90": [
+          -0.09936,
+          0.03302
+        ],
+        "note": "resolution limit ~0.10-0.12 of headroom (80% power, alpha .05); |I| below it is an estimate, not 'no asymmetry'"
+      },
+      "rand_nm_j1": {
+        "I": -0.01965,
+        "I_ci95": [
+          -0.0961,
+          0.03432
+        ],
+        "I_ci90": [
+          -0.07827,
+          0.024
+        ],
+        "note": "resolution limit ~0.10-0.12 of headroom (80% power, alpha .05); |I| below it is an estimate, not 'no asymmetry'"
+      }
+    },
+    "random_adjusted": {
+      "gams3_it": {
+        "E_art2": {
+          "en": {
+            "H_excess": -0.01646,
+            "ci95": [
+              -0.04032,
+              0.0069
+            ]
+          },
+          "sl": {
+            "H_excess": 0.02118,
+            "ci95": [
+              -0.00976,
+              0.05502
+            ]
+          },
+          "A_excess": {
+            "value": 0.03764,
+            "ci95": [
+              0.00117,
+              0.08027
+            ]
+          }
+        },
+        "E_iter1": {
+          "en": {
+            "H_excess": -0.01457,
+            "ci95": [
+              -0.03756,
+              0.00835
+            ]
+          },
+          "sl": {
+            "H_excess": 0.03656,
+            "ci95": [
+              0.00443,
+              0.07237
+            ]
+          },
+          "A_excess": {
+            "value": 0.05113,
+            "ci95": [
+              0.01162,
+              0.0927
+            ]
+          }
+        }
+      },
+      "gemma_it": {
+        "E_art2": {
+          "en": {
+            "H_excess": 0.00782,
+            "ci95": [
+              -0.01078,
+              0.02805
+            ]
+          },
+          "sl": {
+            "H_excess": 0.04751,
+            "ci95": [
+              0.00208,
+              0.10944
+            ]
+          },
+          "A_excess": {
+            "value": 0.03969,
+            "ci95": [
+              -0.00944,
+              0.10254
+            ]
+          }
+        },
+        "E_iter1": {
+          "en": {
+            "H_excess": -0.0008,
+            "ci95": [
+              -0.0196,
+              0.01737
+            ]
+          },
+          "sl": {
+            "H_excess": 0.02023,
+            "ci95": [
+              -0.02422,
+              0.0689
+            ]
+          },
+          "A_excess": {
+            "value": 0.02103,
+            "ci95": [
+              -0.02825,
+              0.07261
+            ]
+          }
+        }
+      }
+    },
+    "lambda_gate_curve": {
+      "gams3_it": {
+        "points": [
+          {
+            "lambda": 0.5,
+            "macro_H_en": -0.03226,
+            "macro_H_sl": -0.00976,
+            "ci95_en": [
+              -0.07048,
+              -0.0006
+            ],
+            "ci95_sl": [
+              -0.08161,
+              0.06858
+            ],
+            "verdict": "OK"
+          },
+          {
+            "lambda": 1.0,
+            "macro_H_en": -0.04546,
+            "macro_H_sl": -0.0125,
+            "ci95_en": [
+              -0.08766,
+              -0.00707
+            ],
+            "ci95_sl": [
+              -0.07001,
+              0.04787
+            ],
+            "verdict": "OK"
+          },
+          {
+            "lambda": 1.5,
+            "macro_H_en": -0.04968,
+            "macro_H_sl": -0.00406,
+            "ci95_en": [
+              -0.1002,
+              -8e-05
+            ],
+            "ci95_sl": [
+              -0.08678,
+              0.10492
+            ],
+            "verdict": "OK"
+          }
+        ],
+        "largest_lambda_OK": 2.0,
+        "licensed_lambdas": [
+          0.5,
+          1.0,
+          1.5
+        ],
+        "monotone_damage_sl": false
+      },
+      "gemma_it": {
+        "points": [
+          {
+            "lambda": 0.5,
+            "macro_H_en": -0.00049,
+            "macro_H_sl": 0.02624,
+            "ci95_en": [
+              -0.02293,
+              0.02419
+            ],
+            "ci95_sl": [
+              -0.10441,
+              0.27561
+            ],
+            "verdict": "OK"
+          },
+          {
+            "lambda": 1.0,
+            "macro_H_en": 0.00499,
+            "macro_H_sl": -0.00766,
+            "ci95_en": [
+              -0.02771,
+              0.04221
+            ],
+            "ci95_sl": [
+              -0.17696,
+              0.18408
+            ],
+            "verdict": "OK"
+          },
+          {
+            "lambda": 1.5,
+            "macro_H_en": 0.01343,
+            "macro_H_sl": 0.03592,
+            "ci95_en": [
+              -0.02845,
+              0.06199
+            ],
+            "ci95_sl": [
+              -0.11573,
+              0.30016
+            ],
+            "verdict": "OK"
+          }
+        ],
+        "largest_lambda_OK": 1.5,
+        "licensed_lambdas": [
+          0.5,
+          1.0,
+          1.5
+        ],
+        "monotone_damage_sl": false
+      }
+    },
+    "kl_ratios": {
+      "gams3_it": {
+        "E_art2": {
+          "first": {
+            "sl_over_enbt": {
+              "ratio": 0.5419918127472879,
+              "ci95": [
+                0.44772,
+                0.6783
+              ],
+              "excess_vs_rand": {
+                "excess": 0.4898839690665348,
+                "ci95": [
+                  0.39938,
+                  0.62401
+                ],
+                "ratio_rand": 1.106367725769928
+              }
+            },
+            "hu_over_enbt": {
+              "ratio": 0.44297832862260916,
+              "ci95": [
+                0.36521,
+                0.55726
+              ],
+              "excess_vs_rand": {
+                "excess": 0.4041131592223486,
+                "ci95": [
+                  0.32559,
+                  0.52028
+                ],
+                "ratio_rand": 1.0961739763066622
+              }
+            },
+            "readable": true
+          },
+          "multi": {
+            "sl_over_enbt": {
+              "ratio": 0.396069151389818,
+              "ci95": [
+                0.35099,
+                0.44894
+              ],
+              "excess_vs_rand": {
+                "excess": 0.5739058929542044,
+                "ci95": [
+                  0.50628,
+                  0.65646
+                ],
+                "ratio_rand": 0.6901290895464336
+              }
+            },
+            "hu_over_enbt": {
+              "ratio": 0.36103059281163685,
+              "ci95": [
+                0.32261,
+                0.40361
+              ],
+              "excess_vs_rand": {
+                "excess": 0.6109145597337727,
+                "ci95": [
+                  0.54051,
+                  0.68952
+                ],
+                "ratio_rand": 0.5909674062588531
+              }
+            },
+            "readable": true
+          }
+        },
+        "E_iter1": {
+          "first": {
+            "sl_over_enbt": {
+              "ratio": 0.5159892741046026,
+              "ci95": [
+                0.42665,
+                0.65211
+              ],
+              "excess_vs_rand": {
+                "excess": 0.4663813505094091,
+                "ci95": [
+                  0.37914,
+                  0.59668
+                ],
+                "ratio_rand": 1.106367725769928
+              }
+            },
+            "hu_over_enbt": {
+              "ratio": 0.40140037349200175,
+              "ci95": [
+                0.33085,
+                0.50848
+              ],
+              "excess_vs_rand": {
+                "excess": 0.36618308969935554,
+                "ci95": [
+                  0.29525,
+                  0.47271
+                ],
+                "ratio_rand": 1.0961739763066622
+              }
+            },
+            "readable": true
+          },
+          "multi": {
+            "sl_over_enbt": {
+              "ratio": 0.3904253886256857,
+              "ci95": [
+                0.34165,
+                0.45222
+              ],
+              "excess_vs_rand": {
+                "excess": 0.5657280565905155,
+                "ci95": [
+                  0.49358,
+                  0.65849
+                ],
+                "ratio_rand": 0.6901290895464336
+              }
+            },
+            "hu_over_enbt": {
+              "ratio": 0.34263101383226696,
+              "ci95": [
+                0.3035,
+                0.38359
+              ],
+              "excess_vs_rand": {
+                "excess": 0.5797798832956096,
+                "ci95": [
+                  0.50974,
+                  0.6561
+                ],
+                "ratio_rand": 0.5909674062588531
+              }
+            },
+            "readable": true
+          }
+        },
+        "E_iter1_l0.5": {
+          "first": {
+            "sl_over_enbt": {
+              "ratio": 0.4744632182241412,
+              "ci95": [
+                0.40004,
+                0.5946
+              ],
+              "excess_vs_rand": {
+                "excess": 0.4288476671659591,
+                "ci95": [
+                  0.35626,
+                  0.53785
+                ],
+                "ratio_rand": 1.106367725769928
+              }
+            },
+            "hu_over_enbt": {
+              "ratio": 0.3886811340706264,
+              "ci95": [
+                0.32082,
+                0.50011
+              ],
+              "excess_vs_rand": {
+                "excess": 0.35457978612136853,
+                "ci95": [
+                  0.28369,
+                  0.46283
+                ],
+                "ratio_rand": 1.0961739763066622
+              }
+            },
+            "readable": true
+          },
+          "multi": {
+            "sl_over_enbt": {
+              "ratio": 0.41355025608585655,
+              "ci95": [
+                0.365,
+                0.47458
+              ],
+              "excess_vs_rand": {
+                "excess": 0.5992360883637725,
+                "ci95": [
+                  0.52679,
+                  0.6917
+                ],
+                "ratio_rand": 0.6901290895464336
+              }
+            },
+            "hu_over_enbt": {
+              "ratio": 0.3473794287221192,
+              "ci95": [
+                0.31208,
+                0.38533
+              ],
+              "excess_vs_rand": {
+                "excess": 0.5878148693871645,
+                "ci95": [
+                  0.52294,
+                  0.65639
+                ],
+                "ratio_rand": 0.5909674062588531
+              }
+            },
+            "readable": true
+          }
+        },
+        "E_iter1_l1.5": {
+          "first": {
+            "sl_over_enbt": {
+              "ratio": 0.5661119692798092,
+              "ci95": [
+                0.46783,
+                0.71201
+              ],
+              "excess_vs_rand": {
+                "excess": 0.511685180337169,
+                "ci95": [
+                  0.41463,
+                  0.65413
+                ],
+                "ratio_rand": 1.106367725769928
+              }
+            },
+            "hu_over_enbt": {
+              "ratio": 0.4093451828947957,
+              "ci95": [
+                0.34134,
+                0.51152
+              ],
+              "excess_vs_rand": {
+                "excess": 0.37343085289618166,
+                "ci95": [
+                  0.30293,
+                  0.47887
+                ],
+                "ratio_rand": 1.0961739763066622
+              }
+            },
+            "readable": true
+          },
+          "multi": {
+            "sl_over_enbt": {
+              "ratio": 0.3903125615294578,
+              "ci95": [
+                0.34964,
+                0.43891
+              ],
+              "excess_vs_rand": {
+                "excess": 0.5655645696459178,
+                "ci95": [
+                  0.50189,
+                  0.64111
+                ],
+                "ratio_rand": 0.6901290895464336
+              }
+            },
+            "hu_over_enbt": {
+              "ratio": 0.3464423147093066,
+              "ci95": [
+                0.30839,
+                0.38877
+              ],
+              "excess_vs_rand": {
+                "excess": 0.5862291406263433,
+                "ci95": [
+                  0.5176,
+                  0.66437
+                ],
+                "ratio_rand": 0.5909674062588531
+              }
+            },
+            "readable": true
+          }
+        },
+        "E_iter1_l2.0": {
+          "first": {
+            "sl_over_enbt": {
+              "ratio": 0.6084919269423731,
+              "ci95": [
+                0.50476,
+                0.75256
+              ],
+              "excess_vs_rand": {
+                "excess": 0.5499906701625085,
+                "ci95": [
+                  0.445,
+                  0.69609
+                ],
+                "ratio_rand": 1.106367725769928
+              }
+            },
+            "hu_over_enbt": {
+              "ratio": 0.40968175170845417,
+              "ci95": [
+                0.34194,
+                0.50331
+              ],
+              "excess_vs_rand": {
+                "excess": 0.37373789249111206,
+                "ci95": [
+                  0.30513,
+                  0.47152
+                ],
+                "ratio_rand": 1.0961739763066622
+              }
+            },
+            "readable": true
+          },
+          "multi": {
+            "sl_over_enbt": {
+              "ratio": 0.4022175107553322,
+              "ci95": [
+                0.3647,
+                0.44519
+              ],
+              "excess_vs_rand": {
+                "excess": 0.5828148919496748,
+                "ci95": [
+                  0.52229,
+                  0.65285
+                ],
+                "ratio_rand": 0.6901290895464336
+              }
+            },
+            "hu_over_enbt": {
+              "ratio": 0.3545607249765854,
+              "ci95": [
+                0.31724,
+                0.39612
+              ],
+              "excess_vs_rand": {
+                "excess": 0.5999666330519795,
+                "ci95": [
+                  0.53211,
+                  0.67671
+                ],
+                "ratio_rand": 0.5909674062588531
+              }
+            },
+            "readable": true
+          }
+        },
+        "rand_c6_j1": {
+          "first": {
+            "sl_over_enbt": {
+              "ratio": 0.8466632739685976,
+              "ci95": [
+                0.72316,
+                1.00019
+              ],
+              "excess_vs_rand": {
+                "excess": 0.7652638939547876,
+                "ci95": [
+                  0.65024,
+                  0.90376
+                ],
+                "ratio_rand": 1.106367725769928
+              }
+            },
+            "hu_over_enbt": {
+              "ratio": 0.9223884110000954,
+              "ci95": [
+                0.7692,
+                1.12291
+              ],
+              "excess_vs_rand": {
+                "excess": 0.8414616939802727,
+                "ci95": [
+                  0.69576,
+                  1.01715
+                ],
+                "ratio_rand": 1.0961739763066622
+              }
+            },
+            "readable": true
+          },
+          "multi": {
+            "sl_over_enbt": {
+              "ratio": 0.7417931718793201,
+              "ci95": [
+                0.68863,
+                0.79521
+              ],
+              "excess_vs_rand": {
+                "excess": 1.0748614760853528,
+                "ci95": [
+                  1.01307,
+                  1.13974
+                ],
+                "ratio_rand": 0.6901290895464336
+              }
+            },
+            "hu_over_enbt": {
+              "ratio": 1.048384127485892,
+              "ci95": [
+                0.95885,
+                1.14372
+              ],
+              "excess_vs_rand": {
+                "excess": 1.7740134504586926,
+                "ci95": [
+                  1.65229,
+                  1.90766
+                ],
+                "ratio_rand": 0.5909674062588531
+              }
+            },
+            "readable": true
+          }
+        },
+        "rand_nm_avg": {
+          "first": {
+            "sl_over_enbt": {
+              "ratio": 1.106367725769928,
+              "ci95": [
+                0.98499,
+                1.25339
+              ]
+            },
+            "hu_over_enbt": {
+              "ratio": 1.0961739763066622,
+              "ci95": [
+                0.96963,
+                1.25206
+              ]
+            },
+            "readable": true
+          },
+          "multi": {
+            "sl_over_enbt": {
+              "ratio": 0.6901290895464336,
+              "ci95": [
+                0.65839,
+                0.72273
+              ]
+            },
+            "hu_over_enbt": {
+              "ratio": 0.5909674062588531,
+              "ci95": [
+                0.55809,
+                0.62556
+              ]
+            },
+            "readable": true
+          }
+        }
+      },
+      "gemma_it": {
+        "E_art2": {
+          "first": {
+            "sl_over_enbt": {
+              "ratio": 0.7190677408546307,
+              "ci95": [
+                0.39536,
+                1.39185
+              ],
+              "excess_vs_rand": {
+                "excess": 0.6300712851670953,
+                "ci95": [
+                  0.33908,
+                  1.14575
+                ],
+                "ratio_rand": 1.1412482329899123
+              }
+            },
+            "hu_over_enbt": {
+              "ratio": 0.39038754555355687,
+              "ci95": [
+                0.21447,
+                0.75279
+              ],
+              "excess_vs_rand": {
+                "excess": 0.36934797914430906,
+                "ci95": [
+                  0.18389,
+                  0.69393
+                ],
+                "ratio_rand": 1.0569640761484371
+              }
+            },
+            "readable": true
+          },
+          "multi": {
+            "sl_over_enbt": {
+              "ratio": 0.27503816425966,
+              "ci95": [
+                0.22202,
+                0.34192
+              ],
+              "excess_vs_rand": {
+                "excess": 0.31062550387655163,
+                "ci95": [
+                  0.25248,
+                  0.38447
+                ],
+                "ratio_rand": 0.8854332977403082
+              }
+            },
+            "hu_over_enbt": {
+              "ratio": 0.2267070125333698,
+              "ci95": [
+                0.18451,
+                0.27998
+              ],
+              "excess_vs_rand": {
+                "excess": 0.23510718534974556,
+                "ci95": [
+                  0.18649,
+                  0.29869
+                ],
+                "ratio_rand": 0.9642708800929259
+              }
+            },
+            "readable": true
+          }
+        },
+        "E_iter1": {
+          "first": {
+            "sl_over_enbt": {
+              "ratio": 0.7169728477600238,
+              "ci95": [
+                0.38719,
+                1.39373
+              ],
+              "excess_vs_rand": {
+                "excess": 0.6282356695367267,
+                "ci95": [
+                  0.33671,
+                  1.16942
+                ],
+                "ratio_rand": 1.1412482329899123
+              }
+            },
+            "hu_over_enbt": {
+              "ratio": 0.38683208990506396,
+              "ci95": [
+                0.20527,
+                0.76919
+              ],
+              "excess_vs_rand": {
+                "excess": 0.3659841414049519,
+                "ci95": [
+                  0.18108,
+                  0.67972
+                ],
+                "ratio_rand": 1.0569640761484371
+              }
+            },
+            "readable": true
+          },
+          "multi": {
+            "sl_over_enbt": {
+              "ratio": 0.2604825153026109,
+              "ci95": [
+                0.21042,
+                0.3267
+              ],
+              "excess_vs_rand": {
+                "excess": 0.29418649148092996,
+                "ci95": [
+                  0.23736,
+                  0.36625
+                ],
+                "ratio_rand": 0.8854332977403082
+              }
+            },
+            "hu_over_enbt": {
+              "ratio": 0.22190270045923463,
+              "ci95": [
+                0.17822,
+                0.27895
+              ],
+              "excess_vs_rand": {
+                "excess": 0.2301248591452332,
+                "ci95": [
+                  0.18075,
+                  0.29433
+                ],
+                "ratio_rand": 0.9642708800929259
+              }
+            },
+            "readable": true
+          }
+        },
+        "E_iter1_l0.5": {
+          "first": {
+            "sl_over_enbt": {
+              "ratio": 0.6093028280187216,
+              "ci95": [
+                0.28887,
+                1.31926
+              ],
+              "excess_vs_rand": {
+                "excess": 0.5338915850256631,
+                "ci95": [
+                  0.26617,
+                  1.0436
+                ],
+                "ratio_rand": 1.1412482329899123
+              }
+            },
+            "hu_over_enbt": {
+              "ratio": 0.2548605825971552,
+              "ci95": [
+                0.1347,
+                0.52245
+              ],
+              "excess_vs_rand": {
+                "excess": 0.24112511328281255,
+                "ci95": [
+                  0.12245,
+                  0.45098
+                ],
+                "ratio_rand": 1.0569640761484371
+              }
+            },
+            "readable": true
+          },
+          "multi": {
+            "sl_over_enbt": {
+              "ratio": 0.23691908099977865,
+              "ci95": [
+                0.18537,
+                0.30051
+              ],
+              "excess_vs_rand": {
+                "excess": 0.2675741714304328,
+                "ci95": [
+                  0.21091,
+                  0.33956
+                ],
+                "ratio_rand": 0.8854332977403082
+              }
+            },
+            "hu_over_enbt": {
+              "ratio": 0.19137817407123509,
+              "ci95": [
+                0.15399,
+                0.24386
+              ],
+              "excess_vs_rand": {
+                "excess": 0.19846930776629088,
+                "ci95": [
+                  0.15601,
+                  0.25534
+                ],
+                "ratio_rand": 0.9642708800929259
+              }
+            },
+            "readable": true
+          }
+        },
+        "E_iter1_l1.5": {
+          "first": {
+            "sl_over_enbt": {
+              "ratio": 0.8051945757390617,
+              "ci95": [
+                0.47394,
+                1.43928
+              ],
+              "excess_vs_rand": {
+                "excess": 0.7055385081557265,
+                "ci95": [
+                  0.39028,
+                  1.22353
+                ],
+                "ratio_rand": 1.1412482329899123
+              }
+            },
+            "hu_over_enbt": {
+              "ratio": 0.47254765310646973,
+              "ci95": [
+                0.26673,
+                0.86328
+              ],
+              "excess_vs_rand": {
+                "excess": 0.447080145645467,
+                "ci95": [
+                  0.23041,
+                  0.81268
+                ],
+                "ratio_rand": 1.0569640761484371
+              }
+            },
+            "readable": true
+          },
+          "multi": {
+            "sl_over_enbt": {
+              "ratio": 0.31013063114377154,
+              "ci95": [
+                0.25886,
+                0.37535
+              ],
+              "excess_vs_rand": {
+                "excess": 0.3502586043864038,
+                "ci95": [
+                  0.2906,
+                  0.424
+                ],
+                "ratio_rand": 0.8854332977403082
+              }
+            },
+            "hu_over_enbt": {
+              "ratio": 0.26990126306615314,
+              "ci95": [
+                0.22289,
+                0.32973
+              ],
+              "excess_vs_rand": {
+                "excess": 0.27990191204378484,
+                "ci95": [
+                  0.22583,
+                  0.34951
+                ],
+                "ratio_rand": 0.9642708800929259
+              }
+            },
+            "readable": true
+          }
+        },
+        "E_iter1_l2.0": {
+          "first": {
+            "sl_over_enbt": {
+              "ratio": 0.8794550369354147,
+              "ci95": [
+                0.53845,
+                1.52755
+              ],
+              "excess_vs_rand": {
+                "excess": 0.7706080163045373,
+                "ci95": [
+                  0.42456,
+                  1.31665
+                ],
+                "ratio_rand": 1.1412482329899123
+              }
+            },
+            "hu_over_enbt": {
+              "ratio": 0.5268896460937498,
+              "ci95": [
+                0.30772,
+                0.9366
+              ],
+              "excess_vs_rand": {
+                "excess": 0.4984934284746257,
+                "ci95": [
+                  0.26348,
+                  0.89106
+                ],
+                "ratio_rand": 1.0569640761484371
+              }
+            },
+            "readable": true
+          },
+          "multi": {
+            "sl_over_enbt": {
+              "ratio": 0.3561011900683007,
+              "ci95": [
+                0.30198,
+                0.42042
+              ],
+              "excess_vs_rand": {
+                "excess": 0.4021773192595055,
+                "ci95": [
+                  0.33803,
+                  0.47545
+                ],
+                "ratio_rand": 0.8854332977403082
+              }
+            },
+            "hu_over_enbt": {
+              "ratio": 0.31314810009770494,
+              "ci95": [
+                0.26379,
+                0.37525
+              ],
+              "excess_vs_rand": {
+                "excess": 0.32475117372363993,
+                "ci95": [
+                  0.26612,
+                  0.39803
+                ],
+                "ratio_rand": 0.9642708800929259
+              }
+            },
+            "readable": true
+          }
+        },
+        "rand_c6_j1": {
+          "first": {
+            "sl_over_enbt": {
+              "ratio": 1.18700699152457,
+              "ci95": [
+                0.74268,
+                2.32236
+              ],
+              "excess_vs_rand": {
+                "excess": 1.0400953598103508,
+                "ci95": [
+                  0.60564,
+                  2.00072
+                ],
+                "ratio_rand": 1.1412482329899123
+              }
+            },
+            "hu_over_enbt": {
+              "ratio": 1.5395094187901837,
+              "ci95": [
+                0.83004,
+                3.32041
+              ],
+              "excess_vs_rand": {
+                "excess": 1.4565390191879892,
+                "ci95": [
+                  0.7732,
+                  2.9894
+                ],
+                "ratio_rand": 1.0569640761484371
+              }
+            },
+            "readable": true
+          },
+          "multi": {
+            "sl_over_enbt": {
+              "ratio": 0.8351458706336635,
+              "ci95": [
+                0.69864,
+                1.00193
+              ],
+              "excess_vs_rand": {
+                "excess": 0.9432058549921468,
+                "ci95": [
+                  0.81207,
+                  1.09537
+                ],
+                "ratio_rand": 0.8854332977403082
+              }
+            },
+            "hu_over_enbt": {
+              "ratio": 1.1510107893119392,
+              "ci95": [
+                0.93152,
+                1.42709
+              ],
+              "excess_vs_rand": {
+                "excess": 1.1936591813298534,
+                "ci95": [
+                  1.01523,
+                  1.3943
+                ],
+                "ratio_rand": 0.9642708800929259
+              }
+            },
+            "readable": true
+          }
+        },
+        "rand_nm_avg": {
+          "first": {
+            "sl_over_enbt": {
+              "ratio": 1.1412482329899123,
+              "ci95": [
+                0.73253,
+                1.98161
+              ]
+            },
+            "hu_over_enbt": {
+              "ratio": 1.0569640761484371,
+              "ci95": [
+                0.65424,
+                1.89303
+              ]
+            },
+            "readable": true
+          },
+          "multi": {
+            "sl_over_enbt": {
+              "ratio": 0.8854332977403082,
+              "ci95": [
+                0.81129,
+                0.97113
+              ]
+            },
+            "hu_over_enbt": {
+              "ratio": 0.9642708800929259,
+              "ci95": [
+                0.85404,
+                1.08803
+              ]
+            },
+            "readable": true
+          }
+        }
+      }
+    },
+    "kl_self_floor": {
+      "gams3_it": {
+        "mean_first": 0.0,
+        "mean_multi": 0.0,
+        "max_first": 0.0,
+        "max_multi": 0.0,
+        "reported_as_noise_floor": false
+      },
+      "gemma_it": {
+        "mean_first": 0.0,
+        "mean_multi": 0.0,
+        "max_first": 0.0,
+        "max_multi": 0.0,
+        "reported_as_noise_floor": false
+      }
+    },
+    "competence_covariates": {
+      "gams3_it": {
+        "en": {
+          "orig_bpb": 0.7630087798361249,
+          "belebele_acc_orig": 0.93,
+          "harmless_gen_lang_consistency_orig": 1.0
+        },
+        "sl": {
+          "orig_bpb": 0.8895112029213721,
+          "belebele_acc_orig": 0.85,
+          "harmless_gen_lang_consistency_orig": 0.98
+        },
+        "hu": {
+          "orig_bpb": 0.8987025601323131,
+          "belebele_acc_orig": 0.885,
+          "harmless_gen_lang_consistency_orig": 0.96
+        }
+      },
+      "gemma_it": {
+        "en": {
+          "orig_bpb": 0.8725006799036358,
+          "belebele_acc_orig": 0.94,
+          "harmless_gen_lang_consistency_orig": 1.0
+        },
+        "sl": {
+          "orig_bpb": 1.198843474315036,
+          "belebele_acc_orig": 0.86,
+          "harmless_gen_lang_consistency_orig": 0.96
+        },
+        "hu": {
+          "orig_bpb": 1.1155221586868778,
+          "belebele_acc_orig": 0.82,
+          "harmless_gen_lang_consistency_orig": 0.98
+        }
+      }
+    },
+    "audit_all_pass": true,
+    "adapters_workspace_path": "./adapters"
+  },
+  "datasets": [
+    {
+      "dataset": "slovenian_llm_eval_paired__arc_challenge__en",
+      "examples": [
+        {
+          "input": "Question: Which statement describes how the life cycle of butterflies is different from the life cycle of frogs?\nAnswer:\n(0) Butterfly life cycles have more stages.\n(1) Butterfly life cycles have an e...",
+          "output": "2",
+          "metadata_item_id": "arc_challenge:Mercury_SC_414271",
+          "metadata_pair_id": "arc_challenge:Mercury_SC_414271",
+          "metadata_task": "arc_challenge",
+          "metadata_lang": "en",
+          "metadata_primary_metric": "acc_norm",
+          "predict_gams3_it__E_art2": "0",
+          "metadata_correct_gams3_it__E_art2": 0,
+          "metadata_lls_gams3_it__E_art2": [
+            -13.25,
+            -18.75,
+            -14.0
+          ],
+          "predict_gams3_it__E_iter1": "0",
+          "metadata_correct_gams3_it__E_iter1": 0,
+          "metadata_lls_gams3_it__E_iter1": [
+            -13.375,
+            -19.0,
+            -13.8125
+          ],
+          "predict_gams3_it__orig": "2",
+          "metadata_correct_gams3_it__orig": 1,
+          "metadata_lls_gams3_it__orig": [
+            -13.0625,
+            -18.375,
+            -13.125
+          ],
+          "predict_gams3_it__rand_nm_j1": "2",
+          "metadata_correct_gams3_it__rand_nm_j1": 1,
+          "metadata_lls_gams3_it__rand_nm_j1": [
+            -13.25,
+            -18.375,
+            -13.5
+          ],
+          "predict_gemma_it__E_art2": "2",
+          "metadata_correct_gemma_it__E_art2": 1,
+          "metadata_lls_gemma_it__E_art2": [
+            -27.125,
+            -39.0,
+            -21.375
+          ],
+          "predict_gemma_it__E_iter1": "2",
+          "metadata_correct_gemma_it__E_iter1": 1,
+          "metadata_lls_gemma_it__E_iter1": [
+            -27.75,
+            -40.0,
+            -21.75
+          ],
+          "predict_gemma_it__orig": "2",
+          "metadata_correct_gemma_it__orig": 1,
+          "metadata_lls_gemma_it__orig": [
+            -28.75,
+            -40.5,
+            -22.875
+          ],
+          "predict_gemma_it__rand_nm_j1": "2",
+          "metadata_correct_gemma_it__rand_nm_j1": 1,
+          "metadata_lls_gemma_it__rand_nm_j1": [
+            -28.375,
+            -40.0,
+            -22.25
+          ],
+          "predict_gemma_it__rand_nm_j2": "2",
+          "metadata_correct_gemma_it__rand_nm_j2": 1,
+          "metadata_lls_gemma_it__rand_nm_j2": [
+            -28.625,
+            -40.75,
+            -22.625
+          ]
+        },
+        {
+          "input": "Question: Hydrogen has an atomic mass of 1, and oxygen has an atomic mass of 16. When a water molecule forms, two hydrogen atoms combine with one oxygen atom. What is the mass of a water molecule?\nAns...",
+          "output": "3",
+          "metadata_item_id": "arc_challenge:MEA_2013_8_8",
+          "metadata_pair_id": "arc_challenge:MEA_2013_8_8",
+          "metadata_task": "arc_challenge",
+          "metadata_lang": "en",
+          "metadata_primary_metric": "acc_norm",
+          "predict_gams3_it__E_art2": "3",
+          "metadata_correct_gams3_it__E_art2": 1,
+          "metadata_lls_gams3_it__E_art2": [
+            -10.25,
+            -5.7188,
+            -9.875
+          ],
+          "predict_gams3_it__E_iter1": "3",
+          "metadata_correct_gams3_it__E_iter1": 1,
+          "metadata_lls_gams3_it__E_iter1": [
+            -10.3125,
+            -5.6875,
+            -9.9375
+          ],
+          "predict_gams3_it__orig": "3",
+          "metadata_correct_gams3_it__orig": 1,
+          "metadata_lls_gams3_it__orig": [
+            -10.875,
+            -5.6562,
+            -9.625
+          ],
+          "predict_gams3_it__rand_nm_j1": "3",
+          "metadata_correct_gams3_it__rand_nm_j1": 1,
+          "metadata_lls_gams3_it__rand_nm_j1": [
+            -11.0625,
+            -5.8125,
+            -9.6875
+          ],
+          "predict_gemma_it__E_art2": "3",
+          "metadata_correct_gemma_it__E_art2": 1,
+          "metadata_lls_gemma_it__E_art2": [
+            -11.6875,
+            -10.9375,
+            -10.6875
+          ],
+          "predict_gemma_it__E_iter1": "3",
+          "metadata_correct_gemma_it__E_iter1": 1,
+          "metadata_lls_gemma_it__E_iter1": [
+            -11.25,
+            -10.75,
+            -10.875
+          ],
+          "predict_gemma_it__orig": "3",
+          "metadata_correct_gemma_it__orig": 1,
+          "metadata_lls_gemma_it__orig": [
+            -11.875,
+            -11.25,
+            -10.5
+          ],
+          "predict_gemma_it__rand_nm_j1": "3",
+          "metadata_correct_gemma_it__rand_nm_j1": 1,
+          "metadata_lls_gemma_it__rand_nm_j1": [
+            -12.125,
+            -11.625,
+            -10.875
+          ],
+          "predict_gemma_it__rand_nm_j2": "3",
+          "metadata_correct_gemma_it__rand_nm_j2": 1,
+          "metadata_lls_gemma_it__rand_nm_j2": [
+            -12.0,
+            -11.375,
+            -10.5
+          ]
+        },
+        {
+          "input": "Question: When using a map of the world, a scientist must recognize that a map is a\nAnswer:\n(0) two dimensional representation of a one dimensional surface.\n(1) two dimensional representation of a thr...",
+          "output": "1",
+          "metadata_item_id": "arc_challenge:Mercury_7064260",
+          "metadata_pair_id": "arc_challenge:Mercury_7064260",
+          "metadata_task": "arc_challenge",
+          "metadata_lang": "en",
+          "metadata_primary_metric": "acc_norm",
+          "predict_gams3_it__E_art2": "1",
+          "metadata_correct_gams3_it__E_art2": 1,
+          "metadata_lls_gams3_it__E_art2": [
+            -22.75,
+            -11.3125,
+            -19.25
+          ],
+          "predict_gams3_it__E_iter1": "1",
+          "metadata_correct_gams3_it__E_iter1": 1,
+          "metadata_lls_gams3_it__E_iter1": [
+            -22.875,
+            -11.5,
+            -19.625
+          ],
+          "predict_gams3_it__orig": "1",
+          "metadata_correct_gams3_it__orig": 1,
+          "metadata_lls_gams3_it__orig": [
+            -22.625,
+            -11.3125,
+            -19.25
+          ],
+          "predict_gams3_it__rand_nm_j1": "1",
+          "metadata_correct_gams3_it__rand_nm_j1": 1,
+          "metadata_lls_gams3_it__rand_nm_j1": [
+            -22.875,
+            -11.625,
+            -19.375
+          ],
+          "predict_gemma_it__E_art2": "1",
+          "metadata_correct_gemma_it__E_art2": 1,
+          "metadata_lls_gemma_it__E_art2": [
+            -29.625,
+            -9.9375,
+            -26.75
+          ],
+          "predict_gemma_it__E_iter1": "1",
+          "metadata_correct_gemma_it__E_iter1": 1,
+          "metadata_lls_gemma_it__E_iter1": [
+            -29.125,
+            -10.0625,
+            -26.75
+          ],
+          "predict_gemma_it__orig": "1",
+          "metadata_correct_gemma_it__orig": 1,
+          "metadata_lls_gemma_it__orig": [
+            -31.375,
+            -11.625,
+            -27.5
+          ],
+          "predict_gemma_it__rand_nm_j1": "1",
+          "metadata_correct_gemma_it__rand_nm_j1": 1,
+          "metadata_lls_gemma_it__rand_nm_j1": [
+            -31.375,
+            -11.625,
+            -28.125
+          ],
+          "predict_gemma_it__rand_nm_j2": "1",
+          "metadata_correct_gemma_it__rand_nm_j2": 1,
+          "metadata_lls_gemma_it__rand_nm_j2": [
+            -31.125,
+            -11.5625,
+            -27.625
+          ]
+        }
+      ]
+    },
+    {
+      "dataset": "slovenian_llm_eval_paired__arc_challenge__sl",
+      "examples": [
+        {
+          "input": "Vprašanje: Katera trditev opisuje, kako se življenjski cikel metuljev razlikuje od življenjskega cikla žab?\nodgovor:\n(0) Življenjski cikel metuljev ima več stopenj.\n(1) Življenjski cikel metuljev vklj...",
+          "output": "2",
+          "metadata_item_id": "arc_challenge:Mercury_SC_414271",
+          "metadata_pair_id": "arc_challenge:Mercury_SC_414271",
+          "metadata_task": "arc_challenge",
+          "metadata_lang": "sl",
+          "metadata_primary_metric": "acc_norm",
+          "predict_gams3_it__E_art2": "0",
+          "metadata_correct_gams3_it__E_art2": 0,
+          "metadata_lls_gams3_it__E_art2": [
+            -17.125,
+            -21.625,
+            -22.0
+          ],
+          "predict_gams3_it__E_iter1": "0",
+          "metadata_correct_gams3_it__E_iter1": 0,
+          "metadata_lls_gams3_it__E_iter1": [
+            -17.0,
+            -22.0,
+            -22.125
+          ],
+          "predict_gams3_it__orig": "0",
+          "metadata_correct_gams3_it__orig": 0,
+          "metadata_lls_gams3_it__orig": [
+            -17.25,
+            -21.5,
+            -22.0
+          ],
+          "predict_gams3_it__rand_nm_j1": "0",
+          "metadata_correct_gams3_it__rand_nm_j1": 0,
+          "metadata_lls_gams3_it__rand_nm_j1": [
+            -17.25,
+            -21.25,
+            -22.125
+          ],
+          "predict_gemma_it__E_art2": "3",
+          "metadata_correct_gemma_it__E_art2": 0,
+          "metadata_lls_gemma_it__E_art2": [
+            -19.125,
+            -30.5,
+            -23.0
+          ],
+          "predict_gemma_it__E_iter1": "3",
+          "metadata_correct_gemma_it__E_iter1": 0,
+          "metadata_lls_gemma_it__E_iter1": [
+            -19.375,
+            -30.625,
+            -22.875
+          ],
+          "predict_gemma_it__orig": "3",
+          "metadata_correct_gemma_it__orig": 0,
+          "metadata_lls_gemma_it__orig": [
+            -19.25,
+            -30.875,
+            -23.625
+          ],
+          "predict_gemma_it__rand_nm_j1": "3",
+          "metadata_correct_gemma_it__rand_nm_j1": 0,
+          "metadata_lls_gemma_it__rand_nm_j1": [
+            -19.875,
+            -31.25,
+            -23.375
+          ],
+          "predict_gemma_it__rand_nm_j2": "3",
+          "metadata_correct_gemma_it__rand_nm_j2": 0,
+          "metadata_lls_gemma_it__rand_nm_j2": [
+            -19.5,
+            -30.125,
+            -23.125
+          ]
+        },
+        {
+          "input": "Vprašanje: Vodik ima atomsko maso 1, kisik pa atomsko maso 16. Ko nastane molekula vode, se dva atoma vodika združita z enim atomom kisika. Kakšna je masa molekule vode?\nodgovor:\n(0) 14.\n(1) 16.\n(2) 1...",
+          "output": "3",
+          "metadata_item_id": "arc_challenge:MEA_2013_8_8",
+          "metadata_pair_id": "arc_challenge:MEA_2013_8_8",
+          "metadata_task": "arc_challenge",
+          "metadata_lang": "sl",
+          "metadata_primary_metric": "acc_norm",
+          "predict_gams3_it__E_art2": "3",
+          "metadata_correct_gams3_it__E_art2": 1,
+          "metadata_lls_gams3_it__E_art2": [
+            -10.1875,
+            -8.875,
+            -9.1875
+          ],
+          "predict_gams3_it__E_iter1": "3",
+          "metadata_correct_gams3_it__E_iter1": 1,
+          "metadata_lls_gams3_it__E_iter1": [
+            -10.4375,
+            -8.8125,
+            -9.375
+          ],
+          "predict_gams3_it__orig": "3",
+          "metadata_correct_gams3_it__orig": 1,
+          "metadata_lls_gams3_it__orig": [
+            -10.6875,
+            -8.875,
+            -9.5
+          ],
+          "predict_gams3_it__rand_nm_j1": "3",
+          "metadata_correct_gams3_it__rand_nm_j1": 1,
+          "metadata_lls_gams3_it__rand_nm_j1": [
+            -10.5,
+            -8.5,
+            -9.25
+          ],
+          "predict_gemma_it__E_art2": "3",
+          "metadata_correct_gemma_it__E_art2": 1,
+          "metadata_lls_gemma_it__E_art2": [
+            -14.375,
+            -15.125,
+            -13.75
+          ],
+          "predict_gemma_it__E_iter1": "3",
+          "metadata_correct_gemma_it__E_iter1": 1,
+          "metadata_lls_gemma_it__E_iter1": [
+            -14.3125,
+            -15.0625,
+            -14.0
+          ],
+          "predict_gemma_it__orig": "3",
+          "metadata_correct_gemma_it__orig": 1,
+          "metadata_lls_gemma_it__orig": [
+            -14.6875,
+            -15.0,
+            -13.8125
+          ],
+          "predict_gemma_it__rand_nm_j1": "3",
+          "metadata_correct_gemma_it__rand_nm_j1": 1,
+          "metadata_lls_gemma_it__rand_nm_j1": [
+            -14.5,
+            -15.0625,
+            -13.75
+          ],
+          "predict_gemma_it__rand_nm_j2": "3",
+          "metadata_correct_gemma_it__rand_nm_j2": 1,
+          "metadata_lls_gemma_it__rand_nm_j2": [
+            -14.75,
+            -14.9375,
+            -13.9375
+          ]
+        },
+        {
+          "input": "Vprašanje: Ko uporablja zemljevid sveta, se mora znanstvenik zavedati, da je zemljevid\nodgovor:\n(0) dvodimenzionalna upodobitev enodimenzionalne površine.\n(1) dvodimenzionalna upodobitev tridimenziona...",
+          "output": "1",
+          "metadata_item_id": "arc_challenge:Mercury_7064260",
+          "metadata_pair_id": "arc_challenge:Mercury_7064260",
+          "metadata_task": "arc_challenge",
+          "metadata_lang": "sl",
+          "metadata_primary_metric": "acc_norm",
+          "predict_gams3_it__E_art2": "1",
+          "metadata_correct_gams3_it__E_art2": 1,
+          "metadata_lls_gams3_it__E_art2": [
+            -22.25,
+            -14.0625,
+            -22.625
+          ],
+          "predict_gams3_it__E_iter1": "1",
+          "metadata_correct_gams3_it__E_iter1": 1,
+          "metadata_lls_gams3_it__E_iter1": [
+            -22.375,
+            -13.8125,
+            -22.625
+          ],
+          "predict_gams3_it__orig": "1",
+          "metadata_correct_gams3_it__orig": 1,
+          "metadata_lls_gams3_it__orig": [
+            -22.375,
+            -13.9375,
+            -22.75
+          ],
+          "predict_gams3_it__rand_nm_j1": "1",
+          "metadata_correct_gams3_it__rand_nm_j1": 1,
+          "metadata_lls_gams3_it__rand_nm_j1": [
+            -22.125,
+            -13.9375,
+            -22.375
+          ],
+          "predict_gemma_it__E_art2": "1",
+          "metadata_correct_gemma_it__E_art2": 1,
+          "metadata_lls_gemma_it__E_art2": [
+            -31.25,
+            -19.875,
+            -24.5
+          ],
+          "predict_gemma_it__E_iter1": "1",
+          "metadata_correct_gemma_it__E_iter1": 1,
+          "metadata_lls_gemma_it__E_iter1": [
+            -30.75,
+            -19.375,
+            -24.875
+          ],
+          "predict_gemma_it__orig": "1",
+          "metadata_correct_gemma_it__orig": 1,
+          "metadata_lls_gemma_it__orig": [
+            -30.75,
+            -19.625,
+            -24.375
+          ],
+          "predict_gemma_it__rand_nm_j1": "1",
+          "metadata_correct_gemma_it__rand_nm_j1": 1,
+          "metadata_lls_gemma_it__rand_nm_j1": [
+            -31.125,
+            -19.75,
+            -24.625
+          ],
+          "predict_gemma_it__rand_nm_j2": "1",
+          "metadata_correct_gemma_it__rand_nm_j2": 1,
+          "metadata_lls_gemma_it__rand_nm_j2": [
+            -31.375,
+            -20.0,
+            -24.75
+          ]
+        }
+      ]
+    },
+    {
+      "dataset": "slovenian_llm_eval_paired__boolq__en",
+      "examples": [
+        {
+          "input": "Rafflesia -- The name ``corpse flower'' applied to Rafflesia can be confusing because this common name also refers to the titan arum (Amorphophallus titanum) of the family Araceae. Moreover, because A...",
+          "output": "0",
+          "metadata_item_id": "boolq:1370",
+          "metadata_pair_id": "boolq:1370",
+          "metadata_task": "boolq",
+          "metadata_lang": "en",
+          "metadata_primary_metric": "acc",
+          "predict_gams3_it__E_art2": "1",
+          "metadata_correct_gams3_it__E_art2": 0,
+          "metadata_lls_gams3_it__E_art2": [
+            -3.6719,
+            -3.0469
+          ],
+          "predict_gams3_it__E_iter1": "1",
+          "metadata_correct_gams3_it__E_iter1": 0,
+          "metadata_lls_gams3_it__E_iter1": [
+            -3.6875,
+            -3.0625
+          ],
+          "predict_gams3_it__orig": "1",
+          "metadata_correct_gams3_it__orig": 0,
+          "metadata_lls_gams3_it__orig": [
+            -4.5938,
+            -2.6094
+          ],
+          "predict_gams3_it__rand_nm_j1": "1",
+          "metadata_correct_gams3_it__rand_nm_j1": 0,
+          "metadata_lls_gams3_it__rand_nm_j1": [
+            -4.5312,
+            -2.6719
+          ],
+          "predict_gemma_it__E_art2": "1",
+          "metadata_correct_gemma_it__E_art2": 0,
+          "metadata_lls_gemma_it__E_art2": [
+            -5.0625,
+            -3.9531
+          ],
+          "predict_gemma_it__E_iter1": "1",
+          "metadata_correct_gemma_it__E_iter1": 0,
+          "metadata_lls_gemma_it__E_iter1": [
+            -5.1562,
+            -4.0312
+          ],
+          "predict_gemma_it__orig": "1",
+          "metadata_correct_gemma_it__orig": 0,
+          "metadata_lls_gemma_it__orig": [
+            -6.0312,
+            -3.4062
+          ],
+          "predict_gemma_it__rand_nm_j1": "1",
+          "metadata_correct_gemma_it__rand_nm_j1": 0,
+          "metadata_lls_gemma_it__rand_nm_j1": [
+            -6.2188,
+            -3.4531
+          ],
+          "predict_gemma_it__rand_nm_j2": "1",
+          "metadata_correct_gemma_it__rand_nm_j2": 0,
+          "metadata_lls_gemma_it__rand_nm_j2": [
+            -5.875,
+            -3.3906
+          ]
+        },
+        {
+          "input": "List of Marvel Cinematic Universe films -- The first film in the series was Iron Man (2008), which was distributed by Paramount Pictures. Paramount also distributed Iron Man 2 (2010), Thor (2011) and ...",
+          "output": "1",
+          "metadata_item_id": "boolq:1057",
+          "metadata_pair_id": "boolq:1057",
+          "metadata_task": "boolq",
+          "metadata_lang": "en",
+          "metadata_primary_metric": "acc",
+          "predict_gams3_it__E_art2": "0",
+          "metadata_correct_gams3_it__E_art2": 0,
+          "metadata_lls_gams3_it__E_art2": [
+            -3.4844,
+            -4.0938
+          ],
+          "predict_gams3_it__E_iter1": "0",
+          "metadata_correct_gams3_it__E_iter1": 0,
+          "metadata_lls_gams3_it__E_iter1": [
+            -3.6719,
+            -4.1875
+          ],
+          "predict_gams3_it__orig": "0",
+          "metadata_correct_gams3_it__orig": 0,
+          "metadata_lls_gams3_it__orig": [
+            -3.5156,
+            -3.7656
+          ],
+          "predict_gams3_it__rand_nm_j1": "0",
+          "metadata_correct_gams3_it__rand_nm_j1": 0,
+          "metadata_lls_gams3_it__rand_nm_j1": [
+            -3.6094,
+            -3.8594
+          ],
+          "predict_gemma_it__E_art2": "1",
+          "metadata_correct_gemma_it__E_art2": 1,
+          "metadata_lls_gemma_it__E_art2": [
+            -9.375,
+            -5.125
+          ],
+          "predict_gemma_it__E_iter1": "1",
+          "metadata_correct_gemma_it__E_iter1": 1,
+          "metadata_lls_gemma_it__E_iter1": [
+            -8.8125,
+            -5.2188
+          ],
+          "predict_gemma_it__orig": "1",
+          "metadata_correct_gemma_it__orig": 1,
+          "metadata_lls_gemma_it__orig": [
+            -8.875,
+            -5.375
+          ],
+          "predict_gemma_it__rand_nm_j1": "1",
+          "metadata_correct_gemma_it__rand_nm_j1": 1,
+          "metadata_lls_gemma_it__rand_nm_j1": [
+            -8.5625,
+            -5.4375
+          ],
+          "predict_gemma_it__rand_nm_j2": "1",
+          "metadata_correct_gemma_it__rand_nm_j2": 1,
+          "metadata_lls_gemma_it__rand_nm_j2": [
+            -8.0625,
+            -5.4375
+          ]
+        },
+        {
+          "input": "Jon Snow (character) -- In ``The Wars to Come'', Stannis enlists Jon as an intermediary between himself and Mance, hoping to add the wildling army to his own. Mance refuses to submit to Stannis, and t...",
+          "output": "1",
+          "metadata_item_id": "boolq:1018",
+          "metadata_pair_id": "boolq:1018",
+          "metadata_task": "boolq",
+          "metadata_lang": "en",
+          "metadata_primary_metric": "acc",
+          "predict_gams3_it__E_art2": "1",
+          "metadata_correct_gams3_it__E_art2": 1,
+          "metadata_lls_gams3_it__E_art2": [
+            -3.5938,
+            -1.4688
+          ],
+          "predict_gams3_it__E_iter1": "1",
+          "metadata_correct_gams3_it__E_iter1": 1,
+          "metadata_lls_gams3_it__E_iter1": [
+            -3.8438,
+            -1.4766
+          ],
+          "predict_gams3_it__orig": "1",
+          "metadata_correct_gams3_it__orig": 1,
+          "metadata_lls_gams3_it__orig": [
+            -4.7812,
+            -1.3906
+          ],
+          "predict_gams3_it__rand_nm_j1": "1",
+          "metadata_correct_gams3_it__rand_nm_j1": 1,
+          "metadata_lls_gams3_it__rand_nm_j1": [
+            -4.75,
+            -1.4844
+          ],
+          "predict_gemma_it__E_art2": "1",
+          "metadata_correct_gemma_it__E_art2": 1,
+          "metadata_lls_gemma_it__E_art2": [
+            -10.8125,
+            -4.1562
+          ],
+          "predict_gemma_it__E_iter1": "1",
+          "metadata_correct_gemma_it__E_iter1": 1,
+          "metadata_lls_gemma_it__E_iter1": [
+            -10.75,
+            -4.0312
+          ],
+          "predict_gemma_it__orig": "1",
+          "metadata_correct_gemma_it__orig": 1,
+          "metadata_lls_gemma_it__orig": [
+            -11.1875,
+            -4.1562
+          ],
+          "predict_gemma_it__rand_nm_j1": "1",
+          "metadata_correct_gemma_it__rand_nm_j1": 1,
+          "metadata_lls_gemma_it__rand_nm_j1": [
+            -11.375,
+            -4.1562
+          ],
+          "predict_gemma_it__rand_nm_j2": "1",
+          "metadata_correct_gemma_it__rand_nm_j2": 1,
+          "metadata_lls_gemma_it__rand_nm_j2": [
+            -11.25,
+            -4.1562
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "empty_system_changes_rendering": true,
+  "example": "<bos><start_of_turn>user\n\n\nSummarize the techniques used for summarizing text.<end_of_turn>\n<start_of_turn>model\n",
+  "E_iter1": 0.5084933330036372,
+  "E_art2": 0.5369907947995979
+}
