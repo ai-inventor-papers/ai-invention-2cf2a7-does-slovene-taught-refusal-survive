@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Over-Refusal of Benign Slovene Prompts Survives English De-censoring in Gemma-3-12B</title>
+<style>
+:root {
+  --ink: #1a1a1a;
+  --bg: #fafaf8;
+  --accent: #b45309;
+  --accent-light: #fef3c7;
+  --rule: #d4d4d4;
+  --card-bg: #ffffff;
+  --nav-bg: rgba(250,250,248,0.95);
+  --code-bg: #f3f3f0;
+  --focus: #2563eb;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --ink: #e5e5e5;
+    --bg: #181818;
+    --accent: #f59e0b;
+    --accent-light: #292218;
+    --rule: #3a3a3a;
+    --card-bg: #222222;
+    --nav-bg: rgba(24,24,24,0.95);
+    --code-bg: #252525;
+    --focus: #60a5fa;
+  }
+}
+:root[data-theme="dark"] {
+  --ink: #e5e5e5;
+  --bg: #181818;
+  --accent: #f59e0b;
+  --accent-light: #292218;
+  --rule: #3a3a3a;
+  --card-bg: #222222;
+  --nav-bg: rgba(24,24,24,0.95);
+  --code-bg: #252525;
+  --focus: #60a5fa;
+}
+
+*,*::before,*::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+a:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Skip link */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 16px;
+  background: var(--accent);
+  color: #fff;
+  padding: 8px 16px;
+  z-index: 1000;
+  border-radius: 0 0 4px 4px;
+  font-size: 14px;
+}
+.skip-link:focus { top: 0; }
+
+/* Layout */
+.page-wrap {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+main {
+  flex: 1;
+  min-width: 0;
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 0 0 80px;
+}
+
+/* Side nav */
+.side-nav {
+  display: none;
+}
+@media (min-width: 1060px) {
+  .side-nav {
+    display: block;
+    position: sticky;
+    top: 24px;
+    align-self: flex-start;
+    width: 180px;
+    flex-shrink: 0;
+    margin-right: 40px;
+    padding-top: 80px;
+  }
+  .side-nav ul { list-style: none; }
+  .side-nav li { margin-bottom: 8px; }
+  .side-nav a {
+    font-size: 13px;
+    color: var(--ink);
+    opacity: 0.5;
+    display: block;
+    padding: 2px 0 2px 12px;
+    border-left: 2px solid transparent;
+    transition: opacity 0.15s, border-color 0.15s;
+    text-decoration: none;
+  }
+  .side-nav a:hover { opacity: 0.8; }
+  .side-nav a.active {
+    opacity: 1;
+    border-left-color: var(--accent);
+    font-weight: 600;
+  }
+}
+
+/* Section spacing */
+section { padding-top: 48px; }
+section + section { margin-top: 16px; }
+
+/* Hero */
+.hero { padding-top: 64px; }
+.hero h1 {
+  font-size: clamp(24px, 4vw, 36px);
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+}
+.hero .tldr {
+  font-size: 18px;
+  line-height: 1.65;
+  max-width: 65ch;
+  margin-bottom: 24px;
+}
+.hero .links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.hero .links a {
+  display: inline-block;
+  padding: 8px 16px;
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--ink);
+  transition: border-color 0.15s, background 0.15s;
+}
+.hero .links a:hover {
+  border-color: var(--accent);
+  background: var(--accent-light);
+  text-decoration: none;
+}
+.round-links {
+  font-size: 13px;
+  color: var(--ink);
+  opacity: 0.7;
+  margin-bottom: 0;
+}
+.round-links a { font-size: 13px; }
+
+/* Section headings */
+h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  letter-spacing: -0.01em;
+}
+h3 {
+  font-size: 17px;
+  font-weight: 600;
+  margin-top: 32px;
+  margin-bottom: 12px;
+}
+
+/* Body text */
+p {
+  font-size: 17px;
+  line-height: 1.7;
+  max-width: 68ch;
+  margin-bottom: 16px;
+}
+
+/* Contribution cards */
+.cards {
+  display: grid;
+  gap: 1px;
+  background: var(--rule);
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  overflow: hidden;
+}
+.card {
+  background: var(--card-bg);
+  padding: 20px 24px;
+}
+.card h3 {
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin: 0 0 8px;
+  color: var(--accent);
+}
+.card p {
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Stat highlight */
+.stat-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin: 24px 0;
+}
+.stat {
+  flex: 1 1 200px;
+  min-width: 160px;
+}
+.stat .number {
+  font-size: 28px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  display: block;
+  margin-bottom: 4px;
+}
+.stat .label {
+  font-size: 14px;
+  line-height: 1.5;
+  opacity: 0.7;
+}
+
+/* Tables */
+.table-wrap {
+  overflow-x: auto;
+  margin: 20px 0;
+  -webkit-overflow-scrolling: touch;
+}
+table {
+  border-collapse: collapse;
+  font-size: 14px;
+  width: 100%;
+  min-width: 400px;
+}
+th, td {
+  text-align: left;
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--rule);
+  font-variant-numeric: tabular-nums;
+}
+th {
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  opacity: 0.7;
+}
+td.num { text-align: right; font-family: "SF Mono", "Menlo", "Consolas", monospace; font-size: 13px; }
+tr:last-child td { border-bottom: none; }
+
+/* Figures */
+.fig-gallery {
+  display: grid;
+  gap: 32px;
+  margin-top: 16px;
+}
+.fig-item {
+  border-top: 1px solid var(--rule);
+  padding-top: 24px;
+}
+.fig-item button {
+  display: block;
+  width: 100%;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  border-radius: 4px;
+}
+.fig-item button:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+.fig-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  background: #fff;
+}
+.fig-caption {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-top: 12px;
+  opacity: 0.8;
+  max-width: 68ch;
+}
+.fig-caption strong { font-weight: 600; opacity: 1; }
+
+/* Lightbox */
+.lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 900;
+  background: rgba(0,0,0,0.85);
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+.lightbox.open { display: flex; }
+.lightbox img {
+  max-width: 95vw;
+  max-height: 90vh;
+  border-radius: 4px;
+  background: #fff;
+}
+.lightbox-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: rgba(255,255,255,0.15);
+  border: none;
+  color: #fff;
+  font-size: 28px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+.lightbox-close:hover { background: rgba(255,255,255,0.3); }
+.lightbox-close:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+
+/* Limitations */
+.limitations ul {
+  list-style: none;
+  padding: 0;
+}
+.limitations li {
+  font-size: 16px;
+  line-height: 1.65;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--rule);
+  max-width: 68ch;
+}
+.limitations li:last-child { border-bottom: none; }
+.limitations li strong { font-weight: 600; }
+
+/* Code list */
+.code-list {
+  margin-top: 16px;
+}
+.code-list details {
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+.code-list summary {
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  list-style: none;
+}
+.code-list summary::-webkit-details-marker { display: none; }
+.code-list summary::before {
+  content: "+";
+  display: inline-block;
+  width: 16px;
+  font-weight: 700;
+  color: var(--accent);
+}
+.code-list details[open] summary::before { content: "-"; }
+.code-list .code-links {
+  padding: 0 16px 12px 32px;
+}
+.code-list .code-links a {
+  display: block;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+/* Footer */
+footer {
+  border-top: 1px solid var(--rule);
+  padding: 40px 0 24px;
+  margin-top: 48px;
+}
+footer .footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+footer .footer-links a {
+  font-size: 14px;
+  padding: 6px 14px;
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  color: var(--ink);
+}
+footer .footer-links a:hover {
+  border-color: var(--accent);
+  background: var(--accent-light);
+  text-decoration: none;
+}
+.footer-round-links {
+  font-size: 13px;
+  opacity: 0.7;
+  margin-bottom: 16px;
+}
+.footer-note {
+  font-size: 13px;
+  opacity: 0.5;
+  max-width: 68ch;
+  line-height: 1.6;
+}
+
+/* Inline figure in method/results */
+.inline-fig {
+  margin: 24px 0;
+}
+.inline-fig img {
+  display: block;
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  border-radius: 4px;
+  background: #fff;
+}
+.inline-fig button {
+  display: block;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  border-radius: 4px;
+  max-width: 700px;
+  width: 100%;
+}
+.inline-fig button:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+.inline-fig .fig-caption {
+  max-width: 700px;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<div class="page-wrap">
+<nav class="side-nav" aria-label="Section navigation">
+<ul>
+  <li><a href="#contributions">Contributions</a></li>
+  <li><a href="#method">Method</a></li>
+  <li><a href="#results">Results</a></li>
+  <li><a href="#figures">Figures</a></li>
+  <li><a href="#limitations">Limitations</a></li>
+  <li><a href="#code">Code</a></li>
+</ul>
+</nav>
+
+<main id="main">
+
+<!-- HERO -->
+<section class="hero" id="hero">
+<h1>Over-Refusal of Benign Slovene Prompts Survives English De-censoring in Gemma-3-12B</h1>
+
+<p class="tldr">Gemma-3-12B-IT refuses harmless Slovene requests at nearly twice its English rate (false-alarm rate 0.569 vs. 0.364). Signal-detection analysis shows this is a criterion shift, not a sensitivity gap: the model sets a stricter threshold for compliance in Slovene without becoming any better at detecting actual harm. A controlled abliteration study, partially removing the English refusal direction, does not close this gap. The criterion-shift difference-in-differences is +0.52 [0.38, 0.68], replicated across four experiments.</p>
+
+<div class="links">
+  <a href="https://cdn.jsdelivr.net/gh/ai-inventor-papers/ai-invention-2cf2a7-does-slovene-taught-refusal-survive@fork/run_UESxYRggGt7E/paper.pdf">Read the paper (PDF)</a>
+  <a href="interactive.html">Explore the interactive demo</a>
+  <a href="https://cdn.jsdelivr.net/gh/ai-inventor-papers/ai-invention-2cf2a7-does-slovene-taught-refusal-survive@fork/run_UESxYRggGt7E/report.pdf">Read the full research report</a>
+  <a href="https://cdn.jsdelivr.net/gh/ai-inventor-papers/ai-invention-2cf2a7-does-slovene-taught-refusal-survive@fork/run_UESxYRggGt7E/exec_summary.pdf">Read the executive summary</a>
+  <a href="https://github.com/ai-inventor-papers/ai-invention-2cf2a7-does-slovene-taught-refusal-survive/tree/fork/run_UESxYRggGt7E">Code repository</a>
+</div>
+<p class="round-links">Round reports:
+  <a href="https://cdn.jsdelivr.net/gh/ai-inventor-papers/ai-invention-2cf2a7-does-slovene-taught-refusal-survive@fork/run_UESxYRggGt7E/round-1/report.pdf">Round 1</a> /
+  <a href="https://cdn.jsdelivr.net/gh/ai-inventor-papers/ai-invention-2cf2a7-does-slovene-taught-refusal-survive@fork/run_UESxYRggGt7E/round-2/report.pdf">Round 2</a> /
+  <a href="https://cdn.jsdelivr.net/gh/ai-inventor-papers/ai-invention-2cf2a7-does-slovene-taught-refusal-survive@fork/run_UESxYRggGt7E/round-3/report.pdf">Round 3</a> /
+  <a href="https://cdn.jsdelivr.net/gh/ai-inventor-papers/ai-invention-2cf2a7-does-slovene-taught-refusal-survive@fork/run_UESxYRggGt7E/round-4/report.pdf">Round 4</a> /
+  <a href="https://cdn.jsdelivr.net/gh/ai-inventor-papers/ai-invention-2cf2a7-does-slovene-taught-refusal-survive@fork/run_UESxYRggGt7E/round-5/report.pdf">Round 5</a>
+</p>
+</section>
+
+<!-- CONTRIBUTIONS -->
+<section id="contributions">
+<h2>Contributions</h2>
+<div class="cards">
+
+<div class="card">
+<h3>Over-refusal as criterion shift</h3>
+<p>Gemma false-refuses benign Slovene items at nearly twice the English rate. Signal-detection analysis attributes this to a criterion shift (DiD<sub>c</sub> = +0.52 [0.38, 0.68]), not a sensitivity difference (DiD<sub>d'</sub> = -0.003 [-0.33, 0.29]). The finding replicates across four independent experiments.</p>
+</div>
+
+<div class="card">
+<h3>Reply-language refusal estimate</h3>
+<p>A crossed 3x3 design (prompt language x reply language) yields a raw output-language effect for Gemma (OUT<sub>SL</sub> = +1.14 [0.60, 1.56] log-odds), but prediction-powered inference correction and robustness checks weaken the finding to an estimate. The PPI-corrected contrast is 0.20 [-0.76, 1.13], consistent with zero.</p>
+</div>
+
+<div class="card">
+<h3>Measurement methodology</h3>
+<p>Judge specificity, language compliance, and correction methods interact when evaluating multilingual refusal. The primary judge achieves only kappa = 0.12 agreement with the adjudicator on Slovene edited text. Multilingual safety evaluations that report only attack-success rates on harmful items will miss criterion shifts that inflate refusal rates on benign items.</p>
+</div>
+
+</div>
+</section>
+
+<!-- METHOD -->
+<section id="method">
+<h2>Method</h2>
+
+<h3>Models</h3>
+<p>Two 12-billion-parameter models are compared: <strong>Gemma-3-12B-IT</strong> (Google's standard multilingual post-training) and <strong>GaMS3-12B-Instruct</strong> (Slovene continued pretraining on 140 billion tokens plus supervised fine-tuning that is roughly 79% Slovene). Both share the same Gemma-3 pretrained ancestor and are loaded in NF4 quantization.</p>
+
+<h3>Abliteration edit</h3>
+<p>The abliteration edit applies per-layer directional ablation via LoRA adapters, optimized by a 40-trial TPE search. Each trial computes a refusal direction from contrastive pairs of harmful and benign English prompts and projects it out of the residual stream. Two edit doses are used throughout: a low dose (lambda = 0.5) and a high dose (lambda = 1.0 for Gemma, 0.625 for GaMS3), chosen to bracket the 50% English refusal point.</p>
+
+<h3>Over-refusal evaluation (criterion shift)</h3>
+<p>1,093 safe items (XSTest and OR-Bench) and 349 harmful items are tested in English and Slovene (machine-translated via NLLB). A Qwen3-14B judge classifies each response as refused or complied. Hit rate (refusal on harmful items) and false-alarm rate (refusal on safe items) yield signal-detection parameters d' (sensitivity) and c (criterion). The key contrast is the difference-in-differences on the criterion: DiD<sub>c</sub> = (c<sub>GaMS3,SL</sub> - c<sub>GaMS3,EN</sub>) - (c<sub>Gemma,SL</sub> - c<sub>Gemma,EN</sub>).</p>
+
+<h3>Crossed grid (reply-language refusal)</h3>
+<p>Three prompt languages (English, Slovene, Hungarian) are crossed with three reply languages in a 3x3 grid. Each cell contains 200 harmful items at three dose levels (zero, low, high). A suffix in the input language states the required response language, present in every cell. Cells where fewer than 90% of replies match the requested language are flagged. The output-language contrast OUT<sub>SL</sub> averages (X-to-SL minus X-to-EN) over prompt languages; the input-language contrast IN<sub>SL</sub> is defined symmetrically.</p>
+
+<h3>Judge corrections</h3>
+<p>Judge accuracy is assessed against a Sonnet 4.5 adjudicator on 30 items per cell. PPI++ correction is reported alongside raw estimates. Experiment 16 uses a held-out 294-item set with a PPI estimator as the primary readout.</p>
+</section>
+
+<!-- RESULTS -->
+<section id="results">
+<h2>Results</h2>
+
+<h3>Criterion shift on benign items</h3>
+<p>Gemma applies a stricter refusal criterion in Slovene than in English when processing benign items. GaMS3 does not. The entire language-dependent difference sits in the threshold, not in the model's ability to discriminate harmful from benign content.</p>
+
+<div class="stat-row">
+  <div class="stat">
+    <span class="number">+0.52</span>
+    <span class="label">Criterion shift DiD<sub>c</sub> [0.38, 0.68], replicated across 4 experiments</span>
+  </div>
+  <div class="stat">
+    <span class="number">-0.003</span>
+    <span class="label">Sensitivity shift DiD<sub>d'</sub> [-0.33, 0.29], indistinguishable from zero</span>
+  </div>
+</div>
+
+<div class="inline-fig">
+  <button type="button" aria-label="Enlarge signal-detection figure" data-lightbox="figures/fig_sdt_v0.png">
+    <img src="figures/fig_sdt_v0.png" alt="Bar chart showing Gemma's false-alarm rate rising from 0.364 in English to 0.569 in Slovene while GaMS3 stays at 0.273 in both languages, and a forest plot showing the criterion shift DiD at +0.52 with CI excluding zero while the sensitivity DiD is at -0.003 spanning zero." loading="lazy">
+  </button>
+  <p class="fig-caption"><strong>Figure 1.</strong> (a) False-alarm rate on 1,093 safe items. Gemma's rate rises from 0.364 (English) to 0.569 (Slovene); GaMS3 stays at 0.273 in both languages. (b) The criterion shift DiD<sub>c</sub> = +0.52 [0.38, 0.68] excludes zero. The sensitivity shift DiD<sub>d'</sub> = -0.003 [-0.33, 0.29] does not.</p>
+</div>
+
+<div class="table-wrap">
+<table>
+  <caption style="text-align:left;font-size:14px;font-weight:600;margin-bottom:8px;">Signal-detection parameters (Experiment 5, 1,093 safe + 349 harmful items)</caption>
+  <thead>
+    <tr><th></th><th>Gemma EN</th><th>Gemma SL</th><th>GaMS3 EN</th><th>GaMS3 SL</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Hit rate (H)</td><td class="num">0.89</td><td class="num">0.94</td><td class="num">0.90</td><td class="num">0.86</td></tr>
+    <tr><td>False-alarm rate (F)</td><td class="num">0.364</td><td class="num">0.569</td><td class="num">0.273</td><td class="num">0.273</td></tr>
+    <tr><td>d'</td><td class="num">1.57</td><td class="num">1.39</td><td class="num">1.86</td><td class="num">1.68</td></tr>
+    <tr><td>c</td><td class="num">-0.44</td><td class="num">-0.87</td><td class="num">-0.33</td><td class="num">-0.23</td></tr>
+  </tbody>
+</table>
+</div>
+
+<p>The criterion shift replicates in Experiment 14 (high dose, Slovene-output cells: DiD<sub>c</sub> = -1.56 [-1.97, -1.29], Gemma minus GaMS3), in Experiment 16, and in an independent rescoring of Experiment 5 (DiD<sub>c</sub> in [0.39, 0.67]).</p>
+
+<h3>Reply-language refusal (estimate)</h3>
+<p>In the crossed 3x3 grid, edited Gemma at high dose refuses 0.56 to 0.83 when asked to reply in Slovene, but only 0.07 to 0.18 when asked to reply in English, regardless of prompt language. GaMS3 stays at 0.12 to 0.28 in every cell.</p>
+
+<div class="inline-fig">
+  <button type="button" aria-label="Enlarge crossed-grid figure" data-lightbox="figures/fig_grid_v0.png">
+    <img src="figures/fig_grid_v0.png" alt="Two heatmap grids showing refusal rates by prompt language (rows) and reply language (columns). Gemma's Slovene-output column is red (0.56-0.83), its English-output column is blue (0.07-0.18). GaMS3's grid is uniformly blue (0.12-0.28). Hatched cells mark low language compliance." loading="lazy">
+  </button>
+  <p class="fig-caption"><strong>Figure 2.</strong> Refusal rates in the crossed prompt-language x reply-language design (200 harmful items per cell). (a) Gemma at high dose (lambda = 1.0): Slovene-output column refuses 0.56-0.83, English-output column 0.07-0.18. (b) GaMS3 at high dose (lambda = 0.625): rates stay at 0.12-0.28 throughout. Hatched cells have below 90% language compliance.</p>
+</div>
+
+<p>The raw output-language contrast for Gemma is OUT<sub>SL</sub> = +1.14 [0.60, 1.56] log-odds. The input-language contrast is IN<sub>SL</sub> = -0.60 [-1.02, -0.18]: Slovene input <em>reduces</em> refusal, opposite to the output effect. The cross-model contrast is dOUT<sub>SL</sub> = -1.58 [-2.22, -0.66]: Gemma's output-language effect is larger than GaMS3's.</p>
+
+<p>This finding is rated <strong>estimate</strong> for three reasons. First, the PPI-corrected output-language contrast is 0.20 [-0.76, 1.13], consistent with zero. Second, the four-readout robustness gate yields robust = False. Third, the harmful-content adjudicator agrees with the primary judge at only kappa = 0.12 in the Slovene cell. On compliant rows only (English-input), the edit-induced lag in the EN-to-SL cell is -1.26 [-2.17, 0.20], which includes zero.</p>
+
+<h3>Dose-response curves</h3>
+<p>Gemma's Slovene refusal curve is right-shifted relative to its English curve across the full dose range: at matched doses, more Slovene refusal remains. GaMS3 shows a smaller, non-significant shift that closes by lambda = 1.</p>
+
+<div class="inline-fig">
+  <button type="button" aria-label="Enlarge dose-response figure" data-lightbox="figures/fig_dose_v0.png">
+    <img src="figures/fig_dose_v0.png" alt="Line plot of refusal rate versus abliteration dose lambda. Gemma's Slovene curve (dashed blue) stays above its English curve (solid blue) at every dose, with a gap of 0.21 to 0.32 between lambda 0.5 and 1. GaMS3's two curves (green) are closer together and converge by lambda 1." loading="lazy">
+  </button>
+  <p class="fig-caption"><strong>Figure 3.</strong> Refusal rate vs. abliteration dose lambda (Experiment 9, 300 items at lambda = 0, 100 per edited step). Gemma's Slovene curve lies above its English curve at every dose (gap 0.21-0.32 between lambda 0.5 and 1). GaMS3's gap is smaller (at most 0.14) and closes by lambda = 1. The cross-model difference at matched 50% English refusal is G<sub>3</sub> = -0.97 [-1.56, -0.44] log-odds (verdict: estimate; permutation p = 0.084).</p>
+</div>
+
+<h3>Refusal composition</h3>
+<p>Of Gemma's Slovene refusals on benign items, 54% are explicit (the model states that it cannot help) and 26% are deflections (the model redirects the conversation). The benign false-refusal rate is 0.20 [0.10, 0.37] for Gemma EN-to-SL versus 0.10 [0.03, 0.26] for EN-to-EN.</p>
+
+<h3>Inconclusive and null results</h3>
+<p>The unedited GaMS3-vs-Gemma gap in the SL-to-SL cell is -1.17 [-2.83, 0.22], inconclusive: it includes zero and has a fragility index of 1. All Hungarian contrasts are uninformative (MDE approximately 3 log-odds). The RefusEU FINAL benchmark DiD is inconclusive (MDE > 2).</p>
+</section>
+
+<!-- FIGURES -->
+<section id="figures">
+<h2>Figures</h2>
+<div class="fig-gallery">
+
+<div class="fig-item">
+  <button type="button" aria-label="Enlarge criterion-shift figure" data-lightbox="figures/fig_sdt_v0.png">
+    <img src="figures/fig_sdt_v0.png" alt="Bar chart of false-alarm rates on safe items for Gemma and GaMS3 in English and Slovene, paired with a forest plot of criterion and sensitivity difference-in-differences." loading="lazy">
+  </button>
+  <p class="fig-caption"><strong>Criterion Shift Across Models and Languages.</strong> Signal-detection parameters on the HARD set from Experiment 5 (349 harmful and 1,093 safe XSTest/OR-Bench items; refusal labels from the Qwen3-14B judge; English = back-translation, Slovene = machine translation of the same items). (a) False-alarm rate F, the proportion of the 1,093 safe items refused, for Gemma and GaMS3 in English (blue) and Slovene (orange); error bars are Wilson 95% CIs and the dashed grey line marks F = 0.5. Gemma's false-alarm rate rises from 0.364 (English) to 0.569 (Slovene), while GaMS3 stays at 0.273 in both languages. (b) Difference-in-differences on the criterion c (DiD<sub>c</sub>, orange-red) and on sensitivity d' (DiD<sub>d'</sub>, grey), in z units, with 95% percentile CIs from 2,000 item-level bootstrap resamples; the dashed line marks zero. The criterion shift is +0.52 [0.38, 0.68]. The sensitivity shift is -0.003 [-0.33, 0.29], indistinguishable from zero.</p>
+</div>
+
+<div class="fig-item">
+  <button type="button" aria-label="Enlarge crossed-grid figure" data-lightbox="figures/fig_grid_v0.png">
+    <img src="figures/fig_grid_v0.png" alt="Two 3-by-3 heatmap grids of refusal rates at high abliteration dose, one for Gemma and one for GaMS3, showing Gemma's strong Slovene-output column effect and GaMS3's uniform low rates." loading="lazy">
+  </button>
+  <p class="fig-caption"><strong>Crossed Prompt-Language x Reply-Language Refusal Grid.</strong> Refusal rates on harmful items in the crossed prompt-language x requested-reply-language design (Experiment 14, 200 harmful items per cell), at each model's high edit dose: (a) Gemma (lambda = 1.0) and (b) GaMS3 (lambda = 0.625). Rows give the prompt language and columns the requested reply language. Colour encodes the refusal rate on a shared 0-1 scale (blue below 0.5, red above), and each cell shows the rate with its Wilson 95% CI. Hatched cells have under 90% language compliance. Gemma refuses 0.56-0.83 in the Slovene-reply column against 0.07-0.18 in the English-reply column. GaMS3 stays at 0.12-0.28 in every cell.</p>
+</div>
+
+<div class="fig-item">
+  <button type="button" aria-label="Enlarge dose-response figure" data-lightbox="figures/fig_dose_v0.png">
+    <img src="figures/fig_dose_v0.png" alt="Line plot showing refusal rate declining with abliteration dose for both models in English and Slovene, with Gemma's Slovene curve staying above its English curve throughout." loading="lazy">
+  </button>
+  <p class="fig-caption"><strong>Dose-Response Curves for Refusal Under Abliteration.</strong> Refusal rate on harmful prompts as a function of abliteration dose lambda (Experiment 9). Lambda scales each model's own selected English-objective edit (lambda = 0: unedited model; lambda = 1: the selected edit). Blue: Gemma-3-12B-IT; green: GaMS3-12B-Instruct. Solid lines with filled markers: English probes; dashed lines with open markers: Slovene probes. n = 300 items per model and language at lambda = 0, n = 100 at each of the 8 edited steps. Gemma's Slovene curve lies above its English curve at every dose, with a 0.21-0.32 gap between lambda 0.5 and 1. GaMS3's gap is smaller (at most 0.14) and closes by lambda = 1. The cross-model difference at matched 50% English refusal (G<sub>3</sub> = -0.97 [-1.56, -0.44] log-odds) did not meet the pre-registered confirmation criteria (verdict: estimate; model-label permutation p = 0.084).</p>
+</div>
+
+</div>
+</section>
+
+<!-- LIMITATIONS -->
+<section id="limitations" class="limitations">
+<h2>Limitations</h2>
+<ul>
+  <li><strong>Adjudication sample size.</strong> The adjudication sample is 30 items per cell, which limits the precision of judge-validity estimates. The false-alarm rate estimates rest on 1,093 safe items, adequate for the pooled contrast but noisy at the per-category level.</li>
+  <li><strong>Judge specificity.</strong> In the Experiment 16 harmful-content adjudication, the primary judge achieves only kappa = 0.12 agreement with the adjudicator in the Gemma Slovene-edited cell. This inflates the raw refusal rate and weakens the reply-language finding. The PPI correction depends on the gold-label quality of the Sonnet 4.5 adjudicator, which is itself an LLM.</li>
+  <li><strong>Language compliance.</strong> Four cells (SL-to-EN, HU-to-EN, SL-to-HU, HU-to-SL) fall below 90% language compliance, limiting the crossed-grid analysis to compliant rows for mechanism claims.</li>
+  <li><strong>Quantization.</strong> Both models run in NF4 quantization. The interaction between quantization and directional ablation is not characterized.</li>
+  <li><strong>Novelty.</strong> The observation that over-refusal rates differ across languages is partially anticipated by prior work. The contribution is the signal-detection decomposition and the controlled abliteration design, not the observation itself.</li>
+  <li><strong>No human adjudication.</strong> The readout gate has never passed. All adjudication throughout the study is author-LLM, not human.</li>
+</ul>
+</section>
+
+<!-- CODE -->
+<section id="code">
+<h2>Experiment Code</h2>
+<div class="code-list">
+
+<details>
+<summary>Round 1: Initial screen</summary>
+<div class="code-links">
+  <a href="https://github.com/ai-inventor-papers/ai-invention-2cf2a7-does-slovene-taught-refusal-survive/tree/fork/run_UESxYRggGt7E/round-1/dataset-1">Reserved Slovene/English refusal test sets and audit</a>
+  <a href="https://github.com/ai-inventor-papers/ai-invention-2cf2a7-does-slovene-taught-refusal-survive/tree/fork/run_UESxYRggGt7E/round-1/experiment-1">GaMS vs Gemma: does Slovene refusal training stay Slovene?</a>
+  <a href="https://github.com/ai-inventor-papers/ai-invention-2cf2a7-does-slovene-taught-refusal-survive/tree/fork/run_UESxYRggGt7E/round-1/experiment-2">Do base models set Slovene refusal? GaMS3 vs Gemma-3</a>
+  <a href="https://github.com/ai-inventor-papers/ai-invention-2cf2a7-does-slovene-taught-refusal-survive/tree/fork/run_UESxYRggGt7E/round-1/experiment-3">Does a Slovene persona gate Slovene refusal?</a>
+  <a href="https://github.com/ai-inventor-papers/ai-invention-2cf2a7-does-slovene-taught-refusal-survive/tree/fork/run_UESxYRggGt7E/round-1/experiment-4">Does English de-censoring also unlock Slovene?</a>
+</div>
+</details>
+
+<details>
+<summary>Round 2: Confirmation and reconciliation</summary>
+<div class="code-links">
+  <a href="https://github.com/ai-inventor-papers/ai-invention-2cf2a7-does-slovene-taught-refusal-survive/tree/fork/run_UESxYRggGt7E/round-2/experiment-5">Slovene vs English refusal: GaMS3 vs Gemma-3 confirmation</a>
+  <a href="https://github.com/ai-inventor-papers/ai-invention-2cf2a7-does-slovene-taught-refusal-survive/tree/fork/run_UESxYRggGt7E/round-2/experiment-6">Refusal Depth Language Experiment Pipeline</a>
+  <a href="https://github.com/ai-inventor-papers/ai-invention-2cf2a7-does-slovene-taught-refusal-survive/tree/fork/run_UESxYRggGt7E/round-2/experiment-7">Does GaMS refuse like its Qwen teacher?</a>
+  <a href="https://github.com/ai-inventor-papers/ai-invention-2cf2a7-does-slovene-taught-refusal-survive/tree/fork/run_UESxYRggGt7E/round-2/experiment-8">Does English de-censoring hit Slovene harder?</a>
+  <a href="https://github.com/ai-inventor-papers/ai-invention-2cf2a7-does-slovene-taught-refusal-survive/tree/fork/run_UESxYRggGt7E/round-2/evaluation-1">Re-scoring all first-round screens on one judge</a>
+</div>
+</details>
+
+<details>
+<summary>Round 3: Mechanism and utility</summary>
+<div class="code-links">
+  <a href="https://github.com/ai-inventor-papers/ai-invention-2cf2a7-does-slovene-taught-refusal-survive/tree/fork/run_UESxYRggGt7E/round-3/evaluation-2">Re-judging saved de-censoring outputs</a>
+  <a href="https://github.com/ai-inventor-papers/ai-invention-2cf2a7-does-slovene-taught-refusal-survive/tree/fork/run_UESxYRggGt7E/round-3/experiment-9">Slovene refusal survives English de-censoring</a>
+  <a href="https://github.com/ai-inventor-papers/ai-invention-2cf2a7-does-slovene-taught-refusal-survive/tree/fork/run_UESxYRggGt7E/round-3/experiment-10">Why Slovene refusals survive an English de-censoring edit</a>
+  <a href="https://github.com/ai-inventor-papers/ai-invention-2cf2a7-does-slovene-taught-refusal-survive/tree/fork/run_UESxYRggGt7E/round-3/experiment-11">Confirming the Slovene refusal lag on untouched data</a>
+  <a href="https://github.com/ai-inventor-papers/ai-invention-2cf2a7-does-slovene-taught-refusal-survive/tree/fork/run_UESxYRggGt7E/round-3/experiment-12">Does de-censoring hurt Slovene skills more?</a>
+</div>
+</details>
+
+<details>
+<summary>Round 4: Paid readout and mechanism test</summary>
+<div class="code-links">
+  <a href="https://github.com/ai-inventor-papers/ai-invention-2cf2a7-does-slovene-taught-refusal-survive/tree/fork/run_UESxYRggGt7E/round-4/evaluation-3">Paid judges re-score the Slovene refusal lag</a>
+  <a href="https://github.com/ai-inventor-papers/ai-invention-2cf2a7-does-slovene-taught-refusal-survive/tree/fork/run_UESxYRggGt7E/round-4/experiment-14">Does Slovene refusal follow the prompt or the reply?</a>
+  <a href="https://github.com/ai-inventor-papers/ai-invention-2cf2a7-does-slovene-taught-refusal-survive/tree/fork/run_UESxYRggGt7E/round-4/experiment-15">Dense dose ladder for the Slovene refusal lag</a>
+  <a href="https://github.com/ai-inventor-papers/ai-invention-2cf2a7-does-slovene-taught-refusal-survive/tree/fork/run_UESxYRggGt7E/round-4/research-1">Prior-art and fact check</a>
+</div>
+</details>
+
+<details>
+<summary>Round 5: Confirmation and safety evaluation</summary>
+<div class="code-links">
+  <a href="https://github.com/ai-inventor-papers/ai-invention-2cf2a7-does-slovene-taught-refusal-survive/tree/fork/run_UESxYRggGt7E/round-5/experiment-16">Does Gemma keep a Slovene safety reserve? (confirmation)</a>
+  <a href="https://github.com/ai-inventor-papers/ai-invention-2cf2a7-does-slovene-taught-refusal-survive/tree/fork/run_UESxYRggGt7E/round-5/experiment-17">One English edit unlocks both Slovene and English models</a>
+  <a href="https://github.com/ai-inventor-papers/ai-invention-2cf2a7-does-slovene-taught-refusal-survive/tree/fork/run_UESxYRggGt7E/round-5/evaluation-4">Is Gemma's Slovene refusal real safety?</a>
+  <a href="https://github.com/ai-inventor-papers/ai-invention-2cf2a7-does-slovene-taught-refusal-survive/tree/fork/run_UESxYRggGt7E/round-5/evaluation-5">Tracing every paper number to saved results</a>
+  <a href="https://github.com/ai-inventor-papers/ai-invention-2cf2a7-does-slovene-taught-refusal-survive/tree/fork/run_UESxYRggGt7E/round-5/research-2">Is the reply-language safety finding new?</a>
+</div>
+</details>
+
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+<div class="footer-links">
+  <a href="https://cdn.jsdelivr.net/gh/ai-inventor-papers/ai-invention-2cf2a7-does-slovene-taught-refusal-survive@fork/run_UESxYRggGt7E/paper.pdf">Read the paper (PDF)</a>
+  <a href="interactive.html">Explore the interactive demo</a>
+  <a href="https://cdn.jsdelivr.net/gh/ai-inventor-papers/ai-invention-2cf2a7-does-slovene-taught-refusal-survive@fork/run_UESxYRggGt7E/report.pdf">Read the full research report</a>
+  <a href="https://cdn.jsdelivr.net/gh/ai-inventor-papers/ai-invention-2cf2a7-does-slovene-taught-refusal-survive@fork/run_UESxYRggGt7E/exec_summary.pdf">Read the executive summary</a>
+  <a href="https://github.com/ai-inventor-papers/ai-invention-2cf2a7-does-slovene-taught-refusal-survive/tree/fork/run_UESxYRggGt7E">Code repository</a>
+</div>
+<p class="footer-round-links">Round reports:
+  <a href="https://cdn.jsdelivr.net/gh/ai-inventor-papers/ai-invention-2cf2a7-does-slovene-taught-refusal-survive@fork/run_UESxYRggGt7E/round-1/report.pdf">Round 1</a> /
+  <a href="https://cdn.jsdelivr.net/gh/ai-inventor-papers/ai-invention-2cf2a7-does-slovene-taught-refusal-survive@fork/run_UESxYRggGt7E/round-2/report.pdf">Round 2</a> /
+  <a href="https://cdn.jsdelivr.net/gh/ai-inventor-papers/ai-invention-2cf2a7-does-slovene-taught-refusal-survive@fork/run_UESxYRggGt7E/round-3/report.pdf">Round 3</a> /
+  <a href="https://cdn.jsdelivr.net/gh/ai-inventor-papers/ai-invention-2cf2a7-does-slovene-taught-refusal-survive@fork/run_UESxYRggGt7E/round-4/report.pdf">Round 4</a> /
+  <a href="https://cdn.jsdelivr.net/gh/ai-inventor-papers/ai-invention-2cf2a7-does-slovene-taught-refusal-survive@fork/run_UESxYRggGt7E/round-5/report.pdf">Round 5</a>
+</p>
+</footer>
+
+</main>
+</div>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" role="dialog" aria-label="Enlarged figure" aria-modal="true">
+  <button class="lightbox-close" aria-label="Close enlarged figure" type="button">&times;</button>
+  <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="">
+</div>
+
+<script>
+(function() {
+  // Lightbox
+  var lb = document.getElementById('lightbox');
+  var lbImg = lb.querySelector('img');
+  var lbClose = lb.querySelector('.lightbox-close');
+  var lastFocus = null;
+
+  function openLightbox(src, alt) {
+    lastFocus = document.activeElement;
+    lbImg.src = src;
+    lbImg.alt = alt;
+    lb.classList.add('open');
+    lbClose.focus();
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeLightbox() {
+    lb.classList.remove('open');
+    lbImg.src = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';
+    document.body.style.overflow = '';
+    if (lastFocus) lastFocus.focus();
+  }
+
+  document.querySelectorAll('[data-lightbox]').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var img = btn.querySelector('img');
+      openLightbox(btn.getAttribute('data-lightbox'), img ? img.alt : '');
+    });
+  });
+
+  lbClose.addEventListener('click', closeLightbox);
+  lb.addEventListener('click', function(e) {
+    if (e.target === lb) closeLightbox();
+  });
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && lb.classList.contains('open')) closeLightbox();
+  });
+
+  // Focus trap inside lightbox
+  lb.addEventListener('keydown', function(e) {
+    if (e.key !== 'Tab') return;
+    if (!lb.classList.contains('open')) return;
+    e.preventDefault();
+    lbClose.focus();
+  });
+
+  // Side nav scroll spy
+  var navLinks = document.querySelectorAll('.side-nav a');
+  if (navLinks.length) {
+    var sections = [];
+    navLinks.forEach(function(a) {
+      var id = a.getAttribute('href').slice(1);
+      var el = document.getElementById(id);
+      if (el) sections.push({ el: el, link: a });
+    });
+
+    function updateNav() {
+      var scrollY = window.scrollY + 100;
+      var current = null;
+      for (var i = sections.length - 1; i >= 0; i--) {
+        if (sections[i].el.offsetTop <= scrollY) { current = sections[i]; break; }
+      }
+      navLinks.forEach(function(a) { a.classList.remove('active'); });
+      if (current) current.link.classList.add('active');
+    }
+
+    window.addEventListener('scroll', updateNav, { passive: true });
+    updateNav();
+  }
+})();
+</script>
+</body>
+</html>
