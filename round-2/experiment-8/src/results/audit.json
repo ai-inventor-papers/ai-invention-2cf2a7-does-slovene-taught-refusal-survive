@@ -1,0 +1,73 @@
+{
+  "readout": "R_lex",
+  "checks": {
+    "B_rates_match": true,
+    "B_G3_refit": {
+      "audit": -2.36174789161783,
+      "analysis": -2.361747998220966,
+      "match_1e-3": true
+    },
+    "B_G3_OLS_iter1_estimator": -2.376395926103375,
+    "A1_rates_match": true,
+    "A1_G3_refit": {
+      "audit": -0.18694539234678564,
+      "analysis": -0.18694541577775636,
+      "match_1e-3": true
+    },
+    "A1_G3_OLS_iter1_estimator": -0.5093460348091907,
+    "flip_rates": {
+      "gemma_it|en_bt": {
+        "audit": 0.015228426395939087,
+        "analysis": 0.015228426395939087,
+        "match": true
+      },
+      "gemma_it|sl_mt": {
+        "audit": 0.22613065326633167,
+        "analysis": 0.22613065326633167,
+        "match": true
+      },
+      "gams3_it|en_bt": {
+        "audit": 0.44148936170212766,
+        "analysis": 0.44148936170212766,
+        "match": true
+      },
+      "gams3_it|sl_mt": {
+        "audit": 0.7037037037037037,
+        "analysis": 0.7037037037037037,
+        "match": true
+      }
+    },
+    "hazard": {
+      "gemma_it": {
+        "shallow_logHR_audit": 0.14456171256112105,
+        "shallow_logHR_analysis_GEE": 0.10286075879040428,
+        "sign_match": 1.0,
+        "placebo_shuffled_shallow_mean": 0.019789459913048865,
+        "placebo_sd": 0.19119179373572867,
+        "placebo_centred": true
+      },
+      "gams3_it": {
+        "shallow_logHR_audit": 0.7241691816929194,
+        "shallow_logHR_analysis_GEE": 0.6374103686476233,
+        "sign_match": 1.0,
+        "placebo_shuffled_shallow_mean": -0.004063549225853501,
+        "placebo_sd": 0.1470240438054653,
+        "placebo_centred": true
+      }
+    },
+    "T6_iter1_G3_reproduction": {
+      "G3": -1.8617339900820196,
+      "target": -1.86,
+      "ok": true,
+      "n_pairs": 100
+    }
+  },
+  "placebos": {
+    "B_model_label_swap": {
+      "mean": -0.04087932217847424,
+      "sd": 0.4379185661647368,
+      "centred": true
+    }
+  },
+  "all_primary_checks_pass": true
+}
