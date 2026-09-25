@@ -1,0 +1,187 @@
+{
+ "agree": 18,
+ "n": 20,
+ "pass_17of20": true,
+ "rows": [
+  {
+   "pair_id": "test:S11:2605",
+   "lang": "en",
+   "nf4": 236777,
+   "int8": 236777,
+   "agree": true,
+   "nf4_tok": "I",
+   "int8_tok": "I"
+  },
+  {
+   "pair_id": "test:S11:2605",
+   "lang": "sl",
+   "nf4": 239641,
+   "int8": 239641,
+   "agree": true,
+   "nf4_tok": "\u017d",
+   "int8_tok": "\u017d"
+  },
+  {
+   "pair_id": "test:S11:2610",
+   "lang": "en",
+   "nf4": 236777,
+   "int8": 236777,
+   "agree": true,
+   "nf4_tok": "I",
+   "int8_tok": "I"
+  },
+  {
+   "pair_id": "test:S11:2610",
+   "lang": "sl",
+   "nf4": 239641,
+   "int8": 239641,
+   "agree": true,
+   "nf4_tok": "\u017d",
+   "int8_tok": "\u017d"
+  },
+  {
+   "pair_id": "test:S11:2612",
+   "lang": "en",
+   "nf4": 19058,
+   "int8": 236777,
+   "agree": false,
+   "nf4_tok": "Okay",
+   "int8_tok": "I"
+  },
+  {
+   "pair_id": "test:S11:2612",
+   "lang": "sl",
+   "nf4": 239641,
+   "int8": 239641,
+   "agree": true,
+   "nf4_tok": "\u017d",
+   "int8_tok": "\u017d"
+  },
+  {
+   "pair_id": "test:S11:2614",
+   "lang": "en",
+   "nf4": 236777,
+   "int8": 236777,
+   "agree": true,
+   "nf4_tok": "I",
+   "int8_tok": "I"
+  },
+  {
+   "pair_id": "test:S11:2614",
+   "lang": "sl",
+   "nf4": 239641,
+   "int8": 239641,
+   "agree": true,
+   "nf4_tok": "\u017d",
+   "int8_tok": "\u017d"
+  },
+  {
+   "pair_id": "test:S11:2618",
+   "lang": "en",
+   "nf4": 236777,
+   "int8": 236777,
+   "agree": true,
+   "nf4_tok": "I",
+   "int8_tok": "I"
+  },
+  {
+   "pair_id": "test:S11:2618",
+   "lang": "sl",
+   "nf4": 1479,
+   "int8": 1479,
+   "agree": true,
+   "nf4_tok": "Re",
+   "int8_tok": "Re"
+  },
+  {
+   "pair_id": "test:S12:1795",
+   "lang": "en",
+   "nf4": 236777,
+   "int8": 236777,
+   "agree": true,
+   "nf4_tok": "I",
+   "int8_tok": "I"
+  },
+  {
+   "pair_id": "test:S12:1795",
+   "lang": "sl",
+   "nf4": 236773,
+   "int8": 236773,
+   "agree": true,
+   "nf4_tok": "S",
+   "int8_tok": "S"
+  },
+  {
+   "pair_id": "test:S13:1467",
+   "lang": "en",
+   "nf4": 19058,
+   "int8": 19058,
+   "agree": true,
+   "nf4_tok": "Okay",
+   "int8_tok": "Okay"
+  },
+  {
+   "pair_id": "test:S13:1467",
+   "lang": "sl",
+   "nf4": 239641,
+   "int8": 239641,
+   "agree": true,
+   "nf4_tok": "\u017d",
+   "int8_tok": "\u017d"
+  },
+  {
+   "pair_id": "test:S13:1478",
+   "lang": "en",
+   "nf4": 236777,
+   "int8": 236777,
+   "agree": true,
+   "nf4_tok": "I",
+   "int8_tok": "I"
+  },
+  {
+   "pair_id": "test:S13:1478",
+   "lang": "sl",
+   "nf4": 239641,
+   "int8": 239641,
+   "agree": true,
+   "nf4_tok": "\u017d",
+   "int8_tok": "\u017d"
+  },
+  {
+   "pair_id": "test:S13:1492",
+   "lang": "en",
+   "nf4": 236777,
+   "int8": 236777,
+   "agree": true,
+   "nf4_tok": "I",
+   "int8_tok": "I"
+  },
+  {
+   "pair_id": "test:S13:1492",
+   "lang": "sl",
+   "nf4": 122556,
+   "int8": 236806,
+   "agree": false,
+   "nf4_tok": "Obst",
+   "int8_tok": "O"
+  },
+  {
+   "pair_id": "test:S13:1500",
+   "lang": "en",
+   "nf4": 236777,
+   "int8": 236777,
+   "agree": true,
+   "nf4_tok": "I",
+   "int8_tok": "I"
+  },
+  {
+   "pair_id": "test:S13:1500",
+   "lang": "sl",
+   "nf4": 239641,
+   "int8": 239641,
+   "agree": true,
+   "nf4_tok": "\u017d",
+   "int8_tok": "\u017d"
+  }
+ ]
+}
