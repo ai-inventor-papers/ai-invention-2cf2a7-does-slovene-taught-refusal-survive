@@ -1,0 +1,45 @@
+08:15:05|INFO   |  B/primary_RP_on_sample25: G3_50 +3.778 [-37.96  43.07] IG -0.8157918177401616 support=False (24s)
+08:15:09|INFO   |  A1/primary_R: G3_50 +1.027 [-2.15  6.12] IG -0.47236805663793124 support=False (28s)
+08:15:09|INFO   |  A1/primary_RP: G3_50 -3.276 [-14.81   4.27] IG 0.27722311128277727 support=False (29s)
+08:15:10|INFO   |  A1/lexicon: G3_50 -0.187 [-1.01  0.81] IG -0.12659464054556505 support=True (29s)
+08:15:11|INFO   |  A1/llama8b_R: G3_50 -0.425 [-67.83  18.78] IG 0.05504741019679644 support=False (31s)
+08:15:12|INFO   |  A1/llama8b_RP: G3_50 +0.374 [0.08 1.42] IG 1.70267994295341 support=False (32s)
+08:15:14|INFO   |  A1/primary_R_on_sample25: G3_50 -0.436 [-4.27  4.93] IG -0.5288773365143942 support=False (33s)
+08:15:15|INFO   |  A1/primary_RP_on_sample25: G3_50 +1.805 [-50.55  33.42] IG -0.018755545419525007 support=False (35s)
+08:15:19|INFO   |  A1orig/primary_R: G3_50 +0.957 [-1.51  5.7 ] IG -0.7990459665380527 support=False (38s)
+08:15:20|INFO   |  A1orig/primary_RP: G3_50 -2.845 [-18.38   3.82] IG 0.4233366595836585 support=False (40s)
+08:15:21|INFO   |  A1orig/lexicon: G3_50 -0.145 [-0.9   0.87] IG -0.18055958320762974 support=True (40s)
+08:15:22|INFO   |  A1orig/llama8b_R: G3_50 +0.545 [-13.7   11.29] IG 0.4945504747758231 support=False (42s)
+08:15:23|INFO   |  A1orig/llama8b_RP: G3_50 +0.395 [0.07 1.67] IG 2.4031667532680854 support=False (43s)
+08:15:24|INFO   |  A1orig/primary_R_on_sample25: G3_50 -0.436 [-5.24  5.74] IG -0.5288773365143942 support=False (44s)
+08:15:25|INFO   |  A1orig/primary_RP_on_sample25: G3_50 +1.805 [-41.94  39.  ] IG -0.018755545419525007 support=False (44s)
+08:15:29|INFO   |step3 done (154s)
+08:15:33|INFO   |step4 done (158s)
+08:16:04|INFO   |step5-6 done (190s)
+08:16:23|INFO   |items_relabelled rows 48000
+08:16:24|INFO   |done in 209s; C-LAG screen holds=False
+wrote READOUT_REPAIR.md; C-LAG holds: False
+  "abs_diff_point": 1.8780368926663016e-09,
+  "point_ok_1e-6": true,
+  "max_CI_diff": 0.6847025165253684,
+  "CI_ok_0.05": false
+ }
+}
+Format: exp_eval_sol_out
+Validation PASSED
+  Full (19600 items): /ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_3/gen_art/gen_art_evaluation_2/full_eval_out.json
+  Mini (12 items): /ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_3/gen_art/gen_art_evaluation_2/mini_eval_out.json
+  Preview (12 items, truncated): /ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_3/gen_art/gen_art_evaluation_2/preview_eval_out.json
+-rw-rw-rw- 1 root root   25M Sep 24 08:16 eval_out.json
+-rw-rw-rw- 1 root root   17K Sep 24 08:14 judge_error_matrices.json
+-rw-rw-rw- 1 root root  297K Sep 24 08:16 results/eval_results.json
+-rw-rw-rw- 1 root root  326K Sep 24 08:16 work/items_relabelled.jsonl.gz
+
+figures/:
+total 456K
+-rw-rw-rw- 1 root root  38K Sep 24 08:16 forest_G3_readout_trunc_curve.png
+-rw-rw-rw- 1 root root  47K Sep 24 08:16 meta_forest_DiD_c.png
+-rw-rw-rw- 1 root root  78K Sep 24 08:16 tipping_point_contour.png
+-rw-rw-rw- 1 root root 293K Sep 24 08:16 transfer_curves_per_readout.png
+FINALIZE_DONE
+DONE
