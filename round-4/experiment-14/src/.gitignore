@@ -1,6 +1,0 @@
-.venv/
-__pycache__/
-hf_cache/
-*.pyc
-results/labels/cache.jsonl
-judge_model/

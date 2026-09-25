@@ -1,8 +1,0 @@
-warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
-URL: https://arxiv.org/html/2606.07535
-Type: HTML
-Pattern: In cases where the outputs of these two models diverged, GPT (1 matches in 27464 chars)
-
---- Content ---
-
-21504:...ng Llama-Guard-3-8B and PolyGuard-Qwen. In cases where the outputs of these two models diverged, GPT-4o-mini, prompted with a predefined saf...

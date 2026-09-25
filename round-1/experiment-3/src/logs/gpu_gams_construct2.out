@@ -1,54 +1,0 @@
-/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_1/gen_art/gen_art_experiment_3/.venv/lib/python3.12/site-packages/transformers/utils/hub.py:111: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
-  warnings.warn(
-`torch_dtype` is deprecated! Use `dtype` instead!
-Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:09<00:38,  9.61s/it]Loading checkpoint shards:  40%|████      | 2/5 [00:19<00:29,  9.98s/it]Loading checkpoint shards:  60%|██████    | 3/5 [00:31<00:21, 10.58s/it]Loading checkpoint shards:  80%|████████  | 4/5 [00:42<00:10, 10.77s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:50<00:00,  9.93s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:50<00:00, 10.13s/it]
-The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
-15:29:42|INFO   |loaded gams (Gemma3ForCausalLM, backbone=model, quant=nf4, attn=sdpa) in 68s; mem=7.6GB; stop={1, 106}
-15:29:42|INFO   |ablation variant = mean_skipbos (mean=True, skip_bos=True)
-15:30:58|INFO   |centered VARMATCH directions saved: [(0, 'rejection', 0.006), (8, 'rejection', 0.091), (16, 'rejection', 0.019), (24, 'rejection', 0.054), (32, 'rejection', 0.181), (40, 'closest_energy_unmatched', 0.0)]
-15:31:28|INFO   |[MC-a_late@mean_skipbos-original-id] 80 prompts, max_new=96, s=False: 29s
-15:31:44|INFO   |[MC-a_late@mean_skipbos-original-harmless] 60 prompts, max_new=64, s=False: 16s
-15:32:13|INFO   |[MC-a_late@mean_skipbos-persona_late-id] 80 prompts, max_new=96, s=False: 29s
-15:33:07|INFO   |[MC-a_late@mean_skipbos-persona_late-harm] 80 prompts, max_new=64, s=True: 54s
-15:33:23|INFO   |[MC-a_late@mean_skipbos-persona_late-harmless] 60 prompts, max_new=64, s=False: 16s
-15:33:52|INFO   |[MC-a_late@mean_skipbos-persona_early-id] 80 prompts, max_new=96, s=False: 29s
-15:34:46|INFO   |[MC-a_late@mean_skipbos-persona_early-harm] 80 prompts, max_new=64, s=True: 54s
-15:35:03|INFO   |[MC-a_late@mean_skipbos-persona_early-harmless] 60 prompts, max_new=64, s=False: 16s
-15:35:31|INFO   |[MC-a_late@mean_skipbos-iso1_late-id] 80 prompts, max_new=96, s=False: 29s
-15:36:26|INFO   |[MC-a_late@mean_skipbos-iso1_late-harm] 80 prompts, max_new=64, s=True: 54s
-15:36:42|INFO   |[MC-a_late@mean_skipbos-iso1_late-harmless] 60 prompts, max_new=64, s=False: 16s
-15:37:11|INFO   |[MC-a_late@mean_skipbos-var1_late-id] 80 prompts, max_new=96, s=False: 29s
-15:38:05|INFO   |[MC-a_late@mean_skipbos-var1_late-harm] 80 prompts, max_new=64, s=True: 54s
-15:38:22|INFO   |[MC-a_late@mean_skipbos-var1_late-harmless] 60 prompts, max_new=64, s=False: 16s
-15:38:22|INFO   |MC a_late@mean_skipbos: PASS=False {'qualifying_langs': ['en', 'sl'], 'i_name_drop_ge50pct': True, 'ii_random_keeps_ge80pct': False, 'iii_en_refusal_within_10pp': False, 'iv_harmless_coherent': True}
-15:38:51|INFO   |[MC-b_late@mean_skipbos-original-id] 80 prompts, max_new=96, s=False: 29s
-15:39:07|INFO   |[MC-b_late@mean_skipbos-original-harmless] 60 prompts, max_new=64, s=False: 16s
-15:39:36|INFO   |[MC-b_late@mean_skipbos-persona_late-id] 80 prompts, max_new=96, s=False: 29s
-15:40:31|INFO   |[MC-b_late@mean_skipbos-persona_late-harm] 80 prompts, max_new=64, s=True: 54s
-15:40:47|INFO   |[MC-b_late@mean_skipbos-persona_late-harmless] 60 prompts, max_new=64, s=False: 16s
-15:41:16|INFO   |[MC-b_late@mean_skipbos-persona_early-id] 80 prompts, max_new=96, s=False: 29s
-15:42:10|INFO   |[MC-b_late@mean_skipbos-persona_early-harm] 80 prompts, max_new=64, s=True: 54s
-15:42:26|INFO   |[MC-b_late@mean_skipbos-persona_early-harmless] 60 prompts, max_new=64, s=False: 16s
-15:42:55|INFO   |[MC-b_late@mean_skipbos-iso1_late-id] 80 prompts, max_new=96, s=False: 29s
-15:43:49|INFO   |[MC-b_late@mean_skipbos-iso1_late-harm] 80 prompts, max_new=64, s=True: 55s
-15:44:06|INFO   |[MC-b_late@mean_skipbos-iso1_late-harmless] 60 prompts, max_new=64, s=False: 16s
-15:44:34|INFO   |[MC-b_late@mean_skipbos-var1_late-id] 80 prompts, max_new=96, s=False: 29s
-15:45:29|INFO   |[MC-b_late@mean_skipbos-var1_late-harm] 80 prompts, max_new=64, s=True: 54s
-15:45:45|INFO   |[MC-b_late@mean_skipbos-var1_late-harmless] 60 prompts, max_new=64, s=False: 16s
-15:45:45|INFO   |MC b_late@mean_skipbos: PASS=False {'qualifying_langs': ['en', 'sl'], 'i_name_drop_ge50pct': True, 'ii_random_keeps_ge80pct': False, 'iii_en_refusal_within_10pp': True, 'iv_harmless_coherent': True}
-15:46:14|INFO   |[MC-a_24_47@mean_skipbos-original-id] 80 prompts, max_new=96, s=False: 29s
-15:46:30|INFO   |[MC-a_24_47@mean_skipbos-original-harmless] 60 prompts, max_new=64, s=False: 16s
-15:46:59|INFO   |[MC-a_24_47@mean_skipbos-persona_late-id] 80 prompts, max_new=96, s=False: 29s
-15:47:53|INFO   |[MC-a_24_47@mean_skipbos-persona_late-harm] 80 prompts, max_new=64, s=True: 54s
-15:48:10|INFO   |[MC-a_24_47@mean_skipbos-persona_late-harmless] 60 prompts, max_new=64, s=False: 16s
-15:48:38|INFO   |[MC-a_24_47@mean_skipbos-persona_early-id] 80 prompts, max_new=96, s=False: 29s
-15:49:33|INFO   |[MC-a_24_47@mean_skipbos-persona_early-harm] 80 prompts, max_new=64, s=True: 54s
-15:49:49|INFO   |[MC-a_24_47@mean_skipbos-persona_early-harmless] 60 prompts, max_new=64, s=False: 16s
-15:50:18|INFO   |[MC-a_24_47@mean_skipbos-iso1_late-id] 80 prompts, max_new=96, s=False: 29s
-15:51:12|INFO   |[MC-a_24_47@mean_skipbos-iso1_late-harm] 80 prompts, max_new=64, s=True: 55s
-15:51:29|INFO   |[MC-a_24_47@mean_skipbos-iso1_late-harmless] 60 prompts, max_new=64, s=False: 16s
-15:51:58|INFO   |[MC-a_24_47@mean_skipbos-var1_late-id] 80 prompts, max_new=96, s=False: 29s
-15:52:52|INFO   |[MC-a_24_47@mean_skipbos-var1_late-harm] 80 prompts, max_new=64, s=True: 54s
-15:53:08|INFO   |[MC-a_24_47@mean_skipbos-var1_late-harmless] 60 prompts, max_new=64, s=False: 16s
-15:53:08|INFO   |MC a_24_47@mean_skipbos: PASS=False {'qualifying_langs': ['en', 'sl'], 'i_name_drop_ge50pct': False, 'ii_random_keeps_ge80pct': False, 'iii_en_refusal_within_10pp': True, 'iv_harmless_coherent': True}
-15:53:08|INFO   |stage construct for gams done in 1474s

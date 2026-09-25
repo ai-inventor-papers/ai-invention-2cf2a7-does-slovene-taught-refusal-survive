@@ -1,8 +1,0 @@
-warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
-URL: https://huggingface.co/facebook/nllb-200-distilled-1.3B/raw/main/README.md
-Type: HTML
-Pattern: NLLB-200 is a research model and is not released for product (1 matches in 7841 chars)
-
---- Content ---
-
-4712:...h community. \- Out-of-scope use cases: NLLB-200 is a research model and is not released for production deployment. NLLB-200 is trained on g...

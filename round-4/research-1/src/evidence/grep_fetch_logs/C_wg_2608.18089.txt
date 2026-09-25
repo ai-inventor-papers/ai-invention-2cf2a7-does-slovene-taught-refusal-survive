@@ -1,9 +1,0 @@
-# 2026-09-24T18:37:54Z https://arxiv.org/pdf/2608.18089 :: weaker generation|generation capabilit|apparent robustness|stem from
-warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
-URL: https://arxiv.org/pdf/2608.18089
-Type: PDF
-Pattern: weaker generation|generation capabilit|apparent robustness|stem from (0 matches in 21761 chars)
-
---- Content ---
-
-No matches found for pattern: weaker generation|generation capabilit|apparent robustness|stem from

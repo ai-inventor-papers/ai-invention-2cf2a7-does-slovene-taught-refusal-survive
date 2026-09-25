@@ -1,5 +1,0 @@
-15:22:36|INFO   |gpt_eval.jsonl: 2799 cached, 1 to call (spent so far $2.856)
-15:22:36|ERROR  |BUDGET: step group A 2.781 + 0.0009 > 2.6
-15:22:36|INFO   |gpt_eval.jsonl: finished, 2799 ok, errors=0, spent=$2.856
-15:22:36|INFO   |gem_eval.jsonl: 2800 cached, 0 to call (spent so far $2.856)
-15:22:36|INFO   |gem_eval.jsonl: finished, 2800 ok, errors=0, spent=$2.856

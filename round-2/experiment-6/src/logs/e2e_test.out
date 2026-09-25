@@ -1,7 +1,0 @@
-fake labels: 21424 gemini, 2553 gpt -> /ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_2/gen_art/gen_art_experiment_6/_e2e_scratch
-/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_2/gen_art/gen_art_experiment_6/.venv/lib/python3.12/site-packages/statsmodels/genmod/generalized_linear_model.py:1486: SingularMatrixWarning: The design matrix is rank-deficient. The model parameters are not uniquely determined.
-  wls_results = wls_model.fit(method=wls_method2)
-23:05:10|INFO   |wrote results/analysis.json
-23:05:10|INFO   |gemma_it: J=561 DG=1.524 CI=[1.1438501523375704, 1.9676707120527388] flipSL={'flips': 123, 'n': 561, 'rate': 0.2192513368983957} flipEN={'flips': 32, 'n': 561, 'rate': 0.0570409982174688}
-23:05:10|INFO   |gams3_it: J=556 DG=0.954 CI=[0.59456352526698, 1.3721821475229006] flipSL={'flips': 106, 'n': 556, 'rate': 0.1906474820143885} flipEN={'flips': 46, 'n': 556, 'rate': 0.08273381294964029}
-audit: 91/91 checks ok; placebos: {"gemma_it.arm_swap_DG": {"mean": 0.008206413227984892, "ci95": [-0.3142701925720335, 0.3142701925720335], "observed": 1.5235744199615633}, "gemma_it.shuffled_auroc": {"mean": 0.5023657979730483, "ci95": [0.43780673423172584, 0.5688843412406727]}, "gams3_it.arm_swap_DG": {"mean": -0.0010272460420332132, "ci95": [-0.3662956871458236, 0.3353822916612663], "observed": 0.9537252331124968}, "gams3_it.shuffled_auroc": {"mean": 0.49820723270440254, "ci95": [0.43359748427672956, 0.5577201257861636]}, "model_swap_Sig_SL": {"mean": 0.0, "ci95": [0.0, 0.0], "n_items_J_both_models": 522}}

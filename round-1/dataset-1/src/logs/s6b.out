@@ -1,8 +1,0 @@
-/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_1/gen_art/gen_art_dataset_1/.venv/lib/python3.12/site-packages/transformers/utils/hub.py:111: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
-  warnings.warn(
-Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:02,  1.03it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:01,  1.01it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:02<00:00,  1.00it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.51it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.28it/s]
-15:32:46|INFO   |6859 cached, 2069 to classify
-15:33:09|INFO   |640/2069 in 23s
-15:33:30|INFO   |1280/2069 in 44s
-15:33:49|INFO   |1920/2069 in 63s
-15:33:53|INFO   |{('calib', 'unsafe'): 588, ('calib', 'safe'): 2, ('eval', 'unsafe'): 2799, ('eval', 'safe'): 1, ('hard_en', 'safe'): 1404, ('hard_en', 'unsafe'): 665, ('hard_sl', 'safe'): 1385, ('hard_sl', 'unsafe'): 684, ('refuseu_x', 'unsafe'): 1381, ('refuseu_x', 'safe'): 19}

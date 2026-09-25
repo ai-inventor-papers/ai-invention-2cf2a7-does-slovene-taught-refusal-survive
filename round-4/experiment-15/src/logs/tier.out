@@ -1,8 +1,0 @@
-18:41:30|INFO   |CAL rows: 557 Counter({('eval2', 'gemma_it', 'sl', 1): 60, ('eval2', 'gams3_it', 'en', 1): 60, ('eval2', 'gemma_it', 'en', 1): 59, ('eval2', 'gams3_it', 'sl', 1): 58, ('exp11', 'gemma_it', 'en', 1): 54, ('exp11', 'gams3_it', 'en', 1): 36, ('exp11', 'gams3_it', 'sl', 1): 35, ('exp11', 'gemma_it', 'sl', 1): 35, ('exp10', 'gemma_it', 'en', 1): 28, ('exp10', 'gams3_it', 'en', 1): 28, ('exp10', 'gemma_it', 'sl', 1): 27, ('exp10', 'gams3_it', 'sl', 1): 26, ('exp10', 'gams3_it', 'sl', 0): 14, ('exp10', 'gemma_it', 'sl', 0): 13, ('exp10', 'gemma_it', 'en', 0): 12, ('exp10', 'gams3_it', 'en', 0): 12})
-18:41:30|INFO   |orclient: 557 jobs, 557 to do; ledger spent $0.0896 (cap $4.75)
-18:42:07|INFO   |orclient done: 557 calls; spent $0.1035; stop=False capped=0
-18:42:07|INFO   |orclient: 557 jobs, 557 to do; ledger spent $0.1035 (cap $4.75)
-18:42:44|INFO   |orclient done: 557 calls; spent $0.1468; stop=False capped=0
-18:42:44|INFO   |orclient: 557 jobs, 557 to do; ledger spent $0.1468 (cap $4.75)
-18:43:04|INFO   |orclient done: 557 calls; spent $0.2038; stop=False capped=0
-18:43:13|INFO   |TIER: google/gemini-2.5-flash parts {'kappa_lite_gpt_all_edited_ge_0.6': False, 'Sp_lite_SL_edited_ge_0.8': False, 'kappa_lite_archived_flash_ge_0.7': False} spent $0.204

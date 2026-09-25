@@ -1,3 +1,0 @@
-01:45:24|INFO   |wrote results/analysis.json
-01:45:24|INFO   |gemma_it: J=0 DG=None CI=[None, None] flipSL={'flips': 0, 'n': 0, 'rate': None} flipEN={'flips': 0, 'n': 0, 'rate': None}
-01:45:24|INFO   |gams3_it: J=16 DG=None CI=[None, None] flipSL={'flips': 0, 'n': 0, 'rate': None} flipEN={'flips': 0, 'n': 0, 'rate': None}

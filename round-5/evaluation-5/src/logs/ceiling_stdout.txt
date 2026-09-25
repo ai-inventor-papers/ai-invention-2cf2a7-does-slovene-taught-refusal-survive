@@ -1,7 +1,0 @@
-00:28:13|INFO   |ceiling|smoke: {'counts_saved_steps_R': {'gemma_en': 294, 'gemma_sl': 299, 'gams_en': 289, 'gams_sl': 292}, 'n_saved': {'gemma_en': 300, 'gemma_sl': 300, 'gams_en': 300, 'gams_sl': 300}, 'counts_rows_final': {'gemma_en': 294.0, 'gemma_sl': 299.0, 'gams_en': 289.0, 'gams_sl': 292.0}, 'n_rows_final': {'gemma_en': 300.0, 'gemma_sl': 300.0, 'gams_en': 300.0, 'gams_sl': 300.0}, 'counts_equal': True, 'M0_gemma': 1.4831724832572895, 'M0_gams': 0.31259024153179515, 'G3_orig': -1.1705822417254943, 'G3_orig_saved': -1.1705822417255, 'abs_diff': 5.773159728050814e-15, 'pass': True}
-00:28:17|INFO   |ceiling|1g exp9_lambda: smoke={'saved_G3_orig': -2.556839973979848, 'recomputed': -2.5568399739798418, 'abs_diff': 6.217248937900877e-15, 'pass_1e-6': True} n_labels=6
-00:28:17|INFO   |ceiling|1g exp11_final: smoke={'saved_G3_orig': -1.106212883792184, 'recomputed': -1.1062128837921845, 'abs_diff': 4.440892098500626e-16, 'pass_1e-6': True} n_labels=5
-00:28:17|INFO   |ceiling|1g exp8_A1: smoke={'saved_G3_orig': -1.1323069324211326, 'recomputed': -1.1323069324211366, 'abs_diff': 3.9968028886505635e-15, 'pass_1e-6': True} n_labels=5
-00:28:18|INFO   |ceiling|1g exp10_op: smoke={'saved_G3_orig': 0.9875654713175219, 'recomputed': 0.9875654713175193, 'abs_diff': 2.6645352591003757e-15, 'pass_1e-6': True} n_labels=3
-00:28:18|INFO   |ceiling|1g exp8_B: smoke={'saved_G3_orig': -1.3256538138973326, 'recomputed': -1.3256538138973313, 'abs_diff': 1.3322676295501878e-15, 'pass_1e-6': True} n_labels=3
-00:28:18|INFO   |ceiling|wrote results/ceiling_sensitivity.json

@@ -1,9 +1,0 @@
-21:05:40|INFO   |torch native status: deregistered; torch 2.14.0+cu130
-21:05:40|INFO   |GPU NVIDIA GeForce RTX 4090 free 24.8/25.3 GB
-Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:17<01:10, 17.60s/it]Loading checkpoint shards:  40%|████      | 2/5 [00:36<00:55, 18.41s/it]Loading checkpoint shards:  60%|██████    | 3/5 [00:55<00:36, 18.49s/it]Loading checkpoint shards:  80%|████████  | 4/5 [01:14<00:18, 18.65s/it]Loading checkpoint shards: 100%|██████████| 5/5 [01:29<00:00, 17.33s/it]Loading checkpoint shards: 100%|██████████| 5/5 [01:29<00:00, 17.81s/it]
-The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
-21:09:26|INFO   |loaded gams arch=Gemma3ForCausalLM in 117s; vram=7.6GB
-21:09:26|INFO   |gams: 144 to generate -> gams.jsonl (0 done)
-21:11:01|INFO   |gams: generated 144 in 95s (1.52 items/s)
-21:11:01|INFO   |gams: 32 to generate -> gams_bs1.jsonl (0 done)
-21:18:44|INFO   |gams: generated 32 in 463s (0.07 items/s)
