@@ -1,0 +1,100 @@
+# 2026-09-25T00:22:59Z https://arxiv.org/pdf/2608.13695 :: respond in|answer in|reply in|output language|response language|target language|in English regardless|StrongREJECT|harmful content|refus
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2608.13695
+Type: PDF
+Pattern: respond in|answer in|reply in|output language|response language|target language|in English regardless|StrongREJECT|harmful content|refus (6 matches in 100964 chars)
+
+--- Content ---
+
+14700:...rassing, self-harm-related, sexually
+explicit, extremist, or misinformation content; (b)
+adversarial/jailbreak safety: evaluation of whether
+a model can be induced to produce content it is
+trained to refuse; and (c) agentic/operational safety:
+evaluation of whether a model, acting with tool
+access, can be induced into fraud, privacy leakage,
+or other operationally harmful behavior.
+This study centers o...
+--
+25721:...n English and then
+machine-translated, with post-editing in one
+case and none reported in the other.
+3. Release-state correction. One dataset’s live
+release contains substantially fewer items for
+our target language than the paper describes,
+because components documented in the pa-
+per have not been uploaded. Another was
+announced for release and never shipped.
+4. Attribution correction. One dataset’s widely-
+qu...
+--
+27627:...d
+That the artifact is uniquely identifiable and
+that the paper and the data are separately locat-
+able
+Language coverage
+Language(s) covered; resource level; monolingual
+vs. multilingual
+Whether the target language is a first-class sub-
+ject or one slice of a larger collection
+Provenance
+Method of creation (native / translated / machine-
+translated / transcreated / synthetic / mixed); transla-
+tion direction; p...
+--
+41778:...Abdullahi et al.,
+2026)
+HA
+Synthetic + MT
+Multi-turn
+1,656 train / 278 test; policy MT 66.37, transcript 93.31
+LSR (Faruna, 2026)
+HA
+Native-authored (no na-
+tive review)
+Paired probes
+14 probes/lang; refusal ∼90% EN vs. ∼40% HA
+SWAHILI (mid)
+AfriHate
+(Muhammad
+et
+al.,
+2025)
+SW
+Native-authored
+Labelled posts
+21,092 tweets; κ = 0.55
+AfriSenti
+(Muhammad
+et
+al.,
+2023a)
+SW
+Native-authored
+Labelled tweets
+2,...
+--
+52782:...
+individually targeted physical violence, which our
+extremism category does not admit (§4.4, §5.4), so
+LSR adds no native harm-category coverage; its
+headline result is nonetheless gap evidence, with
+refusal near 90% for English probes and roughly
+40% for Hausa. Every other Hausa resource cover-
+ing non-hate harms is translated or synthetic, and
+two carry documented provenance overstatements:
+TukaBench...
+--
+87974:...mapping judgments to the same
+standard of scrutiny, and would welcome exactly
+the kind of independent verification we are unable
+to provide within the scope of this study.
+19
+
+Ethics Statement
+No new harmful content was created.
+This pa-
+per does not collect, generate, or publish new in-
+stances of hate speech, offensive language, self-
+harm content, or other harmful material. Our con-
+tribution is an audit of a...

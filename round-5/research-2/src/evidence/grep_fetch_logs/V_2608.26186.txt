@@ -1,0 +1,35 @@
+# 2026-09-25T00:27:58Z https://arxiv.org/abs/2608.26186 :: Submitted on|\[v[0-9]+\]|Comments:|Journal
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/abs/2608.26186
+Type: HTML
+Pattern: Submitted on|\[v[0-9]+\]|Comments:|Journal (2 matches in 7815 chars)
+
+--- Content ---
+
+407:...rXiv
+
+Press Enter to search * [Advanced search](https://arxiv.org/search/advanced)
+
+# Computer Science > Computation and Language
+
+**arXiv:2608.26186** (cs) 
+
+[Submitted on 22 Aug 2026]
+
+# Title:Investigating the Influence of Prompt and Response Languages on LLM Content Generation
+
+Authors:[Thi Thanh Nhan Nguyen](https://arxiv.org...
+--
+2933:....26186> Focus to learn more arXiv-issued DOI via DataCite  
+  
+## Submission history
+
+From: Thu Nguyen Ms. [[view email](/show-email/7449fde3/2608.26186)]   
+**[v1]** Sat, 22 Aug 2026 18:10:54 UTC (854 KB)  
+
+
+Full-text links:
+
+## Access Paper:
+
+View a PDF of the paper titled Investigating the Influence of Prompt and Respo...

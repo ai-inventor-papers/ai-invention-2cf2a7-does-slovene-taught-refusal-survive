@@ -1,0 +1,38 @@
+{
+ "n": 12472,
+ "by_priority": {
+  "1": 4040,
+  "2": 1764,
+  "3": 1176,
+  "4": 588,
+  "5": 1470,
+  "6": 200,
+  "7": 1176,
+  "8": 2058
+ },
+ "run": {
+  "n": 7190,
+  "s": 3150.2,
+  "deadline": true
+ },
+ "not_generated": {
+  "P5|hi|EN>EN": 194,
+  "P5|hi|EN>SL": 222,
+  "P5|hi|SF_SL>SL": 263,
+  "P5|hi|SF_EN>EN": 113,
+  "P5|hi|SL>EN": 293,
+  "P6|lo|EN>EN": 100,
+  "P6|lo|EN>SL": 100,
+  "P7|zero|HU>HU": 294,
+  "P7|zero|HU>EN": 294,
+  "P7|lo|HU>HU": 294,
+  "P7|lo|HU>EN": 294,
+  "P8|hi|EN>HU": 294,
+  "P8|hi|SL>SL": 294,
+  "P8|one|EN>HU": 294,
+  "P8|one|SL>SL": 294,
+  "P8|one|SF_SL>SL": 294,
+  "P8|one|SF_EN>EN": 294,
+  "P8|one|SL>EN": 294
+ }
+}

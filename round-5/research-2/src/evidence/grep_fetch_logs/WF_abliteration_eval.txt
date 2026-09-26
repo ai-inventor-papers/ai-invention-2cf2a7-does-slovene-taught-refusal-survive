@@ -1,0 +1,1 @@
+2026-09-25T01:05:12Z WebFetch https://www.riteshkhanna.com/blog/abliteration-eval : Apr 14 2026 blog; multilingual split = Spanish, French, German, Hindi, Japanese (10 prompts each); endpoints compliance + over-refusal; no output-language factor; tested treadon/gemma4-E2B-it-abliterated

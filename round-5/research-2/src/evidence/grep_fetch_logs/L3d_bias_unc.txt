@@ -1,0 +1,180 @@
+# 2026-09-25T00:39:48Z https://arxiv.org/pdf/2605.06939 :: Report|recommend|checklist|stratif|per-stratum|Wilson|calibration set size|inter-annotator|agreement
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2605.06939
+Type: PDF
+Pattern: Report|recommend|checklist|stratif|per-stratum|Wilson|calibration set size|inter-annotator|agreement (24 matches in 66369 chars)
+
+--- Content ---
+
+1022:...analytical results, simulations
+over judge quality (J) and cross-model calibration instability (∆J), and a real-data
+MMLU-Pro case study with sign reversal. We propose J and ∆J as diagnostics
+for when corrected estimates, especially shared-calibration comparisons, are likely
+unreliable, and provide reporting guidance for LaaJ evaluation.
+1
+Introduction
+LLM-as-a-Judge (LaaJ) evaluation has become a standard tool for assessing base model performance
+across a growing range of tasks and benchmarks [Zheng et al., 2023, Liu et al., 2023, Dubois et al.,
+2024]. Raw judge outputs are often treated as direct measurements of model quality; reporting these
+outputs without correction or confidence intervals has become common practice [Lee et al., 2026].
+The core statistical problem is not only bias, but whether corrected judge outputs can be trusted as
+estimates of true model performance. Bias-corrected estimators [Lee et al., 2026, Chen et a...
+--
+4901:...hared calibration as a risk factor in both single-model and comparison estimation,
+showing that it induces 1/J sensitivity to calibration mismatch and, for RG, can yield severely
+amplified systematic bias when J is small.
+3. We propose J and ∆J as prerequisite diagnostics that should be checked and reported before
+trusting corrected LaaJ estimates, with increasing caution with decreasing J or increasing ∆J.
+4. We demonstrate estimator failure modes through simulation and a real-data MMLU-Pro case
+study, and provide practical reporting guidance for LaaJ evaluation.
+2
+Related work
+LLM-as-a-Judge (LaaJ) evaluation has been widely adopted since MT-Bench [Zheng et al., 2023]
+and G-Eval [Liu et al., 2023] helped establish the use of LLMs to grade model responses at scale.
+Subsequent work has extended LaaJ to preference-style evalua...
+--
+5802:...ks [Tan et al., 2025]. Across this literature, naive judge scores are routinely
+treated as estimates of base-model quality without calibration correction or confidence intervals
+[Zheng et al., 2023, Tan et al., 2025, Lee et al., 2026]. Miller [2024] is a strong precedent for statistical
+uncertainty reporting in LLM evaluation more broadly. Our focus is on calibration challenges specific
+to LaaJ that make naive uncertainty statements unreliable even after accounting for sampling variation.
+Lee et al. [2026] showed that naive LaaJ estimates are biased and proposed applying the Rogan-
+Gladen estimator ...
+--
+13247:... distribution shift if the
+judge’s predictions depend only on latent correctness, and no dependence, for example, on the base
+model. This invites a practical shortcut: estimate judge calibration once and reuse it across base
+models or test sets. Practitioner guidance and engineering studies already recommend rerunning LaaJ
+evaluations on the same human-labeled dataset when the judge changes [LangChain, n.d., Microsoft
+Azure AI Foundry Blog, 2026]. Our results address reuse in a different direction: across base models
+rather than across judges. A similar cross-model stability assumption also appears in ...
+--
+16050:... and whether estimates are stable. We therefore distinguish two questions:
+4
+
+1. Is judge quality J large enough to produce stable corrected estimates?
+2. For shared-calibration comparisons: is d
+∆J small relative to its uncertainty?
+We assess both questions using per-model calibration diagnostics, reporting point estimates and
+confidence intervals. For the second diagnostic, the farther d
+∆J is from zero, the less we can trust the
+calibration-invariance assumption. Inclusion of zero in the confidence interval for ∆J is a necessary,
+but not sufficient, condition for shared calibration to be defensib...
+--
+21814:...dy
+We apply these ideas to MMLU-Pro using two subjects with very different judge behavior: math and
+biology. This pair contrasts a relatively well-behaved regime with a failure regime. The compared base
+models are Gemma 3 12B and Qwen 2.5 7B, and we use two judges, Mistral Large and Gemma 4 31B.
+We report diagnostic estimates in Table 1, comparison estimates in Table 2, and per-model accuracy
+estimates in Figure 2. Full setup details are in Appendix E. The intervals reflect uncertainty from the
+realized calibration/test partition, finite calibration size, and, where applicable, repeated judge runs o...
+--
+24895:...) are computed using pooled calibration data from both models. The
+reason is that the diagnostic question is different: not how accurately a particular estimator recovers
+model performance under its own labeling budget, but how reliably the judge evaluates responses
+from each model. In practice, we recommend estimating judge quality in advance, across the relevant
+judges and base models, using at least part of the available calibration data before committing to a
+shared-calibration design.
+Table 2 reports comparison estimates for five estimators: naive, RG (shared calibration), RG 2×
+(model-specific RG), PPI++ (model-specific), and PPI++ 2× (model-specific, double calibration
+budget). Calibration requires human-labeled examples to characterize judge error rates. The 2×
+variants allocate twice as ma...
+--
+28628:... confident wrong sign
+but produces CIs too wide to be useful. PPI++ recovers the correct direction, but its estimates are
+upward-biased and most CIs exclude the true difference from above.
+Biology is the sharpest failure mode in the paper: diagnostics give clear advance warning, multiple
+estimators report confidently wrong-signed comparisons, and even the most robust option here, PPI++,
+has coverage issues. Practitioners should have serious doubt about any estimator when judge quality
+is this poor.
+6.3
+Main practical lesson
+Naive estimation fails in every comparison, across both subjects and both ju...
+--
+29702:...sed in both subjects. This supports the
+analytical and simulation results that raw judge scores should not be treated as unbiased performance
+estimates regardless of whether a comparison is being made. We also saw that shared calibration can
+bias per-model estimates, as explained in Appendix C.
+Our recommended diagnostics J and ∆J provide warning signals rather than acceptance criteria.
+When per-model calibration is feasible, judge quality is moderate to high for both models, and d
+∆J is
+small with a CI near zero, model-specific PPI++ is the most consistently well-behaved choice among
+the estimators we...
+--
+30345:...ate trouble, as with the biology use case, all
+estimates should be treated with caution.
+7
+Practical guidance for LaaJ evaluation
+Raw judge scores are not unbiased estimates of model accuracy, and the reliability of corrected
+estimators depends on judge quality and calibration design. The following checklist summarizes
+what LaaJ evaluation reports should make explicit.
+8
+
+1. State the estimand and whether it is corrected. Report whether results use raw outputs or are
+bias-corrected. If bias-corrected, name the estimator and describe the calibration design.
+2. Distinguish single-model estimation from model comparison. The two tasks have different
+calibration requirements, different error propagation, and different diagnostic requirements.
+3. Report calibration design explicitly. State whether calibration is shared across models or model-
+specific, and report calibration set size. Shared calibration requires justification; it cannot be a
+default design choice.
+4. Report confidence intervals, and state what randomness they represent. Clarify whether the
+intervals reflect calibration sampling, test-set sampling, repeated judge runs, estimator-specific
+subsampling, or some combination. For model comparisons, preserve pairing when resampling.
+5. Report judge-quality diagnostics: ˆq0, ˆq1, and ˆJ. These are necessary for interpreting corrected
+estimates. Include confidence intervals.
+6. For model comparisons, also report d
+∆J with a confidence interval. A large |d
+∆J| or a
+confidence interval excluding zero is a strong warning sign that shared-calibration assumptions
+are not defensible.
+7. When diagnostics indicate trouble, weaken the claim. Low ˆJ makes corrected estimates
+unstable; large |d
+∆J| makes shared-calib...
+--
+38565:...3(1):13–22, 01 2014. doi: 10.1016/j.
+prevetmed.2013.09.015.
+LangChain. How to calibrate llm-as-a-judge with human corrections, n.d. URL https://www.
+langchain.com/articles/llm-as-a-judge. Accessed: 2026-04-29.
+Chungpa Lee, Thomas Zeng, Jongwon Jeong, Jy yong Sohn, and Kangwook Lee. How to correctly
+report llm-as-a-judge evaluations, 2026. URL https://arxiv.org/abs/2511.21140.
+Yang Liu, Dan Iter, Yichong Xu, Shuohang Wang, Ruochen Xu, and Chenguang Zhu. G-eval: NLG
+evaluation using gpt-4 with better human alignment. In Houda Bouamor, Juan Pino, and Kalika
+Bali, editors, Proceedings of the 2023 Confer...
+--
+50920:...hile under Gemma 4 31B the comparison
+estimate is better only because the per-model biases largely cancel. PPI++ remains relatively well
+behaved in both subjects. In each subject, one of the naive comparison estimates is accurate by luck,
+due to per-model biases that almost entirely cancel.
+Table 3 reports the judge diagnostics. For law, Mistral Large has very low J for both models, while
+Gemma 4 31B is better but still moderate. In both cases the d
+∆J intervals include zero, so this subject
+isolates a low-J failure mode more than a dramatic cross-model-instability story. Engineering shows
+moderate judge quality overall, with the d
+∆J intervals again including zero.
+Table 4 reports comparison estimates, and Figure 3 shows the corresponding per-model accuracy
+estimates.
+14
+
+Subject
+Judge
+ˆJGemma 3
+ˆJQwen 2.5
+d
+∆J
+d
+∆J plotted
+Law
+Mistral Large
+0.142
+0.184
+−0.042
+[0.059, 0.222]
+[0.095, 0.269]
+[−0.152, 0.071]
+Gemma 4 31B
+0.393
+0.486
+−0.094
+[0.297, 0.486]
+[0.399, 0.573]
+[−0.212,...

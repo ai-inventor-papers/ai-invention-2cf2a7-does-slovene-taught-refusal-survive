@@ -1,0 +1,9 @@
+# 2026-09-25T00:40:56Z https://arxiv.org/pdf/2310.16248 :: hrv Croatian [0-9.e -]+|bos Bosnian [0-9.e -]+|srp Serbian [0-9.e -]+|hun Hungarian [0-9.e -]+|slv Slovenian [0-9.e -]+|cnr Montenegrin [0-9.e -]+|three lowest
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2310.16248
+Type: PDF
+Pattern: hrv Croatian [0-9.e -]+|bos Bosnian [0-9.e -]+|srp Serbian [0-9.e -]+|hun Hungarian [0-9.e -]+|slv Slovenian [0-9.e -]+|cnr Montenegrin [0-9.e -]+|three lowest (0 matches in 158144 chars)
+
+--- Content ---
+
+No matches found for pattern: hrv Croatian [0-9.e -]+|bos Bosnian [0-9.e -]+|srp Serbian [0-9.e -]+|hun Hungarian [0-9.e -]+|slv Slovenian [0-9.e -]+|cnr Montenegrin [0-9.e -]+|three lowest

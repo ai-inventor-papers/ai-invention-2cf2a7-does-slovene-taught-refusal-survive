@@ -1,0 +1,658 @@
+[
+  {
+    "sha": "7a551d5b440ec7b75d4f6f5bb7c1719965b76b47",
+    "node_id": "C_kwDOMiSeidoAKDdhNTUxZDViNDQwZWM3Yjc1ZDRmNmY1YmI3YzE3MTk5NjViNzZiNDc",
+    "commit": {
+      "author": {
+        "name": "Tom Tseng",
+        "email": "tomtseng@users.noreply.github.com",
+        "date": "2025-07-07T16:34:26Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2025-07-07T16:34:26Z"
+      },
+      "message": "jailbreaks: Add Best-of-N, ReNeLLM (#40)",
+      "tree": {
+        "sha": "63e877fe525d423f57776435899f3256d3378d4f",
+        "url": "https://api.github.com/repos/dsbowen/strong_reject/git/trees/63e877fe525d423f57776435899f3256d3378d4f"
+      },
+      "url": "https://api.github.com/repos/dsbowen/strong_reject/git/commits/7a551d5b440ec7b75d4f6f5bb7c1719965b76b47",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJoa/cSCRC1aQ7uu5UhlAAABhUQAEtevLgnmD4U4YsqWSGRvQii\nPTUxqcIOsG1PKqZzHX425a/0WlgE20TTfedgWw4OpNRoU7tz8jiKTrC+rNHdPI5i\nnvGSCgxM8zBWdQVKnL5L0Damu116wRBkhoVnAHMZup2oNUzqOWn+w5fSypUSP5Qs\nbe5MkyLEjW7ZqtLXpkXFwaYFVcHdaq5XhIJCa1lNEkH1Tm2Zoyj73EngNNE0YDAw\n7yAfqAbW0TWxMoFMnFwGP8B8osVm92LU3KuzBH+bs8FNjdO+C8zDtl4WB9MIFhbl\njbBkgVvTCpiyUDm+rgArJjZmVR/K2rjWX1XyTJu1L6A7ZZnUeNPK0XvcDBbvybYc\nxaB53ty2u19q06mVeN5j8R1NSMu4zS2RwUCFO74m6Yz5pX1sXX5FTZIjtinl40ql\nQ/f7BDimCbtygm6oXl+dNvcS5Pip5NoPkrX0IBkfspOpWY2qssZ+DvfgkJkZ9/Dn\nXdy11GSFE/NhyOANMvF/GT6vVo556A0vHAtyc5qW/BFwwIIK/b/kYhonwdtmemm/\nWOe8ZD16Ah16OhAgSr0UKNDHVpwp0oDkp/hVjT2dAEIeb0O1O7476WSibLAzUwSN\nupEjLm8BYnIrT4vZgREd8NDKqgzdguDF5HkUo5Z4zbdwReokyeVdUN/+IU8vGdXu\ntuEDM5hJ6ckV8nfWMRom\n=T/4z\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 63e877fe525d423f57776435899f3256d3378d4f\nparent e286f0da86d92c929a6fda20a9992f28c5969044\nauthor Tom Tseng <tomtseng@users.noreply.github.com> 1751906066 -0700\ncommitter GitHub <noreply@github.com> 1751906066 -0400\n\njailbreaks: Add Best-of-N, ReNeLLM (#40)\n\n",
+        "verified_at": "2025-07-07T16:34:26Z"
+      }
+    },
+    "url": "https://api.github.com/repos/dsbowen/strong_reject/commits/7a551d5b440ec7b75d4f6f5bb7c1719965b76b47",
+    "html_url": "https://github.com/dsbowen/strong_reject/commit/7a551d5b440ec7b75d4f6f5bb7c1719965b76b47",
+    "comments_url": "https://api.github.com/repos/dsbowen/strong_reject/commits/7a551d5b440ec7b75d4f6f5bb7c1719965b76b47/comments",
+    "author": {
+      "login": "tomtseng",
+      "id": 7245938,
+      "node_id": "MDQ6VXNlcjcyNDU5Mzg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7245938?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/tomtseng",
+      "html_url": "https://github.com/tomtseng",
+      "followers_url": "https://api.github.com/users/tomtseng/followers",
+      "following_url": "https://api.github.com/users/tomtseng/following{/other_user}",
+      "gists_url": "https://api.github.com/users/tomtseng/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/tomtseng/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/tomtseng/subscriptions",
+      "organizations_url": "https://api.github.com/users/tomtseng/orgs",
+      "repos_url": "https://api.github.com/users/tomtseng/repos",
+      "events_url": "https://api.github.com/users/tomtseng/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/tomtseng/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "e286f0da86d92c929a6fda20a9992f28c5969044",
+        "url": "https://api.github.com/repos/dsbowen/strong_reject/commits/e286f0da86d92c929a6fda20a9992f28c5969044",
+        "html_url": "https://github.com/dsbowen/strong_reject/commit/e286f0da86d92c929a6fda20a9992f28c5969044"
+      }
+    ]
+  },
+  {
+    "sha": "e286f0da86d92c929a6fda20a9992f28c5969044",
+    "node_id": "C_kwDOMiSeidoAKGUyODZmMGRhODZkOTJjOTI5YTZmZGEyMGE5OTkyZjI4YzU5NjkwNDQ",
+    "commit": {
+      "author": {
+        "name": "dsbowen",
+        "email": "dbspenser@gmail.com",
+        "date": "2025-01-29T18:02:56Z"
+      },
+      "committer": {
+        "name": "dsbowen",
+        "email": "dbspenser@gmail.com",
+        "date": "2025-01-29T18:02:56Z"
+      },
+      "message": "Updated WMDP docs.",
+      "tree": {
+        "sha": "9dc26b96ff5829949bf33fbdda3bd205f15f7cdc",
+        "url": "https://api.github.com/repos/dsbowen/strong_reject/git/trees/9dc26b96ff5829949bf33fbdda3bd205f15f7cdc"
+      },
+      "url": "https://api.github.com/repos/dsbowen/strong_reject/git/commits/e286f0da86d92c929a6fda20a9992f28c5969044",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/dsbowen/strong_reject/commits/e286f0da86d92c929a6fda20a9992f28c5969044",
+    "html_url": "https://github.com/dsbowen/strong_reject/commit/e286f0da86d92c929a6fda20a9992f28c5969044",
+    "comments_url": "https://api.github.com/repos/dsbowen/strong_reject/commits/e286f0da86d92c929a6fda20a9992f28c5969044/comments",
+    "author": {
+      "login": "DBSpenser",
+      "id": 7482602,
+      "node_id": "MDQ6VXNlcjc0ODI2MDI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7482602?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/DBSpenser",
+      "html_url": "https://github.com/DBSpenser",
+      "followers_url": "https://api.github.com/users/DBSpenser/followers",
+      "following_url": "https://api.github.com/users/DBSpenser/following{/other_user}",
+      "gists_url": "https://api.github.com/users/DBSpenser/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/DBSpenser/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/DBSpenser/subscriptions",
+      "organizations_url": "https://api.github.com/users/DBSpenser/orgs",
+      "repos_url": "https://api.github.com/users/DBSpenser/repos",
+      "events_url": "https://api.github.com/users/DBSpenser/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/DBSpenser/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "DBSpenser",
+      "id": 7482602,
+      "node_id": "MDQ6VXNlcjc0ODI2MDI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7482602?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/DBSpenser",
+      "html_url": "https://github.com/DBSpenser",
+      "followers_url": "https://api.github.com/users/DBSpenser/followers",
+      "following_url": "https://api.github.com/users/DBSpenser/following{/other_user}",
+      "gists_url": "https://api.github.com/users/DBSpenser/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/DBSpenser/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/DBSpenser/subscriptions",
+      "organizations_url": "https://api.github.com/users/DBSpenser/orgs",
+      "repos_url": "https://api.github.com/users/DBSpenser/repos",
+      "events_url": "https://api.github.com/users/DBSpenser/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/DBSpenser/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "7f4c1451d87eee3c03b300c529aeae0f07fa13db",
+        "url": "https://api.github.com/repos/dsbowen/strong_reject/commits/7f4c1451d87eee3c03b300c529aeae0f07fa13db",
+        "html_url": "https://github.com/dsbowen/strong_reject/commit/7f4c1451d87eee3c03b300c529aeae0f07fa13db"
+      }
+    ]
+  },
+  {
+    "sha": "7f4c1451d87eee3c03b300c529aeae0f07fa13db",
+    "node_id": "C_kwDOMiSeidoAKDdmNGMxNDUxZDg3ZWVlM2MwM2IzMDBjNTI5YWVhZTBmMDdmYTEzZGI",
+    "commit": {
+      "author": {
+        "name": "dsbowen",
+        "email": "46055161+dsbowen@users.noreply.github.com",
+        "date": "2025-01-29T17:55:42Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2025-01-29T17:55:42Z"
+      },
+      "message": "Created docs for WMDP open-ended. (#32)\n\nCo-authored-by: dsbowen <dbspenser@gmail.com>",
+      "tree": {
+        "sha": "8a66a7fdbe75eb9eef39459daad00538a49ea8ee",
+        "url": "https://api.github.com/repos/dsbowen/strong_reject/git/trees/8a66a7fdbe75eb9eef39459daad00538a49ea8ee"
+      },
+      "url": "https://api.github.com/repos/dsbowen/strong_reject/git/commits/7f4c1451d87eee3c03b300c529aeae0f07fa13db",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJnmmufCRC1aQ7uu5UhlAAAVLYQAHJtkbrAtyWFqiKlYptRPXv2\nKGHulBe0nQTvu26PSVWqg3CwS2CHXx0kzphQjgPkBSL3L44CGmGUUITyjF1Avwc8\nuG8V4Xn5zQc42KTKF0uCTxpAAZRtYOEQt4vIDN69Zb126ZTeSM9Et08WvXbgz31t\nBVy4jdiHpFJoqWFFLAV2FiUjlKpKNyvRzsMu4y1ODnj6AyzSKPtB4Yksghf54twa\nlfim50y0dRw7lJYsKecQMlyklHT2Um/HPSAYbVjkbsSTvCeKFF8zCW9qiSjETnk4\nvPz+vWgjKldSudK7Aj4Wg/yuztMOQyZhc7oXGS4BEPssVJXZK9umSakWOBf/6tqM\nsHZljxoN8270hkKs6s1uDcHZjdafI35GH6OJ1tKAtqcFKKy8Bg+lw+2KmffJUEXR\nBbeJQAp/OdL8hbL3wUR7YSXgzGVARZSSsgtl5OcIpJLe5kM9puMvVYOjkSlBWUAv\nUgF2Fgrxtja1Azs9AljP1Z/Fuxi7jTLortpYAJXoVQqK6fbzLbGSyxBCBgkkGRhN\nu7sbeTpwk0vJSrn/wlVytycwFwTEOvvdQsmfbJkeB4NqAIO3YemkMlU6yS4uz3G+\npfS6jvPO/LQPMBPRC5y6xFrBTGWiOKL6L21CRrg0RBAqdao1BXvBwSTJUNUZQHTG\nJ9ev3rewryyQKQQTJUO6\n=J0Cx\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 8a66a7fdbe75eb9eef39459daad00538a49ea8ee\nparent c8b9dce0e04dc413134eb56078a6fb8e9c3a6e94\nauthor dsbowen <46055161+dsbowen@users.noreply.github.com> 1738173342 -0800\ncommitter GitHub <noreply@github.com> 1738173342 -0600\n\nCreated docs for WMDP open-ended. (#32)\n\nCo-authored-by: dsbowen <dbspenser@gmail.com>",
+        "verified_at": "2025-01-29T18:00:18Z"
+      }
+    },
+    "url": "https://api.github.com/repos/dsbowen/strong_reject/commits/7f4c1451d87eee3c03b300c529aeae0f07fa13db",
+    "html_url": "https://github.com/dsbowen/strong_reject/commit/7f4c1451d87eee3c03b300c529aeae0f07fa13db",
+    "comments_url": "https://api.github.com/repos/dsbowen/strong_reject/commits/7f4c1451d87eee3c03b300c529aeae0f07fa13db/comments",
+    "author": {
+      "login": "dsbowen",
+      "id": 46055161,
+      "node_id": "MDQ6VXNlcjQ2MDU1MTYx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46055161?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dsbowen",
+      "html_url": "https://github.com/dsbowen",
+      "followers_url": "https://api.github.com/users/dsbowen/followers",
+      "following_url": "https://api.github.com/users/dsbowen/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dsbowen/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dsbowen/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dsbowen/subscriptions",
+      "organizations_url": "https://api.github.com/users/dsbowen/orgs",
+      "repos_url": "https://api.github.com/users/dsbowen/repos",
+      "events_url": "https://api.github.com/users/dsbowen/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dsbowen/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "c8b9dce0e04dc413134eb56078a6fb8e9c3a6e94",
+        "url": "https://api.github.com/repos/dsbowen/strong_reject/commits/c8b9dce0e04dc413134eb56078a6fb8e9c3a6e94",
+        "html_url": "https://github.com/dsbowen/strong_reject/commit/c8b9dce0e04dc413134eb56078a6fb8e9c3a6e94"
+      }
+    ]
+  },
+  {
+    "sha": "c8b9dce0e04dc413134eb56078a6fb8e9c3a6e94",
+    "node_id": "C_kwDOMiSeidoAKGM4YjlkY2UwZTA0ZGM0MTMxMzRlYjU2MDc4YTZmYjhlOWMzYTZlOTQ",
+    "commit": {
+      "author": {
+        "name": "dsbowen",
+        "email": "46055161+dsbowen@users.noreply.github.com",
+        "date": "2025-01-24T23:34:44Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2025-01-24T23:34:44Z"
+      },
+      "message": "Updated WMDP dataset generation. (#31)\n\nCo-authored-by: Dillon <dillon@far.ai>",
+      "tree": {
+        "sha": "764837708723f792ae96f9276ddb8f9f306afd69",
+        "url": "https://api.github.com/repos/dsbowen/strong_reject/git/trees/764837708723f792ae96f9276ddb8f9f306afd69"
+      },
+      "url": "https://api.github.com/repos/dsbowen/strong_reject/git/commits/c8b9dce0e04dc413134eb56078a6fb8e9c3a6e94",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJnlCOUCRC1aQ7uu5UhlAAAM/IQAEid5GYNDhsq3KKEcegtfVym\n905lBMHGxdm6RnCPipOdS5SBONYIkDinY3tGpIw2AfqBX8qotgKUB/L5z4v9AZhh\nq5mkfvh//+MXA1mGCIEVTep1iUnX+IQD/tWY1WNuamtxyW6G74p6QW/MP9Fh8P9e\nzHilmc6Ro6q2BrmitCiEqqBXffeQQqLTDH1o68T5PgB3SYkN674rDFubBAl/pyNS\nvttHL9nTgsQvMbC7xL9tFOJqgL2TmBrmAK9KSswYwhkS/n0205OChI1uvFDEzCrO\nYxEhei4p0pFPS2urYPiWecB8izjF2fhdtCYEmgELYTe+oMj7xNX6weEs13uOvTXz\nEqH8QsB8XiFtchjj4Ke0TXndQ/MlsT42zbo33irJMPwGB8a/jirW8dKPVc2YEBUT\n26aIPfb3DopI6aLrwK6DBWiigaamIXUmi8B/gDpB9N6Ju+w0/VA2ZgRbB7qRgNRW\nVwA/IW3OKAtNaRmzneu1a6P2YE4Llrk+UP2FX74thDS14trX7Gela761UIwbWvgb\nTs6qrjERjSBTofvaFPOAOto4/Am5yPKbzqCCrqjpbAzhrgni0l5ckV/1ivM6VIor\nv5Jl+HFWCb2JtEgoakUVjpW0qU/da4emyACWTCxMlbjXCbZkF+JLyRUkMAcuZTT3\nFikpi9yNiBOHA5C974w+\n=3zMi\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 764837708723f792ae96f9276ddb8f9f306afd69\nparent 057988213245f13ba35fddd16a44599e7e879198\nauthor dsbowen <46055161+dsbowen@users.noreply.github.com> 1737761684 -0800\ncommitter GitHub <noreply@github.com> 1737761684 -0800\n\nUpdated WMDP dataset generation. (#31)\n\nCo-authored-by: Dillon <dillon@far.ai>",
+        "verified_at": "2025-01-24T23:38:59Z"
+      }
+    },
+    "url": "https://api.github.com/repos/dsbowen/strong_reject/commits/c8b9dce0e04dc413134eb56078a6fb8e9c3a6e94",
+    "html_url": "https://github.com/dsbowen/strong_reject/commit/c8b9dce0e04dc413134eb56078a6fb8e9c3a6e94",
+    "comments_url": "https://api.github.com/repos/dsbowen/strong_reject/commits/c8b9dce0e04dc413134eb56078a6fb8e9c3a6e94/comments",
+    "author": {
+      "login": "dsbowen",
+      "id": 46055161,
+      "node_id": "MDQ6VXNlcjQ2MDU1MTYx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46055161?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dsbowen",
+      "html_url": "https://github.com/dsbowen",
+      "followers_url": "https://api.github.com/users/dsbowen/followers",
+      "following_url": "https://api.github.com/users/dsbowen/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dsbowen/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dsbowen/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dsbowen/subscriptions",
+      "organizations_url": "https://api.github.com/users/dsbowen/orgs",
+      "repos_url": "https://api.github.com/users/dsbowen/repos",
+      "events_url": "https://api.github.com/users/dsbowen/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dsbowen/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "057988213245f13ba35fddd16a44599e7e879198",
+        "url": "https://api.github.com/repos/dsbowen/strong_reject/commits/057988213245f13ba35fddd16a44599e7e879198",
+        "html_url": "https://github.com/dsbowen/strong_reject/commit/057988213245f13ba35fddd16a44599e7e879198"
+      }
+    ]
+  },
+  {
+    "sha": "057988213245f13ba35fddd16a44599e7e879198",
+    "node_id": "C_kwDOMiSeidoAKDA1Nzk4ODIxMzI0NWYxM2JhMzVmZGRkMTZhNDQ1OTllN2U4NzkxOTg",
+    "commit": {
+      "author": {
+        "name": "dsbowen",
+        "email": "46055161+dsbowen@users.noreply.github.com",
+        "date": "2025-01-24T15:32:26Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2025-01-24T15:32:26Z"
+      },
+      "message": "Bug fix. (#30)\n\nCo-authored-by: dsbowen <dbspenser@gmail.com>",
+      "tree": {
+        "sha": "a64d4bbf763b5adfba323ead4d44307707702f9e",
+        "url": "https://api.github.com/repos/dsbowen/strong_reject/git/trees/a64d4bbf763b5adfba323ead4d44307707702f9e"
+      },
+      "url": "https://api.github.com/repos/dsbowen/strong_reject/git/commits/057988213245f13ba35fddd16a44599e7e879198",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJnk7KKCRC1aQ7uu5UhlAAAmA8QAEERzTrFSvV8KabPGnWp6WVQ\nX09+JBLfgr/g+9yVT4crDNct+ln0fsG5CR7c0eZVQcuOQRbMD5Be9p184wg8pPuF\nC++j11nakeB1dKMxctAb7w0lxd+/VRwfwaPqvUYW8MAhqxvXWA0mugqVeeCUnf+w\nyl3poDIKU65a1+/TfqYOXy9rRd9bSbkPORRKB6xWxCtjon1m90dY8pyEbymdvQZc\nQPmFmzpjszu+VOPAh818QxuEfyQQEMERynp0KAguWEFNHm6jWSWTUKwiSmeip26c\no2/h8nERIezDWSQ4Svaa3isscjK3ecEJFadZqoSrNBMVBmUNebK5QE6p9WHXt1td\nGqXZ6dPClOO5lbWXAce5Ih+B9nd1dUoxBK6PTUPuk4eorRJIXTDap0w1CNaEWrQf\nR9hIXyUW0NQh6XeY0p4Ek280aSEtp9VxgjG7dNkAgWIJjnuX6k4Y/sD4tB8ySyQi\nqVbAYWwUblEHBcTgGMTLXcdkIr3+ZeNtTdCVWCPAoNmxWkyV4fMYmOGnKGTjJeRJ\nnikRl2fXkRaqJ6Xjn8pkvd47LSFe6Ikdx6hV73CqJmiGRbxhnlsqeyHV8ZdxsaGC\nZ9LYjJXpdwI6kMOCthgbiu9ijcUZahqvjOpKnUCUT46n6yn6zSGzFuyrtw8AaXNH\nQj8vh/dWOMeGh0GmnWRD\n=P+Iv\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree a64d4bbf763b5adfba323ead4d44307707702f9e\nparent 25959bf30e91b7b32ae9cf08c99621dae7cbfd20\nauthor dsbowen <46055161+dsbowen@users.noreply.github.com> 1737732746 -0800\ncommitter GitHub <noreply@github.com> 1737732746 -0800\n\nBug fix. (#30)\n\nCo-authored-by: dsbowen <dbspenser@gmail.com>",
+        "verified_at": "2025-01-24T15:37:02Z"
+      }
+    },
+    "url": "https://api.github.com/repos/dsbowen/strong_reject/commits/057988213245f13ba35fddd16a44599e7e879198",
+    "html_url": "https://github.com/dsbowen/strong_reject/commit/057988213245f13ba35fddd16a44599e7e879198",
+    "comments_url": "https://api.github.com/repos/dsbowen/strong_reject/commits/057988213245f13ba35fddd16a44599e7e879198/comments",
+    "author": {
+      "login": "dsbowen",
+      "id": 46055161,
+      "node_id": "MDQ6VXNlcjQ2MDU1MTYx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46055161?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dsbowen",
+      "html_url": "https://github.com/dsbowen",
+      "followers_url": "https://api.github.com/users/dsbowen/followers",
+      "following_url": "https://api.github.com/users/dsbowen/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dsbowen/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dsbowen/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dsbowen/subscriptions",
+      "organizations_url": "https://api.github.com/users/dsbowen/orgs",
+      "repos_url": "https://api.github.com/users/dsbowen/repos",
+      "events_url": "https://api.github.com/users/dsbowen/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dsbowen/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "25959bf30e91b7b32ae9cf08c99621dae7cbfd20",
+        "url": "https://api.github.com/repos/dsbowen/strong_reject/commits/25959bf30e91b7b32ae9cf08c99621dae7cbfd20",
+        "html_url": "https://github.com/dsbowen/strong_reject/commit/25959bf30e91b7b32ae9cf08c99621dae7cbfd20"
+      }
+    ]
+  },
+  {
+    "sha": "25959bf30e91b7b32ae9cf08c99621dae7cbfd20",
+    "node_id": "C_kwDOMiSeidoAKDI1OTU5YmYzMGU5MWI3YjMyYWU5Y2YwOGM5OTYyMWRhZTdjYmZkMjA",
+    "commit": {
+      "author": {
+        "name": "dsbowen",
+        "email": "46055161+dsbowen@users.noreply.github.com",
+        "date": "2025-01-24T10:17:06Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2025-01-24T10:17:06Z"
+      },
+      "message": "WMDP Open-ended (#29)\n\n* Made num_processes a parameter for generate_to_dataset\r\n\r\n* WMDP chem open ended.\r\n\r\n* Updated script to get open-ended WMDP questions.\r\n\r\n* Added open-ended WMDP evaluation.\r\n\r\n---------\r\n\r\nCo-authored-by: Brendan Murphy <bmurphy592@gmail.com>\r\nCo-authored-by: dsbowen <dbspenser@gmail.com>",
+      "tree": {
+        "sha": "294dfa2c76564841aa248d0c7587a7a1c2f16a79",
+        "url": "https://api.github.com/repos/dsbowen/strong_reject/git/trees/294dfa2c76564841aa248d0c7587a7a1c2f16a79"
+      },
+      "url": "https://api.github.com/repos/dsbowen/strong_reject/git/commits/25959bf30e91b7b32ae9cf08c99621dae7cbfd20",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJnk2iiCRC1aQ7uu5UhlAAAXGcQACyaybqwsbZBne6zdvTrFQzm\nGAnlI9E5DyiX6Rxf4xQzny5MiQFkXeX6oRFBGZK9A+wQfV80MMlfClXzK4TBXTpV\nC4W+c1IRwhG7mqngEKDHa72iBDJZ85xB9SFWyXdk3WfBRinmOslUnI+R10JqyLNs\nkIEXvHZTEWBz5rqD/7+OORjyniUH+0/vukVBCn5lT4lOwg11wiFfXiV3pmjVf7on\nlI/dBNylgcbb4d2uRMAloIpjUJNyQfCnWej5h3+RHv0qGiWS25wU1CFpxI+IKat1\nJlfSAZ0zdlnZYlFFze83NhPXu7H8jo+HvMcGkMQhdD2Ly7Oww3GiFA/hEFQHvWNF\nNEtQjkUJo3yPDO+gfd1hnl84igJcJlEDhIAfRRvzJ3ugLcmCo2D0rX7DSHoweQhy\nNWnzHF1WKVPScIi1Q/z+JOhkBbumY3fD0SiYImWnro2G9kzxw/TLzQFoqdsPWs1p\nYwPJ0LfSTHc8y1xXaMRBiEd06bcMiAWeiV+0hFMIq/1zfvYUmOcseoKbFh3ITZ0V\nM4NXMVqf5MUrzCeS0G1s2zgAUrb4eitlx1q5ecbGCR0fc8BCbdCeflVJItfW4FDn\nvRENwLhOQK4UwexYxhnXfxB6aDrqGCjOXWORhAopObWK656xyZ9Ovw/8tgQu09F8\nx92iF0lkX5U6LrvlTNa1\n=RiQV\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 294dfa2c76564841aa248d0c7587a7a1c2f16a79\nparent 2d63cc20a1858baa6327e1f50f5693c378ad80c0\nauthor dsbowen <46055161+dsbowen@users.noreply.github.com> 1737713826 -0800\ncommitter GitHub <noreply@github.com> 1737713826 -0800\n\nWMDP Open-ended (#29)\n\n* Made num_processes a parameter for generate_to_dataset\r\n\r\n* WMDP chem open ended.\r\n\r\n* Updated script to get open-ended WMDP questions.\r\n\r\n* Added open-ended WMDP evaluation.\r\n\r\n---------\r\n\r\nCo-authored-by: Brendan Murphy <bmurphy592@gmail.com>\r\nCo-authored-by: dsbowen <dbspenser@gmail.com>",
+        "verified_at": "2025-01-24T10:22:08Z"
+      }
+    },
+    "url": "https://api.github.com/repos/dsbowen/strong_reject/commits/25959bf30e91b7b32ae9cf08c99621dae7cbfd20",
+    "html_url": "https://github.com/dsbowen/strong_reject/commit/25959bf30e91b7b32ae9cf08c99621dae7cbfd20",
+    "comments_url": "https://api.github.com/repos/dsbowen/strong_reject/commits/25959bf30e91b7b32ae9cf08c99621dae7cbfd20/comments",
+    "author": {
+      "login": "dsbowen",
+      "id": 46055161,
+      "node_id": "MDQ6VXNlcjQ2MDU1MTYx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46055161?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dsbowen",
+      "html_url": "https://github.com/dsbowen",
+      "followers_url": "https://api.github.com/users/dsbowen/followers",
+      "following_url": "https://api.github.com/users/dsbowen/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dsbowen/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dsbowen/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dsbowen/subscriptions",
+      "organizations_url": "https://api.github.com/users/dsbowen/orgs",
+      "repos_url": "https://api.github.com/users/dsbowen/repos",
+      "events_url": "https://api.github.com/users/dsbowen/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dsbowen/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "2d63cc20a1858baa6327e1f50f5693c378ad80c0",
+        "url": "https://api.github.com/repos/dsbowen/strong_reject/commits/2d63cc20a1858baa6327e1f50f5693c378ad80c0",
+        "html_url": "https://github.com/dsbowen/strong_reject/commit/2d63cc20a1858baa6327e1f50f5693c378ad80c0"
+      }
+    ]
+  },
+  {
+    "sha": "2d63cc20a1858baa6327e1f50f5693c378ad80c0",
+    "node_id": "C_kwDOMiSeidoAKDJkNjNjYzIwYTE4NThiYWE2MzI3ZTFmNTBmNTY5M2MzNzhhZDgwYzA",
+    "commit": {
+      "author": {
+        "name": "dsbowen",
+        "email": "46055161+dsbowen@users.noreply.github.com",
+        "date": "2025-01-17T17:35:57Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2025-01-17T17:35:57Z"
+      },
+      "message": "Fixed merge conflict (#28)\n\n* Made num_processes a parameter for generate_to_dataset\r\n\r\n* Fixed merge conflict.\r\n\r\n---------\r\n\r\nCo-authored-by: Brendan Murphy <bmurphy592@gmail.com>\r\nCo-authored-by: dsbowen <dbspenser@gmail.com>",
+      "tree": {
+        "sha": "63b8bf7f7437bcadba444c55da3e319eb1bef1a7",
+        "url": "https://api.github.com/repos/dsbowen/strong_reject/git/trees/63b8bf7f7437bcadba444c55da3e319eb1bef1a7"
+      },
+      "url": "https://api.github.com/repos/dsbowen/strong_reject/git/commits/2d63cc20a1858baa6327e1f50f5693c378ad80c0",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJnipT9CRC1aQ7uu5UhlAAASfwQAAjX0SsvqsHFd8IiO2L+rm+k\n0FgbhIEAn5fq8oAZ0IFlroESjnIH+P7v5GrqhaJOTS5wBMmzKOHIw/TDVA/EBoHj\nsQR114DR707MQ98ahY7tJf0Pq1NnTTRQY81NB2tl24H7rTmqnR3mC86nRYCqhIfX\njxgHCo6C1+475WMs72hRE5OM+kFmPGG8eUCPWRwn/zuVfF3qW6eK/y2i0ygEKZQT\nVz8fVdq9LVUg3+grldUi7uQqOshKlTdjXSdTkM1NKQ9Uhnfis9FhujFzjTedI9tS\ntdjev1OqlaXp/wb5uwaaomlcVHz0XmLjH3nLS/Eka7tTN3KN6hDAMrpbGLV0jcVs\n16yNy/rPa8FJb87UoU6aAn97QNWITd7xww4D2n361Qie41CgLOpK6At2nr9MgcVA\n/1n392VkriGgqKezSiiMfI2vvFPitQs1D79PVq4cnc5c/4VTCfxssFQol+Uzlsky\ncowkFqYmG9IuChCXa0kEkWi6TbJ0RlovS6CIWueRCatYbGhVR9P3Q2pkhyJKTes0\nVVL9hdiv8f7GCZXCo+QaXoc0dZHkNQ9Q4i/3DxsT4kekzWNudn/yoCTcFZnfP/4S\nzB9jRq0vB+U+Gz8gxpqmcqayMzTz7DIdbqrAEgFf2IpZKelGJ/ZLVttqUK3cooUy\nT3jtnUu83rPDKfKOvQGv\n=Et5F\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 63b8bf7f7437bcadba444c55da3e319eb1bef1a7\nparent 4c0793969290b11b1d52963f8b86ae44819689c4\nauthor dsbowen <46055161+dsbowen@users.noreply.github.com> 1737135357 -0600\ncommitter GitHub <noreply@github.com> 1737135357 -0600\n\nFixed merge conflict (#28)\n\n* Made num_processes a parameter for generate_to_dataset\r\n\r\n* Fixed merge conflict.\r\n\r\n---------\r\n\r\nCo-authored-by: Brendan Murphy <bmurphy592@gmail.com>\r\nCo-authored-by: dsbowen <dbspenser@gmail.com>",
+        "verified_at": "2025-01-17T17:39:37Z"
+      }
+    },
+    "url": "https://api.github.com/repos/dsbowen/strong_reject/commits/2d63cc20a1858baa6327e1f50f5693c378ad80c0",
+    "html_url": "https://github.com/dsbowen/strong_reject/commit/2d63cc20a1858baa6327e1f50f5693c378ad80c0",
+    "comments_url": "https://api.github.com/repos/dsbowen/strong_reject/commits/2d63cc20a1858baa6327e1f50f5693c378ad80c0/comments",
+    "author": {
+      "login": "dsbowen",
+      "id": 46055161,
+      "node_id": "MDQ6VXNlcjQ2MDU1MTYx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46055161?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dsbowen",
+      "html_url": "https://github.com/dsbowen",
+      "followers_url": "https://api.github.com/users/dsbowen/followers",
+      "following_url": "https://api.github.com/users/dsbowen/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dsbowen/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dsbowen/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dsbowen/subscriptions",
+      "organizations_url": "https://api.github.com/users/dsbowen/orgs",
+      "repos_url": "https://api.github.com/users/dsbowen/repos",
+      "events_url": "https://api.github.com/users/dsbowen/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dsbowen/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "4c0793969290b11b1d52963f8b86ae44819689c4",
+        "url": "https://api.github.com/repos/dsbowen/strong_reject/commits/4c0793969290b11b1d52963f8b86ae44819689c4",
+        "html_url": "https://github.com/dsbowen/strong_reject/commit/4c0793969290b11b1d52963f8b86ae44819689c4"
+      }
+    ]
+  },
+  {
+    "sha": "4c0793969290b11b1d52963f8b86ae44819689c4",
+    "node_id": "C_kwDOMiSeidoAKDRjMDc5Mzk2OTI5MGIxMWIxZDUyOTYzZjhiODZhZTQ0ODE5Njg5YzQ",
+    "commit": {
+      "author": {
+        "name": "Brendan Murphy",
+        "email": "bmurphy592@gmail.com",
+        "date": "2025-01-17T17:26:31Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2025-01-17T17:26:31Z"
+      },
+      "message": "Made num_processes a parameter for generate_to_dataset (#27)\n\n* Made num_processes a parameter for generate_to_dataset\r\n\r\n* Changed retries from recursion to for loop.\r\n\r\n---------\r\n\r\nCo-authored-by: dsbowen <dbspenser@gmail.com>",
+      "tree": {
+        "sha": "63b8bf7f7437bcadba444c55da3e319eb1bef1a7",
+        "url": "https://api.github.com/repos/dsbowen/strong_reject/git/trees/63b8bf7f7437bcadba444c55da3e319eb1bef1a7"
+      },
+      "url": "https://api.github.com/repos/dsbowen/strong_reject/git/commits/4c0793969290b11b1d52963f8b86ae44819689c4",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJnipLHCRC1aQ7uu5UhlAAAZCAQAHS6hA7SEF3kPqWm7BAahz4a\n8JpO2NvqHasHTPHlmAPqZq8MAGlj42ybpPRG22eEAXPunIkYYfkA7I7ddyBUf6Oy\nzCqDN2QJiVZJs/KBWemPwnb+E076+6ok2wh1cSKJcQKapUn8YgjHaTttVdkSWJrr\nrdogNrvYEu0Q0uvdqGFy7tvdGk0CqW90+Mtwx5rJGo9e55tjuxvNx8iZev8o3wLT\n1gUyGVy8X6b8WBvDfl5tVYTc8l0RnaZjfQx4O7UiTh67BDOHhxjx6fGlVN7sK3ue\npxut2Zo3ZZQA4JAB1N0hZFORN7Nou3Jzu1uzoZRZJ+yWc+gjOnYnBnYG+NQ+A+fn\nz4PdA1WUlRCQ5rE6M1ebJ4M2PvYi4bq8Whs+McbQ3kIuud3hk3L7fx1arFfUjj3B\nrAUgtR4It/lMFJ/okJNjl1fhocJhoSqX3UlmUMkW9RwuDXsvSqixtI8ATA5whxQG\nH2maCa7pS60GB0Yi2UqlcMz4jt9sNgZK+PdW0/ms2yP5ZktsISgmXYRrJo0mxiIu\n/0dDp/yh/EpGqZ19igejVSMH76mkdbHjy4is2JBf3DxU3p4kBzJsNwWegT3uwQrr\n4sLFn5jznkHqbgOBAYdEtXQ4w0nZKuPBsiAoid0iA4yKDjXlVulAhdlDcrTAQhLW\n7DuH8Wx4ZkZPFtnucz4U\n=PYDa\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 63b8bf7f7437bcadba444c55da3e319eb1bef1a7\nparent a9189bfccc04bffe08cdbb9ca730e042e03a39a9\nauthor Brendan Murphy <bmurphy592@gmail.com> 1737134791 -0500\ncommitter GitHub <noreply@github.com> 1737134791 -0600\n\nMade num_processes a parameter for generate_to_dataset (#27)\n\n* Made num_processes a parameter for generate_to_dataset\r\n\r\n* Changed retries from recursion to for loop.\r\n\r\n---------\r\n\r\nCo-authored-by: dsbowen <dbspenser@gmail.com>",
+        "verified_at": "2025-01-17T17:31:34Z"
+      }
+    },
+    "url": "https://api.github.com/repos/dsbowen/strong_reject/commits/4c0793969290b11b1d52963f8b86ae44819689c4",
+    "html_url": "https://github.com/dsbowen/strong_reject/commit/4c0793969290b11b1d52963f8b86ae44819689c4",
+    "comments_url": "https://api.github.com/repos/dsbowen/strong_reject/commits/4c0793969290b11b1d52963f8b86ae44819689c4/comments",
+    "author": {
+      "login": "murphybrendan",
+      "id": 4120464,
+      "node_id": "MDQ6VXNlcjQxMjA0NjQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4120464?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/murphybrendan",
+      "html_url": "https://github.com/murphybrendan",
+      "followers_url": "https://api.github.com/users/murphybrendan/followers",
+      "following_url": "https://api.github.com/users/murphybrendan/following{/other_user}",
+      "gists_url": "https://api.github.com/users/murphybrendan/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/murphybrendan/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/murphybrendan/subscriptions",
+      "organizations_url": "https://api.github.com/users/murphybrendan/orgs",
+      "repos_url": "https://api.github.com/users/murphybrendan/repos",
+      "events_url": "https://api.github.com/users/murphybrendan/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/murphybrendan/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "a9189bfccc04bffe08cdbb9ca730e042e03a39a9",
+        "url": "https://api.github.com/repos/dsbowen/strong_reject/commits/a9189bfccc04bffe08cdbb9ca730e042e03a39a9",
+        "html_url": "https://github.com/dsbowen/strong_reject/commit/a9189bfccc04bffe08cdbb9ca730e042e03a39a9"
+      }
+    ]
+  }
+]

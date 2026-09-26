@@ -1,0 +1,50 @@
+{
+ "files_scanned": 19,
+ "files_with_hits": {
+  "round-3/experiment-11/src/results/final/gens_gams3_it.jsonl": 1110,
+  "round-3/experiment-11/src/results/final/gens_gemma_it.jsonl": 400,
+  "iter_4/gen_art/gen_art_experiment_13/results/final/readout_rows.jsonl": 1101
+ },
+ "n_hit_files": 3,
+ "rule": "grep 'refuseu_eval_<n>' ids of FINAL items inside any gens/rows file of iter_2..4 gen_art workspaces",
+ "interpretation": {
+  "round-3/experiment-11/src/results/final/gens_gams3_it.jsonl": {
+   "rows_by_arm": {
+    "SL_MT": 2052,
+    "EN_BT": 2501,
+    "L3_MT": 500
+   },
+   "rows_with_verbatim_natural_prompt": {
+    "SL_MT": 0,
+    "EN_BT": 3,
+    "L3_MT": 0
+   },
+   "distinct_FINAL_pair_ids": 1110
+  },
+  "round-3/experiment-11/src/results/final/gens_gemma_it.jsonl": {
+   "rows_by_arm": {
+    "SL_MT": 1600,
+    "EN_BT": 1600,
+    "L3_MT": 647
+   },
+   "rows_with_verbatim_natural_prompt": {
+    "SL_MT": 0,
+    "EN_BT": 0,
+    "L3_MT": 0
+   },
+   "distinct_FINAL_pair_ids": 400
+  },
+  "iter_4/gen_art/gen_art_experiment_13/results/final/readout_rows.jsonl": {
+   "rows_by_arm": {
+    "SL_MT": 4953,
+    "EN_BT": 5402
+   },
+   "rows_with_verbatim_natural_prompt": {
+    "SL_MT": 0,
+    "EN_BT": 6
+   },
+   "distinct_FINAL_pair_ids": 1101
+  }
+ },
+ "verdict": "Hits are the refuseu_x companion arms (EN_BT = NLLB round-trip of the EN eval prompt, SL_MT = NLLB MT, L3_MT = Hungarian MT) keyed by the SAME pair_id; see rows_with_verbatim_natural_prompt for whether any natural FINAL prompt text itself was generated on. No model was trained on any row; exp11/13 exposure is measurement-only. Consequence: FINAL pair ids are not 'never touched' at the pair level; the natural prompt strings are the new element. Reported in deviations.md."
+}

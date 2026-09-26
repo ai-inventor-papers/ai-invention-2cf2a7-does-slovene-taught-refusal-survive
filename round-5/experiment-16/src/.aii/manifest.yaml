@@ -1,0 +1,16 @@
+entries:
+  - path: .venv/
+    delete: regenerable
+    source: "uv sync  # pyproject.toml + uv.lock pin torch==2.14.0+cu126 from the PyTorch cu126 index"
+  - path: cache/
+    delete: regenerable
+    source: "cd src && ../.venv/bin/python -c 'import score_local; score_local.ensure_j1()'  # reassembles J1 from iter_3 exp9 judge_model/model_parts (sha256-verified)"
+  - path: src/__pycache__/
+    delete: regenerable
+    source: "cd src && ../.venv/bin/python -c 'import analysis'  # python bytecode cache, recreated on import"
+  - path: tests/__pycache__/
+    delete: regenerable
+    source: ".venv/bin/python -m pytest -q tests/"
+  - path: .pytest_cache/
+    delete: regenerable
+    source: ".venv/bin/python -m pytest -q tests/"

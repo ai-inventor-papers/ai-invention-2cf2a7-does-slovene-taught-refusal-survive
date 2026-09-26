@@ -1,0 +1,41 @@
+# 2026-09-25T00:27:58Z https://arxiv.org/abs/2609.08373 :: Submitted on|\[v[0-9]+\]|Comments:|Journal
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/abs/2609.08373
+Type: HTML
+Pattern: Submitted on|\[v[0-9]+\]|Comments:|Journal (3 matches in 8462 chars)
+
+--- Content ---
+
+407:...rXiv
+
+Press Enter to search * [Advanced search](https://arxiv.org/search/advanced)
+
+# Computer Science > Computation and Language
+
+**arXiv:2609.08373** (cs) 
+
+[Submitted on 8 Sep 2026]
+
+# Title:Structural Jailbreaks Generalize but Do Not Compound: A cross-provider and multilingual study of Involuntary In-Context Learning
+
+Authors:...
+--
+2840:...nerabilities are therefore not additive; the dominant residual risk is the English structural attack, most acute for financial abuse, not a multilingual one. 
+
+Comments: | 6 pages, 2 figures, 1 table. Pilot study. Includes a cross-family judge-agreement check (kappa=0.86) and output-language verification  
+---|---  
+Subjects: |...
+--
+3482:...iv-issued DOI via DataCite (pending registration)  
+  
+## Submission history
+
+From: Tejasvi C. Addagada Dr [[view email](/show-email/09fa82d9/2609.08373)]   
+**[v1]** Tue, 8 Sep 2026 07:38:33 UTC (9 KB)  
+
+
+Full-text links:
+
+## Access Paper:
+
+View a PDF of the paper titled Structural Jailbreaks Generalize but Do Not Compou...

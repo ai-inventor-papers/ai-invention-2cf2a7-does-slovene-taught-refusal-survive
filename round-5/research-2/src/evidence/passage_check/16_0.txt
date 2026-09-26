@@ -1,0 +1,9 @@
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2603.01691
+Type: PDF
+Pattern: The safety prompts were written by humans (1 matches in 86464 chars)
+
+--- Content ---
+
+36844:...ll set of safety prompts to this stage. The safety prompts were written by humans, and
+we plan to gradually increase this...

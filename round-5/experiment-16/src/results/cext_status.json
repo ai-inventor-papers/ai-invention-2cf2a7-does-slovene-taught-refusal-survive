@@ -1,0 +1,6 @@
+{
+ "pew_heretic": {"repo": "p-e-w/gemma-3-12b-it-heretic", "revision": "e037e6e112ea85777fc3858469cdc31fdfceaa13", "status": "RUN", "cells": ["EN>EN", "EN>SL", "EN>HU", "SF_SL>SL"], "rows": "CONF harmful only (twins cut, protocol queue note)", "readout": "local StrongREJECT on NLLB English text + J1 / TTJ-J1 (no paid labels)"},
+ "huihui": {"repo": "huihui-ai/gemma-3-12b-it-abliterated", "revision": "33b9e7402b3d8b396afdd9a3cfcefe391bf7a696", "status": "NOT RUN", "reason": "time: pre-registered cut order F6 (second C-EXT checkpoint) - one L4, ~5.8 h wall for the whole artifact"},
+ "mlabonne_v2": {"repo": "mlabonne/gemma-3-12b-it-abliterated-v2", "revision": "b8ae69bd7844187c27c941785afc1b0919f91f8e", "status": "NOT RUN", "reason": "time: pre-registered cut order F6 step 1 (third C-EXT checkpoint, F32, cut first)"},
+ "D7_consequence": "D7 needs >= 2 checkpoints with OUT >= m and CI > 0; with 1 available checkpoint D7 cannot replicate by construction - reported as 'not testable (1 checkpoint)', not as a failure of C-EXT"
+}

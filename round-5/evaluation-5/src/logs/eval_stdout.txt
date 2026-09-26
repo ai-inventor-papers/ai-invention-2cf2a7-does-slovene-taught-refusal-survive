@@ -1,0 +1,40 @@
+01:04:38|INFO   |check_inputs|wrote results/inputs_manifest.json
+01:04:38|INFO   |check_inputs|inputs: 70 files, 0 missing []
+01:04:39|INFO   |ceiling|smoke: {'counts_saved_steps_R': {'gemma_en': 294, 'gemma_sl': 299, 'gams_en': 289, 'gams_sl': 292}, 'n_saved': {'gemma_en': 300, 'gemma_sl': 300, 'gams_en': 300, 'gams_sl': 300}, 'counts_rows_final': {'gemma_en': 294.0, 'gemma_sl': 299.0, 'gams_en': 289.0, 'gams_sl': 292.0}, 'n_rows_final': {'gemma_en': 300.0, 'gemma_sl': 300.0, 'gams_en': 300.0, 'gams_sl': 300.0}, 'counts_equal': True, 'M0_gemma': 1.4831724832572895, 'M0_gams': 0.31259024153179515, 'G3_orig': -1.1705822417254943, 'G3_orig_saved': -1.1705822417255, 'abs_diff': 5.773159728050814e-15, 'pass': True}
+01:04:43|INFO   |ceiling|1g exp9_lambda: smoke={'saved_G3_orig': -2.556839973979848, 'recomputed': -2.5568399739798418, 'abs_diff': 6.217248937900877e-15, 'pass_1e-6': True} n_labels=6
+01:04:43|INFO   |ceiling|1g exp11_final: smoke={'saved_G3_orig': -1.106212883792184, 'recomputed': -1.1062128837921845, 'abs_diff': 4.440892098500626e-16, 'pass_1e-6': True} n_labels=5
+01:04:43|INFO   |ceiling|1g exp8_A1: smoke={'saved_G3_orig': -1.1323069324211326, 'recomputed': -1.1323069324211366, 'abs_diff': 3.9968028886505635e-15, 'pass_1e-6': True} n_labels=5
+01:04:43|INFO   |ceiling|1g exp10_op: smoke={'saved_G3_orig': 0.9875654713175219, 'recomputed': 0.9875654713175193, 'abs_diff': 2.6645352591003757e-15, 'pass_1e-6': True} n_labels=3
+01:04:44|INFO   |ceiling|1g exp8_B: smoke={'saved_G3_orig': -1.3256538138973326, 'recomputed': -1.3256538138973313, 'abs_diff': 1.3322676295501878e-15, 'pass_1e-6': True} n_labels=3
+01:04:44|INFO   |ceiling|wrote results/ceiling_sensitivity.json
+01:04:44|INFO   |kl_excess|exp15 smoke: gemma 0.9594 gams 0.7961 pass=True
+01:04:45|INFO   |kl_excess|exp14 gemma_it: excess 0.767 CI [0.1564711662197593, 2.0347082398070184] (UNDETERMINED)
+01:04:47|INFO   |kl_excess|exp14 gams3_it: excess 0.566 CI [0.303263563140364, 0.9469858666976688] (NO-LEAKAGE)
+01:04:48|INFO   |kl_excess|exp9 gemma_it: excess 0.3238 (saved 0.3238) CI [0.1747802249584903, 0.5829323510716968]
+01:04:50|INFO   |kl_excess|exp9 gams3_it: excess 0.6182 (saved 0.6182) CI [0.4498856058499942, 0.8301324252147304]
+01:05:01|INFO   |kl_excess|wrote results/kl_excess.json
+01:05:01|INFO   |decomposition|decomposition rows 107 status {'edit-induced': 15, 'baseline': 0, 'underdetermined': 64} G3_edit range [-9.967683806731847, 10.487643739347691]
+01:05:01|INFO   |decomposition|wrote results/decomposition_table.json
+01:05:01|INFO   |exp14_tables|wrote results/exp14_tables_regenerated.json
+01:05:01|INFO   |exp14_tables|exp14 tables: crosscheck True (0 mismatches); compliance failures ['gams3_it|slen', 'gams3_it|slhu', 'gams3_it|huen', 'gams3_it|husl', 'pew_heretic|husl']
+01:05:03|INFO   |ledger|index eval3: 13202 numeric leaves from 14 files
+01:05:04|INFO   |ledger|index exp14: 10357 numeric leaves from 35 files
+01:05:05|INFO   |ledger|index exp15: 3730 numeric leaves from 24 files
+01:05:05|INFO   |ledger|index exp13: 111 numeric leaves from 7 files
+01:05:07|INFO   |ledger|index exp12: 12219 numeric leaves from 16 files
+01:05:07|INFO   |ledger|index exp11: 3278 numeric leaves from 17 files
+01:05:09|INFO   |ledger|index exp10: 25446 numeric leaves from 17 files
+01:05:10|INFO   |ledger|index exp9: 2990 numeric leaves from 16 files
+01:05:11|INFO   |ledger|index eval2: 16209 numeric leaves from 10 files
+01:05:12|INFO   |ledger|index exp4: 932 numeric leaves from 12 files
+01:05:12|INFO   |ledger|1176 numeric tokens in scope
+01:05:13|INFO   |ledger|wrote results/correction_ledger.json
+01:05:13|INFO   |ledger|ledger: {'SURVIVES': 332, 'UNTRACEABLE': 844, 'REVERSES': 2, 'SHRINKS': 1} | {'auto-context': 141, 'ambiguous': 842, 'auto-context (duplicate paths, same value)': 100, 'auto-unique': 72, 'unmatched': 2, 'pointer': 22}
+01:05:14|INFO   |owed|wrote results/criterion_shift.json
+01:05:14|INFO   |owed|wrote results/not_executed_exp13.json
+01:05:14|INFO   |owed|wrote results/verdict_table.json
+01:05:14|INFO   |owed|wrote results/step6.json
+01:05:14|INFO   |owed|exp13 overlap recomputed {'B_overlap': 116, 'C_overlap': 55, 'never_B': 184, 'never_C': 104, 'never_generated_total': 288} prior_match {'B_overlap': True, 'C_overlap': True, 'never_generated_total': True, 'never_B': True, 'never_C': True}; crit: unresolved cross-body disagreement: harmonised CIs do not share a sign (exp5 (iter 2, FINAL HARD): -0.52 [-0.68, -0.38],
+01:05:29|INFO   |owed|verify: 49/49 checks pass
+01:05:34|INFO   |make_tables|rendered markdown, figures and PAPER_INSERTS.md from JSON
+01:05:34|INFO   |make_tables|wrote eval_out.json: 67 metrics, 1326 examples (eval_out.json)

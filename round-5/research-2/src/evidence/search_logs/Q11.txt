@@ -1,0 +1,45 @@
+# 2026-09-25T00:18:12Z scholarly :: multilingual red teaming target language reply language evaluation protocol
+Search: multilingual red teaming target language reply language evaluation protocol  [scholarly via openalex]
+Found: 10 results
+
+1. Can Large Language Models Be an Alternative to Human Evaluations?
+   https://doi.org/10.18653/v1/2023.acl-long.870
+   2023 · cited by 300...
+
+2. GPT-4 Technical Report
+   https://doi.org/10.4230/lipics.cosit.2024.11
+   arXiv (Cornell University) · 2023 · cited by 2490...
+
+3. Large Language Models Encode Clinical Knowledge
+   https://doi.org/10.48550/arxiv.2212.13138
+   arXiv (Cornell University) · 2022 · cited by 262...
+
+4. Challenges and Applications of Large Language Models
+   https://doi.org/10.48550/arxiv.2307.10169
+   arXiv (Cornell University) · 2023 · cited by 181...
+
+5. Retrieval augmented generation for large language models in healthcare: A systematic review
+   https://doi.org/10.1371/journal.pdig.0000877
+   PLOS Digital Health · 2025 · cited by 226...
+
+6. The art of recognition: Visualising contact languages with community vernacular language posters
+   https://openalex.org/W3026638691
+   ANU Open Research (Australian National University) · 2019 · cited by 97...
+
+7. Translanguaging and embodied teaching and learning: lessons from a multilingual karate club in London
+   https://doi.org/10.1080/13670050.2019.1599811
+   International Journal of Bilingual Education and Bilingualism · 2019 · cited by 91...
+
+8. Collaboratively designing an online course to teach an Australian Indigenous language at University
+   https://openalex.org/W3025943927
+   ANU Open Research (Australian National University) · 2019 · cited by 92...
+
+9. Application of Large Language Models in Cybersecurity: A Systematic Literature Review
+   https://doi.org/10.1109/access.2024.3505983
+   IEEE Access · 2024 · cited by 86...
+
+10. From the ground up: How Aboriginal languages teachers design school-based programs in their local language ecology, with Carmel Ryan, Marmingee Hand, Nathan Schrieber and Michael Jarrett
+   https://openalex.org/W3024302610
+   ANU Open Research (Australian National University) · 2019 · cited by 95...
+
+

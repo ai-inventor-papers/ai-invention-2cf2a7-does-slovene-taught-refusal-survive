@@ -1,0 +1,8 @@
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2401.13136
+Type: PDF
+Pattern: harmfulness curse and relevance curse (0 matches in 50818 chars)
+
+--- Content ---
+
+No matches found for pattern: harmfulness curse and relevance curse

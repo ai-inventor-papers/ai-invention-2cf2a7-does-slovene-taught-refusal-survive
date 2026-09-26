@@ -1,0 +1,8 @@
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/abs/2505.17306
+Type: HTML
+Pattern: a vector extracted from English can bypass refusals in other (1 matches in 7807 chars)
+
+--- Content ---
+
+1916:... universality of the refusal direction: a vector extracted from English can bypass refusals in other languages with near-perfect effectivene...

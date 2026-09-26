@@ -1,0 +1,24 @@
+# 2026-09-25T00:21:12Z general :: abliterated uncensored LLM multilingual refusal Slovenian OR Hungarian OR Croatian
+Search: abliterated uncensored LLM multilingual refusal Slovenian OR Hungarian OR Croatian  [general via ddgs]
+Found: 5 results
+
+1. Multilingual Refusal Alignment for Safer Large Language Models
+   https://arxiv.org/pdf/2606.07535
+   Multilingual Refusal Alignment for Safer Large Language Models · Aleksandra Krasnod˛ebska †...
+
+2. GitHub - clarinsi/Slovenian-Language-Technologies-Overview: An ever-expanding overview of the knowledge on large language models (LLMs), speech technologies, and other NLP technologies for Slovenian language. · GitHub
+   https://github.com/clarinsi/Slovenian-Language-Technologies-Overview
+   Trankit model for linguistic processing of written and spoken Slovenian: the Slovenian Transformer-based Trankit model can be used inside the Trankit library which is a light-weight Transformer-based ...
+
+3. r/LocalLLaMA on Reddit: Help finding optimal local LLM for text generation in Croatian
+   https://www.reddit.com/r/LocalLLaMA/comments/18sr9g8/help_finding_optimal_local_llm_for_text/
+
+4. Happy to announce Slovenian LLM eval and ...
+   https://www.linkedin.com/posts/aleksagordic_happy-to-announce-slovenian-llm-eval-and-activity-7173332520757772288-RB0c
+   Login to LinkedIn to keep in touch with people you know, share ideas, and build your career....
+
+5. Proceedings of New Trends in Translation and Technology, pages 204–209
+   https://acl-bg.org/proceedings/2024/NeTTT+2024/pdf/2024.nettt-1.17.pdf
+   tive pre-trained transformer model for Croatian (HR-LLM). Although Croatian · has already been included in multilingual LLMs, it remains unclear whether the...
+
+

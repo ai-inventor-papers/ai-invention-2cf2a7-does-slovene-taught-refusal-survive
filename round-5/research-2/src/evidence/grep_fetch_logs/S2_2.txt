@@ -1,0 +1,3 @@
+# 2026-09-25T00:53:59Z https://api.semanticscholar.org/graph/v1/paper/search?fields=title,year,externalIds,publicationDate&limit=40&query=output+language+harmful+jailbreak+multilingual+attack+success
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+Error: HTTP 429

@@ -1,0 +1,36 @@
+# Frozen BEFORE any Step-1/Step-2 computation (post-hoc sensitivity analyses on already-seen data).
+# These rules can DOWNGRADE a claim; they cannot confirm a new one.
+id: gen_art_evaluation_5 (plan gen_plan_evaluation_2_idx4)
+seed: 20260927
+B_bootstrap: 2000
+n_permutations: 5000
+n_posterior_draws: 200000
+margin_m: 0.675
+leave_k:
+  exhaustive_k: [1, 2]
+  random_k: [3, 4, 5]
+  random_subsets: 20000
+ceiling_verdict:          # per body, applied to G3_orig = M0_GaMS - M0_Gemma (lambda 0, SL minus EN, Hautus logits)
+  NOT-OUTSIDE-MARGIN: "G3_orig point already inside (-m, +m) or >= 0 -> no baseline offset to defend (FI_m = 0)"
+  CEILING-ARTEFACT: "FI_m <= 2 OR the range of genuinely different estimators (Step 1d i-iv, vi) spans both sides of -m"
+  ROBUST-OFFSET: "FI_m >= 5 AND probability-scale DiD 95% CI excludes 0 AND every estimator keeps G3_orig < -m"
+  FRAGILE: "otherwise"
+  paper_sentence: "exp15's baseline component is '<verdict>': <FI_m> flip(s) move it inside the margin"
+kl_excess_verdict:        # excess = [KL_E(SL)/KL_E(EN)] / [mean_s KL_R_s(SL) / mean_s KL_R_s(EN)]
+  LEAKAGE: "95% CI lies above 1"
+  NO-LEAKAGE: "95% CI lies below 1"
+  UNDETERMINED: "95% CI includes 1"
+  POINT-ONLY: "no sampling CI available (sensitivity ranges are NOT sampling intervals)"
+decomposition_status:
+  edit-induced: "G3_edit 95% CI excludes 0 AND |G3_edit| >= m/2"
+  baseline: "G3_orig 95% CI excludes 0 AND G3_edit 90% CI within (-m, +m)"
+  underdetermined: "otherwise"
+ledger_status:
+  SURVIVES: "equal within half a unit of the last shown digit and verdict unchanged"
+  SHRINKS: "same sign but |verified| smaller beyond rounding, or CI now includes 0"
+  REVERSES: "sign or verdict flips"
+  UNTRACEABLE: "no saved file holds it (default; never force-matched)"
+  attribution_ok: "false when the value exists but in a different artifact than the one the paper cites"
+gpu_recompute_gate: "recomputed exp15 kl_mean within 5% relative of saved kl_mean (E_exp9, top dose, both languages); preconditions: GPU, weights in the local HF cache, HF token, exp9 adapters"
+criterion_shift_sentence: "'unresolved cross-body disagreement' unless all harmonised CIs share a sign"
+paid_spend_cap_usd: 1.0   # planned spend 0

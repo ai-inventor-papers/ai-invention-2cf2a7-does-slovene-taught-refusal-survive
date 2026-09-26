@@ -1,0 +1,46 @@
+# 2026-09-25T00:56:25Z https://arxiv.org/abs/2606.28843 :: Title:|Submitted on|\[v[0-9]+\]|Comments:
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/abs/2606.28843
+Type: HTML
+Pattern: Title:|Submitted on|\[v[0-9]+\]|Comments: (4 matches in 8535 chars)
+
+--- Content ---
+
+407:...g in](https://arxiv.org/login)
+
+Search arXiv
+
+Press Enter to search * [Advanced search](https://arxiv.org/search/advanced)
+
+# Computer Science > Computation and Language
+
+**arXiv:2606.28843** (cs) 
+
+[Submitted on 27 Jun 2026]
+
+# Title:The Heterogeneous Safety Impacts of Benign Multilingual Fine-Tuning
+
+Authors:[Will Hawkins](https://arxiv.org/search/cs?searchtype=author&query=Hawkins,+W), [Kaivalya Rawal](https://arxiv.org/search/c...
+--
+2966:...urance for deployment. To facilitate further research into these cross-lingual safety blind spots, we release the Multilingual-Benign-Tune dataset and the SORRY-Bench-Multilingual evaluation suite. 
+
+Comments: | 9 pages  
+---|---  
+Subjects: |  Computation and Language (cs.CL); Artificial Intelligence (cs.AI)  
+MSC classes: | 68T01  
+ACM classes: | I.2.6  
+Cite as: | [arXiv:2606.28843](https://arxiv.org/ab...
+--
+3614:...| Proceedings of the 43rd International Conference on Machine Learning, Seoul, South Korea, 2026  
+  
+## Submission history
+
+From: Will Hawkins Mr [[view email](/show-email/eb7f2f6d/2606.28843)]   
+**[v1]** Sat, 27 Jun 2026 10:05:36 UTC (1,693 KB)  
+
+
+Full-text links:
+
+## Access Paper:
+
+View a PDF of the paper titled The Heterogeneous Safety Impacts of Benign Multilingual Fine-Tuning, by Will Hawkins ...

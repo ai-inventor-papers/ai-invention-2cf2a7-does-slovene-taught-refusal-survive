@@ -1,0 +1,45 @@
+# 2026-09-25T00:18:12Z scholarly :: response language prompt language safety large language model refusal
+Search: response language prompt language safety large language model refusal  [scholarly via openalex]
+Found: 10 results
+
+1. Training language models to follow instructions with human feedback
+   https://doi.org/10.48550/arxiv.2203.02155
+   arXiv (Cornell University) · 2022 · cited by 4351...
+
+2. Flamingo: a Visual Language Model for Few-Shot Learning
+   https://doi.org/10.48550/arxiv.2204.14198
+   arXiv (Cornell University) · 2022 · cited by 1251...
+
+3. Detecting hallucinations in large language models using semantic entropy
+   https://doi.org/10.1038/s41586-024-07421-0
+   Nature · 2024 · cited by 846...
+
+4. Can Open Large Language Models Catch Vulnerabilities?
+   https://doi.org/10.4230/oasics.icpec.2025.4
+   arXiv (Cornell University) · 2025 · cited by 532...
+
+5. GPT-4 Technical Report
+   https://doi.org/10.4230/lipics.cosit.2024.11
+   arXiv (Cornell University) · 2023 · cited by 2490...
+
+6. Retrieval augmented generation for large language models in healthcare: A systematic review
+   https://doi.org/10.1371/journal.pdig.0000877
+   PLOS Digital Health · 2025 · cited by 226...
+
+7. Siren's Song in the AI Ocean: A Survey on Hallucination in Large Language Models
+   https://doi.org/10.48550/arxiv.2309.01219
+   arXiv (Cornell University) · 2023 · cited by 244...
+
+8. Larger and more instructable language models become less reliable
+   https://doi.org/10.1038/s41586-024-07930-y
+   Nature · 2024 · cited by 191...
+
+9. 🧜Siren’s Song in the AI Ocean: A Survey on Hallucination in Large Language Models
+   https://doi.org/10.1162/coli.a.16
+   Computational Linguistics · 2025 · cited by 233...
+
+10. Factuality challenges in the era of large language models and opportunities for fact-checking
+   https://doi.org/10.1038/s42256-024-00881-z
+   Nature Machine Intelligence · 2024 · cited by 165...
+
+

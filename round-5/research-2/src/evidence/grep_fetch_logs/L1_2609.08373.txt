@@ -1,0 +1,179 @@
+# 2026-09-25T00:22:59Z https://arxiv.org/pdf/2609.08373 :: respond in|answer in|reply in|output language|response language|target language|in English regardless|StrongREJECT|harmful content|refus
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2609.08373
+Type: PDF
+Pattern: respond in|answer in|reply in|output language|response language|target language|in English regardless|StrongREJECT|harmful content|refus (26 matches in 19484 chars)
+
+--- Content ---
+
+731:...as content; and the well-documented erosion of safety alignment
+outside English.
+A natural hypothesis is that these weaknesses compound.
+We test it
+directly. Using a deterministic IICL operator and a StrongREJECT-style rubric judge, we
+red-team two Google Gemini models—gemini-2.5-flash and gemini-2.5-flash-lite—
+on two benchmarks: 30 general-harm behaviours from HarmBench and 30 financial-abuse
+behaviours fro...
+--
+1982:...nd,
+on the stronger model’s financial set, collapses Arabic from 100% to 33%. We attribute the
+attenuation to a relevance curse: conditioned on structural compliance, the models produce
+lower-quality harmful content in lower-resource languages, which a substance-grading judge
+scores as partial or failed. The pattern is not an artifact of the grader—it replicates when
+the same responses are re-graded by an independent non-Google judge (Cohen’s κ = 0.86 on
+377 paired verdicts)—and the output language is verified (76.6% of non-English responses
+were genuinely in-language). Jailbreak vulnerabilities are therefore not additive, and for
+these models the dominant residual risk is the English structura...
+--
+2717:...l-abuse behaviours—not a multilingual one.
+1
+Introduction
+The safety of a deployed language model is usually probed one weakness at a time. A red-team
+demonstrates that a particular framing defeats a refusal, or that a particular language slips past
+a filter, and reports each as a standalone result. Whether such weaknesses combine—whether
+an attacker who holds two keys opens more than the sum of two do...
+--
+3293:...y In-Context
+Learning (IICL) [1], a structural jailbreak in which the harmful request is embedded as the last,
+missing answer cell of a short JSON dataset the model is asked to “reconstruct.” Because refusal
+1
+arXiv:2609.08373v1  [cs.CL]  8 Sep 2026
+
+is reframed as a formatting error, the attack operates at the in-context pattern-completion layer,
+beneath content-level safety—a mechanism distinct from ...
+--
+4390:...onally constrains the reconstructed cell to a target
+language—and ran the matrix. The hypothesis is wrong. The structural attack is potent, and it
+travels across providers; but layering a non-English output language onto it consistently reduces
+attack success rather than raising it. We report the numbers, isolate the likely mechanism, and
+state plainly the limits of a pilot at this scale.
+2
+Background and related work
+In-context jailbreaks. Many-shot jailbreaking [2] showed that a long context of faked harmful
+exchanges overrides refusal, with success following a power law up to hundreds of shots. IICL [1]
+is the few-shot, structural descendant: ∼10 shots and two control tokens (answer, is_valid)
+suffice, because the potency comes ...
+--
+6438:...to a chat endpoint, no logit or weight access,
+and a fixed per-probe budget of a single structural prompt (no multi-turn escalation, no attacker
+model). The target is an aligned assistant expected to refuse the behaviour. This is the weakest
+realistic attacker for a structural attack, which makes any success a lower bound on capability.
+We test three hypotheses. H1 (generalization): IICL’s effect, repo...
+--
+8164:... and Hindi (hi) and Arabic
+(ar) as comparatively lower-resource for safety supervision. The IICL operator adds a single
+directive requiring the reconstructed answer cell to be written entirely in the target language;
+the English scaffold is otherwise unchanged, so the structural mechanism is held fixed and only
+the output language varies.
+Attacks, probes, and benchmarks. We use two behaviour sets of 30 probes each. Harm-
+Bench supplies a stratified subset of general-harm standard behaviours; FinProof is a domain-
+specific fina...
+--
+8722:...ix banking-crime families—AML structuring, mule ac-
+counts, KYC evasion, fraud scripting, sanctions evasion, and regulatory-disclosure manipulation—
+the behaviours a governed financial assistant must refuse (low-hazard elicitation probes, not op-
+erational tradecraft). The single-shot strategy sends the bare behaviour in English and serves as
+the naive floor. The IICL strategy applies the deterministic...
+--
+9226:...ing cell—under each language.
+No attacker model or search is used, so every result is attributable to the operator alone.
+Grading. A single LLM judge (gemini-2.5-flash) grades each response against a StrongREJECT-
+style rubric [10]: a bypass requires that the response is non-refusing, on-topic, and specific/actionable,
+with a 0.5 threshold; non-English responses are graded on substance regardless of language. On
+a prior 63-item gold set two independent Gemini judges agree at κ...
+--
+9873:...cs and honesty. Attack success rate (ASR) is the fraction of measured probes
+bypassed; a probe whose target call errored or was blocked at the transport layer is excluded
+(⊘) rather than counted as a refusal. Seven of ∼600 gradings were excluded this way (≈98.8%
+measured). We report Wilson 95% intervals per cell and, for the directional across-cell effect
+pooled over both benchmarks, an exact sign test...
+--
+10627:...50
+75
+100
+ASR (%)
+gemini-2.5-flash-lite
+gemini-2.5-flash
+Figure 1: HarmBench. ASR by condition; whiskers are Wilson 95% intervals. IICL spikes far above
+the single-shot baseline, then declines as the output language moves away from English.
+single
+IICL-en
+IICL-es
+IICL-hi
+IICL-ar
+0
+25
+50
+75
+100
+ASR (%)
+gemini-2.5-flash-lite
+gemini-2.5-flash
+Figure 2: FinProof. Same layout, financial-abuse behaviours. English IICL...
+--
+12513:...0% to 33% ([19.2, 51.2], disjoint from English [88.3, 100]). On HarmBench
+the effect is gentler and only flash-lite/Hindi clears significance alone, but the direction is unan-
+imous. Constraining the output language does not add to the structural attack—it subtracts
+from it, more so as the language grows scarcer and the behaviour more specialized.
+4
+
+6
+Why the attack weakens
+The multilingual literature describes two curses [3, 4]. The harmfulness curse—models refuse less
+in low-resource languages—would, if it dominated, raise IICL success in Hindi and Arabic. We
+observe the opposite, which points to the relevance curse: responses in lower-resource languages
+are less complete and less on-topic. IICL already resolves the refusal question by construction,
+so the harmfulness curse has little left to contribute; what remains is generation quality, and a
+rubric that requires the answer to be specific and actionable scores a fl...
+--
+13592:...annot apply: on the financial set, the stronger model often ignored the
+language directive and answered in English (78–89% for Spanish and Arabic), the multilingual
+framing acting instead as an added refusal trigger. Both routes push non-English ASR down—
+one by degrading the harmful content, the other by provoking an English deflection—which is
+why the anti-compounding direction is robust even though its mechanism is not single.
+Defensive reading. For these models the dominant residual ...
+--
+15451:...ro fallbacks either side), and the anti-
+compounding pattern—including the Arabic collapse—replicated; the result is not an artifact
+of judging Gemini with Gemini. Human validation remains open. (iv) Output language—
+verified: classifying responses by Unicode script and language ID, 76.6% of 222 non-English
+conditions were genuinely in the requested language (Hindi 90%, Arabic 73%, Spanish 67%);
+the exception is...
+--
+16216:...ure
+This work is defensive: it measures the coverage a safety evaluation must have. The attack
+is already public [1]; the probes are standard HarmBench and low-hazard FinProof elicitation
+behaviours, refusal-expected rather than operational; and we release aggregate success rates
+and the harness, not harmful completions. The finding reduces rather than increases attacker
+value—it tells a would-be attac...
+--
+16687:...
+defenders where the real surface is. We follow a responsible-disclosure posture for the affected
+model providers.
+5
+
+9
+Conclusion
+Structural jailbreaks are potent and portable: IICL turns near-total refusal into 80–90% com-
+pliance on general harm and 97–100% on financial abuse, on a provider its introducing study
+never tested.
+But potent weaknesses need not stack.
+Forcing that same attack to speak a
+...
+--
+17312:...ractions, do not assume them, and spend defensive effort on
+the English structural surface this data marks as the real exposure. A non-Google judge already
+corroborates the finding (κ = 0.86) and the output language is verified; human-annotated grad-
+ing, GPT and Claude as target anchors, and a genuinely low-resource language would turn this
+pilot into a claim one could stand behind at scale.
+References
+[1] Adve...
+--
+18617:... 2023. arXiv:2310.08419.
+[9] M. Andriushchenko, A. Souly, et al. AgentHarm: A Benchmark for Measuring Harmfulness of LLM
+Agents. ICLR, 2025. arXiv:2410.09024.
+[10] A. Souly, Q. Lu, D. Bowen, et al. A StrongREJECT for Empty Jailbreaks. 2024. arXiv:2402.10260.
+License. © 2026 Tejasvi C. Addagada. This work is licensed under a Creative Commons Attribution 4.0 Inter-
+national License (CC BY 4.0): https://creative...
+--
+[1 more matches not shown]

@@ -1,0 +1,233 @@
+# 2026-09-25T00:35:35Z https://arxiv.org/pdf/2606.07535 :: PolyGuard|Llama-Guard|4o-mini|adjudicator|language identif|detected language|language consistency (is|was)|ASR
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2606.07535
+Type: PDF
+Pattern: PolyGuard|Llama-Guard|4o-mini|adjudicator|language identif|detected language|language consistency (is|was)|ASR (59 matches in 75145 chars)
+
+--- Content ---
+
+10500:...l list of crime cate-
+gories and attack styles is provided in Appendix A.
+To construct the multilingual scenario, we trans-
+late the initial examples of crime categories, attack
+styles, and generation prompts from Polish (as de-
+cs
+de
+en
+es
+fr
+it
+lt
+lv
+pl
+pt
+sk
+sl
+Language
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+Score
+Comparison type
+chatgpt vs. llama
+chatgpt vs. polyguard
+llama vs. polyguard
+Figure 2: Cohen’s Kappa between LLM as a Judge
+models.
+scribed in Krasnod˛ebska et al. (2025)) into each
+target language (English, German, Italian, French,
+Spanish, Portuguese, Polish, Czech, Slovak, Slove-
+nian, Lithuanian, Latvian) using the DeepL API2.
+First, we generate 500 adversarial prompt ex-
+amples in each language using the following mod...
+--
+11464:...more readily
+than in lower-resourced languages such as Polish.
+For both models, the language consistency during
+generation is close to 100%.
+Second, we generate over 100k samples per lan-
+guage using five examples for each pair of style and
+crime activity. We then compare the inter agree-
+ment in labeling adversarial questions across three
+models: Llama-Guard-3-8B5, PolyGuard-Qwen6,
+and GPT-4o-mini7, using the same classification
+prompt as in Llama-Guard-3-8B.
+As shown in Figure 2, the most consistent out-
+puts are obtained with Llama-Guard-3-8B and GPT-
+4o-mini. Interestingly, the agreement scores for
+some underrepresented languages, such as Lithua-
+nian, Latvian, and Slovak, are more stable. It is
+worth noting that the analysis was conducted on
+samples intentionally designed to elicit unsafe ques-
+tions, and thus the subset is not balanced. When
+comparing the proportion of identical labels across
+all test cases, we observe more than 90% agree-
+ment.
+In the initial stage, questions labeled as unsafe
+by both the Llama-Guard-3-8B and PolyGuard-
+2https://www.deepl.com/en/translator
+3https://huggingface.co/mistralai/Mistral-Small-24B-Instruct-2501
+4https://huggingface.co/meta-llama/Llama-3.1-70B
+5https://huggingface.co/meta-llama/Llama-Guard-3-8B
+6https://huggingface.co/ToxicityPrompts/PolyGuard-Qwen
+7https://platform.openai.com/docs/models/gpt-4o-mini
+
+Qwen models were retained. Since these two mod-
+els exhibited noticeable discrepancies in their la-
+belling, requiring agreement between them pro-
+vides a stricter criterion that helps ensure only gen-
+uinely harmful prompts are preserved. Further-
+more, questions written in languages other than the
+expected one were excluded using Fasttext model
+for language identification8.
+To obtain safe answers for the generated data, we
+use Llama-3.1-70B, which demonstrates a strong
+tendency to avoid producing harmful content, not
+only for English inputs.
+RefusEU is designed
+in such a way that the chosen answer for unsafe
+prompts is always a refusal. To generate these
+samples, the initial prompts were augmented with
+instr...
+--
+13632:...collect unsafe answers, we use an abliterated
+version of Llama-3.1-70B, named Llama-3.1-70B-
+Instruct-lorablated9. In both cases (safe and unsafe
+answers), we also apply language consistency fil-
+tering, analogous to that employed in the question
+generation step.
+Finally, only pairs in which the refusal answers
+were consistently marked as safe (by Llama-Guard-
+3-8B and Polyguard-Qwen) and the compliance
+responses were labeled as unsafe (by at least one
+of the two guard models) were retained.
+Beyond the automated pipeline, we performed
+a deeper dive into the data quality, with linguistic
+examples and manual audit results documented in
+Appendix C. A key takeaway from this review is the
+absolute reliability of the safety lab...
+--
+15039:...bonne/Llama-3.1-70B-Instruct-lorablated
+4.1
+Abliteration
+The ablation procedure was not performed by the
+authors. Instead, as a starting point, we adopted
+the ablated versions of Llama 3.1–8B–Instruct10
+and Llama 3.1–70B–Instruct, which was previously
+used for compliance answer generation. As shown
+in Table 1, these two models exhibit high initial
+ASR scores across all languages.
+4.2
+Alignment datasets
+We use the dataset described in Section 3 as our
+starting point. The dataset was split into training
+and test sets as follows: for each style and cate-
+gory, samples in different languages were grouped
+together into either the test or training set to ensure
+thorough evaluation without contaminati...
+--
+17910:....09
+1.09
+7.43
+73.29
+1.47
+11.14
+19.80
+4.17
+lt
+15.40
+41.93
+6.94
+5.67
+3.41
+3.63
+4.93
+50.43
+0.29
+5.91
+8.21
+1.94
+lv
+34.55
+53.89
+8.89
+5.40
+6.16
+5.34
+5.64
+57.29
+1.13
+6.71
+7.50
+1.79
+Avg Low-Res
+18.49
+58.99
+5.98
+3.85
+3.29
+2.89
+4.42
+68.69
+0.77
+5.18
+9.06
+2.86
+Avg All
+10.25
+59.38
+3.52
+3.20
+2.52
+2.13
+3.01
+67.93
+0.47
+2.89
+5.12
+2.01
+Table 1: Attack Success Rate (ASR %) on the RefuseEU test set (lower is better). The “Instruct” column shows the
+reference instruction-tuned model, while “Ablated” represents the safety-ablated baseline. The remaining columns
+correspond to our training variants. Languages are grouped by resource level.
+4.4
+Baselines
+We use the abliterated Llama-3.1-8B and Llama-
+3.1-70B models as ...
+--
+19085:...afety benchmarks:
+RTP-LX and PolygloToxicityPrompts, to compare
+and cross-validate our findings. RTP-LX is a multi-
+lingual toxicity benchmark available for each tested
+language, while PolygloToxicityPrompts is avail-
+able for eight languages out of 12 we cover in Re-
+fusEU.
+The basic metric used in the evaluation stage
+is the Attack Success Rate (ASR), defined as the
+proportion of harmful responses to harmful re-
+12https://huggingface.co/meta-llama/Llama-3.1-8B
+13https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
+14https://huggingface.co/Qwen/Qwen2.5-14B-Instruct
+15https://huggingface.co/openai/gpt-oss-20b
+16https://huggingface.co/mistralai/Mistral-Small-24B-Instruct-2501
+17https://huggingface.co/mistralai/Mistral-Nemo-Instruct-2407
+quests. The final ASR score was computed by
+first generating predictions using Llama-Guard-3-
+8B and PolyGuard-Qwen. In cases where the out-
+puts of these two models diverged, GPT-4o-mini,
+prompted with a predefined safety classification
+protocol, was employed as an adjudicator to es-
+tablish the final label. Language consistency is
+evaluated by computing the proportion of outputs
+generated in the corresponding language.
+General knowledge
+To evaluate overall capabil-
+ities and relative changes in model effectiveness,
+we conducted an analysis using the Global MMLU
+benchmark Singh et al. (2025), available for 9 of
+the 12 tested languages. Additionally, to assess gen-
+eralizatio...
+--
+[34 more matches not shown]

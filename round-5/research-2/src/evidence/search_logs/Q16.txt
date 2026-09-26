@@ -1,0 +1,45 @@
+# 2026-09-25T00:46:59Z scholarly :: multilingual LLM judge bias safety evaluation lower-resource languages
+Search: multilingual LLM judge bias safety evaluation lower-resource languages  [scholarly via openalex]
+Found: 10 results
+
+1. Large language models encode clinical knowledge
+   https://doi.org/10.1038/s41586-023-06291-2
+   Nature · 2023 · cited by 3874...
+
+2. A Survey of Large Language Models
+   https://doi.org/10.1007/s11704-026-60308-3
+   Frontiers of Computer Science · 2026 · cited by 1558...
+
+3. A Multitask, Multilingual, Multimodal Evaluation of ChatGPT on Reasoning, Hallucination, and Interactivity
+   https://doi.org/10.18653/v1/2023.ijcnlp-main.45
+   2023 · cited by 663...
+
+4. A Multitask, Multilingual, Multimodal Evaluation of ChatGPT on Reasoning, Hallucination, and Interactivity
+   https://doi.org/10.48550/arxiv.2302.04023
+   arXiv (Cornell University) · 2023 · cited by 360...
+
+5. GPT-4 Technical Report
+   https://doi.org/10.4230/lipics.cosit.2024.11
+   arXiv (Cornell University) · 2023 · cited by 2490...
+
+6. Can Open Large Language Models Catch Vulnerabilities?
+   https://doi.org/10.4230/oasics.icpec.2025.4
+   arXiv (Cornell University) · 2025 · cited by 532...
+
+7. Towards building multilingual language model for medicine
+   https://doi.org/10.1038/s41467-024-52417-z
+   Nature Communications · 2024 · cited by 132...
+
+8. A Survey on Evaluation of Large Language Models
+   https://doi.org/10.48550/arxiv.2307.03109
+   arXiv (Cornell University) · 2023 · cited by 202...
+
+9. A Comprehensive Overview of Large Language Models
+   https://doi.org/10.48550/arxiv.2307.06435
+   arXiv (Cornell University) · 2023 · cited by 370...
+
+10. A survey of multilingual large language models
+   https://doi.org/10.1016/j.patter.2024.101118
+   Patterns · 2025 · cited by 105...
+
+
