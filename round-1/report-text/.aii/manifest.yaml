@@ -1,0 +1,29 @@
+artifact_type: gen_report_text
+iteration: 1
+status: complete
+title: "GaMS3 vs Gemma-3: Bilingual Refusal Suppression and Mechanistic Analysis"
+description: >
+  Iteration 1 lab-notebook report covering five artifacts: a dataset and
+  supervision-dose audit, the main refusal DiD screen, base-model geometry
+  and mechanistic induction, persona-gate ablation, and Heretic abliteration
+  with transfer-curve analysis. Two rival accounts killed (base geometry,
+  persona gating); main claim vs alternate 1 inconclusive; GaMS3 more
+  exposed to English abliteration than Gemma.
+outputs:
+  - .terminal_claude_agent_struct_out.json
+  - report.md
+  - references.bib
+  - style_exemplars.md
+  - domain_terms.json
+artifacts_cited:
+  - art_EG6OpEkGvysx   # dataset
+  - art_hKWkjbNTydu_   # experiment 1
+  - art_NLTHj-fHEaG3   # experiment 2
+  - art_3GJzU9GuyW5r   # experiment 3
+  - art_A_ALQ08RqTgB   # experiment 4
+figures:
+  - id: fig_forest_did
+    title: "Category-level DiD forest plot"
+  - id: fig_transfer_curve
+    title: "Slovene-vs-English refusal transfer curve under abliteration"
+references_count: 24

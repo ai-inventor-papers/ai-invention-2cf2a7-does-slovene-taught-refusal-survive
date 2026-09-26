@@ -1,0 +1,4 @@
+15:28:25|INFO   |gpt_hard.jsonl: 0 cached, 414 to call (spent so far $7.014)
+15:28:29|INFO   |gpt_hard.jsonl: 0/414 errors=0 spent=$7.015 step=0.001
+15:30:40|INFO   |gpt_hard.jsonl: finished, 291 ok, errors=123, spent=$8.098
+15:30:40|INFO   |gem_hard.jsonl: 0 cached, 207 to call (spent so far $8.098)

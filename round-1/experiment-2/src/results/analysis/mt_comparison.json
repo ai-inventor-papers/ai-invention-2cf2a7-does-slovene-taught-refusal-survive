@@ -1,0 +1,22 @@
+{
+ "note": "Post-hoc MT quality check (OpenRouter key restored): gemini-2.5-flash EN->SL (the plan's MT) vs the frozen",
+ "n": 440,
+ "all_used": {
+  "n": 400,
+  "median_chrF_backtrans_nllb": 71.02000000000001,
+  "median_chrF_backtrans_gemini": 74.465,
+  "median_chrF_nllb_vs_gemini_sl": 67.56,
+  "frac_nllb_vs_gemini_chrF_lt_40": 0.165,
+  "frac_backtrans_nllb_lt_50": 0.1125,
+  "frac_backtrans_gemini_lt_50": 0.1875
+ },
+ "induction": {
+  "n": 100,
+  "median_chrF_backtrans_nllb": 70.275,
+  "median_chrF_backtrans_gemini": 74.46000000000001,
+  "median_chrF_nllb_vs_gemini_sl": 66.34,
+  "frac_nllb_vs_gemini_chrF_lt_40": 0.2,
+  "frac_backtrans_nllb_lt_50": 0.14,
+  "frac_backtrans_gemini_lt_50": 0.23
+ }
+}

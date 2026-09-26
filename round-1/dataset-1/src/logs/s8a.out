@@ -1,0 +1,14 @@
+/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_1/gen_art/gen_art_dataset_1/scripts/s8a_identity_gen.py:53: UserWarning: This pattern is interpreted as a regular expression, and has match groups. To actually get the groups, use str.extract.
+  ids = p[p.text.str.lower().str.contains(ID_RE, regex=True) & ~p.text.str.lower().str.contains(ID_EXCL, regex=True) & p.nw.between(3, 40)]
+/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_1/gen_art/gen_art_dataset_1/scripts/s8a_identity_gen.py:54: UserWarning: This pattern is interpreted as a regular expression, and has match groups. To actually get the groups, use str.extract.
+  ids = ids[~ids.text.str.lower().str.contains(r"(in the game|purpose of your existence)", regex=True)]
+/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_1/gen_art/gen_art_dataset_1/scripts/s8a_identity_gen.py:58: UserWarning: This pattern is interpreted as a regular expression, and has match groups. To actually get the groups, use str.extract.
+  & ~p.text.str.lower().str.contains(NAME_RE, regex=True)
+/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_1/gen_art/gen_art_dataset_1/scripts/s8a_identity_gen.py:59: UserWarning: This pattern is interpreted as a regular expression, and has match groups. To actually get the groups, use str.extract.
+  & ~p.text.str.lower().str.contains(r"(porn|sex|language model|\bai\b|which one|in the game)", regex=True)]
+15:21:16|INFO   |real OASST2 seeds: identity 12, control 16
+15:21:16|INFO   |identity_gen.jsonl: 34 cached, 0 to call (spent so far $2.164)
+15:21:16|INFO   |identity_gen.jsonl: finished, 34 ok, errors=0, spent=$2.164
+/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_1/gen_art/gen_art_dataset_1/scripts/s8a_identity_gen.py:112: UserWarning: This pattern is interpreted as a regular expression, and has match groups. To actually get the groups, use str.extract.
+  bad = (df.facet != "comparison") & df.text.str.lower().str.contains(NAME_RE, regex=True) & (df.source == "llm_generated")
+15:21:16|INFO   |candidates: {('control', 'personal', 'llm_generated'): 189, ('control', 'personal', 'oasst_real'): 16, ('identity', 'comparison', 'llm_generated'): 30, ('identity', 'comparison_real', 'oasst_real'): 1, ('identity', 'creator_company', 'llm_generated'): 36, ('identity', 'model_family', 'llm_generated'): 35, ('identity', 'name', 'llm_generated'): 32, ('identity', 'name', 'oasst_real'): 3, ('identity', 'origin_language', 'llm_generated'): 35, ('identity', 'who_are_you', 'oasst_real'): 4, ('identity', 'who_made_you', 'llm_generated'): 31, ('identity', 'who_made_you', 'oasst_real'): 4}

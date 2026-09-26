@@ -1,0 +1,11 @@
+{
+  "load": 77.0,
+  "checks": 95.2,
+  "heretic_setup": 177.6,
+  "O1_score400": 52.7,
+  "O2_baseline_lp": 3.4,
+  "O3_prefill": 28.4,
+  "O4_rank_k": 0.0,
+  "H_study": 281.7,
+  "P_posthoc": 224.1
+}
