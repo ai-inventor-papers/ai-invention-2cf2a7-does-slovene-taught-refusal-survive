@@ -1,0 +1,97 @@
+{
+  "files": {
+    "probe_P200.jsonl": "e152fe5430810a82ba3686a736fe8e89ad4c7a530f0d849d52dc5e36a77b0d63",
+    "dev20.jsonl": "fbce72f70fe0de3bc611974421417baa042eb2db8ab9e2cf812bc54f0ec49ba4",
+    "harmless100.jsonl": "216e854530f4d4274619d2a1cb2d847f7a4943deb9908d563adf527128a3e33b",
+    "harmless_dir400.jsonl": "4d1f4dcb776215ce16edecf3fe9f18ab7a8d663bac51d9ae3f232bf4b33ec2ae",
+    "harmless_dev32.jsonl": "bb988f087b2431283d43760d5445457d11d881d6728b4dff32ed4fc2bd467d3e",
+    "construct_A2.jsonl": "93c993566a4f496f79c84bbbf4ccc8961f0b45990d81c05d6a2a2e30bd672449",
+    "sel_kl.jsonl": "55f871f543e8d0eb1525d2dbd5e58758d4310df432504bff1ffc07068d9dca89",
+    "eval_kl.jsonl": "c8b71d522b8de568e58417933e408d0a250f22acd4692f2fc3897f52308bdfec"
+  },
+  "counts": {
+    "P200": 200,
+    "P100": 100,
+    "DEV20": 20,
+    "harmless100": 100,
+    "harmless_dir": 400,
+    "construct_A2": 400
+  },
+  "P200_categories": {
+    "S1": 15,
+    "S10": 14,
+    "S11": 14,
+    "S12": 14,
+    "S13": 14,
+    "S14": 14,
+    "S2": 15,
+    "S3": 15,
+    "S4": 15,
+    "S5": 14,
+    "S6": 14,
+    "S7": 14,
+    "S8": 14,
+    "S9": 14
+  },
+  "P200_low_EN_items": 57,
+  "P100_categories": {
+    "S1": 8,
+    "S10": 7,
+    "S11": 7,
+    "S12": 7,
+    "S13": 7,
+    "S14": 7,
+    "S2": 8,
+    "S3": 7,
+    "S4": 7,
+    "S5": 7,
+    "S6": 7,
+    "S7": 7,
+    "S8": 7,
+    "S9": 7
+  },
+  "chrf_median_P200": 75.52,
+  "chrf_quartiles": [
+    66.0,
+    75.52,
+    81.96
+  ],
+  "mt_fragile_P200": 2,
+  "sl_langid_sl_rate": 1.0,
+  "dropped_invalid_mt": [
+    "train:1901",
+    "train:1422",
+    "train:1074",
+    "train:1000",
+    "train:2108",
+    "train:827",
+    "train:2015",
+    "train:1462",
+    "train:374",
+    "train:1421",
+    "train:1442",
+    "train:2431",
+    "train:1429",
+    "train:1367",
+    "train:2081",
+    "train:1898",
+    "train:913",
+    "train:704",
+    "train:2382",
+    "train:2471",
+    "train:291:dup",
+    "train:1218",
+    "train:2390",
+    "train:1878"
+  ],
+  "exclusions": {
+    "iter1_trial_probe_or_construct_id": 100,
+    "iter1_text_dup": 13,
+    "duplicate_text_in_pool": 15
+  },
+  "pool_after_exclusions": 2000,
+  "overlap_checks": {
+    "iter1_trial_probe_construct": 0,
+    "mlabonne_harmful_behaviors": 0
+  }
+}

@@ -1,0 +1,11 @@
+01:46:20|INFO   |[local] loaded 15915 gens, 14776 labels, 4376 validation labels, 1125 id labels
+/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_2/gen_art/gen_art_experiment_7/.venv/lib/python3.12/site-packages/statsmodels/discrete/discrete_model.py:268: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  mlefit = super().fit(
+/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_2/gen_art/gen_art_experiment_7/.venv/lib/python3.12/site-packages/statsmodels/discrete/discrete_model.py:268: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  mlefit = super().fit(
+/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_2/gen_art/gen_art_experiment_7/.venv/lib/python3.12/site-packages/statsmodels/discrete/discrete_model.py:268: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  mlefit = super().fit(
+01:46:37|INFO   |T1 done
+01:46:38|INFO   |T2 done
+01:50:54|INFO   |T3 done
+01:50:58|INFO   |wrote results/analysis.json; verdicts: {"ALT5_decision_T1": "UNINTERPRETABLE (FP-cal failed: instrument cannot detect family resemblance) [local readout]", "language_clause_T2": "UNINTERPRETABLE (FP-cal failed) [local readout]", "wording_T3": "SUPPORTED (EN) [local readout]", "depth_T4": "UNINTERPRETABLE (readout not valid on prefill rows: pooled kappa vs validation judge 0.15, n=151) [local readout]", "identity_T5": "DESCRIPTIVE [local readout]"}

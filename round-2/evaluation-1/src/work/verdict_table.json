@@ -1,0 +1,198 @@
+[
+  {
+    "claim": "MAIN / ALT-1 / ALT-3-pattern (exp1 D, iter1_hypothesis_groups)",
+    "original_verdict": "NEITHER MAIN nor ALT-1 survives (R_judge+PARTIAL ranking; R_judge thin MAIN; C3 PENDING in exp1, later FAILS in exp4 on lexicon)",
+    "original_readout": "gemini P1 (exp1) + lexicon (exp4 C3)",
+    "source": "exp1 results/analysis_results.json:selection; exp4 results/selection.json",
+    "statistic": "D=-0.08 [-1.27, +0.94] (90% [-1.09,+0.75]), MDE 1.53; DiD=-0.38 [-0.69, -0.05]; G3=-0.44 [-1.70, +0.78]",
+    "judged_verdict": "INCONCLUSIVE (MDE>2m)",
+    "changed": "N",
+    "reason": "exp1 labels are already real P1 (unchanged); verdict fails MAIN because the 90% CIs of D and DiD are not within +/-m and G3 is not within m; MDE of D > 2m",
+    "readout_robust": true,
+    "verdict_by_readout": {
+      "P1_real_or_pooled": "INCONCLUSIVE (MDE>2m)",
+      "P1_real_or_sur": "INCONCLUSIVE (MDE>2m)",
+      "native": "INCONCLUSIVE (MDE>2m)",
+      "P1p_real_or_sur": "INCONCLUSIVE (MDE>2m)"
+    },
+    "input_cells_valid": false,
+    "non_valid_cells": {
+      "exp4|gemma_it|trialpool|sl": "FAILS",
+      "exp4|gams3_it|trialpool|en": "UNVALIDATED",
+      "exp4|gams3_it|trialpool|sl": "UNVALIDATED"
+    },
+    "M3_language_symmetry": "PENDING (paid translate-then-judge)"
+  },
+  {
+    "claim": "MAIN / ALT-1 / ALT-3-pattern (exp1 D, frozen_groups_dataset)",
+    "original_verdict": "NEITHER MAIN nor ALT-1 survives (R_judge+PARTIAL ranking; R_judge thin MAIN; C3 PENDING in exp1, later FAILS in exp4 on lexicon)",
+    "original_readout": "gemini P1 (exp1) + lexicon (exp4 C3)",
+    "source": "exp1 results/analysis_results.json:selection; exp4 results/selection.json",
+    "statistic": "D=-0.70 [-1.57, +0.08] (90% [-1.43,-0.05]), MDE 1.20; DiD=-0.38 [-0.69, -0.05]; G3=-0.44 [-1.70, +0.78]",
+    "judged_verdict": "INCONCLUSIVE (MDE>2m)",
+    "changed": "N",
+    "reason": "exp1 labels are already real P1 (unchanged); verdict fails MAIN because the 90% CIs of D and DiD are not within +/-m and G3 is not within m; MDE of D > 2m",
+    "readout_robust": true,
+    "verdict_by_readout": {
+      "P1_real_or_pooled": "INCONCLUSIVE (MDE>2m)",
+      "P1_real_or_sur": "INCONCLUSIVE (MDE>2m)",
+      "native": "INCONCLUSIVE (MDE>2m)",
+      "P1p_real_or_sur": "INCONCLUSIVE (MDE>2m)"
+    },
+    "input_cells_valid": false,
+    "non_valid_cells": {
+      "exp4|gemma_it|trialpool|sl": "FAILS",
+      "exp4|gams3_it|trialpool|en": "UNVALIDATED",
+      "exp4|gams3_it|trialpool|sl": "UNVALIDATED"
+    },
+    "M3_language_symmetry": "PENDING (paid translate-then-judge)"
+  },
+  {
+    "claim": "ALT-2 (base checkpoint sets the EN/SL refusal profile)",
+    "original_verdict": "FAILS",
+    "original_readout": "continuous prefix score s (item regression) - judge-free",
+    "source": "exp2 results/analysis/analysis.json:S5.ALT2",
+    "statistic": "geometry share 0.042 [0.005,0.122], z_c=-15 (restated)",
+    "judged_verdict": "FAILS (restated)",
+    "changed": "N",
+    "reason": "outcome is s, not a refusal label: re-judging cannot change it",
+    "readout_robust": true,
+    "input_cells_valid": true,
+    "non_valid_cells": {},
+    "M3_language_symmetry": "n/a"
+  },
+  {
+    "claim": "ALT-3 persona gate (exp3 TD*)",
+    "original_verdict": "UNTESTABLE (manipulation check failed in GaMS); judge TD* +0.23 [-0.81,1.25]",
+    "original_readout": "gemini SYS_REF (+lexicon imputation for 61 GaMS items)",
+    "source": "exp3 results/analysis.json:primary.TDstar",
+    "statistic": "TD*=+0.27 [-0.77, +1.30], MDE 1.50",
+    "judged_verdict": "UNTESTABLE (as registered); descriptive rule would give INCONCLUSIVE",
+    "changed": "N",
+    "reason": "manipulation-check failure is naming-based and unchanged",
+    "readout_robust": false,
+    "verdict_by_readout": {
+      "P1_real_or_pooled": "INCONCLUSIVE",
+      "P1_real_or_sur": "INCONCLUSIVE",
+      "native": "INCONCLUSIVE",
+      "lex": "INCONCLUSIVE"
+    },
+    "input_cells_valid": false,
+    "non_valid_cells": {
+      "exp3|gemma_it|C1|en": "FAILS",
+      "exp3|gams3_it|C0|en": "FAILS",
+      "exp3|gams3_it|C2|en": "FAILS",
+      "exp3|gams3_it|C2|sl": "FAILS"
+    },
+    "M3_language_symmetry": "PENDING"
+  },
+  {
+    "claim": "ALT-4 (prefill-depth signature: GaMS shallower in BOTH languages, no language interaction)",
+    "original_verdict": "NOT SURVIVED (|Sig_SL-Sig_EN|=2.10 > m) though Sig_EN=3.63, Sig_SL=1.54 > m2",
+    "original_readout": "frozen lexicon (GaMS never judged)",
+    "source": "exp4 results/selection.json:ALT4",
+    "statistic": "Sig_EN=+0.70 [+0.34, +1.15], Sig_SL=+1.20 [+0.91, +1.50], interaction +0.50",
+    "judged_verdict": "SURVIVES (provisional) - UNCITABLE",
+    "changed": "Y",
+    "reason": "all GaMS exp4 cells have NO real judge label (UNVALIDATED) and the pooled surrogate FAILS the gate on Gemma prefill cells; the verdict flips across readouts. Decisive: on a 48-item blind adjudication of prefill k=5 (labels/author_gold_prefill5.json) NO readout reaches kappa 0.6 - best is the pooled P1 surrogate at 0.39, the frozen lexicon 0.21, and the REAL gemini JP2 judge 0.17 while calling 90% of Gemma prefill continuations refusals against an adjudicated 45%. The prefill cells are not measurable by any readout that exists in iter 1.",
+    "readout_robust": false,
+    "verdict_by_readout": {
+      "P1_real_or_pooled": "SURVIVES",
+      "P1_real_or_sur": "NOT SURVIVED",
+      "lex": "NOT SURVIVED",
+      "exp4_sensitivity_continuation_only_prefill": "SURVIVES",
+      "exp4_sensitivity_JP2_native_gemma_plus_pooledJP2_gams": "NOT SURVIVED"
+    },
+    "input_cells_valid": false,
+    "non_valid_cells": {
+      "exp4|gemma_it|orig|sl": "FAILS",
+      "exp4|gemma_it|prefill5|en": "FAILS",
+      "exp4|gemma_it|prefill5|sl": "FAILS",
+      "exp4|gams3_it|orig|en": "UNVALIDATED",
+      "exp4|gams3_it|orig|sl": "UNVALIDATED",
+      "exp4|gams3_it|prefill5|en": "UNVALIDATED",
+      "exp4|gams3_it|prefill5|sl": "UNVALIDATED"
+    },
+    "M3_language_symmetry": "PENDING"
+  },
+  {
+    "claim": "C1 identity is language-bound (DiD_id)",
+    "original_verdict": "PASS: DiD_id 3.22 [2.38,4.38]",
+    "original_readout": "gemini ID_PROMPT",
+    "source": "exp1 results/analysis_results.json:identity.DiD_id",
+    "statistic": "DiD_id=+3.22 [+2.38, +4.38] (recomputed from judge_idname.jsonl)",
+    "judged_verdict": "PASS",
+    "changed": "N",
+    "reason": "same labels; gpt-4.1 relabel of the 480 answers PENDING",
+    "readout_robust": "PENDING (single judge family)",
+    "input_cells_valid": true,
+    "non_valid_cells": {},
+    "M3_language_symmetry": "n/a"
+  },
+  {
+    "claim": "C3 (EN-objective abliteration transfers to SL equally: |G3|<m)",
+    "original_verdict": "FAILS BOTH WAYS: G3 -1.86 [-2.87,-1.13] (GaMS SL MORE exposed)",
+    "original_readout": "frozen lexicon",
+    "source": "exp4 results/analysis.json:C3.matched_first_k_trials.all_pairs.G3",
+    "statistic": "G3=-0.44 [-1.70, +0.78], MDE 1.78; lambda-curve G3=-0.43 [-1.29, +0.53]",
+    "judged_verdict": "MAIN-C3 - UNCITABLE",
+    "changed": "Y",
+    "reason": "GaMS trial cells UNVALIDATED; G3 shrinks toward 0 with a CI spanning 0 under the harmonised readout; sign and size vary by readout",
+    "readout_robust": false,
+    "verdict_by_readout": {
+      "P1_real_or_pooled": "MAIN-C3",
+      "P1_real_or_sur": "INCONCLUSIVE",
+      "lex": "FAILS BOTH",
+      "JP2_native_gemma+pooledJP2_gams": "INCONCLUSIVE"
+    },
+    "input_cells_valid": false,
+    "non_valid_cells": {
+      "exp4|gemma_it|trialpool|sl": "FAILS",
+      "exp4|gams3_it|trialpool|en": "UNVALIDATED",
+      "exp4|gams3_it|trialpool|sl": "UNVALIDATED"
+    },
+    "M3_language_symmetry": "PENDING"
+  },
+  {
+    "claim": "C4 (ancestor-readable refusal gate)",
+    "original_verdict": "FAILURE BRANCH (pt direction never reaches R=.5)",
+    "original_readout": "exp2 own judge prompt + lexicon",
+    "source": "exp2 results/analysis/analysis.json:S5.C4_status",
+    "statistic": "restated",
+    "judged_verdict": "FAILURE BRANCH (restated)",
+    "changed": "N",
+    "reason": "reached under both lexicon and judge in iter 1; gpt-4.1 relabel of 1,000 induction rows PENDING",
+    "readout_robust": "PENDING",
+    "input_cells_valid": true,
+    "non_valid_cells": {},
+    "M3_language_symmetry": "n/a"
+  },
+  {
+    "claim": "C5a (edit damages SL more than norm-matched random: leakage)",
+    "original_verdict": "REVERSES: excess ratio < 1 in both models (no leakage)",
+    "original_readout": "KL (judge-free)",
+    "source": "exp4 results/analysis.json:C5a.*.norm_matched.excess",
+    "statistic": "gemma_it: +0.298 [+0.154, +0.562]; gams3_it: +0.574 [+0.409, +0.796]",
+    "judged_verdict": "no leakage (reproduced)",
+    "changed": "N",
+    "reason": "judge-free; recomputed via exp4 analyze.compute: identical",
+    "readout_robust": true,
+    "input_cells_valid": true,
+    "non_valid_cells": {},
+    "M3_language_symmetry": "n/a"
+  },
+  {
+    "claim": "C5b (SL-aware reselection gain)",
+    "original_verdict": "unpowered (one candidate per model, gain 0)",
+    "original_readout": "KL (judge-free)",
+    "source": "exp4 results/analysis.json:C5b",
+    "statistic": "gemma_it: n_cand 1, gain 0.000; gams3_it: n_cand 1, gain 0.000",
+    "judged_verdict": "unpowered (reproduced)",
+    "changed": "N",
+    "reason": "judge-free",
+    "readout_robust": true,
+    "input_cells_valid": true,
+    "non_valid_cells": {},
+    "M3_language_symmetry": "n/a"
+  }
+]

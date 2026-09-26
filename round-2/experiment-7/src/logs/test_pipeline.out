@@ -1,0 +1,30 @@
+unit tests OK
+synthetic: 18810 gens, 17640 labels
+00:55:29|INFO   |[gemini] loaded 18810 gens, 17640 labels, 2601 validation labels, 1170 id labels
+00:55:49|INFO   |T1 done
+00:55:50|INFO   |T2 done
+00:55:59|INFO   |T3 done
+00:56:01|INFO   |wrote results/analysis_gemini_partial.json; verdicts: {"ALT5_decision_T1": "UNINTERPRETABLE (judge kappa < 0.6 in a T1 cell)", "language_clause_T2": "NOT SUPPORTED", "wording_T3": "SUPPORTED (EN)", "depth_T4": "teacher family also shallow (secondary; Q14 is a white-box stand-in)", "identity_T5": "DESCRIPTIVE"}
+ /ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_2/gen_art/gen_art_experiment_7/.venv/lib/python3.12/site-packages/statsmodels/discrete/discrete_model.py:268: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  mlefit = super().fit(
+/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_2/gen_art/gen_art_experiment_7/.venv/lib/python3.12/site-packages/statsmodels/discrete/discrete_model.py:268: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  mlefit = super().fit(
+/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_2/gen_art/gen_art_experiment_7/.venv/lib/python3.12/site-packages/statsmodels/discrete/discrete_model.py:268: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  mlefit = super().fit(
+
+00:56:05|INFO   |[local] loaded 18810 gens, 17640 labels, 17640 validation labels, 1170 id labels
+00:56:23|INFO   |T1 done
+00:56:23|INFO   |T2 done
+00:56:32|INFO   |T3 done
+00:56:34|INFO   |wrote results/analysis.json; verdicts: {"ALT5_decision_T1": "SUPPORTED (teacher-specific) [local readout]", "language_clause_T2": "NOT SUPPORTED [local readout]", "wording_T3": "SUPPORTED (EN) [local readout]", "depth_T4": "teacher family also shallow (secondary; Q14 is a white-box stand-in) [local readout]", "identity_T5": "DESCRIPTIVE [local readout]"}
+ /ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_2/gen_art/gen_art_experiment_7/.venv/lib/python3.12/site-packages/statsmodels/discrete/discrete_model.py:268: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  mlefit = super().fit(
+/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_2/gen_art/gen_art_experiment_7/.venv/lib/python3.12/site-packages/statsmodels/discrete/discrete_model.py:268: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  mlefit = super().fit(
+/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_2/gen_art/gen_art_experiment_7/.venv/lib/python3.12/site-packages/statsmodels/discrete/discrete_model.py:268: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  mlefit = super().fit(
+
+FP-cal {'est': 0.34365553417722927, 'ci_lo': 0.26769659631958176, 'ci_hi': 0.4168357291840947, 'se': 0.03777597926871676, 'mde': 0.10577274195240692, 'p_boot_le0': 0.0} 
+T1 dk {'est': 0.3542423261891667, 'ci_lo': 0.27650553435393566, 'ci_hi': 0.42757619436492517, 'se': 0.038415220567607745, 'mde': 0.10756261758930168, 'p_boot_le0': 0.0} 
+verdicts {"ALT5_decision_T1": {"verdict": "SUPPORTED (teacher-specific) [local readout]", "fpcal_pass": true, "judge_cells": {"gams": [1.0, "full n=616"], "gemma": [1.0, "full n=616"], "q235": [1.0, "full n=616"]}, "judge_cells_ok": true, "dk": {"est": 0.3542423261891667, "ci_lo": 0.27650553435393566, "ci_hi": 0.42757619436492517, "se": 0.038415220567607745, "mde": 0.10756261758930168, "p_boot_le0": 0.0}, "t1b": {"est": 0.3062380820396106, "ci_lo": 0.23360232748625648, "ci_hi": 0.3812340403602802, "se": 0.03712304558534602, "mde": 0.10394452763896886, "p_boot_le0": 0.0}, "fingerprint_dr": {"est": 0.6969215215147906, "ci_lo": 0.5693161412698199, "ci_hi": 0.8153781384169508, "se": 0.062382044101063974, "mde": 0.17466972348297913, "p_boot_le0": 0.0}, "fingerprint_sign_agrees": true}, "language_clause_T2": {"verdict": "NOT SUPPORTED [local readout]", "stat_language_enbt_minus_sl": {"est": 0.07806818091387119, "ci_lo": -0.008399552457709687, "ci_hi": 0.16468651013316202, "se": 0.044147214232549845, "mde": 0.12361219985113955, "p_boot_le0": 0.0405}, "n_paired_all_arms": 616, "diffgap_en_minus_sl": {"est": 0.06561086135346644, "ci_lo": -0.034304982736453035, "ci_hi": 0.16013287820440117, "se": 0.048923646285066895, "mde": 0.1369862095981873, "p_boot_le0": 0.1005}}, "wording_T3": {"verdict": "SUPPORTED (EN) [local readout]", "classifier_en": {"cv_acc_mean": 1.0, "shares_gams": {"q235": {"k": 1025, "n": 1025, "p": 1.0, "lo": 0.9962660918843097, "hi": 1.0}, "gemma": {"k": 0, "n": 1025, "p": 0.0
+pipeline test OK

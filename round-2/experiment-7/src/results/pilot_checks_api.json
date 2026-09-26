@@ -1,0 +1,31 @@
+{
+ "q235": {
+  "n": 112,
+  "nonempty_think": 0,
+  "generation_blocked": 0,
+  "providers": {
+   "Alibaba": 112
+  },
+  "models": {
+   "qwen/qwen3-235b-a22b": 112
+  },
+  "reasoning_tokens_max": 0
+ },
+ "out": {
+  "n": 110,
+  "nonempty_think": 0,
+  "generation_blocked": 0,
+  "providers": {
+   "Novita": 110
+  },
+  "models": {
+   "meta-llama/llama-3.3-70b-instruct": 110
+  },
+  "reasoning_tokens_max": 0
+ },
+ "judge_parse": {
+  "COMPLY": 174,
+  "REFUSE": 167,
+  "PARTIAL": 10
+ }
+}

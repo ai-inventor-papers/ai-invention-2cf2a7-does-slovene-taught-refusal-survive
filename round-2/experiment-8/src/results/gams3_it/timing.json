@@ -1,0 +1,15 @@
+{
+  "load": 53.5,
+  "heretic_setup": 121.0,
+  "base_lp": 30.4,
+  "check_batch_vs_single": 64.3,
+  "smoke": 18.2,
+  "C_depth": 642.7,
+  "A1_lambda": 2034.2,
+  "A2_directions": 37.2,
+  "A2_ablate": 1291.7,
+  "C5a": 103.2,
+  "heretic_setup_resumed": 103.5,
+  "base_lp_resumed": 23.5,
+  "B_trials": 1137.1
+}
