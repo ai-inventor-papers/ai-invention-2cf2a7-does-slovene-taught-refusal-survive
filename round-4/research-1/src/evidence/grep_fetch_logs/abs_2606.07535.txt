@@ -1,0 +1,40 @@
+# 2026-09-24T18:25:20Z https://arxiv.org/abs/2606.07535
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/abs/2606.07535
+Type: HTML
+Length: 7336 chars (truncated)
+
+--- Content ---
+
+Skip to main content [](https://arxiv.org/IgnoreMe) [ ](https://arxiv.org/) [ Search ](https://arxiv.org/search) [Submit](https://arxiv.org/user/create) [Donate](https://info.arxiv.org/about/donate.html) [Log in](https://arxiv.org/login)
+
+Search arXiv
+
+Press Enter to search * [Advanced search](https://arxiv.org/search/advanced)
+
+# Computer Science > Computation and Language
+
+**arXiv:2606.07535** (cs) 
+
+[Submitted on 24 Apr 2026]
+
+# Title:Multilingual Refusal Alignment for Safer Large Language Models
+
+Authors:[Aleksandra Krasnodębska](https://arxiv.org/search/cs?searchtype=author&query=Krasnod%C4%99bska,+A), [Wojciech Kusa](https://arxiv.org/search/cs?searchtype=author&query=Kusa,+W), [Aldo Lipani](https://arxiv.org/search/cs?searchtype=author&query=Lipani,+A)
+
+View a PDF of the paper titled Multilingual Refusal Alignment for Safer Large Language Models, by Aleksandra Krasnod\k{e}bska and 2 other authors
+
+[View PDF](/pdf/2606.07535) [HTML (experimental)](https://arxiv.org/html/2606.07535v1)
+
+> Abstract:As Large Language Models (LLMs) are deployed globally, ensuring their safety and alignment across multiple languages becomes paramount. However, safety behaviors often vary unpredictably between languages, posing significant challenges for consistent and ethical AI. In this work, we systematically investigate the dynamics of multilingual alignment, exploring whether single-language alignment transfers cross-lingually, how language consistency is preserved during training, and the resulting trade-offs with general knowledge capabilities. We introduce RefusEU, a novel refusal alignment dataset covering 12 European languages, including a dedicated test set for evaluating current state-of-the-art models. Our controlled Direct Preference Optimization (DPO) experiments provide two key insights: aligning models exclusively in English is insufficient to ensure cross-lingual safety, even for the same harm categories, whereas training on multilingual datasets can improve safety without degrading general performance, as measured by the Global MMLU benchmark. 
+
+Comments: | Accepted to Findings ACL 2026  
+---|---  
+Subjects: |  Computation and Language (cs.CL)  
+Cite as: | [arXiv:2606.07535](https://arxiv.org/abs/2606.07535) [cs.CL]  
+  | (or  [arXiv:2606.07535v1](https://arxiv.org/abs/2606.07535v1) [cs.CL] for this version)   
+  |  <https://doi.org/10.48550/arXiv.2606.07535> Focus to learn more arXiv-issued DOI via DataCite  
+  
+## Submission history
+
+From: Aleksandra Kr

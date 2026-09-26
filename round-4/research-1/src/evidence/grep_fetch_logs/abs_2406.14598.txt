@@ -1,0 +1,29 @@
+# 2026-09-24T18:36:09Z https://arxiv.org/abs/2406.14598
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/abs/2406.14598
+Type: HTML
+Length: 9308 chars (truncated)
+
+--- Content ---
+
+Skip to main content [](https://arxiv.org/IgnoreMe) [ ](https://arxiv.org/) [ Search ](https://arxiv.org/search) [Submit](https://arxiv.org/user/create) [Donate](https://info.arxiv.org/about/donate.html) [Log in](https://arxiv.org/login)
+
+Search arXiv
+
+Press Enter to search * [Advanced search](https://arxiv.org/search/advanced)
+
+# Computer Science > Artificial Intelligence
+
+**arXiv:2406.14598** (cs) 
+
+[Submitted on 20 Jun 2024 ([v1](https://arxiv.org/abs/2406.14598v1)), last revised 1 Mar 2025 (this version, v2)]
+
+# Title:SORRY-Bench: Systematically Evaluating Large Language Model Safety Refusal
+
+Authors:[Tinghao Xie](https://arxiv.org/search/cs?searchtype=author&query=Xie,+T), [Xiangyu Qi](https://arxiv.org/search/cs?searchtype=author&query=Qi,+X), [Yi Zeng](https://arxiv.org/search/cs?searchtype=author&query=Zeng,+Y), [Yangsibo Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang,+Y), [Udari Madhushani Sehwag](https://arxiv.org/search/cs?searchtype=author&query=Sehwag,+U+M), [Kaixuan Huang](https://arxiv.org/search/cs?searchtype=author&query=Huang,+K), [Luxi He](https://arxiv.org/search/cs?searchtype=author&query=He,+L), [Boyi Wei](https://arxiv.org/search/cs?searchtype=author&query=Wei,+B), [Dacheng Li](https://arxiv.org/search/cs?searchtype=author&query=Li,+D), [Ying Sheng](https://arxiv.org/search/cs?searchtype=author&query=Sheng,+Y), [Ruoxi Jia](https://arxiv.org/search/cs?searchtype=author&query=Jia,+R), [Bo Li](https://arxiv.org/search/cs?searchtype=author&query=Li,+B), [Kai Li](https://arxiv.org/search/cs?searchtype=author&query=Li,+K), [Danqi Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen,+D), [Peter Henderson](https://arxiv.org/search/cs?searchtype=author&query=Henderson,+P), [Prateek Mittal](https://arxiv.org/search/cs?searchtype=author&query=Mittal,+P)
+
+View a PDF of the paper titled SORRY-Bench: Systematically Evaluating Large Language Model Safety Refusal, by Tinghao Xie and 15 other authors
+
+[View PDF](/pdf/2406.14598) [HTML (experimental)](https://arxiv.org/html/2406.14598v2)
+
+> Abstract:Evaluating aligned large language models' (LLMs) ability to recognize and reject unsafe user requests is crucial for safe, policy-compliant deployments. Existing evaluation efforts, however, face three limitations that we address with SORRY-Bench, our proposed benchmark. First, existing methods often use coarse-grained taxonomies of unsafe topics, and are over-representing some fine-grained topics. For example, among the ten exi

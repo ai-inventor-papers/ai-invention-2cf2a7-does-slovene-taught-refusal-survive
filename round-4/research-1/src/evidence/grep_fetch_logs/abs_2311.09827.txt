@@ -1,0 +1,29 @@
+# 2026-09-24T18:41:40Z https://arxiv.org/abs/2311.09827
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/abs/2311.09827
+Type: HTML
+Length: 7968 chars (truncated)
+
+--- Content ---
+
+Skip to main content [](https://arxiv.org/IgnoreMe) [ ](https://arxiv.org/) [ Search ](https://arxiv.org/search) [Submit](https://arxiv.org/user/create) [Donate](https://info.arxiv.org/about/donate.html) [Log in](https://arxiv.org/login)
+
+Search arXiv
+
+Press Enter to search * [Advanced search](https://arxiv.org/search/advanced)
+
+# Computer Science > Computation and Language
+
+**arXiv:2311.09827** (cs) 
+
+[Submitted on 16 Nov 2023 ([v1](https://arxiv.org/abs/2311.09827v1)), last revised 29 Feb 2024 (this version, v2)]
+
+# Title:Cognitive Overload: Jailbreaking Large Language Models with Overloaded Logical Thinking
+
+Authors:[Nan Xu](https://arxiv.org/search/cs?searchtype=author&query=Xu,+N), [Fei Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang,+F), [Ben Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou,+B), [Bang Zheng Li](https://arxiv.org/search/cs?searchtype=author&query=Li,+B+Z), [Chaowei Xiao](https://arxiv.org/search/cs?searchtype=author&query=Xiao,+C), [Muhao Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen,+M)
+
+View a PDF of the paper titled Cognitive Overload: Jailbreaking Large Language Models with Overloaded Logical Thinking, by Nan Xu and 5 other authors
+
+[View PDF](/pdf/2311.09827) [HTML (experimental)](https://arxiv.org/html/2311.09827v2)
+
+> Abstract:While large language models (LLMs) have demonstrated increasing power, they have also given rise to a wide range of harmful behaviors. As representatives, jailbreak attacks can provoke harmful or unethical responses from LLMs, even after safety alignment. In this paper, we investigate a novel category of jailbreak attacks specifically designed to target the cognitive structure and processes of LLMs. Specifically, we analyze the safety vulnerability of LLMs in the face of (1) multilingual cognitive overload, (2) veiled expression, and (3) effect-to-cause reasoning. Different from previous jailbreak attacks, our proposed cognitive overload is a black-box attack with no need for knowledge of model architecture or access to model weights. Experiments conducted on AdvBench and MasterKey reveal that various LLMs, including both popular open-source model Llama 2 and the proprietary model ChatGPT, can be compromised through cognitive overload. Motivated by cognitive psychology work on managing cognitive load, we further investigate defending cognitive overload attack fr

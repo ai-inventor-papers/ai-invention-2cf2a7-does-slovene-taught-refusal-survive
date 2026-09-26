@@ -1,0 +1,41 @@
+# 2026-09-24T18:25:20Z https://arxiv.org/abs/2511.00689
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/abs/2511.00689
+Type: HTML
+Length: 7254 chars (truncated)
+
+--- Content ---
+
+Skip to main content [](https://arxiv.org/IgnoreMe) [ ](https://arxiv.org/) [ Search ](https://arxiv.org/search) [Submit](https://arxiv.org/user/create) [Donate](https://info.arxiv.org/about/donate.html) [Log in](https://arxiv.org/login)
+
+Search arXiv
+
+Press Enter to search * [Advanced search](https://arxiv.org/search/advanced)
+
+# Computer Science > Computation and Language
+
+**arXiv:2511.00689** (cs) 
+
+[Submitted on 1 Nov 2025 ([v1](https://arxiv.org/abs/2511.00689v1)), last revised 4 Nov 2025 (this version, v2)]
+
+# Title:Do Methods to Jailbreak and Defend LLMs Generalize Across Languages?
+
+Authors:[Berk Atil](https://arxiv.org/search/cs?searchtype=author&query=Atil,+B), [Rebecca J. Passonneau](https://arxiv.org/search/cs?searchtype=author&query=Passonneau,+R+J), [Fred Morstatter](https://arxiv.org/search/cs?searchtype=author&query=Morstatter,+F)
+
+View a PDF of the paper titled Do Methods to Jailbreak and Defend LLMs Generalize Across Languages?, by Berk Atil and 2 other authors
+
+[View PDF](/pdf/2511.00689) [HTML (experimental)](https://arxiv.org/html/2511.00689v2)
+
+> Abstract:Large language models (LLMs) undergo safety alignment after training and tuning, yet recent work shows that safety can be bypassed through jailbreak attacks. While many jailbreaks and defenses exist, their cross-lingual generalization remains underexplored. This paper presents the first systematic multilingual evaluation of jailbreaks and defenses across ten languages -- spanning high-, medium-, and low-resource languages -- using six LLMs on HarmBench and AdvBench. We assess two jailbreak types: logical-expression-based and adversarial-prompt-based. For both types, attack success and defense robustness vary across languages: high-resource languages are safer under standard queries but more vulnerable to adversarial ones. Simple defenses can be effective, but are language- and model-dependent. These findings call for language-aware and cross-lingual safety benchmarks for LLMs. 
+
+Subjects: |  Computation and Language (cs.CL)  
+---|---  
+Cite as: | [arXiv:2511.00689](https://arxiv.org/abs/2511.00689) [cs.CL]  
+  | (or  [arXiv:2511.00689v2](https://arxiv.org/abs/2511.00689v2) [cs.CL] for this version)   
+  |  <https://doi.org/10.48550/arXiv.2511.00689> Focus to learn more arXiv-issued DOI via DataCite  
+  
+## Submission history
+
+From: Berk Atil [[view email](/show-email/2ab384c0/2511.00689)]   
+**[[v1]](/abs/2511.00689v1)** Sat, 1 Nov 2025 20:12:19 UTC (4,250 KB)  
+**[v2]** Tue, 4 Nov 2

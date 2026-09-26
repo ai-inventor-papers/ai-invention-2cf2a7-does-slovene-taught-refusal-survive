@@ -1,0 +1,454 @@
+18:53:04|INFO   |orclient: 100 jobs, 100 to do; ledger spent $0.2038 (cap $4.75)
+18:53:08|INFO   |orclient done: 100 calls; spent $0.2108; stop=False capped=0
+18:53:08|INFO   |loop: labelled 100 rows; spent $0.211
+18:53:48|INFO   |orclient: 100 jobs, 100 to do; ledger spent $0.2108 (cap $4.75)
+18:53:51|INFO   |orclient done: 100 calls; spent $0.2178; stop=False capped=0
+18:53:51|INFO   |loop: labelled 100 rows; spent $0.218
+18:54:12|INFO   |orclient: 99 jobs, 99 to do; ledger spent $0.2178 (cap $4.75)
+18:54:15|INFO   |orclient done: 99 calls; spent $0.2247; stop=False capped=0
+18:54:15|INFO   |loop: labelled 99 rows; spent $0.225
+18:54:15|INFO   |orclient: 1 jobs, 1 to do; ledger spent $0.2247 (cap $4.75)
+18:54:15|INFO   |orclient done: 1 calls; spent $0.2249; stop=False capped=0
+18:54:15|INFO   |loop: labelled 1 rows; spent $0.225
+18:54:55|INFO   |orclient: 100 jobs, 100 to do; ledger spent $0.2249 (cap $4.75)
+18:54:59|INFO   |orclient done: 100 calls; spent $0.2319; stop=False capped=0
+18:54:59|INFO   |loop: labelled 100 rows; spent $0.232
+18:55:39|INFO   |orclient: 100 jobs, 100 to do; ledger spent $0.2319 (cap $4.75)
+18:55:50|INFO   |orclient done: 100 calls; spent $0.2389; stop=False capped=0
+18:55:50|INFO   |loop: labelled 100 rows; spent $0.239
+18:56:11|INFO   |orclient: 100 jobs, 98 to do; ledger spent $0.2389 (cap $4.75)
+18:56:17|INFO   |orclient done: 98 calls; spent $0.2458; stop=False capped=0
+18:56:17|INFO   |loop: labelled 100 rows; spent $0.246
+18:56:57|INFO   |orclient: 100 jobs, 97 to do; ledger spent $0.2458 (cap $4.75)
+18:57:00|INFO   |orclient done: 97 calls; spent $0.2526; stop=False capped=0
+18:57:00|INFO   |loop: labelled 100 rows; spent $0.253
+18:57:40|INFO   |orclient: 100 jobs, 94 to do; ledger spent $0.2526 (cap $4.75)
+18:57:44|INFO   |orclient done: 94 calls; spent $0.2592; stop=False capped=0
+18:57:44|INFO   |loop: labelled 100 rows; spent $0.259
+18:58:05|INFO   |orclient: 100 jobs, 93 to do; ledger spent $0.2592 (cap $4.75)
+18:58:09|INFO   |orclient done: 93 calls; spent $0.2658; stop=False capped=0
+18:58:09|INFO   |loop: labelled 100 rows; spent $0.266
+18:58:50|INFO   |orclient: 88 jobs, 88 to do; ledger spent $0.2658 (cap $4.75)
+18:58:53|INFO   |orclient done: 88 calls; spent $0.2726; stop=False capped=0
+18:58:53|INFO   |loop: labelled 88 rows; spent $0.273
+18:59:33|INFO   |orclient: 88 jobs, 76 to do; ledger spent $0.2726 (cap $4.75)
+18:59:43|INFO   |orclient done: 76 calls; spent $0.2786; stop=False capped=0
+18:59:43|INFO   |loop: labelled 88 rows; spent $0.279
+19:00:03|INFO   |orclient: 88 jobs, 77 to do; ledger spent $0.2786 (cap $4.75)
+19:00:13|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:00:13|INFO   |loop: labelled 88 rows; spent $0.279
+19:00:13|INFO   |orclient: 77 jobs, 77 to do; ledger spent $0.2786 (cap $4.75)
+19:00:24|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:00:24|INFO   |loop: labelled 77 rows; spent $0.279
+19:00:24|INFO   |orclient: 77 jobs, 77 to do; ledger spent $0.2786 (cap $4.75)
+19:00:30|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:00:30|INFO   |loop: labelled 77 rows; spent $0.279
+19:00:30|INFO   |orclient: 77 jobs, 77 to do; ledger spent $0.2786 (cap $4.75)
+19:00:34|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:00:34|INFO   |loop: labelled 77 rows; spent $0.279
+19:00:34|INFO   |orclient: 237 jobs, 237 to do; ledger spent $0.2786 (cap $4.75)
+19:00:35|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:00:36|INFO   |loop: labelled 237 rows; spent $0.279
+19:00:36|INFO   |orclient: 237 jobs, 237 to do; ledger spent $0.2786 (cap $4.75)
+19:00:40|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:00:40|INFO   |loop: labelled 237 rows; spent $0.279
+19:00:40|INFO   |orclient: 237 jobs, 237 to do; ledger spent $0.2786 (cap $4.75)
+19:00:41|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:00:41|INFO   |loop: labelled 237 rows; spent $0.279
+19:00:41|INFO   |orclient: 237 jobs, 237 to do; ledger spent $0.2786 (cap $4.75)
+19:00:43|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:00:43|INFO   |loop: labelled 237 rows; spent $0.279
+19:00:43|INFO   |orclient: 237 jobs, 237 to do; ledger spent $0.2786 (cap $4.75)
+19:00:46|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:00:46|INFO   |loop: labelled 237 rows; spent $0.279
+19:00:46|INFO   |orclient: 237 jobs, 237 to do; ledger spent $0.2786 (cap $4.75)
+19:00:52|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:00:52|INFO   |loop: labelled 237 rows; spent $0.279
+19:00:53|INFO   |orclient: 237 jobs, 237 to do; ledger spent $0.2786 (cap $4.75)
+19:00:56|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:00:56|INFO   |loop: labelled 237 rows; spent $0.279
+19:00:56|INFO   |orclient: 237 jobs, 237 to do; ledger spent $0.2786 (cap $4.75)
+19:01:01|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:01:01|INFO   |loop: labelled 237 rows; spent $0.279
+19:01:01|INFO   |orclient: 237 jobs, 237 to do; ledger spent $0.2786 (cap $4.75)
+19:01:02|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:01:02|INFO   |loop: labelled 237 rows; spent $0.279
+19:01:02|INFO   |orclient: 237 jobs, 237 to do; ledger spent $0.2786 (cap $4.75)
+19:01:03|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:01:03|INFO   |loop: labelled 237 rows; spent $0.279
+19:01:03|INFO   |orclient: 237 jobs, 237 to do; ledger spent $0.2786 (cap $4.75)
+19:01:04|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:01:04|INFO   |loop: labelled 237 rows; spent $0.279
+19:01:04|INFO   |orclient: 237 jobs, 237 to do; ledger spent $0.2786 (cap $4.75)
+19:01:05|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:01:05|INFO   |loop: labelled 237 rows; spent $0.279
+19:01:05|INFO   |orclient: 237 jobs, 237 to do; ledger spent $0.2786 (cap $4.75)
+19:01:10|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:01:10|INFO   |loop: labelled 237 rows; spent $0.279
+19:01:10|INFO   |orclient: 397 jobs, 397 to do; ledger spent $0.2786 (cap $4.75)
+19:01:11|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:01:11|INFO   |loop: labelled 397 rows; spent $0.279
+19:01:11|INFO   |orclient: 397 jobs, 397 to do; ledger spent $0.2786 (cap $4.75)
+19:01:13|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:01:13|INFO   |loop: labelled 397 rows; spent $0.279
+19:01:13|INFO   |orclient: 397 jobs, 397 to do; ledger spent $0.2786 (cap $4.75)
+19:01:14|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:01:15|INFO   |loop: labelled 397 rows; spent $0.279
+19:01:15|INFO   |orclient: 397 jobs, 397 to do; ledger spent $0.2786 (cap $4.75)
+19:01:16|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:01:16|INFO   |loop: labelled 397 rows; spent $0.279
+19:01:16|INFO   |orclient: 397 jobs, 397 to do; ledger spent $0.2786 (cap $4.75)
+19:01:17|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:01:17|INFO   |loop: labelled 397 rows; spent $0.279
+19:01:17|INFO   |orclient: 397 jobs, 397 to do; ledger spent $0.2786 (cap $4.75)
+19:01:18|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:01:18|INFO   |loop: labelled 397 rows; spent $0.279
+19:01:18|INFO   |orclient: 397 jobs, 397 to do; ledger spent $0.2786 (cap $4.75)
+19:01:19|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:01:20|INFO   |loop: labelled 397 rows; spent $0.279
+19:01:20|INFO   |orclient: 397 jobs, 397 to do; ledger spent $0.2786 (cap $4.75)
+19:01:21|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:01:21|INFO   |loop: labelled 397 rows; spent $0.279
+19:01:21|INFO   |orclient: 397 jobs, 397 to do; ledger spent $0.2786 (cap $4.75)
+19:01:24|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:01:24|INFO   |loop: labelled 397 rows; spent $0.279
+19:01:24|INFO   |orclient: 397 jobs, 397 to do; ledger spent $0.2786 (cap $4.75)
+19:01:25|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:01:25|INFO   |loop: labelled 397 rows; spent $0.279
+19:01:25|INFO   |orclient: 397 jobs, 397 to do; ledger spent $0.2786 (cap $4.75)
+19:01:26|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:01:26|INFO   |loop: labelled 397 rows; spent $0.279
+19:01:26|INFO   |orclient: 397 jobs, 397 to do; ledger spent $0.2786 (cap $4.75)
+19:01:27|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:01:27|INFO   |loop: labelled 397 rows; spent $0.279
+19:01:27|INFO   |orclient: 397 jobs, 397 to do; ledger spent $0.2786 (cap $4.75)
+19:01:28|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:01:28|INFO   |loop: labelled 397 rows; spent $0.279
+19:01:28|INFO   |orclient: 397 jobs, 397 to do; ledger spent $0.2786 (cap $4.75)
+19:01:29|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:01:29|INFO   |loop: labelled 397 rows; spent $0.279
+19:01:29|INFO   |orclient: 397 jobs, 397 to do; ledger spent $0.2786 (cap $4.75)
+19:01:30|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:01:30|INFO   |loop: labelled 397 rows; spent $0.279
+19:01:30|INFO   |orclient: 397 jobs, 397 to do; ledger spent $0.2786 (cap $4.75)
+19:01:30|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:01:30|INFO   |loop: labelled 397 rows; spent $0.279
+19:01:30|INFO   |orclient: 397 jobs, 397 to do; ledger spent $0.2786 (cap $4.75)
+19:01:31|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:01:31|INFO   |loop: labelled 397 rows; spent $0.279
+19:01:31|INFO   |orclient: 397 jobs, 397 to do; ledger spent $0.2786 (cap $4.75)
+19:01:32|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:01:32|INFO   |loop: labelled 397 rows; spent $0.279
+19:01:32|INFO   |orclient: 397 jobs, 397 to do; ledger spent $0.2786 (cap $4.75)
+19:01:33|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:01:33|INFO   |loop: labelled 397 rows; spent $0.279
+19:01:33|INFO   |orclient: 397 jobs, 397 to do; ledger spent $0.2786 (cap $4.75)
+19:01:33|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:01:34|INFO   |loop: labelled 397 rows; spent $0.279
+19:01:34|INFO   |orclient: 397 jobs, 397 to do; ledger spent $0.2786 (cap $4.75)
+19:01:34|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:01:34|INFO   |loop: labelled 397 rows; spent $0.279
+19:01:35|INFO   |orclient: 397 jobs, 397 to do; ledger spent $0.2786 (cap $4.75)
+19:01:36|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:01:36|INFO   |loop: labelled 397 rows; spent $0.279
+19:01:36|INFO   |orclient: 397 jobs, 397 to do; ledger spent $0.2786 (cap $4.75)
+19:01:37|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:01:37|INFO   |loop: labelled 397 rows; spent $0.279
+19:01:37|INFO   |orclient: 397 jobs, 397 to do; ledger spent $0.2786 (cap $4.75)
+19:01:38|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:01:38|INFO   |loop: labelled 397 rows; spent $0.279
+19:01:38|INFO   |orclient: 397 jobs, 397 to do; ledger spent $0.2786 (cap $4.75)
+19:01:39|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:01:40|INFO   |loop: labelled 397 rows; spent $0.279
+19:01:40|INFO   |orclient: 397 jobs, 397 to do; ledger spent $0.2786 (cap $4.75)
+19:01:41|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:01:41|INFO   |loop: labelled 397 rows; spent $0.279
+19:01:41|INFO   |orclient: 397 jobs, 397 to do; ledger spent $0.2786 (cap $4.75)
+19:01:42|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:01:42|INFO   |loop: labelled 397 rows; spent $0.279
+19:01:42|INFO   |orclient: 397 jobs, 397 to do; ledger spent $0.2786 (cap $4.75)
+19:01:43|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:01:44|INFO   |loop: labelled 397 rows; spent $0.279
+19:01:44|INFO   |orclient: 397 jobs, 397 to do; ledger spent $0.2786 (cap $4.75)
+19:01:45|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:01:45|INFO   |loop: labelled 397 rows; spent $0.279
+19:01:45|INFO   |orclient: 550 jobs, 550 to do; ledger spent $0.2786 (cap $4.75)
+19:01:46|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:01:46|INFO   |loop: labelled 550 rows; spent $0.279
+19:01:47|INFO   |orclient: 550 jobs, 550 to do; ledger spent $0.2786 (cap $4.75)
+19:01:48|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:01:49|INFO   |loop: labelled 550 rows; spent $0.279
+19:01:49|INFO   |orclient: 550 jobs, 550 to do; ledger spent $0.2786 (cap $4.75)
+19:01:50|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:01:50|INFO   |loop: labelled 550 rows; spent $0.279
+19:01:50|INFO   |orclient: 550 jobs, 550 to do; ledger spent $0.2786 (cap $4.75)
+19:01:51|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:01:51|INFO   |loop: labelled 550 rows; spent $0.279
+19:01:52|INFO   |orclient: 550 jobs, 550 to do; ledger spent $0.2786 (cap $4.75)
+19:01:53|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:01:53|INFO   |loop: labelled 550 rows; spent $0.279
+19:01:54|INFO   |orclient: 550 jobs, 550 to do; ledger spent $0.2786 (cap $4.75)
+19:01:55|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:01:55|INFO   |loop: labelled 550 rows; spent $0.279
+19:01:55|INFO   |orclient: 550 jobs, 550 to do; ledger spent $0.2786 (cap $4.75)
+19:01:56|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:01:56|INFO   |loop: labelled 550 rows; spent $0.279
+19:01:56|INFO   |orclient: 550 jobs, 550 to do; ledger spent $0.2786 (cap $4.75)
+19:01:58|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:01:58|INFO   |loop: labelled 550 rows; spent $0.279
+19:01:58|INFO   |orclient: 550 jobs, 550 to do; ledger spent $0.2786 (cap $4.75)
+19:01:59|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:01:59|INFO   |loop: labelled 550 rows; spent $0.279
+19:01:59|INFO   |orclient: 550 jobs, 550 to do; ledger spent $0.2786 (cap $4.75)
+19:02:03|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:02:03|INFO   |loop: labelled 550 rows; spent $0.279
+19:02:03|INFO   |orclient: 550 jobs, 550 to do; ledger spent $0.2786 (cap $4.75)
+19:02:05|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:02:05|INFO   |loop: labelled 550 rows; spent $0.279
+19:02:05|INFO   |orclient: 550 jobs, 550 to do; ledger spent $0.2786 (cap $4.75)
+19:02:06|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:02:06|INFO   |loop: labelled 550 rows; spent $0.279
+19:02:06|INFO   |orclient: 550 jobs, 550 to do; ledger spent $0.2786 (cap $4.75)
+19:02:07|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:02:08|INFO   |loop: labelled 550 rows; spent $0.279
+19:02:08|INFO   |orclient: 550 jobs, 550 to do; ledger spent $0.2786 (cap $4.75)
+19:02:09|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:02:09|INFO   |loop: labelled 550 rows; spent $0.279
+19:02:09|INFO   |orclient: 550 jobs, 550 to do; ledger spent $0.2786 (cap $4.75)
+19:02:10|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:02:10|INFO   |loop: labelled 550 rows; spent $0.279
+19:02:10|INFO   |orclient: 550 jobs, 550 to do; ledger spent $0.2786 (cap $4.75)
+19:02:11|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:02:12|INFO   |loop: labelled 550 rows; spent $0.279
+19:02:12|INFO   |orclient: 550 jobs, 550 to do; ledger spent $0.2786 (cap $4.75)
+19:02:13|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:02:13|INFO   |loop: labelled 550 rows; spent $0.279
+19:02:13|INFO   |orclient: 550 jobs, 550 to do; ledger spent $0.2786 (cap $4.75)
+19:02:14|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:02:14|INFO   |loop: labelled 550 rows; spent $0.279
+19:02:14|INFO   |orclient: 550 jobs, 550 to do; ledger spent $0.2786 (cap $4.75)
+19:02:18|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:02:18|INFO   |loop: labelled 550 rows; spent $0.279
+19:02:18|INFO   |orclient: 550 jobs, 550 to do; ledger spent $0.2786 (cap $4.75)
+19:02:19|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:02:19|INFO   |loop: labelled 550 rows; spent $0.279
+19:02:20|INFO   |orclient: 550 jobs, 550 to do; ledger spent $0.2786 (cap $4.75)
+19:02:21|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:02:21|INFO   |loop: labelled 550 rows; spent $0.279
+19:02:21|INFO   |orclient: 550 jobs, 550 to do; ledger spent $0.2786 (cap $4.75)
+19:02:22|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:02:22|INFO   |loop: labelled 550 rows; spent $0.279
+19:02:22|INFO   |orclient: 550 jobs, 550 to do; ledger spent $0.2786 (cap $4.75)
+19:02:23|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:02:23|INFO   |loop: labelled 550 rows; spent $0.279
+19:02:23|INFO   |orclient: 687 jobs, 687 to do; ledger spent $0.2786 (cap $4.75)
+19:02:26|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:02:27|INFO   |loop: labelled 687 rows; spent $0.279
+19:02:27|INFO   |orclient: 687 jobs, 687 to do; ledger spent $0.2786 (cap $4.75)
+19:02:28|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:02:28|INFO   |loop: labelled 687 rows; spent $0.279
+19:02:28|INFO   |orclient: 687 jobs, 687 to do; ledger spent $0.2786 (cap $4.75)
+19:02:29|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:02:29|INFO   |loop: labelled 687 rows; spent $0.279
+19:02:29|INFO   |orclient: 687 jobs, 687 to do; ledger spent $0.2786 (cap $4.75)
+19:02:30|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:02:30|INFO   |loop: labelled 687 rows; spent $0.279
+19:02:31|INFO   |orclient: 687 jobs, 687 to do; ledger spent $0.2786 (cap $4.75)
+19:02:33|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:02:33|INFO   |loop: labelled 687 rows; spent $0.279
+19:02:33|INFO   |orclient: 687 jobs, 687 to do; ledger spent $0.2786 (cap $4.75)
+19:02:37|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:02:37|INFO   |loop: labelled 687 rows; spent $0.279
+19:02:37|INFO   |orclient: 687 jobs, 687 to do; ledger spent $0.2786 (cap $4.75)
+19:02:38|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:02:39|INFO   |loop: labelled 687 rows; spent $0.279
+19:02:39|INFO   |orclient: 687 jobs, 687 to do; ledger spent $0.2786 (cap $4.75)
+19:02:40|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:02:40|INFO   |loop: labelled 687 rows; spent $0.279
+19:02:40|INFO   |orclient: 687 jobs, 687 to do; ledger spent $0.2786 (cap $4.75)
+19:02:41|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:02:41|INFO   |loop: labelled 687 rows; spent $0.279
+19:02:41|INFO   |orclient: 687 jobs, 687 to do; ledger spent $0.2786 (cap $4.75)
+19:02:42|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:02:43|INFO   |loop: labelled 687 rows; spent $0.279
+19:02:43|INFO   |orclient: 687 jobs, 687 to do; ledger spent $0.2786 (cap $4.75)
+19:02:44|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:02:44|INFO   |loop: labelled 687 rows; spent $0.279
+19:02:44|INFO   |orclient: 687 jobs, 687 to do; ledger spent $0.2786 (cap $4.75)
+19:02:47|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:02:47|INFO   |loop: labelled 687 rows; spent $0.279
+19:02:48|INFO   |orclient: 687 jobs, 687 to do; ledger spent $0.2786 (cap $4.75)
+19:02:51|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:02:51|INFO   |loop: labelled 687 rows; spent $0.279
+19:02:51|INFO   |orclient: 687 jobs, 687 to do; ledger spent $0.2786 (cap $4.75)
+19:02:54|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:02:54|INFO   |loop: labelled 687 rows; spent $0.279
+19:02:54|INFO   |orclient: 687 jobs, 687 to do; ledger spent $0.2786 (cap $4.75)
+19:02:56|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:02:56|INFO   |loop: labelled 687 rows; spent $0.279
+19:02:56|INFO   |orclient: 687 jobs, 687 to do; ledger spent $0.2786 (cap $4.75)
+19:02:57|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:02:57|INFO   |loop: labelled 687 rows; spent $0.279
+19:02:57|INFO   |orclient: 687 jobs, 687 to do; ledger spent $0.2786 (cap $4.75)
+19:02:58|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:02:58|INFO   |loop: labelled 687 rows; spent $0.279
+19:02:58|INFO   |orclient: 687 jobs, 687 to do; ledger spent $0.2786 (cap $4.75)
+19:02:59|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:03:00|INFO   |loop: labelled 687 rows; spent $0.279
+19:03:00|INFO   |orclient: 801 jobs, 801 to do; ledger spent $0.2786 (cap $4.75)
+19:03:01|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:03:01|INFO   |loop: labelled 801 rows; spent $0.279
+19:03:01|INFO   |orclient: 801 jobs, 801 to do; ledger spent $0.2786 (cap $4.75)
+19:03:03|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:03:03|INFO   |loop: labelled 801 rows; spent $0.279
+19:03:03|INFO   |orclient: 801 jobs, 801 to do; ledger spent $0.2786 (cap $4.75)
+19:03:08|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:03:08|INFO   |loop: labelled 801 rows; spent $0.279
+19:03:08|INFO   |orclient: 801 jobs, 801 to do; ledger spent $0.2786 (cap $4.75)
+19:03:09|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:03:09|INFO   |loop: labelled 801 rows; spent $0.279
+19:03:09|INFO   |orclient: 801 jobs, 801 to do; ledger spent $0.2786 (cap $4.75)
+19:03:10|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:03:10|INFO   |loop: labelled 801 rows; spent $0.279
+19:03:10|INFO   |orclient: 801 jobs, 801 to do; ledger spent $0.2786 (cap $4.75)
+19:03:12|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:03:12|INFO   |loop: labelled 801 rows; spent $0.279
+19:03:12|INFO   |orclient: 801 jobs, 801 to do; ledger spent $0.2786 (cap $4.75)
+19:03:14|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:03:14|INFO   |loop: labelled 801 rows; spent $0.279
+19:03:14|INFO   |orclient: 801 jobs, 801 to do; ledger spent $0.2786 (cap $4.75)
+19:03:15|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:03:16|INFO   |loop: labelled 801 rows; spent $0.279
+19:03:16|INFO   |orclient: 801 jobs, 801 to do; ledger spent $0.2786 (cap $4.75)
+19:03:17|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:03:17|INFO   |loop: labelled 801 rows; spent $0.279
+19:03:17|INFO   |orclient: 801 jobs, 801 to do; ledger spent $0.2786 (cap $4.75)
+19:03:18|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:03:18|INFO   |loop: labelled 801 rows; spent $0.279
+19:03:18|INFO   |orclient: 801 jobs, 801 to do; ledger spent $0.2786 (cap $4.75)
+19:03:20|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:03:20|INFO   |loop: labelled 801 rows; spent $0.279
+19:03:20|INFO   |orclient: 801 jobs, 801 to do; ledger spent $0.2786 (cap $4.75)
+19:03:21|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:03:21|INFO   |loop: labelled 801 rows; spent $0.279
+19:03:22|INFO   |orclient: 801 jobs, 801 to do; ledger spent $0.2786 (cap $4.75)
+19:03:24|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:03:24|INFO   |loop: labelled 801 rows; spent $0.279
+19:03:24|INFO   |orclient: 801 jobs, 801 to do; ledger spent $0.2786 (cap $4.75)
+19:03:27|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:03:27|INFO   |loop: labelled 801 rows; spent $0.279
+19:03:27|INFO   |orclient: 801 jobs, 801 to do; ledger spent $0.2786 (cap $4.75)
+19:03:29|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:03:29|INFO   |loop: labelled 801 rows; spent $0.279
+19:03:29|INFO   |orclient: 801 jobs, 801 to do; ledger spent $0.2786 (cap $4.75)
+19:03:33|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:03:33|INFO   |loop: labelled 801 rows; spent $0.279
+19:03:34|INFO   |orclient: 801 jobs, 801 to do; ledger spent $0.2786 (cap $4.75)
+19:03:37|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:03:37|INFO   |loop: labelled 801 rows; spent $0.279
+19:03:37|INFO   |orclient: 888 jobs, 888 to do; ledger spent $0.2786 (cap $4.75)
+19:03:41|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:03:41|INFO   |loop: labelled 888 rows; spent $0.279
+19:03:41|INFO   |orclient: 888 jobs, 888 to do; ledger spent $0.2786 (cap $4.75)
+19:03:43|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:03:43|INFO   |loop: labelled 888 rows; spent $0.279
+19:03:43|INFO   |orclient: 888 jobs, 888 to do; ledger spent $0.2786 (cap $4.75)
+19:03:44|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:03:44|INFO   |loop: labelled 888 rows; spent $0.279
+19:03:45|INFO   |orclient: 888 jobs, 888 to do; ledger spent $0.2786 (cap $4.75)
+19:03:48|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:03:49|INFO   |loop: labelled 888 rows; spent $0.279
+19:03:49|INFO   |orclient: 888 jobs, 888 to do; ledger spent $0.2786 (cap $4.75)
+19:03:51|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:03:51|INFO   |loop: labelled 888 rows; spent $0.279
+19:03:51|INFO   |orclient: 888 jobs, 888 to do; ledger spent $0.2786 (cap $4.75)
+19:03:54|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:03:55|INFO   |loop: labelled 888 rows; spent $0.279
+19:03:55|INFO   |orclient: 888 jobs, 888 to do; ledger spent $0.2786 (cap $4.75)
+19:03:56|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:03:56|INFO   |loop: labelled 888 rows; spent $0.279
+19:03:56|INFO   |orclient: 888 jobs, 888 to do; ledger spent $0.2786 (cap $4.75)
+19:03:57|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:03:58|INFO   |loop: labelled 888 rows; spent $0.279
+19:03:58|INFO   |orclient: 888 jobs, 888 to do; ledger spent $0.2786 (cap $4.75)
+19:03:59|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:03:59|INFO   |loop: labelled 888 rows; spent $0.279
+19:03:59|INFO   |orclient: 888 jobs, 888 to do; ledger spent $0.2786 (cap $4.75)
+19:04:00|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:04:01|INFO   |loop: labelled 888 rows; spent $0.279
+19:04:01|INFO   |orclient: 888 jobs, 888 to do; ledger spent $0.2786 (cap $4.75)
+19:04:02|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:04:02|INFO   |loop: labelled 888 rows; spent $0.279
+19:04:02|INFO   |orclient: 888 jobs, 888 to do; ledger spent $0.2786 (cap $4.75)
+19:04:04|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:04:04|INFO   |loop: labelled 888 rows; spent $0.279
+19:04:04|INFO   |orclient: 888 jobs, 888 to do; ledger spent $0.2786 (cap $4.75)
+19:04:08|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:04:08|INFO   |loop: labelled 888 rows; spent $0.279
+19:04:08|INFO   |orclient: 917 jobs, 917 to do; ledger spent $0.2786 (cap $4.75)
+19:04:11|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:04:11|INFO   |loop: labelled 917 rows; spent $0.279
+19:04:11|INFO   |orclient: 917 jobs, 917 to do; ledger spent $0.2786 (cap $4.75)
+19:04:13|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:04:13|INFO   |loop: labelled 917 rows; spent $0.279
+19:04:13|INFO   |orclient: 917 jobs, 917 to do; ledger spent $0.2786 (cap $4.75)
+19:04:14|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:04:14|INFO   |loop: labelled 917 rows; spent $0.279
+19:04:14|INFO   |orclient: 917 jobs, 917 to do; ledger spent $0.2786 (cap $4.75)
+19:04:18|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:04:18|INFO   |loop: labelled 917 rows; spent $0.279
+19:04:18|INFO   |orclient: 917 jobs, 917 to do; ledger spent $0.2786 (cap $4.75)
+19:04:20|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:04:20|INFO   |loop: labelled 917 rows; spent $0.279
+19:04:20|INFO   |orclient: 917 jobs, 917 to do; ledger spent $0.2786 (cap $4.75)
+19:04:24|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:04:24|INFO   |loop: labelled 917 rows; spent $0.279
+19:04:24|INFO   |orclient: 917 jobs, 917 to do; ledger spent $0.2786 (cap $4.75)
+19:04:26|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:04:26|INFO   |loop: labelled 917 rows; spent $0.279
+19:04:26|INFO   |orclient: 917 jobs, 917 to do; ledger spent $0.2786 (cap $4.75)
+19:04:27|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:04:27|INFO   |loop: labelled 917 rows; spent $0.279
+19:04:27|INFO   |orclient: 917 jobs, 917 to do; ledger spent $0.2786 (cap $4.75)
+19:04:31|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:04:31|INFO   |loop: labelled 917 rows; spent $0.279
+19:04:31|INFO   |orclient: 917 jobs, 917 to do; ledger spent $0.2786 (cap $4.75)
+19:04:32|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:04:32|INFO   |loop: labelled 917 rows; spent $0.279
+19:04:32|INFO   |orclient: 917 jobs, 917 to do; ledger spent $0.2786 (cap $4.75)
+19:04:34|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:04:34|INFO   |loop: labelled 917 rows; spent $0.279
+19:04:34|INFO   |orclient: 917 jobs, 917 to do; ledger spent $0.2786 (cap $4.75)
+19:04:40|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:04:40|INFO   |loop: labelled 917 rows; spent $0.279
+19:04:40|INFO   |orclient: 1077 jobs, 1077 to do; ledger spent $0.2786 (cap $4.75)
+19:04:41|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:04:41|INFO   |loop: labelled 1077 rows; spent $0.279
+19:04:41|INFO   |orclient: 1077 jobs, 1077 to do; ledger spent $0.2786 (cap $4.75)
+19:04:44|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:04:44|INFO   |loop: labelled 1077 rows; spent $0.279
+19:04:44|INFO   |orclient: 1077 jobs, 1077 to do; ledger spent $0.2786 (cap $4.75)
+19:04:48|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:04:48|INFO   |loop: labelled 1077 rows; spent $0.279
+19:04:48|INFO   |orclient: 1077 jobs, 1077 to do; ledger spent $0.2786 (cap $4.75)
+19:04:51|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:04:51|INFO   |loop: labelled 1077 rows; spent $0.279
+19:04:51|INFO   |orclient: 1077 jobs, 1077 to do; ledger spent $0.2786 (cap $4.75)
+19:04:53|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:04:53|INFO   |loop: labelled 1077 rows; spent $0.279
+19:04:53|INFO   |orclient: 1077 jobs, 1077 to do; ledger spent $0.2786 (cap $4.75)
+19:04:54|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:04:54|INFO   |loop: labelled 1077 rows; spent $0.279
+19:04:54|INFO   |orclient: 1077 jobs, 1077 to do; ledger spent $0.2786 (cap $4.75)
+19:04:56|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:04:56|INFO   |loop: labelled 1077 rows; spent $0.279
+19:04:56|INFO   |orclient: 1077 jobs, 1077 to do; ledger spent $0.2786 (cap $4.75)
+19:04:57|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:04:57|INFO   |loop: labelled 1077 rows; spent $0.279
+19:04:57|INFO   |orclient: 1077 jobs, 1077 to do; ledger spent $0.2786 (cap $4.75)
+19:04:59|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:04:59|INFO   |loop: labelled 1077 rows; spent $0.279
+19:04:59|INFO   |orclient: 1077 jobs, 1077 to do; ledger spent $0.2786 (cap $4.75)
+19:05:00|INFO   |orclient done: 66 calls; spent $0.2786; stop=True capped=0
+19:05:00|INFO   |loop: labelled 1077 rows; spent $0.279
+19:05:00|INFO   |orclient: 1077 jobs, 1077 to do; ledger spent $0.2786 (cap $4.75)

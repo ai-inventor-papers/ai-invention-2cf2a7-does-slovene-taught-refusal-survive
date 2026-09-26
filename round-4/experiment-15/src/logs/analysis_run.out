@@ -1,0 +1,6 @@
+22:23:50|INFO   |rows_final: 33888 rows; labelled 33888
+/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_4/gen_art/gen_art_experiment_15/src/stats_core.py:22: RuntimeWarning: overflow encountered in exp
+  return 1.0 / (1.0 + np.exp(-np.asarray(x, float)))
+22:24:08|INFO   |[R] G3 -0.701 CI [-1.0064162482960892, -0.4167672646087878] (20s)
+22:24:22|INFO   |[RP] G3 -0.701 CI [-1.0064162482960892, -0.4167672646087878] (33s)
+22:24:49|INFO   |analysis done in 61s; verdict {'readout_is_fallback': True, 'LAG_SCREEN_SUPPORTED': False, 'lag_criteria_met_on_readout': False, 'R_BASE_SUPPORTED': True, 'R_INCAP_FLAG': False, 'TOST_equivalence_G3': False, 'MDE_G3': 0.4220094473750568, 'MDE_gt_2m': False, 'judge_gates_pass': False, 'support_pass': True, 'primary_verdict': 'ESTIMATE', 'abs_G3_edit_bound_90': 1.9138666777053137, 'grade': 'SCREEN (RefusEU-TRAIN body; not confirmation)'}

@@ -1,0 +1,434 @@
+{
+ "n_rows": 45207,
+ "by_cell": [
+  {
+   "source": "exp10",
+   "model": "gams3_it",
+   "curve": "E0",
+   "condition": "edited",
+   "lang": "en",
+   "priority": 2,
+   "n": 160
+  },
+  {
+   "source": "exp10",
+   "model": "gams3_it",
+   "curve": "E0",
+   "condition": "edited",
+   "lang": "sl",
+   "priority": 2,
+   "n": 160
+  },
+  {
+   "source": "exp10",
+   "model": "gams3_it",
+   "curve": "O",
+   "condition": "orig",
+   "lang": "en",
+   "priority": 2,
+   "n": 160
+  },
+  {
+   "source": "exp10",
+   "model": "gams3_it",
+   "curve": "O",
+   "condition": "orig",
+   "lang": "sl",
+   "priority": 2,
+   "n": 160
+  },
+  {
+   "source": "exp10",
+   "model": "gemma_it",
+   "curve": "E0",
+   "condition": "edited",
+   "lang": "en",
+   "priority": 2,
+   "n": 160
+  },
+  {
+   "source": "exp10",
+   "model": "gemma_it",
+   "curve": "E0",
+   "condition": "edited",
+   "lang": "sl",
+   "priority": 2,
+   "n": 160
+  },
+  {
+   "source": "exp10",
+   "model": "gemma_it",
+   "curve": "O",
+   "condition": "orig",
+   "lang": "en",
+   "priority": 2,
+   "n": 160
+  },
+  {
+   "source": "exp10",
+   "model": "gemma_it",
+   "curve": "O",
+   "condition": "orig",
+   "lang": "sl",
+   "priority": 2,
+   "n": 160
+  },
+  {
+   "source": "exp11",
+   "model": "gams3_it",
+   "curve": "lambda",
+   "condition": "edited",
+   "lang": "en",
+   "priority": 1,
+   "n": 1600
+  },
+  {
+   "source": "exp11",
+   "model": "gams3_it",
+   "curve": "lambda",
+   "condition": "edited",
+   "lang": "hu",
+   "priority": 3,
+   "n": 250
+  },
+  {
+   "source": "exp11",
+   "model": "gams3_it",
+   "curve": "lambda",
+   "condition": "edited",
+   "lang": "sl",
+   "priority": 1,
+   "n": 1600
+  },
+  {
+   "source": "exp11",
+   "model": "gams3_it",
+   "curve": "orig",
+   "condition": "orig",
+   "lang": "en",
+   "priority": 1,
+   "n": 200
+  },
+  {
+   "source": "exp11",
+   "model": "gams3_it",
+   "curve": "orig",
+   "condition": "orig",
+   "lang": "hu",
+   "priority": 3,
+   "n": 250
+  },
+  {
+   "source": "exp11",
+   "model": "gams3_it",
+   "curve": "orig",
+   "condition": "orig",
+   "lang": "sl",
+   "priority": 1,
+   "n": 200
+  },
+  {
+   "source": "exp11",
+   "model": "gemma_it",
+   "curve": "lambda",
+   "condition": "edited",
+   "lang": "en",
+   "priority": 1,
+   "n": 1600
+  },
+  {
+   "source": "exp11",
+   "model": "gemma_it",
+   "curve": "lambda",
+   "condition": "edited",
+   "lang": "hu",
+   "priority": 3,
+   "n": 247
+  },
+  {
+   "source": "exp11",
+   "model": "gemma_it",
+   "curve": "lambda",
+   "condition": "edited",
+   "lang": "sl",
+   "priority": 1,
+   "n": 1600
+  },
+  {
+   "source": "exp11",
+   "model": "gemma_it",
+   "curve": "orig",
+   "condition": "orig",
+   "lang": "en",
+   "priority": 1,
+   "n": 200
+  },
+  {
+   "source": "exp11",
+   "model": "gemma_it",
+   "curve": "orig",
+   "condition": "orig",
+   "lang": "hu",
+   "priority": 3,
+   "n": 400
+  },
+  {
+   "source": "exp11",
+   "model": "gemma_it",
+   "curve": "orig",
+   "condition": "orig",
+   "lang": "sl",
+   "priority": 1,
+   "n": 200
+  },
+  {
+   "source": "exp8",
+   "model": "gams3_it",
+   "curve": "lambda",
+   "condition": "edited",
+   "lang": "en",
+   "priority": 2,
+   "n": 1400
+  },
+  {
+   "source": "exp8",
+   "model": "gams3_it",
+   "curve": "lambda",
+   "condition": "edited",
+   "lang": "sl",
+   "priority": 2,
+   "n": 1200
+  },
+  {
+   "source": "exp8",
+   "model": "gams3_it",
+   "curve": "orig",
+   "condition": "orig",
+   "lang": "en",
+   "priority": 2,
+   "n": 400
+  },
+  {
+   "source": "exp8",
+   "model": "gams3_it",
+   "curve": "orig",
+   "condition": "orig",
+   "lang": "sl",
+   "priority": 2,
+   "n": 200
+  },
+  {
+   "source": "exp8",
+   "model": "gams3_it",
+   "curve": "trial",
+   "condition": "edited",
+   "lang": "en",
+   "priority": 2,
+   "n": 2900
+  },
+  {
+   "source": "exp8",
+   "model": "gams3_it",
+   "curve": "trial",
+   "condition": "edited",
+   "lang": "sl",
+   "priority": 2,
+   "n": 2900
+  },
+  {
+   "source": "exp8",
+   "model": "gemma_it",
+   "curve": "lambda",
+   "condition": "edited",
+   "lang": "en",
+   "priority": 2,
+   "n": 1800
+  },
+  {
+   "source": "exp8",
+   "model": "gemma_it",
+   "curve": "lambda",
+   "condition": "edited",
+   "lang": "sl",
+   "priority": 2,
+   "n": 1600
+  },
+  {
+   "source": "exp8",
+   "model": "gemma_it",
+   "curve": "orig",
+   "condition": "orig",
+   "lang": "en",
+   "priority": 2,
+   "n": 400
+  },
+  {
+   "source": "exp8",
+   "model": "gemma_it",
+   "curve": "orig",
+   "condition": "orig",
+   "lang": "sl",
+   "priority": 2,
+   "n": 200
+  },
+  {
+   "source": "exp8",
+   "model": "gemma_it",
+   "curve": "trial",
+   "condition": "edited",
+   "lang": "en",
+   "priority": 2,
+   "n": 2900
+  },
+  {
+   "source": "exp8",
+   "model": "gemma_it",
+   "curve": "trial",
+   "condition": "edited",
+   "lang": "sl",
+   "priority": 2,
+   "n": 2900
+  },
+  {
+   "source": "exp9",
+   "model": "gams3_it",
+   "curve": "lambda",
+   "condition": "edited",
+   "lang": "en",
+   "priority": 1,
+   "n": 1280
+  },
+  {
+   "source": "exp9",
+   "model": "gams3_it",
+   "curve": "lambda",
+   "condition": "edited",
+   "lang": "sl",
+   "priority": 1,
+   "n": 1280
+  },
+  {
+   "source": "exp9",
+   "model": "gams3_it",
+   "curve": "orig",
+   "condition": "orig",
+   "lang": "en",
+   "priority": 1,
+   "n": 900
+  },
+  {
+   "source": "exp9",
+   "model": "gams3_it",
+   "curve": "orig",
+   "condition": "orig",
+   "lang": "sl",
+   "priority": 1,
+   "n": 450
+  },
+  {
+   "source": "exp9",
+   "model": "gams3_it",
+   "curve": "trial",
+   "condition": "edited",
+   "lang": "en",
+   "priority": 3,
+   "n": 1120
+  },
+  {
+   "source": "exp9",
+   "model": "gams3_it",
+   "curve": "trial",
+   "condition": "edited",
+   "lang": "sl",
+   "priority": 3,
+   "n": 1120
+  },
+  {
+   "source": "exp9",
+   "model": "gemma_it",
+   "curve": "lambda",
+   "condition": "edited",
+   "lang": "en",
+   "priority": 1,
+   "n": 1280
+  },
+  {
+   "source": "exp9",
+   "model": "gemma_it",
+   "curve": "lambda",
+   "condition": "edited",
+   "lang": "sl",
+   "priority": 1,
+   "n": 1280
+  },
+  {
+   "source": "exp9",
+   "model": "gemma_it",
+   "curve": "orig",
+   "condition": "orig",
+   "lang": "en",
+   "priority": 1,
+   "n": 900
+  },
+  {
+   "source": "exp9",
+   "model": "gemma_it",
+   "curve": "orig",
+   "condition": "orig",
+   "lang": "sl",
+   "priority": 1,
+   "n": 450
+  },
+  {
+   "source": "exp9",
+   "model": "gemma_it",
+   "curve": "rand",
+   "condition": "random",
+   "lang": "en",
+   "priority": 3,
+   "n": 480
+  },
+  {
+   "source": "exp9",
+   "model": "gemma_it",
+   "curve": "rand",
+   "condition": "random",
+   "lang": "sl",
+   "priority": 3,
+   "n": 480
+  },
+  {
+   "source": "exp9",
+   "model": "gemma_it",
+   "curve": "trial",
+   "condition": "edited",
+   "lang": "en",
+   "priority": 3,
+   "n": 2880
+  },
+  {
+   "source": "exp9",
+   "model": "gemma_it",
+   "curve": "trial",
+   "condition": "edited",
+   "lang": "sl",
+   "priority": 3,
+   "n": 2880
+  }
+ ],
+ "dose_bins": {
+  "exp10|lagwin": 640,
+  "exp10|orig": 640,
+  "exp11|high": 4400,
+  "exp11|lagwin": 2497,
+  "exp11|orig": 1450,
+  "exp8|high": 5400,
+  "exp8|lagwin": 7400,
+  "exp8|low": 4400,
+  "exp8|orig": 1200,
+  "exp8|unk": 400,
+  "exp9|lagwin": 9920,
+  "exp9|low": 4160,
+  "exp9|orig": 2700
+ }
+}

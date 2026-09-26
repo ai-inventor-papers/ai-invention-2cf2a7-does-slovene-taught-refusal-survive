@@ -1,0 +1,16 @@
+# 2026-09-24T18:41:40Z https://arxiv.org/pdf/2505.17306 :: respond in|answer in|output language|response language|reply in|in English regardless|language of the response|respond(s|ing)? (only )?in English|answer(s|ing)? in English|in the same language|translated back
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2505.17306
+Type: PDF
+Pattern: respond in|answer in|output language|response language|reply in|in English regardless|language of the response|respond(s|ing)? (only )?in English|answer(s|ing)? in English|in the same language|translated back (1 matches in 109216 chars)
+
+--- Content ---
+
+12793:...lingual jailbreak vulnerability, we show com-
+pliance rates across 14 languages using three instruction-tuned models: Llama3.1-8B-Instruct,
+Qwen2.5-7B-Instruct, and gemma-2-9B-Instruct. Each model is tested on 572 translated
+harmful prompts per language (see dataset details in §5.1), with responses translated back into
+English and evaluated using WildGuard [Han et al., 2024]. As shown in Table 1, all models exhibit
+varying levels of susceptibility across languages.
+Table 1: Crosslingual jailbreak compliance rates (%) based on WildGuard evaluation. Cells high-
+lighted in red indicate languages with success ra...

@@ -1,0 +1,10 @@
+{
+ "lambda0_max_abs_dlogit": 0.0,
+ "lambda0_identity_pass": true,
+ "hook_vs_saved_lambda_1.0_argmax_agree": 20,
+ "hook_vs_saved_lambda_1.0_max_abs_dlogit": 0.0,
+ "hook_vs_saved_lambda_0.5_argmax_agree": 20,
+ "hook_vs_saved_lambda_0.5_max_abs_dlogit": 0.0,
+ "n_prompts": 20,
+ "pass": true
+}

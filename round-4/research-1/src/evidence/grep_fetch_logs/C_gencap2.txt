@@ -1,0 +1,109 @@
+# 2026-09-24T18:37:13Z https://arxiv.org/pdf/2605.18239 :: generation capabilit|weaker generation|proficien|apparent robustness|fluen|translation quality
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2605.18239
+Type: PDF
+Pattern: generation capabilit|weaker generation|proficien|apparent robustness|fluen|translation quality (21 matches in 34855 chars)
+
+--- Content ---
+
+1423:...% (DeepSeek). Human red-teaming increased jailbreak rates compared to automated methods.
+Over all evaluated languages, the average jailbreak rate increased from 59.8% to 75.8%, with
+improvements of +20.0% (Afrikaans), +12.7% (isiZulu), +12.3% (isiXhosa), and +1% (Kiswahili),
+demonstrating that poor translation quality limits jailbreak success. These findings suggest that
+vulnerabilities in LLMs persist in multilingual contexts and that translation quality is the critical
+factor determining jailbreak success in low-resource languages.
+Keywords Multi-turn jailbreaking · Low-resource languages · LLMs · Red-teaming.
+1
+Introduction
+Large Language Models (LLMs) such as ChatGPT1, Claude2, and Gemini3 have seen rapid public adoption following
+their commerci...
+--
+4561:...hile Kiswahili showed rates from 41.8% for Claude
+3.5 Haiku to 70.9% for DeepSeek. Human red-teaming outperformed automated methods, especially for isiXhosa and
+isiZulu. For isiXhosa and isiZulu, human translators increased the jailbreak rates by 12.31% and 312.65% respectively.
+This indicates that translation quality impacts jailbreak effectiveness.
+2
+Related Work
+Despite increasingly sophisticated safety mechanisms, LLMs remain vulnerable to various circumvention techniques
+collectively known as jailbreaking [Yi et al., 2024, Liu et al., 2024, Shen et al., 2024a, Peng et al., 2025].
+Black-box jailbreak attacks...
+--
+11508:...lu (0.0011%), and isiXhosa (0.0007%) are all considered low-
+resource languages. We selected these languages for their varying degrees of resource levels and their representation of
+different language families on the African continent. We used Google Translate’s API for all translations.
+To measure translation quality we used three evaluation metrics, namely, BERTScore [Zhang et al., 2020], METEOR
+[Banerjee and Lavie, 2005] and BLEU [Papineni et al., 2002]. BERTScore computes the similarity between translations
+using contextual BERT embeddings thereby capturing semantic meaning. METEOR evaluates text similarity ...
+--
+12167:...onsidering synonyms, stemming, and word order. Lastly, BLEU provides a measure
+of similarity using overlapping n-grams and only considers exact word matches.
+Language
+BERTScore
+METEOR
+BLEU
+Afrikaans
+0.94
+0.88
+0.67
+Kiswahili
+0.91
+0.79
+0.52
+isiZulu
+0.90
+0.78
+0.50
+isiXhosa
+0.89
+0.76
+0.48
+Table 1: Mean translation quality scores for all multi-turn prompts across the selected low-resource languages.
+3
+
+Multilingual jailbreaking of LLMs using low-resource languages
+A PREPRINT
+Language
+BERTScore
+METEOR
+BLEU
+Afrikaans
+0.98
+0.94
+0.79
+Kiswahili
+0.94
+0.88
+0.64
+isiZulu
+0.94
+0.86
+0.61
+isiXhosa
+0.93
+0.85
+0.60
+Table 2: Thresho...
+--
+13167:...ranslation process, as significant divergence may
+lead to loss of meaning, intent, and general introduction of errors. Table 1 lists the mean metric scores per language.
+Figures 3, 4, and 5 in the Appendix show all metrics’ score distributions for all languages.
+In order to only use prompts of high translation quality, we defined a translation quality score threshold (τ) as
+τm,l = µm,l + σm,l
+(1)
+where µm,l and σm,l are the mean and standard deviation of the scores for the metric m and the language l. We then
+only use the input prompts that exceeded their language-specific quality threshold across all three metrics as high-quality
+candidates. Th...
+--
+14886:...sent individually, after
+which we recorded the model response before proceeding to the next prompt in the multi-turn sequence.
+Subsequently, we sent the high-quality translated prompts to the LLM models following the same process as for the
+English baseline. To prevent previous conversations from influencing subsequent conversations, we conducted each
+jailbreak attempt in a new conversation with no shared context or history of previous attempts. We used the default
+configuration settings provided by each API for all models.
+3.4
+Human Translation
+To evaluate the influence of translation quality of the input prompts on the conversations, we used the same conversations
+that passed our quality thresholds and provided them to human translators to correct language and semantic issues. For
+this, we recruited native speakers for each language who were also fluent in English. We gave each transla...
+--
+[11 more matches not shown]

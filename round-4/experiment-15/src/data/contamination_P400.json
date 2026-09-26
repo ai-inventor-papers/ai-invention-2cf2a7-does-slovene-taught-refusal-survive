@@ -1,0 +1,65 @@
+{
+ "rules": [
+  "id/text exclusion: exp1+exp2 CONSTRUCT; exp4 trial_probe/construct/score400; exp8 P200/DEV20/construct_A2; exp9 P300/DEV12; all exp10 data/*.jsonl; exp11 items (text)",
+  "mlabonne/harmful_behaviors exact (Heretic objective set)",
+  "DEP refuseu_eval/refuseu_x_mt exact or >= 50% word 8-gram overlap (used only as a filter)",
+  "pairwise duplicate normalised text"
+ ],
+ "rows_per_rule": {
+  "exp1_construct": 752,
+  "exp2_construct": 743,
+  "exp4_trial_probe": 100,
+  "exp4_construct": 761,
+  "exp4_score400_iter1_screen": 400,
+  "exp8_P200": 200,
+  "exp8_DEV20": 20,
+  "exp8_construct_A2": 400,
+  "exp9_P300": 300,
+  "exp9_DEV12": 12,
+  "exp10__hard_dev_pool.jsonl": 469,
+  "exp10_addon_harmless.jsonl": 32,
+  "exp10_construct_harm.jsonl": 400,
+  "exp10_hard_dev.jsonl": 30,
+  "exp10_hard_test.jsonl": 100,
+  "exp10_harmless_construct.jsonl": 400,
+  "exp10_induce_dev.jsonl": 24,
+  "exp10_induce_test.jsonl": 48,
+  "exp10_kl_dev.jsonl": 32,
+  "exp10_p200_dev40.jsonl": 40,
+  "exp10_p200_test160.jsonl": 160,
+  "exp10_rq4_harmless.jsonl": 200,
+  "exp11_items_text": 5832
+ },
+ "pool_drops": {
+  "excluded_id": 1064,
+  "excluded_text": 1294,
+  "reserved_exact_or_8gram50": 3,
+  "dup_text": 2
+ },
+ "pool_after_exclusions": 526,
+ "n_dev": 100,
+ "n_body": 400,
+ "fallback_F2": false,
+ "draw_order": "BODY first (rare categories to body), then DEV",
+ "body_categories": {
+  "S1": 62,
+  "S2": 61,
+  "S3": 61,
+  "S4": 18,
+  "S6": 9,
+  "S7": 1,
+  "S8": 1,
+  "S9": 61,
+  "S12": 61,
+  "S13": 4,
+  "S14": 61
+ },
+ "dev_categories": {
+  "S1": 22,
+  "S2": 11,
+  "S9": 23,
+  "S12": 22,
+  "S14": 22
+ },
+ "max_reserved_8gram_frac": 0.438
+}

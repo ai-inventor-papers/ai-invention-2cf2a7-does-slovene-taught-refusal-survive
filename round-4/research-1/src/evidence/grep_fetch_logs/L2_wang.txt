@@ -1,0 +1,205 @@
+# 2026-09-24T18:29:14Z https://arxiv.org/pdf/2505.17306 :: partial|coefficient|alpha|lambda|scal(e|ing)|dose|strength|sibling|continued pre|Qwen2.5|Llama|Gemma|14 languages|compliance rate|yo |Yoruba|fine-tun
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2505.17306
+Type: PDF
+Pattern: partial|coefficient|alpha|lambda|scal(e|ing)|dose|strength|sibling|continued pre|Qwen2.5|Llama|Gemma|14 languages|compliance rate|yo |Yoruba|fine-tun (183 matches in 109216 chars)
+
+--- Content ---
+
+725:...s.
+While this is primarily demonstrated in an English-centric context, appropriate
+refusal behavior is important for any language, but poorly understood. In this paper,
+we investigate the refusal behavior in LLMs across 14 languages using PolyRefuse,
+a multilingual safety dataset created by translating malicious and benign English
+prompts into these languages. We uncover the surprising cross-lingual universality
+of the refusal direction: a vector extracted from English can bypass refusals in
+other languages with near-perfect effectiveness, without any additional fine-tuning.
+Even more remarkably, refusal directions derived from any safety-aligned language
+transfer seamlessly to others. We attribute this transferability to the parallelism of
+refusal vectors across languages in the embedd...
+--
+2437:...in vulnerable to jailbreak attacks, including adversarial prompt
+engineering [Wei et al., 2023, Zou et al., 2023, Liu et al., 2024a, Tao et al., 2024], where carefully
+crafted inputs trigger unsafe outputs, and targeted fine-tuning [Yang et al., 2023, Lermen et al.,
+2024, Zhan et al., 2024], which undermines safety constraints through parameter updates. Notably,
+cross-lingual jailbreaks have emerged as a growing concern [Yong et al., 2024, Li e...
+--
+6349:...ilingual safety defenses.
+2
+Related Work
+LLM Safety and Refusal Mechanism
+In AI safety research, various efforts have been made
+to prevent LLMs from responding to malicious queries. Notable approaches include supervised
+fine-tuning (SFT) [Bianchi et al., 2024] and reinforcement learning from human feedback (RLHF)
+[Bai et al., 2022]. To evaluate the effectiveness of these safety measures, researchers have developed
+comprehensive safety evaluatio...
+--
+10278:...sition i and layer l when processing text t.
+The candidate refusal vectors are obtained by collecting the difference-in-means vectors across all
+layers at final instruction token positions, such as the [/INST] token for Llama2 [Touvron et al.,
+2023]. The most effective refusal vector is then identified by evaluating the reduction in refusal
+behavior after ablating each candidate from the residual stream and choosing the one with the most
+red...
+--
+11956:...vector can be added to
+the activations at all token positions within a specific layer l:
+x′
+l ←xl + αˆrl
+(5)
+3
+
+where ˆrl represents the refusal vector from the same layer as the activation xl, and α ∈[0, 1] serves
+as a scaling parameter controlling the intervention strength.
+As demonstrated by Arditi et al. [2024], enhancing refusal behavior requires vector addition at only a
+single layer, whereas removing refusal behavior necessitates ablation across all layers. We adhere to
+this establis...
+--
+12560:...entric safety alignment has been shown to generalize poorly to other languages [Yong et al.,
+2024, Li et al., 2024a, Deng et al., 2024]. To assess cross-lingual jailbreak vulnerability, we show com-
+pliance rates across 14 languages using three instruction-tuned models: Llama3.1-8B-Instruct,
+Qwen2.5-7B-Instruct, and gemma-2-9B-Instruct. Each model is tested on 572 translated
+harmful prompts per language (see dataset details in §5.1), with responses translated back into
+English and evaluated using WildGuard [Han et al., 2024]. As shown in Table 1, all models exhibit
+varying levels of susceptibility across languages.
+Table 1: Crosslingual jailbreak compliance rates (%) based on WildGuard evaluation. Cells high-
+lighted in red indicate languages with success rates exceeding 10%.
+Instruct model
+ar
+de
+en
+es
+fr
+it
+ja
+ko
+nl
+pl
+ru
+th
+yo
+zh
+LLama3.1-8B
+6.1
+3.5
+1.9
+2.4
+2.3
+2.6
+25.0
+29.2
+3.0
+9.1
+3.8
+10.0
+82.9
+11.9
+Qwen2.5-7B
+16.3
+13.5
+9.6
+8.7
+12.4
+9.6
+22.2
+23.4
+16.1
+12.4
+9.6
+21.0
+74.0
+14.9
+gemma2-9B
+3.8
+1.4
+0.4
+2.6
+1.9
+1.0
+5.4
+7.9
+1.7
+2.4
+2.6
+4.5
+56.6
+3.1
+We found that Yoruba (yo) exhibits significant safety misalignment across the models, with particularly
+concerning results on Llama3.1-8B-Instruct (82.9%) and Qwen2.5-7B (74.9%). These high
+percentages indicate a critical absence of refusal capabilities when prompted in Yoruba, leading
+us to classify it as a safety-misaligned language for both models. This vulnerability represents a
+substantial safety gap that requires addressing in future model iterations.
+5
+Assessing Refusal Directions Acro...
+--
+15745:...ish prompts into 13 languages using
+Google Translate: German (de), Spanish (es), French (fr), Italian (it), Dutch (nl), Japanese (ja), Polish
+4
+
+(pl), Russian (ru), Chinese (zh), Korean (ko), Arabic (ar), Thai (th), and Yoruba (yo).3 We call this
+dataset PolyRefuse. PolyRefuse encompasses typologically diverse languages from Indo-European,
+Sino-Tibetan, Japonic, Afroasiatic, Koreanic, Tai-Kadai, and Niger-Congo language families and
+represent...
+--
+17467:...viding a comprehensive assessment
+of refusal vector transferability.
+5.2
+Cross-lingual Transfer of English Refusal Vectors
+endeesfrit
+nljaplruzhkoarth
+yo
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+Yi-6B-Chat
+endeesfrit
+nljaplruzhkoarth
+yo
+gemma-2b-it
+endeesfrit
+nljaplruzhkoarth
+yo
+Llama-3-8B-Instruct
+endeesfrit
+nljaplruzhkoarth
+yo
+Llama-3-70B-Instruct
+endeesfrit
+nljaplruzhkoarth
+yo
+Llama-3.1-8B-Instruct
+endeesfrit
+nljaplruzhkoarth
+yo
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+gemma-2-9b-it
+endeesfrit
+nljaplruzhkoarth
+yo
+Qwen2.5-3B-Instruct
+endeesfrit
+nljaplruzhkoarth
+yo
+Qwen2.5-7B-Instruct
+endeesfrit
+nljaplruzhkoarth
+yo
+Qwen2.5-14B-Instruct
+endeesfrit
+nljaplruzhkoarth
+yo
+Qwen2.5-32B-Instruct
+Baseline
+EN Ablation
+Figure 1: Compliance rates to harmful queries before and after ablating refusal vectors derived from
+English. Ablation leads to a substantial increase in compliance across all languages and models,
+indicating refusal direction derived from Engli...
+--
+[153 more matches not shown]

@@ -1,0 +1,62 @@
+# 2026-09-24T18:41:40Z https://arxiv.org/pdf/2608.29936 :: respond in|answer in|output language|response language|reply in|in English regardless|language of the response|respond(s|ing)? (only )?in English|answer(s|ing)? in English|in the same language|target language ratio
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2608.29936
+Type: PDF
+Pattern: respond in|answer in|output language|response language|reply in|in English regardless|language of the response|respond(s|ing)? (only )?in English|answer(s|ing)? in English|in the same language|target language ratio (4 matches in 68022 chars)
+
+--- Content ---
+
+6232:...ge entanglement predict the cost of mono-
+and cross-lingual safety interventions? Across tar-
+geted feature interventions, safety-language entan-
+glement scores predict not only harmful response
+rates but also language identity degradation and flu-
+ency cost across experiments, including a complete
+output language shift under high cross-lingual sim-
+ilarity, demonstrating that geometric entanglement
+is not merely descriptive but causally consequential
+(Section 4.3).
+Taken together, our findings show that safety-
+language entanglement is architecture-dependent,
+varies in strength and depth across models, and ...
+--
+30070:...,
+DecCos=0.028), Gemma (0.111,0.223), Qwen
+(0.428,0.809). In Qwen, the high cross-lingual sim-
+ilarity is compounded by strong within-language
+
+Figure 2: Harm↔Language entanglement across LLMs (Jaccard: solid; decoder cosine: dashed). (b) Decoder
+cosine entanglement predicts language identity cost (target language ratio drop ↓) across intervention experiments.
+entanglement at the same layer (VI harmless ↔VI
+lang: DecCos=0.451; ZH harm ↔ZH lang: 0.466),
+meaning both the ablated and injected features are
+geometrically coupled to their respective language
+identities. All three show modest safety improve-
+ments (−6.31, −1.85, −4.00 pp), with language
+identity follows the decoder cosine ordering pre-
+cisely: Llama preserves Vietnamese near-perfectly
+(∆= −0.004), Gemma shows a moderate drop
+(∆= −0.051), and Qwen undergoes a complete
+output language shift (∆= −0.613), with fluency
+degrading accordingly (Class 3: 98%, 90%, 64%)
+(Figure 35). We further verify in Appendix F that
+using safety features orthogonal to language iden-
+tity preserves VI output (∆≈0.01) at the cost
+of weaker safety improvement (12.4% vs. 20.4%
+relative reduction). Note t...
+--
+46109:...language
+identity; an assumption our work directly examines
+and qualifies.
+Multilingual Representations via SAEs.
+Re-
+cent work applies SAEs to multilingual representa-
+tion analysis, showing that language identity is re-
+liably captured at the SAE feature level: language-
+specific features control output language (Andrylie
+et al., 2025), monolinguality scores enable se-
+lective language suppression (Deng et al., 2025),
+medium/low-resource languages activate SAE fea-
+tures less strongly than English (Xuan et al., 2025),
+and SAE interpretability is used to characterize
+the developmental trajectory of multilin...

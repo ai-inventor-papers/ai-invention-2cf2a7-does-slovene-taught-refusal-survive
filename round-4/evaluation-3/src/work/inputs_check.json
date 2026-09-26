@@ -1,0 +1,118 @@
+{
+ "exp9_items": {
+  "path": "round-3/experiment-9/src/results/items_final.jsonl",
+  "exists": true
+ },
+ "exp9_probe": {
+  "path": "round-3/experiment-9/src/data/probe_P300.jsonl",
+  "exists": true
+ },
+ "exp9_twins": {
+  "path": "round-3/experiment-9/src/data/twins_T150.jsonl",
+  "exists": true
+ },
+ "exp9_rubric": {
+  "path": "round-3/experiment-9/src/results/adjudication_rubric.md",
+  "exists": true
+ },
+ "exp9_adj_items": {
+  "path": "round-3/experiment-9/src/results/adjudication_items.jsonl",
+  "exists": true
+ },
+ "exp9_adj_key": {
+  "path": "round-3/experiment-9/src/results/adjudication_key.json",
+  "exists": true
+ },
+ "exp11_rows": {
+  "path": "round-3/experiment-11/src/results/rows_final.parquet",
+  "exists": true
+ },
+ "exp11_adj_labels": {
+  "path": "gen_art/gen_art_experiment_11/results/adjudication/adjudication_labels.jsonl",
+  "exists": true
+ },
+ "exp11_adj_key": {
+  "path": "gen_art/gen_art_experiment_11/results/adjudication/adjudication_key.jsonl",
+  "exists": true
+ },
+ "exp11_protocol": {
+  "path": "round-3/experiment-11/src/protocol.yaml",
+  "exists": true
+ },
+ "exp8_items": {
+  "path": "round-2/experiment-8/src/results/items_final.jsonl",
+  "exists": true
+ },
+ "exp8_judge_labels": {
+  "path": "round-2/experiment-8/src/results/judge_labels.jsonl",
+  "exists": true
+ },
+ "exp8_common": {
+  "path": "round-2/experiment-8/src/src/common.py",
+  "exists": true
+ },
+ "exp10_test_gemma": {
+  "path": "gen_art_experiment_10/results/test/gemma_it/addon.jsonl",
+  "exists": true
+ },
+ "exp10_test_gams": {
+  "path": "gen_art_experiment_10/results/test/gams3_it/addon.jsonl",
+  "exists": true
+ },
+ "eval2_master": {
+  "path": "round-3/evaluation-2/src/work/master.parquet",
+  "exists": true
+ },
+ "eval2_relabelled": {
+  "path": "round-3/evaluation-2/src/work/items_relabelled.jsonl.gz",
+  "exists": true
+ },
+ "eval2_adj_labels": {
+  "path": "round-3/evaluation-2/src/work/adj_labels_ordered.txt",
+  "exists": true
+ },
+ "eval2_results": {
+  "path": "round-3/evaluation-2/src/results/eval_results.json",
+  "exists": true
+ },
+ "eval2_error_matrices": {
+  "path": "round-3/evaluation-2/src/judge_error_matrices.json",
+  "exists": true
+ },
+ "exp12_gates": {
+  "path": "round-3/experiment-12/src/results/gates.json",
+  "exists": true
+ },
+ "ds1_full_data": {
+  "path": "round-1/dataset-1/src/full_data_out.json",
+  "exists": true
+ },
+ "C1_gold_calib_check": {
+  "claim": "refuseu_gold_calib block is hazard-category gold for PROMPTS, not refusal labels for responses",
+  "block": "refuseu_gold_calib",
+  "n": 590,
+  "fields": [
+   "input",
+   "metadata_core_majority",
+   "metadata_core_pure",
+   "metadata_fold",
+   "metadata_gold_pair_id",
+   "metadata_gold_split",
+   "metadata_hf_id",
+   "metadata_item_id",
+   "metadata_lang",
+   "metadata_llama_guard3_verdict",
+   "metadata_pred_f1_gpt41mini",
+   "metadata_pred_f1_runner_up",
+   "metadata_pred_f2_gemini25flash",
+   "metadata_pred_f2_runner_up",
+   "metadata_pred_llama_guard3",
+   "metadata_pred_tfidf",
+   "metadata_row_id",
+   "output"
+  ],
+  "example_output": "S14",
+  "has_response_field": false,
+  "verified": true
+ }
+}
