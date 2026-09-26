@@ -1,0 +1,22 @@
+{
+ "identity": {
+  "n": 60,
+  "DiD_id_rederived": 3.219072836739717,
+  "reported": 3.219072836739717,
+  "lang_swap_placebo_mean": 0.004182650973448084,
+  "perm_p": 0.0
+ },
+ "mt_arm_R_judge": {
+  "n": 400,
+  "rates": [
+   0.97,
+   0.9875,
+   0.97,
+   0.9675
+  ],
+  "DiD_pp_rederived": -2.0000000000000018,
+  "reported_pp": -2.0000000000000018,
+  "model_swap_placebo_mean": 0.06400000000000006,
+  "perm_p": 0.138
+ }
+}

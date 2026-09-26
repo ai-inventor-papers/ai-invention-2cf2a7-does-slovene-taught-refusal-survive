@@ -1,0 +1,158 @@
+[
+ {
+  "number": 0,
+  "values": [
+   0.98,
+   0.0062688360922038555
+  ],
+  "params": {
+   "direction_scope": "global",
+   "direction_index": 35.28625933815789,
+   "attn.o_proj.max_weight": 1.335652908640471,
+   "attn.o_proj.max_weight_position": 37.69651585109827,
+   "attn.o_proj.min_weight": 0.7109502662442033,
+   "attn.o_proj.min_weight_distance": 9.111903269991311,
+   "mlp.down_proj.max_weight": 0.7424929048243758,
+   "mlp.down_proj.max_weight_position": 28.434746118394052,
+   "mlp.down_proj.min_weight": 0.07349923770273847,
+   "mlp.down_proj.min_weight_distance": 3.964808604651576
+  },
+  "user_attrs": {
+   "index": 1,
+   "direction_index": 35.28625933815789,
+   "parameters": {
+    "attn.o_proj": {
+     "max_weight": 1.335652908640471,
+     "max_weight_position": 37.69651585109827,
+     "min_weight": 0.9495827910077874,
+     "min_weight_distance": 9.111903269991311
+    },
+    "mlp.down_proj": {
+     "max_weight": 0.7424929048243758,
+     "max_weight_position": 28.434746118394052,
+     "min_weight": 0.054572662504283574,
+     "min_weight_distance": 3.964808604651576
+    }
+   },
+   "scores": [
+    {
+     "name": "Refusals",
+     "score": {
+      "value": 0.98,
+      "rich_display": "[bold]98[/]/100",
+      "md_display": "98/100"
+     },
+     "baseline": {
+      "value": 0.99,
+      "rich_display": "[bold]99[/]/100",
+      "md_display": "99/100"
+     }
+    },
+    {
+     "name": "KL divergence",
+     "score": {
+      "value": 0.0062688360922038555,
+      "rich_display": "[bold]0.0063[/]",
+      "md_display": "0.0063"
+     },
+     "baseline": {
+      "value": 0,
+      "rich_display": "[bold]0[/] [italic](by definition)[/]",
+      "md_display": "0 *(by definition)*"
+     }
+    }
+   ],
+   "bilingual": {
+    "R_en": 1.0,
+    "s_en": 5.80099081993103,
+    "KL_sel_en": 0.0120452911380694,
+    "KL_eval_en": 0.002649726454150809,
+    "R_sl": 1.0,
+    "s_sl": 10.356253802776337,
+    "KL_sel_sl": 0.0012893087846350682,
+    "KL_eval_sl": 0.003293270088306599
+   },
+   "t_objective_s": 49.0,
+   "t_total_s": 76.6
+  },
+  "state": "TrialState.COMPLETE"
+ },
+ {
+  "number": 1,
+  "values": [
+   0.77,
+   0.026857271790504456
+  ],
+  "params": {
+   "direction_scope": "per layer",
+   "direction_index": 28.453405052387367,
+   "attn.o_proj.max_weight": 1.1354815621704315,
+   "attn.o_proj.max_weight_position": 34.62115535320629,
+   "attn.o_proj.min_weight": 0.764242165311383,
+   "attn.o_proj.min_weight_distance": 16.41921946254915,
+   "mlp.down_proj.max_weight": 0.3653741755405121,
+   "mlp.down_proj.max_weight_position": 45.03475834526613,
+   "mlp.down_proj.min_weight": 0.09070927458977673,
+   "mlp.down_proj.min_weight_distance": 12.902326746679812
+  },
+  "user_attrs": {
+   "index": 2,
+   "direction_index": null,
+   "parameters": {
+    "attn.o_proj": {
+     "max_weight": 1.1354815621704315,
+     "max_weight_position": 34.62115535320629,
+     "min_weight": 0.8677828877442824,
+     "min_weight_distance": 16.41921946254915
+    },
+    "mlp.down_proj": {
+     "max_weight": 0.3653741755405121,
+     "max_weight_position": 45.03475834526613,
+     "min_weight": 0.0331428264171176,
+     "min_weight_distance": 12.902326746679812
+    }
+   },
+   "scores": [
+    {
+     "name": "Refusals",
+     "score": {
+      "value": 0.77,
+      "rich_display": "[bold]77[/]/100",
+      "md_display": "77/100"
+     },
+     "baseline": {
+      "value": 0.99,
+      "rich_display": "[bold]99[/]/100",
+      "md_display": "99/100"
+     }
+    },
+    {
+     "name": "KL divergence",
+     "score": {
+      "value": 0.026857271790504456,
+      "rich_display": "[bold]0.0269[/]",
+      "md_display": "0.0269"
+     },
+     "baseline": {
+      "value": 0,
+      "rich_display": "[bold]0[/] [italic](by definition)[/]",
+      "md_display": "0 *(by definition)*"
+     }
+    }
+   ],
+   "bilingual": {
+    "R_en": 0.75,
+    "s_en": -3.615871787071228,
+    "KL_sel_en": 0.00888337474589207,
+    "KL_eval_en": 0.02482083042458605,
+    "R_sl": 0.375,
+    "s_sl": 5.825001895427704,
+    "KL_sel_sl": 0.0009215842682976927,
+    "KL_eval_sl": 0.003002101497408205
+   },
+   "t_objective_s": 49.6,
+   "t_total_s": 77.1
+  },
+  "state": "TrialState.COMPLETE"
+ }
+]

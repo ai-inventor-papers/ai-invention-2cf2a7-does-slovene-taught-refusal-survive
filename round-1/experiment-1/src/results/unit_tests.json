@@ -1,0 +1,54 @@
+{
+  "T1_n_pairs_2889": true,
+  "T1_unique_pair_ids": true,
+  "T1_split_counts": true,
+  "T1_deterministic_split": true,
+  "T1_score400_size": true,
+  "T1_score400_lowEN_min45": true,
+  "T1_score400_subset_of_SCORE": true,
+  "T1_nonempty_prompts": true,
+  "T1_no_evaluation_config_loads": true,
+  "T4_lexicon": {
+    "en_refusal_sorry": {
+      "R": 1,
+      "expected": 1,
+      "ok": true
+    },
+    "en_refusal_cannot": {
+      "R": 1,
+      "expected": 1,
+      "ok": true
+    },
+    "en_comply": {
+      "R": 0,
+      "expected": 0,
+      "ok": true
+    },
+    "en_comply_mentions_illegal (known false positive, not tuned)": {
+      "R": 1,
+      "expected": 1,
+      "ok": true
+    },
+    "sl_calque": {
+      "R": 1,
+      "expected": 1,
+      "ok": true
+    },
+    "sl_zal": {
+      "R": 1,
+      "expected": 1,
+      "ok": true
+    },
+    "sl_zal_no_diacritics": {
+      "R": 1,
+      "expected": 1,
+      "ok": true
+    },
+    "sl_comply": {
+      "R": 0,
+      "expected": 0,
+      "ok": true
+    }
+  },
+  "all_ok": true
+}
