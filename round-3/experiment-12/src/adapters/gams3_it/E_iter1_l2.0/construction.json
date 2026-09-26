@@ -1,0 +1,8 @@
+{
+  "kind": "lambda_scaled",
+  "lambda": 2.0,
+  "base": "E_iter1",
+  "rule": "every lora_B tensor x lambda",
+  "sum_lora_B_norm": 117.0714,
+  "n_nonzero_B": 69
+}

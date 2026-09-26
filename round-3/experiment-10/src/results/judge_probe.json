@@ -1,0 +1,6 @@
+{
+  "status": 403,
+  "blocked": true,
+  "raw": "{\"error\": {\"code\": \"aii_run_budget_exhausted\", \"message\": \"AI Inventor per-run OpenRouter budget reached for Test idea: $7.02 of $7.00 spent by this run in that phase. This is AI Inventor's internal l",
+  "cost": 0.0
+}

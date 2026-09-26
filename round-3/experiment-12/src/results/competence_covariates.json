@@ -1,0 +1,36 @@
+{
+  "gams3_it": {
+    "en": {
+      "orig_bpb": 0.7630087798361249,
+      "belebele_acc_orig": 0.93,
+      "harmless_gen_lang_consistency_orig": 1.0
+    },
+    "sl": {
+      "orig_bpb": 0.8895112029213721,
+      "belebele_acc_orig": 0.85,
+      "harmless_gen_lang_consistency_orig": 0.98
+    },
+    "hu": {
+      "orig_bpb": 0.8987025601323131,
+      "belebele_acc_orig": 0.885,
+      "harmless_gen_lang_consistency_orig": 0.96
+    }
+  },
+  "gemma_it": {
+    "en": {
+      "orig_bpb": 0.8725006799036358,
+      "belebele_acc_orig": 0.94,
+      "harmless_gen_lang_consistency_orig": 1.0
+    },
+    "sl": {
+      "orig_bpb": 1.198843474315036,
+      "belebele_acc_orig": 0.86,
+      "harmless_gen_lang_consistency_orig": 0.96
+    },
+    "hu": {
+      "orig_bpb": 1.1155221586868778,
+      "belebele_acc_orig": 0.82,
+      "harmless_gen_lang_consistency_orig": 0.98
+    }
+  }
+}

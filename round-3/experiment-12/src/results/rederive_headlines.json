@@ -1,0 +1,66 @@
+{
+  "gams3_it/E_iter1": {
+    "loss_en": 0.018,
+    "loss_sl": -0.00653,
+    "A": 0.02453,
+    "placebo_shuffled_H_en": -0.0393,
+    "placebo_shuffled_H_sl": 0.00337
+  },
+  "gams3_it/E_art2": {
+    "loss_en": 0.01989,
+    "loss_sl": 0.00884,
+    "A": 0.01104,
+    "placebo_shuffled_H_en": -0.0089,
+    "placebo_shuffled_H_sl": -0.01317
+  },
+  "gams3_it/rand_nm_j1": {
+    "loss_en": 0.00343,
+    "loss_sl": 0.03003,
+    "A": -0.0266,
+    "placebo_shuffled_H_en": -0.0014,
+    "placebo_shuffled_H_sl": -0.01301
+  },
+  "gemma_it/E_iter1": {
+    "loss_en": -0.00772,
+    "loss_sl": -0.0218,
+    "A": 0.01408,
+    "placebo_shuffled_H_en": 0.00628,
+    "placebo_shuffled_H_sl": -0.00056
+  },
+  "gemma_it/E_art2": {
+    "loss_en": -0.01634,
+    "loss_sl": -0.04908,
+    "A": 0.03275,
+    "placebo_shuffled_H_en": 0.01503,
+    "placebo_shuffled_H_sl": 0.03459
+  },
+  "gemma_it/rand_nm_j1": {
+    "loss_en": -0.00852,
+    "loss_sl": -0.00157,
+    "A": -0.00695,
+    "placebo_shuffled_H_en": -0.0022,
+    "placebo_shuffled_H_sl": -0.00373
+  },
+  "I/E_iter1": 0.01045,
+  "I/E_art2": -0.02171,
+  "gams3_it/KL_multi_EXCESS_E_iter1": 0.5657,
+  "gams3_it/KL_edit_ratio_arm_shuffled_placebo": 0.9884,
+  "gemma_it/KL_multi_EXCESS_E_iter1": 0.2942,
+  "gemma_it/KL_edit_ratio_arm_shuffled_placebo": 0.9734,
+  "agrees_with_analysis_json": {
+    "gams3_it/E_iter1": 1.0,
+    "gams3_it/E_art2": 1.0,
+    "gams3_it/rand_nm_j1": 1.0,
+    "gemma_it/E_iter1": 1.0,
+    "gemma_it/E_art2": 1.0,
+    "gemma_it/rand_nm_j1": 1.0
+  },
+  "I_analysis": {
+    "E_iter1": 0.01045,
+    "E_art2": -0.02171
+  },
+  "KL_EXCESS_analysis": {
+    "gams3_it": 0.5657280565905155,
+    "gemma_it": 0.29418649148092996
+  }
+}
