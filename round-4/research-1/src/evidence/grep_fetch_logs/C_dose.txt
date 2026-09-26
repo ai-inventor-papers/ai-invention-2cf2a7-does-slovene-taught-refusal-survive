@@ -1,0 +1,89 @@
+# 2026-09-24T18:37:13Z https://arxiv.org/pdf/2608.25390 :: dose|partial|strength|over-refusal|trade-off|alpha|α|Gemma|models
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2608.25390
+Type: PDF
+Pattern: dose|partial|strength|over-refusal|trade-off|alpha|α|Gemma|models (38 matches in 92098 chars)
+
+--- Content ---
+
+220:Refusal geometry reflects refusal training: diverse
+refusal prefixes can raise stable rank and weaken
+refusal vector ablation attacks
+Andrey Labunets
+UC San Diego
+alabunets@ucsd.edu
+Abstract
+Refusal training protects AI models from jailbreaks by training models to decline
+unsafe queries, reducing the risk of misuse. Recent work finds that refusal behavior
+in aligned language models can be mediated by a single activation direction or a
+low-dimensional refusal subspace shared across harmful prompts: ablating those
+directions suppresses refusals while largely preserves other model capabilities. Yet
+it remains unclear why safety-critical features in a wide range of models emerge in
+a concentrated, low-dimensional structure. In a case study of OLMo-2-0425-1B-
+Instruct we find that the refusal geometry reflects refusal training: activation updates
+resulting from refusal-completion first-token losses explain the resulting refusal...
+--
+1777:...-art AI systems are beginning to exhibit dual-use capabilities that could pose severe
+risks if misused, such as exploit generation [41], or assistance with biological threat creation or
+bio-weaponization [11, 34]. This motivates the now-standard view that, as models become more
+capable, protections should prevent harmful outputs and catastrophic misuse of AI [9, 42].
+AI safety and security study ways to reduce these risks, which is typically done with multi-layered
+approaches. Frontier-safety frameworks emphasize capabil...
+--
+2380:...s, monitoring, access controls, and broader ecosystem-level
+defenses [9, 27, 29, 32, 42]. Model-weight security is important because weight access can allow
+protections to be modified or removed; at the same time, weights access scenario is realistic for open
+models, insider compromise, model theft, and sufficiently capable adversaries [11, 18, 19].
+A central technical layer of protection for deployed models, including open-weights models, is safety
+alignment: models are trained to remain helpful on benign requests while refusing instructions that
+request harmful assistance or dangerous capabilities [5, 6, 21]. These protections are also evaluated
+against jailbreak attacks that aim to bypass safety alignment [7, 10, 13, 15, 16]. This safety-aligned
+behavior is often induced by training on harmful prompts paired with safe refusal completions.
+Recent evidence, however, shows that in local, white-box settings those refusals in aligned language
+models can be mediated by a low-dimensional mechanism: refusal direction, or a single vector
+in representation space, projections on which strongly control refuse/comply behavior [17]. More
+Preprint.
+arXiv:2608.25390v2  [cs.LG]  3 Sep 2026
+
+broadly, activation-steer...
+--
+5848:...ulnerable to a shared single-
+vector ablation. Concretely, in these settings, we show the following contributions:
+• Training-origin geometry. We show that cross-entropy losses on the first tokens of harmful
+prompts’ completions induce activation changes with partial geometric correspondence
+to the refusal subspace: their means exhibit completion-dependent signed alignment with
+the refusal direction, and their principal directions partially overlap direction space of
+refusal subspace. For refusal completions, the per-gradient-step activation-change and final
+refusal-residual matrices also have comparable low stable rank.
+• Prefix concentration and spectral collapse. We identify concentrated re...
+--
+20127:...eover, agreement at the level of
+stable rank does not imply matrix-level agreement; we evaluate the latter separately using relative
+Frobenius error, relative spectral error, and row-wise cosine similarity.
+4
+Empirical validation
+4.1
+Experimental setup
+Target models.
+We perform measurements against allenai/OLMo-2-0425-1B-Instruct, an
+instruction-tuned OLMo 2 1B model with 16 transformer blocks, 16 attention heads, and hidden
+dimension d = 2048. For the training-stage analysis in Section 4.2, we evaluate its additional ch...
+--
+25416:...are positively
+aligned with it. Thus, refusal and non-refusal targets move along approximately the same refusal axis
+but in opposite directions, supporting Equation (18). This effect appears primarily for the refusal
+directions estimated at middle layer 7 and partially from the last layer 15. The same column also shows
+average principal-angle overlap between V(∆Hc) and V(Gc). At layer 15, refusal-target updates
+subspace overlap refusal subspace more than both random-English and ablated-jailbreak controls
+gradient update s...
+--
+27787:...lumn:
+mean alignment and average principal-angle overlap. Right column: stable rank comparison. Top
+row: layer 7; bottom row: layer 15.
+Together, these three diagnostics support the main empirical implication of Equation (17): signed
+mean-direction alignment, partial and layer-dependent principal-subspace overlap, and closely
+matched stable ranks. They support an approximate affine-subspace relationship.
+As a complementary uncentered diagnostic, at the refusal-estimating layer 7, the leading right-singular
+axis of G has m...
+--
+[23 more matches not shown]

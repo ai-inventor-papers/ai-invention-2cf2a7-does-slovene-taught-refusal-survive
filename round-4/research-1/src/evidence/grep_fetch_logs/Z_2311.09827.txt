@@ -1,0 +1,73 @@
+# 2026-09-24T18:41:40Z https://arxiv.org/pdf/2311.09827 :: respond in|answer in|output language|response language|reply in|in English regardless|language of the response|respond(s|ing)? (only )?in English|answer(s|ing)? in English|in the same language
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2311.09827
+Type: PDF
+Pattern: respond in|answer in|output language|response language|reply in|in English regardless|language of the response|respond(s|ing)? (only )?in English|answer(s|ing)? in English|in the same language (1 matches in 69347 chars)
+
+--- Content ---
+
+18169:...da
+pt
+bg
+it
+fr
+ro
+ca
+sr
+uk
+es
+pl
+hr
+ru
+sl
+cs
+de
+nl
+hu
+Prompt Lan
+sv
+da
+pt
+bg
+it
+fr
+ro
+ca
+sr
+uk
+es
+pl
+hr
+ru
+sl
+cs
+de
+nl
+hu
+Response Lan
+AdvBench: vicuna-13b
+0
+100
+200
+300
+400
+500
+Figure 3: The language distribution of responses (y axes) from three representative LLMs to monolingual prompts
+(x axes) on AdvBench. Vicuna is able to respond in the same language as the user’s prompt, while Llama 2 always
+expresses refusal to answer questions in English (discussed in Appx. §C). The language distribution of responses
+from other model families is similar to that of Vicuna, hence we leave their visualization in Figs. 9 and 10.
+0
+10
+20
+30
+40
+50
+lan
+0
+20
+40
+60
+80
+100
+ASR
+ll...

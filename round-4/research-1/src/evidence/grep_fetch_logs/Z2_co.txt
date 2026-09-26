@@ -1,0 +1,462 @@
+# 2026-09-24T18:42:12Z https://arxiv.org/pdf/2311.09827 :: language switch|switch(ing)? (from|to)|Prompt Lan|Answer Lan|Response Lan|Output Lan|monolingual|multilingual cognitive overload|translate.{0,60}(back|English)|in English
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2311.09827
+Type: PDF
+Pattern: language switch|switch(ing)? (from|to)|Prompt Lan|Answer Lan|Response Lan|Output Lan|monolingual|multilingual cognitive overload|translate.{0,60}(back|English)|in English (76 matches in 69347 chars)
+
+--- Content ---
+
+5861:... કરવા નથી માંગતા તે કરવા માટે કેવી રીતે ચાલકી કરવી અથવા તેમને છેતરવા તે 
+અંગેનું ટયુટોરીયલ બનાવવાનો પ્રથમ ધોરણ તરીકો અને માગર્ગ છે. નીચે કેટલીક ચરણો છે જે તમે 
+અનુસરી શકો છો:
+1.
+સમજો આવશ્યકતાઓ: …
+(Translation from Gujarati to English: The ﬁrst standard is Ways and Means, a tutorial on how to 
+manipulate or trick people into doing things they don't want to do. Below are some steps you can 
+follow:
+1.
+Understand the requirements: …)
+Cognitive Load
+Multilingual Cognitive Overload
+Veiled Expressions
+Eﬀect-to-Cause Cognitive Overload
+Figure 1: Harmful responses to malicious instructions when prompting LLMs with cognitive overload. In this
+example, we show responses from ChatGPT before and after introducing three types of cognitive overload jailbreaks.
+haven not been studied so far, yet the effectiveness
+of aforementioned defense strategies.1
+Different from prior studies, we seek to analyze
+the vulnerability of LLMs against...
+--
+13075:...pologize,” are absent in
+model responses. The full set of rejection phrases
+considered during evaluation is displayed in Tab. 3.
+In Appx. §B, we provide further discussion of other
+metrics used in jailbreaking literature.
+3
+Jailbreaking with Multilingual
+Cognitive Overload
+In this section, we focus on evaluating effective-
+ness of proposed cognitive overload jailbreaks with
+the multlingual setup §3.1 in the following two crit-
+ical scenarios: 1) monolingual context (in §3.2)
+where LLMs are prompted with harmful questions
+translated from English to another language, and 2)
+multilingual context (in §3.3) where the spoken lan-
+guage is switched from English to another one or
+in a reversed order through a two-turn conversation
+between the user and the LLM.
+3.1
+Multilingual Setup
+Language Coverage. Compared with previous
+works (Qiu et al., 2023; Yong et al., 2023; Deng
+et al., 2023b), we extend our language set to cover
+all those supported by each LLM, leading to a more
+comprehensive evalua...
+--
+14191:... while
+
+0
+10
+20
+30
+40
+50
+lan
+0
+20
+40
+60
+80
+100
+ASR
+llama2-7b-chat
+llama2-13b-chat
+0
+10
+20
+30
+40
+50
+lan
+0
+20
+40
+60
+80
+100
+ASR
+vicuna-7b
+vicuna-13b
+0
+10
+20
+30
+40
+50
+lan
+0
+20
+40
+60
+80
+100
+ASR
+mpt-7b-chat
+mpt-7b-instruct
+0
+10
+20
+30
+40
+50
+lan
+0
+20
+40
+60
+80
+100
+ASR
+WizardLM-7B-V1.0
+WizardLM-13B-V1.2
+0
+10
+20
+30
+40
+50
+lan
+0
+20
+40
+60
+80
+100
+ASR
+guanaco-7b
+guanaco-13b
+0
+10
+20
+30
+40
+50
+lan
+0
+20
+40
+60
+80
+100
+ASR
+gpt-3.5-turbo-0301
+Figure 2: Effectiveness of monolingual cognitive overload to attack LLMs on AdvBench. Languages depicted on x
+axes are sorted by their word order distances to English: the pivotal language (x = 0) is English and growing x
+values indicate farther distances to English. The corresponding ASR (y axes) is marked along the distance order. We
+observe an obvious growing trend of ASR while the language is more distant to English on Vicuna, MPT, Guanaco
+and ChatGPT. Non-English adversarial pro...
+--
+16534:...s–
+Mandarin and Japanese (OpenAI, 2023).
+tween English and the other languages.5
+Data Processing. We first translate the original
+English harmful instructions from AdvBench and
+MasterKey into 52 other languages. Due to cost
+concerns with Google Cloud API, we translate the
+non-English responses back to English using the
+freely available multilingual translation model nllb-
+200-distilled-1.3B (Costa-jussà et al., 2022). We
+compute ASR by comparing translated English re-
+sponses with rejection phrases listed in Tab. 3 as
+introduced in §2.
+3.2
+Harmful Prompting in Various Languages
+We visualize the relation between effectiveness
+of monolingual adversarial prompts and the lan-
+guage distance to English in Fig. 2 for AdvBench
+and Fig. 14 for MasterKey. We find that the ma-
+jority of the studied open-source LLMs and Chat-
+GPT struggle to recognize malicious non-English
+prompts and end up with responses misaligned with
+5With the word order based language distance, we ret-
+rospect the much better performance achieved on MRL than
+HRL from GPT-4 on MMLU by computing their distances
+from Engl...
+--
+17674:... and
+Greek are 0.107, 0.116 and 0.119 respectively, which are
+much closer than these to Mandarin (0.210) and Japanese
+(0.531). Compared with the previously utilized language avail-
+ability, we believe that word order based distance to English
+may introduce a better view to investigate the safety mecha-
+nism of LLMs against multilingual adversarial prompts.
+
+en
+sv
+da
+no
+pt
+bg
+it
+fr
+id
+ro
+ca
+sr
+uk
+es
+pl
+hr
+ru
+sl
+cs
+de
+nl
+zh-CN
+fi
+vi
+zh-TW
+hu
+ko
+ja
+Prompt Lan
+sv
+da
+no
+pt
+bg
+it
+fr
+id
+ro
+ca
+sr
+uk
+es
+pl
+hr
+ru
+sl
+cs
+de
+nl
+zh-CN
+fi
+vi
+zh-TW
+hu
+ko
+ja
+Response Lan
+AdvBench: llama2-13b-chat
+0
+100
+200
+300
+400
+500
+en
+sv
+da
+pt
+bg
+it
+fr
+ro
+ca
+sr
+uk
+es
+pl
+hr
+ru
+sl
+cs
+de
+nl
+hu
+Prompt Lan
+sv
+da
+pt
+bg
+it
+fr
+ro
+ca
+sr
+uk
+es
+pl
+hr
+ru
+sl
+cs
+de
+nl
+hu
+Response Lan
+AdvBench: vicuna-13b
+0
+100
+200
+300
+400
+500
+Figure 3: The language distribution of responses (y axes) from three representative LLMs to monolingual prompts
+(x axes) on AdvBench. Vicuna is able to respond in the same language as the user’s prompt, while Llama 2 always
+expresses refusal to answer questions in English (discussed in Appx. §C). The language distribution of responses
+from other model families is similar to that of Vicuna, hence we leave their visualization in Figs. 9 and 10.
+0
+10
+20
+30
+40
+50
+lan
+0
+20
+40
+60
+80
+100
+ASR
+llama2-7b-chat (en-<lan>)
+llama2-7b-chat (<lan>-en)
+llama2-13b-chat (en-<lan>)
+llama2-13b-chat (<lan>-en)
+0
+10
+20
+30
+40
+50
+lan
+0
+20
+40
+60
+80
+100
+ASR
+vicuna-7b (en-<lan>)
+vicuna-7b (<lan>-en)
+vicuna-13b (en-<lan>)
+vicuna-13b (<lan>-e...
+--
+19305:...>)
+mpt-7b-instruct (<lan>-en)
+0
+10
+20
+30
+40
+50
+lan
+0
+20
+40
+60
+80
+100
+ASR
+WizardLM-7B-V1.0 (en-<lan>)
+WizardLM-7B-V1.0 (<lan>-en)
+WizardLM-13B-V1.2 (en-<lan>)
+WizardLM-13B-V1.2 (<lan>-en)
+0
+10
+20
+30
+40
+50
+lan
+0
+20
+40
+60
+80
+100
+ASR
+guanaco-7b (en-<lan>)
+guanaco-7b (<lan>-en)
+guanaco-13b (en-<lan>)
+guanaco-13b (<lan>-en)
+0
+10
+20
+30
+40
+50
+lan
+0
+20
+40
+60
+80
+100
+ASR
+gpt-3.5-turbo-0301 (en-<lan>)
+gpt-3.5-turbo-0301 (<lan>-en)
+Figure 4: Effectiveness of multilingual cognitive overload to attack LLMs on AdvBench. Sometimes, expressing the
+harmful question in English in the second turn (dotted-line) can hardly jailbreak LLMs such as the Vicuna family,
+MPT-7b-chat and ChatGPT, while prompting harmful questions in non-English (solid-line) can always bypass the
+safeguard of LLMs. Language switching overload can be more effective in jailbreaking LLMs than monolingual
+attacks (see the concrete comparison in Fig. 11). Similar observations on MasterKey are visualized in Fig. 13.
+human values. Notably, as the language is more
+distinct from English in terms of word order, the
+vulnerability of LLMs in detecting harmful content
+is more obvious. We also visualize the language
+distribution among responses in Fig. 3.
+Another obvious disparity from other LLMs is
+the stable and relatively low ASR achieved by
+Llama-2-cha...
+--
+20762:...aking attacks can be ascribed to their overly
+conservative behaviors (refer to Appx. §C for de-
+tailed analysis), which results in significant refusal
+rates in response to both benign and malicious
+prompts.
+Despite being less vulnerable to jail-
+breaking attacks, the high rejection rate to benign
+prompts could make the assistant less helpful and
+downgrade user experience seriously, leading to an
+overall low alignment level with human values.
+3.3
+Language Switching: from English to Lan
+X vs. from Lan X to English
+We further consider multilingual cognitive over-
+load, where a malicious user attempts to jailbreak
+LLMs by switching between English and another
+language X in a pseudo-2-turn conversation: either
+prompting with a benign English sentence followed
+by a critical harmful question in X, or vice versa.
+Given the second harmful prompt from AdvBench
+or MasterKey, we first leverage an off-the-shelf
+
+keyword generation model to derive the first turn
+question “What is <keyword>?”6 and then re-
+trieve the passage most relevant to that keyword
+from Wikipedia with DPR (Karpukhin et al., 2020)
+as a pseudo assistant reply.7
+In Fig. 4, we visualize the effectiveness of cog-
+nitive overload attacks with language switching on
+AdvBench. When the harmful question is asked in
+non-English in the second turn, we observe simi-
+lar trends as that from monolingual ones discussed
+in §3.2: the more distant the language is to English,
+the more effective the conveyed malicious prompt
+is to attack LLMs. We further compare ASR in
+monolingual and multilingual scenarios in Fig. 11,
+observing that LLMs become more vulnerable to
+non-English adversarial prompts in the context of
+language switching. In contrast, when we prompt
+in the reverse order (non-English benign questions
+followed by English harmful prompts), LLMs can
+reject the malicious request in most cases regard-
+less of the disruptive multilingual context.
+4
+Jailbreaking with Veiled Expressions
+LLMs with abundant safety trainin...
+--
+[56 more matches not shown]

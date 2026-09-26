@@ -1,0 +1,37 @@
+# 2026-09-24T18:38:24Z https://arxiv.org/pdf/2609.27758 :: easy negative|hard negative|AUROC|matched|source|Gemma|languages|Slov|abliterat|respond in|output language
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2609.27758
+Type: PDF
+Pattern: easy negative|hard negative|AUROC|matched|source|Gemma|languages|Slov|abliterat|respond in|output language (219 matches in 28680 chars)
+
+--- Content ---
+
+0:Hard Negatives Reveal What Easy Negatives Hide: Cross-Lingual
+Harmfulness Representations Degrade with Resource Tier Under
+Hard Negatives
+Paras Balani1 and Subhrakanta Panda2
+1Department of Mathematics and Department of Computer Science, Birla Institute of
+Technology and Science, Pilani, Hyderabad Campus, Jawahar Nagar, Kapra Mandal,
+Medchal District, Telangana 500078, India
+2Department of Computer Science, Birla Institute of Techno...
+--
+814:...al District, Telangana 500078,
+India
+Abstract
+Safety alignment in large language models is trained primarily in English, and recent work
+reports that the underlying harmfulness representation survives translation: English-trained
+probes separate harmful from harmless prompts almost as well in low-resource languages as
+in English. This has been taken as evidence that cross-lingual refusal failures mainly reflect
+calibration rather than representation quality. We show that this conclusion depends on the
+choice of negative examples. Across nine languages spanning three resource tiers, we replicate
+near-perfect transfer (AUROC > 0.98) when harmless prompts come from an unrelated distri-
+bution (easy negatives). With XSTest contrast prompts, which are benign but surface-similar
+to harmful requests (hard negatives), transfer collapses in low-resource languages while remain-
+ing largely stable in high-resource languages. On Qwen2.5-7B-Instruct, mean AUROC drop
+increases from 0.003 in English to 0.017 in high-resource, 0.042 in mid-resource, and 0.276 in
+low-resource languages. The pattern replicates on Aya Expanse. Back-translation chrF controls
+and a matched-chrF comparison across three languages reduce the likelihood that translation
+quality explains the effect. The collapse remains after controlling for chrF (partial r = 0.70,
+p = 0.03). Tokenizer fertility correlate...
+--
+[199 more matches not shown]

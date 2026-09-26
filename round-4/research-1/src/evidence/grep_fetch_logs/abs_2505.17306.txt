@@ -1,0 +1,29 @@
+# 2026-09-24T18:25:20Z https://arxiv.org/abs/2505.17306
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/abs/2505.17306
+Type: HTML
+Length: 7807 chars (truncated)
+
+--- Content ---
+
+Skip to main content [](https://arxiv.org/IgnoreMe) [ ](https://arxiv.org/) [ Search ](https://arxiv.org/search) [Submit](https://arxiv.org/user/create) [Donate](https://info.arxiv.org/about/donate.html) [Log in](https://arxiv.org/login)
+
+Search arXiv
+
+Press Enter to search * [Advanced search](https://arxiv.org/search/advanced)
+
+# Computer Science > Computation and Language
+
+**arXiv:2505.17306** (cs) 
+
+[Submitted on 22 May 2025 ([v1](https://arxiv.org/abs/2505.17306v1)), last revised 25 Feb 2026 (this version, v2)]
+
+# Title:Refusal Direction is Universal Across Safety-Aligned Languages
+
+Authors:[Xinpeng Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang,+X), [Mingyang Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang,+M), [Yihong Liu](https://arxiv.org/search/cs?searchtype=author&query=Liu,+Y), [Hinrich Schütze](https://arxiv.org/search/cs?searchtype=author&query=Sch%C3%BCtze,+H), [Barbara Plank](https://arxiv.org/search/cs?searchtype=author&query=Plank,+B)
+
+View a PDF of the paper titled Refusal Direction is Universal Across Safety-Aligned Languages, by Xinpeng Wang and 4 other authors
+
+[View PDF](/pdf/2505.17306) [HTML (experimental)](https://arxiv.org/html/2505.17306v2)
+
+> Abstract:Refusal mechanisms in large language models (LLMs) are essential for ensuring safety. Recent research has revealed that refusal behavior can be mediated by a single direction in activation space, enabling targeted interventions to bypass refusals. While this is primarily demonstrated in an English-centric context, appropriate refusal behavior is important for any language, but poorly understood. In this paper, we investigate the refusal behavior in LLMs across 14 languages using PolyRefuse, a multilingual safety dataset created by translating malicious and benign English prompts into these languages. We uncover the surprising cross-lingual universality of the refusal direction: a vector extracted from English can bypass refusals in other languages with near-perfect effectiveness, without any additional fine-tuning. Even more remarkably, refusal directions derived from any safety-aligned language transfer seamlessly to others. We attribute this transferability to the parallelism of refusal vectors across languages in the embedding space and identify the underlying mechanism behind cross-lingual jailbreaks. These findings provide actionable insights for building more robust multilingual safety defenses and pave the way for a deeper mechanistic understan

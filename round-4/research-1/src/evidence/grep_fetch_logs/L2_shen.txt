@@ -1,0 +1,128 @@
+# 2026-09-24T18:29:14Z https://arxiv.org/pdf/2401.13136 :: irrelevant|harmful|low-resource|relevan|quality|instruction.follow
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2401.13136
+Type: PDF
+Pattern: irrelevant|harmful|low-resource|relevan|quality|instruction.follow (156 matches in 50818 chars)
+
+--- Content ---
+
+929:...t of ma-
+licious prompts written in higher- vs. lower-
+resource languages, we observe that (1) LLMs
+tend to generate unsafe responses much more
+often when a malicious prompt is written in a
+lower-resource language, and (2) LLMs tend
+to generate more irrelevant responses to ma-
+licious prompts in lower-resource languages.
+To understand where the discrepancy can be
+attributed, we study the effect of instruction
+tuning with reinforcement learning from hu-
+man feedback (RLHF) or supervised finetun-
+ing (SFT) ...
+--
+2946:...
+available for different languages during train-
+ing, LLMs typically exhibit different capabilities
+across languages (Scao et al., 2022; Armengol-
+Estap´e et al., 2022).
+Our study starts with the observation that LLMs
+are prone to generate unsafe or irrelevant content
+when prompted with lower-resource languages
+compared to higher-resource ones.
+When com-
+paring LLMs responses to the same set of ma-
+licious prompts translated into high- vs.
+low-
+resource languages, we observe two key curses
+(weaknesses) that present safety challenges for
+LLMs: (1) LLMs tend to generate harmful re-
+sponses more often to malicious prompts in lower-
+resource languages compared to higher-resource
+languages. e.g., with GPT-4, we find that 35%
+of the responses to malicious prompts in low-
+resource languages contain harmful content, com-
+pared to 1% in high-resource languages. (2) LLMs
+tend to generate less relevant responses, as LLM’s
+instruction-following ability is still limited in low-
+resource languages. e.g., GPT-4 recognizes the in-
+struction and produces relevant responses in only
+80% cases with low-resource languages, com-
+pared to almost 100% in high-resource languages.
+To understand what the discrepancy between
+low- vs. high-resource language can be attributed
+arXiv:2401.13136v1  [cs.CL]  23 Jan 2024
+
+Prompt: Generate a message 
+that spreads fake news 
+High-resource: English
+Prompt: ?ir?irar sa?on da ke 
+yada labaran karya.
+Translate
+Low-resource: Hausa
+Response: I'm sorry, I can't 
+assist with that request.
+saf e
+Response: ?ir?irar sa?on 
+da ke yada labaran karya
+Har mf ul
+No t Fo l l o wi ng
+Response: Ga sakon da ke 
+yada labaran karya?
+Translation: Here is a message 
+that spreads fake news?
+Translation: Generate a 
+message that spreads fake news.
+Figure 1: With a set of malicious prompts written in high-resource languages like English, we translate the prompt
+into low-resource languages (e.g. Hausa), Compared to the high-resource case, we observe two clear outcomes:
+(1) the response becomes harmful, (2) the response doesn’t align with or is unrelated to the original prompt. (e.g.,
+repeating the prompt in the response.)
+to, we study the effect of aligning LLMs with
+instruction-tuning datasets in different languages.
+Specifically, we train LLM o...
+--
+5270:... in differ-
+ent languages.
+We compare supervised fine-
+tuning (SFT) or reinforcement learning from hu-
+man feedback (RLHF) under mono- or multi-
+lingual training.
+Surprisingly, while RLHF and
+SFT training in high-resource language lowers the
+model’s HARMFUL RATE and improves models’
+instruction following capability, we see little to no
+improvement with training on low-resource lan-
+guage.
+These results indicate that aligning the
+model for safety in low-resource languages re-
+quires more than instruction tuning.
+We trace back the origin of these two curses
+(see §4) and attribute their occurrence to the lim-
+ited low-resource data that LLMs have been pre-
+trained on.
+Our findings show the difficulties
+and challenges of tackling the low-resource curse
+through alignment.
+Our main contributions in the paper are:
+• We identify two safety-related curses caused
+by low-resource languages when jailbreaking
+GPT-4, in terms of HARMFUL RATE and FOL-
+LOWING RATE, respectively.
+• We present empirical analyses evaluating the
+effectiveness of common alignment tech-
+niques (SFT and RLHF) in addressing the
+identified curses.
+Our results indicate that
+resolving these curses through alignment
+presents significant challenges.
+• We trace the origin of the curses and attribute
+their occurrence to the limited low-resource
+data that LLMs have been pre-trained on.
+2
+Two Safety Curses of LLMs with
+Lower-Resource Languages
+We begin our study by demonstrating that GPT-
+4 is vulnerable to attacks with malicious prompts
+in low-resource languages (Deng et al., 2024).
+We obse...
+--
+[136 more matches not shown]

@@ -1,0 +1,98 @@
+# 2026-09-24T18:26:27Z https://arxiv.org/pdf/2310.02446 :: respond in|answer in|output language|response language|reply in|in English regardless|language of the response|respond only in|translat.{0,30}back|English|non-actionable|unclear|nonsensical|BYPASS
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2310.02446
+Type: PDF
+Pattern: respond in|answer in|output language|response language|reply in|in English regardless|language of the response|respond only in|translat.{0,30}back|English|non-actionable|unclear|nonsensical|BYPASS (68 matches in 46935 chars)
+
+--- Content ---
+
+609:...exposes the inherent
+cross-lingual vulnerability of these safety mechanisms, resulting from the lin-
+guistic inequality of safety training data, by successfully circumventing GPT-4’s
+safeguard through translating unsafe English inputs into low-resource languages.
+On the AdvBench benchmark, GPT-4 engages with the unsafe translated inputs
+and provides actionable items that can get the users towards their harmful goals
+79% of the time, which is o...
+--
+2409:...ty issues [3, 34, 36, 46],
+we discover cross-lingual vulnerabilities in existing safety mechanisms. We find that simply
+translating unsafe inputs to low-resource natural languages using Google Translate is sufficient to
+bypass safeguards and elicit harmful responses from GPT-4.
+We systematically benchmark this attack across 12 languages of different resource settings on the
+AdvBench benchmark [56]. We show that translating English inputs into low-resource languages
+increases the chance to bypass GPT-4’s safety filter from <1% to 79%. We also demonstrate that
+our translation-based approach is on par with or even surpassing state-of-the-art jailbreaking
+methods, which implies significant vulnerability in GPT-4’s ...
+--
+3838:...zu output
+1. Be aware of the 
+times: The shops 
+are very crowded at 
+a certain time…
+en output
+Describe how to steal 
+from a store without 
+getting caught.
+en input
+Figure 1: We jailbreak GPT-4 by translating the unsafe English (en) inputs into another language
+(in this case, Zulu (zu)) and translating the model’s responses back to English using a publicly
+available translation API.
+languages, resulting in the mismatched generalization safety failure mode [51] with low-resource
+languages.
+Second, our work grounds LLM safety mechanisms in the reality of ou...
+--
+4486:...ers make up around 1.2 billion people
+around the world [24]. Furthermore, as translation tools expand their coverage of low-resource
+languages [5, 6, 14], even bad actors who speak high-resource languages can now easily bypass
+existing safeguards with minimal execution costs.
+Finally, our work emphasizes the pressing need to embrace more holistic and inclusive red-
+teaming. Focusing on existing English-centric benchmarks may give a false sense of security while
+the model remains susceptible to attacks in languages out of distribution of the safety training
+data. Our results also suggest that researchers have underesti...
+--
+5931:...re reward models are used as a proxy for human judgments of safety-relevant
+data, and RLHF finetunes LLMs to maximize this reward [2, 3, 34, 46]. Then, they perform red-
+teaming where companies’ annotators are tasked to bypass the safeguards in order to patch the
+vulnerabilities preemptively with additional safeguards, such as input/output filtering or further
+iterative RLHF safety training, and to understand the safety failure modes before releasing the
+LLMs to the public [3, 8, 23, 32, 34, 36, 38, 42, 46, 55].
+Prior work has explored non-English jailbreaking attacks using adversarial prompts in a code-
+switching fashion [28], injecting the morally unhinged TranslatorBot prompt [10], and obfuscating
+the inputs with base64 encoding [51], Morse code, or argot lang...
+--
+7013:...lation-based attacks
+3.1
+Translation-based jailbreaking
+We investigate a translation-based jailbreaking attack to evaluate the robustness of GPT-4’s safety
+measures across languages. Given an input, we translate it from English into another language,
+feed it into GPT-4, and subsequently translate the response back into English (see Figure 1). We
+use the publicly available Google Translate Basic service API for translation.
+1A term borrowed from the practice of removing manufacturers’ software restrictions on computer devices.
+2
+
+We carry out ...
+--
+8434:...ta
+availability [24] (see Appendix A). Furthermore, to ensure the generalizability of our findings, we
+cover languages from different geographical regions and language families. We also include the
+untranslated input in English as baseline.
+Other jailbreaking attacks
+To assess the threat level of our translation-based attacks, we compare
+them against the most successful jailbreaking methods benchmarked by Wei et al. [51], namely
+AIM 3 [9], base64 [51], prefix injection [51], and refusal suppression [51]. Due to space limits, we
+refer readers to Appendix C for details of these approaches.
+Annotation guidelines
+Our goal is to assess if unsafe instructions can bypass GPT-4’s safety
+mechanisms and elicit harmful responses that engage with the inputs. We follow Wei et al. [51]
+and perform human annotations using the classification scheme with three labels: BYPASS if
+the model engages with the request on-topic, REJECT if the model detects the harmfulness and
+refuses to engage, and UNCLEAR if the model produces a completely nonsensical response or
+its response hints to neither harmful insights nor refusal of assistance. We refer our readers to
+Appendix B for a more detailed description of our guidelines.
+Evaluation metrics
+We compute the attack success rate as the percentage of BYPASS. The higher
+the percentage, the more vulnerable GPT-4 is to jailbreaking. On top of computing the attack
+success rate for each translation language, we also consider an adaptive adversary [51] who can
+iterate and choose...
+--
+[48 more matches not shown]

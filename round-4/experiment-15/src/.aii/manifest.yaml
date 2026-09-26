@@ -1,0 +1,15 @@
+# Only large binaries and cache directories need a decision. Text/code/JSON/logs and anything under the 10 MB
+# auto-keep floor are always kept (results/, data/, figures/, logs/ therefore have no entry).
+entries:
+  - path: .venv/
+    delete: regenerable
+    source: "uv sync"
+  - path: src/__pycache__/
+    delete: regenerable
+    source: "python bytecode cache; regenerated on import (uv run ...)"
+  - path: tests/__pycache__/
+    delete: regenerable
+    source: "python bytecode cache; regenerated on import (uv run pytest -q tests)"
+  - path: .pytest_cache/
+    delete: regenerable
+    source: "uv run pytest -q tests"

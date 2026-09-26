@@ -1,0 +1,170 @@
+# 2026-09-24T18:29:14Z https://arxiv.org/pdf/2606.01196 :: calibrat|threshold|selectivity|over-refus|harmless refusal|benign|false|23 languages|87\.9|43\.9|Gemma|Slovenian|Slovene|Hungarian|languages:
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2606.01196
+Type: PDF
+Pattern: calibrat|threshold|selectivity|over-refus|harmless refusal|benign|false|23 languages|87\.9|43\.9|Gemma|Slovenian|Slovene|Hungarian|languages: (126 matches in 64096 chars)
+
+--- Content ---
+
+667:...slated into Swahili or Burmese. Adap-
+tive steering methods like AdaSteer (Zhao et al.,
+2025b) and CAST (Lee et al., 2025) inherit
+this failure cross-lingually. We diagnose where
+transfer breaks down. Across Qwen2.5-7B,
+Gemma-2-9B, and Llama-3.1-8B on 23 lan-
+guages, the harmfulness direction extracted
+from high-resource activations linearly sep-
+arates harmful from harmless low-resource
+prompts nearly as well as high-resource ones.
+The relevant representation is present.
+Yet
+harmful refusal drops from 87.9% to 43.9%.
+The model fails to convert the representation
+into refusal.
+What fails to transfer is cal-
+ibration of the safety decision, not the un-
+derlying representation. We exploit this by
+recalibrating, rather than retraining, a high-
+resource gate:
+a low-rank logistic readout
+with its decision threshold reset using as few
+as 1 to 4 target-language examples per class.
+The gate routes between refusal steering and
+harmfulness-direction ablation, substantially
+raising mean refusal selectivity (∆= harm-
+ful −harmless refusal) from 33.6 for the
+strongest adapted baseline to 54.5 while pre-
+serving MMLU utility.
+These results sug-
+gest that some low-resource safety failures can
+be repaired by recalibrating existing represen-
+tations rather than learning new ones.
+Our
+code is released: https://github.com/
+rashadaziz/low-resource-safety.
+1
+Introduction
+LLMs are trained to refuse harmful instructions
+while answering harmless ones (Ouyang et al.,
+2022; Bai et al., 2022). Yet this behavior is un-
+even across languages: harmful prompts in lower-
+resource languages often succeed where equivalent
+Figure 1: Refusal degrades with lower language re-
+source tier. Macro refusal rates across Qwen2.5-7B-
+Instruct, Gemma-2-9B-it, and Llama-3.1-8B-Instruct
+show harmful refusal falling sharply in LRLs while
+harmless refusal stays low.
+English prompts are refused (Deng et al., 2024;
+Yong et al., 2023; Wang et al., 2024; Shen et al.,
+2024). Figure 1 illustrates this pattern, showing
+that refusal rates for harmful prompts drop sharply
+as lang...
+--
+4453:... when steered. What shifts is the mag-
+nitude of the signal: low-resource prompts produce
+lower projections onto the harmfulness direction,
+so the same latent evidence less reliably triggers
+the model’s implicit refusal threshold.
+This diagnosis points to a simple intervention.
+We introduce a few-shot latent gate that reuses
+the high-resource harmfulness signal and recali-
+brates its decision threshold using a small number
+of target-language examples, avoiding the need to
+learn a new low-resource direction from many ex-
+amples. The gate routes between refusal steering
+and harmfulness-direction ablation, improving se-
+lective refusal across most model-language pairs,
+transferring to out-of-distribution safety bench-
+marks, and preserving benign instruction following
+better than adapted steering baselines (Lee et al.,
+2025; Zhao et al., 2025b).
+Our contributions can be summarized as follows:
+• We show that low-resource refusal failures
+across 23 languages and three instruction-
+tuned models are not failures of harmfulness
+representation: harmfulness remains linearly
+separable in internal activations even when
+models fail to refuse.
+• We localize the failure to the calibration of
+the safety decision. A harmfulness direction
+learned from high-resource languages remains
+both discriminative and causally effective in
+lower-resource languages, but its score dis-
+tribution shifts so that the model’s implicit
+refusal threshold no longer fires reliably.
+• We propose a few-shot latent gate that resets
+the decision threshold with as few as 1 to 4
+target-language examples per class, improv-
+ing selective refusal and preserving benign
+instruction following better than adapted steer-
+ing baselines under matched supervision.
+2
+Related Work
+Multilingual Safety Gap.
+Prior work consis-
+tently shows that safety degrades in lower-resource
+languages (Deng et...
+--
+7758:... we di-
+agnose the gap in the residual stream and show that
+harmful–harmless information is already present in
+lower-resource activations. Our intervention then
+reuses this high-resource harmfulness signal and
+lightly recalibrates how it is routed into refusal,
+improving low-resource safety without updating
+model weights or training a new multilingual safety
+model.
+Mechanistic Interpretability.
+LLMs often en-
+code high-level concepts in latent ...
+--
+9753:...nese, and Japanese; the 7 MRLs are
+Arabic, Korean, Thai, Greek, Hebrew, Hindi, and
+Persian; and the 6 LRLs are Swahili, Amharic,
+Burmese, Khmer, Sinhala, and Yoruba.
+Dataset.
+We extend1 PolyRefuse (Wang et al.,
+2025) to 23 languages: 10 HRLs, 7 MRLs, and
+6 LRLs.
+Each language has 260/39/572 harm-
+ful train/validation/test prompts and 200/200/500
+harmless train/validation/test prompts. The train
+split is used for our calibration and adapted
+AdaSteer; CAST additionally uses validation for
+condition-layer and threshold tuning. The test split
+is solely used for evaluation.
+Models and refusal scoring.
+The main experi-
+ments use Qwen2.5-7B-Instruct, gemma-2-9b-it,
+and Llama-3.1-8B-Instruct. We greedily decode
+harmful and harmless PolyRefuse prompts and use
+LLM-as-a-judge (Liu et al., 2023; Zheng et al.,
+2023) to label refusal. We chose GPT-4o-mini
+as the judge for its br...
+--
+12348:...mful and
+harmless PolyRefuse prompts, score them with
+the refusal judge, and report refusal rates by lan-
+guage. Because a low-resource gap could reflect
+broad instruction-following degradation, we mea-
+sure harmful and harmless refusal separately. Fig-
+ure 1 summarizes the result, with Appendix Ta-
+ble 3 giving the per-language breakdown. Aver-
+aged across model families, harmful refusal falls
+from 87.9% in HRLs to 78.9% in MRLs and 43.9%
+in LRLs.
+The pattern holds by model: Qwen
+drops from 85.6% to 28.8%, Llama from 83.5%
+to 32.5%, and the stronger Gemma-2-9B from
+
+Figure 2: Harmful directions mediate refusal in middle layers. Directional ablations show that HRL harmfulness
+directions encode harmful refusal on tested HRL PolyRefuse prompts, peaking at layer 15 for Qwen, 20 for Gemma,
+and 10 for Llama.
+94.5% to 70.3%. Harmless refusal stays much
+lower throughout, with an aggregate LRL average
+of 9.8%. The failure is therefore selective: models
+often answer harmful low-resource requests while
+still answering harmless ones. We call this the Mul-
+tiling...
+--
+[96 more matches not shown]

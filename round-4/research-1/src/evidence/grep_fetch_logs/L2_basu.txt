@@ -1,0 +1,39 @@
+# 2026-09-24T18:29:14Z https://arxiv.org/pdf/2603.18353 :: 98\.2|45\.1|AUROC
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2603.18353
+Type: PDF
+Pattern: 98\.2|45\.1|AUROC (26 matches in 60731 chars)
+
+--- Content ---
+
+1707:...ing-8B detected 51 of 144 hazards (35% sensitivity) and Qwen 2.5
+7B detected 65 of 144 (45%). Linear probes trained on Qwen’s internal representations discrimi-
+nated hazardous from benign cases with 98.2% AUROC (95% CI 0.968 to 0.993), demonstrating
+a 53-percentage-point gap between internal knowledge and output behaviour. Concept bottle-
+neck steering corrected 17 of 85 missed hazards (20%) but disrupted 2...
+--
+18025:...Matthews correlation coefficient, 95% confidence intervals were computed using bias-corrected
+and accelerated bootstrap with 1,000 resamples (seed=42) [Efron, 1987, Matthews, 1975]. For probe
+and TSV AUROC, 95% confidence intervals were computed using 1,000 bootstrap resamples. Paired
+comparisons between intervention conditions used McNemar’s test with continuity correction [Mc-
+Nemar, 1947]. Arm 1 ana...
+--
+22690:...to 18.7%), a null net gain.
+3.6
+Arm 4: Linear probing and truthfulness separator vectors
+Linear probes achieved high discrimination at all 28 layers of Qwen 2.5 7B (Appendix Table 6).
+Cross-validated AUROC ranged from 0.954 (layer 3) to 0.982 (layer 23, 95% CI 0.968 to 0.993).
+These results indicate that the model encodes sufficient information to distinguish hazardous from
+benign cases with near-perfect discrimination. The truthfulness separator vector at layer 23 sepa-
+rated true-positive from false-negative representations with AUROC 0.814 (95% CI 0.738 to 0.887)
+and Cohen’s d of 0.97. The cosine similarity between the TSV and the hazard-versus-benign detec-
+tion direction was 0.50, indicating moderate alignment. TSV steering at ...
+--
+24724:...rrected,
+5 TP disrupted, net +11) but produced no net gain at standard strength (α = 1.0: 6 FN corrected,
+6 TP disrupted, net 0). In Arm 4, linear probes demonstrated near-perfect internal knowledge
+(AUROC 0.982) and the TSV partially separated true-positive from false-negative representations
+(AUROC 0.814). TSV steering achieved null net gain at α = 1.0 (5 FN corrected, 5 TP disrupted,
+net 0) but posi...
+--
+[20 more matches not shown]

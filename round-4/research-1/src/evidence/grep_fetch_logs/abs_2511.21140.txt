@@ -1,0 +1,35 @@
+# 2026-09-24T18:25:20Z https://arxiv.org/abs/2511.21140
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/abs/2511.21140
+Type: HTML
+Length: 7941 chars (truncated)
+
+--- Content ---
+
+Skip to main content [](https://arxiv.org/IgnoreMe) [ ](https://arxiv.org/) [ Search ](https://arxiv.org/search) [Submit](https://arxiv.org/user/create) [Donate](https://info.arxiv.org/about/donate.html) [Log in](https://arxiv.org/login)
+
+Search arXiv
+
+Press Enter to search * [Advanced search](https://arxiv.org/search/advanced)
+
+# Computer Science > Machine Learning
+
+**arXiv:2511.21140** (cs) 
+
+[Submitted on 26 Nov 2025 ([v1](https://arxiv.org/abs/2511.21140v1)), last revised 31 May 2026 (this version, v4)]
+
+# Title:How to Correctly Report LLM-as-a-Judge Evaluations
+
+Authors:[Chungpa Lee](https://arxiv.org/search/cs?searchtype=author&query=Lee,+C), [Thomas Zeng](https://arxiv.org/search/cs?searchtype=author&query=Zeng,+T), [Jongwon Jeong](https://arxiv.org/search/cs?searchtype=author&query=Jeong,+J), [Jy-yong Sohn](https://arxiv.org/search/cs?searchtype=author&query=Sohn,+J), [Kangwook Lee](https://arxiv.org/search/cs?searchtype=author&query=Lee,+K)
+
+View a PDF of the paper titled How to Correctly Report LLM-as-a-Judge Evaluations, by Chungpa Lee and 4 other authors
+
+[View PDF](/pdf/2511.21140) [HTML (experimental)](https://arxiv.org/html/2511.21140v4)
+
+> Abstract:Large language models (LLMs) are widely used as scalable evaluators of model responses in lieu of human annotators. However, imperfect sensitivity and specificity of the LLM judges induce bias in naive evaluation scores. We propose a simple plug-in framework that corrects this bias and enables statistically principled uncertainty quantification. Our framework constructs confidence intervals that account for uncertainty from both the test dataset and a human-labeled calibration dataset. Additionally, it uses an adaptive strategy to allocate calibration samples for tighter intervals. Importantly, we characterize parameter regimes defined by the true evaluation score and the LLM judge's sensitivity and specificity in which our LLM-based evaluation yields more reliable estimates than human-only evaluation. Moreover, we show that our framework remains unbiased under distribution shift between the test and calibration datasets, in contrast to existing approaches. 
+
+Subjects: |  Machine Learning (cs.LG); Computation and Language (cs.CL); Applications (stat.AP); Machine Learning (stat.ML)  
+---|---  
+Cite as: | [arXiv:2511.21140](https://arxiv.org/abs/2511.21140) [cs.LG]  
+  | (or  [arXiv:2511.21140v4](https://arxiv.org/abs/2511.21140v4) [cs.LG] for this version)   
+  |  <https://doi.org/10.48550/arXiv.2

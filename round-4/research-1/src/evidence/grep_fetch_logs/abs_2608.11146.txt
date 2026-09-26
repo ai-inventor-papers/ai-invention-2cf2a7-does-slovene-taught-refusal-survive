@@ -1,0 +1,29 @@
+# 2026-09-24T18:25:20Z https://arxiv.org/abs/2608.11146
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/abs/2608.11146
+Type: HTML
+Length: 8556 chars (truncated)
+
+--- Content ---
+
+Skip to main content [](https://arxiv.org/IgnoreMe) [ ](https://arxiv.org/) [ Search ](https://arxiv.org/search) [Submit](https://arxiv.org/user/create) [Donate](https://info.arxiv.org/about/donate.html) [Log in](https://arxiv.org/login)
+
+Search arXiv
+
+Press Enter to search * [Advanced search](https://arxiv.org/search/advanced)
+
+# Computer Science > Computation and Language
+
+**arXiv:2608.11146** (cs) 
+
+[Submitted on 11 Aug 2026]
+
+# Title:The Illusion of Cross-Lingual Safety in Low-Resource Languages
+
+Authors:[Abigail Oppong](https://arxiv.org/search/cs?searchtype=author&query=Oppong,+A), [P Sam Sahil](https://arxiv.org/search/cs?searchtype=author&query=Sahil,+P+S), [Tadesse Destaw Belay](https://arxiv.org/search/cs?searchtype=author&query=Belay,+T+D), [Maryam Ibrahim Mukhtar](https://arxiv.org/search/cs?searchtype=author&query=Mukhtar,+M+I), [Esmael Ahmed Abdu](https://arxiv.org/search/cs?searchtype=author&query=Abdu,+E+A), [Tassallah Abdullahi](https://arxiv.org/search/cs?searchtype=author&query=Abdullahi,+T), [Jessica Oparebea](https://arxiv.org/search/cs?searchtype=author&query=Oparebea,+J), [Saminu Mohammad Aliyu](https://arxiv.org/search/cs?searchtype=author&query=Aliyu,+S+M), [Idris Abdulmumin](https://arxiv.org/search/cs?searchtype=author&query=Abdulmumin,+I), [Abubakar Juma Chilala](https://arxiv.org/search/cs?searchtype=author&query=Chilala,+A+J), [Nicholaus Dismas Ladislaus](https://arxiv.org/search/cs?searchtype=author&query=Ladislaus,+N+D), [Alfred Malengo Kondoro](https://arxiv.org/search/cs?searchtype=author&query=Kondoro,+A+M), [Lemofouet Valdini Douglace](https://arxiv.org/search/cs?searchtype=author&query=Douglace,+L+V), [Shamsuddeen Hassan Muhammad](https://arxiv.org/search/cs?searchtype=author&query=Muhammad,+S+H), [Seid Muhie Yimam](https://arxiv.org/search/cs?searchtype=author&query=Yimam,+S+M)
+
+View a PDF of the paper titled The Illusion of Cross-Lingual Safety in Low-Resource Languages, by Abigail Oppong and 14 other authors
+
+[View PDF](/pdf/2608.11146) [HTML (experimental)](https://arxiv.org/html/2608.11146v1)
+
+> Abstract:Safety alignment in large language models (LLMs) is largely developed in English, assuming these safeguards generalize across multilingual settings. However, this assumption remains underexplored and exposes a vulnerability in low-resource languages. We investigate cross-lingual safety transfer in four African languages, Twi, Hausa, Amharic, and Swahili, using LoDNA, a new safety dataset that pairs literal translat
