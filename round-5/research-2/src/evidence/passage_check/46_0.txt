@@ -1,8 +1,0 @@
-warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
-URL: https://arxiv.org/abs/2508.20511
-Type: HTML
-Pattern: Human assessments reveal that many translations fall below t (1 matches in 7998 chars)
-
---- Content ---
-
-1774:...lity for truly multilingual evaluation. Human assessments reveal that many translations fall below the claimed 90% quality standard, and the...

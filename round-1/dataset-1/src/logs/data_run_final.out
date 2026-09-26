@@ -1,2 +1,0 @@
-15:55:24|INFO   |eval labels + split manifest frozen
-15:55:26|INFO   |{'refuseu_eval': 2800, 'refuseu_gold_calib': 590, 'gams_dose_rows': 6239, 'hard_xstest': 900, 'hard_orbench_hard1k': 2638, 'hard_orbench_toxic300': 600, 'identity_confirm': 480, 'refuseu_x_mt': 1400}

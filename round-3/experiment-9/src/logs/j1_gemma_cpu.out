@@ -1,3 +1,0 @@
-/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_3/gen_art/gen_art_experiment_9/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
-  warnings.warn(
-Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights:  46%|████▌     | 93/202 [00:00<00:00, 917.09it/s]Loading weights:  92%|█████████▏| 185/202 [00:00<00:00, 796.92it/s]Loading weights: 100%|██████████| 202/202 [00:00<00:00, 881.56it/s]

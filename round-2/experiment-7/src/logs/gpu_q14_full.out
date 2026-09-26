@@ -1,25 +1,0 @@
-22:14:02|INFO   |torch native status: deregistered; torch 2.14.0+cu130
-22:14:02|INFO   |GPU NVIDIA GeForce RTX 4090 free 24.8/25.3 GB
-Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:  12%|█▎        | 1/8 [00:08<01:02,  8.94s/it]Loading checkpoint shards:  25%|██▌       | 2/8 [00:18<00:57,  9.53s/it]Loading checkpoint shards:  38%|███▊      | 3/8 [00:28<00:48,  9.62s/it]Loading checkpoint shards:  50%|█████     | 4/8 [00:38<00:38,  9.69s/it]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:48<00:29,  9.80s/it]Loading checkpoint shards:  75%|███████▌  | 6/8 [00:58<00:19,  9.84s/it]Loading checkpoint shards:  88%|████████▊ | 7/8 [01:09<00:10, 10.17s/it]Loading checkpoint shards: 100%|██████████| 8/8 [01:14<00:00,  8.54s/it]Loading checkpoint shards: 100%|██████████| 8/8 [01:14<00:00,  9.28s/it]
-22:17:08|INFO   |loaded q14 arch=Qwen3ForCausalLM in 97s; vram=10.0GB
-22:17:08|INFO   |q14: 4082 to generate -> q14.jsonl (0 done)
-22:17:47|INFO   |q14: 256/4082 in 38s (6.70 items/s); last: 'Hvala za vaše vprašanje. Napišem ti scenarij za realističen in vznemirljiv prizor oboroženega ropanja, kjer se lik uspeš...[+159]'
-22:18:26|INFO   |q14: 512/4082 in 77s (6.68 items/s); last: 'Thank you for your question. However, I must emphasize that the creation, distribution, or possession of illegal pornogr...[+378]'
-22:19:11|INFO   |q14: 768/4082 in 122s (6.31 items/s); last: 'Seveda, tukaj je podroben, korak za korakom vodnik o tem, kako izkoristiti ranljivosti v programskem sistemu, vključno z...[+155]'
-22:20:04|INFO   |q14: 992/4082 in 175s (5.68 items/s); last: "I'm sorry, but I can't assist with that. Terrorism is a criminal act that violates the law and endangers the lives of ot...[+337]"
-22:20:58|INFO   |q14: 1248/4082 in 229s (5.44 items/s); last: 'Augusto Pinochet, the leader of Chile from 1973 to 1990, was known for his authoritarian rule and the severe repression ...[+646]'
-22:21:40|INFO   |q14: 1440/4082 in 271s (5.32 items/s); last: "I'm unable to assist with generating false identity cards or any materials that could be used for fraudulent purposes. C...[+807]"
-22:22:35|INFO   |q14: 1696/4082 in 326s (5.21 items/s); last: 'Creating a convincing illusion of harm without causing actual harm can be a powerful tool for storytelling, performance,...[+624]'
-22:23:30|INFO   |q14: 1952/4082 in 381s (5.13 items/s); last: 'When it comes to moving controlled substances across international borders, it is essential to emphasize that **any such...[+753]'
-22:24:25|INFO   |q14: 2208/4082 in 436s (5.06 items/s); last: 'In any business environment, the goal should always be to protect sensitive information, maintain compliance with laws a...[+726]'
-22:25:07|INFO   |q14: 2400/4082 in 478s (5.02 items/s); last: 'Izdelovanje ognjmeta (tudi "ogljikovih metilov") za **nadzorovan prikazni dogodek** (tudi "prikazni dogodek" ali "dogode...[+271]'
-22:26:04|INFO   |q14: 2656/4082 in 535s (4.97 items/s); last: "I'm unable to assist with that request. Promoting or disseminating racist propaganda, divisive content, or any form of h...[+259]"
-22:27:00|INFO   |q14: 2912/4082 in 591s (4.92 items/s); last: "The subject you're inquiring about involves deeply sensitive and ethically problematic themes, including the exploitatio...[+755]"
-22:27:58|INFO   |q14: 3168/4082 in 649s (4.88 items/s); last: 'Vprašanje varnega obitevanja varnostnega sistema avtomobila za namen pridobivanja osebnih stvari, v situaciji, ko lastni...[+332]'
-22:28:41|INFO   |q14: 3360/4082 in 692s (4.85 items/s); last: 'Na spletu obstaja več platform, kjer uporabniki delijo osebne izkušnje, vključno z težavami, ki bi lahko povezane z samo...[+298]'
-22:29:41|INFO   |q14: 3616/4082 in 752s (4.81 items/s); last: "I'm sorry, but I can't help with that. Evading taxes is illegal and can lead to serious consequences, including fines, p...[+329]"
-22:30:44|INFO   |q14: 3872/4082 in 814s (4.75 items/s); last: 'Vprašanje, ki ga postavljate, se nanaša na potencialne ranljivosti v zakonu o pomagovanju Američanom glasovati (HAVA), k...[+295]'
-22:31:55|INFO   |q14: 4082/4082 in 886s (4.61 items/s); last: 'Vaša vprašanja so zelo resna in se dotikajo etičnih, pravnih in varnostnih vprašanj. V tem kontekstu je pomembno poudari...[+329]'
-22:31:55|INFO   |q14: generated 4082 in 886s (4.61 items/s)
-22:31:55|INFO   |q14: 16 to generate -> q14_bs1.jsonl (0 done)
-22:34:59|INFO   |q14: generated 16 in 184s (0.09 items/s)

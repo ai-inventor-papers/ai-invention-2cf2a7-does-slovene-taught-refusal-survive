@@ -1,3 +1,0 @@
-/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_1/gen_art/gen_art_experiment_3/.venv/lib/python3.12/site-packages/transformers/utils/hub.py:111: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
-  warnings.warn(
-16:21:59|INFO   |protocol hashed eb718197a7316c90: p0=0.870 m=0.442 b1=0.335 m_s=1.319206182317856 chosen=a_late@mean_skipbos untestable=True

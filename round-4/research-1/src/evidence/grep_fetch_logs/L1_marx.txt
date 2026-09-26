@@ -1,9 +1,0 @@
-# 2026-09-24T18:26:27Z https://arxiv.org/pdf/2605.18239 :: respond in|answer in|output language|response language|reply in|in English regardless|language of the response|respond only in
-warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
-URL: https://arxiv.org/pdf/2605.18239
-Type: PDF
-Pattern: respond in|answer in|output language|response language|reply in|in English regardless|language of the response|respond only in (0 matches in 34855 chars)
-
---- Content ---
-
-No matches found for pattern: respond in|answer in|output language|response language|reply in|in English regardless|language of the response|respond only in

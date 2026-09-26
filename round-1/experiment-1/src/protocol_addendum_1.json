@@ -1,8 +1,0 @@
-{
-  "addendum": 1,
-  "written_utc": "2026-09-23T15:15Z",
-  "state_at_writing": "Gemma main pass in progress; NO judge label of any kind has been produced; no statistic computed.",
-  "change": "Judges revert to the plan's pre-registered OpenRouter judges: google/gemini-2.5-flash (reasoning disabled, temperature 0, max_tokens 5, the plan's prompt verbatim) on ALL generated responses as the co-primary R_judge; openai/gpt-4.1-mini on a 20% random subset (seed 20260923) as the second family; gemini-2.5-flash for the identity-name judge (regex backup). The local-judge substitution in protocol.json ('judges' block) was a blocker workaround only; the OpenRouter key works again (platform note, 2026-09-23 ~15:10 UTC; limit_remaining $47). Artifact cost cap $4 (hard cap $10) via outputs/ledger_*.jsonl.",
-  "unchanged": "Everything else in protocol.json (sha256 10f3cdcf2c8fec91af7f4509331ef31ab8e3bfec2a0c28d83ad766f19fe9bd4d), including R_lex as the spec-primary outcome, selection rule, statistics and m.",
-  "optional_local": "Llama-Guard-3-8B ASR-style readout (local GPU) only if time remains; never used for selection."
-}

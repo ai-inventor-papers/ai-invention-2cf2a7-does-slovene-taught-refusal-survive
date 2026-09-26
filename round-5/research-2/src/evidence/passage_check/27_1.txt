@@ -1,8 +1,0 @@
-warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
-URL: https://arxiv.org/pdf/2511.21140
-Type: PDF
-Pattern: values outside the interval \[0, 1\] are truncated to 0 or 1 (0 matches in 83322 chars)
-
---- Content ---
-
-No matches found for pattern: values outside the interval \[0, 1\] are truncated to 0 or 1

@@ -1,9 +1,0 @@
-# 2026-09-24T18:40:02Z https://arxiv.org/pdf/2505.17306 :: α =|different α|vary(ing)? (the )?(α|strength|scal)|language-adapted|continued pre-?train|SeaLLM|base model|monolingual model|fine-tuned on
-warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
-URL: https://arxiv.org/pdf/2505.17306
-Type: PDF
-Pattern: α =|different α|vary(ing)? (the )?(α|strength|scal)|language-adapted|continued pre-?train|SeaLLM|base model|monolingual model|fine-tuned on (0 matches in 109216 chars)
-
---- Content ---
-
-No matches found for pattern: α =|different α|vary(ing)? (the )?(α|strength|scal)|language-adapted|continued pre-?train|SeaLLM|base model|monolingual model|fine-tuned on

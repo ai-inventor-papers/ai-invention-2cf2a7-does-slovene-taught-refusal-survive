@@ -1,8 +1,0 @@
-warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
-URL: https://arxiv.org/pdf/2602.13139
-Type: PDF
-Pattern: we employ several existing benchmarks for similar languages  (0 matches in 84881 chars)
-
---- Content ---
-
-No matches found for pattern: we employ several existing benchmarks for similar languages 
