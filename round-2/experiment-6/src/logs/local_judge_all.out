@@ -1,0 +1,7 @@
+/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_2/gen_art/gen_art_experiment_6/.venv/lib/python3.12/site-packages/transformers/utils/hub.py:111: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+01:11:38|INFO   |23476 jobs, 23305 to do
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:  12%|█▎        | 1/8 [00:07<00:49,  7.07s/it]Loading checkpoint shards:  25%|██▌       | 2/8 [00:14<00:44,  7.37s/it]Loading checkpoint shards:  38%|███▊      | 3/8 [00:22<00:37,  7.55s/it]Loading checkpoint shards:  50%|█████     | 4/8 [00:29<00:30,  7.56s/it]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:37<00:22,  7.57s/it]Loading checkpoint shards:  75%|███████▌  | 6/8 [00:45<00:15,  7.59s/it]Loading checkpoint shards:  88%|████████▊ | 7/8 [00:52<00:07,  7.62s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:55<00:00,  6.10s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:55<00:00,  6.97s/it]
+01:12:47|INFO   |loaded Qwen/Qwen3-14B in 69s, 10.0 GB
+01:12:58|INFO   |32/23305 rows, 2.9 rows/s, eta 135.2 min, parse-ok 1.00
+01:17:08|INFO   |672/23305 rows, 2.6 rows/s, eta 146.6 min, parse-ok 1.00

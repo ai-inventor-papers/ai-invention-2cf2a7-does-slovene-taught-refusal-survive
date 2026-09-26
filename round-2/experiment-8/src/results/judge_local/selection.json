@@ -1,0 +1,51 @@
+{
+  "primary": "llama31_8b",
+  "second": "qwen3_8b",
+  "rule": "argmax binary-R Cohen kappa vs gemini on 1000-row gemma_it calib; tie within 0.01 -> qwen3_8b",
+  "table": {
+    "qwen3_8b": {
+      "n": 1000,
+      "kappa_R": 0.3566928684265622,
+      "agree_R": 0.662,
+      "kappa_3way": 0.19656371446103496,
+      "agree_3way": 0.509,
+      "label_is_top1_frac": 1.0,
+      "per_lang": {
+        "en": {
+          "n": 556,
+          "kappa_R": 0.23682036830086
+        },
+        "sl": {
+          "n": 444,
+          "kappa_R": 0.5092082667140404
+        }
+      },
+      "rate_local_R": 0.731,
+      "rate_gemini_R": 0.445
+    },
+    "llama31_8b": {
+      "n": 1000,
+      "kappa_R": 0.5171808377225985,
+      "agree_R": 0.769,
+      "kappa_3way": 0.25697562084446207,
+      "agree_3way": 0.477,
+      "label_is_top1_frac": 0.566,
+      "per_lang": {
+        "en": {
+          "n": 556,
+          "kappa_R": 0.49086991650956097
+        },
+        "sl": {
+          "n": 444,
+          "kappa_R": 0.550396520849322
+        }
+      },
+      "rate_local_R": 0.304,
+      "rate_gemini_R": 0.445
+    }
+  },
+  "repos": {
+    "qwen3_8b": "Qwen/Qwen3-8B",
+    "llama31_8b": "meta-llama/Llama-3.1-8B-Instruct"
+  }
+}

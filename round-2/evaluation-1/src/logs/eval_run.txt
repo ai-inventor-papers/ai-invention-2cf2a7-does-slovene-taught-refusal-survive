@@ -1,0 +1,35 @@
+21:04:00|INFO   |loaded 33623 harmonised rows
+21:04:00|INFO   |D_loc ...
+21:04:15|INFO   |M4 readout P1_real_or_pooled
+21:04:16|INFO   |models with data: ['gemma_it', 'gams3_it']
+21:04:16|INFO   |m.json: {'p0_pooled_orig_R': 0.95125, 'm': 1.1856729892828803, 'm_at_p50_sensitivity': 0.20016691711396528, 'note_m': 'pre-registered m is evaluated at the pooled base rate (near ceiling), which inflates it; C3 is read at EN=50%, where the same 5 pp SESOI is m_at_p50 (sensitivity, not pre-registered)', 'q0_pooled_prefill5_flip': 0.2991040661612681, 'm2': 0.48041661451848205, 'n_R': 1600, 'n_flips': 1451}
+21:04:30|INFO   |M4 readout P1_real_or_sur
+21:04:31|INFO   |models with data: ['gemma_it', 'gams3_it']
+21:04:31|INFO   |m.json: {'p0_pooled_orig_R': 0.950625, 'm': 1.1681709532295188, 'm_at_p50_sensitivity': 0.20016691711396528, 'note_m': 'pre-registered m is evaluated at the pooled base rate (near ceiling), which inflates it; C3 is read at EN=50%, where the same 5 pp SESOI is m_at_p50 (sensitivity, not pre-registered)', 'q0_pooled_prefill5_flip': 0.41212956581667815, 'm2': 0.4143607118466157, 'n_R': 1600, 'n_flips': 1451}
+21:04:36|INFO   |M4 readout pooled_P1
+21:04:37|INFO   |models with data: ['gemma_it', 'gams3_it']
+21:04:37|INFO   |m.json: {'p0_pooled_orig_R': 0.95, 'm': 1.1512560221535315, 'm_at_p50_sensitivity': 0.20016691711396528, 'note_m': 'pre-registered m is evaluated at the pooled base rate (near ceiling), which inflates it; C3 is read at EN=50%, where the same 5 pp SESOI is m_at_p50 (sensitivity, not pre-registered)', 'q0_pooled_prefill5_flip': 0.2991040661612681, 'm2': 0.48041661451848205, 'n_R': 1600, 'n_flips': 1451}
+21:04:41|INFO   |M4 readout P1_sur
+21:04:43|INFO   |models with data: ['gemma_it', 'gams3_it']
+21:04:43|INFO   |m.json: {'p0_pooled_orig_R': 0.950625, 'm': 1.1681709532295188, 'm_at_p50_sensitivity': 0.20016691711396528, 'note_m': 'pre-registered m is evaluated at the pooled base rate (near ceiling), which inflates it; C3 is read at EN=50%, where the same 5 pp SESOI is m_at_p50 (sensitivity, not pre-registered)', 'q0_pooled_prefill5_flip': 0.41212956581667815, 'm2': 0.4143607118466157, 'n_R': 1600, 'n_flips': 1451}
+21:04:47|INFO   |M4 readout P1p_real_or_sur
+21:04:48|INFO   |models with data: ['gemma_it', 'gams3_it']
+21:04:48|INFO   |m.json: {'p0_pooled_orig_R': 0.955, 'm': 1.305130954012684, 'm_at_p50_sensitivity': 0.20016691711396528, 'note_m': 'pre-registered m is evaluated at the pooled base rate (near ceiling), which inflates it; C3 is read at EN=50%, where the same 5 pp SESOI is m_at_p50 (sensitivity, not pre-registered)', 'q0_pooled_prefill5_flip': 0.39752407152682256, 'm2': 0.4192607774221395, 'n_R': 1600, 'n_flips': 1454}
+21:04:53|INFO   |M4 readout native
+21:04:54|INFO   |M4 readout lex
+21:04:54|INFO   |models with data: ['gemma_it', 'gams3_it']
+21:04:54|INFO   |m.json: {'p0_pooled_orig_R': 0.916875, 'm': 0.6752386824941827, 'm_at_p50_sensitivity': 0.20016691711396528, 'note_m': 'pre-registered m is evaluated at the pooled base rate (near ceiling), which inflates it; C3 is read at EN=50%, where the same 5 pp SESOI is m_at_p50 (sensitivity, not pre-registered)', 'q0_pooled_prefill5_flip': 0.4867075664621677, 'm2': 0.4016300432164116, 'n_R': 1600, 'n_flips': 1467}
+21:04:59|INFO   |exp4 sensitivities
+21:04:59|INFO   |models with data: ['gemma_it', 'gams3_it']
+21:04:59|INFO   |m.json: {'p0_pooled_orig_R': 0.95125, 'm': 1.1856729892828803, 'm_at_p50_sensitivity': 0.20016691711396528, 'note_m': 'pre-registered m is evaluated at the pooled base rate (near ceiling), which inflates it; C3 is read at EN=50%, where the same 5 pp SESOI is m_at_p50 (sensitivity, not pre-registered)', 'q0_pooled_prefill5_flip': 0.16264645072363887, 'm2': 0.7549428801975928, 'n_R': 1600, 'n_flips': 1451}
+21:05:04|INFO   |models with data: ['gemma_it', 'gams3_it']
+21:05:04|INFO   |m.json: {'p0_pooled_orig_R': 0.98, 'm': 3.8517059279381436, 'm_at_p50_sensitivity': 0.20016691711396528, 'note_m': 'pre-registered m is evaluated at the pooled base rate (near ceiling), which inflates it; C3 is read at EN=50%, where the same 5 pp SESOI is m_at_p50 (sensitivity, not pre-registered)', 'q0_pooled_prefill5_flip': 0.059752747252747256, 'm2': 2.5271364947018222, 'n_R': 1600, 'n_flips': 1456}
+21:05:09|INFO   |models with data: ['gemma_it', 'gams3_it']
+21:05:09|INFO   |m.json: {'p0_pooled_orig_R': 0.916875, 'm': 0.6752386824941827, 'm_at_p50_sensitivity': 0.20016691711396528, 'note_m': 'pre-registered m is evaluated at the pooled base rate (near ceiling), which inflates it; C3 is read at EN=50%, where the same 5 pp SESOI is m_at_p50 (sensitivity, not pre-registered)', 'q0_pooled_prefill5_flip': 0.4867075664621677, 'm2': 0.4016300432164116, 'n_R': 1600, 'n_flips': 1467}
+21:05:15|INFO   |M5 meta-analysis
+21:05:18|INFO   |M6 placebos
+21:05:20|INFO   |eval_full.json written in 81s
+EXIT 0
+21:05:24|INFO   |eval_out.json written; metrics 44; verdict rows 10; reconciled 38
+['fig1_forest_meta.png', 'fig2_agreement_heatmap.png', 'fig3_prefill_depth_by_readout.png', 'fig4_c3_lambda_curves.png', 'fig5_readout_sensitivity.png', 'fig6_verdict_table.png']
+DONE

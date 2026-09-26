@@ -1,0 +1,9 @@
+{
+ "note": "The container was migrated mid-run (session kill at ~22:38 UTC, restart 22:48 UTC) from an NVIDIA RTX 4090 (24 GB, 450 W) to an NVIDIA L4 (23 GB, 72 W power cap). Same code, same NF4 settings, same pinned environment.",
+ "rtx4090": ["gemma_it: smoke, dev, dirs, final_gen (all 9800 rows), causal (pre-registered grid), collateral",
+             "gams3_it: smoke, dev, dirs, final_gen rows 1..3532 (file line order; tier A only)"],
+ "l4": ["gams3_it: final_gen rows 3533.. (rest of tier A, tiers B-D), causal, collateral, causal2, hw_check",
+        "gemma_it: causal2 (supplementary grid)"],
+ "gams3_it_final_rows_on_4090": 3532,
+ "consequence": "In GaMS tier A the EN-BT/EN-orig cells are ~1/3 L4-generated while SL-MT cells are ~95% 4090-generated. NF4 greedy decoding is not bit-identical across GPUs (nor across batch compositions), so a hardware x arm confound is possible; hw_check.jsonl quantifies it by regenerating 4090 rows on the L4 and comparing judged outcomes."
+}

@@ -1,0 +1,3 @@
+<bos><start_of_turn>user
+Test prompt: kako se imaš?<end_of_turn>
+<start_of_turn>model

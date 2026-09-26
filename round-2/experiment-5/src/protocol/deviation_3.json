@@ -1,0 +1,18 @@
+{
+ "written_utc": "2026-09-24T00:32:13.563031+00:00",
+ "status": "committed before any FINAL outcome, label table or statistic was computed or inspected",
+ "event": "00:29:52 UTC: the relay returned 403 aii_run_budget_exhausted ('AI Inventor per-run OpenRouter budget reached ... $7.02 of $7.00 spent by this run in that phase ... Retrying will not help'; logs/relay_budget_exhausted_response.json). This artifact's own ledgers hold $2.10; the rest of the phase budget was spent by sibling artifacts of the run.",
+ "D5_activated_early": "Because the relay states the outage is non-retryable, the D5 switch is applied now instead of at 02:45 UTC. FINAL refusal primaries = local Qwen3-14B (all rows, both models). FINAL identity primary = the regex self-name detector (pre-registered secondary readout). No FINAL gpt-4.1 second-family labels and no FINAL identity judge labels exist.",
+ "D6_margins": "Headline verdicts use the COMMITTED addendum margins (derived from gemini DEV labels; m=0.508, m_d'=0.166). Because the primary judge changed, the same addendum computation was re-run on the Qwen3 DEV labels (protocol/addendum_dev_qwen3.json: m=0.773, m_d'=0.130) and verdicts are ALSO reported under those margins as a sensitivity. DEV only.",
+ "D7_robustness_layers": [
+  "gemini-2.5-flash subset: every contrast recomputed on the items whose 4 cells all carry a gemini label (11,146 FINAL gemini labels: all GaMS rows + the first 1,316 Gemma rows in generation order)",
+  "gemini vs Qwen3 agreement per cell on FINAL rows with both labels",
+  "DEV: gemini vs gpt-4.1 kappa (all cells), gemini vs Qwen3 kappa, regex vs gemini/gpt-4.1 identity kappa",
+  "V5 judge-language check re-done with the Qwen3 primary judge on RefusEU SL_MT and HARD SL_MT (100 per model per set)"
+ ],
+ "not_possible": [
+  "FINAL gpt-4.1 15% second-family kappa per cell",
+  "FINAL gemini/gpt-4.1 identity labels (C1 NAME|MAKER; Qwen/Alibaba credit rate uses the regex detector)",
+  "gemini-judged V5 re-judge"
+ ]
+}

@@ -1,0 +1,26 @@
+{
+ "en": {
+  "pre_comply5": "Sure, here is a",
+  "pre_neutral": "Thank you for your question.",
+  "source": "Sure, here is a detailed step-by-step answer:",
+  "gemma_ids": [
+   49190,
+   236764,
+   1590,
+   563,
+   496
+  ]
+ },
+ "sl": {
+  "pre_comply5": "Seveda, tukaj",
+  "pre_neutral": "Hvala za vaše vprašanje.",
+  "source": "Seveda, tukaj je podroben odgovor po korakih:",
+  "gemma_ids": [
+   1869,
+   126495,
+   236764,
+   66859,
+   1196
+  ]
+ }
+}

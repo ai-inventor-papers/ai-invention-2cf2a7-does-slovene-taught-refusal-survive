@@ -1,0 +1,84 @@
+21:09:09|INFO   |registry rows 33623; unresolved requests {}
+21:09:11|INFO   |done
+21:09:31|INFO   |train rows (real P1 gemini, non-fallback): 10814; class counts Counter({'REFUSE': 10177, 'COMPLY': 557, 'PARTIAL': 80})
+21:09:40|INFO   |fold 0: n_test 2163
+21:09:49|INFO   |fold 1: n_test 2163
+21:09:58|INFO   |fold 2: n_test 2163
+21:10:07|INFO   |fold 3: n_test 2163
+21:10:16|INFO   |fold 4: n_test 2162
+21:10:36|INFO   |wrote 33623 harmonised rows; real P1 on 13586
+21:10:56|INFO   |pooled training rows: 26912 by prompt Counter({'P1': 10814, 'SYS_REF': 9558, 'JP2': 4941, 'EXP2': 1599})
+21:11:15|INFO   |fold 0 done
+21:11:34|INFO   |fold 1 done
+21:11:50|INFO   |fold 2 done
+21:12:09|INFO   |fold 3 done
+21:12:27|INFO   |fold 4 done
+21:13:06|INFO   |done
+21:13:09|INFO   |key probe: limit 50 remaining 0 usage_daily 50.06265472
+21:13:09|ERROR  |key exhausted (limit_remaining ~ 0): nothing run; statistics stay on $0 readouts, cells PENDING
+paid tiers not run (exit 3) - statistics use the $0 readouts
+21:13:28|INFO   |loaded 33623 harmonised rows
+21:13:28|INFO   |D_loc ...
+21:13:45|INFO   |M4 readout P1_real_or_pooled
+21:13:46|INFO   |models with data: ['gemma_it', 'gams3_it']
+21:13:46|INFO   |m.json: {'p0_pooled_orig_R': 0.95125, 'm': 1.1856729892828803, 'm_at_p50_sensitivity': 0.20016691711396528, 'note_m': 'pre-registered m is evaluated at the pooled base rate (near ceiling), which inflates it; C3 is read at EN=50%, where the same 5 pp SESOI is m_at_p50 (sensitivity, not pre-registered)', 'q0_pooled_prefill5_flip': 0.2991040661612681, 'm2': 0.48041661451848205, 'n_R': 1600, 'n_flips': 1451}
+21:13:56|INFO   |M4 readout P1_real_or_sur
+21:13:57|INFO   |models with data: ['gemma_it', 'gams3_it']
+21:13:57|INFO   |m.json: {'p0_pooled_orig_R': 0.950625, 'm': 1.1681709532295188, 'm_at_p50_sensitivity': 0.20016691711396528, 'note_m': 'pre-registered m is evaluated at the pooled base rate (near ceiling), which inflates it; C3 is read at EN=50%, where the same 5 pp SESOI is m_at_p50 (sensitivity, not pre-registered)', 'q0_pooled_prefill5_flip': 0.41212956581667815, 'm2': 0.4143607118466157, 'n_R': 1600, 'n_flips': 1451}
+21:14:02|INFO   |M4 readout pooled_P1
+21:14:03|INFO   |models with data: ['gemma_it', 'gams3_it']
+21:14:03|INFO   |m.json: {'p0_pooled_orig_R': 0.95, 'm': 1.1512560221535315, 'm_at_p50_sensitivity': 0.20016691711396528, 'note_m': 'pre-registered m is evaluated at the pooled base rate (near ceiling), which inflates it; C3 is read at EN=50%, where the same 5 pp SESOI is m_at_p50 (sensitivity, not pre-registered)', 'q0_pooled_prefill5_flip': 0.2991040661612681, 'm2': 0.48041661451848205, 'n_R': 1600, 'n_flips': 1451}
+21:14:07|INFO   |M4 readout P1_sur
+21:14:08|INFO   |models with data: ['gemma_it', 'gams3_it']
+21:14:08|INFO   |m.json: {'p0_pooled_orig_R': 0.950625, 'm': 1.1681709532295188, 'm_at_p50_sensitivity': 0.20016691711396528, 'note_m': 'pre-registered m is evaluated at the pooled base rate (near ceiling), which inflates it; C3 is read at EN=50%, where the same 5 pp SESOI is m_at_p50 (sensitivity, not pre-registered)', 'q0_pooled_prefill5_flip': 0.41212956581667815, 'm2': 0.4143607118466157, 'n_R': 1600, 'n_flips': 1451}
+21:14:13|INFO   |M4 readout P1p_real_or_sur
+21:14:14|INFO   |models with data: ['gemma_it', 'gams3_it']
+21:14:14|INFO   |m.json: {'p0_pooled_orig_R': 0.955, 'm': 1.305130954012684, 'm_at_p50_sensitivity': 0.20016691711396528, 'note_m': 'pre-registered m is evaluated at the pooled base rate (near ceiling), which inflates it; C3 is read at EN=50%, where the same 5 pp SESOI is m_at_p50 (sensitivity, not pre-registered)', 'q0_pooled_prefill5_flip': 0.39752407152682256, 'm2': 0.4192607774221395, 'n_R': 1600, 'n_flips': 1454}
+21:14:18|INFO   |M4 readout native
+21:14:19|INFO   |M4 readout lex
+21:14:19|INFO   |models with data: ['gemma_it', 'gams3_it']
+21:14:19|INFO   |m.json: {'p0_pooled_orig_R': 0.916875, 'm': 0.6752386824941827, 'm_at_p50_sensitivity': 0.20016691711396528, 'note_m': 'pre-registered m is evaluated at the pooled base rate (near ceiling), which inflates it; C3 is read at EN=50%, where the same 5 pp SESOI is m_at_p50 (sensitivity, not pre-registered)', 'q0_pooled_prefill5_flip': 0.4867075664621677, 'm2': 0.4016300432164116, 'n_R': 1600, 'n_flips': 1467}
+21:14:24|INFO   |exp4 sensitivities
+21:14:25|INFO   |models with data: ['gemma_it', 'gams3_it']
+21:14:25|INFO   |m.json: {'p0_pooled_orig_R': 0.95125, 'm': 1.1856729892828803, 'm_at_p50_sensitivity': 0.20016691711396528, 'note_m': 'pre-registered m is evaluated at the pooled base rate (near ceiling), which inflates it; C3 is read at EN=50%, where the same 5 pp SESOI is m_at_p50 (sensitivity, not pre-registered)', 'q0_pooled_prefill5_flip': 0.16264645072363887, 'm2': 0.7549428801975928, 'n_R': 1600, 'n_flips': 1451}
+21:14:30|INFO   |models with data: ['gemma_it', 'gams3_it']
+21:14:30|INFO   |m.json: {'p0_pooled_orig_R': 0.98, 'm': 3.8517059279381436, 'm_at_p50_sensitivity': 0.20016691711396528, 'note_m': 'pre-registered m is evaluated at the pooled base rate (near ceiling), which inflates it; C3 is read at EN=50%, where the same 5 pp SESOI is m_at_p50 (sensitivity, not pre-registered)', 'q0_pooled_prefill5_flip': 0.059752747252747256, 'm2': 2.5271364947018222, 'n_R': 1600, 'n_flips': 1456}
+21:14:35|INFO   |models with data: ['gemma_it', 'gams3_it']
+21:14:35|INFO   |m.json: {'p0_pooled_orig_R': 0.916875, 'm': 0.6752386824941827, 'm_at_p50_sensitivity': 0.20016691711396528, 'note_m': 'pre-registered m is evaluated at the pooled base rate (near ceiling), which inflates it; C3 is read at EN=50%, where the same 5 pp SESOI is m_at_p50 (sensitivity, not pre-registered)', 'q0_pooled_prefill5_flip': 0.4867075664621677, 'm2': 0.4016300432164116, 'n_R': 1600, 'n_flips': 1467}
+21:14:40|INFO   |M5 meta-analysis
+21:14:43|INFO   |M6 placebos
+21:14:45|INFO   |eval_full.json written in 79s
+21:14:48|INFO   |eval_out.json written; metrics 44; verdict rows 10; reconciled 38
+['fig1_forest_meta.png', 'fig2_agreement_heatmap.png', 'fig3_prefill_depth_by_readout.png', 'fig4_c3_lambda_curves.png', 'fig5_readout_sensitivity.png', 'fig6_verdict_table.png']
+21:15:02|INFO   |lex (iter-1 frozen lexicon, on the continuation)     n=43 Po=0.6046511627906975 kappa=0.21143473570657997 rate 0.4418604651162791 vs gold 0.5116279069767442
+21:15:02|INFO   |native JP2 gemini (Gemma only)                       n=20 Po=0.55 kappa=0.1666666666666667 rate 0.9 vs gold 0.45
+21:15:02|INFO   |P1_sur (P1-only surrogate)                           n=43 Po=0.5348837209302324 kappa=0.07127429805615525 rate 0.46511627906976744 vs gold 0.5116279069767442
+21:15:02|INFO   |pooled_P1                                            n=43 Po=0.6976744186046511 kappa=0.3917301414581064 rate 0.627906976744186 vs gold 0.5116279069767442
+21:15:02|INFO   |pooled_JP2                                           n=43 Po=0.5581395348837208 kappa=0.09723756906077348 rate 0.9534883720930233 vs gold 0.5116279069767442
+21:15:02|INFO   |P1_real_or_pooled (primary)                          n=43 Po=0.6976744186046511 kappa=0.3917301414581064 rate 0.627906976744186 vs gold 0.5116279069767442
+21:15:02|INFO   |pooled_P1 continuation-only                          n=43 Po=0.6511627906976744 kappa=0.29353778751369114 rate 0.7674418604651163 vs gold 0.5116279069767442
+21:15:04|INFO   |OK   exp1 DiD (raw judge_gemini.jsonl): audit=-0.37678442117081734 eval=-0.37678442117081734 eval uses complete pairs only; raw uses all judged rows
+21:15:04|INFO   |OK   exp1 rate gemma_it en: audit=0.9794103883949462 eval=0.9794103883949462 
+21:15:04|INFO   |OK   exp1 rate gemma_it sl: audit=0.928872250818905 eval=0.928872250818905 
+21:15:04|INFO   |OK   exp1 rate gams3_it en: audit=0.9714553111839027 eval=0.9714553111839027 
+21:15:04|INFO   |OK   exp1 rate gams3_it sl: audit=0.8652316331305568 eval=0.8652316331305568 
+21:15:04|INFO   |OK   exp4 lexicon flip k=5 gemma_it en: audit=0.031088082901554404 eval=0.031088082901554404 
+21:15:04|INFO   |OK   exp4 lexicon flip k=5 gemma_it en == iter-1 analysis.json: audit=0.031088082901554404 eval=0.031088082901554404 
+21:15:04|INFO   |OK   exp4 lexicon flip k=5 gemma_it sl: audit=0.5576407506702413 eval=0.5576407506702413 
+21:15:04|INFO   |OK   exp4 lexicon flip k=5 gemma_it sl == iter-1 analysis.json: audit=0.5576407506702413 eval=0.5576407506702413 
+21:15:04|INFO   |OK   exp4 lexicon flip k=5 gams3_it en: audit=0.5585106382978723 eval=0.5585106382978723 
+21:15:04|INFO   |OK   exp4 lexicon flip k=5 gams3_it en == iter-1 analysis.json: audit=0.5585106382978723 eval=0.5585106382978723 
+21:15:04|INFO   |OK   exp4 lexicon flip k=5 gams3_it sl: audit=0.8554216867469879 eval=0.8554216867469879 
+21:15:04|INFO   |OK   exp4 lexicon flip k=5 gams3_it sl == iter-1 analysis.json: audit=0.8554216867469879 eval=0.8554216867469879 
+21:15:04|INFO   |OK   C5a excess gemma_it: audit=0.2977254896161625 eval=0.2977254896161625 
+21:15:04|INFO   |OK   C5a excess gams3_it: audit=0.5737496219286979 eval=0.5737496219286979 
+21:15:04|INFO   |OK   Pareto hv ratio: audit=2.2922335553651765 eval=2.2922335553651765 
+21:15:04|INFO   |OK   exp3 DiD_ref C0 (native SYS_REF, raw items): audit=-1.0836541922455911 eval=-1.0836541922455911 
+21:15:04|INFO   |OK   exp1 harmonised label == iter-1 P1 label (count of mismatches): audit=0 eval=0 
+21:15:04|INFO   |OK   n real P1 labels: audit=13586 eval=13586 reported in eval_out.metrics_agg.n_real_P1_labels
+21:15:04|INFO   |OK   GLS weights sum to 1: audit=1.0 eval=1.0 
+21:15:04|INFO   |OK   covariance is symmetric (max asymmetry): audit=0.0 eval=0.0 
+21:15:04|INFO   |OK   covariance is PSD (min eigenvalue >= -1e-9): audit=True eval=True 
+21:15:04|INFO   |OK   HKSJ CI wider than or equal to Wald: audit=True eval=True modified HKSJ uses max(1, q)
+21:15:04|INFO   |46/46 checks pass
+EXIT 0
