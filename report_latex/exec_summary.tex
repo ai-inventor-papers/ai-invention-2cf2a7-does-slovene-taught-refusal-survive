@@ -1,0 +1,79 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage{graphicx, geometry, amsmath, hyperref, url, booktabs, xcolor}
+\usepackage{tabularx, array, titlesec}
+\geometry{margin=1in}
+\hypersetup{colorlinks=true, linkcolor=black, citecolor=black, urlcolor=black}
+\titlespacing*{\section}{0pt}{1.5ex plus 0.4ex minus 0.3ex}{0.4ex plus 0.2ex}
+
+\title{Over-Refusal of Benign Slovene Prompts in Gemma-3-12B\\Is a Criterion Shift}
+\date{September 2026}
+\author{}
+
+\begin{document}
+\maketitle
+\vspace{-2em}
+\thispagestyle{empty}
+
+\section{Headline}
+
+On the reserved HARD evaluation set (1,093 safe and 349 harmful items, local Qwen3-14B judge), unedited Gemma-3-12B-IT applies a stricter refusal criterion in Slovene than in English on benign items: the difference-in-differences in criterion~$c$ is $+0.52$ [0.38, 0.68], with no corresponding change in sensitivity ($d'$ DiD $= -0.003$ [$-0.33, 0.29$]). False-alarm rates: Gemma EN $0.364 \to$ SL $0.569$ vs GaMS3 $0.273$. Source: Experiment~5 (Iteration~2). Evidence grade: \textbf{ESTIMATE}---the sign reverses under partial-as-refusal coding, and the readout gate has never passed. Outcome: not testable.
+
+A secondary analysis finds an output-language effect (C-OUT): edited Gemma refuses $+2.43$ [$+0.89, +5.38$] log-odds more when told to answer in Slovene than in English (PPI-corrected, Experiment~16, Iteration~5). C-OUT is also rated \textbf{ESTIMATE} (harmful-content adjudicator kappa~$= 0.12$, anchor WEAK). These measurements indicate that multilingual safety evaluations should report false-alarm rates on benign items alongside attack-success rates.
+
+\section{Goal}
+
+The run tested whether Slovene-taught refusal in GaMS3-12B-Instruct transfers to English, whether English-only abliteration (Heretic) removes Slovene refusal as effectively as English refusal, and what mechanism explains any residual Slovene refusal. GaMS3 and Gemma-3-12B-IT share a pretrained ancestor but diverge in safety-supervision language, forming a natural sibling pair.
+
+\section{What Was Tried}
+
+\textbf{Iteration~1.} Screen of four pre-registered claims on SCORE items: refusal DiD, dose contrast, base-checkpoint geometry, persona gating, Heretic transfer curve and prefill test. Killed alternates~2 and~3; dose contrast underpowered.
+
+\textbf{Iteration~2.} Reserved FINAL evaluation on 1,300 pairs; signal-detection analysis on the HARD set (criterion shift found); teacher-inheritance screen (wording inherits, decisions do not); Heretic re-test on 200 item-matched probes; reconciliation of all iteration-1 screens.
+
+\textbf{Iteration~3.} Screen repair of experiment~8 with fresh judges; fresh 300-item probe with DeBERTa judge (experiment~9); mechanism test of geometry and induction hypotheses (experiment~10); FINAL confirmation on reserved split with Hungarian arm (experiment~11); utility control on six tasks (experiment~12).
+
+\textbf{Iteration~4.} Paid-judge readout completion (evaluation~3) pooling across item bodies; 2$\times$3$\times$3 input$\times$output language mechanism test (experiment~14); fine-grained lambda ladder on fresh 300-item body (experiment~15); held-out confirmation slot failed (GPU lost).
+
+\textbf{Iteration~5.} C-OUT test on fresh 294-item body with PPI (experiment~16); RefusEU FINAL on 1,300 prompts per cell (experiment~17); R-INCAP safety evaluation with StrongREJECT (evaluation~4); paper-number audit (evaluation~5); novelty and fact check (research~2).
+
+\section{Key Results}
+
+\begin{table}[!htbp]
+\centering
+{\small
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}p{3.2cm}p{2.5cm}lX}
+\toprule
+Finding & Source & Grade & Number \\
+\midrule
+Criterion shift (originals, HARD) & Exp~5, Iter~2 & ESTIMATE & $c$ DiD $= +0.52$ [0.38, 0.68] \\
+C-OUT output-language effect & Exp~16, Iter~5 & ESTIMATE & OUT$_{\text{Gemma}}$ $= +2.43$ [0.89, 5.38] \\
+Cross-model C-OUT contrast & Exp~16, Iter~5 & ESTIMATE & dOUT $= -2.31$ [$-5.34, -0.68$] \\
+R-BASE (lag is baseline) & Exp~15, Iter~4 & Supported & $G_{3,\text{edit}} = +0.47$ [$-0.96, 2.14$] \\
+R-INCAP (reserve = safety) & Eval~4, Iter~5 & ESTIMATE & OUT$_U = 2.61$ [2.20, 3.07] \\
+PF index (deflection share) & Eval~4, Iter~5 & ESTIMATE & $\Delta$PF $= 0.46$ [0.23, 0.65] \\
+Utility: no SL damage & Exp~12, Iter~3 & OK & Asymmetry $A > 0$ all cells \\
+RefusEU FINAL edit effect & Exp~17, Iter~5 & ROBUST & ASR $\Delta$ 0.657--0.937 \\
+Identity calibration & Exp~5, Iter~2 & PASS & DiD$_{\text{id}} = 3.46$ [2.55, 4.62] \\
+\bottomrule
+\end{tabularx}
+}
+\end{table}
+
+The count of 8~of~9 compliance-valid rows with a criterion CI below zero was a post-hoc refinement. Judge-agreement kappa ranged from 0.50 to 1.0 per cell (Qwen3 vs gemini, DEV split, unedited rows).
+
+\section{What Failed}
+
+\textbf{Dead alternates.} Base-checkpoint geometry (alt~2): $\Delta d'$ sign depends on layer. Persona gating (alt~3): manipulation check fails, premise contradicted. Prefill-depth signature (alt~4): uncitable---no readout exceeds $\kappa = 0.60$ on prefill continuations.
+
+\textbf{Geometry and induction hypotheses.} Nearly collinear at own-$L^*$ ($\cos = 0.986$--$0.991$); layer-dependent at common layer. The Slovene-perpendicular component does not induce refusal.
+
+\textbf{Readout gate.} Never passed in any iteration. Best judge $\kappa$ on edited text: 0.43 (gemini). Specificity on edited Slovene rows: 0.42--0.73.
+
+\textbf{Experiment~13 (held-out confirmation).} GPU lost 25 minutes into run; all generation and labelling cancelled.
+
+\textbf{Frozen-core Heretic} (bf16, 80 trials, Heretic's own selection). Never executed across five iterations. Natural RefusEU reserved-split under the edit: also never executed.
+
+\medskip\noindent\textbf{Open questions.}
+All adjudication is author-LLM, not human. The frozen-core Heretic procedure and the natural reserved-split evaluation remain unexecuted. If R-BASE is correct, the lag is a property of model selection (GaMS3 was trained to refuse less in Slovene), not of the abliteration procedure. The C-OUT finding, rated ESTIMATE, deserves pre-registered confirmation with a validated readout and human adjudication. The harmful-content adjudicator kappa (0.12 in experiment~16; 0.59 in evaluation~4) remains below the gate. The novelty verdict is PARTIALLY OCCUPIED after Addagada (arXiv 2609.08373) and Nguyen et al.\ (arXiv 2608.26186); the narrowed design (crossing both factors with safety endpoints on a sibling pair under partial-dose abliteration) remains unoccupied (medium-low confidence). The full report is 31 pages.
+
+\end{document}
