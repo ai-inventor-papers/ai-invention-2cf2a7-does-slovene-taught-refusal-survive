@@ -1,0 +1,45 @@
+# 2026-09-25T00:56:25Z https://arxiv.org/abs/2609.27758 :: Title:|Submitted on|\[v[0-9]+\]|Comments:
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/abs/2609.27758
+Type: HTML
+Pattern: Title:|Submitted on|\[v[0-9]+\]|Comments: (4 matches in 8247 chars)
+
+--- Content ---
+
+407:...g in](https://arxiv.org/login)
+
+Search arXiv
+
+Press Enter to search * [Advanced search](https://arxiv.org/search/advanced)
+
+# Computer Science > Computation and Language
+
+**arXiv:2609.27758** (cs) 
+
+[Submitted on 15 Aug 2026]
+
+# Title:Hard Negatives Reveal What Easy Negatives Hide: Cross-Lingual Harmfulness Representations Degrade with Resource Tier Under Hard Negatives
+
+Authors:[Paras Balani](https://arxiv.org/search/cs?searchtype...
+--
+2706:...-negative transfer can coexist with substantial degradation under hard negatives. Easy-negative evaluation alone therefore cannot establish that the harmfulness representation survives translation. 
+
+Comments: | 10 pages, 5 figures  
+---|---  
+Subjects: |  Computation and Language (cs.CL); Artificial Intelligence (cs.AI)  
+Cite as: | [arXiv:2609.27758](https://arxiv.org/abs/2609.27758) [cs.CL]  
+  | (or  [...
+--
+3222:...10.48550/arXiv.2609.27758> Focus to learn more arXiv-issued DOI via DataCite (pending registration)  
+  
+## Submission history
+
+From: Paras Balani [[view email](/show-email/11a8bbea/2609.27758)]   
+**[v1]** Sat, 15 Aug 2026 18:03:22 UTC (124 KB)  
+
+
+Full-text links:
+
+## Access Paper:
+
+View a PDF of the paper titled Hard Negatives Reveal What Easy Negatives Hide: Cross-Lingual Harmfulness Representatio...

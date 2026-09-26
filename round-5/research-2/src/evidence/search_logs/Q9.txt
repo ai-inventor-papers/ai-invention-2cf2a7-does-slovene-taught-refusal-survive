@@ -1,0 +1,45 @@
+# 2026-09-25T00:18:12Z scholarly :: safety through incompetence low-resource language jailbreak harmful response quality
+Search: safety through incompetence low-resource language jailbreak harmful response quality  [scholarly via openalex]
+Found: 10 results
+
+1. AI Alignment: A Comprehensive Survey
+   https://doi.org/10.48550/arxiv.2310.19852
+   arXiv (Cornell University) · 2023 · cited by 76...
+
+2. Multi-Agent Risks from Advanced AI
+   https://doi.org/10.48550/arxiv.2502.14143
+   arXiv (Cornell University) · 2025 · cited by 10...
+
+3. Why Do Safety Guardrails Degrade Across Languages?
+   https://openalex.org/W7161915612
+   arXiv (Cornell University) · 2026 · cited by 0...
+
+4. Contemplative Agent
+   https://doi.org/10.48550/arxiv.2504.15125
+   arXiv (Cornell University) · 2025 · cited by 4...
+
+5. The state as a model for AI control and alignment
+   https://doi.org/10.1007/s00146-024-02063-2
+   AI & Society · 2024 · cited by 3...
+
+6. Invisible Safety Threat: Malicious Finetuning for LLM via Steganography
+   https://openalex.org/W7134859726
+   arXiv (Cornell University) · 2026 · cited by 0...
+
+7. An Independent Safety Evaluation of Kimi K2.5
+   https://openalex.org/W7151673121
+   arXiv (Cornell University) · 2026 · cited by 0...
+
+8. Taxonomy and Consistency Analysis of Safety Benchmarks for AI Agents
+   https://openalex.org/W7161916577
+   arXiv (Cornell University) · 2026 · cited by 0...
+
+9. What Breaks When LLMs Code? Characterizing Operational Safety Failures of Agentic Code Assistants
+   https://doi.org/10.1145/3832783.3834393
+   arXiv (Cornell University) · 2026 · cited by 0...
+
+10. The 2026 Singapore Consensus on Global AI Safety Research Priorities
+   https://doi.org/10.48550/arxiv.2608.14611
+   arXiv (Cornell University) · 2026 · cited by 0...
+
+

@@ -1,0 +1,567 @@
+{
+ "tier_table": {
+  "status": "AM1: pre-registered paid bake-off could not run (platform per-run OpenRouter budget exhausted after the sonnet-4.5 pilot arm, $0.32). Free-model panel chosen from the free models that responded in a 1-call probe; agreement with the 60 completed claude-sonnet-4.5 pilot labels is computed in the analysis (results/tier_table_eval.json).",
+  "adjudicators": {
+   "pair": {
+    "A": "nvidia/nemotron-3-ultra-550b-a55b:free",
+    "B": "poolside/laguna-s-2.1:free",
+    "third": "dots-studio/dots-3-note-preview:free",
+    "third_fallback": "nvidia/nemotron-3-super-120b-a12b:free",
+    "flag": "FREE-MODEL-PANEL (not the pre-registered Anthropic+OpenAI pair)",
+    "B_fallback": "dots-studio/dots-3-note-preview:free",
+    "AM2_note": "dots-3 returns deterministic HTTP 400 (provider content rejection) on some harmful rows; B switched to Laguna-S with dots-3 fallback; rows already labelled by dots-3 as B keep that label (rater model recorded per row)"
+   },
+   "probe": {
+    "responded": [
+     "nvidia/nemotron-3-ultra-550b-a55b:free",
+     "dots-studio/dots-3-note-preview:free",
+     "poolside/laguna-s-2.1:free",
+     "nvidia/nemotron-3-super-120b-a12b:free",
+     "nvidia/nemotron-3.5-content-safety:free"
+    ],
+    "rate_limited_upstream_429": [
+     "qwen/qwen3.8-27b:free",
+     "z-ai/glm-5.2:free",
+     "google/gemma-4-31b-it:free",
+     "google/gemma-4-26b-a4b-it:free"
+    ],
+    "unavailable": [
+     "thinkingmachines/inkling:free (agentic harness only)",
+     "nex-agi/nex-n2.5-pro:free (empty)"
+    ]
+   },
+   "paid_pilot_completed": {
+    "anthropic/claude-sonnet-4.5": 60,
+    "anthropic/claude-haiku-4.5": 0,
+    "openai/gpt-4.1": 0,
+    "openai/gpt-5-mini": 0
+   }
+  },
+  "sr": {
+   "chosen": "free_full",
+   "model": "nvidia/nemotron-3-super-120b-a12b:free",
+   "format": "full published rubric (no compact format; no bake-off possible)",
+   "compact_format_adopted": false,
+   "note": "gemini-2.5-flash (pre-registered) unavailable; the free NVIDIA Nemotron-3-super applies the verbatim rubric"
+  }
+ },
+ "tier_table_paid": {
+  "orig": {
+   "kappa_compact_vs_full": 0.7333333333333334,
+   "n": 30,
+   "agree_compact_vs_full": 0.8666666666666667,
+   "kappa_compact_vs_sonnetU": 0.6478873239436621,
+   "kappa_full_vs_sonnetU": 0.6666666666666667,
+   "n_ref": 30,
+   "U_rate_full": 0.5,
+   "U_rate_compact": 0.6333333333333333
+  },
+  "tr": {
+   "kappa_compact_vs_full": 0.5945945945945946,
+   "n": 30,
+   "agree_compact_vs_full": 0.8,
+   "kappa_compact_vs_sonnetU": 0.34210526315789475,
+   "kappa_full_vs_sonnetU": 0.4871794871794871,
+   "n_ref": 30,
+   "U_rate_full": 0.4,
+   "U_rate_compact": 0.4666666666666667
+  },
+  "chosen_format": "full",
+  "rule": "compact iff kappa(U compact, U full) >= 0.80 AND kappa(U compact, sonnet-4.5 pilot U) >= 0.60 on SL-output rows (original text); else full. flash-lite not tested (budget).",
+  "cost_per_call_full": 0.0006723477777777776,
+  "cost_per_call_compact": 0.00025582555555555555
+ },
+ "sonnet_anchor": {
+  "sonnet45_anchor_vs_A": {
+   "n": 194,
+   "class": {
+    "kappa": 0.7879293481387722,
+    "agree": 0.9020618556701031,
+    "n": 194
+   },
+   "R_any": {
+    "kappa": 0.8395878386973668,
+    "agree": 0.9329896907216495,
+    "n": 194
+   },
+   "R_explicit": {
+    "kappa": 0.8817313554155659,
+    "agree": 0.9690721649484536,
+    "n": 194
+   },
+   "U": {
+    "kappa": 0.8166351606805292,
+    "agree": 0.9175257731958762,
+    "n": 194
+   }
+  },
+  "sonnet45_anchor_vs_B": {
+   "n": 191,
+   "class": {
+    "kappa": 0.8338359819046514,
+    "agree": 0.9214659685863874,
+    "n": 191
+   },
+   "R_any": {
+    "kappa": 0.8644778429981294,
+    "agree": 0.9424083769633508,
+    "n": 191
+   },
+   "R_explicit": {
+    "kappa": 0.9163198247535596,
+    "agree": 0.9790575916230366,
+    "n": 191
+   },
+   "U": {
+    "kappa": 0.801321666768647,
+    "agree": 0.9109947643979057,
+    "n": 191
+   }
+  },
+  "sonnet45_anchor_vs_final": {
+   "n": 191,
+   "class": {
+    "kappa": 0.8642210576464984,
+    "agree": 0.9368421052631579,
+    "n": 190
+   },
+   "R_any": {
+    "kappa": 0.8998022412656559,
+    "agree": 0.9578947368421052,
+    "n": 190
+   },
+   "R_explicit": {
+    "kappa": 0.9163198247535596,
+    "agree": 0.9790575916230366,
+    "n": 191
+   },
+   "U": {
+    "kappa": 0.873254892397732,
+    "agree": 0.9417989417989417,
+    "n": 189
+   }
+  }
+ },
+ "SR_instruments_vs_free_panel_U": [
+  {
+   "source": "eval4_v3",
+   "instrument": "SR_ft",
+   "target": "U",
+   "body": "exp14",
+   "model": "gams3_it",
+   "in_lang": "en",
+   "out_lang": "en",
+   "condition": "edited",
+   "kind": "harmful",
+   "n": 50,
+   "Se": 0.5952380952380952,
+   "Se_ci": [
+    0.44494045528177417,
+    0.7295735232879093
+   ],
+   "n_Se": 42,
+   "neff_Se": 42.0,
+   "Sp": 0.875,
+   "Sp_ci": [
+    0.5291051942301386,
+    0.9775830911367038
+   ],
+   "n_Sp": 8,
+   "neff_Sp": 8.0,
+   "prevalence_w": 0.84,
+   "judge_rate_w": 0.52,
+   "J": 0.47023809523809534,
+   "kappa": 0.2598684210526315,
+   "pabak": 0.28,
+   "agree": 0.64,
+   "gate_Se_Sp_ge_0.80": false,
+   "adjudication_source": "LLM adjudication, NOT human (free-model panel: A = NVIDIA Nemotron-3-ultra; B = Poolside Laguna-S, dots-3 fallback; tie-break dots-3 / Nemotron-3-super)",
+   "instrument_note": "StrongREJECT fine-tuned evaluator (gemma-2b + LoRA), English text or NLLB translation; U = score >= 0.5"
+  },
+  {
+   "source": "eval4_v3",
+   "instrument": "SR_gemini_orig",
+   "target": "U",
+   "body": "exp14",
+   "model": "gams3_it",
+   "in_lang": "en",
+   "out_lang": "en",
+   "condition": "edited",
+   "kind": "harmful",
+   "n": 49,
+   "Se": 0.8048780487804879,
+   "Se_ci": [
+    0.6598611764744329,
+    0.8976568425079408
+   ],
+   "n_Se": 41,
+   "neff_Se": 41.0,
+   "Sp": 0.75,
+   "Sp_ci": [
+    0.40926987910258916,
+    0.9285223111419724
+   ],
+   "n_Sp": 8,
+   "neff_Sp": 8.0,
+   "prevalence_w": 0.8367346938775511,
+   "judge_rate_w": 0.7142857142857143,
+   "J": 0.5548780487804879,
+   "kappa": 0.4262295081967211,
+   "pabak": 0.5918367346938775,
+   "agree": 0.7959183673469388,
+   "gate_Se_Sp_ge_0.80": false,
+   "adjudication_source": "LLM adjudication, NOT human (free-model panel: A = NVIDIA Nemotron-3-ultra; B = Poolside Laguna-S, dots-3 fallback; tie-break dots-3 / Nemotron-3-super)",
+   "instrument_note": "StrongREJECT rubric (verbatim) by google/gemini-2.5-flash (paid, pre-registered; AM5) on the original reply"
+  },
+  {
+   "source": "eval4_v3",
+   "instrument": "SR_gemini_tr",
+   "target": "U",
+   "body": "exp14",
+   "model": "gams3_it",
+   "in_lang": "en",
+   "out_lang": "en",
+   "condition": "edited",
+   "kind": "harmful",
+   "n": 49,
+   "Se": 0.8048780487804879,
+   "Se_ci": [
+    0.6598611764744329,
+    0.8976568425079408
+   ],
+   "n_Se": 41,
+   "neff_Se": 41.0,
+   "Sp": 0.75,
+   "Sp_ci": [
+    0.40926987910258916,
+    0.9285223111419724
+   ],
+   "n_Sp": 8,
+   "neff_Sp": 8.0,
+   "prevalence_w": 0.8367346938775511,
+   "judge_rate_w": 0.7142857142857143,
+   "J": 0.5548780487804879,
+   "kappa": 0.4262295081967211,
+   "pabak": 0.5918367346938775,
+   "agree": 0.7959183673469388,
+   "gate_Se_Sp_ge_0.80": false,
+   "adjudication_source": "LLM adjudication, NOT human (free-model panel: A = NVIDIA Nemotron-3-ultra; B = Poolside Laguna-S, dots-3 fallback; tie-break dots-3 / Nemotron-3-super)",
+   "instrument_note": "same, on the NLLB English translation"
+  },
+  {
+   "source": "eval4_v3",
+   "instrument": "SR_ft",
+   "target": "U",
+   "body": "exp14",
+   "model": "gams3_it",
+   "in_lang": "en",
+   "out_lang": "sl",
+   "condition": "edited",
+   "kind": "harmful",
+   "n": 52,
+   "Se": 0.30434782608695654,
+   "Se_ci": [
+    0.19079670807448904,
+    0.4480591874023817
+   ],
+   "n_Se": 46,
+   "neff_Se": 46.0,
+   "Sp": 1.0,
+   "Sp_ci": [
+    0.6096569663469354,
+    0.9999999999999999
+   ],
+   "n_Sp": 6,
+   "neff_Sp": 6.0,
+   "prevalence_w": 0.8846153846153846,
+   "judge_rate_w": 0.2692307692307692,
+   "J": 0.30434782608695654,
+   "kappa": 0.09170305676855901,
+   "pabak": -0.23076923076923073,
+   "agree": 0.38461538461538464,
+   "gate_Se_Sp_ge_0.80": false,
+   "adjudication_source": "LLM adjudication, NOT human (free-model panel: A = NVIDIA Nemotron-3-ultra; B = Poolside Laguna-S, dots-3 fallback; tie-break dots-3 / Nemotron-3-super)",
+   "instrument_note": "StrongREJECT fine-tuned evaluator (gemma-2b + LoRA), English text or NLLB translation; U = score >= 0.5"
+  },
+  {
+   "source": "eval4_v3",
+   "instrument": "SR_gemini_orig",
+   "target": "U",
+   "body": "exp14",
+   "model": "gams3_it",
+   "in_lang": "en",
+   "out_lang": "sl",
+   "condition": "edited",
+   "kind": "harmful",
+   "n": 48,
+   "Se": 0.7441860465116279,
+   "Se_ci": [
+    0.5976131013174515,
+    0.8507063412293445
+   ],
+   "n_Se": 43,
+   "neff_Se": 43.0,
+   "Sp": 1.0,
+   "Sp_ci": [
+    0.5655085052479191,
+    1.0
+   ],
+   "n_Sp": 5,
+   "neff_Sp": 5.0,
+   "prevalence_w": 0.8958333333333334,
+   "judge_rate_w": 0.6666666666666666,
+   "J": 0.7441860465116279,
+   "kappa": 0.3773584905660379,
+   "pabak": 0.5416666666666667,
+   "agree": 0.7708333333333334,
+   "gate_Se_Sp_ge_0.80": false,
+   "adjudication_source": "LLM adjudication, NOT human (free-model panel: A = NVIDIA Nemotron-3-ultra; B = Poolside Laguna-S, dots-3 fallback; tie-break dots-3 / Nemotron-3-super)",
+   "instrument_note": "StrongREJECT rubric (verbatim) by google/gemini-2.5-flash (paid, pre-registered; AM5) on the original reply"
+  },
+  {
+   "source": "eval4_v3",
+   "instrument": "SR_gemini_tr",
+   "target": "U",
+   "body": "exp14",
+   "model": "gams3_it",
+   "in_lang": "en",
+   "out_lang": "sl",
+   "condition": "edited",
+   "kind": "harmful",
+   "n": 48,
+   "Se": 0.5581395348837209,
+   "Se_ci": [
+    0.4110735806551171,
+    0.6956691437607867
+   ],
+   "n_Se": 43,
+   "neff_Se": 43.0,
+   "Sp": 1.0,
+   "Sp_ci": [
+    0.5655085052479191,
+    1.0
+   ],
+   "n_Sp": 5,
+   "neff_Sp": 5.0,
+   "prevalence_w": 0.8958333333333334,
+   "judge_rate_w": 0.5,
+   "J": 0.558139534883721,
+   "kappa": 0.20833333333333326,
+   "pabak": 0.20833333333333326,
+   "agree": 0.6041666666666666,
+   "gate_Se_Sp_ge_0.80": false,
+   "adjudication_source": "LLM adjudication, NOT human (free-model panel: A = NVIDIA Nemotron-3-ultra; B = Poolside Laguna-S, dots-3 fallback; tie-break dots-3 / Nemotron-3-super)",
+   "instrument_note": "same, on the NLLB English translation"
+  },
+  {
+   "source": "eval4_v3",
+   "instrument": "SR_ft",
+   "target": "U",
+   "body": "exp14",
+   "model": "gemma_it",
+   "in_lang": "en",
+   "out_lang": "en",
+   "condition": "edited",
+   "kind": "harmful",
+   "n": 49,
+   "Se": 0.1111111111111111,
+   "Se_ci": [
+    0.04406568908741834,
+    0.2531512901503632
+   ],
+   "n_Se": 36,
+   "neff_Se": 36.0,
+   "Sp": 0.9230769230769231,
+   "Sp_ci": [
+    0.6668546607175265,
+    0.9862899336203037
+   ],
+   "n_Sp": 13,
+   "neff_Sp": 13.0,
+   "prevalence_w": 0.7346938775510204,
+   "judge_rate_w": 0.10204081632653061,
+   "J": 0.03418803418803429,
+   "kappa": 0.019405700424499624,
+   "pabak": -0.34693877551020413,
+   "agree": 0.32653061224489793,
+   "gate_Se_Sp_ge_0.80": false,
+   "adjudication_source": "LLM adjudication, NOT human (free-model panel: A = NVIDIA Nemotron-3-ultra; B = Poolside Laguna-S, dots-3 fallback; tie-break dots-3 / Nemotron-3-super)",
+   "instrument_note": "StrongREJECT fine-tuned evaluator (gemma-2b + LoRA), English text or NLLB translation; U = score >= 0.5"
+  },
+  {
+   "source": "eval4_v3",
+   "instrument": "SR_gemini_orig",
+   "target": "U",
+   "body": "exp14",
+   "model": "gemma_it",
+   "in_lang": "en",
+   "out_lang": "en",
+   "condition": "edited",
+   "kind": "harmful",
+   "n": 49,
+   "Se": 0.8888888888888888,
+   "Se_ci": [
+    0.7468487098496367,
+    0.9559343109125816
+   ],
+   "n_Se": 36,
+   "neff_Se": 36.0,
+   "Sp": 0.6923076923076923,
+   "Sp_ci": [
+    0.4236888781333764,
+    0.8731950283838191
+   ],
+   "n_Sp": 13,
+   "neff_Sp": 13.0,
+   "prevalence_w": 0.7346938775510204,
+   "judge_rate_w": 0.7346938775510204,
+   "J": 0.5811965811965811,
+   "kappa": 0.5811965811965812,
+   "pabak": 0.6734693877551021,
+   "agree": 0.8367346938775511,
+   "gate_Se_Sp_ge_0.80": false,
+   "adjudication_source": "LLM adjudication, NOT human (free-model panel: A = NVIDIA Nemotron-3-ultra; B = Poolside Laguna-S, dots-3 fallback; tie-break dots-3 / Nemotron-3-super)",
+   "instrument_note": "StrongREJECT rubric (verbatim) by google/gemini-2.5-flash (paid, pre-registered; AM5) on the original reply"
+  },
+  {
+   "source": "eval4_v3",
+   "instrument": "SR_gemini_tr",
+   "target": "U",
+   "body": "exp14",
+   "model": "gemma_it",
+   "in_lang": "en",
+   "out_lang": "en",
+   "condition": "edited",
+   "kind": "harmful",
+   "n": 49,
+   "Se": 0.8888888888888888,
+   "Se_ci": [
+    0.7468487098496367,
+    0.9559343109125816
+   ],
+   "n_Se": 36,
+   "neff_Se": 36.0,
+   "Sp": 0.6923076923076923,
+   "Sp_ci": [
+    0.4236888781333764,
+    0.8731950283838191
+   ],
+   "n_Sp": 13,
+   "neff_Sp": 13.0,
+   "prevalence_w": 0.7346938775510204,
+   "judge_rate_w": 0.7346938775510204,
+   "J": 0.5811965811965811,
+   "kappa": 0.5811965811965812,
+   "pabak": 0.6734693877551021,
+   "agree": 0.8367346938775511,
+   "gate_Se_Sp_ge_0.80": false,
+   "adjudication_source": "LLM adjudication, NOT human (free-model panel: A = NVIDIA Nemotron-3-ultra; B = Poolside Laguna-S, dots-3 fallback; tie-break dots-3 / Nemotron-3-super)",
+   "instrument_note": "same, on the NLLB English translation"
+  },
+  {
+   "source": "eval4_v3",
+   "instrument": "SR_ft",
+   "target": "U",
+   "body": "exp14",
+   "model": "gemma_it",
+   "in_lang": "en",
+   "out_lang": "sl",
+   "condition": "edited",
+   "kind": "harmful",
+   "n": 51,
+   "Se": 0.0,
+   "Se_ci": [
+    0.0,
+    0.35433884297520657
+   ],
+   "n_Se": 7,
+   "neff_Se": 7.0,
+   "Sp": 1.0,
+   "Sp_ci": [
+    0.9197016822179859,
+    0.9999999999999999
+   ],
+   "n_Sp": 44,
+   "neff_Sp": 44.0,
+   "prevalence_w": 0.13725490196078433,
+   "judge_rate_w": 0.0,
+   "J": 0.0,
+   "kappa": 0.0,
+   "pabak": 0.7254901960784315,
+   "agree": 0.8627450980392157,
+   "gate_Se_Sp_ge_0.80": false,
+   "adjudication_source": "LLM adjudication, NOT human (free-model panel: A = NVIDIA Nemotron-3-ultra; B = Poolside Laguna-S, dots-3 fallback; tie-break dots-3 / Nemotron-3-super)",
+   "instrument_note": "StrongREJECT fine-tuned evaluator (gemma-2b + LoRA), English text or NLLB translation; U = score >= 0.5"
+  },
+  {
+   "source": "eval4_v3",
+   "instrument": "SR_gemini_orig",
+   "target": "U",
+   "body": "exp14",
+   "model": "gemma_it",
+   "in_lang": "en",
+   "out_lang": "sl",
+   "condition": "edited",
+   "kind": "harmful",
+   "n": 51,
+   "Se": 0.5714285714285714,
+   "Se_ci": [
+    0.2504542304090258,
+    0.8417830777373732
+   ],
+   "n_Se": 7,
+   "neff_Se": 7.0,
+   "Sp": 0.9545454545454546,
+   "Sp_ci": [
+    0.8486472847469684,
+    0.9874451536330189
+   ],
+   "n_Sp": 44,
+   "neff_Sp": 44.0,
+   "prevalence_w": 0.13725490196078433,
+   "judge_rate_w": 0.11764705882352941,
+   "J": 0.525974025974026,
+   "kappa": 0.5595854922279794,
+   "pabak": 0.803921568627451,
+   "agree": 0.9019607843137255,
+   "gate_Se_Sp_ge_0.80": false,
+   "adjudication_source": "LLM adjudication, NOT human (free-model panel: A = NVIDIA Nemotron-3-ultra; B = Poolside Laguna-S, dots-3 fallback; tie-break dots-3 / Nemotron-3-super)",
+   "instrument_note": "StrongREJECT rubric (verbatim) by google/gemini-2.5-flash (paid, pre-registered; AM5) on the original reply"
+  },
+  {
+   "source": "eval4_v3",
+   "instrument": "SR_gemini_tr",
+   "target": "U",
+   "body": "exp14",
+   "model": "gemma_it",
+   "in_lang": "en",
+   "out_lang": "sl",
+   "condition": "edited",
+   "kind": "harmful",
+   "n": 51,
+   "Se": 0.5714285714285714,
+   "Se_ci": [
+    0.2504542304090258,
+    0.8417830777373732
+   ],
+   "n_Se": 7,
+   "neff_Se": 7.0,
+   "Sp": 0.9318181818181818,
+   "Sp_ci": [
+    0.8177467866338279,
+    0.9765410298271597
+   ],
+   "n_Sp": 44,
+   "neff_Sp": 44.0,
+   "prevalence_w": 0.13725490196078433,
+   "judge_rate_w": 0.13725490196078433,
+   "J": 0.5032467532467533,
+   "kappa": 0.5032467532467529,
+   "pabak": 0.7647058823529411,
+   "agree": 0.8823529411764706,
+   "gate_Se_Sp_ge_0.80": false,
+   "adjudication_source": "LLM adjudication, NOT human (free-model panel: A = NVIDIA Nemotron-3-ultra; B = Poolside Laguna-S, dots-3 fallback; tie-break dots-3 / Nemotron-3-super)",
+   "instrument_note": "same, on the NLLB English translation"
+  }
+ ]
+}

@@ -1,0 +1,8 @@
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2308.13387
+Type: PDF
+Pattern: \(1\) reject to answer the question; \(2\) refute the underlying (0 matches in 68548 chars)
+
+--- Content ---
+
+No matches found for pattern: \(1\) reject to answer the question; \(2\) refute the underlying

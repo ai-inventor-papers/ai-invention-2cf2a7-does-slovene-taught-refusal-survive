@@ -1,0 +1,113 @@
+# 2026-09-25T00:54:38Z https://arxiv.org/pdf/2401.13136 :: harmfulness curse|relevance curse|less relevant|translate.{0,40}English|GPT-4 as|evaluat.{0,30}relevan
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2401.13136
+Type: PDF
+Pattern: harmfulness curse|relevance curse|less relevant|translate.{0,40}English|GPT-4 as|evaluat.{0,30}relevan (14 matches in 50818 chars)
+
+--- Content ---
+
+3587:...ses more often to malicious prompts in lower-
+resource languages compared to higher-resource
+languages. e.g., with GPT-4, we find that 35%
+of the responses to malicious prompts in low-
+resource languages contain harmful content, com-
+pared to 1% in high-resource languages. (2) LLMs
+tend to generate less relevant responses, as LLM’s
+instruction-following ability is still limited in low-
+resource languages. e.g., GPT-4 recognizes the in-
+struction and produces relevant responses in only
+80% cases with low-resource languages, com-
+pared to almost 100% in high-resource languages.
+To understand what the discrep...
+--
+6733:...ages
+We begin our study by demonstrating that GPT-
+4 is vulnerable to attacks with malicious prompts
+in low-resource languages (Deng et al., 2024).
+We observe and highlight two curses with respect
+to LLMs’ responses in lower-resource languages
+compared to higher-resource ones (harmfulness
+curse and relevance curse).
+Curse 1. (harmfulness curse) LLMs tend
+to generate more harmful responses when
+prompted with malicious instructions written
+in low-resource languages compared to high-
+resource languages,
+Curse 2. (relevance curse) With malicious
+prompts in low-resource languages, LLM
+tends to generate less relevant responses as
+LLM’s instruction-following ability is still
+limited in low-resource languages.
+2.1
+Translation-based jailbreaking
+To illustrate LLM’s vulnerability to multilingual
+jailbreak, we propose a simple translation-based
+attack method.
+We start with a set of mali-
+cious prompts written in Eng...
+--
+18730:...(80.4→78.0)
+CHAT-RLHF
+44.8 (77.4→35.6)
+23.4 (80.4→57.0)
+Table 3: Improvement (∆, in percentage) of alignment
+methods on reducing HARMFUL RATE (↓, a higher
+reduction is preferred) of aligned models. The num-
+bers in parentheses mean the performance changes af-
+ter alignment.
+The results suggest that harmfulness curse for
+low-resource languages persists after alignment
+training. This highlights the difficulty of resolving
+the curse with typical alignment training methods.
+3.4
+Results on following rate
+As shown in Table 4, the base LLaMa2 model
+exhibits low FOLLOWING RATE across all lan-
+guages without further al...
+--
+23896:...nstrating the ef-
+fectiveness of monolingual SFT on high-resource lan-
+guages.
+stages: (a) The pre-training stage, where the LLM
+is trained on a vast corpus using causal language
+modeling loss. (b) The post-hoc alignment stage,
+where the pre-trained LLMs are further fine-tuned
+using alignment data.
+Harmfulness curse.
+LLMs without alignment
+suffer from malicious prompts, regardless of the
+language. Based on our results in Table 2 (full
+results can refer to Table 12), LLaMa2 (BASE)
+achieves a similar average HARMFUL RATE on
+low-resource and high-resource languages, and we
+do not observe any significant bias towa...
+--
+24838:...nment stage as a culprit.
+Besides, when we fine-tune the model with pure
+monolingual low-resource data (as shown in Fig-
+ure 2), LLM still fails to improve in terms of
+HARMFUL RATE, which is different from high-
+resource cases where EN-RLHF and EN-SFT
+bring improvements to the model.4 This suggests
+harmfulness curse is difficult to solve during the
+fine-tuning stage since they may be deeply rooted,
+possibly originating from the scarce low-resource
+language data during the pre-training phase.
+Overall, harmfulness curse can not be observed
+in the base version of LLMs. However, after being
+applied further safety-aware alignment, harmful-
+ness curse begins to emerge. Although harmful-
+ness curse does not emerge after the pre-training
+stage, its origin possibly originates from insuf-
+ficient low-resource language data during pre-
+training.
+Relevance curse.
+Unlike the case of harmful-
+ness curse, we can observe relevance curse after
+the pre-training stage of LLMs. As shown in Ta-
+ble 4, LLaMa2 (BASE) achieves 33.0% and 24.8%
+FOLLOWING RATE on high-resource and low-
+resource languages, respectively, which presents a
+bias across different language leve...
+--
+[4 more matches not shown]

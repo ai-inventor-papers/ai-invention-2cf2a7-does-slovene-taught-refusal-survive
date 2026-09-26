@@ -1,0 +1,35 @@
+# 2026-09-25T00:39:48Z https://arxiv.org/pdf/2606.06088 :: Sloven|Croatian|Serbian|Bosnian|slv|hrv
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2606.06088
+Type: PDF
+Pattern: Sloven|Croatian|Serbian|Bosnian|slv|hrv (2 matches in 26981 chars)
+
+--- Content ---
+
+10109:...For the ‘Joint‘ part of the dataset,
+we report the distribution of how often the model
+chose the respective language in language pairs vs.
+other languages.
+3.2
+Transliteration Data
+Cyrillic to Latin.
+We transliterated Bulgarian,
+Macedonian, Russian, Serbian, and Ukrainian text
+(sourced from the Leipzig Wikipedia corpus) into
+Latin script using two target typographies: En-
+glish (via CyrTranslit; Labrèche, 2015). We further
+transliterated Russian into Czech using Czech or-
+thography (via conversion scri...
+--
+14541:...conditions. They fail
+to recognize the language at all once the expected
+script is removed. GCLD3 shows partial robust-
+ness for Russian and Bulgarian transliteration into
+English (F1 scores of 0.76 and 0.68), though it,
+too, fails on Macedonian and Serbian, and, while
+not entirely, on Czech-orthography Russian. All
+systems score 0 on Arabic-script Kazakh.
+In contrast, diacritics removal and homoglyph
+substitution have a more moderate, but still strong
+impact. Most systems retain F1 above 0.80 for
+diac...

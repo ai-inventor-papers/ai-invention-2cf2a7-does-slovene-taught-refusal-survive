@@ -1,0 +1,93 @@
+# 2026-09-25T00:22:59Z https://arxiv.org/pdf/2608.14626 :: respond in|answer in|reply in|output language|response language|target language|in English regardless|StrongREJECT|harmful content|refus
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2608.14626
+Type: PDF
+Pattern: respond in|answer in|reply in|output language|response language|target language|in English regardless|StrongREJECT|harmful content|refus (8 matches in 50775 chars)
+
+--- Content ---
+
+13381:...erence and Reward Optimization
+Zhao et al. (2025) address the paired preference
+data bottleneck with MPO (Multilingual reward
+gaP Optimization). Rather than requiring (chosen,
+rejected) pairs in each target language, MPO min-
+imizes the reward gap between safe and unsafe
+outputs directly across languages. It consistently
+outperforms RLHF and DPO baselines on cross-
+lingual safety benchmarks under noisy condition...
+--
+13964:...eline re-
+duces toxicity by 99% and introduces KTO-S, an
+improved regularization strategy that stabilizes fine-
+tuning under data scarcity. Zhang et al. (2026a) use
+knowledge distillation to transfer refusal behaviour
+
+from OpenAI o1-mini into open-source multilin-
+gual models via LoRA. Jailbreak resistance im-
+proves in both high and low-resource languages,
+but the authors find a critical caveat: unfi...
+--
+15743:... directional consistency between mul-
+tilingual representation vectors in a single train-
+ing update, enabling simultaneous safety align-
+ment across languages without response-level su-
+pervision in target languages. Further evaluation
+across languages and tasks indicates improved
+cross-lingual generalization, suggesting the ap-
+proach as a practical solution for multilingual con-
+sistency alignment under limit...
+--
+19556:...significantly higher than those
+observed in English. Pattnayak and Chowdhuri
+(2026a) reach a related finding across 12 Indic lan-
+guages through IndicJR: contract-bound prompts
+in JSON format inflate refusal counts without ac-
+tually preventing jailbreaks, and safety alignment
+degrades consistently as language resource level
+decreases. Atil et al. (2025) extend this picture to
+ten languages, finding th...
+--
+24594:...rieties.
+6.3
+African Language Safety Benchmarks
+Compared with other multilingual regions, bench-
+mark resources for African languages remain lim-
+ited.
+LSR (Faruna, 2026) evaluates the cross-
+lingual refusal degradation in West African lan-
+guages such as Yoruba, Hausa, Igbo, and Igala,
+while (Abdullahi et al., 2026) introduces Ubuntu-
+Guard, the first African policy-based safety bench-
+mark. Beyond to...
+--
+26800:...guages. Morphologi-
+cally rich languages and underrepresented scripts
+often suffer from fragmented tokenization and
+weaker semantic representations, reducing the re-
+liability of safety reasoning and refusal behavior.
+These issues become particularly visible in African
+and other low-resource languages, where both pre-
+training data and alignment supervision remain
+scarce.
+More recent work explores whet...
+--
+27656:...ss-lingual safety
+behavior may depend on a sparse set of shared
+multilingual safety neurons that can be selectively
+targeted during alignment.Wang et al. (2026) find
+a shared directional structure in refusal behavior
+across safety-aligned languages, implying that mul-
+tilingual safety alignment could depend on partially
+universal latent safety representations.
+Recent approaches also investigate how saf...
+--
+44636:...utational Linguistics: ACL 2024, pages 5865–
+5877, Bangkok, Thailand. Association for Computa-
+tional Linguistics.
+Xinpeng Wang, Mingyang Wang, Yihong Liu, Hin-
+rich Schütze, and Barbara Plank. 2026. Refusal di-
+rection is universal across safety-aligned languages.
+Preprint, arXiv:2505.17306.
+Yahan Yang, Soham Dan, Shuo Li, Dan Roth, and In-
+sup Lee. 2025. MrGuard: A multilingual reasoning
+guardrail fo...

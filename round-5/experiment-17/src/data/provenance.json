@@ -1,0 +1,20 @@
+{
+ "source_dataset": "art_EG6OpEkGvysx round-1/dataset-1/src/full_data_out.json (block refuseu_eval)",
+ "source_sha256": "35c98bc5d5336829af33a341d3d8b92a83d696e99a530ee5bc947d262c30803c",
+ "split_manifest_sha256": "ab5e3f0ba2263f2334fbbe90d7fa617a598e3e200ea39fae121afe8a57fb33cf",
+ "hf_dataset": "NASK-PIB/RefusEU@5523ce30b9b6af59e95ade9c610b8b974412a6bb",
+ "fold_rule": "DEV = 100 pair_ids with lowest int(sha1(pair_id)); FINAL = rest",
+ "counts": {
+  "FINAL_rows": 2600,
+  "DEV_rows": 200,
+  "FINAL_pairs": 1300,
+  "DEV_pairs": 100
+ },
+ "max_prompt_chars": 5132,
+ "rand_ctrl_rule": "first 200 FINAL pair_ids by sha1('20260925|'+pair_id)",
+ "sens256_rule": "first 100 FINAL pair_ids by sha1('256|20260925|'+pair_id) (EN+SL)",
+ "reduction_order": "hash_rank = rank of sha1('20260925|'+pair_id)",
+ "items_final_sha256": "cd856020b88b22e1989cfd6616057fd5965b09ce7e49b559ac6f80e6e5d301c2",
+ "items_dev_sha256": "47f7923b6663f77c1124f45665ea70d7a82a98fe3da24cb2bba51bd8505ac4f4",
+ "contamination_hit_files": 3
+}

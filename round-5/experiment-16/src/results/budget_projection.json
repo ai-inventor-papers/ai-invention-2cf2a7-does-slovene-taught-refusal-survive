@@ -1,0 +1,39 @@
+{
+ "n_smoke": 20,
+ "parsed": 20,
+ "reasoning_tokens": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "reasoning_zero": true,
+ "cost_smoke": 0.0127815,
+ "usd_per_call": 0.000639075,
+ "tokens_in_mean": 809.0,
+ "tokens_out_mean": 158.55,
+ "projection": {
+  "P-B (2592 gemini)": 1.6564824,
+  "P-C (1152 gemini)": 0.7362144,
+  "P-D (576 gemini)": 0.3681072,
+  "P-A (400 x gpt-4.1 + 400 x haiku-4.5 + ~15% tie-break), est. from token prices": 2.2074000000000003
+ },
+ "hard_stop": 4.0,
+ "total_projected": 4.968204
+}

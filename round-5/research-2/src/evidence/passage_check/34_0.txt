@@ -1,0 +1,12 @@
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2308.01263
+Type: PDF
+Pattern: Partial refusal is any combination of refusal and compliance (1 matches in 96997 chars)
+
+--- Content ---
+
+95506:...trasting unsafe prompt types in XSTEST.
+Partial refusal is any combination of refusal and compliance within the same response.
+
+Prompt Type
+...

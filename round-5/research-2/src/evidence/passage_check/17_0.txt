@@ -1,0 +1,8 @@
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://huggingface.co/cjvt/GaMS3-12B-Instruct/raw/1d0b27af5748784482600d24779409e7e1dc9adc/README.md
+Type: HTML
+Pattern: The model might also work for other languages supported by G (1 matches in 27602 chars)
+
+--- Content ---
+
+2515:...atian, Bosnian and Serbian (secondary). The model might also work for other languages supported by Gemma 3, even though it was not continual...

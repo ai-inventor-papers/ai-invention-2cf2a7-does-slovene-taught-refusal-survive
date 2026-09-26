@@ -1,0 +1,29 @@
+# 2026-09-25T00:59:19Z https://arxiv.org/abs/2607.14480
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/abs/2607.14480
+Type: HTML
+Length: 8156 chars (truncated)
+
+--- Content ---
+
+Skip to main content [](https://arxiv.org/IgnoreMe) [ ](https://arxiv.org/) [ Search ](https://arxiv.org/search) [Submit](https://arxiv.org/user/create) [Donate](https://info.arxiv.org/about/donate.html) [Log in](https://arxiv.org/login)
+
+Search arXiv
+
+Press Enter to search * [Advanced search](https://arxiv.org/search/advanced)
+
+# Computer Science > Computation and Language
+
+**arXiv:2607.14480** (cs) 
+
+[Submitted on 16 Jul 2026 ([v1](https://arxiv.org/abs/2607.14480v1)), last revised 26 Aug 2026 (this version, v3)]
+
+# Title:Lower-Resource, Higher Scores: Language Bias in LLM Evaluators
+
+Authors:[Ej Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou,+E), [Lucas Resck](https://arxiv.org/search/cs?searchtype=author&query=Resck,+L), [Zheng Hui](https://arxiv.org/search/cs?searchtype=author&query=Hui,+Z), [Anna Korhonen](https://arxiv.org/search/cs?searchtype=author&query=Korhonen,+A)
+
+View a PDF of the paper titled Lower-Resource, Higher Scores: Language Bias in LLM Evaluators, by Ej Zhou and 3 other authors
+
+[View PDF](/pdf/2607.14480) [HTML (experimental)](https://arxiv.org/html/2607.14480v3)
+
+> Abstract:LLM evaluators (trained reward models and prompted LLM-as-a-Judge) are routinely validated via pairwise accuracy. In a multilingual setting, this operates under the premise that high pairwise accuracy implies reliable, language-neutral scoring. We show that this assumption does not hold. We conduct experiments with semantically identical instruction-response pairs across 23 languages, and find that multilingual evaluators assign significantly different scores to different evaluation languages. The bias is statistically significant and consistent across eight open-weight evaluators of different architectures and training paradigms, persists in frontier judges, 

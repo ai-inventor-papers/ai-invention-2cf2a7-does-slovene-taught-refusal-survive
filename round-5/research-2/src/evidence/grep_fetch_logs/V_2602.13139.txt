@@ -1,0 +1,52 @@
+# 2026-09-25T00:39:48Z https://arxiv.org/abs/2602.13139 :: Submitted on|\[v[0-9]+\]|Comments:|Title:|Authors:
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/abs/2602.13139
+Type: HTML
+Pattern: Submitted on|\[v[0-9]+\]|Comments:|Title:|Authors: (9 matches in 8337 chars)
+
+--- Content ---
+
+407:...arch) [Submit](https://arxiv.org/user/create) [Donate](https://info.arxiv.org/about/donate.html) [Log in](https://arxiv.org/login)
+
+Search arXiv
+
+Press Enter to search * [Advanced search](https://arxiv.org/search/advanced)
+
+# Computer Science > Computation and Language
+
+**arXiv:2602.13139** (cs) 
+
+[Submitted on 13 Feb 2026 ([v1](https://arxiv.org/abs/2602.13139v1)), last revised 18 Jun 2026 (this version, v4)]
+
+# Title:OpenLID-v3: Improving the Precision of Closely Related Language Identification -- An Experience Report
+
+Authors:[Mariia Fedorova](https://arxiv.org/search/cs?searchtype=author&query=Fedorova,+M), [Nikolay Arefyev](https://arxiv.org/search/cs?searchtype=author&query=Arefyev,+N), [Maja Buljan](https://arxiv.org/search/cs?searchtype=author&query=Buljan,+M), [Jindřich Helcl](https://arxiv.org/search/cs?searchtype...
+--
+2590:...dinavian languages) and contribute new evaluation datasets where existing ones are inadequate. We find that ensemble approaches improve precision but also substantially reduce coverage for low-resource languages. OpenLID-v3 is available on [this https URL](https://huggingface.co/HPLT/OpenLID-v3). 
+
+Comments: | VarDial'26 workshop at the EACL 2026 conference  
+---|---  
+Subjects: |  Computation and Language (cs.CL)  
+Cite as: | [arXiv:2602.13139](https://arxiv.org/abs/2602.13139) [cs.CL]  
+  | (or  [arXiv:2602.13139v4](https://arxiv.org/abs/2602.13139v4) [cs.CL] for this version)   
+  |  <https://doi.or...
+--
+3205:...8550/arXiv.2602.13139> Focus to learn more arXiv-issued DOI via DataCite  
+Related DOI:  | <https://doi.org/10.18653/v1/2026.vardial-1.23> Focus to learn more DOI(s) linking to related resources   
+  
+## Submission history
+
+From: Mariia Fedorova [[view email](/show-email/9f9697b9/2602.13139)]   
+**[[v1]](/abs/2602.13139v1)** Fri, 13 Feb 2026 17:47:08 UTC (63 KB)  
+**[[v2]](/abs/2602.13139v2)** Mon, 23 Feb 2026 17:38:41 UTC (69 KB)  
+**[[v3]](/abs/2602.13139v3)** Tue, 16 Jun 2026 11:13:12 UTC (70 KB)  
+**[v4]** Thu, 18 Jun 2026 11:51:21 UTC (70 KB)  
+
+
+Full-text links:
+
+## Access Paper:
+
+View a PDF of the paper titled OpenLID-v3: Improving the Precision of Closely Related Language Identification -- An Experience Report, by Mariia Fedor...
+--
+[1 more matches not shown]

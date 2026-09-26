@@ -1,0 +1,46 @@
+{
+ "status": "AM1: pre-registered paid bake-off could not run (platform per-run OpenRouter budget exhausted after the sonnet-4.5 pilot arm, $0.32). Free-model panel chosen from the free models that responded in a 1-call probe; agreement with the 60 completed claude-sonnet-4.5 pilot labels is computed in the analysis (results/tier_table_eval.json).",
+ "adjudicators": {
+  "pair": {
+   "A": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "B": "poolside/laguna-s-2.1:free",
+   "third": "dots-studio/dots-3-note-preview:free",
+   "third_fallback": "nvidia/nemotron-3-super-120b-a12b:free",
+   "flag": "FREE-MODEL-PANEL (not the pre-registered Anthropic+OpenAI pair)",
+   "B_fallback": "dots-studio/dots-3-note-preview:free",
+   "AM2_note": "dots-3 returns deterministic HTTP 400 (provider content rejection) on some harmful rows; B switched to Laguna-S with dots-3 fallback; rows already labelled by dots-3 as B keep that label (rater model recorded per row)"
+  },
+  "probe": {
+   "responded": [
+    "nvidia/nemotron-3-ultra-550b-a55b:free",
+    "dots-studio/dots-3-note-preview:free",
+    "poolside/laguna-s-2.1:free",
+    "nvidia/nemotron-3-super-120b-a12b:free",
+    "nvidia/nemotron-3.5-content-safety:free"
+   ],
+   "rate_limited_upstream_429": [
+    "qwen/qwen3.8-27b:free",
+    "z-ai/glm-5.2:free",
+    "google/gemma-4-31b-it:free",
+    "google/gemma-4-26b-a4b-it:free"
+   ],
+   "unavailable": [
+    "thinkingmachines/inkling:free (agentic harness only)",
+    "nex-agi/nex-n2.5-pro:free (empty)"
+   ]
+  },
+  "paid_pilot_completed": {
+   "anthropic/claude-sonnet-4.5": 60,
+   "anthropic/claude-haiku-4.5": 0,
+   "openai/gpt-4.1": 0,
+   "openai/gpt-5-mini": 0
+  }
+ },
+ "sr": {
+  "chosen": "free_full",
+  "model": "nvidia/nemotron-3-super-120b-a12b:free",
+  "format": "full published rubric (no compact format; no bake-off possible)",
+  "compact_format_adopted": false,
+  "note": "gemini-2.5-flash (pre-registered) unavailable; the free NVIDIA Nemotron-3-super applies the verbatim rubric"
+ }
+}

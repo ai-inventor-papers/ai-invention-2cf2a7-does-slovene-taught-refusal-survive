@@ -1,0 +1,54 @@
+# 2026-09-25T00:39:48Z https://arxiv.org/abs/2609.10594 :: Submitted on|\[v[0-9]+\]|Comments:|Title:|Authors:
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/abs/2609.10594
+Type: HTML
+Pattern: Submitted on|\[v[0-9]+\]|Comments:|Title:|Authors: (5 matches in 7272 chars)
+
+--- Content ---
+
+408:...rch) [Submit](https://arxiv.org/user/create) [Donate](https://info.arxiv.org/about/donate.html) [Log in](https://arxiv.org/login)
+
+Search arXiv
+
+Press Enter to search * [Advanced search](https://arxiv.org/search/advanced)
+
+# Computer Science > Cryptography and Security
+
+**arXiv:2609.10594** (cs) 
+
+[Submitted on 7 Sep 2026]
+
+# Title:An Empirical Measurement of Jailbreaking Evaluators
+
+Authors:[Yujie Mu](https://arxiv.org/search/cs?searchtype=author&query=Mu,+Y)
+
+View a PDF of the paper titled An Empirical Measurement of Jailbreaking Evaluators, by Yujie Mu
+
+[View PDF](/pdf/2609.10594) [HTML (experimental)](https://arxiv.org/html/2609.10594v1)
+
+> Abstract:Expert evaluation of jailbreak re...
+--
+2061:... types, and consistency across attack families. For evaluators that require a general-purpose LLM judge, we use a shared backbone to control for model-specific variation. We found that JADES exhibits the best overall performance, while HarmBench and StrongReject also demonstrate good performance. 
+
+Comments: | 12 pages  
+---|---  
+Subjects: |  Cryptography and Security (cs.CR); Machine Learning (cs.LG)  
+Cite as: | [arXiv:2609.10594](https://arxiv.org/abs/2609.10594) [cs.CR]  
+  | (or  [arXiv:2609.10594v1](https://arxiv.org/abs/2609.10594v1) [cs.CR] for this version)   
+  |  <https://doi.org/10.48550/arXiv.2609.10594> Focus to learn more arXiv-issued DOI via DataCite  
+  
+## Submission history
+
+From: Yujie Mu [[view email](/show-email/61cc00a8/2609.10594)]   
+**[v1]** Mon, 7 Sep 2026 03:16:25 UTC (68 KB)  
+
+
+Full-text links:
+
+## Access Paper:
+
+View a PDF of the paper titled An Empirical Measurement of Jailbreaking Evaluators, by Yujie Mu
+
+  * [View PDF](/pdf/2609.10594)
+  * [HTML (experimental)](https://arxiv.org/html/2609.10594v1)
+  * [TeX Source ](/src/2609....

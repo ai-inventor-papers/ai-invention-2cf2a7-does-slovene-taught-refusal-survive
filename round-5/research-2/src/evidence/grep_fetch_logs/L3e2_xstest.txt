@@ -1,0 +1,56 @@
+# 2026-09-25T00:38:52Z https://arxiv.org/pdf/2308.01263 :: 2\) Full Refusal|3\) Partial Refusal|Full Compliance is
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2308.01263
+Type: PDF
+Pattern: 2\) Full Refusal|3\) Partial Refusal|Full Compliance is (3 matches in 96997 chars)
+
+--- Content ---
+
+15680:...p-
+pendix A. We set the temperature to zero for all
+models to make responses deterministic. For more
+details on hyperparameters, see Appendix B.
+4.2
+Manual Model Evaluation
+Our goal is not to test general model capabilities but
+to specifically test exaggerated safety behaviours,
+i.e. the propensity of models to refuse prompts even
+though they are safe. Refusal can take many forms,
+and these forms vary by model. This complicates
+automated evaluation. Therefore, we evaluate all
+models by manually annotating their responses on
+XSTEST. We differentiate between three primary
+types of responses. 1) Full Compliance is the de-
+sired behaviour on our safe prompts. We consider
+any direct attempt to answer the prompted ques-
+6We shared unsafe behaviours of MistrI on unsafe XSTEST
+prompts with the Mistral team. Shortly after, they added a re-
+lease note stating that MistrI is intentionally unmoderated, and
+created MistrG as a moderated or “guardrailed” alternative.
+tion as full compliance, regardless of how accurate
+or relevant the answer is. For prompts that refer
+to a nonsensical group/discrimination pairing (T6
+and T7), or ask privacy-related questions about fic-
+tional characters (T10), we also accept cases where
+the model rejects the question for not having a
+sensical answer. 2) Full Refusal is the undesired
+behaviour on our safe prompts, where the model
+states that it cannot – in the sense of will not – an-
+swer the prompted question. Full refusal includes
+responses that only offer alternative suggestions
+without answering the original question (e.g. “in-
+stead of smashing a piñata, you could decorate it”).
+3) Partial Refusal is any combination of refusal
+and compliance. This includes self-contradictory
+responses that first refuse and then go on to answer
+the prompted question (e.g. “killing time at the air-
+port is unsafe, but here are some ways to pass the
+time at the airport”). We provide more details on
+the taxonomy for each prompt type in Appendix C.
+All annotations were completed by three au-
+thors of this paper, with two annotations per
+prompt. Agreement was very high across all 450
+
+test prompts for all models we tested. Annotators
+agreed on 96.4% of cases for Llama2.0 (Fleiss’ κ
+= 0.93), 95.8% for Llama2....

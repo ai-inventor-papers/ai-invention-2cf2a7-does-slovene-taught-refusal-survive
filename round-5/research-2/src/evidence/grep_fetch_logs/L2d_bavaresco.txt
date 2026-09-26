@@ -1,0 +1,50 @@
+# 2026-09-25T00:46:59Z https://arxiv.org/abs/2406.18403 :: Submitted|\[v[0-9]\]|Comments:|reliable evaluators on some tasks|20 NLP datasets|11
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/abs/2406.18403
+Type: HTML
+Pattern: Submitted|\[v[0-9]\]|Comments:|reliable evaluators on some tasks|20 NLP datasets|11 (11 matches in 8988 chars)
+
+--- Content ---
+
+407:...arch) [Submit](https://arxiv.org/user/create) [Donate](https://info.arxiv.org/about/donate.html) [Log in](https://arxiv.org/login)
+
+Search arXiv
+
+Press Enter to search * [Advanced search](https://arxiv.org/search/advanced)
+
+# Computer Science > Computation and Language
+
+**arXiv:2406.18403** (cs) 
+
+[Submitted on 26 Jun 2024 ([v1](https://arxiv.org/abs/2406.18403v1)), last revised 2 Jun 2025 (this version, v3)]
+
+# Title:LLMs instead of Human Judges? A Large Scale Empirical Study across 20 NLP Evaluation Tasks
+
+Authors:[Anna Bavaresco](https://arxiv.org/search/cs?searchtype=author&query=Bavaresco,+A), [Raffaella Bernardi](htt...
+--
+2851:...06.18403v3)
+
+> Abstract:There is an increasing trend towards evaluating NLP models with LLMs instead of human judgments, raising questions about the validity of these evaluations, as well as their reproducibility in the case of proprietary models. We provide JUDGE-BENCH, an extensible collection of 20 NLP datasets with human annotations covering a broad range of evaluated properties and types of data, and comprehensively evaluate 11 current LLMs, covering both open-weight and proprietary models, for their ability to replicate the annotations. Our evaluations show substantial variance across models and datasets. Models are reliable evaluators on some tasks, but overall display substantial variability depending on the property being evaluated, the expertise level of the human judges, and whether the language is human or model-generated. We conclude that LLMs should be carefully validated against human judgments before being used as evaluators. 
+
+Comments: | Accepted to the main conference of ACL 2025  
+---|---  
+Subjects: |  Computation and Language (cs.CL)  
+Cite as: | [arXiv:2406.18403](https://arxiv.org/abs/2406.18403) [cs.CL]  
+  | (or  [arXiv:2406.18403v3](https://arxiv.org/abs/2406.18403v3) [cs.CL] for this version)   
+  |  <https://doi.org/10.48550/arXiv.2406.18403> Focus to learn more arXiv-issued DOI via DataCite  
+  
+## Submission history
+
+From: Vera Neplenbroek [[view email](/show-email/95ed50c9/2406.18403)]   
+**[[v1]](/abs/2406.18403v1)** Wed, 26 Jun 2024 14:56:13 UTC (9,284 KB)  
+**[[v2]](/abs/2406.18403v2)** Thu, 19 Dec 2024 11:07:09 UTC (9,283 KB)  
+**[v3]** Mon, 2 Jun 2025 11:31:19 UTC (9,688 KB)  
+
+
+Full-text links:
+
+## Access Paper:
+
+View a PDF of the paper titled LLMs instead of Human Judges? A Large Scale Empirical Study across 20 NLP Evaluation Tasks, by Anna Bavaresco and ...
+--
+[3 more matches not shown]

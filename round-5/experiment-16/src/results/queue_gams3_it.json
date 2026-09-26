@@ -1,0 +1,29 @@
+{
+ "n": 10014,
+ "by_priority": {
+  "1": 3252,
+  "2": 1470,
+  "3": 1176,
+  "4": 588,
+  "5": 1176,
+  "7": 588,
+  "8": 1764
+ },
+ "run": {
+  "n": 7642,
+  "s": 3275.7,
+  "deadline": true
+ },
+ "not_generated": {
+  "P5|lo|EN>SL": 1,
+  "P5|lo|SF_SL>SL": 19,
+  "P7|zero|HU>HU": 294,
+  "P7|hi|HU>HU": 294,
+  "P8|lo|EN>HU": 294,
+  "P8|lo|SL>SL": 294,
+  "P8|one|EN>HU": 294,
+  "P8|one|SL>SL": 294,
+  "P8|one|SF_SL>SL": 294,
+  "P8|one|SF_EN>EN": 294
+ }
+}

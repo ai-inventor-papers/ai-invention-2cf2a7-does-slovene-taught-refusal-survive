@@ -1,0 +1,351 @@
+{
+ "n_checks": 49,
+ "n_pass": 49,
+ "pass_rate": 1.0,
+ "checks": [
+  {
+   "check": "exp15 lambda-0 count gemma_en",
+   "independent": 294,
+   "audit": 294.0,
+   "tol": 0,
+   "pass": true
+  },
+  {
+   "check": "exp15 lambda-0 count gemma_sl",
+   "independent": 299,
+   "audit": 299.0,
+   "tol": 0,
+   "pass": true
+  },
+  {
+   "check": "exp15 lambda-0 count gams_en",
+   "independent": 289,
+   "audit": 289.0,
+   "tol": 0,
+   "pass": true
+  },
+  {
+   "check": "exp15 lambda-0 count gams_sl",
+   "independent": 292,
+   "audit": 292.0,
+   "tol": 0,
+   "pass": true
+  },
+  {
+   "check": "exp15 G3_orig",
+   "independent": -1.1705822417254947,
+   "audit": -1.1705822417254943,
+   "tol": 1e-09,
+   "pass": true
+  },
+  {
+   "check": "exp15 G3_orig vs exp15 saved",
+   "independent": -1.1705822417254947,
+   "audit": -1.1705822417255,
+   "tol": 1e-09,
+   "pass": true
+  },
+  {
+   "check": "exp15 FI_m",
+   "independent": 1,
+   "audit": 1,
+   "tol": 0,
+   "pass": true
+  },
+  {
+   "check": "exp15 FI_0",
+   "independent": 4,
+   "audit": 4,
+   "tol": 0,
+   "pass": true
+  },
+  {
+   "check": "leave-1 min",
+   "independent": -2.1439725401981926,
+   "audit": -2.143972540198193,
+   "tol": 1e-09,
+   "pass": true
+  },
+  {
+   "check": "leave-1 max",
+   "independent": -0.8715603183205798,
+   "audit": -0.8715603183205793,
+   "tol": 1e-09,
+   "pass": true
+  },
+  {
+   "check": "Beta posterior P(G3_orig<-m)",
+   "independent": 0.74224,
+   "audit": 0.74243,
+   "tol": 0.01,
+   "pass": true
+  },
+  {
+   "check": "eval3 exp9_lambda G3_orig vs eval3 saved",
+   "independent": -2.5568399739798413,
+   "audit": -2.556839973979848,
+   "tol": 1e-06,
+   "pass": true
+  },
+  {
+   "check": "eval3 exp9_lambda FI_m",
+   "independent": 9,
+   "audit": 9,
+   "tol": 0,
+   "pass": true
+  },
+  {
+   "check": "eval3 exp9_lambda FI_0",
+   "independent": 13,
+   "audit": 13,
+   "tol": 0,
+   "pass": true
+  },
+  {
+   "check": "eval3 exp11_final G3_orig vs eval3 saved",
+   "independent": -1.1062128837921836,
+   "audit": -1.106212883792184,
+   "tol": 1e-06,
+   "pass": true
+  },
+  {
+   "check": "eval3 exp11_final FI_m",
+   "independent": 2,
+   "audit": 2,
+   "tol": 0,
+   "pass": true
+  },
+  {
+   "check": "eval3 exp11_final FI_0",
+   "independent": 5,
+   "audit": 5,
+   "tol": 0,
+   "pass": true
+  },
+  {
+   "check": "eval3 exp8_A1 G3_orig vs eval3 saved",
+   "independent": -1.1323069324211366,
+   "audit": -1.1323069324211326,
+   "tol": 1e-06,
+   "pass": true
+  },
+  {
+   "check": "eval3 exp8_A1 FI_m",
+   "independent": 1,
+   "audit": 1,
+   "tol": 0,
+   "pass": true
+  },
+  {
+   "check": "eval3 exp8_A1 FI_0",
+   "independent": 4,
+   "audit": 4,
+   "tol": 0,
+   "pass": true
+  },
+  {
+   "check": "eval3 exp10_op G3_orig vs eval3 saved",
+   "independent": 0.9875654713175197,
+   "audit": 0.9875654713175219,
+   "tol": 1e-06,
+   "pass": true
+  },
+  {
+   "check": "eval3 exp10_op FI_m",
+   "independent": 1,
+   "audit": 1,
+   "tol": 0,
+   "pass": true
+  },
+  {
+   "check": "eval3 exp10_op FI_0",
+   "independent": 1,
+   "audit": 1,
+   "tol": 0,
+   "pass": true
+  },
+  {
+   "check": "exp15 excess gemma_it",
+   "independent": 0.9594257179865278,
+   "audit": 0.9594257179865278,
+   "tol": 1e-09,
+   "pass": true
+  },
+  {
+   "check": "exp15 excess gams3_it",
+   "independent": 0.7960518749477941,
+   "audit": 0.7960518749477941,
+   "tol": 1e-09,
+   "pass": true
+  },
+  {
+   "check": "exp14 gemma_it excess CI low (log)",
+   "independent": -1.9023560420680763,
+   "audit": -1.8548835273837512,
+   "tol": 0.1,
+   "pass": true
+  },
+  {
+   "check": "exp14 gemma_it excess CI high (log)",
+   "independent": 0.6695271479107515,
+   "audit": 0.7103524375137371,
+   "tol": 0.1,
+   "pass": true
+  },
+  {
+   "check": "exp14 gemma_it excess point",
+   "independent": 0.7674944704706762,
+   "audit": 0.7674944704706769,
+   "tol": 1e-09,
+   "pass": true
+  },
+  {
+   "check": "exp14 gams3_it excess CI low (log)",
+   "independent": -1.1732396223785528,
+   "audit": -1.1931530062212554,
+   "tol": 0.1,
+   "pass": true
+  },
+  {
+   "check": "exp14 gams3_it excess CI high (log)",
+   "independent": -0.04741861316488575,
+   "audit": -0.05447111019711158,
+   "tol": 0.1,
+   "pass": true
+  },
+  {
+   "check": "exp14 gams3_it excess point",
+   "independent": 0.5662354923211823,
+   "audit": 0.5662354923211826,
+   "tol": 1e-09,
+   "pass": true
+  },
+  {
+   "check": "exp9 gemma_it excess point",
+   "independent": 0.323779793082318,
+   "audit": 0.323779793082318,
+   "tol": 1e-09,
+   "pass": true
+  },
+  {
+   "check": "exp9 gemma_it excess CI low (log)",
+   "independent": -1.7544160886717821,
+   "audit": -1.7442259516884173,
+   "tol": 0.1,
+   "pass": true
+  },
+  {
+   "check": "exp9 gemma_it excess CI high (log)",
+   "independent": -0.51179638737484,
+   "audit": -0.5396841352619344,
+   "tol": 0.1,
+   "pass": true
+  },
+  {
+   "check": "exp9 gams3_it excess point",
+   "independent": 0.6181562502029491,
+   "audit": 0.6181562502029491,
+   "tol": 1e-09,
+   "pass": true
+  },
+  {
+   "check": "exp9 gams3_it excess CI low (log)",
+   "independent": -0.7846805924931617,
+   "audit": -0.7987619377566479,
+   "tol": 0.1,
+   "pass": true
+  },
+  {
+   "check": "exp9 gams3_it excess CI high (log)",
+   "independent": -0.18674531161413332,
+   "audit": -0.18617004246651156,
+   "tol": 0.1,
+   "pass": true
+  },
+  {
+   "check": "exp14 cell_table mismatches (edit cells)",
+   "independent": 0,
+   "audit": 0,
+   "tol": 0,
+   "pass": true
+  },
+  {
+   "check": "exp13 overlap B",
+   "independent": 116,
+   "audit": 116,
+   "tol": 0,
+   "pass": true
+  },
+  {
+   "check": "exp13 overlap C",
+   "independent": 55,
+   "audit": 55,
+   "tol": 0,
+   "pass": true
+  },
+  {
+   "check": "exp14 hi SLoutput harmonised Delta_c",
+   "independent": -1.5598563728134462,
+   "audit": -1.5598563728134462,
+   "tol": 1e-09,
+   "pass": true
+  },
+  {
+   "check": "exp15 lambda-0 harmonised Delta_c (from per-step c_ref)",
+   "independent": -0.39025351882004033,
+   "audit": -0.39025351882004033,
+   "tol": 1e-09,
+   "pass": true
+  },
+  {
+   "check": "exp14 SLinput manipulation validity",
+   "independent": 0,
+   "audit": 0,
+   "tol": 0,
+   "pass": true
+  },
+  {
+   "check": "exp14 SLoutput manipulation validity",
+   "independent": 1,
+   "audit": 1,
+   "tol": 0,
+   "pass": true
+  },
+  {
+   "check": "exp14 SLboth manipulation validity",
+   "independent": 1,
+   "audit": 1,
+   "tol": 0,
+   "pass": true
+  },
+  {
+   "check": "exp9 real DiD CI excludes 0 (1=yes)",
+   "independent": 1,
+   "audit": 1,
+   "tol": 0,
+   "pass": true
+  },
+  {
+   "check": "exp9 model-shuffled placebo DiD CI includes 0 (1=yes)",
+   "independent": 1,
+   "audit": 1,
+   "tol": 0,
+   "pass": true
+  },
+  {
+   "check": "exp15 GPU re-measured excess gemma_it (vs saved-means point)",
+   "independent": 0.9594258729098595,
+   "audit": 0.9594257179865278,
+   "tol": 0.01,
+   "pass": true
+  },
+  {
+   "check": "exp15 GPU re-measured excess gams3_it (vs saved-means point)",
+   "independent": 0.7960517985080187,
+   "audit": 0.7960518749477941,
+   "tol": 0.01,
+   "pass": true
+  }
+ ],
+ "note": "independent code path; never imports src/"
+}

@@ -1,0 +1,6322 @@
+{
+ "rows": [
+  {
+   "body": "exp9_lambda",
+   "readout": "raw_primary",
+   "coding": "R",
+   "statistic": "G3 (curve)",
+   "G3": {
+    "point": -1.1225481122955254,
+    "ci95": [
+     -1.696382357793347,
+     -0.629429075904818
+    ],
+    "ci90": [
+     -1.6013812349070395,
+     -0.7018201368917498
+    ],
+    "mde": 0.7621094870632349,
+    "verdict": "ESTIMATE"
+   },
+   "G3_orig": {
+    "point": -2.556839973979848,
+    "ci95": [
+     -4.06932334951718,
+     -1.316969711886526
+    ],
+    "ci90": [
+     -3.972991076924327,
+     -1.5284408563275118
+    ],
+    "mde": 1.9659668840218958,
+    "verdict": "CONFIRM-LAG"
+   },
+   "G3_edit": {
+    "point": 1.4342918616843225,
+    "ci95": [
+     0.29125300442117935,
+     2.9811175404401755
+    ],
+    "ci90": [
+     0.4672584185392306,
+     2.85725362942475
+    ],
+    "mde": 1.9213318114421403,
+    "verdict": "ESTIMATE"
+   },
+   "b_Gemma": {
+    "point": 1.454997769243007,
+    "ci95": [
+     1.1354802976237555,
+     1.797959107002043
+    ],
+    "ci90": [
+     1.1758931396194923,
+     1.733587947031902
+    ],
+    "mde": 0.4731991495559197,
+    "verdict": "ESTIMATE"
+   },
+   "b_GaMS": {
+    "point": 0.9945230929157342,
+    "ci95": [
+     0.8393192611066548,
+     1.1342196932594442
+    ],
+    "ci90": [
+     0.8632037963093863,
+     1.1104624910800427
+    ],
+    "mde": 0.21064316582342096,
+    "verdict": "ESTIMATE"
+   },
+   "b_diff": {
+    "point": -0.4604746763272728,
+    "ci95": null,
+    "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
+   },
+   "judge": "paid gemini-2.5-flash (P1)",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
+   "json_path": "curves/exp9_lambda|raw_primary|R",
+   "decomposition_status": "edit-induced",
+   "ceiling_verdict_G3_orig": "ROBUST-OFFSET",
+   "edit_direction": "anti-lag direction (G3_edit > 0)"
+  },
+  {
+   "body": "exp9_lambda",
+   "readout": "RG",
+   "coding": "R",
+   "status_note": "no estimate saved",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
+   "json_path": "curves/exp9_lambda|RG|R",
+   "decomposition_status": null,
+   "ceiling_verdict_G3_orig": "ROBUST-OFFSET"
+  },
+  {
+   "body": "exp9_lambda",
+   "readout": "PPI",
+   "coding": "R",
+   "statistic": "G3 (curve)",
+   "G3": {
+    "point": -1.7311459058495215,
+    "ci95": [
+     -2.882576447128919,
+     -0.039080576480148385
+    ],
+    "ci90": [
+     -2.4956882178494784,
+     -0.21883669349726673
+    ],
+    "mde": 2.031068479034836,
+    "verdict": "ESTIMATE"
+   },
+   "G3_orig": {
+    "point": -2.1810701890435005,
+    "ci95": [
+     -4.999247774235155,
+     -0.11181335140148885
+    ],
+    "ci90": [
+     -4.726688493582657,
+     -0.3718946951928077
+    ],
+    "mde": 3.491024587738332,
+    "verdict": "ESTIMATE"
+   },
+   "G3_edit": {
+    "point": 0.4499242831939789,
+    "ci95": [
+     -1.0441165818765408,
+     3.3007021126009644
+    ],
+    "ci90": [
+     -0.8513176889279277,
+     3.0628067916513584
+    ],
+    "mde": 3.103441924626789,
+    "verdict": "ESTIMATE"
+   },
+   "b_Gemma": {
+    "point": 1.392959520500041,
+    "ci95": [
+     0.765948675669315,
+     2.0896300873080578
+    ],
+    "ci90": [
+     0.8160757875603458,
+     1.8714271607140753
+    ],
+    "mde": 0.9454867225991019,
+    "verdict": "ESTIMATE"
+   },
+   "b_GaMS": {
+    "point": 1.3336849524971663,
+    "ci95": [
+     0.6268976620736298,
+     2.6054682310884187
+    ],
+    "ci90": [
+     0.6860446641506232,
+     2.3215146275633014
+    ],
+    "mde": 1.4132646921534207,
+    "verdict": "ESTIMATE"
+   },
+   "b_diff": {
+    "point": -0.05927456800287456,
+    "ci95": null,
+    "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
+   },
+   "judge": "gemini + PPI++ (author-model adjudication)",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
+   "json_path": "curves/exp9_lambda|PPI|R",
+   "decomposition_status": "underdetermined",
+   "ceiling_verdict_G3_orig": "ROBUST-OFFSET"
+  },
+  {
+   "body": "exp9_lambda",
+   "readout": "second_gpt41mini_IPW",
+   "coding": "R",
+   "statistic": "G3 (curve)",
+   "G3": {
+    "point": 1.273322130531477,
+    "ci95": [
+     -3.2262548653958905,
+     3.0062532304318754
+    ],
+    "ci90": [
+     -2.5919646507717724,
+     2.354244491623037
+    ],
+    "mde": 4.4517914970198325,
+    "verdict": "ESTIMATE"
+   },
+   "G3_orig": {
+    "point": null,
+    "ci95": null,
+    "ci90": null,
+    "mde": null,
+    "verdict": null
+   },
+   "G3_edit": {
+    "point": null,
+    "ci95": null,
+    "ci90": null,
+    "mde": null,
+    "verdict": null
+   },
+   "b_Gemma": {
+    "point": 2.1138143269878378,
+    "ci95": [
+     -1.1589053155300908,
+     3.134920912543109
+    ],
+    "ci90": [
+     -0.7786779158601441,
+     2.758501690366069
+    ],
+    "mde": 3.0670187343379993,
+    "verdict": "ESTIMATE"
+   },
+   "b_GaMS": {
+    "point": 0.6587360369670983,
+    "ci95": [
+     -0.31910607636851385,
+     0.9452488549669462
+    ],
+    "ci90": [
+     -0.1651402021454828,
+     0.7917217361338275
+    ],
+    "mde": 0.9031106652396143,
+    "verdict": "ESTIMATE"
+   },
+   "b_diff": {
+    "point": -1.4550782900207395,
+    "ci95": null,
+    "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
+   },
+   "judge": "paid gpt-4.1-mini (IPW sample)",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
+   "json_path": "curves/exp9_lambda|second_gpt41mini_IPW|R",
+   "decomposition_status": null,
+   "ceiling_verdict_G3_orig": "ROBUST-OFFSET"
+  },
+  {
+   "body": "exp9_lambda",
+   "readout": "ttj",
+   "coding": "R",
+   "statistic": "G3 (curve)",
+   "G3": {
+    "point": -0.8081082461788179,
+    "ci95": [
+     -1.3600909177794478,
+     -0.31445081550136167
+    ],
+    "ci90": [
+     -1.2741966901741488,
+     -0.38083191062552063
+    ],
+    "mde": 0.74688578734149,
+    "verdict": "ESTIMATE"
+   },
+   "G3_orig": {
+    "point": -1.546839419542792,
+    "ci95": [
+     -2.399994623426848,
+     0.4811626220233086
+    ],
+    "ci90": [
+     -2.265011524925994,
+     0.20862026229193562
+    ],
+    "mde": 2.0579694610358263,
+    "verdict": "ESTIMATE"
+   },
+   "G3_edit": {
+    "point": 0.738731173363974,
+    "ci95": [
+     -1.210020854688416,
+     1.5962220094587678
+    ],
+    "ci90": [
+     -0.9334662008332905,
+     1.4684673139841977
+    ],
+    "mde": 2.00445918867656,
+    "verdict": "ESTIMATE"
+   },
+   "b_Gemma": {
+    "point": 1.2753418291811176,
+    "ci95": [
+     0.8694688091079732,
+     1.877728273650186
+    ],
+    "ci90": [
+     0.9253152735206724,
+     1.7107750072956152
+    ],
+    "mde": 0.7201853318158662,
+    "verdict": "ESTIMATE"
+   },
+   "b_GaMS": {
+    "point": 0.9249316882913271,
+    "ci95": [
+     0.7452641468075392,
+     1.157011818320157
+    ],
+    "ci90": [
+     0.7643426579001656,
+     1.115402601059732
+    ],
+    "mde": 0.29410547965186984,
+    "verdict": "ESTIMATE"
+   },
+   "b_diff": {
+    "point": -0.3504101408897905,
+    "ci95": null,
+    "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
+   },
+   "judge": "translate-then-judge (J1 on NLLB English, AM2)",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
+   "json_path": "curves/exp9_lambda|ttj|R",
+   "decomposition_status": "underdetermined",
+   "ceiling_verdict_G3_orig": "ROBUST-OFFSET"
+  },
+  {
+   "body": "exp9_lambda",
+   "readout": "asr_noharm",
+   "coding": "R",
+   "status_note": "fewer than 3 steps with labels",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
+   "json_path": "curves/exp9_lambda|asr_noharm|R",
+   "decomposition_status": null,
+   "ceiling_verdict_G3_orig": "ROBUST-OFFSET"
+  },
+  {
+   "body": "exp9_lambda",
+   "readout": "archived_arch_j1",
+   "coding": "R",
+   "statistic": "G3 (curve)",
+   "G3": {
+    "point": -0.969820239982258,
+    "ci95": [
+     -1.5235716117121263,
+     -0.5015486626433617
+    ],
+    "ci90": [
+     -1.4242123325294258,
+     -0.5812482664604338
+    ],
+    "mde": 0.7300163921919748,
+    "verdict": "ESTIMATE"
+   },
+   "G3_orig": {
+    "point": -3.194943163030168,
+    "ci95": [
+     -3.804174547491102,
+     -2.3734439546960653
+    ],
+    "ci90": [
+     -3.7248846684169346,
+     -2.5106786629820137
+    ],
+    "mde": 1.0219504234250263,
+    "verdict": "CONFIRM-LAG"
+   },
+   "G3_edit": {
+    "point": 2.22512292304791,
+    "ci95": [
+     1.3309545186300276,
+     2.900488843118807
+    ],
+    "ci90": [
+     1.489188050056947,
+     2.7599449725113456
+    ],
+    "mde": 1.1210959460634138,
+    "verdict": "ESTIMATE"
+   },
+   "b_Gemma": {
+    "point": 1.4184427084713707,
+    "ci95": [
+     1.1177704028163387,
+     1.753635654340673
+    ],
+    "ci90": [
+     1.1672475411485825,
+     1.6803771557464697
+    ],
+    "mde": 0.4541894653745245,
+    "verdict": "ESTIMATE"
+   },
+   "b_GaMS": {
+    "point": 1.0959941085879794,
+    "ci95": [
+     0.9178988386263313,
+     1.2612826321292792
+    ],
+    "ci90": [
+     0.943620999896955,
+     1.2315533219787753
+    ],
+    "mde": 0.24527413821639135,
+    "verdict": "ESTIMATE"
+   },
+   "b_diff": {
+    "point": -0.32244859988339125,
+    "ci95": null,
+    "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
+   },
+   "judge": "archived local judge: j1",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
+   "json_path": "curves/exp9_lambda|archived_arch_j1|R",
+   "decomposition_status": "edit-induced",
+   "ceiling_verdict_G3_orig": "ROBUST-OFFSET",
+   "edit_direction": "anti-lag direction (G3_edit > 0)"
+  },
+  {
+   "body": "exp9_lambda",
+   "readout": "archived_arch_j2",
+   "coding": "R",
+   "statistic": "G3 (curve)",
+   "G3": {
+    "point": -1.7174793214840958,
+    "ci95": [
+     -2.3250338389519354,
+     -0.9547174771098463
+    ],
+    "ci90": [
+     -2.1909614545406217,
+     -1.037867012855817
+    ],
+    "mde": 0.9787974013157777,
+    "verdict": "CONFIRM-LAG"
+   },
+   "G3_orig": {
+    "point": 0.7536451774957551,
+    "ci95": [
+     -1.6499024509559308,
+     3.12990942620103
+    ],
+    "ci90": [
+     -1.3410236374733393,
+     2.85726259928889
+    ],
+    "mde": 3.414151340826401,
+    "verdict": "ESTIMATE"
+   },
+   "G3_edit": {
+    "point": -2.471124498979851,
+    "ci95": [
+     -4.660513478386119,
+     0.04444357448851765
+    ],
+    "ci90": [
+     -4.37677968383583,
+     -0.37305776190417417
+    ],
+    "mde": 3.360683609196169,
+    "verdict": "ESTIMATE"
+   },
+   "b_Gemma": {
+    "point": 1.7607750509350526,
+    "ci95": [
+     1.060768456437925,
+     2.4660788030248035
+    ],
+    "ci90": [
+     1.1490257695429322,
+     2.2565525406976157
+    ],
+    "mde": 1.0037931047049131,
+    "verdict": "ESTIMATE"
+   },
+   "b_GaMS": {
+    "point": 1.9656225974249528,
+    "ci95": [
+     1.0337837673229042,
+     2.3321372065456196
+    ],
+    "ci90": [
+     1.1271452220491447,
+     2.1729287246727105
+    ],
+    "mde": 0.9273953137305109,
+    "verdict": "ESTIMATE"
+   },
+   "b_diff": {
+    "point": 0.20484754648990022,
+    "ci95": null,
+    "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
+   },
+   "judge": "archived local judge: j2",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
+   "json_path": "curves/exp9_lambda|archived_arch_j2|R",
+   "decomposition_status": "underdetermined",
+   "ceiling_verdict_G3_orig": "ROBUST-OFFSET"
+  },
+  {
+   "body": "exp9_lambda",
+   "readout": "archived_arch_lex",
+   "coding": "R",
+   "statistic": "G3 (curve)",
+   "G3": {
+    "point": -0.858997080628525,
+    "ci95": [
+     -1.2766440173139966,
+     -0.3946518426441407
+    ],
+    "ci90": [
+     -1.221060251243805,
+     -0.4666427200943825
+    ],
+    "mde": 0.6299944104784684,
+    "verdict": "ESTIMATE"
+   },
+   "G3_orig": {
+    "point": -0.8940880355728864,
+    "ci95": [
+     -2.545454273893319,
+     0.7497172324208269
+    ],
+    "ci90": [
+     -2.413169422066186,
+     0.46329333538528394
+    ],
+    "mde": 2.3536939330815327,
+    "verdict": "ESTIMATE"
+   },
+   "G3_edit": {
+    "point": 0.03509095494436143,
+    "ci95": [
+     -1.6913335222341177,
+     1.736747921412472
+    ],
+    "ci90": [
+     -1.4420890636557828,
+     1.603101738224814
+    ],
+    "mde": 2.4486296026047065,
+    "verdict": "ESTIMATE"
+   },
+   "b_Gemma": {
+    "point": 0.9801296418693085,
+    "ci95": [
+     0.7975206519959761,
+     1.1681109386387052
+    ],
+    "ci90": [
+     0.8207909004405598,
+     1.129709448066001
+    ],
+    "mde": 0.2647073476019493,
+    "verdict": "ESTIMATE"
+   },
+   "b_GaMS": {
+    "point": 1.3023278710254615,
+    "ci95": [
+     1.1013662072550718,
+     1.5186676655811455
+    ],
+    "ci90": [
+     1.131291473219981,
+     1.4865058089184011
+    ],
+    "mde": 0.2980724702329098,
+    "verdict": "ESTIMATE"
+   },
+   "b_diff": {
+    "point": 0.32219822915615304,
+    "ci95": null,
+    "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
+   },
+   "judge": "archived local judge: lex",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
+   "json_path": "curves/exp9_lambda|archived_arch_lex|R",
+   "decomposition_status": "underdetermined",
+   "ceiling_verdict_G3_orig": "ROBUST-OFFSET"
+  },
+  {
+   "body": "exp9_lambda",
+   "readout": "raw_primary",
+   "coding": "RP",
+   "statistic": "G3 (curve)",
+   "G3": {
+    "point": -1.4372476765282574,
+    "ci95": [
+     -1.9327937432161397,
+     -1.0252612913364
+    ],
+    "ci90": [
+     -1.8379305902949843,
+     -1.0810651656265844
+    ],
+    "mde": 0.6482374656283854,
+    "verdict": "CONFIRM-LAG"
+   },
+   "G3_orig": {
+    "point": -2.4271947968350123,
+    "ci95": [
+     -3.9906595468788906,
+     -1.1814920343012882
+    ],
+    "ci90": [
+     -3.898492976928413,
+     -1.370150027971316
+    ],
+    "mde": 2.0065482232697156,
+    "verdict": "CONFIRM-LAG"
+   },
+   "G3_edit": {
+    "point": 0.9899471203067549,
+    "ci95": [
+     -0.15589199680471758,
+     2.5325483525453905
+    ],
+    "ci90": [
+     -0.020082846288865426,
+     2.4250970968135332
+    ],
+    "mde": 1.920314535250077,
+    "verdict": "ESTIMATE"
+   },
+   "b_Gemma": {
+    "point": 1.2561239164828308,
+    "ci95": [
+     0.9837053136583749,
+     1.5248310073033011
+    ],
+    "ci90": [
+     1.0222352577660925,
+     1.461577473977015
+    ],
+    "mde": 0.38651835260351874,
+    "verdict": "ESTIMATE"
+   },
+   "b_GaMS": {
+    "point": 0.9603249516535196,
+    "ci95": [
+     0.8182718292812762,
+     1.0948540003850908
+    ],
+    "ci90": [
+     0.8423477234554603,
+     1.0674354392856296
+    ],
+    "mde": 0.1975586936455819,
+    "verdict": "ESTIMATE"
+   },
+   "b_diff": {
+    "point": -0.29579896482931123,
+    "ci95": null,
+    "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
+   },
+   "judge": "paid gemini-2.5-flash (P1)",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
+   "json_path": "curves/exp9_lambda|raw_primary|RP",
+   "decomposition_status": "underdetermined",
+   "ceiling_verdict_G3_orig": "ROBUST-OFFSET"
+  },
+  {
+   "body": "exp9_lambda",
+   "readout": "RG",
+   "coding": "RP",
+   "status_note": "no estimate saved",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
+   "json_path": "curves/exp9_lambda|RG|RP",
+   "decomposition_status": null,
+   "ceiling_verdict_G3_orig": "ROBUST-OFFSET"
+  },
+  {
+   "body": "exp9_lambda",
+   "readout": "PPI",
+   "coding": "RP",
+   "statistic": "G3 (curve)",
+   "G3": {
+    "point": -2.259135385952611,
+    "ci95": [
+     -4.057438185910336,
+     -0.16399697232368715
+    ],
+    "ci90": [
+     -3.7380580301160253,
+     -0.5219403146847934
+    ],
+    "mde": 2.7810294382761778,
+    "verdict": "ESTIMATE"
+   },
+   "G3_orig": {
+    "point": -1.5122434782278962,
+    "ci95": [
+     -2.8655342670268396,
+     0.13701232293773247
+    ],
+    "ci90": [
+     -2.5873547480335404,
+     -0.09103613843204261
+    ],
+    "mde": 2.1446761356889796,
+    "verdict": "ESTIMATE"
+   },
+   "G3_edit": {
+    "point": -0.7468919077247147,
+    "ci95": [
+     -3.075738845369527,
+     1.6216724719651183
+    ],
+    "ci90": [
+     -2.6356103006427674,
+     1.2001286751171398
+    ],
+    "mde": 3.3552937980961755,
+    "verdict": "ESTIMATE"
+   },
+   "b_Gemma": {
+    "point": 0.7464459314351228,
+    "ci95": [
+     0.5315653656476523,
+     2.1579794838308275
+    ],
+    "ci90": [
+     0.554773185981375,
+     2.0330994148426402
+    ],
+    "mde": 1.1617243701308393,
+    "verdict": "ESTIMATE"
+   },
+   "b_GaMS": {
+    "point": 1.5435177224373215,
+    "ci95": [
+     0.6309918546174168,
+     2.747888299939007
+    ],
+    "ci90": [
+     0.6930686173848503,
+     2.465020560448509
+    ],
+    "mde": 1.5120688895154215,
+    "verdict": "ESTIMATE"
+   },
+   "b_diff": {
+    "point": 0.7970717910021987,
+    "ci95": null,
+    "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
+   },
+   "judge": "gemini + PPI++ (author-model adjudication)",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
+   "json_path": "curves/exp9_lambda|PPI|RP",
+   "decomposition_status": "underdetermined",
+   "ceiling_verdict_G3_orig": "ROBUST-OFFSET"
+  },
+  {
+   "body": "exp9_lambda",
+   "readout": "second_gpt41mini_IPW",
+   "coding": "RP",
+   "statistic": "G3 (curve)",
+   "G3": {
+    "point": -5.183967726772419,
+    "ci95": [
+     -19.69447701477519,
+     20.711108449643543
+    ],
+    "ci90": [
+     -10.458213681470085,
+     16.33973338267961
+    ],
+    "mde": 28.861132474584807,
+    "verdict": "ESTIMATE"
+   },
+   "G3_orig": {
+    "point": null,
+    "ci95": null,
+    "ci90": null,
+    "mde": null,
+    "verdict": null
+   },
+   "G3_edit": {
+    "point": null,
+    "ci95": null,
+    "ci90": null,
+    "mde": null,
+    "verdict": null
+   },
+   "b_Gemma": {
+    "point": 0.09279688304422196,
+    "ci95": [
+     -0.21949891844611036,
+     7.492270615426468
+    ],
+    "ci90": [
+     -0.15852337434985622,
+     7.004461563445531
+    ],
+    "mde": 5.508406809908984,
+    "verdict": "ESTIMATE"
+   },
+   "b_GaMS": {
+    "point": 1.6689816015287893,
+    "ci95": [
+     -2.9948784180081525,
+     12.714318349883717
+    ],
+    "ci90": [
+     -2.1848041023703226,
+     8.21603322297518
+    ],
+    "mde": 11.220854834208478,
+    "verdict": "ESTIMATE"
+   },
+   "b_diff": {
+    "point": 1.5761847184845674,
+    "ci95": null,
+    "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
+   },
+   "judge": "paid gpt-4.1-mini (IPW sample)",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
+   "json_path": "curves/exp9_lambda|second_gpt41mini_IPW|RP",
+   "decomposition_status": null,
+   "ceiling_verdict_G3_orig": "ROBUST-OFFSET"
+  },
+  {
+   "body": "exp9_lambda",
+   "readout": "ttj",
+   "coding": "RP",
+   "statistic": "G3 (curve)",
+   "G3": {
+    "point": -0.8081082461788179,
+    "ci95": [
+     -1.3600909177794478,
+     -0.31445081550136167
+    ],
+    "ci90": [
+     -1.2741966901741488,
+     -0.38083191062552063
+    ],
+    "mde": 0.74688578734149,
+    "verdict": "ESTIMATE"
+   },
+   "G3_orig": {
+    "point": -1.546839419542792,
+    "ci95": [
+     -2.399994623426848,
+     0.4811626220233086
+    ],
+    "ci90": [
+     -2.265011524925994,
+     0.20862026229193562
+    ],
+    "mde": 2.0579694610358263,
+    "verdict": "ESTIMATE"
+   },
+   "G3_edit": {
+    "point": 0.738731173363974,
+    "ci95": [
+     -1.210020854688416,
+     1.5962220094587678
+    ],
+    "ci90": [
+     -0.9334662008332905,
+     1.4684673139841977
+    ],
+    "mde": 2.00445918867656,
+    "verdict": "ESTIMATE"
+   },
+   "b_Gemma": {
+    "point": 1.2753418291811176,
+    "ci95": [
+     0.8694688091079732,
+     1.877728273650186
+    ],
+    "ci90": [
+     0.9253152735206724,
+     1.7107750072956152
+    ],
+    "mde": 0.7201853318158662,
+    "verdict": "ESTIMATE"
+   },
+   "b_GaMS": {
+    "point": 0.9249316882913271,
+    "ci95": [
+     0.7452641468075392,
+     1.157011818320157
+    ],
+    "ci90": [
+     0.7643426579001656,
+     1.115402601059732
+    ],
+    "mde": 0.29410547965186984,
+    "verdict": "ESTIMATE"
+   },
+   "b_diff": {
+    "point": -0.3504101408897905,
+    "ci95": null,
+    "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
+   },
+   "judge": "translate-then-judge (J1 on NLLB English, AM2)",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
+   "json_path": "curves/exp9_lambda|ttj|RP",
+   "decomposition_status": "underdetermined",
+   "ceiling_verdict_G3_orig": "ROBUST-OFFSET"
+  },
+  {
+   "body": "exp11_final",
+   "readout": "raw_primary",
+   "coding": "R",
+   "statistic": "G3 (curve)",
+   "G3": {
+    "point": -1.0026725694292826,
+    "ci95": [
+     -1.4035930321597623,
+     -0.6832142681432583
+    ],
+    "ci90": [
+     -1.336920967899354,
+     -0.7435525225773083
+    ],
+    "mde": 0.5145562600117886,
+    "verdict": "CONFIRM-LAG"
+   },
+   "G3_orig": {
+    "point": -1.106212883792184,
+    "ci95": [
+     -2.744666394053209,
+     -0.21496418714203427
+    ],
+    "ci90": [
+     -2.542365224632648,
+     -0.35364210416516906
+    ],
+    "mde": 1.8069301477936959,
+    "verdict": "ESTIMATE"
+   },
+   "G3_edit": {
+    "point": 0.10354031436290145,
+    "ci95": [
+     -0.8474243653917471,
+     1.71309154916155
+    ],
+    "ci90": [
+     -0.6608785671026959,
+     1.4646393139954494
+    ],
+    "mde": 1.8289399389666408,
+    "verdict": "ESTIMATE"
+   },
+   "b_Gemma": {
+    "point": 1.3982801790643493,
+    "ci95": [
+     1.1079380140498474,
+     1.7926145807155403
+    ],
+    "ci90": [
+     1.148093420148966,
+     1.7160791922814451
+    ],
+    "mde": 0.4890546904754949,
+    "verdict": "ESTIMATE"
+   },
+   "b_GaMS": {
+    "point": 0.9701301913873273,
+    "ci95": [
+     0.8264099801872139,
+     1.1244855200501298
+    ],
+    "ci90": [
+     0.8454859733528598,
+     1.0928389088746313
+    ],
+    "mde": 0.2129110999020828,
+    "verdict": "ESTIMATE"
+   },
+   "b_diff": {
+    "point": -0.42814998767702206,
+    "ci95": null,
+    "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
+   },
+   "judge": "paid gemini-2.5-flash (P1)",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
+   "json_path": "curves/exp11_final|raw_primary|R",
+   "decomposition_status": "underdetermined",
+   "ceiling_verdict_G3_orig": "CEILING-ARTEFACT"
+  },
+  {
+   "body": "exp11_final",
+   "readout": "RG",
+   "coding": "R",
+   "statistic": "G3 (curve)",
+   "G3": {
+    "point": -1.5453173810899585,
+    "ci95": [
+     -3.4302998682973813,
+     -0.13137023190104513
+    ],
+    "ci90": [
+     -3.166406962968315,
+     -0.3606580732335469
+    ],
+    "mde": 2.356378311711669,
+    "verdict": "ESTIMATE"
+   },
+   "G3_orig": {
+    "point": null,
+    "ci95": null,
+    "ci90": null,
+    "mde": null,
+    "verdict": null
+   },
+   "G3_edit": {
+    "point": null,
+    "ci95": null,
+    "ci90": null,
+    "mde": null,
+    "verdict": null
+   },
+   "b_Gemma": {
+    "point": 0.7760144182622853,
+    "ci95": [
+     0.5336729658372544,
+     2.0758847003850946
+    ],
+    "ci90": [
+     0.5612869455681732,
+     1.811429623400135
+    ],
+    "mde": 1.1015798103913144,
+    "verdict": "ESTIMATE"
+   },
+   "b_GaMS": {
+    "point": 0.962491122489994,
+    "ci95": [
+     0.504840965368319,
+     1.976981227902144
+    ],
+    "ci90": [
+     0.5580186458451555,
+     1.8241259463813861
+    ],
+    "mde": 1.051528758952732,
+    "verdict": "ESTIMATE"
+   },
+   "b_diff": {
+    "point": 0.18647670422770868,
+    "ci95": null,
+    "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
+   },
+   "judge": "gemini + Rogan-Gladen (author-model adjudication)",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
+   "json_path": "curves/exp11_final|RG|R",
+   "decomposition_status": null,
+   "ceiling_verdict_G3_orig": "CEILING-ARTEFACT"
+  },
+  {
+   "body": "exp11_final",
+   "readout": "PPI",
+   "coding": "R",
+   "statistic": "G3 (curve)",
+   "G3": {
+    "point": -1.8389977166361917,
+    "ci95": [
+     -4.501058820090363,
+     0.6734515646094322
+    ],
+    "ci90": [
+     -3.9543801350321446,
+     0.20257072648660393
+    ],
+    "mde": 3.6960788462141396,
+    "verdict": "ESTIMATE"
+   },
+   "G3_orig": {
+    "point": -1.9361112236789522,
+    "ci95": [
+     -4.603378959722145,
+     0.6323370566613049
+    ],
+    "ci90": [
+     -4.350564305716032,
+     0.19937194976385664
+    ],
+    "mde": 3.7397971545596067,
+    "verdict": "ESTIMATE"
+   },
+   "G3_edit": {
+    "point": 0.09711350704276045,
+    "ci95": [
+     -3.6489014103129387,
+     3.9082647111198945
+    ],
+    "ci90": [
+     -2.7737883007299073,
+     3.496472182941771
+    ],
+    "mde": 5.397975801023453,
+    "verdict": "ESTIMATE"
+   },
+   "b_Gemma": {
+    "point": 0.7035244384245665,
+    "ci95": [
+     0.011086367236925812,
+     1.073780807125629
+    ],
+    "ci90": [
+     0.1512096041664281,
+     0.9902836415115425
+    ],
+    "mde": 0.7590674570633593,
+    "verdict": "ESTIMATE"
+   },
+   "b_GaMS": {
+    "point": 0.7387005177665937,
+    "ci95": [
+     0.29972032925113523,
+     1.3157145245847661
+    ],
+    "ci90": [
+     0.3497888222378083,
+     1.1744274100702092
+    ],
+    "mde": 0.7257101395240221,
+    "verdict": "ESTIMATE"
+   },
+   "b_diff": {
+    "point": 0.03517607934202727,
+    "ci95": null,
+    "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
+   },
+   "judge": "gemini + PPI++ (author-model adjudication)",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
+   "json_path": "curves/exp11_final|PPI|R",
+   "decomposition_status": "underdetermined",
+   "ceiling_verdict_G3_orig": "CEILING-ARTEFACT"
+  },
+  {
+   "body": "exp11_final",
+   "readout": "second_gpt41mini_IPW",
+   "coding": "R",
+   "status_note": "point estimate unusable: fewer than 2 usable steps",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
+   "json_path": "curves/exp11_final|second_gpt41mini_IPW|R",
+   "decomposition_status": null,
+   "ceiling_verdict_G3_orig": "CEILING-ARTEFACT"
+  },
+  {
+   "body": "exp11_final",
+   "readout": "ttj",
+   "coding": "R",
+   "statistic": "G3 (curve)",
+   "G3": {
+    "point": -1.371082652310843,
+    "ci95": [
+     -1.8766699367475634,
+     -0.9353677830079374
+    ],
+    "ci90": [
+     -1.7781645533910058,
+     -1.0155778745918986
+    ],
+    "mde": 0.67235868124259,
+    "verdict": "CONFIRM-LAG"
+   },
+   "G3_orig": {
+    "point": -0.9877180140719437,
+    "ci95": [
+     -2.7411983860523788,
+     0.8818592462565089
+    ],
+    "ci90": [
+     -2.53958312033692,
+     0.5779197456111687
+    ],
+    "mde": 2.5878983087920626,
+    "verdict": "ESTIMATE"
+   },
+   "G3_edit": {
+    "point": -0.3833646382388993,
+    "ci95": [
+     -2.340027879655437,
+     1.3845029943312381
+    ],
+    "ci90": [
+     -1.9556360888473396,
+     1.1786439693589932
+    ],
+    "mde": 2.6603791957047678,
+    "verdict": "ESTIMATE"
+   },
+   "b_Gemma": {
+    "point": 1.6261896989885858,
+    "ci95": [
+     1.0379298749019141,
+     2.504440808132162
+    ],
+    "ci90": [
+     1.1168269166737124,
+     2.2866172081535145
+    ],
+    "mde": 1.0475078094501769,
+    "verdict": "ESTIMATE"
+   },
+   "b_GaMS": {
+    "point": 1.2064867261072312,
+    "ci95": [
+     0.8503329741681842,
+     1.6288639974983643
+    ],
+    "ci90": [
+     0.8974602853822504,
+     1.5429667250782055
+    ],
+    "mde": 0.5560935880929857,
+    "verdict": "ESTIMATE"
+   },
+   "b_diff": {
+    "point": -0.4197029728813546,
+    "ci95": null,
+    "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
+   },
+   "judge": "translate-then-judge (J1 on NLLB English, AM2)",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
+   "json_path": "curves/exp11_final|ttj|R",
+   "decomposition_status": "underdetermined",
+   "ceiling_verdict_G3_orig": "CEILING-ARTEFACT"
+  },
+  {
+   "body": "exp11_final",
+   "readout": "archived_arch_q14",
+   "coding": "R",
+   "statistic": "G3 (curve)",
+   "G3": {
+    "point": -0.5996791273661883,
+    "ci95": [
+     -1.3259043666082728,
+     0.4539234074862944
+    ],
+    "ci90": [
+     -1.246882445404676,
+     0.27186298796207764
+    ],
+    "mde": 1.2713055529246906,
+    "verdict": "ESTIMATE"
+   },
+   "G3_orig": {
+    "point": -0.7461688279493837,
+    "ci95": [
+     -2.7651719636373313,
+     0.7218251944844084
+    ],
+    "ci90": [
+     -2.473766974086274,
+     0.5139196240904941
+    ],
+    "mde": 2.4907122558012427,
+    "verdict": "ESTIMATE"
+   },
+   "G3_edit": {
+    "point": 0.14648970058319533,
+    "ci95": [
+     -1.5436311803928282,
+     2.604523391907752
+    ],
+    "ci90": [
+     -1.2540658406370546,
+     2.1846992607769447
+    ],
+    "mde": 2.9629675516432714,
+    "verdict": "ESTIMATE"
+   },
+   "b_Gemma": {
+    "point": 1.890576236885131,
+    "ci95": [
+     1.3335961175318864,
+     2.6994416092893143
+    ],
+    "ci90": [
+     1.4118912608764618,
+     2.5053807852923375
+    ],
+    "mde": 0.975603922683877,
+    "verdict": "ESTIMATE"
+   },
+   "b_GaMS": {
+    "point": 1.3984781320688873,
+    "ci95": [
+     1.080330999517738,
+     1.7117140281381429
+    ],
+    "ci90": [
+     1.1155498100940484,
+     1.6472036746556598
+    ],
+    "mde": 0.4509878775860035,
+    "verdict": "ESTIMATE"
+   },
+   "b_diff": {
+    "point": -0.49209810481624383,
+    "ci95": null,
+    "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
+   },
+   "judge": "archived local judge: q14",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
+   "json_path": "curves/exp11_final|archived_arch_q14|R",
+   "decomposition_status": "underdetermined",
+   "ceiling_verdict_G3_orig": "CEILING-ARTEFACT"
+  },
+  {
+   "body": "exp11_final",
+   "readout": "archived_arch_lex",
+   "coding": "R",
+   "status_note": "point estimate unusable: quasi-separation (|a| or |b| > 30)",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
+   "json_path": "curves/exp11_final|archived_arch_lex|R",
+   "decomposition_status": null,
+   "ceiling_verdict_G3_orig": "CEILING-ARTEFACT"
+  },
+  {
+   "body": "exp11_final",
+   "readout": "raw_primary",
+   "coding": "RP",
+   "statistic": "G3 (curve)",
+   "G3": {
+    "point": -1.229765118129916,
+    "ci95": [
+     -1.5860818575514153,
+     -0.9393892982364932
+    ],
+    "ci90": [
+     -1.524217372867184,
+     -0.9723885681191474
+    ],
+    "mde": 0.46192325665351575,
+    "verdict": "CONFIRM-LAG"
+   },
+   "G3_orig": {
+    "point": -0.5979133337200464,
+    "ci95": [
+     -2.4231491401195577,
+     0.8573735123759407
+    ],
+    "ci90": [
+     -2.2173763927735077,
+     0.5339263633730438
+    ],
+    "mde": 2.343230466068213,
+    "verdict": "ESTIMATE"
+   },
+   "G3_edit": {
+    "point": -0.6318517844098697,
+    "ci95": [
+     -2.121353924270732,
+     1.1654800173123627
+    ],
+    "ci90": [
+     -1.7987156607095454,
+     0.870181628277835
+    ],
+    "mde": 2.34773852970221,
+    "verdict": "ESTIMATE"
+   },
+   "b_Gemma": {
+    "point": 0.98433504442725,
+    "ci95": [
+     0.763693727786408,
+     1.2672658190875241
+    ],
+    "ci90": [
+     0.8033412552842174,
+     1.2161628273790361
+    ],
+    "mde": 0.35969435092936863,
+    "verdict": "ESTIMATE"
+   },
+   "b_GaMS": {
+    "point": 0.9082115204928434,
+    "ci95": [
+     0.7726209831007761,
+     1.0438299102141584
+    ],
+    "ci90": [
+     0.794692370977769,
+     1.0162704568726888
+    ],
+    "mde": 0.1937206622238445,
+    "verdict": "ESTIMATE"
+   },
+   "b_diff": {
+    "point": -0.07612352393440658,
+    "ci95": null,
+    "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
+   },
+   "judge": "paid gemini-2.5-flash (P1)",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
+   "json_path": "curves/exp11_final|raw_primary|RP",
+   "decomposition_status": "underdetermined",
+   "ceiling_verdict_G3_orig": "CEILING-ARTEFACT"
+  },
+  {
+   "body": "exp11_final",
+   "readout": "RG",
+   "coding": "RP",
+   "statistic": "G3 (curve)",
+   "G3": {
+    "point": -0.914127844328224,
+    "ci95": [
+     -2.4963466960415577,
+     0.5073050774391002
+    ],
+    "ci90": [
+     -2.240742599167639,
+     0.23463086831449603
+    ],
+    "mde": 2.145465552486184,
+    "verdict": "ESTIMATE"
+   },
+   "G3_orig": {
+    "point": null,
+    "ci95": null,
+    "ci90": null,
+    "mde": null,
+    "verdict": null
+   },
+   "G3_edit": {
+    "point": null,
+    "ci95": null,
+    "ci90": null,
+    "mde": null,
+    "verdict": null
+   },
+   "b_Gemma": {
+    "point": 0.6612431862392812,
+    "ci95": [
+     0.2933231974948547,
+     1.0177502876990374
+    ],
+    "ci90": [
+     0.31825871366855996,
+     0.9663054340985935
+    ],
+    "mde": 0.5174479215744162,
+    "verdict": "ESTIMATE"
+   },
+   "b_GaMS": {
+    "point": 0.5592383424781957,
+    "ci95": [
+     0.37194044237460966,
+     1.3761094247591077
+    ],
+    "ci90": [
+     0.4137366108731303,
+     1.1364857738856495
+    ],
+    "mde": 0.7172635588460701,
+    "verdict": "ESTIMATE"
+   },
+   "b_diff": {
+    "point": -0.10200484376108554,
+    "ci95": null,
+    "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
+   },
+   "judge": "gemini + Rogan-Gladen (author-model adjudication)",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
+   "json_path": "curves/exp11_final|RG|RP",
+   "decomposition_status": null,
+   "ceiling_verdict_G3_orig": "CEILING-ARTEFACT"
+  },
+  {
+   "body": "exp11_final",
+   "readout": "PPI",
+   "coding": "RP",
+   "statistic": "G3 (curve)",
+   "G3": {
+    "point": -0.7730220795352675,
+    "ci95": [
+     -2.1695325544756026,
+     0.34517427246198373
+    ],
+    "ci90": [
+     -2.0106242097897193,
+     0.1737574622501359
+    ],
+    "mde": 1.7962191620982757,
+    "verdict": "ESTIMATE"
+   },
+   "G3_orig": {
+    "point": 0.0,
+    "ci95": [
+     -0.6727767372584719,
+     0.8089215462026162
+    ],
+    "ci90": [
+     -0.6727767372584719,
+     0.5606880032850947
+    ],
+    "mde": 1.0583559167579202,
+    "verdict": "REFUTE-BOUND"
+   },
+   "G3_edit": {
+    "point": -0.7730220795352675,
+    "ci95": [
+     -2.32569180704668,
+     0.47851682157891634
+    ],
+    "ci90": [
+     -2.145116438620781,
+     0.22080959860424926
+    ],
+    "mde": 2.0030061633039975,
+    "verdict": "ESTIMATE"
+   },
+   "b_Gemma": {
+    "point": 0.9985709226509376,
+    "ci95": [
+     0.5659110402520936,
+     1.8487461140538872
+    ],
+    "ci90": [
+     0.61381192797647,
+     1.6532576209545362
+    ],
+    "mde": 0.916310767001281,
+    "verdict": "ESTIMATE"
+   },
+   "b_GaMS": {
+    "point": 1.3185434610366185,
+    "ci95": [
+     0.5668662596863254,
+     2.2337886358088435
+    ],
+    "ci90": [
+     0.6245688994962237,
+     2.0913909954106913
+    ],
+    "mde": 1.1906588400875129,
+    "verdict": "ESTIMATE"
+   },
+   "b_diff": {
+    "point": 0.31997253838568085,
+    "ci95": null,
+    "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
+   },
+   "judge": "gemini + PPI++ (author-model adjudication)",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
+   "json_path": "curves/exp11_final|PPI|RP",
+   "decomposition_status": "underdetermined",
+   "ceiling_verdict_G3_orig": "CEILING-ARTEFACT"
+  },
+  {
+   "body": "exp11_final",
+   "readout": "second_gpt41mini_IPW",
+   "coding": "RP",
+   "status_note": "point estimate unusable: fewer than 2 usable steps",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
+   "json_path": "curves/exp11_final|second_gpt41mini_IPW|RP",
+   "decomposition_status": null,
+   "ceiling_verdict_G3_orig": "CEILING-ARTEFACT"
+  },
+  {
+   "body": "exp11_final",
+   "readout": "ttj",
+   "coding": "RP",
+   "statistic": "G3 (curve)",
+   "G3": {
+    "point": -1.4791331271861878,
+    "ci95": [
+     -1.9530534380142779,
+     -1.0125200938379249
+    ],
+    "ci90": [
+     -1.885256338080512,
+     -1.0921210017862735
+    ],
+    "mde": 0.6718095315545378,
+    "verdict": "CONFIRM-LAG"
+   },
+   "G3_orig": {
+    "point": -0.6516007650298907,
+    "ci95": [
+     -2.5400660209580166,
+     1.4462996537563984
+    ],
+    "ci90": [
+     -2.347762497707849,
+     1.1036122990848005
+    ],
+    "mde": 2.8474040533674394,
+    "verdict": "ESTIMATE"
+   },
+   "G3_edit": {
+    "point": -0.8275323621562971,
+    "ci95": [
+     -3.0037323731650316,
+     1.1459306326259353
+    ],
+    "ci90": [
+     -2.5506258213624804,
+     0.9140303840088638
+    ],
+    "mde": 2.964045004136405,
+    "verdict": "ESTIMATE"
+   },
+   "b_Gemma": {
+    "point": 1.1437745125950387,
+    "ci95": [
+     0.8023861725092539,
+     1.6316663412313592
+    ],
+    "ci90": [
+     0.8505489797595271,
+     1.5230300078876502
+    ],
+    "mde": 0.5923429776586466,
+    "verdict": "ESTIMATE"
+   },
+   "b_GaMS": {
+    "point": 1.0878811040864933,
+    "ci95": [
+     0.7776562739127614,
+     1.4695916498997774
+    ],
+    "ci90": [
+     0.8215032435805618,
+     1.3806198619064245
+    ],
+    "mde": 0.49423955427643995,
+    "verdict": "ESTIMATE"
+   },
+   "b_diff": {
+    "point": -0.055893408508545406,
+    "ci95": null,
+    "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
+   },
+   "judge": "translate-then-judge (J1 on NLLB English, AM2)",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
+   "json_path": "curves/exp11_final|ttj|RP",
+   "decomposition_status": "underdetermined",
+   "ceiling_verdict_G3_orig": "CEILING-ARTEFACT"
+  },
+  {
+   "body": "exp8_A1",
+   "readout": "raw_primary",
+   "coding": "R",
+   "statistic": "G3 (curve)",
+   "G3": {
+    "point": -1.5401049267830689,
+    "ci95": [
+     -2.108410581661177,
+     -1.000936848605792
+    ],
+    "ci90": [
+     -1.9876973145211794,
+     -1.058211063993943
+    ],
+    "mde": 0.7910526664681323,
+    "verdict": "CONFIRM-LAG"
+   },
+   "G3_orig": {
+    "point": -1.1323069324211326,
+    "ci95": [
+     -2.6711192104216903,
+     0.03973432369757722
+    ],
+    "ci90": [
+     -2.524483688885203,
+     -0.17298286452782063
+    ],
+    "mde": 1.936323952942334,
+    "verdict": "ESTIMATE"
+   },
+   "G3_edit": {
+    "point": -0.4077979943619363,
+    "ci95": [
+     -1.653272047756343,
+     1.257128628130928
+    ],
+    "ci90": [
+     -1.426043045813856,
+     1.050280354034044
+    ],
+    "mde": 2.0788576256337645,
+    "verdict": "ESTIMATE"
+   },
+   "b_Gemma": {
+    "point": 1.6634610408592527,
+    "ci95": [
+     1.3108409214610561,
+     2.002988335677211
+    ],
+    "ci90": [
+     1.3568497446335979,
+     1.938892887177772
+    ],
+    "mde": 0.4943910101543964,
+    "verdict": "ESTIMATE"
+   },
+   "b_GaMS": {
+    "point": 1.02605239902453,
+    "ci95": [
+     0.8493037687410044,
+     1.1961289778202633
+    ],
+    "ci90": [
+     0.8746607112978736,
+     1.1632050997702466
+    ],
+    "mde": 0.24773229219947057,
+    "verdict": "ESTIMATE"
+   },
+   "b_diff": {
+    "point": -0.6374086418347227,
+    "ci95": null,
+    "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
+   },
+   "judge": "paid gemini-2.5-flash (P1)",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
+   "json_path": "curves/exp8_A1|raw_primary|R",
+   "decomposition_status": "underdetermined",
+   "ceiling_verdict_G3_orig": "CEILING-ARTEFACT"
+  },
+  {
+   "body": "exp8_A1",
+   "readout": "RG",
+   "coding": "R",
+   "statistic": "G3 (curve)",
+   "G3": {
+    "point": -2.5128768089145126,
+    "ci95": [
+     -6.1241771485601015,
+     -0.5265198868732218
+    ],
+    "ci90": [
+     -5.057893465904973,
+     -0.9525415946015025
+    ],
+    "mde": 3.9983266154906283,
+    "verdict": "ESTIMATE"
+   },
+   "G3_orig": {
+    "point": null,
+    "ci95": null,
+    "ci90": null,
+    "mde": null,
+    "verdict": null
+   },
+   "G3_edit": {
+    "point": null,
+    "ci95": null,
+    "ci90": null,
+    "mde": null,
+    "verdict": null
+   },
+   "b_Gemma": {
+    "point": 1.1437879533513597,
+    "ci95": [
+     0.8686576553294196,
+     2.063250342267272
+    ],
+    "ci90": [
+     0.8987865804045304,
+     1.7405730359388893
+    ],
+    "mde": 0.8532804906698944,
+    "verdict": "ESTIMATE"
+   },
+   "b_GaMS": {
+    "point": 1.0932871989329955,
+    "ci95": [
+     0.5924195177220636,
+     2.259795707949191
+    ],
+    "ci90": [
+     0.6497088924558868,
+     1.9615425510983153
+    ],
+    "mde": 1.1909829930193767,
+    "verdict": "ESTIMATE"
+   },
+   "b_diff": {
+    "point": -0.05050075441836421,
+    "ci95": null,
+    "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
+   },
+   "judge": "gemini + Rogan-Gladen (author-model adjudication)",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
+   "json_path": "curves/exp8_A1|RG|R",
+   "decomposition_status": null,
+   "ceiling_verdict_G3_orig": "CEILING-ARTEFACT"
+  },
+  {
+   "body": "exp8_A1",
+   "readout": "PPI",
+   "coding": "R",
+   "statistic": "G3 (curve)",
+   "G3": {
+    "point": -1.7836978475879928,
+    "ci95": [
+     -3.1776485443067246,
+     0.33779296205327125
+    ],
+    "ci90": [
+     -2.9351571051321836,
+     -0.14031156101095135
+    ],
+    "mde": 2.511029647399997,
+    "verdict": "ESTIMATE"
+   },
+   "G3_orig": {
+    "point": -1.5336675121548318,
+    "ci95": [
+     -4.453752975089482,
+     0.6640418978182774
+    ],
+    "ci90": [
+     -4.123603304188401,
+     0.19231297602627342
+    ],
+    "mde": 3.6555677663626853,
+    "verdict": "ESTIMATE"
+   },
+   "G3_edit": {
+    "point": -0.250030335433161,
+    "ci95": [
+     -2.8050297170829164,
+     3.432715899771123
+    ],
+    "ci90": [
+     -2.2184563520228044,
+     2.9152301816535724
+    ],
+    "mde": 4.455532583467171,
+    "verdict": "ESTIMATE"
+   },
+   "b_Gemma": {
+    "point": 0.9450324162753261,
+    "ci95": [
+     0.3430801425962508,
+     1.7827876027218137
+    ],
+    "ci90": [
+     0.4792982489527299,
+     1.6187121696284026
+    ],
+    "mde": 1.028362471518259,
+    "verdict": "ESTIMATE"
+   },
+   "b_GaMS": {
+    "point": 1.2337361252429035,
+    "ci95": [
+     0.49429542479175353,
+     1.809953784686286
+    ],
+    "ci90": [
+     0.5447073688101981,
+     1.6658696502368726
+    ],
+    "mde": 0.9397559713532375,
+    "verdict": "ESTIMATE"
+   },
+   "b_diff": {
+    "point": 0.28870370896757747,
+    "ci95": null,
+    "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
+   },
+   "judge": "gemini + PPI++ (author-model adjudication)",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
+   "json_path": "curves/exp8_A1|PPI|R",
+   "decomposition_status": "underdetermined",
+   "ceiling_verdict_G3_orig": "CEILING-ARTEFACT"
+  },
+  {
+   "body": "exp8_A1",
+   "readout": "second_gpt41mini_IPW",
+   "coding": "R",
+   "status_note": "point estimate unusable: fewer than 2 usable steps",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
+   "json_path": "curves/exp8_A1|second_gpt41mini_IPW|R",
+   "decomposition_status": null,
+   "ceiling_verdict_G3_orig": "CEILING-ARTEFACT"
+  },
+  {
+   "body": "exp8_A1",
+   "readout": "archived_arch_q14",
+   "coding": "R",
+   "statistic": "G3 (curve)",
+   "G3": {
+    "point": 1.5737166545632513,
+    "ci95": [
+     0.11217321755826727,
+     3.0009981008415063
+    ],
+    "ci90": [
+     0.2790758706571313,
+     2.7322269375752875
+    ],
+    "mde": 2.0634463452023137,
+    "verdict": "ESTIMATE"
+   },
+   "G3_orig": {
+    "point": -1.6399746362941792,
+    "ci95": [
+     -3.343109409162935,
+     -0.3948473054335234
+    ],
+    "ci90": [
+     -3.121980985486746,
+     -0.5979133337200464
+    ],
+    "mde": 2.1059015026638654,
+    "verdict": "ESTIMATE"
+   },
+   "G3_edit": {
+    "point": 3.2136912908574304,
+    "ci95": [
+     1.2631905861887334,
+     5.492798809552067
+    ],
+    "ci90": [
+     1.5369677614026276,
+     5.0428062976658845
+    ],
+    "mde": 3.02114873097381,
+    "verdict": "ESTIMATE"
+   },
+   "b_Gemma": {
+    "point": 2.311784229243874,
+    "ci95": [
+     1.5660191818923688,
+     3.007724367138573
+    ],
+    "ci90": [
+     1.6294537293621547,
+     2.823826284225039
+    ],
+    "mde": 1.029789418033003,
+    "verdict": "ESTIMATE"
+   },
+   "b_GaMS": {
+    "point": 1.19881217009072,
+    "ci95": [
+     0.7472725229359681,
+     1.6860203609425062
+    ],
+    "ci90": [
+     0.8101557681047269,
+     1.5524455375606931
+    ],
+    "mde": 0.67053417000467,
+    "verdict": "ESTIMATE"
+   },
+   "b_diff": {
+    "point": -1.112972059153154,
+    "ci95": null,
+    "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
+   },
+   "judge": "archived local judge: q14",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
+   "json_path": "curves/exp8_A1|archived_arch_q14|R",
+   "decomposition_status": "edit-induced",
+   "ceiling_verdict_G3_orig": "CEILING-ARTEFACT",
+   "edit_direction": "anti-lag direction (G3_edit > 0)"
+  },
+  {
+   "body": "exp8_A1",
+   "readout": "archived_arch_lex",
+   "coding": "R",
+   "statistic": "G3 (curve)",
+   "G3": {
+    "point": -0.18694541577775614,
+    "ci95": [
+     -0.5010978934062574,
+     0.12398610959951677
+    ],
+    "ci90": [
+     -0.462897673487654,
+     0.07026823204348086
+    ],
+    "mde": 0.44648857357555294,
+    "verdict": "REFUTE-BOUND"
+   },
+   "G3_orig": {
+    "point": -0.7687008858024749,
+    "ci95": [
+     -2.3282773886573573,
+     0.39733400969573485
+    ],
+    "ci90": [
+     -2.1089745002433555,
+     0.20155402086093055
+    ],
+    "mde": 1.9468652845379228,
+    "verdict": "ESTIMATE"
+   },
+   "G3_edit": {
+    "point": 0.5817554700247187,
+    "ci95": [
+     -0.6361496250604759,
+     2.1556709441768267
+    ],
+    "ci90": [
+     -0.44677328598918603,
+     1.9552717481412754
+    ],
+    "mde": 1.994157549455216,
+    "verdict": "ESTIMATE"
+   },
+   "b_Gemma": {
+    "point": 1.1681486777910015,
+    "ci95": [
+     0.9762158179382907,
+     1.3620800304718224
+    ],
+    "ci90": [
+     1.0100088863478138,
+     1.3281020482047199
+    ],
+    "mde": 0.2756172946668083,
+    "verdict": "ESTIMATE"
+   },
+   "b_GaMS": {
+    "point": 1.0271479264451129,
+    "ci95": [
+     0.8521905063004143,
+     1.2125489840091834
+    ],
+    "ci90": [
+     0.876079288758233,
+     1.1798405239304894
+    ],
+    "mde": 0.25739891264912085,
+    "verdict": "ESTIMATE"
+   },
+   "b_diff": {
+    "point": -0.14100075134588863,
+    "ci95": null,
+    "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
+   },
+   "judge": "archived local judge: lex",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
+   "json_path": "curves/exp8_A1|archived_arch_lex|R",
+   "decomposition_status": "underdetermined",
+   "ceiling_verdict_G3_orig": "CEILING-ARTEFACT"
+  },
+  {
+   "body": "exp8_A1",
+   "readout": "archived_arch_m24",
+   "coding": "R",
+   "statistic": "G3 (curve)",
+   "G3": {
+    "point": 7.5837386241629,
+    "ci95": [
+     -14.701415519068178,
+     23.760743682510224
+    ],
+    "ci90": [
+     -8.024440579023615,
+     16.85822958077059
+    ],
+    "mde": 27.472970858270287,
+    "verdict": "ESTIMATE"
+   },
+   "G3_orig": {
+    "point": null,
+    "ci95": null,
+    "ci90": null,
+    "mde": null,
+    "verdict": null
+   },
+   "G3_edit": {
+    "point": null,
+    "ci95": null,
+    "ci90": null,
+    "mde": null,
+    "verdict": null
+   },
+   "b_Gemma": {
+    "point": 1.9022071470432278,
+    "ci95": [
+     -0.6778217169338108,
+     2.017821018207111
+    ],
+    "ci90": [
+     -0.3665460974628073,
+     1.7274750393688616
+    ],
+    "mde": 1.9254590965292298,
+    "verdict": "ESTIMATE"
+   },
+   "b_GaMS": {
+    "point": -2.1968384773656666,
+    "ci95": [
+     -7.723307498936129,
+     7.448100717460912
+    ],
+    "ci90": [
+     -6.06462024336166,
+     5.161201546302354
+    ],
+    "mde": 10.836720154569313,
+    "verdict": "ESTIMATE"
+   },
+   "b_diff": {
+    "point": -4.099045624408895,
+    "ci95": null,
+    "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
+   },
+   "judge": "archived local judge: m24",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
+   "json_path": "curves/exp8_A1|archived_arch_m24|R",
+   "decomposition_status": null,
+   "ceiling_verdict_G3_orig": "CEILING-ARTEFACT"
+  },
+  {
+   "body": "exp8_A1",
+   "readout": "raw_primary",
+   "coding": "RP",
+   "statistic": "G3 (curve)",
+   "G3": {
+    "point": -1.8726768452009084,
+    "ci95": [
+     -2.3877791642515094,
+     -1.4061140775919605
+    ],
+    "ci90": [
+     -2.2827519069879973,
+     -1.4586166645377174
+    ],
+    "mde": 0.7011893476139635,
+    "verdict": "CONFIRM-LAG"
+   },
+   "G3_orig": {
+    "point": -0.7228124769853723,
+    "ci95": [
+     -2.348498703924329,
+     0.6835921450325061
+    ],
+    "ci90": [
+     -2.135767446542349,
+     0.3784426504898619
+    ],
+    "mde": 2.1657791778263107,
+    "verdict": "ESTIMATE"
+   },
+   "G3_edit": {
+    "point": -1.149864368215536,
+    "ci95": [
+     -2.6220360927151587,
+     0.5494890388598287
+    ],
+    "ci90": [
+     -2.341167248194597,
+     0.3255066842821209
+    ],
+    "mde": 2.2653750939821338,
+    "verdict": "ESTIMATE"
+   },
+   "b_Gemma": {
+    "point": 1.4427869008309002,
+    "ci95": [
+     1.1421480966598159,
+     1.786932718501729
+    ],
+    "ci90": [
+     1.188788120090857,
+     1.7186684998989146
+    ],
+    "mde": 0.46056044417279507,
+    "verdict": "ESTIMATE"
+   },
+   "b_GaMS": {
+    "point": 0.8879094423169653,
+    "ci95": [
+     0.7487985385986727,
+     1.0273266680393858
+    ],
+    "ci90": [
+     0.7684139741190466,
+     1.0012779315438565
+    ],
+    "mde": 0.1989486638862236,
+    "verdict": "ESTIMATE"
+   },
+   "b_diff": {
+    "point": -0.5548774585139349,
+    "ci95": null,
+    "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
+   },
+   "judge": "paid gemini-2.5-flash (P1)",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
+   "json_path": "curves/exp8_A1|raw_primary|RP",
+   "decomposition_status": "underdetermined",
+   "ceiling_verdict_G3_orig": "CEILING-ARTEFACT"
+  },
+  {
+   "body": "exp8_A1",
+   "readout": "RG",
+   "coding": "RP",
+   "statistic": "G3 (curve)",
+   "G3": {
+    "point": -1.5419178966728249,
+    "ci95": [
+     -3.9161328968051454,
+     0.06558941670246911
+    ],
+    "ci90": [
+     -3.576242388177497,
+     -0.23552157418450662
+    ],
+    "mde": 2.8440873667911535,
+    "verdict": "ESTIMATE"
+   },
+   "G3_orig": {
+    "point": null,
+    "ci95": null,
+    "ci90": null,
+    "mde": null,
+    "verdict": null
+   },
+   "G3_edit": {
+    "point": null,
+    "ci95": null,
+    "ci90": null,
+    "mde": null,
+    "verdict": null
+   },
+   "b_Gemma": {
+    "point": 0.6849063916666711,
+    "ci95": [
+     0.5073136768794754,
+     1.353968037778446
+    ],
+    "ci90": [
+     0.5373353577181638,
+     1.1710096667937113
+    ],
+    "mde": 0.6047531149278361,
+    "verdict": "ESTIMATE"
+   },
+   "b_GaMS": {
+    "point": 0.7427431195662025,
+    "ci95": [
+     0.41729860272057756,
+     1.3706475883122289
+    ],
+    "ci90": [
+     0.4481288990722703,
+     1.0921133638021017
+    ],
+    "mde": 0.6809635611368937,
+    "verdict": "ESTIMATE"
+   },
+   "b_diff": {
+    "point": 0.057836727899531426,
+    "ci95": null,
+    "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
+   },
+   "judge": "gemini + Rogan-Gladen (author-model adjudication)",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
+   "json_path": "curves/exp8_A1|RG|RP",
+   "decomposition_status": null,
+   "ceiling_verdict_G3_orig": "CEILING-ARTEFACT"
+  },
+  {
+   "body": "exp8_A1",
+   "readout": "PPI",
+   "coding": "RP",
+   "statistic": "G3 (curve)",
+   "G3": {
+    "point": -2.447183352821977,
+    "ci95": [
+     -3.417374626878072,
+     -0.44760308228652446
+    ],
+    "ci90": [
+     -3.237676896712334,
+     -0.8975714262856613
+    ],
+    "mde": 2.1212653889939626,
+    "verdict": "ESTIMATE"
+   },
+   "G3_orig": {
+    "point": 0.49190646108211755,
+    "ci95": [
+     -0.48112442555677865,
+     1.7308973336816715
+    ],
+    "ci90": [
+     -0.24823354291752153,
+     1.5363535040111154
+    ],
+    "mde": 1.5800155423131788,
+    "verdict": "ESTIMATE"
+   },
+   "G3_edit": {
+    "point": -2.9390898139040944,
+    "ci95": [
+     -4.497659057925688,
+     -0.7300929883256647
+    ],
+    "ci90": [
+     -4.232519617805413,
+     -1.1160183928872924
+    ],
+    "mde": 2.6911186211428735,
+    "verdict": "CONFIRM-LAG"
+   },
+   "b_Gemma": {
+    "point": 0.8820343918880474,
+    "ci95": [
+     0.531946393578228,
+     2.47838391510917
+    ],
+    "ci90": [
+     0.5630594169238107,
+     2.265736483003806
+    ],
+    "mde": 1.3903125153792444,
+    "verdict": "ESTIMATE"
+   },
+   "b_GaMS": {
+    "point": 1.0998481225405596,
+    "ci95": [
+     0.3206247042431459,
+     1.3360020986614836
+    ],
+    "ci90": [
+     0.45310188644465155,
+     1.2822985428466427
+    ],
+    "mde": 0.7252695674416698,
+    "verdict": "ESTIMATE"
+   },
+   "b_diff": {
+    "point": 0.2178137306525122,
+    "ci95": null,
+    "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
+   },
+   "judge": "gemini + PPI++ (author-model adjudication)",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
+   "json_path": "curves/exp8_A1|PPI|RP",
+   "decomposition_status": "edit-induced",
+   "ceiling_verdict_G3_orig": "CEILING-ARTEFACT",
+   "edit_direction": "lag direction (G3_edit < 0: the edit removes MORE Slovene refusal in GaMS3)"
+  },
+  {
+   "body": "exp8_A1",
+   "readout": "second_gpt41mini_IPW",
+   "coding": "RP",
+   "status_note": "point estimate unusable: fewer than 2 usable steps",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
+   "json_path": "curves/exp8_A1|second_gpt41mini_IPW|RP",
+   "decomposition_status": null,
+   "ceiling_verdict_G3_orig": "CEILING-ARTEFACT"
+  },
+  {
+   "body": "exp8_B",
+   "readout": "raw_primary",
+   "coding": "R",
+   "statistic": "G3 (curve)",
+   "G3": {
+    "point": -1.2049195812243625,
+    "ci95": [
+     -1.7725417845069078,
+     -0.575604401512113
+    ],
+    "ci90": [
+     -1.6884458778134035,
+     -0.7004059072136468
+    ],
+    "mde": 0.8549552735677105,
+    "verdict": "ESTIMATE"
+   },
+   "G3_orig": {
+    "point": -1.3256538138973326,
+    "ci95": [
+     -2.374358792963818,
+     0.7816787885767006
+    ],
+    "ci90": [
+     -2.2161147055970165,
+     0.2612031298001103
+    ],
+    "mde": 2.2543125582432277,
+    "verdict": "ESTIMATE"
+   },
+   "G3_edit": {
+    "point": 0.12073423267297012,
+    "ci95": [
+     -2.208595534112302,
+     1.4659161721614236
+    ],
+    "ci90": [
+     -1.5918377972956435,
+     1.2709917212548953
+    ],
+    "mde": 2.624651218766947,
+    "verdict": "ESTIMATE"
+   },
+   "b_Gemma": {
+    "point": 1.4709558090242818,
+    "ci95": [
+     0.9393768577665738,
+     2.6095241709909445
+    ],
+    "ci90": [
+     1.0226134659159318,
+     2.3861649751929797
+    ],
+    "mde": 1.192962366588836,
+    "verdict": "ESTIMATE"
+   },
+   "b_GaMS": {
+    "point": 1.1345749328326755,
+    "ci95": [
+     0.8304757207685235,
+     1.4488180588789494
+    ],
+    "ci90": [
+     0.8618144821578438,
+     1.3863421345800526
+    ],
+    "mde": 0.44167309865030424,
+    "verdict": "ESTIMATE"
+   },
+   "b_diff": {
+    "point": -0.3363808761916063,
+    "ci95": null,
+    "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
+   },
+   "judge": "paid gemini-2.5-flash (P1)",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
+   "json_path": "curves/exp8_B|raw_primary|R",
+   "decomposition_status": "underdetermined",
+   "ceiling_verdict_G3_orig": "CEILING-ARTEFACT"
+  },
+  {
+   "body": "exp8_B",
+   "readout": "RG",
+   "coding": "R",
+   "statistic": "G3 (curve)",
+   "G3": {
+    "point": -1.7425106411647373,
+    "ci95": [
+     -3.382753668751802,
+     0.3528027707713222
+    ],
+    "ci90": [
+     -3.1566977883001885,
+     0.01628207559382165
+    ],
+    "mde": 2.6682545996593743,
+    "verdict": "ESTIMATE"
+   },
+   "G3_orig": {
+    "point": null,
+    "ci95": null,
+    "ci90": null,
+    "mde": null,
+    "verdict": null
+   },
+   "G3_edit": {
+    "point": null,
+    "ci95": null,
+    "ci90": null,
+    "mde": null,
+    "verdict": null
+   },
+   "b_Gemma": {
+    "point": 1.1631028182584047,
+    "ci95": [
+     0.5039211796621831,
+     1.5056600281769332
+    ],
+    "ci90": [
+     0.5398152114752945,
+     1.4379927717378589
+    ],
+    "mde": 0.7155277489391071,
+    "verdict": "ESTIMATE"
+   },
+   "b_GaMS": {
+    "point": 1.12526289454349,
+    "ci95": [
+     0.4398184584801145,
+     1.7887797382030044
+    ],
+    "ci90": [
+     0.4897992977518777,
+     1.6770062779349926
+    ],
+    "mde": 0.9635437712306355,
+    "verdict": "ESTIMATE"
+   },
+   "b_diff": {
+    "point": -0.037839923714914736,
+    "ci95": null,
+    "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
+   },
+   "judge": "gemini + Rogan-Gladen (author-model adjudication)",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
+   "json_path": "curves/exp8_B|RG|R",
+   "decomposition_status": null,
+   "ceiling_verdict_G3_orig": "CEILING-ARTEFACT"
+  },
+  {
+   "body": "exp8_B",
+   "readout": "PPI",
+   "coding": "R",
+   "statistic": "G3 (curve)",
+   "G3": {
+    "point": -1.7339454416597508,
+    "ci95": [
+     -2.8557052272220975,
+     -0.36416252082480793
+    ],
+    "ci90": [
+     -2.6717318249982425,
+     -0.5266617519843352
+    ],
+    "mde": 1.7796733617123495,
+    "verdict": "ESTIMATE"
+   },
+   "G3_orig": {
+    "point": -1.1666141656135456,
+    "ci95": [
+     -3.7178313787681656,
+     1.1692030032338616
+    ],
+    "ci90": [
+     -3.3792557298638157,
+     0.6711572010462573
+    ],
+    "mde": 3.4907388442871623,
+    "verdict": "ESTIMATE"
+   },
+   "G3_edit": {
+    "point": -0.5673312760462053,
+    "ci95": [
+     -3.0051551993955745,
+     2.50167716600982
+    ],
+    "ci90": [
+     -2.485295490066102,
+     2.1236690119593447
+    ],
+    "mde": 3.9334516895752816,
+    "verdict": "ESTIMATE"
+   },
+   "b_Gemma": {
+    "point": 0.8357232841293979,
+    "ci95": [
+     -0.45110949945438816,
+     1.5388802672209065
+    ],
+    "ci90": [
+     -0.1482803896795481,
+     1.4117582878901653
+    ],
+    "mde": 1.4214212619109248,
+    "verdict": "ESTIMATE"
+   },
+   "b_GaMS": {
+    "point": 1.1422036666685385,
+    "ci95": [
+     0.0875690918329135,
+     1.4620541553286046
+    ],
+    "ci90": [
+     0.1700040648230321,
+     1.3452342343314112
+    ],
+    "mde": 0.9817750453540651,
+    "verdict": "ESTIMATE"
+   },
+   "b_diff": {
+    "point": 0.30648038253914056,
+    "ci95": null,
+    "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
+   },
+   "judge": "gemini + PPI++ (author-model adjudication)",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
+   "json_path": "curves/exp8_B|PPI|R",
+   "decomposition_status": "underdetermined",
+   "ceiling_verdict_G3_orig": "CEILING-ARTEFACT"
+  },
+  {
+   "body": "exp8_B",
+   "readout": "second_gpt41mini_IPW",
+   "coding": "R",
+   "status_note": "point estimate unusable: fewer than 2 usable steps",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
+   "json_path": "curves/exp8_B|second_gpt41mini_IPW|R",
+   "decomposition_status": null,
+   "ceiling_verdict_G3_orig": "CEILING-ARTEFACT"
+  },
+  {
+   "body": "exp8_B",
+   "readout": "archived_arch_q14",
+   "coding": "R",
+   "statistic": "G3 (curve)",
+   "G3": {
+    "point": 1.5651620743649493,
+    "ci95": [
+     -0.341644892887561,
+     3.6348479873706547
+    ],
+    "ci90": [
+     -0.07752446602233141,
+     3.097903544427779
+    ],
+    "mde": 2.840352057327297,
+    "verdict": "ESTIMATE"
+   },
+   "G3_orig": {
+    "point": -2.026751840170003,
+    "ci95": [
+     -3.3004508362188396,
+     0.044886133881236696
+    ],
+    "ci90": [
+     -3.0423806938225035,
+     -0.3080133063158906
+    ],
+    "mde": 2.38952640721434,
+    "verdict": "ESTIMATE"
+   },
+   "G3_edit": {
+    "point": 3.591913914534952,
+    "ci95": [
+     0.7779803623721254,
+     5.813112609264418
+    ],
+    "ci90": [
+     1.1761961140725903,
+     5.1785193081275915
+    ],
+    "mde": 3.596523033494494,
+    "verdict": "ESTIMATE"
+   },
+   "b_Gemma": {
+    "point": 2.5645663915289627,
+    "ci95": [
+     1.4716335608414295,
+     3.3940149594973166
+    ],
+    "ci90": [
+     1.598933900568066,
+     3.1567113445005095
+    ],
+    "mde": 1.3731295704684907,
+    "verdict": "ESTIMATE"
+   },
+   "b_GaMS": {
+    "point": 1.2214155674855964,
+    "ci95": [
+     0.6344456483887926,
+     1.5126363061347057
+    ],
+    "ci90": [
+     0.7105282546907835,
+     1.4478484066766983
+    ],
+    "mde": 0.6272790412470808,
+    "verdict": "ESTIMATE"
+   },
+   "b_diff": {
+    "point": -1.3431508240433663,
+    "ci95": null,
+    "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
+   },
+   "judge": "archived local judge: q14",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
+   "json_path": "curves/exp8_B|archived_arch_q14|R",
+   "decomposition_status": "edit-induced",
+   "ceiling_verdict_G3_orig": "CEILING-ARTEFACT",
+   "edit_direction": "anti-lag direction (G3_edit > 0)"
+  },
+  {
+   "body": "exp8_B",
+   "readout": "archived_arch_lex",
+   "coding": "R",
+   "statistic": "G3 (curve)",
+   "G3": {
+    "point": -2.361747998220966,
+    "ci95": [
+     -2.9717447514992945,
+     -1.7241688097582926
+    ],
+    "ci90": [
+     -2.8496199793079175,
+     -1.835798501284551
+    ],
+    "mde": 0.8911256726721442,
+    "verdict": "CONFIRM-LAG"
+   },
+   "G3_orig": {
+    "point": -0.6413766977765443,
+    "ci95": [
+     -1.7193773511171706,
+     1.286623335281778
+    ],
+    "ci90": [
+     -1.576121825230544,
+     0.9422210344284587
+    ],
+    "mde": 2.14714334742782,
+    "verdict": "ESTIMATE"
+   },
+   "G3_edit": {
+    "point": -1.7203713004444219,
+    "ci95": [
+     -3.6890158345545485,
+     -0.5214619200365471
+    ],
+    "ci90": [
+     -3.3910591608513037,
+     -0.6912438971471687
+    ],
+    "mde": 2.262538510370001,
+    "verdict": "ESTIMATE"
+   },
+   "b_Gemma": {
+    "point": 2.3368596461183637,
+    "ci95": [
+     1.698553126796135,
+     2.8997714873404896
+    ],
+    "ci90": [
+     1.7504077032050824,
+     2.7626952853579656
+    ],
+    "mde": 0.858013114674539,
+    "verdict": "ESTIMATE"
+   },
+   "b_GaMS": {
+    "point": 1.375117745906411,
+    "ci95": [
+     1.0608414205596295,
+     1.6519553989715021
+    ],
+    "ci90": [
+     1.1157763617563934,
+     1.5988612061672016
+    ],
+    "mde": 0.4222242702941947,
+    "verdict": "ESTIMATE"
+   },
+   "b_diff": {
+    "point": -0.9617419002119527,
+    "ci95": null,
+    "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
+   },
+   "judge": "archived local judge: lex",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
+   "json_path": "curves/exp8_B|archived_arch_lex|R",
+   "decomposition_status": "edit-induced",
+   "ceiling_verdict_G3_orig": "CEILING-ARTEFACT",
+   "edit_direction": "lag direction (G3_edit < 0: the edit removes MORE Slovene refusal in GaMS3)"
+  },
+  {
+   "body": "exp8_B",
+   "readout": "archived_arch_m24",
+   "coding": "R",
+   "statistic": "G3 (curve)",
+   "G3": {
+    "point": 0.03953953723552328,
+    "ci95": [
+     -2.522665390199399,
+     1.18144495398922
+    ],
+    "ci90": [
+     -2.150175365433089,
+     0.7889479860494891
+    ],
+    "mde": 2.645793102991871,
+    "verdict": "ESTIMATE"
+   },
+   "G3_orig": {
+    "point": null,
+    "ci95": null,
+    "ci90": null,
+    "mde": null,
+    "verdict": null
+   },
+   "G3_edit": {
+    "point": null,
+    "ci95": null,
+    "ci90": null,
+    "mde": null,
+    "verdict": null
+   },
+   "b_Gemma": {
+    "point": 1.0603635838097747,
+    "ci95": [
+     0.12390005231376336,
+     1.4455216598201897
+    ],
+    "ci90": [
+     0.2354597868825556,
+     1.2795748054189502
+    ],
+    "mde": 0.9440154339331616,
+    "verdict": "ESTIMATE"
+   },
+   "b_GaMS": {
+    "point": 0.3586280174317678,
+    "ci95": [
+     -0.039032476029954244,
+     0.8908383116829189
+    ],
+    "ci90": [
+     0.016744754795529462,
+     0.8001690375824037
+    ],
+    "mde": 0.6641934197949093,
+    "verdict": "ESTIMATE"
+   },
+   "b_diff": {
+    "point": -0.7017355663780069,
+    "ci95": null,
+    "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
+   },
+   "judge": "archived local judge: m24",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
+   "json_path": "curves/exp8_B|archived_arch_m24|R",
+   "decomposition_status": null,
+   "ceiling_verdict_G3_orig": "CEILING-ARTEFACT"
+  },
+  {
+   "body": "exp8_B",
+   "readout": "raw_primary",
+   "coding": "RP",
+   "statistic": "G3 (curve)",
+   "G3": {
+    "point": -1.2979025558929072,
+    "ci95": [
+     -1.897637434489026,
+     -0.5875061450346062
+    ],
+    "ci90": [
+     -1.774744150773986,
+     -0.6962796495379345
+    ],
+    "mde": 0.9358080638960141,
+    "verdict": "ESTIMATE"
+   },
+   "G3_orig": {
+    "point": -0.8250646758817317,
+    "ci95": [
+     -2.1590403022029707,
+     2.2378392964904097
+    ],
+    "ci90": [
+     -1.9762154985506424,
+     1.6722858160937624
+    ],
+    "mde": 3.140628284780986,
+    "verdict": "ESTIMATE"
+   },
+   "G3_edit": {
+    "point": -0.47283788001117544,
+    "ci95": [
+     -3.5908911393729155,
+     1.2518245658875424
+    ],
+    "ci90": [
+     -3.0981398819765964,
+     0.9882955808253275
+    ],
+    "mde": 3.459082646614613,
+    "verdict": "ESTIMATE"
+   },
+   "b_Gemma": {
+    "point": 1.2359594057530492,
+    "ci95": [
+     0.7490868495597129,
+     2.5061762595651635
+    ],
+    "ci90": [
+     0.8194696475301034,
+     2.282868502978691
+    ],
+    "mde": 1.2550638642896075,
+    "verdict": "ESTIMATE"
+   },
+   "b_GaMS": {
+    "point": 1.0459069012962565,
+    "ci95": [
+     0.764507961433916,
+     1.327938713707733
+    ],
+    "ci90": [
+     0.7986868728204939,
+     1.2628160930549182
+    ],
+    "mde": 0.40245053733844066,
+    "verdict": "ESTIMATE"
+   },
+   "b_diff": {
+    "point": -0.19005250445679267,
+    "ci95": null,
+    "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
+   },
+   "judge": "paid gemini-2.5-flash (P1)",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
+   "json_path": "curves/exp8_B|raw_primary|RP",
+   "decomposition_status": "underdetermined",
+   "ceiling_verdict_G3_orig": "CEILING-ARTEFACT"
+  },
+  {
+   "body": "exp8_B",
+   "readout": "RG",
+   "coding": "RP",
+   "statistic": "G3 (curve)",
+   "G3": {
+    "point": -0.7829992201977098,
+    "ci95": [
+     -2.48434749178026,
+     1.5016629805608939
+    ],
+    "ci90": [
+     -2.190217459829874,
+     1.1971086920922023
+    ],
+    "mde": 2.8471503373865383,
+    "verdict": "ESTIMATE"
+   },
+   "G3_orig": {
+    "point": null,
+    "ci95": null,
+    "ci90": null,
+    "mde": null,
+    "verdict": null
+   },
+   "G3_edit": {
+    "point": null,
+    "ci95": null,
+    "ci90": null,
+    "mde": null,
+    "verdict": null
+   },
+   "b_Gemma": {
+    "point": 0.7765313093546612,
+    "ci95": [
+     0.38522462184104594,
+     0.9306886610489323
+    ],
+    "ci90": [
+     0.4259399250036949,
+     0.894348999798215
+    ],
+    "mde": 0.38961717086277603,
+    "verdict": "ESTIMATE"
+   },
+   "b_GaMS": {
+    "point": 0.7451007664202651,
+    "ci95": [
+     0.29728381947524807,
+     1.308120178334053
+    ],
+    "ci90": [
+     0.33664989015654506,
+     1.168290051085311
+    ],
+    "mde": 0.722025970613432,
+    "verdict": "ESTIMATE"
+   },
+   "b_diff": {
+    "point": -0.031430542934396066,
+    "ci95": null,
+    "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
+   },
+   "judge": "gemini + Rogan-Gladen (author-model adjudication)",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
+   "json_path": "curves/exp8_B|RG|RP",
+   "decomposition_status": null,
+   "ceiling_verdict_G3_orig": "CEILING-ARTEFACT"
+  },
+  {
+   "body": "exp8_B",
+   "readout": "PPI",
+   "coding": "RP",
+   "statistic": "G3 (curve)",
+   "G3": {
+    "point": -2.189427558280217,
+    "ci95": [
+     -2.980399000618499,
+     -0.5859602876294889
+    ],
+    "ci90": [
+     -2.7473563137637247,
+     -0.7697323745041975
+    ],
+    "mde": 1.7103133664207213,
+    "verdict": "ESTIMATE"
+   },
+   "G3_orig": {
+    "point": 1.1204649911766738,
+    "ci95": [
+     -0.5445550540975882,
+     2.0118773722540273
+    ],
+    "ci90": [
+     0.0,
+     1.8467818640974656
+    ],
+    "mde": 1.8260231616797251,
+    "verdict": "ESTIMATE"
+   },
+   "G3_edit": {
+    "point": -3.3098925494568907,
+    "ci95": [
+     -4.32986324895174,
+     -0.6596035505757135
+    ],
+    "ci90": [
+     -3.9821110807153532,
+     -1.027296117563183
+    ],
+    "mde": 2.6216140702685897,
+    "verdict": "ESTIMATE"
+   },
+   "b_Gemma": {
+    "point": 1.0479229752871888,
+    "ci95": [
+     0.3836336968699568,
+     1.6910668830103912
+    ],
+    "ci90": [
+     0.43662965536898957,
+     1.540337574686011
+    ],
+    "mde": 0.9338808472431674,
+    "verdict": "ESTIMATE"
+   },
+   "b_GaMS": {
+    "point": 1.6362491252191247,
+    "ci95": [
+     -0.49990331296613416,
+     1.806599747977863
+    ],
+    "ci90": [
+     -0.2986299227762656,
+     1.7125319041582157
+    ],
+    "mde": 1.6475021863885695,
+    "verdict": "ESTIMATE"
+   },
+   "b_diff": {
+    "point": 0.5883261499319359,
+    "ci95": null,
+    "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
+   },
+   "judge": "gemini + PPI++ (author-model adjudication)",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
+   "json_path": "curves/exp8_B|PPI|RP",
+   "decomposition_status": "edit-induced",
+   "ceiling_verdict_G3_orig": "CEILING-ARTEFACT",
+   "edit_direction": "lag direction (G3_edit < 0: the edit removes MORE Slovene refusal in GaMS3)"
+  },
+  {
+   "body": "exp8_B",
+   "readout": "second_gpt41mini_IPW",
+   "coding": "RP",
+   "status_note": "point estimate unusable: fewer than 2 usable steps",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
+   "json_path": "curves/exp8_B|second_gpt41mini_IPW|RP",
+   "decomposition_status": null,
+   "ceiling_verdict_G3_orig": "CEILING-ARTEFACT"
+  },
+  {
+   "body": "exp9_trial_Bprime",
+   "readout": "raw_primary",
+   "coding": "R",
+   "status_note": "point estimate unusable: fewer than 2 usable steps",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
+   "json_path": "curves/exp9_trial_Bprime|raw_primary|R",
+   "decomposition_status": null,
+   "ceiling_verdict_G3_orig": null
+  },
+  {
+   "body": "exp9_trial_Bprime",
+   "readout": "archived_arch_j1",
+   "coding": "R",
+   "statistic": "G3 (curve)",
+   "G3": {
+    "point": 9.330815901852677,
+    "ci95": [
+     -5.691292447426199,
+     20.382336617262055
+    ],
+    "ci90": [
+     -5.186080872330275,
+     18.143332746503816
+    ],
+    "mde": 18.62402076049161,
+    "verdict": "ESTIMATE"
+   },
+   "G3_orig": {
+    "point": -1.1568278374950136,
+    "ci95": [
+     -2.101757903500663,
+     0.8193876610556288
+    ],
+    "ci90": [
+     -1.9762154985506424,
+     0.5209267197524943
+    ],
+    "mde": 2.086532546111637,
+    "verdict": "ESTIMATE"
+   },
+   "G3_edit": {
+    "point": 10.487643739347691,
+    "ci95": [
+     -4.845564324403364,
+     21.508956163186074
+    ],
+    "ci90": [
+     -4.348019674838076,
+     19.28609023363084
+    ],
+    "mde": 18.824657491135316,
+    "verdict": "ESTIMATE"
+   },
+   "b_Gemma": {
+    "point": 8.328559161896283,
+    "ci95": [
+     6.423635673440745,
+     13.173406571054691
+    ],
+    "ci90": [
+     6.787144313417749,
+     12.305324957179987
+    ],
+    "mde": 4.821264926867105,
+    "verdict": "ESTIMATE"
+   },
+   "b_GaMS": {
+    "point": 1.0888509307411909,
+    "ci95": [
+     0.7894829443873923,
+     1.4209508360337042
+    ],
+    "ci90": [
+     0.8273185319466105,
+     1.3422163704006658
+    ],
+    "mde": 0.45104849403307995,
+    "verdict": "ESTIMATE"
+   },
+   "b_diff": {
+    "point": -7.239708231155093,
+    "ci95": null,
+    "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
+   },
+   "judge": "archived local judge: j1",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
+   "json_path": "curves/exp9_trial_Bprime|archived_arch_j1|R",
+   "decomposition_status": "underdetermined",
+   "ceiling_verdict_G3_orig": null
+  },
+  {
+   "body": "exp9_trial_Bprime",
+   "readout": "archived_arch_j2",
+   "coding": "R",
+   "status_note": "point estimate unusable: quasi-separation (|a| or |b| > 30)",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
+   "json_path": "curves/exp9_trial_Bprime|archived_arch_j2|R",
+   "decomposition_status": null,
+   "ceiling_verdict_G3_orig": null
+  },
+  {
+   "body": "exp9_trial_Bprime",
+   "readout": "archived_arch_lex",
+   "coding": "R",
+   "status_note": "point estimate unusable: quasi-separation (|a| or |b| > 30)",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
+   "json_path": "curves/exp9_trial_Bprime|archived_arch_lex|R",
+   "decomposition_status": null,
+   "ceiling_verdict_G3_orig": null
+  },
+  {
+   "body": "exp9_trial_Bprime",
+   "readout": "raw_primary",
+   "coding": "RP",
+   "status_note": "point estimate unusable: fewer than 2 usable steps",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
+   "json_path": "curves/exp9_trial_Bprime|raw_primary|RP",
+   "decomposition_status": null,
+   "ceiling_verdict_G3_orig": null
+  },
+  {
+   "body": "exp10_op",
+   "readout": "raw_primary",
+   "coding": "R",
+   "statistic": "G3_op (operating point)",
+   "G3": {
+    "point": -2.415189115571431,
+    "ci95": [
+     -4.353480627888453,
+     -1.5289396050786892
+    ],
+    "ci90": [
+     -3.8488483402940803,
+     -1.6578072000660042
+    ],
+    "mde": 2.017529302006974,
+    "verdict": "CONFIRM-LAG"
+   },
+   "G3_orig": {
+    "point": 0.9875654713175219,
+    "ci95": [
+     -1.104862309013293,
+     3.5344057927624615
+    ],
+    "ci90": [
+     -0.8469014044756262,
+     3.1088532961045785
+    ],
+    "mde": 3.3137629298398243,
+    "verdict": "ESTIMATE"
+   },
+   "G3_edit": {
+    "point": -3.402754586888953,
+    "ci95": [
+     -6.092627503391689,
+     -1.3047646908481516
+    ],
+    "ci90": [
+     -5.792063701654195,
+     -1.6359577025977556
+    ],
+    "mde": 3.4199020089596694,
+    "verdict": "CONFIRM-LAG"
+   },
+   "b_Gemma": {
+    "point": null,
+    "ci95": null,
+    "ci90": null,
+    "mde": null,
+    "verdict": null
+   },
+   "b_GaMS": {
+    "point": null,
+    "ci95": null,
+    "ci90": null,
+    "mde": null,
+    "verdict": null
+   },
+   "b_diff": {
+    "point": null,
+    "ci95": null,
+    "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
+   },
+   "judge": "paid gemini-2.5-flash (P1)",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
+   "json_path": "curves/exp10_op|raw_primary|R",
+   "decomposition_status": "edit-induced",
+   "ceiling_verdict_G3_orig": "NOT-OUTSIDE-MARGIN",
+   "edit_direction": "lag direction (G3_edit < 0: the edit removes MORE Slovene refusal in GaMS3)"
+  },
+  {
+   "body": "exp10_op",
+   "readout": "RG",
+   "coding": "R",
+   "statistic": "G3_op (operating point)",
+   "G3": {
+    "point": -3.790648195823353,
+    "ci95": [
+     -5.4772897799753,
+     -1.1913263159739986
+    ],
+    "ci90": [
+     -4.985129191078182,
+     -1.872672458176035
+    ],
+    "mde": 3.061402474286644,
+    "verdict": "CONFIRM-LAG"
+   },
+   "G3_orig": {
+    "point": null,
+    "ci95": null,
+    "ci90": null,
+    "mde": null,
+    "verdict": null
+   },
+   "G3_edit": {
+    "point": null,
+    "ci95": null,
+    "ci90": null,
+    "mde": null,
+    "verdict": null
+   },
+   "b_Gemma": {
+    "point": null,
+    "ci95": null,
+    "ci90": null,
+    "mde": null,
+    "verdict": null
+   },
+   "b_GaMS": {
+    "point": null,
+    "ci95": null,
+    "ci90": null,
+    "mde": null,
+    "verdict": null
+   },
+   "b_diff": {
+    "point": null,
+    "ci95": null,
+    "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
+   },
+   "judge": "gemini + Rogan-Gladen (author-model adjudication)",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
+   "json_path": "curves/exp10_op|RG|R",
+   "decomposition_status": null,
+   "ceiling_verdict_G3_orig": "NOT-OUTSIDE-MARGIN"
+  },
+  {
+   "body": "exp10_op",
+   "readout": "archived_lex",
+   "coding": "R",
+   "statistic": "G3_op (operating point)",
+   "G3": {
+    "point": -2.3053519378907783,
+    "ci95": [
+     -2.9606717315121056,
+     -1.738921940512943
+    ],
+    "ci90": [
+     -2.8402199359876725,
+     -1.8108742078327922
+    ],
+    "mde": 0.8726784221422589,
+    "verdict": "CONFIRM-LAG"
+   },
+   "G3_orig": {
+    "point": -1.8215921347577986,
+    "ci95": [
+     -3.3803026327945407,
+     -0.7179078889269205
+    ],
+    "ci90": [
+     -3.2487139215956446,
+     -0.874308420744294
+    ],
+    "mde": 1.9017105313340146,
+    "verdict": "CONFIRM-LAG"
+   },
+   "G3_edit": {
+    "point": -0.4837598031329797,
+    "ci95": [
+     -1.7993397671207665,
+     1.1721524283422557
+    ],
+    "ci90": [
+     -1.6058260794366577,
+     1.0129563320253467
+    ],
+    "mde": 2.12249442533073,
+    "verdict": "ESTIMATE"
+   },
+   "b_Gemma": {
+    "point": null,
+    "ci95": null,
+    "ci90": null,
+    "mde": null,
+    "verdict": null
+   },
+   "b_GaMS": {
+    "point": null,
+    "ci95": null,
+    "ci90": null,
+    "mde": null,
+    "verdict": null
+   },
+   "b_diff": {
+    "point": null,
+    "ci95": null,
+    "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
+   },
+   "judge": "archived_lex",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
+   "json_path": "curves/exp10_op|archived_lex|R",
+   "decomposition_status": "underdetermined",
+   "ceiling_verdict_G3_orig": "NOT-OUTSIDE-MARGIN"
+  },
+  {
+   "body": "exp10_op",
+   "readout": "raw_primary",
+   "coding": "RP",
+   "statistic": "G3_op (operating point)",
+   "G3": {
+    "point": -2.2910507988123863,
+    "ci95": [
+     -4.211626852702864,
+     -1.3875453810310943
+    ],
+    "ci90": [
+     -3.6728980141348133,
+     -1.5463499736516555
+    ],
+    "mde": 2.0172010511941214,
+    "verdict": "CONFIRM-LAG"
+   },
+   "G3_orig": {
+    "point": 0.34917081995834076,
+    "ci95": [
+     -1.5962450285689311,
+     2.313949453318052
+    ],
+    "ci90": [
+     -1.2728064417285094,
+     2.1390922143604074
+    ],
+    "mde": 2.792996058490702,
+    "verdict": "ESTIMATE"
+   },
+   "G3_edit": {
+    "point": -2.640221618770727,
+    "ci95": [
+     -4.950992831903924,
+     -0.807998827990993
+    ],
+    "ci90": [
+     -4.611511362972527,
+     -1.1385134106986547
+    ],
+    "mde": 2.9592814313663793,
+    "verdict": "CONFIRM-LAG"
+   },
+   "b_Gemma": {
+    "point": null,
+    "ci95": null,
+    "ci90": null,
+    "mde": null,
+    "verdict": null
+   },
+   "b_GaMS": {
+    "point": null,
+    "ci95": null,
+    "ci90": null,
+    "mde": null,
+    "verdict": null
+   },
+   "b_diff": {
+    "point": null,
+    "ci95": null,
+    "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
+   },
+   "judge": "paid gemini-2.5-flash (P1)",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
+   "json_path": "curves/exp10_op|raw_primary|RP",
+   "decomposition_status": "edit-induced",
+   "ceiling_verdict_G3_orig": "NOT-OUTSIDE-MARGIN",
+   "edit_direction": "lag direction (G3_edit < 0: the edit removes MORE Slovene refusal in GaMS3)"
+  },
+  {
+   "body": "exp10_op",
+   "readout": "RG",
+   "coding": "RP",
+   "statistic": "G3_op (operating point)",
+   "G3": {
+    "point": -1.8962539242119159,
+    "ci95": [
+     -4.07295602850186,
+     2.5457849858532633
+    ],
+    "ci90": [
+     -3.7200171356398997,
+     1.8807493594998201
+    ],
+    "mde": 4.727672153110802,
+    "verdict": "ESTIMATE"
+   },
+   "G3_orig": {
+    "point": null,
+    "ci95": null,
+    "ci90": null,
+    "mde": null,
+    "verdict": null
+   },
+   "G3_edit": {
+    "point": null,
+    "ci95": null,
+    "ci90": null,
+    "mde": null,
+    "verdict": null
+   },
+   "b_Gemma": {
+    "point": null,
+    "ci95": null,
+    "ci90": null,
+    "mde": null,
+    "verdict": null
+   },
+   "b_GaMS": {
+    "point": null,
+    "ci95": null,
+    "ci90": null,
+    "mde": null,
+    "verdict": null
+   },
+   "b_diff": {
+    "point": null,
+    "ci95": null,
+    "note": "CI NA: per-draw slopes were not saved (work/boot_draws.npz holds G3/G3_orig/G3_edit/IG only)"
+   },
+   "judge": "gemini + Rogan-Gladen (author-model adjudication)",
+   "source_file": "RUN/round-4/evaluation-3/src/results/recompute.json",
+   "json_path": "curves/exp10_op|RG|RP",
+   "decomposition_status": null,
+   "ceiling_verdict_G3_orig": "NOT-OUTSIDE-MARGIN"
+  },
+  {
+   "body": "exp15_ladder",
+   "readout": "RAW",
+   "coding": "R",
+   "statistic": "G3 (curve)",
+   "G3": {
+    "point": -0.7007681018174837,
+    "ci95": [
+     -1.0064162482960892,
+     -0.4167672646087878
+    ],
+    "ci90": [
+     -0.9473970988539273,
+     -0.46258453908312425
+    ],
+    "mde": 0.4220094473750568,
+    "verdict": null
+   },
+   "G3_orig": {
+    "point": -1.1705822417255,
+    "ci95": [
+     -2.8260403732939907,
+     0.22089143750449225
+    ],
+    "ci90": [
+     -2.6423492272976294,
+     -0.010882272122627412
+    ],
+    "mde": 2.307785815703473,
+    "verdict": null
+   },
+   "G3_edit": {
+    "point": 0.46981413990801635,
+    "ci95": [
+     -0.9616309079009656,
+     2.139643632364296
+    ],
+    "ci90": [
+     -0.6766109416411428,
+     1.9138666777053137
+    ],
+    "mde": 2.3188880001587497,
+    "verdict": null
+   },
+   "b_Gemma": {
+    "point": 0.9384821507233972,
+    "ci95": [
+     0.7470513803165133,
+     1.1746109133598088
+    ],
+    "ci90": [
+     0.7818481876216394,
+     1.1316570956498322
+    ],
+    "mde": 0.30477430253626026,
+    "verdict": null
+   },
+   "b_GaMS": {
+    "point": 0.7968970410431552,
+    "ci95": [
+     0.6252281492943961,
+     0.9523721321855549
+    ],
+    "ci90": [
+     0.6611563527222607,
+     0.921670357534391
+    ],
+    "mde": 0.2230259581329379,
+    "verdict": null
+   },
+   "b_diff": {
+    "point": -0.14158510968024207,
+    "ci95": null,
+    "note": "CI NA: slope draws not saved jointly"
+   },
+   "judge": "local J1 (mdeberta distilled from gemini; fallback readout)",
+   "source_file": "RUN/round-4/experiment-15/src/results/analysis.json",
+   "json_path": "headline/R/RAW",
+   "notes": "",
+   "decomposition_status": "underdetermined",
+   "ceiling_verdict_G3_orig": "CEILING-ARTEFACT"
+  },
+  {
+   "body": "exp15_ladder",
+   "readout": "RG",
+   "coding": "R",
+   "statistic": "G3 (curve)",
+   "G3": {
+    "point": -0.005026578769777634,
+    "ci95": [
+     -4.355649415448378,
+     11.267684167363443
+    ],
+    "ci90": [
+     -2.7571077839267266,
+     3.771886653327769
+    ],
+    "mde": 16.112730896139034,
+    "verdict": null
+   },
+   "G3_orig": {
+    "point": -1.7582508062717048,
+    "ci95": [
+     -5.445762692002625,
+     1.9566649156972917
+    ],
+    "ci90": [
+     -5.000696648317405,
+     1.6161157335767324
+    ],
+    "mde": 5.4466419418977265,
+    "verdict": null
+   },
+   "G3_edit": {
+    "point": 1.7532242275019272,
+    "ci95": [
+     -4.583054575973059,
+     13.17978389813894
+    ],
+    "ci90": [
+     -3.082165806727052,
+     6.995985593888034
+    ],
+    "mde": 16.9479079076342,
+    "verdict": null
+   },
+   "b_Gemma": {
+    "point": null,
+    "ci95": null
+   },
+   "b_GaMS": {
+    "point": null,
+    "ci95": null
+   },
+   "b_diff": {
+    "point": null,
+    "ci95": null,
+    "note": "CI NA: slope draws not saved jointly"
+   },
+   "judge": "J1 + Rogan-Gladen",
+   "source_file": "RUN/round-4/experiment-15/src/results/analysis.json",
+   "json_path": "headline/R/RG",
+   "notes": "",
+   "decomposition_status": "underdetermined",
+   "ceiling_verdict_G3_orig": "CEILING-ARTEFACT"
+  },
+  {
+   "body": "exp15_ladder",
+   "readout": "PPI",
+   "coding": "R",
+   "statistic": "G3 (curve)",
+   "G3": {
+    "point": -0.7549944855988757,
+    "ci95": [
+     -2.4318181879892733,
+     0.9932140744091612
+    ],
+    "ci90": [
+     -2.116817374455233,
+     0.7605441364838265
+    ],
+    "mde": 2.4452701640092864,
+    "verdict": null
+   },
+   "G3_orig": {
+    "point": -1.5189200749425062,
+    "ci95": [
+     -6.459721610497167,
+     2.815311767727836
+    ],
+    "ci90": [
+     -5.974175898255778,
+     2.144859732928769
+    ],
+    "mde": 6.826908135936898,
+    "verdict": null
+   },
+   "G3_edit": {
+    "point": 0.7639255893436305,
+    "ci95": [
+     -3.7773798431457597,
+     6.270263588746932
+    ],
+    "ci90": [
+     -3.1108883538823,
+     5.564559238474496
+    ],
+    "mde": 7.315496376132638,
+    "verdict": null
+   },
+   "b_Gemma": {
+    "point": null,
+    "ci95": null
+   },
+   "b_GaMS": {
+    "point": null,
+    "ci95": null
+   },
+   "b_diff": {
+    "point": null,
+    "ci95": null,
+    "note": "CI NA: slope draws not saved jointly"
+   },
+   "judge": "J1 + PPI",
+   "source_file": "RUN/round-4/experiment-15/src/results/analysis.json",
+   "json_path": "headline/R/PPI",
+   "notes": "",
+   "decomposition_status": "underdetermined",
+   "ceiling_verdict_G3_orig": "CEILING-ARTEFACT"
+  },
+  {
+   "body": "exp15_ladder",
+   "readout": "second_family_IPW",
+   "coding": "R",
+   "statistic": "G3 (curve)",
+   "G3": {
+    "point": null,
+    "ci95": null,
+    "ci90": null,
+    "mde": null,
+    "verdict": null
+   },
+   "G3_orig": {
+    "point": null,
+    "ci95": null,
+    "ci90": null,
+    "mde": null,
+    "verdict": null
+   },
+   "G3_edit": {
+    "point": null,
+    "ci95": null,
+    "ci90": null,
+    "mde": null,
+    "verdict": null
+   },
+   "b_Gemma": {
+    "point": null,
+    "ci95": null
+   },
+   "b_GaMS": {
+    "point": null,
+    "ci95": null
+   },
+   "b_diff": {
+    "point": null,
+    "ci95": null,
+    "note": "CI NA: slope draws not saved jointly"
+   },
+   "judge": "paid gemini-2.5-flash second reader (IPW)",
+   "source_file": "RUN/round-4/experiment-15/src/results/analysis.json",
+   "json_path": "headline/R/second_family_IPW",
+   "notes": "",
+   "decomposition_status": null,
+   "ceiling_verdict_G3_orig": "CEILING-ARTEFACT"
+  },
+  {
+   "body": "exp15_ladder",
+   "readout": "RAW",
+   "coding": "RP",
+   "statistic": "G3 (curve)",
+   "G3": {
+    "point": -0.7007681018174837,
+    "ci95": [
+     -1.0064162482960892,
+     -0.4167672646087878
+    ],
+    "ci90": [
+     -0.9473970988539273,
+     -0.46258453908312425
+    ],
+    "mde": 0.4220094473750568,
+    "verdict": null
+   },
+   "G3_orig": {
+    "point": -1.1705822417255,
+    "ci95": [
+     -2.8260403732939907,
+     0.22089143750449225
+    ],
+    "ci90": [
+     -2.6423492272976294,
+     -0.010882272122627412
+    ],
+    "mde": 2.307785815703473,
+    "verdict": null
+   },
+   "G3_edit": {
+    "point": 0.46981413990801635,
+    "ci95": [
+     -0.9616309079009656,
+     2.139643632364296
+    ],
+    "ci90": [
+     -0.6766109416411428,
+     1.9138666777053137
+    ],
+    "mde": 2.3188880001587497,
+    "verdict": null
+   },
+   "b_Gemma": {
+    "point": 0.9384821507233972,
+    "ci95": [
+     0.7470513803165133,
+     1.1746109133598088
+    ],
+    "ci90": [
+     0.7818481876216394,
+     1.1316570956498322
+    ],
+    "mde": 0.30477430253626026,
+    "verdict": null
+   },
+   "b_GaMS": {
+    "point": 0.7968970410431552,
+    "ci95": [
+     0.6252281492943961,
+     0.9523721321855549
+    ],
+    "ci90": [
+     0.6611563527222607,
+     0.921670357534391
+    ],
+    "mde": 0.2230259581329379,
+    "verdict": null
+   },
+   "b_diff": {
+    "point": -0.14158510968024207,
+    "ci95": null,
+    "note": "CI NA: slope draws not saved jointly"
+   },
+   "judge": "local J1 (mdeberta distilled from gemini; fallback readout)",
+   "source_file": "RUN/round-4/experiment-15/src/results/analysis.json",
+   "json_path": "headline/RP/RAW",
+   "notes": "RP == R (J1 emits no PARTIAL)",
+   "decomposition_status": "underdetermined",
+   "ceiling_verdict_G3_orig": "CEILING-ARTEFACT"
+  },
+  {
+   "body": "exp15_ladder",
+   "readout": "RG",
+   "coding": "RP",
+   "statistic": "G3 (curve)",
+   "G3": {
+    "point": -0.5320044594870194,
+    "ci95": [
+     -4.342034109369762,
+     2.916256643520804
+    ],
+    "ci90": [
+     -3.1187744451244925,
+     1.8334447036343473
+    ],
+    "mde": 10.931178242085577,
+    "verdict": null
+   },
+   "G3_orig": {
+    "point": 1.1019456250878896,
+    "ci95": [
+     0.0,
+     3.3750927187677044
+    ],
+    "ci90": [
+     0.0,
+     2.5391970234372456
+    ],
+    "mde": 2.8063088245079872,
+    "verdict": null
+   },
+   "G3_edit": {
+    "point": -1.6339500845749089,
+    "ci95": [
+     -5.804098283115482,
+     2.569802001261944
+    ],
+    "ci90": [
+     -4.782493878852408,
+     1.5992296372498804
+    ],
+    "mde": 11.284929266569735,
+    "verdict": null
+   },
+   "b_Gemma": {
+    "point": null,
+    "ci95": null
+   },
+   "b_GaMS": {
+    "point": null,
+    "ci95": null
+   },
+   "b_diff": {
+    "point": null,
+    "ci95": null,
+    "note": "CI NA: slope draws not saved jointly"
+   },
+   "judge": "J1 + Rogan-Gladen",
+   "source_file": "RUN/round-4/experiment-15/src/results/analysis.json",
+   "json_path": "headline/RP/RG",
+   "notes": "RP == R (J1 emits no PARTIAL)",
+   "decomposition_status": "underdetermined",
+   "ceiling_verdict_G3_orig": "CEILING-ARTEFACT"
+  },
+  {
+   "body": "exp15_ladder",
+   "readout": "PPI",
+   "coding": "RP",
+   "statistic": "G3 (curve)",
+   "G3": {
+    "point": -0.4920975230804504,
+    "ci95": [
+     -1.9006322034598544,
+     0.6638220014880064
+    ],
+    "ci90": [
+     -1.6292492760078365,
+     0.474855036021981
+    ],
+    "mde": 1.793345639328528,
+    "verdict": null
+   },
+   "G3_orig": {
+    "point": 1.9183667287901884,
+    "ci95": [
+     -2.5643460707142087,
+     3.8730164453719076
+    ],
+    "ci90": [
+     -2.292675158627257,
+     3.588444554366561
+    ],
+    "mde": 5.4632108037227045,
+    "verdict": null
+   },
+   "G3_edit": {
+    "point": -2.4104642518706387,
+    "ci95": [
+     -4.895870872009283,
+     2.436061947022789
+    ],
+    "ci90": [
+     -4.442302963664506,
+     1.9836402759843361
+    ],
+    "mde": 5.797340513960783,
+    "verdict": null
+   },
+   "b_Gemma": {
+    "point": null,
+    "ci95": null
+   },
+   "b_GaMS": {
+    "point": null,
+    "ci95": null
+   },
+   "b_diff": {
+    "point": null,
+    "ci95": null,
+    "note": "CI NA: slope draws not saved jointly"
+   },
+   "judge": "J1 + PPI",
+   "source_file": "RUN/round-4/experiment-15/src/results/analysis.json",
+   "json_path": "headline/RP/PPI",
+   "notes": "RP == R (J1 emits no PARTIAL)",
+   "decomposition_status": "underdetermined",
+   "ceiling_verdict_G3_orig": "CEILING-ARTEFACT"
+  },
+  {
+   "body": "exp15_ladder",
+   "readout": "second_family_IPW",
+   "coding": "RP",
+   "statistic": "G3 (curve)",
+   "G3": {
+    "point": null,
+    "ci95": null,
+    "ci90": null,
+    "mde": null,
+    "verdict": null
+   },
+   "G3_orig": {
+    "point": null,
+    "ci95": null,
+    "ci90": null,
+    "mde": null,
+    "verdict": null
+   },
+   "G3_edit": {
+    "point": null,
+    "ci95": null,
+    "ci90": null,
+    "mde": null,
+    "verdict": null
+   },
+   "b_Gemma": {
+    "point": null,
+    "ci95": null
+   },
+   "b_GaMS": {
+    "point": null,
+    "ci95": null
+   },
+   "b_diff": {
+    "point": null,
+    "ci95": null,
+    "note": "CI NA: slope draws not saved jointly"
+   },
+   "judge": "paid gemini-2.5-flash second reader (IPW)",
+   "source_file": "RUN/round-4/experiment-15/src/results/analysis.json",
+   "json_path": "headline/RP/second_family_IPW",
+   "notes": "RP == R (J1 emits no PARTIAL)",
+   "decomposition_status": null,
+   "ceiling_verdict_G3_orig": "CEILING-ARTEFACT"
+  },
+  {
+   "body": "exp15_ladder",
+   "readout": "TTJ",
+   "coding": "R",
+   "statistic": "G3 (curve)",
+   "G3": {
+    "point": -0.7868861341678757,
+    "ci95": [
+     -1.0865825788681807,
+     -0.48326348055954593
+    ],
+    "ci90": null,
+    "mde": null,
+    "verdict": null
+   },
+   "G3_orig": {
+    "point": -1.3682751134987146,
+    "ci95": [
+     -2.2916760428181204,
+     0.374492995471452
+    ],
+    "ci90": null,
+    "mde": null,
+    "verdict": null
+   },
+   "G3_edit": {
+    "point": 0.5813889793308389,
+    "ci95": [
+     -1.1775411306446857,
+     1.5188543906428584
+    ],
+    "ci90": null,
+    "mde": null,
+    "verdict": null
+   },
+   "b_Gemma": {
+    "point": 0.8592996417603797,
+    "ci95": null
+   },
+   "b_GaMS": {
+    "point": 0.6427882573949125,
+    "ci95": null
+   },
+   "b_diff": {
+    "point": -0.21651138436546713,
+    "ci95": null
+   },
+   "judge": "translate-then-judge (J1 on NLLB English)",
+   "source_file": "RUN/round-4/experiment-15/src/results/analysis.json",
+   "json_path": "ttj/R",
+   "decomposition_status": "underdetermined",
+   "ceiling_verdict_G3_orig": "CEILING-ARTEFACT"
+  },
+  {
+   "body": "exp15_random_arm",
+   "readout": "rank0 random vs Heretic at matched lambda",
+   "coding": "R",
+   "statistic": "G3_edit_rand vs G3_edit_heretic_lambda_matched",
+   "G3": {
+    "point": null
+   },
+   "G3_orig": {
+    "point": null
+   },
+   "G3_edit": {
+    "point": -0.39507105204322845,
+    "ci95": [
+     -2.136787054819975,
+     1.2897222073978607
+    ],
+    "ci90": null
+   },
+   "G3_edit_random": {
+    "point": 0.48583089303100335,
+    "ci95": [
+     -0.08108300785398903,
+     1.87751393230995
+    ]
+   },
+   "lambdas": {
+    "gemma_it": 0.7695,
+    "gams3_it": 0.3013
+   },
+   "b_Gemma": {
+    "point": null
+   },
+   "b_GaMS": {
+    "point": null
+   },
+   "b_diff": {
+    "point": null
+   },
+   "judge": "local J1",
+   "source_file": "RUN/round-4/experiment-15/src/results/analysis.json",
+   "json_path": "random_arm/by_rank/0",
+   "decomposition_status": "underdetermined",
+   "ceiling_verdict_G3_orig": null
+  },
+  {
+   "body": "exp15_random_arm",
+   "readout": "rank1 random vs Heretic at matched lambda",
+   "coding": "R",
+   "statistic": "G3_edit_rand vs G3_edit_heretic_lambda_matched",
+   "G3": {
+    "point": null
+   },
+   "G3_orig": {
+    "point": null
+   },
+   "G3_edit": {
+    "point": -0.300546150042549,
+    "ci95": [
+     -2.0995068877095346,
+     1.2719139014975327
+    ],
+    "ci90": null
+   },
+   "G3_edit_random": {
+    "point": 0.38722702797342423,
+    "ci95": [
+     -0.34136084636348324,
+     1.7962081531738128
+    ]
+   },
+   "lambdas": {
+    "gemma_it": 1.1551,
+    "gams3_it": 0.6313
+   },
+   "b_Gemma": {
+    "point": null
+   },
+   "b_GaMS": {
+    "point": null
+   },
+   "b_diff": {
+    "point": null
+   },
+   "judge": "local J1",
+   "source_file": "RUN/round-4/experiment-15/src/results/analysis.json",
+   "json_path": "random_arm/by_rank/1",
+   "decomposition_status": "underdetermined",
+   "ceiling_verdict_G3_orig": null
+  },
+  {
+   "body": "exp15_random_arm",
+   "readout": "rank2 random vs Heretic at matched lambda",
+   "coding": "R",
+   "statistic": "G3_edit_rand vs G3_edit_heretic_lambda_matched",
+   "G3": {
+    "point": null
+   },
+   "G3_orig": {
+    "point": null
+   },
+   "G3_edit": {
+    "point": 0.11473784966312994,
+    "ci95": [
+     -1.647644923726685,
+     1.7255234550797127
+    ],
+    "ci90": null
+   },
+   "G3_edit_random": {
+    "point": 0.42065864218300186,
+    "ci95": [
+     -0.16021889762971098,
+     1.8572708552615882
+    ]
+   },
+   "lambdas": {
+    "gemma_it": 1.5603,
+    "gams3_it": 0.978
+   },
+   "b_Gemma": {
+    "point": null
+   },
+   "b_GaMS": {
+    "point": null
+   },
+   "b_diff": {
+    "point": null
+   },
+   "judge": "local J1",
+   "source_file": "RUN/round-4/experiment-15/src/results/analysis.json",
+   "json_path": "random_arm/by_rank/2",
+   "decomposition_status": "underdetermined",
+   "ceiling_verdict_G3_orig": null
+  },
+  {
+   "body": "exp15_random_arm",
+   "readout": "rank3 random vs Heretic at matched lambda",
+   "coding": "R",
+   "statistic": "G3_edit_rand vs G3_edit_heretic_lambda_matched",
+   "G3": {
+    "point": null
+   },
+   "G3_orig": {
+    "point": null
+   },
+   "G3_edit": {
+    "point": 0.061450276752849975,
+    "ci95": [
+     -1.757550363834252,
+     1.7033256589390948
+    ],
+    "ci90": null
+   },
+   "G3_edit_random": {
+    "point": 0.4653280257473458,
+    "ci95": [
+     -0.3990614542830885,
+     2.025003365296091
+    ]
+   },
+   "lambdas": {
+    "gemma_it": 2.0,
+    "gams3_it": 1.5375
+   },
+   "b_Gemma": {
+    "point": null
+   },
+   "b_GaMS": {
+    "point": null
+   },
+   "b_diff": {
+    "point": null
+   },
+   "judge": "local J1",
+   "source_file": "RUN/round-4/experiment-15/src/results/analysis.json",
+   "json_path": "random_arm/by_rank/3",
+   "decomposition_status": "underdetermined",
+   "ceiling_verdict_G3_orig": null
+  },
+  {
+   "body": "exp14_grid",
+   "readout": "raw_R",
+   "coding": "R",
+   "statistic": "G3 at L* (slsl)",
+   "cell": "slsl",
+   "G3": {
+    "point": -2.41590646955989,
+    "ci95": [
+     -3.205133525335351,
+     -1.533408015331703
+    ],
+    "ci90": [
+     -3.0698469993979276,
+     -1.7091101463017455
+    ],
+    "mde": 1.1728534198263763,
+    "verdict": null
+   },
+   "G3_orig": {
+    "point": -0.5782876682660489,
+    "ci95": null,
+    "ci90": null,
+    "note": "derived G3 - G3_edit (point only; not saved)"
+   },
+   "G3_edit": {
+    "point": -1.8376188012938413,
+    "ci95": [
+     -2.8012215337477486,
+     -0.7754357426301889
+    ],
+    "ci90": [
+     -2.6637645981371696,
+     -0.9312751371310986
+    ],
+    "mde": 1.4758678614933955,
+    "verdict": null
+   },
+   "b_Gemma": {
+    "point": null
+   },
+   "b_GaMS": {
+    "point": null
+   },
+   "b_diff": {
+    "point": null
+   },
+   "gams_compliance": 0.9966666666666667,
+   "flag": "",
+   "judge": "local J1",
+   "source_file": "RUN/round-4/experiment-14/src/results/analysis.json",
+   "json_path": "readouts/raw_R/G3|slsl ; readouts/raw_R/G3edit|slsl",
+   "decomposition_status": "edit-induced",
+   "ceiling_verdict_G3_orig": null,
+   "edit_direction": "lag direction (G3_edit < 0: the edit removes MORE Slovene refusal in GaMS3)"
+  },
+  {
+   "body": "exp14_grid",
+   "readout": "raw_R",
+   "coding": "R",
+   "statistic": "G3 at L* (ensl)",
+   "cell": "ensl",
+   "G3": {
+    "point": -2.6250046855950626,
+    "ci95": [
+     -3.4615809751243405,
+     -1.2982743940683763
+    ],
+    "ci90": [
+     -3.3308040577768505,
+     -1.6360616733496778
+    ],
+    "mde": 1.5516972721228275,
+    "verdict": null
+   },
+   "G3_orig": {
+    "point": -1.3676449657827936,
+    "ci95": null,
+    "ci90": null,
+    "note": "derived G3 - G3_edit (point only; not saved)"
+   },
+   "G3_edit": {
+    "point": -1.257359719812269,
+    "ci95": [
+     -2.170314605549199,
+     0.20406197912510066
+    ],
+    "ci90": [
+     -2.02205996196227,
+     -0.1679349484604784
+    ],
+    "mde": 1.6644033178286146,
+    "verdict": null
+   },
+   "b_Gemma": {
+    "point": null
+   },
+   "b_GaMS": {
+    "point": null
+   },
+   "b_diff": {
+    "point": null
+   },
+   "gams_compliance": 0.985,
+   "flag": "",
+   "judge": "local J1",
+   "source_file": "RUN/round-4/experiment-14/src/results/analysis.json",
+   "json_path": "readouts/raw_R/G3|ensl ; readouts/raw_R/G3edit|ensl",
+   "decomposition_status": "underdetermined",
+   "ceiling_verdict_G3_orig": null
+  },
+  {
+   "body": "exp14_grid",
+   "readout": "raw_R",
+   "coding": "R",
+   "statistic": "G3 at L* (husl)",
+   "cell": "husl",
+   "G3": {
+    "point": -2.3690046115638816,
+    "ci95": [
+     -3.3286555946912384,
+     -0.7543508347688884
+    ],
+    "ci90": [
+     -3.173584703784219,
+     -1.1447390588686612
+    ],
+    "mde": 1.8428156324078893,
+    "verdict": null
+   },
+   "G3_orig": {
+    "point": -0.2183729629621265,
+    "ci95": null,
+    "ci90": null,
+    "note": "derived G3 - G3_edit (point only; not saved)"
+   },
+   "G3_edit": {
+    "point": -2.150631648601755,
+    "ci95": [
+     -3.158252006768621,
+     -0.46329531309264377
+    ],
+    "ci90": [
+     -3.020106429186642,
+     -0.8416568403777243
+    ],
+    "mde": 1.9230566181644797,
+    "verdict": null
+   },
+   "b_Gemma": {
+    "point": null
+   },
+   "b_GaMS": {
+    "point": null
+   },
+   "b_diff": {
+    "point": null
+   },
+   "gams_compliance": 0.865,
+   "flag": "INVALID-MANIPULATION (GaMS output-language compliance < 0.90)",
+   "judge": "local J1",
+   "source_file": "RUN/round-4/experiment-14/src/results/analysis.json",
+   "json_path": "readouts/raw_R/G3|husl ; readouts/raw_R/G3edit|husl",
+   "decomposition_status": "edit-induced",
+   "ceiling_verdict_G3_orig": null,
+   "edit_direction": "lag direction (G3_edit < 0: the edit removes MORE Slovene refusal in GaMS3)"
+  },
+  {
+   "body": "exp14_grid",
+   "readout": "raw_R",
+   "coding": "R",
+   "statistic": "G3 at L* (enen)",
+   "cell": "enen",
+   "G3": {
+    "point": 0.0,
+    "ci95": [
+     -1.1102230246251565e-16,
+     1.1102230246251565e-16
+    ],
+    "ci90": [
+     -1.1102230246251565e-16,
+     5.551115123125783e-17
+    ],
+    "mde": 1.051413434924277e-16,
+    "verdict": null
+   },
+   "G3_orig": {
+    "point": 0.0,
+    "ci95": null,
+    "ci90": null,
+    "note": "derived G3 - G3_edit (point only; not saved)"
+   },
+   "G3_edit": {
+    "point": 0.0,
+    "ci95": [
+     -1.1102230246251565e-16,
+     1.1102230246251565e-16
+    ],
+    "ci90": [
+     -1.1102230246251565e-16,
+     5.551115123125783e-17
+    ],
+    "mde": 1.051413434924277e-16,
+    "verdict": null
+   },
+   "b_Gemma": {
+    "point": null
+   },
+   "b_GaMS": {
+    "point": null
+   },
+   "b_diff": {
+    "point": null
+   },
+   "gams_compliance": 1.0,
+   "flag": "",
+   "judge": "local J1",
+   "source_file": "RUN/round-4/experiment-14/src/results/analysis.json",
+   "json_path": "readouts/raw_R/G3|enen ; readouts/raw_R/G3edit|enen",
+   "decomposition_status": "underdetermined",
+   "ceiling_verdict_G3_orig": null
+  },
+  {
+   "body": "exp14_grid",
+   "readout": "raw_R",
+   "coding": "R",
+   "statistic": "G3 at L* (slen)",
+   "cell": "slen",
+   "G3": {
+    "point": 0.4541598475753864,
+    "ci95": [
+     -0.29717421139205635,
+     1.5737795265058994
+    ],
+    "ci90": [
+     -0.17852575130741524,
+     1.3470279184950942
+    ],
+    "mde": 1.325241982020739,
+    "verdict": null
+   },
+   "G3_orig": {
+    "point": 0.3910286783956889,
+    "ci95": null,
+    "ci90": null,
+    "note": "derived G3 - G3_edit (point only; not saved)"
+   },
+   "G3_edit": {
+    "point": 0.06313116917969752,
+    "ci95": [
+     -0.7889458253906755,
+     1.1780193511946837
+    ],
+    "ci90": [
+     -0.668818124274275,
+     0.9721761726846625
+    ],
+    "mde": 1.4217198769138037,
+    "verdict": null
+   },
+   "b_Gemma": {
+    "point": null
+   },
+   "b_GaMS": {
+    "point": null
+   },
+   "b_diff": {
+    "point": null
+   },
+   "gams_compliance": 0.0,
+   "flag": "INVALID-MANIPULATION (GaMS output-language compliance < 0.90)",
+   "judge": "local J1",
+   "source_file": "RUN/round-4/experiment-14/src/results/analysis.json",
+   "json_path": "readouts/raw_R/G3|slen ; readouts/raw_R/G3edit|slen",
+   "decomposition_status": "underdetermined",
+   "ceiling_verdict_G3_orig": null
+  },
+  {
+   "body": "exp14_grid",
+   "readout": "raw_R",
+   "coding": "R",
+   "statistic": "G3 at L* (enhu)",
+   "cell": "enhu",
+   "G3": {
+    "point": -0.8464813255743048,
+    "ci95": [
+     -1.5729362322538343,
+     0.30223437515014934
+    ],
+    "ci90": [
+     -1.4396687218081539,
+     0.06585452530079852
+    ],
+    "mde": 1.328929076535544,
+    "verdict": null
+   },
+   "G3_orig": {
+    "point": -0.9318096071046404,
+    "ci95": null,
+    "ci90": null,
+    "note": "derived G3 - G3_edit (point only; not saved)"
+   },
+   "G3_edit": {
+    "point": 0.08532828153033567,
+    "ci95": [
+     -0.7819178686178755,
+     1.3685274527135258
+    ],
+    "ci90": [
+     -0.6614077739069399,
+     1.1272351214470542
+    ],
+    "mde": 1.5445563114871235,
+    "verdict": null
+   },
+   "b_Gemma": {
+    "point": null
+   },
+   "b_GaMS": {
+    "point": null
+   },
+   "b_diff": {
+    "point": null
+   },
+   "gams_compliance": 0.9716666666666667,
+   "flag": "",
+   "judge": "local J1",
+   "source_file": "RUN/round-4/experiment-14/src/results/analysis.json",
+   "json_path": "readouts/raw_R/G3|enhu ; readouts/raw_R/G3edit|enhu",
+   "decomposition_status": "underdetermined",
+   "ceiling_verdict_G3_orig": null
+  },
+  {
+   "body": "exp14_grid",
+   "readout": "raw_R",
+   "coding": "R",
+   "statistic": "G3 at L* (huhu)",
+   "cell": "huhu",
+   "G3": {
+    "point": -0.5564120973133125,
+    "ci95": [
+     -1.3357811204226122,
+     0.8439189658357582
+    ],
+    "ci90": [
+     -1.21227377067161,
+     0.5423583221321169
+    ],
+    "mde": 1.5551775285392346,
+    "verdict": null
+   },
+   "G3_orig": {
+    "point": -0.04731891395768195,
+    "ci95": null,
+    "ci90": null,
+    "note": "derived G3 - G3_edit (point only; not saved)"
+   },
+   "G3_edit": {
+    "point": -0.5090931833556306,
+    "ci95": [
+     -1.506439175276063,
+     0.9962544013764519
+    ],
+    "ci90": [
+     -1.3526848021941054,
+     0.6958726538126112
+    ],
+    "mde": 1.8121645172365106,
+    "verdict": null
+   },
+   "b_Gemma": {
+    "point": null
+   },
+   "b_GaMS": {
+    "point": null
+   },
+   "b_diff": {
+    "point": null
+   },
+   "gams_compliance": 1.0,
+   "flag": "",
+   "judge": "local J1",
+   "source_file": "RUN/round-4/experiment-14/src/results/analysis.json",
+   "json_path": "readouts/raw_R/G3|huhu ; readouts/raw_R/G3edit|huhu",
+   "decomposition_status": "underdetermined",
+   "ceiling_verdict_G3_orig": null
+  },
+  {
+   "body": "exp14_grid",
+   "readout": "raw_R",
+   "coding": "R",
+   "statistic": "G3 at L* (slhu)",
+   "cell": "slhu",
+   "G3": {
+    "point": -1.4933447352649911,
+    "ci95": [
+     -2.2437374604306743,
+     -0.3414795238232425
+    ],
+    "ci90": [
+     -2.1445143218922538,
+     -0.5788631650713394
+    ],
+    "mde": 1.4485047167485072,
+    "verdict": null
+   },
+   "G3_orig": {
+    "point": -0.8273942303306056,
+    "ci95": null,
+    "ci90": null,
+    "note": "derived G3 - G3_edit (point only; not saved)"
+   },
+   "G3_edit": {
+    "point": -0.6659505049343856,
+    "ci95": [
+     -1.6533742571309509,
+     0.7380985830860148
+    ],
+    "ci90": [
+     -1.4621082937332428,
+     0.4347745870746469
+    ],
+    "mde": 1.711210420375957,
+    "verdict": null
+   },
+   "b_Gemma": {
+    "point": null
+   },
+   "b_GaMS": {
+    "point": null
+   },
+   "b_diff": {
+    "point": null
+   },
+   "gams_compliance": 0.555,
+   "flag": "INVALID-MANIPULATION (GaMS output-language compliance < 0.90)",
+   "judge": "local J1",
+   "source_file": "RUN/round-4/experiment-14/src/results/analysis.json",
+   "json_path": "readouts/raw_R/G3|slhu ; readouts/raw_R/G3edit|slhu",
+   "decomposition_status": "underdetermined",
+   "ceiling_verdict_G3_orig": null
+  },
+  {
+   "body": "exp14_grid",
+   "readout": "raw_R",
+   "coding": "R",
+   "statistic": "G3 at L* (huen)",
+   "cell": "huen",
+   "G3": {
+    "point": 0.3960487742074097,
+    "ci95": [
+     -0.4081284934646903,
+     1.7591734571058018
+    ],
+    "ci90": [
+     -0.2980886308557958,
+     1.4730509710022122
+    ],
+    "mde": 1.6072577805871975,
+    "verdict": null
+   },
+   "G3_orig": {
+    "point": 0.30255309637864114,
+    "ci95": null,
+    "ci90": null,
+    "note": "derived G3 - G3_edit (point only; not saved)"
+   },
+   "G3_edit": {
+    "point": 0.09349567782876855,
+    "ci95": [
+     -0.8707344829467888,
+     1.5477226929477441
+    ],
+    "ci90": [
+     -0.71654230635092,
+     1.2156658408902241
+    ],
+    "mde": 1.7693699842337884,
+    "verdict": null
+   },
+   "b_Gemma": {
+    "point": null
+   },
+   "b_GaMS": {
+    "point": null
+   },
+   "b_diff": {
+    "point": null
+   },
+   "gams_compliance": 0.13833333333333334,
+   "flag": "INVALID-MANIPULATION (GaMS output-language compliance < 0.90)",
+   "judge": "local J1",
+   "source_file": "RUN/round-4/experiment-14/src/results/analysis.json",
+   "json_path": "readouts/raw_R/G3|huen ; readouts/raw_R/G3edit|huen",
+   "decomposition_status": "underdetermined",
+   "ceiling_verdict_G3_orig": null
+  },
+  {
+   "body": "exp14_grid",
+   "readout": "raw_RP",
+   "coding": "RP",
+   "statistic": "G3 at L* (slsl)",
+   "cell": "slsl",
+   "G3": {
+    "point": -2.41590646955989,
+    "ci95": [
+     -3.205133525335351,
+     -1.533408015331703
+    ],
+    "ci90": [
+     -3.0698469993979276,
+     -1.7091101463017455
+    ],
+    "mde": 1.1728534198263763,
+    "verdict": null
+   },
+   "G3_orig": {
+    "point": -0.5782876682660489,
+    "ci95": null,
+    "ci90": null,
+    "note": "derived G3 - G3_edit (point only; not saved)"
+   },
+   "G3_edit": {
+    "point": -1.8376188012938413,
+    "ci95": [
+     -2.8012215337477486,
+     -0.7754357426301889
+    ],
+    "ci90": [
+     -2.6637645981371696,
+     -0.9312751371310986
+    ],
+    "mde": 1.4758678614933955,
+    "verdict": null
+   },
+   "b_Gemma": {
+    "point": null
+   },
+   "b_GaMS": {
+    "point": null
+   },
+   "b_diff": {
+    "point": null
+   },
+   "gams_compliance": 0.9966666666666667,
+   "flag": "",
+   "judge": "local J1 (RP)",
+   "source_file": "RUN/round-4/experiment-14/src/results/analysis.json",
+   "json_path": "readouts/raw_RP/G3|slsl ; readouts/raw_RP/G3edit|slsl",
+   "decomposition_status": "edit-induced",
+   "ceiling_verdict_G3_orig": null,
+   "edit_direction": "lag direction (G3_edit < 0: the edit removes MORE Slovene refusal in GaMS3)"
+  },
+  {
+   "body": "exp14_grid",
+   "readout": "raw_RP",
+   "coding": "RP",
+   "statistic": "G3 at L* (ensl)",
+   "cell": "ensl",
+   "G3": {
+    "point": -2.6250046855950626,
+    "ci95": [
+     -3.4615809751243405,
+     -1.2982743940683763
+    ],
+    "ci90": [
+     -3.3308040577768505,
+     -1.6360616733496778
+    ],
+    "mde": 1.5516972721228275,
+    "verdict": null
+   },
+   "G3_orig": {
+    "point": -1.3676449657827936,
+    "ci95": null,
+    "ci90": null,
+    "note": "derived G3 - G3_edit (point only; not saved)"
+   },
+   "G3_edit": {
+    "point": -1.257359719812269,
+    "ci95": [
+     -2.170314605549199,
+     0.20406197912510066
+    ],
+    "ci90": [
+     -2.02205996196227,
+     -0.1679349484604784
+    ],
+    "mde": 1.6644033178286146,
+    "verdict": null
+   },
+   "b_Gemma": {
+    "point": null
+   },
+   "b_GaMS": {
+    "point": null
+   },
+   "b_diff": {
+    "point": null
+   },
+   "gams_compliance": 0.985,
+   "flag": "",
+   "judge": "local J1 (RP)",
+   "source_file": "RUN/round-4/experiment-14/src/results/analysis.json",
+   "json_path": "readouts/raw_RP/G3|ensl ; readouts/raw_RP/G3edit|ensl",
+   "decomposition_status": "underdetermined",
+   "ceiling_verdict_G3_orig": null
+  },
+  {
+   "body": "exp14_grid",
+   "readout": "raw_RP",
+   "coding": "RP",
+   "statistic": "G3 at L* (husl)",
+   "cell": "husl",
+   "G3": {
+    "point": -2.3690046115638816,
+    "ci95": [
+     -3.3286555946912384,
+     -0.7543508347688884
+    ],
+    "ci90": [
+     -3.173584703784219,
+     -1.1447390588686612
+    ],
+    "mde": 1.8428156324078893,
+    "verdict": null
+   },
+   "G3_orig": {
+    "point": -0.2183729629621265,
+    "ci95": null,
+    "ci90": null,
+    "note": "derived G3 - G3_edit (point only; not saved)"
+   },
+   "G3_edit": {
+    "point": -2.150631648601755,
+    "ci95": [
+     -3.158252006768621,
+     -0.46329531309264377
+    ],
+    "ci90": [
+     -3.020106429186642,
+     -0.8416568403777243
+    ],
+    "mde": 1.9230566181644797,
+    "verdict": null
+   },
+   "b_Gemma": {
+    "point": null
+   },
+   "b_GaMS": {
+    "point": null
+   },
+   "b_diff": {
+    "point": null
+   },
+   "gams_compliance": 0.865,
+   "flag": "INVALID-MANIPULATION (GaMS output-language compliance < 0.90)",
+   "judge": "local J1 (RP)",
+   "source_file": "RUN/round-4/experiment-14/src/results/analysis.json",
+   "json_path": "readouts/raw_RP/G3|husl ; readouts/raw_RP/G3edit|husl",
+   "decomposition_status": "edit-induced",
+   "ceiling_verdict_G3_orig": null,
+   "edit_direction": "lag direction (G3_edit < 0: the edit removes MORE Slovene refusal in GaMS3)"
+  },
+  {
+   "body": "exp14_grid",
+   "readout": "raw_RP",
+   "coding": "RP",
+   "statistic": "G3 at L* (enen)",
+   "cell": "enen",
+   "G3": {
+    "point": 0.0,
+    "ci95": [
+     -1.1102230246251565e-16,
+     1.1102230246251565e-16
+    ],
+    "ci90": [
+     -1.1102230246251565e-16,
+     5.551115123125783e-17
+    ],
+    "mde": 1.051413434924277e-16,
+    "verdict": null
+   },
+   "G3_orig": {
+    "point": 0.0,
+    "ci95": null,
+    "ci90": null,
+    "note": "derived G3 - G3_edit (point only; not saved)"
+   },
+   "G3_edit": {
+    "point": 0.0,
+    "ci95": [
+     -1.1102230246251565e-16,
+     1.1102230246251565e-16
+    ],
+    "ci90": [
+     -1.1102230246251565e-16,
+     5.551115123125783e-17
+    ],
+    "mde": 1.051413434924277e-16,
+    "verdict": null
+   },
+   "b_Gemma": {
+    "point": null
+   },
+   "b_GaMS": {
+    "point": null
+   },
+   "b_diff": {
+    "point": null
+   },
+   "gams_compliance": 1.0,
+   "flag": "",
+   "judge": "local J1 (RP)",
+   "source_file": "RUN/round-4/experiment-14/src/results/analysis.json",
+   "json_path": "readouts/raw_RP/G3|enen ; readouts/raw_RP/G3edit|enen",
+   "decomposition_status": "underdetermined",
+   "ceiling_verdict_G3_orig": null
+  },
+  {
+   "body": "exp14_grid",
+   "readout": "raw_RP",
+   "coding": "RP",
+   "statistic": "G3 at L* (slen)",
+   "cell": "slen",
+   "G3": {
+    "point": 0.4541598475753864,
+    "ci95": [
+     -0.29717421139205635,
+     1.5737795265058994
+    ],
+    "ci90": [
+     -0.17852575130741524,
+     1.3470279184950942
+    ],
+    "mde": 1.325241982020739,
+    "verdict": null
+   },
+   "G3_orig": {
+    "point": 0.3910286783956889,
+    "ci95": null,
+    "ci90": null,
+    "note": "derived G3 - G3_edit (point only; not saved)"
+   },
+   "G3_edit": {
+    "point": 0.06313116917969752,
+    "ci95": [
+     -0.7889458253906755,
+     1.1780193511946837
+    ],
+    "ci90": [
+     -0.668818124274275,
+     0.9721761726846625
+    ],
+    "mde": 1.4217198769138037,
+    "verdict": null
+   },
+   "b_Gemma": {
+    "point": null
+   },
+   "b_GaMS": {
+    "point": null
+   },
+   "b_diff": {
+    "point": null
+   },
+   "gams_compliance": 0.0,
+   "flag": "INVALID-MANIPULATION (GaMS output-language compliance < 0.90)",
+   "judge": "local J1 (RP)",
+   "source_file": "RUN/round-4/experiment-14/src/results/analysis.json",
+   "json_path": "readouts/raw_RP/G3|slen ; readouts/raw_RP/G3edit|slen",
+   "decomposition_status": "underdetermined",
+   "ceiling_verdict_G3_orig": null
+  },
+  {
+   "body": "exp14_grid",
+   "readout": "raw_RP",
+   "coding": "RP",
+   "statistic": "G3 at L* (enhu)",
+   "cell": "enhu",
+   "G3": {
+    "point": -0.8464813255743048,
+    "ci95": [
+     -1.5729362322538343,
+     0.30223437515014934
+    ],
+    "ci90": [
+     -1.4396687218081539,
+     0.06585452530079852
+    ],
+    "mde": 1.328929076535544,
+    "verdict": null
+   },
+   "G3_orig": {
+    "point": -0.9318096071046404,
+    "ci95": null,
+    "ci90": null,
+    "note": "derived G3 - G3_edit (point only; not saved)"
+   },
+   "G3_edit": {
+    "point": 0.08532828153033567,
+    "ci95": [
+     -0.7819178686178755,
+     1.3685274527135258
+    ],
+    "ci90": [
+     -0.6614077739069399,
+     1.1272351214470542
+    ],
+    "mde": 1.5445563114871235,
+    "verdict": null
+   },
+   "b_Gemma": {
+    "point": null
+   },
+   "b_GaMS": {
+    "point": null
+   },
+   "b_diff": {
+    "point": null
+   },
+   "gams_compliance": 0.9716666666666667,
+   "flag": "",
+   "judge": "local J1 (RP)",
+   "source_file": "RUN/round-4/experiment-14/src/results/analysis.json",
+   "json_path": "readouts/raw_RP/G3|enhu ; readouts/raw_RP/G3edit|enhu",
+   "decomposition_status": "underdetermined",
+   "ceiling_verdict_G3_orig": null
+  },
+  {
+   "body": "exp14_grid",
+   "readout": "raw_RP",
+   "coding": "RP",
+   "statistic": "G3 at L* (huhu)",
+   "cell": "huhu",
+   "G3": {
+    "point": -0.5564120973133125,
+    "ci95": [
+     -1.3357811204226122,
+     0.8439189658357582
+    ],
+    "ci90": [
+     -1.21227377067161,
+     0.5423583221321169
+    ],
+    "mde": 1.5551775285392346,
+    "verdict": null
+   },
+   "G3_orig": {
+    "point": -0.04731891395768195,
+    "ci95": null,
+    "ci90": null,
+    "note": "derived G3 - G3_edit (point only; not saved)"
+   },
+   "G3_edit": {
+    "point": -0.5090931833556306,
+    "ci95": [
+     -1.506439175276063,
+     0.9962544013764519
+    ],
+    "ci90": [
+     -1.3526848021941054,
+     0.6958726538126112
+    ],
+    "mde": 1.8121645172365106,
+    "verdict": null
+   },
+   "b_Gemma": {
+    "point": null
+   },
+   "b_GaMS": {
+    "point": null
+   },
+   "b_diff": {
+    "point": null
+   },
+   "gams_compliance": 1.0,
+   "flag": "",
+   "judge": "local J1 (RP)",
+   "source_file": "RUN/round-4/experiment-14/src/results/analysis.json",
+   "json_path": "readouts/raw_RP/G3|huhu ; readouts/raw_RP/G3edit|huhu",
+   "decomposition_status": "underdetermined",
+   "ceiling_verdict_G3_orig": null
+  },
+  {
+   "body": "exp14_grid",
+   "readout": "raw_RP",
+   "coding": "RP",
+   "statistic": "G3 at L* (slhu)",
+   "cell": "slhu",
+   "G3": {
+    "point": -1.4933447352649911,
+    "ci95": [
+     -2.2437374604306743,
+     -0.3414795238232425
+    ],
+    "ci90": [
+     -2.1445143218922538,
+     -0.5788631650713394
+    ],
+    "mde": 1.4485047167485072,
+    "verdict": null
+   },
+   "G3_orig": {
+    "point": -0.8273942303306056,
+    "ci95": null,
+    "ci90": null,
+    "note": "derived G3 - G3_edit (point only; not saved)"
+   },
+   "G3_edit": {
+    "point": -0.6659505049343856,
+    "ci95": [
+     -1.6533742571309509,
+     0.7380985830860148
+    ],
+    "ci90": [
+     -1.4621082937332428,
+     0.4347745870746469
+    ],
+    "mde": 1.711210420375957,
+    "verdict": null
+   },
+   "b_Gemma": {
+    "point": null
+   },
+   "b_GaMS": {
+    "point": null
+   },
+   "b_diff": {
+    "point": null
+   },
+   "gams_compliance": 0.555,
+   "flag": "INVALID-MANIPULATION (GaMS output-language compliance < 0.90)",
+   "judge": "local J1 (RP)",
+   "source_file": "RUN/round-4/experiment-14/src/results/analysis.json",
+   "json_path": "readouts/raw_RP/G3|slhu ; readouts/raw_RP/G3edit|slhu",
+   "decomposition_status": "underdetermined",
+   "ceiling_verdict_G3_orig": null
+  },
+  {
+   "body": "exp14_grid",
+   "readout": "raw_RP",
+   "coding": "RP",
+   "statistic": "G3 at L* (huen)",
+   "cell": "huen",
+   "G3": {
+    "point": 0.3960487742074097,
+    "ci95": [
+     -0.4081284934646903,
+     1.7591734571058018
+    ],
+    "ci90": [
+     -0.2980886308557958,
+     1.4730509710022122
+    ],
+    "mde": 1.6072577805871975,
+    "verdict": null
+   },
+   "G3_orig": {
+    "point": 0.30255309637864114,
+    "ci95": null,
+    "ci90": null,
+    "note": "derived G3 - G3_edit (point only; not saved)"
+   },
+   "G3_edit": {
+    "point": 0.09349567782876855,
+    "ci95": [
+     -0.8707344829467888,
+     1.5477226929477441
+    ],
+    "ci90": [
+     -0.71654230635092,
+     1.2156658408902241
+    ],
+    "mde": 1.7693699842337884,
+    "verdict": null
+   },
+   "b_Gemma": {
+    "point": null
+   },
+   "b_GaMS": {
+    "point": null
+   },
+   "b_diff": {
+    "point": null
+   },
+   "gams_compliance": 0.13833333333333334,
+   "flag": "INVALID-MANIPULATION (GaMS output-language compliance < 0.90)",
+   "judge": "local J1 (RP)",
+   "source_file": "RUN/round-4/experiment-14/src/results/analysis.json",
+   "json_path": "readouts/raw_RP/G3|huen ; readouts/raw_RP/G3edit|huen",
+   "decomposition_status": "underdetermined",
+   "ceiling_verdict_G3_orig": null
+  },
+  {
+   "body": "exp14_grid",
+   "readout": "rg_R",
+   "coding": "R",
+   "statistic": "G3 at L* (slsl)",
+   "cell": "slsl",
+   "G3": {
+    "point": -8.242792474252749,
+    "ci95": [
+     -13.747644758320947,
+     -2.1598098903434386
+    ],
+    "ci90": [
+     -13.414284729844738,
+     -3.4577537742106372
+    ],
+    "mde": 8.807502454399774,
+    "verdict": null
+   },
+   "G3_orig": {
+    "point": -0.5405229034544465,
+    "ci95": null,
+    "ci90": null,
+    "note": "derived G3 - G3_edit (point only; not saved)"
+   },
+   "G3_edit": {
+    "point": -7.702269570798302,
+    "ci95": [
+     -17.052658503141163,
+     0.6449724573885494
+    ],
+    "ci90": [
+     -15.461567671996312,
+     -0.8960981343931477
+    ],
+    "mde": 12.404396205499378,
+    "verdict": null
+   },
+   "b_Gemma": {
+    "point": null
+   },
+   "b_GaMS": {
+    "point": null
+   },
+   "b_diff": {
+    "point": null
+   },
+   "gams_compliance": 0.9966666666666667,
+   "flag": "",
+   "judge": "J1 + RG (degenerate)",
+   "source_file": "RUN/round-4/experiment-14/src/results/analysis.json",
+   "json_path": "readouts/rg_R/G3|slsl ; readouts/rg_R/G3edit|slsl",
+   "decomposition_status": "underdetermined",
+   "ceiling_verdict_G3_orig": null
+  },
+  {
+   "body": "exp14_grid",
+   "readout": "rg_R",
+   "coding": "R",
+   "statistic": "G3 at L* (ensl)",
+   "cell": "ensl",
+   "G3": {
+    "point": -12.750397759514414,
+    "ci95": [
+     -13.962736533843058,
+     -4.958518754060563
+    ],
+    "ci90": [
+     -13.813509557297106,
+     -6.906754778648553
+    ],
+    "mde": 6.834477937670138,
+    "verdict": null
+   },
+   "G3_orig": {
+    "point": -2.782713952782567,
+    "ci95": null,
+    "ci90": null,
+    "note": "derived G3 - G3_edit (point only; not saved)"
+   },
+   "G3_edit": {
+    "point": -9.967683806731847,
+    "ci95": [
+     -13.768439816404221,
+     -0.9045064872124667
+    ],
+    "ci90": [
+     -13.245802222046631,
+     -2.148665990071504
+    ],
+    "mde": 9.672752199767304,
+    "verdict": null
+   },
+   "b_Gemma": {
+    "point": null
+   },
+   "b_GaMS": {
+    "point": null
+   },
+   "b_diff": {
+    "point": null
+   },
+   "gams_compliance": 0.985,
+   "flag": "",
+   "judge": "J1 + RG (degenerate)",
+   "source_file": "RUN/round-4/experiment-14/src/results/analysis.json",
+   "json_path": "readouts/rg_R/G3|ensl ; readouts/rg_R/G3edit|ensl",
+   "decomposition_status": "edit-induced",
+   "ceiling_verdict_G3_orig": null,
+   "edit_direction": "lag direction (G3_edit < 0: the edit removes MORE Slovene refusal in GaMS3)"
+  },
+  {
+   "body": "exp14_grid",
+   "readout": "rg_R",
+   "coding": "R",
+   "statistic": "G3 at L* (husl)",
+   "cell": "husl",
+   "G3": {
+    "point": -12.984110962889712,
+    "ci95": [
+     -13.868055001309328,
+     -3.4433138619856676
+    ],
+    "ci90": [
+     -13.813509557297106,
+     -5.06042405739054
+    ],
+    "mde": 8.453706928572876,
+    "verdict": null
+   },
+   "G3_orig": {
+    "point": 2.653185798600939,
+    "ci95": null,
+    "ci90": null,
+    "note": "derived G3 - G3_edit (point only; not saved)"
+   },
+   "G3_edit": {
+    "point": -15.637296761490651,
+    "ci95": [
+     -18.84665216342504,
+     -3.592949424230476
+    ],
+    "ci90": [
+     -18.585926871329775,
+     -5.50163198339033
+    ],
+    "mde": 11.210561355226552,
+    "verdict": null
+   },
+   "b_Gemma": {
+    "point": null
+   },
+   "b_GaMS": {
+    "point": null
+   },
+   "b_diff": {
+    "point": null
+   },
+   "gams_compliance": 0.865,
+   "flag": "INVALID-MANIPULATION (GaMS output-language compliance < 0.90)",
+   "judge": "J1 + RG (degenerate)",
+   "source_file": "RUN/round-4/experiment-14/src/results/analysis.json",
+   "json_path": "readouts/rg_R/G3|husl ; readouts/rg_R/G3edit|husl",
+   "decomposition_status": "edit-induced",
+   "ceiling_verdict_G3_orig": null,
+   "edit_direction": "lag direction (G3_edit < 0: the edit removes MORE Slovene refusal in GaMS3)"
+  },
+  {
+   "body": "exp14_grid",
+   "readout": "rg_R",
+   "coding": "R",
+   "statistic": "G3 at L* (enen)",
+   "cell": "enen",
+   "G3": {
+    "point": 0.0,
+    "ci95": [
+     -2.220446049250313e-16,
+     8.881784197001252e-16
+    ],
+    "ci90": [
+     -1.1102230246251565e-16,
+     8.881784197001252e-16
+    ],
+    "mde": 1.1104278246473257e-15,
+    "verdict": null
+   },
+   "G3_orig": {
+    "point": 0.0,
+    "ci95": null,
+    "ci90": null,
+    "note": "derived G3 - G3_edit (point only; not saved)"
+   },
+   "G3_edit": {
+    "point": 0.0,
+    "ci95": [
+     -2.220446049250313e-16,
+     8.881784197001252e-16
+    ],
+    "ci90": [
+     -1.1102230246251565e-16,
+     8.881784197001252e-16
+    ],
+    "mde": 1.1104278246473257e-15,
+    "verdict": null
+   },
+   "b_Gemma": {
+    "point": null
+   },
+   "b_GaMS": {
+    "point": null
+   },
+   "b_diff": {
+    "point": null
+   },
+   "gams_compliance": 1.0,
+   "flag": "",
+   "judge": "J1 + RG (degenerate)",
+   "source_file": "RUN/round-4/experiment-14/src/results/analysis.json",
+   "json_path": "readouts/rg_R/G3|enen ; readouts/rg_R/G3edit|enen",
+   "decomposition_status": "underdetermined",
+   "ceiling_verdict_G3_orig": null
+  },
+  {
+   "body": "exp14_grid",
+   "readout": "rg_R",
+   "coding": "R",
+   "statistic": "G3 at L* (slen)",
+   "cell": "slen",
+   "G3": {
+    "point": -5.604703326371357,
+    "ci95": [
+     -6.906754778648553,
+     4.314910628748567
+    ],
+    "ci90": [
+     -6.272870069497707,
+     3.3054331950025064
+    ],
+    "mde": 9.318429502521228,
+    "verdict": null
+   },
+   "G3_orig": {
+    "point": 2.2261616982225974,
+    "ci95": null,
+    "ci90": null,
+    "note": "derived G3 - G3_edit (point only; not saved)"
+   },
+   "G3_edit": {
+    "point": -7.830865024593955,
+    "ci95": [
+     -10.69516776215291,
+     3.6976553338184512
+    ],
+    "ci90": [
+     -10.232912527659177,
+     2.2645819271876038
+    ],
+    "mde": 10.692579837571875,
+    "verdict": null
+   },
+   "b_Gemma": {
+    "point": null
+   },
+   "b_GaMS": {
+    "point": null
+   },
+   "b_diff": {
+    "point": null
+   },
+   "gams_compliance": 0.0,
+   "flag": "INVALID-MANIPULATION (GaMS output-language compliance < 0.90)",
+   "judge": "J1 + RG (degenerate)",
+   "source_file": "RUN/round-4/experiment-14/src/results/analysis.json",
+   "json_path": "readouts/rg_R/G3|slen ; readouts/rg_R/G3edit|slen",
+   "decomposition_status": "underdetermined",
+   "ceiling_verdict_G3_orig": null
+  },
+  {
+   "body": "exp14_grid",
+   "readout": "rg_R",
+   "coding": "R",
+   "statistic": "G3 at L* (enhu)",
+   "cell": "enhu",
+   "G3": {
+    "point": 0.6746543682634678,
+    "ci95": [
+     -9.339607900501619,
+     6.610150326381904
+    ],
+    "ci90": [
+     -8.326343418265974,
+     4.39955068075224
+    ],
+    "mde": 22.787267481024433,
+    "verdict": null
+   },
+   "G3_orig": {
+    "point": -2.4877652663586076,
+    "ci95": null,
+    "ci90": null,
+    "note": "derived G3 - G3_edit (point only; not saved)"
+   },
+   "G3_edit": {
+    "point": 3.1624196346220756,
+    "ci95": [
+     -8.543186808341483,
+     10.189855740495698
+    ],
+    "ci90": [
+     -7.549461210734428,
+     8.118952837556144
+    ],
+    "mde": 23.892759265073853,
+    "verdict": null
+   },
+   "b_Gemma": {
+    "point": null
+   },
+   "b_GaMS": {
+    "point": null
+   },
+   "b_diff": {
+    "point": null
+   },
+   "gams_compliance": 0.9716666666666667,
+   "flag": "",
+   "judge": "J1 + RG (degenerate)",
+   "source_file": "RUN/round-4/experiment-14/src/results/analysis.json",
+   "json_path": "readouts/rg_R/G3|enhu ; readouts/rg_R/G3edit|enhu",
+   "decomposition_status": "underdetermined",
+   "ceiling_verdict_G3_orig": null
+  },
+  {
+   "body": "exp14_grid",
+   "readout": "rg_R",
+   "coding": "R",
+   "statistic": "G3 at L* (huhu)",
+   "cell": "huhu",
+   "G3": {
+    "point": -0.8684752431509066,
+    "ci95": [
+     -7.8858117936108645,
+     6.274609071782021
+    ],
+    "ci90": [
+     -7.210572815914418,
+     4.073696334346004
+    ],
+    "mde": 24.065838471005357,
+    "verdict": null
+   },
+   "G3_orig": {
+    "point": 2.653185798600939,
+    "ci95": null,
+    "ci90": null,
+    "note": "derived G3 - G3_edit (point only; not saved)"
+   },
+   "G3_edit": {
+    "point": -3.5216610417518455,
+    "ci95": [
+     -11.602911156029037,
+     6.580524018576221
+    ],
+    "ci90": [
+     -9.336083496469454,
+     4.777351514766503
+    ],
+    "mde": 25.348061845070763,
+    "verdict": null
+   },
+   "b_Gemma": {
+    "point": null
+   },
+   "b_GaMS": {
+    "point": null
+   },
+   "b_diff": {
+    "point": null
+   },
+   "gams_compliance": 1.0,
+   "flag": "",
+   "judge": "J1 + RG (degenerate)",
+   "source_file": "RUN/round-4/experiment-14/src/results/analysis.json",
+   "json_path": "readouts/rg_R/G3|huhu ; readouts/rg_R/G3edit|huhu",
+   "decomposition_status": "underdetermined",
+   "ceiling_verdict_G3_orig": null
+  },
+  {
+   "body": "exp14_grid",
+   "readout": "rg_R",
+   "coding": "R",
+   "statistic": "G3 at L* (slhu)",
+   "cell": "slhu",
+   "G3": {
+    "point": -3.0435048911085416,
+    "ci95": [
+     -12.775054207733865,
+     4.726834196774215
+    ],
+    "ci90": [
+     -10.378473376817519,
+     2.284930764816581
+    ],
+    "mde": 18.99498353625354,
+    "verdict": null
+   },
+   "G3_orig": {
+    "point": -2.0244702102635,
+    "ci95": null,
+    "ci90": null,
+    "note": "derived G3 - G3_edit (point only; not saved)"
+   },
+   "G3_edit": {
+    "point": -1.0190346808450417,
+    "ci95": [
+     -12.49000845822249,
+     8.04170775690771
+    ],
+    "ci90": [
+     -10.481391847829979,
+     5.865006899539021
+    ],
+    "mde": 20.78351708373124,
+    "verdict": null
+   },
+   "b_Gemma": {
+    "point": null
+   },
+   "b_GaMS": {
+    "point": null
+   },
+   "b_diff": {
+    "point": null
+   },
+   "gams_compliance": 0.555,
+   "flag": "INVALID-MANIPULATION (GaMS output-language compliance < 0.90)",
+   "judge": "J1 + RG (degenerate)",
+   "source_file": "RUN/round-4/experiment-14/src/results/analysis.json",
+   "json_path": "readouts/rg_R/G3|slhu ; readouts/rg_R/G3edit|slhu",
+   "decomposition_status": "underdetermined",
+   "ceiling_verdict_G3_orig": null
+  },
+  {
+   "body": "exp14_grid",
+   "readout": "rg_R",
+   "coding": "R",
+   "statistic": "G3 at L* (huen)",
+   "cell": "huen",
+   "G3": {
+    "point": -0.015655977207955973,
+    "ci95": [
+     -6.906754778648553,
+     7.105418626758375
+    ],
+    "ci90": [
+     -6.678269984088552,
+     5.1491861632872045
+    ],
+    "mde": 24.40987232897862,
+    "verdict": null
+   },
+   "G3_orig": {
+    "point": 1.1813243697315405,
+    "ci95": null,
+    "ci90": null,
+    "note": "derived G3 - G3_edit (point only; not saved)"
+   },
+   "G3_edit": {
+    "point": -1.1969803469394966,
+    "ci95": [
+     -10.529612602871556,
+     6.7478136844412155
+    ],
+    "ci90": [
+     -9.155193119662886,
+     4.8218879978755975
+    ],
+    "mde": 24.921431377644126,
+    "verdict": null
+   },
+   "b_Gemma": {
+    "point": null
+   },
+   "b_GaMS": {
+    "point": null
+   },
+   "b_diff": {
+    "point": null
+   },
+   "gams_compliance": 0.13833333333333334,
+   "flag": "INVALID-MANIPULATION (GaMS output-language compliance < 0.90)",
+   "judge": "J1 + RG (degenerate)",
+   "source_file": "RUN/round-4/experiment-14/src/results/analysis.json",
+   "json_path": "readouts/rg_R/G3|huen ; readouts/rg_R/G3edit|huen",
+   "decomposition_status": "underdetermined",
+   "ceiling_verdict_G3_orig": null
+  },
+  {
+   "body": "exp14_grid",
+   "readout": "ppi_R",
+   "coding": "R",
+   "statistic": "G3 at L* (slsl)",
+   "cell": "slsl",
+   "G3": {
+    "point": 0.33210610778357874,
+    "ci95": [
+     -8.131627569796088,
+     4.772584804574352
+    ],
+    "ci90": [
+     -7.922956866070307,
+     3.525710850378328
+    ],
+    "mde": 9.848966112014782,
+    "verdict": null
+   },
+   "G3_orig": {
+    "point": -0.6016474656943527,
+    "ci95": null,
+    "ci90": null,
+    "note": "derived G3 - G3_edit (point only; not saved)"
+   },
+   "G3_edit": {
+    "point": 0.9337535734779314,
+    "ci95": [
+     -7.54231078687673,
+     5.39630588995359
+    ],
+    "ci90": [
+     -7.350321693478926,
+     4.200465690777479
+    ],
+    "mde": 9.8933859539513,
+    "verdict": null
+   },
+   "b_Gemma": {
+    "point": null
+   },
+   "b_GaMS": {
+    "point": null
+   },
+   "b_diff": {
+    "point": null
+   },
+   "gams_compliance": 0.9966666666666667,
+   "flag": "",
+   "judge": "J1 + PPI++",
+   "source_file": "RUN/round-4/experiment-14/src/results/analysis.json",
+   "json_path": "readouts/ppi_R/G3|slsl ; readouts/ppi_R/G3edit|slsl",
+   "decomposition_status": "underdetermined",
+   "ceiling_verdict_G3_orig": null
+  },
+  {
+   "body": "exp14_grid",
+   "readout": "ppi_R",
+   "coding": "R",
+   "statistic": "G3 at L* (ensl)",
+   "cell": "ensl",
+   "G3": {
+    "point": 3.8208934299771546,
+    "ci95": [
+     -8.362880656430168,
+     8.346788497005914
+    ],
+    "ci90": [
+     -8.143873044149611,
+     6.8660748183064415
+    ],
+    "mde": 12.427654092349178,
+    "verdict": null
+   },
+   "G3_orig": {
+    "point": -1.4049048925068353,
+    "ci95": null,
+    "ci90": null,
+    "note": "derived G3 - G3_edit (point only; not saved)"
+   },
+   "G3_edit": {
+    "point": 5.22579832248399,
+    "ci95": [
+     -6.935333550970531,
+     9.781117370394785
+    ],
+    "ci90": [
+     -6.69564260275207,
+     8.277002414435447
+    ],
+    "mde": 12.439162782662082,
+    "verdict": null
+   },
+   "b_Gemma": {
+    "point": null
+   },
+   "b_GaMS": {
+    "point": null
+   },
+   "b_diff": {
+    "point": null
+   },
+   "gams_compliance": 0.985,
+   "flag": "",
+   "judge": "J1 + PPI++",
+   "source_file": "RUN/round-4/experiment-14/src/results/analysis.json",
+   "json_path": "readouts/ppi_R/G3|ensl ; readouts/ppi_R/G3edit|ensl",
+   "decomposition_status": "underdetermined",
+   "ceiling_verdict_G3_orig": null
+  },
+  {
+   "body": "exp14_grid",
+   "readout": "ppi_R",
+   "coding": "R",
+   "statistic": "G3 at L* (husl)",
+   "cell": "husl",
+   "G3": {
+    "point": 4.635257148979944,
+    "ci95": [
+     -8.254662463021537,
+     10.27633375224292
+    ],
+    "ci90": [
+     -7.983410949191743,
+     8.195991157729967
+    ],
+    "mde": 12.487454122251712,
+    "verdict": null
+   },
+   "G3_orig": {
+    "point": -0.23694328964616496,
+    "ci95": null,
+    "ci90": null,
+    "note": "derived G3 - G3_edit (point only; not saved)"
+   },
+   "G3_edit": {
+    "point": 4.872200438626109,
+    "ci95": [
+     -8.105130742934808,
+     10.489756108540021
+    ],
+    "ci90": [
+     -7.736122595338984,
+     8.58652521447068
+    ],
+    "mde": 12.47015682487311,
+    "verdict": null
+   },
+   "b_Gemma": {
+    "point": null
+   },
+   "b_GaMS": {
+    "point": null
+   },
+   "b_diff": {
+    "point": null
+   },
+   "gams_compliance": 0.865,
+   "flag": "INVALID-MANIPULATION (GaMS output-language compliance < 0.90)",
+   "judge": "J1 + PPI++",
+   "source_file": "RUN/round-4/experiment-14/src/results/analysis.json",
+   "json_path": "readouts/ppi_R/G3|husl ; readouts/ppi_R/G3edit|husl",
+   "decomposition_status": "underdetermined",
+   "ceiling_verdict_G3_orig": null
+  },
+  {
+   "body": "exp14_grid",
+   "readout": "ppi_R",
+   "coding": "R",
+   "statistic": "G3 at L* (enen)",
+   "cell": "enen",
+   "G3": {
+    "point": 0.0,
+    "ci95": [
+     -1.8041124150158794e-16,
+     2.220446049250313e-16
+    ],
+    "ci90": [
+     -5.551115123125783e-17,
+     1.1102230246251565e-16
+    ],
+    "mde": 1.8167692237575543e-16,
+    "verdict": null
+   },
+   "G3_orig": {
+    "point": 0.0,
+    "ci95": null,
+    "ci90": null,
+    "note": "derived G3 - G3_edit (point only; not saved)"
+   },
+   "G3_edit": {
+    "point": 0.0,
+    "ci95": [
+     -1.8041124150158794e-16,
+     2.220446049250313e-16
+    ],
+    "ci90": [
+     -5.551115123125783e-17,
+     1.1102230246251565e-16
+    ],
+    "mde": 1.8167692237575543e-16,
+    "verdict": null
+   },
+   "b_Gemma": {
+    "point": null
+   },
+   "b_GaMS": {
+    "point": null
+   },
+   "b_diff": {
+    "point": null
+   },
+   "gams_compliance": 1.0,
+   "flag": "",
+   "judge": "J1 + PPI++",
+   "source_file": "RUN/round-4/experiment-14/src/results/analysis.json",
+   "json_path": "readouts/ppi_R/G3|enen ; readouts/ppi_R/G3edit|enen",
+   "decomposition_status": "underdetermined",
+   "ceiling_verdict_G3_orig": null
+  },
+  {
+   "body": "exp14_grid",
+   "readout": "ppi_R",
+   "coding": "R",
+   "statistic": "G3 at L* (slen)",
+   "cell": "slen",
+   "G3": {
+    "point": 0.7860919949858093,
+    "ci95": [
+     -1.8931100427977072,
+     6.370676891681212
+    ],
+    "ci90": [
+     -0.7726277276114581,
+     4.873773504174438
+    ],
+    "mde": 5.78719672880186,
+    "verdict": null
+   },
+   "G3_orig": {
+    "point": 0.39688136441677346,
+    "ci95": null,
+    "ci90": null,
+    "note": "derived G3 - G3_edit (point only; not saved)"
+   },
+   "G3_edit": {
+    "point": 0.3892106305690358,
+    "ci95": [
+     -2.3264793599304827,
+     5.958336038428518
+    ],
+    "ci90": [
+     -1.2267602323978193,
+     4.529521020952117
+    ],
+    "mde": 5.788976192653967,
+    "verdict": null
+   },
+   "b_Gemma": {
+    "point": null
+   },
+   "b_GaMS": {
+    "point": null
+   },
+   "b_diff": {
+    "point": null
+   },
+   "gams_compliance": 0.0,
+   "flag": "INVALID-MANIPULATION (GaMS output-language compliance < 0.90)",
+   "judge": "J1 + PPI++",
+   "source_file": "RUN/round-4/experiment-14/src/results/analysis.json",
+   "json_path": "readouts/ppi_R/G3|slen ; readouts/ppi_R/G3edit|slen",
+   "decomposition_status": "underdetermined",
+   "ceiling_verdict_G3_orig": null
+  },
+  {
+   "body": "exp14_grid",
+   "readout": "ppi_R",
+   "coding": "R",
+   "statistic": "G3 at L* (enhu)",
+   "cell": "enhu",
+   "G3": {
+    "point": 0.4440982980371289,
+    "ci95": [
+     -1.6760567497944823,
+     8.744002776365294
+    ],
+    "ci90": [
+     -1.2413375944578693,
+     6.985519347783332
+    ],
+    "mde": 7.932689845990769,
+    "verdict": null
+   },
+   "G3_orig": {
+    "point": -0.9543704252469842,
+    "ci95": null,
+    "ci90": null,
+    "note": "derived G3 - G3_edit (point only; not saved)"
+   },
+   "G3_edit": {
+    "point": 1.398468723284113,
+    "ci95": [
+     -0.9328876846668752,
+     9.736471601419773
+    ],
+    "ci90": [
+     -0.3566549456020096,
+     7.881542940857376
+    ],
+    "mde": 7.971319967993476,
+    "verdict": null
+   },
+   "b_Gemma": {
+    "point": null
+   },
+   "b_GaMS": {
+    "point": null
+   },
+   "b_diff": {
+    "point": null
+   },
+   "gams_compliance": 0.9716666666666667,
+   "flag": "",
+   "judge": "J1 + PPI++",
+   "source_file": "RUN/round-4/experiment-14/src/results/analysis.json",
+   "json_path": "readouts/ppi_R/G3|enhu ; readouts/ppi_R/G3edit|enhu",
+   "decomposition_status": "underdetermined",
+   "ceiling_verdict_G3_orig": null
+  },
+  {
+   "body": "exp14_grid",
+   "readout": "ppi_R",
+   "coding": "R",
+   "statistic": "G3 at L* (huhu)",
+   "cell": "huhu",
+   "G3": {
+    "point": 0.3437497229960401,
+    "ci95": [
+     -1.2264382554904047,
+     6.438369871426146
+    ],
+    "ci90": [
+     -0.9984871851218826,
+     4.809544710865508
+    ],
+    "mde": 5.7242552913679345,
+    "verdict": null
+   },
+   "G3_orig": {
+    "point": -0.055644508663522885,
+    "ci95": null,
+    "ci90": null,
+    "note": "derived G3 - G3_edit (point only; not saved)"
+   },
+   "G3_edit": {
+    "point": 0.399394231659563,
+    "ci95": [
+     -1.3230828022495642,
+     6.573096727510025
+    ],
+    "ci90": [
+     -1.0622915416445877,
+     4.840419598071289
+    ],
+    "mde": 5.765166671253543,
+    "verdict": null
+   },
+   "b_Gemma": {
+    "point": null
+   },
+   "b_GaMS": {
+    "point": null
+   },
+   "b_diff": {
+    "point": null
+   },
+   "gams_compliance": 1.0,
+   "flag": "",
+   "judge": "J1 + PPI++",
+   "source_file": "RUN/round-4/experiment-14/src/results/analysis.json",
+   "json_path": "readouts/ppi_R/G3|huhu ; readouts/ppi_R/G3edit|huhu",
+   "decomposition_status": "underdetermined",
+   "ceiling_verdict_G3_orig": null
+  },
+  {
+   "body": "exp14_grid",
+   "readout": "ppi_R",
+   "coding": "R",
+   "statistic": "G3 at L* (slhu)",
+   "cell": "slhu",
+   "G3": {
+    "point": 2.132376978149799,
+    "ci95": [
+     -7.459301818987834,
+     8.645484263176025
+    ],
+    "ci90": [
+     -7.164379207175993,
+     7.23614333419339
+    ],
+    "mde": 10.940863872559259,
+    "verdict": null
+   },
+   "G3_orig": {
+    "point": -0.8514215775710645,
+    "ci95": null,
+    "ci90": null,
+    "note": "derived G3 - G3_edit (point only; not saved)"
+   },
+   "G3_edit": {
+    "point": 2.9837985557208637,
+    "ci95": [
+     -6.729733106853246,
+     9.579411042216194
+    ],
+    "ci90": [
+     -6.394713955604258,
+     8.044093526995374
+    ],
+    "mde": 11.047740258833862,
+    "verdict": null
+   },
+   "b_Gemma": {
+    "point": null
+   },
+   "b_GaMS": {
+    "point": null
+   },
+   "b_diff": {
+    "point": null
+   },
+   "gams_compliance": 0.555,
+   "flag": "INVALID-MANIPULATION (GaMS output-language compliance < 0.90)",
+   "judge": "J1 + PPI++",
+   "source_file": "RUN/round-4/experiment-14/src/results/analysis.json",
+   "json_path": "readouts/ppi_R/G3|slhu ; readouts/ppi_R/G3edit|slhu",
+   "decomposition_status": "underdetermined",
+   "ceiling_verdict_G3_orig": null
+  },
+  {
+   "body": "exp14_grid",
+   "readout": "ppi_R",
+   "coding": "R",
+   "statistic": "G3 at L* (huen)",
+   "cell": "huen",
+   "G3": {
+    "point": 0.5039142385926025,
+    "ci95": [
+     -1.1036238430008707,
+     4.223419967117172
+    ],
+    "ci90": [
+     -0.801628554038089,
+     3.2218818830977947
+    ],
+    "mde": 4.245872097546157,
+    "verdict": null
+   },
+   "G3_orig": {
+    "point": 0.3068573160822832,
+    "ci95": null,
+    "ci90": null,
+    "note": "derived G3 - G3_edit (point only; not saved)"
+   },
+   "G3_edit": {
+    "point": 0.1970569225103193,
+    "ci95": [
+     -1.4831376136348462,
+     3.9955310795141354
+    ],
+    "ci90": [
+     -1.1887159678846042,
+     2.891473913433367
+    ],
+    "mde": 4.335084515504201,
+    "verdict": null
+   },
+   "b_Gemma": {
+    "point": null
+   },
+   "b_GaMS": {
+    "point": null
+   },
+   "b_diff": {
+    "point": null
+   },
+   "gams_compliance": 0.13833333333333334,
+   "flag": "INVALID-MANIPULATION (GaMS output-language compliance < 0.90)",
+   "judge": "J1 + PPI++",
+   "source_file": "RUN/round-4/experiment-14/src/results/analysis.json",
+   "json_path": "readouts/ppi_R/G3|huen ; readouts/ppi_R/G3edit|huen",
+   "decomposition_status": "underdetermined",
+   "ceiling_verdict_G3_orig": null
+  }
+ ],
+ "n_rows": 107,
+ "G3_edit_range_R_valid_rows": [
+  -9.967683806731847,
+  10.487643739347691
+ ],
+ "status_counts": {
+  "edit-induced": 15,
+  "baseline": 0,
+  "underdetermined": 64
+ },
+ "edit_induced_by_direction": {
+  "lag_valid_manipulation": [
+   "exp8_A1|PPI|RP|",
+   "exp8_B|archived_arch_lex|R|",
+   "exp8_B|PPI|RP|",
+   "exp10_op|raw_primary|R|",
+   "exp10_op|raw_primary|RP|",
+   "exp14_grid|raw_R|R|slsl",
+   "exp14_grid|raw_RP|RP|slsl",
+   "exp14_grid|rg_R|R|ensl"
+  ],
+  "lag_invalid_manipulation": [
+   "exp14_grid|raw_R|R|husl",
+   "exp14_grid|raw_RP|RP|husl",
+   "exp14_grid|rg_R|R|husl"
+  ],
+  "anti_lag": [
+   "exp9_lambda|raw_primary|R|",
+   "exp9_lambda|archived_arch_j1|R|",
+   "exp8_A1|archived_arch_q14|R|",
+   "exp8_B|archived_arch_q14|R|"
+  ]
+ },
+ "note_rg": "exp14 rg_R rows are numerically degenerate (exp14 rg_stability.degenerate = True); do not cite",
+ "corrections": {
+  "parallel_curves_claim": {
+   "paper_said": "parallel curves (both slopes ~1)",
+   "verified": {
+    "b_Gemma": {
+     "point": 0.9384821507233972,
+     "se": 0.10884796519152153,
+     "ci95": [
+      0.7470513803165133,
+      1.1746109133598088
+     ],
+     "ci90": [
+      0.7818481876216394,
+      1.1316570956498322
+     ],
+     "mde": 0.30477430253626026,
+     "n_draws": 2000
+    },
+    "b_GaMS": {
+     "point": 0.7968970410431552,
+     "se": 0.07965212790462069,
+     "ci95": [
+      0.6252281492943961,
+      0.9523721321855549
+     ],
+     "ci90": [
+      0.6611563527222607,
+      0.921670357534391
+     ],
+     "mde": 0.2230259581329379,
+     "n_draws": 2000
+    }
+   },
+   "replacement": "report both slopes with CIs; b_diff CI not saved -> no 'parallel' claim"
+  },
+  "mde_attribution": {
+   "paper_said": "MDE 0.42 for G3_edit",
+   "verified_MDE_G3": 0.4220094473750568,
+   "verified_MDE_G3_edit": 2.3188880001587497,
+   "verified_abs_G3_edit_bound_90": 1.9138666777053137,
+   "source": "RUN/round-4/experiment-15/src/results/analysis.json :: headline/R/RAW/*/mde ; verdict/abs_G3_edit_bound_90"
+  }
+ },
+ "rule": "edit-induced: G3_edit CI95 excl 0 & |G3_edit|>=m/2; baseline: G3_orig CI95 excl 0 & G3_edit CI90 within +-m; else underdetermined"
+}

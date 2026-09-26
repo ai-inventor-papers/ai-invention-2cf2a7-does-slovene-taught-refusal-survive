@@ -1,0 +1,3 @@
+# 2026-09-25T01:04:03Z https://en.wikipedia.org/wiki/Gaj%27s_Latin_alphabet :: Slovene alphabet|Slovene.{0,80}(lack|without|except|not)|used for Slovene|ć, đ|Ć, Đ
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+Error: HTTP 403

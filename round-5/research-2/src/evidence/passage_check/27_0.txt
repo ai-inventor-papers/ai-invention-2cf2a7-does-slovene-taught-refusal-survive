@@ -1,0 +1,8 @@
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2511.21140
+Type: PDF
+Pattern: remains unbiased under such shifts\. We therefore adopt this  (0 matches in 83322 chars)
+
+--- Content ---
+
+No matches found for pattern: remains unbiased under such shifts\. We therefore adopt this 
