@@ -1,34 +1,0 @@
-/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_1/gen_art/gen_art_experiment_3/.venv/lib/python3.12/site-packages/transformers/utils/hub.py:111: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
-  warnings.warn(
-`torch_dtype` is deprecated! Use `dtype` instead!
-Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:39<02:36, 39.19s/it]Loading checkpoint shards:  40%|████      | 2/5 [01:22<02:04, 41.42s/it]Loading checkpoint shards:  60%|██████    | 3/5 [02:02<01:22, 41.11s/it]Loading checkpoint shards:  80%|████████  | 4/5 [02:47<00:42, 42.52s/it]Loading checkpoint shards: 100%|██████████| 5/5 [03:22<00:00, 39.85s/it]Loading checkpoint shards: 100%|██████████| 5/5 [03:22<00:00, 40.54s/it]
-The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
-17:23:07|INFO   |loaded gams (Gemma3ForCausalLM, backbone=model, quant=nf4, attn=sdpa) in 223s; mem=7.6GB; stop={1, 106}
-17:23:07|INFO   |ablation variant = mean_skipbos (mean=True, skip_bos=True)
-17:28:15|INFO   |[gams-C0] 800 prompts, max_new=64, s=True: 308s
-17:33:22|INFO   |[gams-C1] 800 prompts, max_new=64, s=True: 307s
-17:38:26|INFO   |[gams-C2] 800 prompts, max_new=64, s=True: 304s
-17:44:55|INFO   |[gams-C3] 800 prompts, max_new=64, s=True: 389s
-17:51:24|INFO   |[gams-C4] 800 prompts, max_new=64, s=True: 389s
-17:56:30|INFO   |[gams-C5] 800 prompts, max_new=64, s=True: 306s
-17:57:29|INFO   |[gams-C0-slmt] 400 prompts, max_new=0, s=True: 59s
-17:58:29|INFO   |[gams-C1-slmt] 400 prompts, max_new=0, s=True: 59s
-17:59:28|INFO   |[gams-C2-slmt] 400 prompts, max_new=0, s=True: 59s
-18:00:47|INFO   |[gams-C3-slmt] 400 prompts, max_new=0, s=True: 78s
-18:01:59|INFO   |[gams-harmless-C0] 200 prompts, max_new=64, s=False: 72s
-18:03:12|INFO   |[gams-harmless-C1] 200 prompts, max_new=64, s=False: 73s
-18:04:24|INFO   |[gams-harmless-C2] 200 prompts, max_new=64, s=False: 73s
-18:05:37|INFO   |[gams-harmless-C3] 200 prompts, max_new=64, s=False: 73s
-18:07:17|INFO   |[gams-sweep-persona-b0_7] 400 prompts, max_new=0, s=True: 45s
-18:08:02|INFO   |[gams-sweep-iso1-b0_7] 400 prompts, max_new=0, s=True: 45s
-18:08:48|INFO   |[gams-sweep-persona-b8_15] 400 prompts, max_new=0, s=True: 46s
-18:09:33|INFO   |[gams-sweep-iso1-b8_15] 400 prompts, max_new=0, s=True: 45s
-18:10:19|INFO   |[gams-sweep-persona-b16_23] 400 prompts, max_new=0, s=True: 45s
-18:11:04|INFO   |[gams-sweep-iso1-b16_23] 400 prompts, max_new=0, s=True: 45s
-18:11:49|INFO   |[gams-sweep-persona-b24_31] 400 prompts, max_new=0, s=True: 45s
-18:12:35|INFO   |[gams-sweep-iso1-b24_31] 400 prompts, max_new=0, s=True: 45s
-18:13:20|INFO   |[gams-sweep-persona-b32_39] 400 prompts, max_new=0, s=True: 45s
-18:14:06|INFO   |[gams-sweep-iso1-b32_39] 400 prompts, max_new=0, s=True: 45s
-18:14:51|INFO   |[gams-sweep-persona-b40_47] 400 prompts, max_new=0, s=True: 45s
-18:15:37|INFO   |[gams-sweep-iso1-b40_47] 400 prompts, max_new=0, s=True: 45s
-18:15:37|INFO   |stage score for gams done in 3372s

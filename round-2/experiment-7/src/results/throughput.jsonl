@@ -1,4 +1,0 @@
-{"model": "gams", "phase": "pilot", "limit": 0, "arch": "Gemma3ForCausalLM", "bs": 32, "n": 144, "secs": 94.79499506950378, "items_per_s": 1.5190675403740361, "t": "2026-09-23T21:18:44Z"}
-{"model": "gams", "phase": "full", "limit": 0, "arch": "Gemma3ForCausalLM", "bs": 64, "n": 4082, "secs": 1241.6007843017578, "items_per_s": 3.287691222179442, "t": "2026-09-23T21:43:42Z"}
-{"model": "gemma", "phase": "full", "limit": 0, "arch": "Gemma3ForConditionalGeneration", "bs": 64, "n": 4082, "secs": 1293.0534341335297, "items_per_s": 3.156868766784826, "t": "2026-09-23T22:13:25Z"}
-{"model": "q14", "phase": "full", "limit": 0, "arch": "Qwen3ForCausalLM", "bs": 64, "n": 4082, "secs": 886.3383750915527, "items_per_s": 4.605464588598409, "t": "2026-09-23T22:34:59Z"}

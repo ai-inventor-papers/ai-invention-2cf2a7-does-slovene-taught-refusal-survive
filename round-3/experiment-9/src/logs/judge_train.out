@@ -1,40 +1,0 @@
-06:46:37|INFO   |gold rows 19734 (excluded 1348 rows on probe items); by src/model/lang/edited: {('exp1', 'gams3_it', 'en', 0): 1808, ('exp1', 'gams3_it', 'sl', 0): 2171, ('exp1', 'gemma_it', 'en', 0): 1817, ('exp1', 'gemma_it', 'sl', 0): 2171, ('exp8', 'gemma_it', 'en', 0): 599, ('exp8', 'gemma_it', 'en', 1): 5468, ('exp8', 'gemma_it', 'sl', 0): 400, ('exp8', 'gemma_it', 'sl', 1): 5300}
-06:46:37|INFO   |train fold subsampled to 9884 rows (1500 per cell over 8 cells)
-/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_3/gen_art/gen_art_experiment_9/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
-  warnings.warn(
-Loading weights:   0%|          | 0/198 [00:00<?, ?it/s]Loading weights:   2%|▏         | 3/198 [00:01<01:34,  2.07it/s]Loading weights:  75%|███████▌  | 149/198 [00:01<00:00, 124.82it/s]Loading weights: 100%|██████████| 198/198 [00:01<00:00, 121.79it/s]
-[transformers] [1mDebertaV2ForSequenceClassification LOAD REPORT[0m from: microsoft/mdeberta-v3-base
-Key                                        | Status     | 
--------------------------------------------+------------+-
-lm_predictions.lm_head.LayerNorm.bias      | UNEXPECTED | 
-lm_predictions.lm_head.LayerNorm.weight    | UNEXPECTED | 
-lm_predictions.lm_head.dense.bias          | UNEXPECTED | 
-deberta.embeddings.word_embeddings._weight | UNEXPECTED | 
-mask_predictions.LayerNorm.weight          | UNEXPECTED | 
-mask_predictions.classifier.weight         | UNEXPECTED | 
-mask_predictions.dense.bias                | UNEXPECTED | 
-mask_predictions.classifier.bias           | UNEXPECTED | 
-mask_predictions.LayerNorm.bias            | UNEXPECTED | 
-lm_predictions.lm_head.bias                | UNEXPECTED | 
-mask_predictions.dense.weight              | UNEXPECTED | 
-lm_predictions.lm_head.dense.weight        | UNEXPECTED | 
-classifier.weight                          | MISSING    | 
-pooler.dense.bias                          | MISSING    | 
-pooler.dense.weight                        | MISSING    | 
-classifier.bias                            | MISSING    | 
-
-Notes:
-- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
-- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
-06:48:43|INFO   |ep 0 step 300/2472 loss 0.0913 (120s)
-06:50:34|INFO   |ep 0 step 600/2472 loss 0.4825 (231s)
-06:52:31|INFO   |ep 0 step 900/2472 loss 0.2828 (348s)
-06:54:22|INFO   |ep 0 step 1200/2472 loss 0.4658 (459s)
-06:55:20|INFO   |epoch 0: val kappa3 0.783 kappaR 0.818
-06:56:57|INFO   |ep 1 step 1500/2472 loss 0.3267 (614s)
-06:58:54|INFO   |ep 1 step 1800/2472 loss 0.2205 (731s)
-07:00:50|INFO   |ep 1 step 2100/2472 loss 0.5091 (847s)
-07:02:40|INFO   |ep 1 step 2400/2472 loss 0.2302 (957s)
-07:03:50|INFO   |epoch 1: val kappa3 0.807 kappaR 0.842
-Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:02<00:00,  2.26s/it]Writing model shards: 100%|██████████| 1/1 [00:02<00:00,  2.26s/it]
-07:04:36|INFO   |{"all": {"n": 2755, "kappa3": 0.807, "kappaR": 0.842, "kappaRP": 0.848, "rate_R_gold": 0.801, "rate_R_pred": 0.809, "sens_R": 0.974, "spec_R": 0.854}, "edited0": {"n": 1234, "kappa3": 0.701, "kappaR": 0.74, "kappaRP": 0.754, "rate_R_gold": 0.945, "rate_R_pred": 0.95, "sens_R": 0.989, "spec_R": 0.721}, "edited1": {"n": 1521, "kappa3": 0.802, "kappaR": 0.839, "kappaRP": 0.845, "rate_R_gold": 0.684, "rate_R_pred": 0.695, "sens_R": 0.958, "spec_R": 0.873}, "exp1|gams3_it|edited0": {"n": 559, "kappa3": 0.78, "kappaR": 0.807, "kappaRP": 0.797, "rate_R_gold": 0.932, "rate_R_pred": 0.928, "sens_R": 0.985, "spec_R": 0.842}, "exp1|gemma_it|edited0": {"n": 560, "kappa3": 0.663, "kappaR": 0.734, "kappaRP": 0.693, "rate_R_gold": 0.959, "rate_R_pred": 0.964, "sens_R": 0.993, "spec_R": 0.696}, "exp8|gemma_it|edited0": {"n": 115, "kappa3": 0.208, "kappaR": 0.201, "kappaRP": 0.491, "rate_R_gold": 0.939, "rate_R_pred": 0.983, "sens_R": 0.991, "spec_R": 0.143}, "exp8|gemma_it|edited1": {"n": 1521, "kappa3": 0.802, "kappaR": 0.839, "kappaRP": 0.845, "rate_R_gold": 0.684, "rate_R_pred": 0.695, "sens_R": 0.958, "spec_R": 0.873}, "gams3_it|en": {"n": 253, "kappa3": 0.695, "kappaR": 0.796, "kappaRP": 0.746, "rate_R_gold": 0.976, "rate_R_pred": 0.984, "sens_R": 1.0, "spec_R": 0.667}, "gams3_it|en|edited0": {"n": 253, "kappa3": 0.695, "kappaR": 0.796, "kappaRP": 0.746, "rate_R_gold": 0.976, "rate_R_pred": 0.984, "sens_R": 1.0, "spec_R": 0.667}, "gams3_it|sl": {"n": 306, "kappa3": 0.786, "kappaR": 0.802, "kappaRP": 0.796, "rate_R_gold": 0.895, "rate_R_pred": 0.882, "sens_R": 0.971, "spec_R": 0.875}, "gams3_it|sl|edited0": {"n": 306, "kappa3": 0.786, "kappaR": 0.802, "kappaRP": 0.796, "rate_R_gold": 0.895, "rate_R_pred": 0.882, "sens_R": 0.971, "spec_R": 0.875}, "gemma_it|en": {"n": 1095, "kappa3": 0.807, "kappaR": 0.834, "kappaRP": 0.857, "rate_R_gold": 0.705, "rate_R_pred": 0.727, "sens_R": 0.968, "spec_R": 0.848}, "gemma_it|en|edited0": {"n": 323, "kappa3": 0.571, "kappaR": 0.622, "kappaRP": 0.765, "rate_R_gold": 0.96, "rate_R_pred": 0.981, "sens_R": 1.0, "spec_R": 0.462}, "gemma_it|en|edited1": {"n": 772, "kappa3": 0.79, "kappaR": 0.818, "kappaRP": 0.839, "rate_R_gold": 0.598, "rate_R_pred": 0.62, "sens_R": 0.946, "spec_R": 0.865}, "gemma_it|sl": {"n": 1101, "kappa3": 0.792, "kappaR": 0.843, "kappaRP": 0.83, "rate_R_gold": 0.829, "rate_R_pred": 0.83, "sens_R": 0.974, "spec_R": 0.867}, "gemma_it|sl|edited0": {"n": 352, "kappa3": 0.59, "kappaR": 0.65, "kappaRP": 0.628, "rate_R_gold": 0.952, "rate_R_pred": 0.955, "sens_R": 0.985, "spec_R": 0.647}, "gemma_it|sl|edited1": {"n": 749, "kappa3": 0.804, "kappaR": 0.856, "kappaRP": 0.843, "rate_R_gold": 0.772, "rate_R_pred": 0.772, "sens_R": 0.967, "spec_R": 0.889}}

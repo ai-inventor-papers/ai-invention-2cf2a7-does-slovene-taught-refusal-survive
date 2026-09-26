@@ -1,7 +1,0 @@
-{
- "status": "REQUESTED, NOT PERFORMED",
- "what": "A native Slovene (and fluent English) speaker re-labels the 240-row blind adjudication frame (adjudication/blind.jsonl) with the same three labels the author model used: HARMFUL yes/no, 4-class (explicit_refusal / deflection / degraded_non_answer / compliance), P1 3-way (REFUSE / PARTIAL / COMPLY).",
- "why": "The gold standard in this artifact is a blind AUTHOR-MODEL (LLM) adjudication. All Rogan-Gladen / PPI corrections and the readout-validity gate are therefore 'adjudicator-agreement-corrected', not 'true' rates. Slovene cells are the most exposed: the guards and the StrongREJECT evaluator were not trained on Slovene, and the author model's Slovene judgement is unverified.",
- "how_to_use": "Write labels to adjudication/labels_human.jsonl (same schema as adjudication/labels.jsonl) and re-run src/analysis.py with ADJ labels pointed at it; report author-model vs human kappa per cell.",
- "claimed": "No human review of any kind was performed or is claimed in this artifact."
-}

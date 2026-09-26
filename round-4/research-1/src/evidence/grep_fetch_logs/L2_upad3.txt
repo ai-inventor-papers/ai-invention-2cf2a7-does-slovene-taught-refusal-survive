@@ -1,9 +1,0 @@
-# 2026-09-24T18:40:02Z https://arxiv.org/pdf/2608.29936 :: language (identity )?features?.{0,60}(amplif|steer|add|inject)|(amplif|steer|add|inject).{0,60}language (identity )?feature|induce(s|d)? refusal
-warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
-URL: https://arxiv.org/pdf/2608.29936
-Type: PDF
-Pattern: language (identity )?features?.{0,60}(amplif|steer|add|inject)|(amplif|steer|add|inject).{0,60}language (identity )?feature|induce(s|d)? refusal (0 matches in 68022 chars)
-
---- Content ---
-
-No matches found for pattern: language (identity )?features?.{0,60}(amplif|steer|add|inject)|(amplif|steer|add|inject).{0,60}language (identity )?feature|induce(s|d)? refusal

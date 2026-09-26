@@ -1,36 +1,0 @@
-03:57:34|INFO   |SR local: 14771 rows to score (814 rows lack an English text -> TTJ first)
-/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_5/gen_art/gen_art_experiment_16/.venv/lib/python3.12/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
-  warnings.warn(
-Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:08<00:08,  8.12s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:08<00:00,  3.47s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:08<00:00,  4.17s/it]
-04:00:08|WARNING|SR OOM -> bs 12
-04:00:29|INFO   |SR local 1000/14771 67s
-04:00:59|WARNING|SR OOM -> bs 12
-04:01:35|INFO   |SR local 2000/14771 133s
-04:02:17|WARNING|SR OOM -> bs 12
-04:02:39|INFO   |SR local 3000/14771 197s
-04:03:13|WARNING|SR OOM -> bs 12
-04:03:44|INFO   |SR local 4000/14771 262s
-04:04:42|WARNING|SR OOM -> bs 12
-04:04:46|INFO   |SR local 5000/14771 324s
-04:04:59|WARNING|SR OOM -> bs 12
-04:05:55|INFO   |SR local 6000/14771 393s
-04:06:28|WARNING|SR OOM -> bs 12
-04:07:01|INFO   |SR local 7000/14771 460s
-04:07:45|WARNING|SR OOM -> bs 12
-04:08:10|INFO   |SR local 8000/14771 528s
-04:08:45|WARNING|SR OOM -> bs 12
-04:09:19|INFO   |SR local 9000/14771 597s
-04:09:58|WARNING|SR OOM -> bs 12
-04:10:30|INFO   |SR local 10000/14771 668s
-04:11:12|WARNING|SR OOM -> bs 12
-04:11:39|INFO   |SR local 11000/14771 737s
-04:12:19|WARNING|SR OOM -> bs 12
-04:12:47|INFO   |SR local 12000/14771 805s
-04:13:53|INFO   |SR local 13000/14771 871s
-04:14:11|WARNING|SR OOM -> bs 12
-04:15:01|INFO   |SR local 14000/14771 939s
-04:15:43|WARNING|SR OOM -> bs 12
-04:15:56|INFO   |SR local 14771/14771 994s
-04:16:16|WARNING|SR OOM -> bs 12
-04:16:19|INFO   |SR local round-trip 300
-exit 0

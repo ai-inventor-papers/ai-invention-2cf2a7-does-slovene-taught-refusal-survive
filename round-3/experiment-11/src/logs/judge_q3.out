@@ -1,10 +1,0 @@
-11:10:48|INFO   |qwen3_14b final: 4628 to label (8800 done)
-Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:  12%|█▎        | 1/8 [00:12<01:28, 12.59s/it]Loading checkpoint shards:  25%|██▌       | 2/8 [00:25<01:16, 12.75s/it]Loading checkpoint shards:  38%|███▊      | 3/8 [00:37<01:03, 12.63s/it]Loading checkpoint shards:  50%|█████     | 4/8 [00:50<00:50, 12.58s/it]Loading checkpoint shards:  62%|██████▎   | 5/8 [01:02<00:37, 12.45s/it]Loading checkpoint shards:  75%|███████▌  | 6/8 [01:14<00:24, 12.28s/it]Loading checkpoint shards:  88%|████████▊ | 7/8 [01:26<00:12, 12.28s/it]Loading checkpoint shards: 100%|██████████| 8/8 [01:31<00:00,  9.98s/it]Loading checkpoint shards: 100%|██████████| 8/8 [01:31<00:00, 11.49s/it]
-11:14:04|INFO   |loaded Qwen/Qwen3-14B@40c06982 in 111s vram 10.0GB
-11:17:49|INFO   |  800/800 224s (3.6/s)
-11:17:49|INFO   |qwen3_14b final: 800/4628 in 225s (3.55/s)
-11:21:31|INFO   |  800/800 222s (3.6/s)
-11:21:31|INFO   |qwen3_14b final: 1600/4628 in 447s (3.58/s)
-11:25:18|INFO   |  800/800 227s (3.5/s)
-11:25:18|INFO   |qwen3_14b final: 2400/4628 in 674s (3.56/s)
-11:25:18|WARNING|qwen3_14b final: judge deadline reached at 2400/4628; rest unlabelled

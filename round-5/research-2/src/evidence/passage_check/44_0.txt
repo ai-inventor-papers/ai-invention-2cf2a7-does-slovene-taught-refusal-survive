@@ -1,8 +1,0 @@
-warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
-URL: https://raw.githubusercontent.com/p-e-w/heretic/master/README.md
-Type: HTML
-Pattern: The Heretic version, generated without any human effort, ach (1 matches in 17147 chars)
-
---- Content ---
-
-2869:...etic) (ours)** | **3/100** | **0.16** | The Heretic version, generated without any human effort, achieves the same level of refusal suppress...

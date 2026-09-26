@@ -1,31 +1,0 @@
-2026-09-23 15:37:11.491 | INFO     | __main__:main:86 - model gemma: steering/extraction layer L_pt=22
-/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_1/gen_art/gen_art_experiment_2/.venv/lib/python3.12/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
-  warnings.warn(
-Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:06<00:26,  6.69s/it]Loading checkpoint shards:  40%|████      | 2/5 [00:14<00:21,  7.28s/it]Loading checkpoint shards:  60%|██████    | 3/5 [00:22<00:15,  7.54s/it]Loading checkpoint shards:  80%|████████  | 4/5 [00:29<00:07,  7.57s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:36<00:00,  7.27s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:36<00:00,  7.32s/it]
-2026-09-23 15:39:28.392 | INFO     | common:load_model:93 - loaded google/gemma-3-12b-it@96b6f1eccf38110c56df3a15bffe176da04bfd80 bits=4 in 58s; GPU mem 8.4 GB
-2026-09-23 15:39:29.313 | INFO     | __main__:build_dir_tab:150 - cos: pt~gb +0.628, pt~own_pooled -0.018, pt~own_en +0.032, pt~own_sl -0.061, pt~langid +0.216, gb~own_pooled -0.631, gb~own_en -0.521, gb~own_sl -0.711, gb~langid +0.879, own_pooled~own_en +0.981, own_pooled~own_sl +0.984, own_pooled~langid -0.783, own_en~own_sl +0.932, own_en~langid -0.670, own_sl~langid -0.861
-2026-09-23 15:39:42.338 | INFO     | __main__:main:184 - s KV-reuse vs concat: max |diff| 0.2499 -> PASS
-2026-09-23 15:43:35.148 | INFO     | __main__:main:188 - s on 4692 prompts (cache) in 233s
-2026-09-23 15:44:21.906 | INFO     | common:generate:312 -   gen batch 20/140 (110 seqs) 47s, ETA 280s
-2026-09-23 15:45:16.430 | INFO     | common:generate:312 -   gen batch 40/140 (377 seqs) 101s, ETA 253s
-2026-09-23 15:46:08.051 | INFO     | common:generate:312 -   gen batch 60/140 (570 seqs) 153s, ETA 204s
-2026-09-23 15:46:53.886 | INFO     | common:generate:312 -   gen batch 80/140 (683 seqs) 199s, ETA 149s
-2026-09-23 15:47:39.900 | INFO     | common:generate:312 -   gen batch 100/140 (748 seqs) 245s, ETA 98s
-2026-09-23 15:48:24.885 | INFO     | common:generate:312 -   gen batch 120/140 (779 seqs) 290s, ETA 48s
-2026-09-23 15:49:10.107 | INFO     | common:generate:312 -   gen batch 140/140 (800 seqs) 335s, ETA 0s
-2026-09-23 15:49:10.122 | INFO     | __main__:main:201 - SCORE-400 generation 800 in 335s
-2026-09-23 15:49:10.389 | INFO     | __main__:build_dir_tab:150 - cos: pt~gb +0.628, pt~own_pooled -0.018, pt~own_en +0.032, pt~own_sl -0.061, pt~langid +0.216, gb~own_pooled -0.631, gb~own_en -0.521, gb~own_sl -0.711, gb~langid +0.879, own_pooled~own_en +0.981, own_pooled~own_sl +0.984, own_pooled~langid -0.783, own_en~own_sl +0.932, own_en~langid -0.670, own_sl~langid -0.861
-2026-09-23 15:49:13.496 | INFO     | __main__:main:242 - norm profile at L=22: {'n_positions': 9465, 'mean': 50056.4921875, 'median': 51778.140625, 'p10': 34118.57421875, 'p90': 62287.18359375, 'p99': 76874.8828125, 'max': 77390.5390625, 'mean_first6_nonBOS_positions_bucket0': [15589.0712890625, 59470.51953125, 76874.59375, 60491.19921875, 54355.64453125, 54343.21875], 'own_pooled_raw_norm': 3110.77490234375, 'n_bar': 50057.84601822504}
-2026-09-23 15:50:38.397 | INFO     | __main__:main:287 - induction none: 200 gens in 85s; R by k: -1:0.03 | elapsed 1.4 min, projected total 150.0 min
-2026-09-23 15:54:25.615 | INFO     | __main__:main:287 - induction pt: 3000 gens in 227s; R by k: -4:0.04 -3:0.06 -2:0.09 0:0.15 1:0.28 2:0.24 3:0.01 4:0.00 5:0.00 6:0.00 7:0.00 8:0.00 9:0.00 10:0.00 11:0.00 | elapsed 5.2 min, projected total 34.5 min
-2026-09-23 15:58:12.681 | INFO     | __main__:main:287 - induction own_pooled: 3000 gens in 227s; R by k: -4:0.07 -3:0.12 -2:0.21 0:0.54 1:0.81 2:0.96 3:0.97 4:0.75 5:0.16 6:0.05 7:0.21 8:0.00 9:0.00 10:0.00 11:0.00 | elapsed 9.0 min, projected total 30.7 min
-2026-09-23 16:01:59.961 | INFO     | __main__:main:287 - induction langid: 3000 gens in 227s; R by k: -4:0.03 -3:0.03 -2:0.04 0:0.04 1:0.04 2:0.04 3:0.03 4:0.06 5:0.10 6:0.25 7:0.25 8:0.00 9:0.00 10:0.00 11:0.00 | elapsed 12.8 min, projected total 29.4 min
-2026-09-23 16:03:12.464 | INFO     | __main__:main:287 - induction rand0: 600 gens in 72s; R by k: -4:0.03 -3:0.03 -2:0.03 0:0.03 1:0.03 2:0.03 3:0.00 4:0.00 5:0.00 6:0.00 7:0.00 8:0.00 9:0.00 10:0.00 11:0.00 | elapsed 14.0 min, projected total 30.2 min
-2026-09-23 16:04:24.878 | INFO     | __main__:main:287 - induction rand1: 600 gens in 72s; R by k: -4:0.03 -3:0.03 -2:0.03 0:0.03 1:0.03 2:0.00 3:0.00 4:0.00 5:0.00 6:0.00 7:0.00 8:0.00 9:0.00 10:0.00 11:0.00 | elapsed 15.2 min, projected total 31.0 min
-2026-09-23 16:05:37.173 | INFO     | __main__:main:287 - induction rand2: 600 gens in 72s; R by k: -4:0.03 -3:0.03 -2:0.03 0:0.03 1:0.00 2:0.00 3:0.00 4:0.00 5:0.00 6:0.00 7:0.00 8:0.00 9:0.00 10:0.00 11:0.00 | elapsed 16.4 min, projected total 31.6 min
-2026-09-23 16:06:49.076 | INFO     | __main__:main:287 - induction rand3: 600 gens in 72s; R by k: -4:0.00 -3:0.00 -2:0.03 0:0.03 1:0.05 2:0.05 3:0.05 4:0.00 5:0.00 6:0.00 7:0.00 8:0.00 9:0.00 10:0.00 11:0.00 | elapsed 17.6 min, projected total 32.2 min
-2026-09-23 16:08:01.059 | INFO     | __main__:main:287 - induction rand4: 600 gens in 72s; R by k: -4:0.03 -3:0.03 -2:0.03 0:0.07 1:0.28 2:0.05 3:0.00 4:0.00 5:0.00 6:0.00 7:0.00 8:0.00 9:0.00 10:0.00 11:0.00 | elapsed 18.8 min, projected total 32.7 min
-2026-09-23 16:11:48.397 | INFO     | __main__:main:287 - induction gb: 3000 gens in 227s; R by k: -4:0.03 -3:0.05 -2:0.06 0:0.06 1:0.10 2:0.17 3:0.28 4:0.13 5:0.00 6:0.00 7:0.00 8:0.00 9:0.00 10:0.00 11:0.00 | elapsed 22.6 min, projected total 31.5 min
-2026-09-23 16:15:36.063 | INFO     | __main__:main:287 - induction own_en: 3000 gens in 227s; R by k: -4:0.10 -3:0.14 -2:0.29 0:0.67 1:0.87 2:0.98 3:0.99 4:0.49 5:0.23 6:0.10 7:0.00 8:0.00 9:0.00 10:0.00 11:0.00 | elapsed 26.4 min, projected total 30.7 min
-2026-09-23 16:19:22.944 | INFO     | __main__:main:287 - induction own_sl: 3000 gens in 227s; R by k: -4:0.07 -3:0.10 -2:0.16 0:0.33 1:0.66 2:0.84 3:0.97 4:0.99 5:0.55 6:0.07 7:0.01 8:0.00 9:0.00 10:0.00 11:0.00 | elapsed 30.2 min, projected total 30.2 min
-2026-09-23 16:19:23.161 | INFO     | __main__:main:298 - done

@@ -1,1 +1,0 @@
-{"primary_readout": "local/j1", "preregistered_primary_judge": "google/gemini-2.5-flash", "reason": "A4 OpenRouter key limit", "second_reader": "google/gemini-2.5-flash on Gemma DEV rows + fixed 40-item BODY validation subsample"}

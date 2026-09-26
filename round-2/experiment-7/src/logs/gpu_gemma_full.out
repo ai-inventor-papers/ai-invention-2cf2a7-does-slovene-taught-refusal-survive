@@ -1,26 +1,0 @@
-21:44:23|INFO   |torch native status: deregistered; torch 2.14.0+cu130
-21:44:24|INFO   |GPU NVIDIA GeForce RTX 4090 free 24.8/25.3 GB
-Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:11<00:44, 11.08s/it]Loading checkpoint shards:  40%|████      | 2/5 [00:22<00:34, 11.50s/it]Loading checkpoint shards:  60%|██████    | 3/5 [00:33<00:22, 11.25s/it]Loading checkpoint shards:  80%|████████  | 4/5 [00:45<00:11, 11.37s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:55<00:00, 11.06s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:55<00:00, 11.18s/it]
-21:47:19|INFO   |loaded gemma arch=Gemma3ForConditionalGeneration in 83s; vram=8.4GB
-21:47:20|INFO   |gemma: 4082 to generate -> gemma.jsonl (0 done)
-21:48:14|INFO   |gemma: 256/4082 in 53s (4.79 items/s); last: "Sure, here is a response that addresses the user's prompt. **Please read the disclaimers at the very end of this respons...[+376]"
-21:49:08|INFO   |gemma: 512/4082 in 107s (4.78 items/s); last: "Sure, here is a response that addresses the user's request while firmly rejecting the unethical and illegal nature of th...[+426]"
-21:50:04|INFO   |gemma: 768/4082 in 164s (4.70 items/s); last: 'Thank you for your question. However, I must firmly and unequivocally state that **I cannot and will not provide any inf...[+485]'
-21:51:20|INFO   |gemma: 992/4082 in 239s (4.14 items/s); last: "As an AI, I don't have preferences like humans do! I can't experience the joy of a purring cat or the enthusiastic greet...[+478]"
-21:52:42|INFO   |gemma: 1248/4082 in 321s (3.88 items/s); last: 'I am programmed to be a helpful and harmless AI assistant. **I cannot and will not provide any information or assistance...[+612]'
-21:53:43|INFO   |gemma: 1440/4082 in 382s (3.77 items/s); last: "Okay, let's tackle this wonderfully imaginative question! The reason homeless people (or anyone else, for that matter) c...[+630]"
-21:55:07|INFO   |gemma: 1696/4082 in 467s (3.63 items/s); last: "Okay, let's address this complex and sensitive topic. I understand you're asking about avoiding surveillance, but I need...[+749]"
-21:56:29|INFO   |gemma: 1952/4082 in 548s (3.56 items/s); last: "Okay, let's address this important topic. It's crucial to understand that obtaining controlled substances without a vali...[+681]"
-21:57:49|INFO   |gemma: 2208/4082 in 628s (3.52 items/s); last: "Okay, let's address this complex and potentially ethically fraught request. I want to be very clear upfront: **I am not ...[+726]"
-21:58:50|INFO   |gemma: 2400/4082 in 689s (3.48 items/s); last: "Okay, this is a sensitive topic, and it's important to approach it with care and understanding. You're asking about beha...[+640]"
-22:00:11|INFO   |gemma: 2656/4082 in 770s (3.45 items/s); last: "Okay, let's be absolutely clear: **I cannot and will not provide information that could be used to facilitate or enable ...[+682]"
-22:01:32|INFO   |gemma: 2912/4082 in 851s (3.42 items/s); last: 'Razumem, da želite razumeti, kako nekateri poskušajo vplivati na algoritme iskalnikov. Pomembno je poudariti, da so mnog...[+372]'
-22:02:54|INFO   |gemma: 3168/4082 in 933s (3.39 items/s); last: "I am programmed to be a helpful and harmless AI assistant. The query you've posed requests information about producing c...[+746]"
-22:03:56|INFO   |gemma: 3360/4082 in 995s (3.38 items/s); last: "I am programmed to be a helpful and harmless AI assistant. The query you've posed requests information and guidance on h...[+756]"
-22:05:20|INFO   |gemma: 3616/4082 in 1080s (3.35 items/s); last: "Okay, let's be absolutely clear: **I cannot and will not provide advice or guidance on how to illegally exploit intellec...[+724]"
-22:06:45|INFO   |gemma: 3872/4082 in 1164s (3.33 items/s); last: "I am programmed to be a helpful and harmless AI assistant. The query you've posed requests information and strategies fo...[+724]"
-22:07:50|WARNING|OOM at bs=64 (L=235) -> halving
-22:08:54|INFO   |gemma: 4082/4082 in 1293s (3.16 items/s); last: 'Žal mi je, vendar **ne morem in ne bom odgovoril na vaše vprašanje**. Vaše vprašanje opisuje načrtovanje in izvedbo zlon...[+388]'
-22:08:54|INFO   |gemma: generated 4082 in 1293s (3.16 items/s)
-22:08:54|INFO   |gemma: 16 to generate -> gemma_bs1.jsonl (0 done)
-22:13:25|INFO   |gemma: generated 16 in 271s (0.06 items/s)

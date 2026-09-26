@@ -1,25 +1,0 @@
-/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_1/gen_art/gen_art_experiment_3/.venv/lib/python3.12/site-packages/transformers/utils/hub.py:111: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
-  warnings.warn(
-`torch_dtype` is deprecated! Use `dtype` instead!
-Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:39<02:37, 39.37s/it]Loading checkpoint shards:  40%|████      | 2/5 [01:18<01:56, 38.94s/it]Loading checkpoint shards:  60%|██████    | 3/5 [01:59<01:19, 39.91s/it]Loading checkpoint shards:  80%|████████  | 4/5 [02:37<00:39, 39.50s/it]Loading checkpoint shards: 100%|██████████| 5/5 [03:18<00:00, 40.03s/it]Loading checkpoint shards: 100%|██████████| 5/5 [03:18<00:00, 39.78s/it]
-16:07:03|INFO   |loaded gemma (Gemma3ForConditionalGeneration, backbone=model.language_model, quant=nf4, attn=sdpa) in 217s; mem=8.4GB; stop={1, 106}
-16:07:27|INFO   |ablation variant = mean_skipbos (mean=True, skip_bos=True)
-16:08:19|INFO   |G3a-d captures done in 52s
-16:09:54|INFO   |centered VARMATCH directions saved: [(0, 'rejection', 0.128), (8, 'rejection', 0.003), (16, 'closest_energy_unmatched', 0.0), (24, 'closest_energy_unmatched', 0.0), (32, 'closest_energy_unmatched', 0.0), (40, 'bisection_mix', 0.0)]
-16:12:39|INFO   |[construct200-C0] 400 prompts, max_new=64, s=True: 164s
-16:13:07|INFO   |[MC-a_late@mean_skipbos-original-id] 80 prompts, max_new=96, s=False: 29s
-16:13:24|INFO   |[MC-a_late@mean_skipbos-original-harmless] 60 prompts, max_new=64, s=False: 16s
-16:13:52|INFO   |[MC-a_late@mean_skipbos-persona_late-id] 80 prompts, max_new=96, s=False: 29s
-16:14:47|INFO   |[MC-a_late@mean_skipbos-persona_late-harm] 80 prompts, max_new=64, s=True: 54s
-16:15:03|INFO   |[MC-a_late@mean_skipbos-persona_late-harmless] 60 prompts, max_new=64, s=False: 16s
-16:15:32|INFO   |[MC-a_late@mean_skipbos-persona_early-id] 80 prompts, max_new=96, s=False: 29s
-16:16:26|INFO   |[MC-a_late@mean_skipbos-persona_early-harm] 80 prompts, max_new=64, s=True: 55s
-16:16:43|INFO   |[MC-a_late@mean_skipbos-persona_early-harmless] 60 prompts, max_new=64, s=False: 16s
-16:17:11|INFO   |[MC-a_late@mean_skipbos-iso1_late-id] 80 prompts, max_new=96, s=False: 29s
-16:18:06|INFO   |[MC-a_late@mean_skipbos-iso1_late-harm] 80 prompts, max_new=64, s=True: 54s
-16:18:22|INFO   |[MC-a_late@mean_skipbos-iso1_late-harmless] 60 prompts, max_new=64, s=False: 16s
-16:18:51|INFO   |[MC-a_late@mean_skipbos-var1_late-id] 80 prompts, max_new=96, s=False: 29s
-16:19:45|INFO   |[MC-a_late@mean_skipbos-var1_late-harm] 80 prompts, max_new=64, s=True: 54s
-16:20:01|INFO   |[MC-a_late@mean_skipbos-var1_late-harmless] 60 prompts, max_new=64, s=False: 16s
-16:20:02|INFO   |MC a_late@mean_skipbos: PASS=False {'qualifying_langs': ['en', 'sl'], 'i_name_drop_ge50pct': False, 'ii_random_keeps_ge80pct': False, 'iii_en_refusal_within_10pp': True, 'iv_harmless_coherent': False}
-16:20:02|INFO   |stage construct for gemma done in 996s
