@@ -1,0 +1,66 @@
+{
+ "ALL": {
+  "n": 586,
+  "kappa_R": 0.425,
+  "kappa_3way": 0.381,
+  "agree_R": 0.705,
+  "rate_gold_R": 0.471,
+  "rate_judge_R": 0.725
+ },
+ "ALL_edited": {
+  "n": 245,
+  "kappa_R": 0.26,
+  "kappa_3way": 0.271,
+  "agree_R": 0.62,
+  "rate_gold_R": 0.478,
+  "rate_judge_R": 0.792
+ },
+ "gams3_it|en|orig": {
+  "n": 147,
+  "kappa_R": 0.37,
+  "kappa_3way": 0.323,
+  "agree_R": 0.653,
+  "rate_gold_R": 0.34,
+  "rate_judge_R": 0.66
+ },
+ "gams3_it|sl|orig": {
+  "n": 134,
+  "kappa_R": 0.58,
+  "kappa_3way": 0.49,
+  "agree_R": 0.784,
+  "rate_gold_R": 0.373,
+  "rate_judge_R": 0.56
+ },
+ "gemma_it|en|edited": {
+  "n": 140,
+  "kappa_R": 0.16,
+  "kappa_3way": 0.195,
+  "agree_R": 0.507,
+  "rate_gold_R": 0.321,
+  "rate_judge_R": 0.743
+ },
+ "gemma_it|en|orig": {
+  "n": 40,
+  "kappa_R": 1.0,
+  "kappa_3way": 0.494,
+  "agree_R": 1.0,
+  "rate_gold_R": 0.975,
+  "rate_judge_R": 0.975
+ },
+ "gemma_it|sl|edited": {
+  "n": 105,
+  "kappa_R": 0.378,
+  "kappa_3way": 0.346,
+  "agree_R": 0.771,
+  "rate_gold_R": 0.686,
+  "rate_judge_R": 0.857
+ },
+ "gemma_it|sl|orig": {
+  "n": 20,
+  "kappa_R": NaN,
+  "kappa_3way": NaN,
+  "agree_R": 1.0,
+  "rate_gold_R": 1.0,
+  "rate_judge_R": 1.0
+ }
+}

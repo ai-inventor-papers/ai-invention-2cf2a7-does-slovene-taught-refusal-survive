@@ -1,0 +1,207 @@
+{
+ "judge_kappa_q_vs_m": {},
+ "language_consistency": {
+  "gams3_it|en|edit": {
+   "rate": 1.0,
+   "pass": true
+  },
+  "gams3_it|en|lam": {
+   "rate": 1.0,
+   "pass": true
+  },
+  "gams3_it|en|orig": {
+   "rate": 1.0,
+   "pass": true
+  },
+  "gams3_it|hu|edit": {
+   "rate": 0.9919,
+   "pass": true
+  },
+  "gams3_it|hu|orig": {
+   "rate": 0.9784,
+   "pass": true
+  },
+  "gams3_it|sl|edit": {
+   "rate": 1.0,
+   "pass": true
+  },
+  "gams3_it|sl|lam": {
+   "rate": 1.0,
+   "pass": true
+  },
+  "gams3_it|sl|orig": {
+   "rate": 1.0,
+   "pass": true
+  },
+  "gemma_it|en|edit": {
+   "rate": 1.0,
+   "pass": true
+  },
+  "gemma_it|en|lam": {
+   "rate": 1.0,
+   "pass": true
+  },
+  "gemma_it|en|orig": {
+   "rate": 1.0,
+   "pass": true
+  },
+  "gemma_it|hu|edit": {
+   "rate": 1.0,
+   "pass": true
+  },
+  "gemma_it|hu|orig": {
+   "rate": 1.0,
+   "pass": true
+  },
+  "gemma_it|sl|edit": {
+   "rate": 0.9891,
+   "pass": true
+  },
+  "gemma_it|sl|lam": {
+   "rate": 0.996,
+   "pass": true
+  },
+  "gemma_it|sl|orig": {
+   "rate": 0.9974,
+   "pass": true
+  }
+ },
+ "degenerate": {
+  "gams3_it|edit|1": {
+   "rate": 0.0006,
+   "pass": true
+  },
+  "gams3_it|lam|0.1": {
+   "rate": 0.0,
+   "pass": true
+  },
+  "gams3_it|lam|0.2": {
+   "rate": 0.0,
+   "pass": true
+  },
+  "gams3_it|lam|0.3": {
+   "rate": 0.0,
+   "pass": true
+  },
+  "gams3_it|lam|0.4": {
+   "rate": 0.0,
+   "pass": true
+  },
+  "gams3_it|lam|0.5": {
+   "rate": 0.0,
+   "pass": true
+  },
+  "gams3_it|lam|0.6": {
+   "rate": 0.0,
+   "pass": true
+  },
+  "gams3_it|lam|0.8": {
+   "rate": 0.0,
+   "pass": true
+  },
+  "gams3_it|orig|0": {
+   "rate": 0.0003,
+   "pass": true
+  },
+  "gemma_it|edit|1": {
+   "rate": 0.0014,
+   "pass": true
+  },
+  "gemma_it|lam|0.1": {
+   "rate": 0.002,
+   "pass": true
+  },
+  "gemma_it|lam|0.2": {
+   "rate": 0.002,
+   "pass": true
+  },
+  "gemma_it|lam|0.3": {
+   "rate": 0.0,
+   "pass": true
+  },
+  "gemma_it|lam|0.4": {
+   "rate": 0.0,
+   "pass": true
+  },
+  "gemma_it|lam|0.5": {
+   "rate": 0.0,
+   "pass": true
+  },
+  "gemma_it|lam|0.6": {
+   "rate": 0.0,
+   "pass": true
+  },
+  "gemma_it|lam|0.8": {
+   "rate": 0.0,
+   "pass": true
+  },
+  "gemma_it|orig|0": {
+   "rate": 0.0007,
+   "pass": true
+  }
+ },
+ "lambda1_EN_cut": {
+  "gemma_it|refuseu_x": {
+   "rel_cut": 0.3418,
+   "pass": false
+  },
+  "gams3_it|refuseu_x": {
+   "rel_cut": 0.4011,
+   "pass": false
+  }
+ },
+ "belebele": {
+  "gemma_it|en": {
+   "acc_orig": 0.93,
+   "acc_edit": 0.93,
+   "headroom_change": 0.0,
+   "catastrophic": false,
+   "nll_orig": 0.58574,
+   "nll_edit": 0.58548
+  },
+  "gemma_it|sl": {
+   "acc_orig": 0.885,
+   "acc_edit": 0.885,
+   "headroom_change": 0.0,
+   "catastrophic": false,
+   "nll_orig": 0.79773,
+   "nll_edit": 0.79831
+  },
+  "gemma_it|hu": {
+   "acc_orig": 0.88,
+   "acc_edit": 0.88,
+   "headroom_change": 0.0,
+   "catastrophic": false,
+   "nll_orig": 0.75212,
+   "nll_edit": 0.75188
+  },
+  "gams3_it|en": {
+   "acc_orig": 0.905,
+   "acc_edit": 0.91,
+   "headroom_change": 0.0076,
+   "catastrophic": false,
+   "nll_orig": 0.51152,
+   "nll_edit": 0.51182
+  },
+  "gams3_it|sl": {
+   "acc_orig": 0.875,
+   "acc_edit": 0.87,
+   "headroom_change": -0.008,
+   "catastrophic": false,
+   "nll_orig": 0.59724,
+   "nll_edit": 0.59806
+  },
+  "gams3_it|hu": {
+   "acc_orig": 0.87,
+   "acc_edit": 0.825,
+   "headroom_change": -0.0726,
+   "catastrophic": false,
+   "nll_orig": 0.60607,
+   "nll_edit": 0.60646
+  }
+ },
+ "l3_chrf_median": {
+  "value": 74.34,
+  "pass": true
+ }
+}

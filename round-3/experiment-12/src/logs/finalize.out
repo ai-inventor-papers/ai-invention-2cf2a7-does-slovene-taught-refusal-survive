@@ -1,0 +1,58 @@
+/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_3/gen_art/gen_art_experiment_12/src/analyze.py:189: RuntimeWarning: invalid value encountered in subtract
+  b = macro_boot[(m, c, l)][0] - macro_boot[(m, "rand_nm_j1", l)][0]
+/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_3/gen_art/gen_art_experiment_12/src/analyze.py:193: RuntimeWarning: invalid value encountered in subtract
+  bA = (macro_boot[(m, c, "sl")][0] - macro_boot[(m, c, "en")][0]) - \
+11:14:34|INFO   |utility conds: ['E_art2', 'E_iter1', 'rand_nm_j1', 'rand_nm_j2']
+11:14:39|INFO   |analysis written
+11:14:39|INFO   |GATE gams3_it/E_art2: OK {"en": [0.0199, "OK"], "sl": [0.0089, "OK"]}
+11:14:39|INFO   |GATE gams3_it/E_iter1: OK {"en": [0.018, "OK"], "sl": [-0.0065, "OK"]}
+11:14:39|INFO   |GATE gams3_it/rand_nm_j1: OK {"en": [0.0034, "OK"], "sl": [0.03, "OK"]}
+11:14:39|INFO   |GATE gams3_it/E_iter1_l0.5: OK {"en": [0.0323, "OK"], "sl": [0.0098, "OK"]}
+11:14:39|INFO   |GATE gams3_it/E_iter1_l1.5: OK {"en": [0.0497, "OK"], "sl": [0.0041, "OK"]}
+11:14:39|INFO   |GATE gams3_it/E_iter1_l2.0: OK {"en": [0.027, "OK"], "sl": [0.0423, "OK"]}
+11:14:39|INFO   |GATE gemma_it/E_art2: OK {"en": [-0.0163, "OK"], "sl": [-0.0491, "OK"]}
+11:14:39|INFO   |GATE gemma_it/E_iter1: OK {"en": [-0.0077, "OK"], "sl": [-0.0218, "OK"]}
+11:14:39|INFO   |GATE gemma_it/rand_nm_j1: OK {"en": [-0.0085, "OK"], "sl": [-0.0016, "OK"]}
+11:14:39|INFO   |GATE gemma_it/rand_nm_j2: OK {"en": [0.0067, "OK"], "sl": [0.0075, "OK"]}
+11:14:39|INFO   |GATE gemma_it/E_iter1_l0.5: OK {"en": [0.0005, "OK"], "sl": [-0.0262, "OK"]}
+11:14:39|INFO   |GATE gemma_it/E_iter1_l1.5: OK {"en": [-0.0134, "OK"], "sl": [-0.0359, "OK"]}
+11:14:39|INFO   |GATE gemma_it/E_iter1_l2.0: POSSIBLY_CATASTROPHIC {"en": [-0.0129, "OK"], "sl": [0.0315, "POSSIBLY_CATASTROPHIC"]}
+audit: 346 checks, 0 failed; placebos centred: True
+  cond_swap H gams3_it/E_iter1/en: obs=-0.0180 perm_mean=-0.0001 sd=0.0107 p=0.093
+  cond_swap H gams3_it/E_iter1/sl: obs=0.0065 perm_mean=0.0010 sd=0.0147 p=0.668
+  cond_swap H gemma_it/E_iter1/en: obs=0.0077 perm_mean=0.0001 sd=0.0079 p=0.346
+  cond_swap H gemma_it/E_iter1/sl: obs=0.0218 perm_mean=0.0014 sd=0.0231 p=0.335
+  lang_swap A gams3_it/E_iter1: obs=0.0245 perm_mean=-0.0001 sd=0.0165 p=0.140
+  lang_swap A gemma_it/E_iter1: obs=0.0141 perm_mean=0.0003 sd=0.0201 p=0.499
+  model_swap I E_iter1: obs=0.0104 perm_mean=0.0007 sd=0.0293 p=0.746
+  cond_swap H gams3_it/E_art2/en: obs=-0.0199 perm_mean=0.0004 sd=0.0113 p=0.075
+  cond_swap H gams3_it/E_art2/sl: obs=-0.0088 perm_mean=0.0011 sd=0.0160 p=0.577
+  cond_swap H gemma_it/E_art2/en: obs=0.0163 perm_mean=0.0000 sd=0.0095 p=0.085
+  cond_swap H gemma_it/E_art2/sl: obs=0.0491 perm_mean=0.0018 sd=0.0238 p=0.030
+  lang_swap A gams3_it/E_art2: obs=0.0110 perm_mean=-0.0006 sd=0.0177 p=0.520
+  lang_swap A gemma_it/E_art2: obs=0.0327 perm_mean=0.0001 sd=0.0206 p=0.113
+  model_swap I E_art2: obs=-0.0217 perm_mean=0.0003 sd=0.0306 p=0.465
+p0 table written; RQ2 status PENDING
+method_out datasets: 19 examples: 6400 | predicted-index vs lm-eval correctness consistency 36600/36600
+ok fig_forest
+ok fig_lambda
+ok fig_kl
+ok fig_bele
+Format: exp_gen_sol_out
+Validation PASSED
+variants written
+Validation PASSED
+Validation PASSED
+Validation PASSED
+11M full_method_out.json
+11M method_out.json
+153K mini_method_out.json
+136K preview_method_out.json
+319K results/analysis.json
+66K results/audit.json
+874 results/competence_covariates.json
+3.6K results/cuts.json
+23K results/gates.json
+108K results/kl_footprint.json
+6.0K results/p0_table.json
+153K results/utility_table.json

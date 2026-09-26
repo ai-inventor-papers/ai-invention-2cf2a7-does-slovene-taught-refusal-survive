@@ -1,0 +1,20 @@
+{
+ "index": 16,
+ "values": [
+  0.22,
+  0.28260767459869385
+ ],
+ "params": {
+  "direction_scope": "per layer",
+  "direction_index": 19.296943524236,
+  "attn.o_proj.max_weight": 0.8918908902013536,
+  "attn.o_proj.max_weight_position": 28.266824889368294,
+  "attn.o_proj.min_weight": 0.9183284421317637,
+  "attn.o_proj.min_weight_distance": 14.36753983470964,
+  "mlp.down_proj.max_weight": 1.1655713295600512,
+  "mlp.down_proj.max_weight_position": 38.73565577865539,
+  "mlp.down_proj.min_weight": 0.8478917800269873,
+  "mlp.down_proj.min_weight_distance": 27.558618593181123
+ },
+ "lora_sha1": "e354044ab5697aa0d54514e547d9d9a81176f680"
+}

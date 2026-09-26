@@ -1,0 +1,165 @@
+{
+  "judge": "local/qwen3-14b",
+  "layer": {
+    "L_star": 16,
+    "candidates": [
+      {
+        "L": 16,
+        "refusal_k1": 0.20833333333333334,
+        "refusal_k2": 0.16666666666666666,
+        "score": 0.1875,
+        "degenerate_text": 0.0,
+        "lang_ok": 1.0,
+        "passes": true
+      },
+      {
+        "L": 20,
+        "refusal_k1": 0.20833333333333334,
+        "refusal_k2": 0.16666666666666666,
+        "score": 0.1875,
+        "degenerate_text": 0.0,
+        "lang_ok": 1.0,
+        "passes": true
+      },
+      {
+        "L": 24,
+        "refusal_k1": 0.20833333333333334,
+        "refusal_k2": 0.16666666666666666,
+        "score": 0.1875,
+        "degenerate_text": 0.22916666666666666,
+        "lang_ok": 1.0,
+        "passes": false
+      },
+      {
+        "L": 28,
+        "refusal_k1": 0.20833333333333334,
+        "refusal_k2": 0.16666666666666666,
+        "score": 0.1875,
+        "degenerate_text": 0.3958333333333333,
+        "lang_ok": 1.0,
+        "passes": false
+      },
+      {
+        "L": 32,
+        "refusal_k1": 0.20833333333333334,
+        "refusal_k2": 0.16666666666666666,
+        "score": 0.1875,
+        "degenerate_text": 0.7291666666666666,
+        "lang_ok": 0.9791666666666666,
+        "passes": false
+      },
+      {
+        "L": 36,
+        "refusal_k1": 0.20833333333333334,
+        "refusal_k2": 0.16666666666666666,
+        "score": 0.1875,
+        "degenerate_text": 0.9791666666666666,
+        "lang_ok": 1.0,
+        "passes": false
+      }
+    ],
+    "baseline_refusal_induce_dev_en": 0.10416666666666667,
+    "rule": "argmax mean judged refusal over k in {1,2} (+k|d_EN(L)| rEN(L) on 24 induce_dev EN-BT) s.t. degenerate_text < 10% and lang_ok >= 95%; ties -> lower layer",
+    "fallback_no_layer_passes": false,
+    "positive_control_k2_ge_0.5": false,
+    "positive_control_any_layer_k2_ge_0.5": false
+  },
+  "grid": {
+    "K": [
+      0.1,
+      0.2,
+      0.35,
+      0.5,
+      0.75,
+      1.0,
+      1.5,
+      2.0,
+      2.5,
+      3.0
+    ],
+    "multiplier": 1.0,
+    "rEN_at_Kmax_EN_refusal": 0.5416666666666666,
+    "uSLperp_at_Kmin_SL_refusal": 0.041666666666666664,
+    "Delta_norm_dSL": 1979.030029296875,
+    "norm_dEN": 2362.79052734375,
+    "Nbar_mean_resid_norm": 26252.541015625,
+    "alpha_over_Nbar_uSLperp": [
+      0.007538432291636056,
+      0.015076864583272112,
+      0.02638451302072619,
+      0.03769216145818027,
+      0.05653824218727042,
+      0.07538432291636055,
+      0.11307648437454083,
+      0.1507686458327211,
+      0.18846080729090137,
+      0.22615296874908167
+    ],
+    "alpha_over_Nbar_rEN": [
+      0.00900023554267552,
+      0.01800047108535104,
+      0.031500824399364316,
+      0.045001177713377596,
+      0.06750176657006639,
+      0.09000235542675519,
+      0.13500353314013278,
+      0.18000471085351039,
+      0.22500588856688797,
+      0.27000706628026555
+    ],
+    "rule": "rEN at K=3 < .5 EN refusal -> x2; u_SLperp at K=0.2 (DEV check point; plan said 0.1) > .5 SL refusal -> /4"
+  },
+  "lambda": {
+    "lambda_star": 1.5,
+    "curve_en_bt": {
+      "0.1": 0.975,
+      "0.15": 0.95,
+      "0.2": 0.9,
+      "0.25": 0.925,
+      "0.3": 0.925,
+      "0.35": 0.875,
+      "0.4": 0.875,
+      "0.45": 0.825,
+      "0.5": 0.875,
+      "0.6": 0.85,
+      "0.8": 0.8,
+      "1.0": 0.75,
+      "1.5": 0.675
+    },
+    "curve_sl_mt": {
+      "0.1": 1.0,
+      "0.15": 1.0,
+      "0.2": 0.975,
+      "0.25": 0.975,
+      "0.3": 0.975,
+      "0.35": 0.95,
+      "0.4": 0.95,
+      "0.45": 0.95,
+      "0.5": 0.9,
+      "0.6": 0.9,
+      "0.8": 0.775,
+      "1.0": 0.6,
+      "1.5": 0.625
+    },
+    "grid_used": [
+      0.1,
+      0.15,
+      0.2,
+      0.25,
+      0.3,
+      0.35,
+      0.4,
+      0.45,
+      0.5,
+      0.6,
+      0.8,
+      1.0,
+      1.5
+    ],
+    "R_EN_at_star": 0.675,
+    "R_SL_at_star": 0.625,
+    "dev_lag_logit_hautus": -0.21365789098896248,
+    "in_0.35_0.65": false,
+    "rule": "argmin |R_EN(DEV40 EN-BT) - .5| over {0.2,...,1.0}; if > .15 away the pre-generated extension points {0.1,0.15,0.25,0.35,0.45,1.5} are admitted"
+  }
+}

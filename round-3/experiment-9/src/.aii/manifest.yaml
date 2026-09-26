@@ -1,0 +1,13 @@
+entries:
+  - path: .venv/
+    delete: regenerable
+    source: "uv venv .venv --python 3.12 && uv pip install --python .venv/bin/python -r requirements.lock.txt"
+  - path: .venv_vllm/
+    delete: regenerable
+    source: "uv venv .venv_vllm --python 3.12 && uv pip install --python .venv_vllm/bin/python -r requirements_vllm.lock.txt"
+  - path: adapters/
+    keep: 40 paired Heretic trial adapters + the lambda grid + norm-matched random edits per model; each cost a GPU trial and every scored step cites one
+  - path: selected/
+    keep: the selected operating point (adapter, Optuna journal, residual directions) that later rounds load instead of re-running Heretic
+  - path: judge_model/
+    keep: the primary judge distilled from archived gemini labels that can no longer be obtained (OpenRouter budget exhausted); every refusal label in results/ comes from it

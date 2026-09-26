@@ -1,0 +1,34 @@
+10:05:00|INFO   |qwen3_14b gate: 586 to label (0 done)
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:  12%|█▎        | 1/8 [00:30<03:36, 30.99s/it]Loading checkpoint shards:  25%|██▌       | 2/8 [01:02<03:07, 31.30s/it]Loading checkpoint shards:  38%|███▊      | 3/8 [01:34<02:37, 31.59s/it]Loading checkpoint shards:  50%|█████     | 4/8 [02:03<02:03, 30.79s/it]Loading checkpoint shards:  62%|██████▎   | 5/8 [02:33<01:30, 30.33s/it]Loading checkpoint shards:  75%|███████▌  | 6/8 [03:02<00:59, 29.88s/it]Loading checkpoint shards:  88%|████████▊ | 7/8 [03:31<00:29, 29.52s/it]Loading checkpoint shards: 100%|██████████| 8/8 [03:44<00:00, 24.44s/it]Loading checkpoint shards: 100%|██████████| 8/8 [03:44<00:00, 28.11s/it]
+10:10:34|INFO   |loaded Qwen/Qwen3-14B@40c06982 in 247s vram 10.0GB
+10:13:26|INFO   |qwen3_14b gate: 586/586 in 172s (3.42/s)
+/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_3/gen_art/gen_art_experiment_11/.venv/lib/python3.12/site-packages/sklearn/metrics/_classification.py:614: UserWarning: A single label was found in 'y_true' and 'y_pred'. For the confusion matrix to have the correct shape, use the 'labels' parameter to pass all known labels.
+  warnings.warn(
+/ai-inventor/aii_data/runs/run_FVi3e3O9CH5I/3_invention_loop/iter_3/gen_art/gen_art_experiment_11/.venv/lib/python3.12/site-packages/sklearn/utils/_param_validation.py:218: UndefinedMetricWarning: `y1`, `y2` and `labels` have only one label in common. `cohen_kappa_score` is undefined and set to the value defined by the the `replace_undefined_by` param, which is set to nan.
+  return func(*args, **kwargs)
+10:13:26|INFO   |GATE qwen3_14b: {"ALL": {"n": 586, "kappa_R": 0.549, "kappa_3way": 0.313, "agree_R": 0.77, "rate_gold_R": 0.471, "rate_judge_R": 0.681}, "ALL_edited": {"n": 245, "kappa_R": 0.393, "kappa_3way": 0.191, "agree_R": 0.69, "rate_gold_R": 0.478, "rate_judge_R": 0.739}, "gams3_it|en|orig": {"n": 147, "kappa_R": 0.514, "kappa_3way": 0.286, "agree_R": 0.741, "rate_gold_R": 0.34, "rate_judge_R": 0.599}, "gams3_it|sl|orig": {"n": 134, "kappa_R": 0.691, "kappa_3way": 0.401, "agree_R": 0.843, "rate_gold_R": 0.373, "rate_judge_R": 0.53}, "gemma_it|en|edited": {"n": 140, "kappa_R": 0.272, "kappa_3way": 0.101, "agree_R": 0.586, "rate_gold_R": 0.321, "rate_judge_R": 0.693}, "gemma_it|en|orig": {"n": 40, "kappa_R": 1.0, "kappa_3way": 0.494, "agree_R": 1.0, "rate_gold_R": 0.975, "rate_judge_R": 0.975}, "gemma_it|sl|edited": {"n": 105, "kappa_R": 0.559, "kappa_3way": 0.358, "agree_R": 0.829, "rate_gold_R": 0.686, "rate_judge_R": 0.8}, "gemma_it|sl|orig": {"n": 20, "kappa_R": NaN, "kappa_3way": NaN, "agree_R": 1.0, "rate_gold_R": 1.0, "rate_judge_R": 1.0}}
+10:13:27|INFO   |qwen3_14b retest: 300 to label (0 done)
+10:14:44|INFO   |qwen3_14b retest: 300/300 in 78s (3.87/s)
+10:14:44|INFO   |RETEST qwen3_14b: {"ALL": {"n": 300, "kappa_R": 0.885, "kappa_3way": 0.819, "agree_R": 0.953, "rate_gold_R": 0.72, "rate_judge_R": 0.713}, "gams3_it|en|orig": {"n": 65, "kappa_R": 0.817, "kappa_3way": 0.731, "agree_R": 0.923, "rate_gold_R": 0.708, "rate_judge_R": 0.692}, "gams3_it|sl|orig": {"n": 85, "kappa_R": 0.848, "kappa_3way": 0.735, "agree_R": 0.929, "rate_gold_R": 0.647, "rate_judge_R": 0.624}, "gemma_it|en|orig": {"n": 78, "kappa_R": 0.969, "kappa_3way": 0.941, "agree_R": 0.987, "rate_gold_R": 0.705, "rate_judge_R": 0.718}, "gemma_it|sl|orig": {"n": 72, "kappa_R": 0.9, "kappa_3way": 0.904, "agree_R": 0.972, "rate_gold_R": 0.833, "rate_judge_R": 0.833}}
+10:14:45|INFO   |qwen3_14b final: 12628 to label (800 done)
+10:18:53|INFO   |  800/800 248s (3.2/s)
+10:18:53|INFO   |qwen3_14b final: 800/12628 in 248s (3.22/s)
+10:23:02|INFO   |  800/800 249s (3.2/s)
+10:23:02|INFO   |qwen3_14b final: 1600/12628 in 497s (3.22/s)
+10:27:09|INFO   |  800/800 247s (3.2/s)
+10:27:09|INFO   |qwen3_14b final: 2400/12628 in 745s (3.22/s)
+10:31:16|INFO   |  800/800 246s (3.2/s)
+10:31:16|INFO   |qwen3_14b final: 3200/12628 in 991s (3.23/s)
+10:35:22|INFO   |  800/800 246s (3.3/s)
+10:35:22|INFO   |qwen3_14b final: 4000/12628 in 1238s (3.23/s)
+10:39:31|INFO   |  800/800 249s (3.2/s)
+10:39:31|INFO   |qwen3_14b final: 4800/12628 in 1487s (3.23/s)
+10:43:38|INFO   |  800/800 247s (3.2/s)
+10:43:38|INFO   |qwen3_14b final: 5600/12628 in 1733s (3.23/s)
+10:46:27|INFO   |  800/800 169s (4.7/s)
+10:46:28|INFO   |qwen3_14b final: 6400/12628 in 1903s (3.36/s)
+10:49:18|INFO   |  800/800 170s (4.7/s)
+10:49:18|INFO   |qwen3_14b final: 7200/12628 in 2073s (3.47/s)
+10:52:29|INFO   |  800/800 191s (4.2/s)
+10:52:29|INFO   |qwen3_14b final: 8000/12628 in 2264s (3.53/s)
+10:52:29|WARNING|qwen3_14b final: judge deadline reached at 8000/12628; rest unlabelled

@@ -1,0 +1,228 @@
+{
+  "seed": 20260925,
+  "sl_repo": "cjvt/slovenian-llm-eval",
+  "sl_revision": "ca2f68d373",
+  "util": {
+    "arc_challenge": {
+      "task": "arc_challenge",
+      "n_sl": 1172,
+      "n_pairs": 1172,
+      "gold_agreement": 1.0,
+      "len_ratio_median": 0.992,
+      "len_ratio_p05_p95": [
+        0.841,
+        1.171
+      ],
+      "paired": true,
+      "n_written": 400,
+      "chance": 0.25027777777777777
+    },
+    "boolq": {
+      "task": "boolq",
+      "n_sl": 3270,
+      "n_pairs": 3270,
+      "gold_agreement": 1.0,
+      "len_ratio_median": 0.998,
+      "len_ratio_p05_p95": [
+        0.889,
+        1.131
+      ],
+      "paired": true,
+      "n_written": 400,
+      "chance": 0.5
+    },
+    "hellaswag": {
+      "task": "hellaswag",
+      "n_sl": 10042,
+      "n_pairs": 10042,
+      "gold_agreement": 1.0,
+      "len_ratio_median": 0.967,
+      "len_ratio_p05_p95": [
+        0.834,
+        1.075
+      ],
+      "paired": true,
+      "n_written": 400,
+      "chance": 0.25
+    },
+    "openbookqa": {
+      "task": "openbookqa",
+      "n_sl": 500,
+      "n_pairs": 500,
+      "gold_agreement": 1.0,
+      "len_ratio_median": 1.041,
+      "len_ratio_p05_p95": [
+        0.823,
+        1.319
+      ],
+      "paired": true,
+      "n_written": 400,
+      "chance": 0.25
+    },
+    "piqa": {
+      "task": "piqa",
+      "n_sl": 1838,
+      "n_pairs": 1838,
+      "gold_agreement": 1.0,
+      "len_ratio_median": 1.045,
+      "len_ratio_p05_p95": [
+        0.87,
+        1.266
+      ],
+      "paired": true,
+      "n_written": 400,
+      "chance": 0.5
+    },
+    "winogrande": {
+      "task": "winogrande",
+      "n_sl": 1267,
+      "n_dropped_no_blank_or_empty_continuation": 0,
+      "n_pairs": 1267,
+      "gold_agreement": 1.0,
+      "len_ratio_median": 1.025,
+      "len_ratio_p05_p95": [
+        0.785,
+        1.285
+      ],
+      "paired": true,
+      "n_written": 400,
+      "chance": 0.5
+    }
+  },
+  "belebele": {
+    "n_common": 900,
+    "n_answer_agree": 900,
+    "n_items": 200,
+    "n_passages": 150,
+    "gold_dist": {
+      "1": 44,
+      "3": 56,
+      "4": 41,
+      "2": 59
+    }
+  },
+  "harmless": {
+    "n_candidates": 9965,
+    "n_kept": 260,
+    "dropped": {
+      "exact": 2
+    },
+    "categories": {
+      "general_qa": 50,
+      "open_qa": 64,
+      "creative_writing": 10,
+      "brainstorming": 39,
+      "classification": 37
+    }
+  },
+  "overlap_audit": {
+    "dependency_blocks": {
+      "refuseu_eval": 2800,
+      "refuseu_gold_calib": 590,
+      "gams_dose_rows": 6239,
+      "hard_xstest": 900,
+      "hard_orbench_hard1k": 2638,
+      "hard_orbench_toxic300": 600,
+      "identity_confirm": 480,
+      "refuseu_x_mt": 1400
+    },
+    "n_dep_8grams": 451699,
+    "arc_challenge_en.jsonl": {
+      "n": 400,
+      "exact_overlap": 0,
+      "8gram_gt50pct_overlap": 0
+    },
+    "arc_challenge_sl.jsonl": {
+      "n": 400,
+      "exact_overlap": 0,
+      "8gram_gt50pct_overlap": 0
+    },
+    "boolq_en.jsonl": {
+      "n": 400,
+      "exact_overlap": 0,
+      "8gram_gt50pct_overlap": 0
+    },
+    "boolq_sl.jsonl": {
+      "n": 400,
+      "exact_overlap": 0,
+      "8gram_gt50pct_overlap": 0
+    },
+    "hellaswag_en.jsonl": {
+      "n": 400,
+      "exact_overlap": 0,
+      "8gram_gt50pct_overlap": 0
+    },
+    "hellaswag_sl.jsonl": {
+      "n": 400,
+      "exact_overlap": 0,
+      "8gram_gt50pct_overlap": 0
+    },
+    "openbookqa_en.jsonl": {
+      "n": 400,
+      "exact_overlap": 0,
+      "8gram_gt50pct_overlap": 0
+    },
+    "openbookqa_sl.jsonl": {
+      "n": 400,
+      "exact_overlap": 0,
+      "8gram_gt50pct_overlap": 0
+    },
+    "piqa_en.jsonl": {
+      "n": 400,
+      "exact_overlap": 0,
+      "8gram_gt50pct_overlap": 0
+    },
+    "piqa_sl.jsonl": {
+      "n": 400,
+      "exact_overlap": 0,
+      "8gram_gt50pct_overlap": 0
+    },
+    "winogrande_en.jsonl": {
+      "n": 400,
+      "exact_overlap": 8,
+      "8gram_gt50pct_overlap": 0
+    },
+    "winogrande_sl.jsonl": {
+      "n": 400,
+      "exact_overlap": 16,
+      "8gram_gt50pct_overlap": 0
+    },
+    "belebele_en.jsonl": {
+      "n": 200,
+      "exact_overlap": 0,
+      "8gram_gt50pct_overlap": 0
+    },
+    "belebele_hu.jsonl": {
+      "n": 200,
+      "exact_overlap": 0,
+      "8gram_gt50pct_overlap": 0
+    },
+    "belebele_sl.jsonl": {
+      "n": 200,
+      "exact_overlap": 0,
+      "8gram_gt50pct_overlap": 0
+    },
+    "dolly_en.jsonl": {
+      "n": 260,
+      "exact_overlap": 0,
+      "8gram_gt50pct_overlap": 0
+    },
+    "passages_en.jsonl": {
+      "n": 150,
+      "exact_overlap": 0,
+      "8gram_gt50pct_overlap": 0
+    },
+    "passages_hu.jsonl": {
+      "n": 150,
+      "exact_overlap": 0,
+      "8gram_gt50pct_overlap": 0
+    },
+    "passages_sl.jsonl": {
+      "n": 150,
+      "exact_overlap": 0,
+      "8gram_gt50pct_overlap": 0
+    },
+    "split_manifest_sha256": "ab5e3f0ba2263f2334fbbe90d7fa617a598e3e200ea39fae121afe8a57fb33cf",
+    "full_data_out_sha256": "35c98bc5d5336829af33a341d3d8b92a83d696e99a530ee5bc947d262c30803c"
+  }
+}
